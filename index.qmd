@@ -12,9 +12,9 @@ Consultation booking [link](https://docs.google.com/spreadsheets/d/1Zz3_hqKc4qA5
 
 Virtual Meeting Room: [Zoom](https://smu-sg.zoom.us/j/91431787118?pwd=UVoyN3ZrYkRtcVo0WDVER0ZWRFlOQT09)
 
-| Section | Time       | Venue       |
-|---------|------------|-------------|
-| G1      | 8:15-11:30 | SCIS SR 2.1 |
+| Section | Time       | Venue        |
+|---------|------------|--------------|
+| G1      | 8:15-11:30 | SCIS1 SR 2-2 |
 
 ## Other Important Information
 

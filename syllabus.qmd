@@ -1,85 +1,86 @@
 ---
-title: "syllabus"
+title: "Syllabus"
 editor: visual
 ---
 
 ## Synopsis
 
-Where should the next new business outlet be located in order to optimise the profit? What are the location factors that affect the resale prices of HDB housing units?  Which are the economic or service activities such as IT professional firms, car workshops, fast food chains (ie. KFC, McDonalds), coffee outlets (Starbucks, Ya Kun Kaya Toast, Toast Box) that tend to be located close to one another and which are the ones that tend to be a distance apart?  Do these observed patterns and processes occur at random or are they being constrained by geographical factors?  These and many other related questions are the challenges faced by data scientists and data analysts today especially when geographical data are used.       
+Where should the next new business outlet be located in order to optimise the profit? What are the location factors that affect the resale prices of HDB housing units? Which are the economic or service activities such as IT professional firms, car workshops, fast food chains (ie. KFC, McDonalds), coffee outlets (Starbucks, Ya Kun Kaya Toast, Toast Box) that tend to be located close to one another and which are the ones that tend to be a distance apart? Do these observed patterns and processes occur at random or are they being constrained by geographical factors? These and many other related questions are the challenges faced by data scientists and data analysts today especially when geographical data are used.
 
-Geospatial analytics offers the solutions to these questions by providing data scientists and analysts a problem-driven and data-centric analysis framework focusing on discovering actionable understanding from geographically referenced data.  It makes extensive use of geospatial data wrangling, geoprocessing, spatial statistical, geospatial machine learning and spatial data visualisation techniques to support decision- and strategy-making.    
+Geospatial analytics offers the solutions to these questions by providing data scientists and analysts a problem-driven and data-centric analysis framework focusing on discovering actionable understanding from geographically referenced data. It makes extensive use of geospatial data wrangling, geoprocessing, spatial statistical, geospatial machine learning and spatial data visualisation techniques to support decision- and strategy-making.
 
-This course provides students with an introduction to the concepts, principles and methods of geospatial analytics and their practical applications of geospatial analytics in real world operations.  Emphasis will be placed on 
+This course provides students with an introduction to the concepts, principles and methods of geospatial analytics and their practical applications of geospatial analytics in real world operations. Emphasis will be placed on
 
-- performing geospatial data science tasks such as importing, tidying, manipulating, transforming, projecting and processing geospatial data programmatically,
-- visualising, analysing and describing geographical patterns and process using appropriate geovisualisation and thematic mapping techniques, 
-- Conducting geospatial analysis by using appropriate spatial statistics and machine learning methods and 
-- building web-based geospatial analytics applications.
+-   performing geospatial data science tasks such as importing, tidying, manipulating, transforming, projecting and processing geospatial data programmatically,
+-   visualising, analysing and describing geographical patterns and process using appropriate geovisualisation and thematic mapping techniques,
+-   Conducting geospatial analysis by using appropriate spatial statistics and machine learning methods and
+-   building web-based geospatial analytics applications.
 
 ## Course Objectives
 
 Upon completion of the course, students will be able to:
 
-- Provide accurate explanation of the mathematical and input data requirements of the analysis method(s) used,
-- Import, extract, process, transform and assemble geospatial analytical sandbox programmatically,
-- Apply appropriate geospatial analysis methods in addressing specific analysis needs, 
-- Communicate the analysis results effectively and in an easy to understand manner with the help of appropriate geo- and data visualisation techniques, and
-- Design and implement web-based geospatial analytics applications. 
+-   Provide accurate explanation of the mathematical and input data requirements of the analysis method(s) used,
+-   Import, extract, process, transform and assemble geospatial analytical sandbox programmatically,
+-   Apply appropriate geospatial analysis methods in addressing specific analysis needs,
+-   Communicate the analysis results effectively and in an easy to understand manner with the help of appropriate geo- and data visualisation techniques, and
+-   Design and implement web-based geospatial analytics applications.
 
-## Competencies 
+## Competencies
 
-1.	Defining Geospatial Analytics and describing the applications of geospatial analytics by using real-world examples.
-2.	Explaining the differences between Geospatial Analytics and Geographic Information Systems (GIS).
-3.	Importing, wrangling and transforming aspatial data by using tidyverse family of packages
-4.	Importing, wrangling and transforming geographical data by sing sf package.
-5.	Geocoding and georeferencing geographical data programmatically.
-6.	Performing geoprocessing operations programmatically by using sf packages.
-7.	Performing Exploratory Data Analysis (EDA) using ggplot2 and Confirmatory Data Analysis using ggstatsplot.
-8.	Preparing cartographic quality analytical maps by using tmap package.
-9.	Visualising and analysing multivariate geospatial data using corrplot and heatmaply packages. 
-10.	Explaining the principles and methods of spatial point patterns and complete spatial randomness. 
-11.	Performing spatial point pattern analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.
-12.	Explaining the principles and methods of spatial weights.
-13.	Computing spatial weights by using appropriate functions of spdep package. 
-14.	Explaining the concepts of spatial autocorrelation, spatial clusters, hot spot and cold spot areas.
-15.	Computing localised geospatial statistics by using appropriate R package(s) and providing accurate interpretation of the analysis results.
-16.	Explaining the principles of explanatory modelling and methods of geographically weighted regression.
-17.	Calibrating geographically weighted regression models by using appropriate R package(s) and providing accurate interpretation of the analysis results.
-18.	Explaining the concept of geographic segmentation and methods of spatially constrained clustering.
-19.	Performing spatially constrained cluster analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.
-20.	Explaining the concept of spatial dependency and methods of spatial interpolation.
-21.	Performing spatial interpolation by using appropriate R package(s) and providing accurate interpretation of the analysis results.
-22.	Defining geographic accessibility and explaining the methods of accessibility analysis.
-23.	Performing geographic accessibility analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.
-24.	Designing geospatial application programmatically by using free and open source software and packages (i.e. R, R packages and Shinny).
+1.  Defining Geospatial Analytics and describing the applications of geospatial analytics by using real-world examples.
+2.  Explaining the differences between Geospatial Analytics and Geographic Information Systems (GIS).
+3.  Importing, wrangling and transforming aspatial data by using tidyverse family of packages
+4.  Importing, wrangling and transforming geographical data by sing sf package.
+5.  Geocoding and georeferencing geographical data programmatically.
+6.  Performing geoprocessing operations programmatically by using sf packages.
+7.  Performing Exploratory Data Analysis (EDA) using ggplot2 and Confirmatory Data Analysis using ggstatsplot.
+8.  Preparing cartographic quality analytical maps by using tmap package.
+9.  Visualising and analysing multivariate geospatial data using corrplot and heatmaply packages.
+10. Explaining the principles and methods of spatial point patterns and complete spatial randomness.
+11. Performing spatial point pattern analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.
+12. Explaining the principles and methods of spatial weights.
+13. Computing spatial weights by using appropriate functions of spdep package.
+14. Explaining the concepts of spatial autocorrelation, spatial clusters, hot spot and cold spot areas.
+15. Computing localised geospatial statistics by using appropriate R package(s) and providing accurate interpretation of the analysis results.
+16. Explaining the principles of explanatory modelling and methods of geographically weighted regression.
+17. Calibrating geographically weighted regression models by using appropriate R package(s) and providing accurate interpretation of the analysis results.
+18. Explaining the concept of geographic segmentation and methods of spatially constrained clustering.
+19. Performing spatially constrained cluster analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.
+20. Explaining the concept of spatial dependency and methods of spatial interpolation.
+21. Performing spatial interpolation by using appropriate R package(s) and providing accurate interpretation of the analysis results.
+22. Defining geographic accessibility and explaining the methods of accessibility analysis.
+23. Performing geographic accessibility analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.
+24. Designing geospatial application programmatically by using free and open source software and packages (i.e. R, R packages and Shinny).
 
+## Prerequisites/Co-requisites
 
-##  Prerequisites/Co-requisites
-
-NIL. (But a basic working knowledge of computer and numeracy will be assumed.  Students are expected to understand Windows-based operating systems and to manage files and disk space responsibly.  More importantly, students taking this course must be willing to learn R programming.)
+NIL. (But a basic working knowledge of computer and numeracy will be assumed. Students are expected to understand Windows-based operating systems and to manage files and disk space responsibly. **More importantly, students taking this course must be willing to learn R programming**.)
 
 ## Course Assessments
 
-Assessment Categories	Weightage (%)
+Assessment Categories Weightage (%)
 
-- Class Participation and In-class Exercise 	25%
-- Take-Home Exercise (15% x 3) 45%
-- Geospatial Analytics Project	30%
+-   Class Participation and In-class Exercise 25%
+-   Take-Home Exercise (15% x 3) 45%
+-   Geospatial Analytics Project 30%
 
 ## Course Assessment Details
 
 ### Class Participation
 
-A strict requirement for each class meeting is to complete the assigned readings and to try out the hands-on exercises before coming to class.  Readings will be provided from the textbook on technical information and from provided documents and articles on real-world applications of geospatial analytics.  Students are required to review the recommended readings and class exercises before coming to class.  Without preparation, the learning and discussions would not be as meaningful.  Student sharing of insights from readings and hands-on exercises of assigned materials in class participation will form a large part of the learning in this course.  Students may also be quizzed in class and thereby contribute to class participation.
+A strict requirement for each class meeting is to complete the assigned readings and to try out the hands-on exercises before coming to class. Readings will be provided from the textbook on technical information and from provided documents and articles on real-world applications of geospatial analytics. Students are required to review the recommended readings and class exercises before coming to class. Without preparation, the learning and discussions would not be as meaningful. Student sharing of insights from readings and hands-on exercises of assigned materials in class participation will form a large part of the learning in this course. Students may also be quizzed in class and thereby contribute to class participation.
 
 ### Take-home Exercise
-There are three take-home exercises that are due throughout the term.  They aim to provide students the opportunities to apply the methods learned in class by working through mini real world cases.  
 
-Students may work together to help one another with computer or geospatial issues and discuss the materials that constitute the take-home exercise.  However, each student is required to prepare and submit the take-home exercise (including any computer work) on their own.  Cheating is strictly prohibited.  Cheating includes but not limited to: plagiarism and submission of work that is not the student’s
+There are three take-home exercises that are due throughout the term. They aim to provide students the opportunities to apply the methods learned in class by working through mini real world cases.
 
-### Geospatial Analytics Project 
-The purpose of the Geospatial Analytics Project is to provide students first-hand experience on collecting, processing and analysing spatial data using real world data.  A project may involve creating geospatially enabled business data and subsequently analysing these data for business strategic or market analysis.  Alternatively, a project may be in the form of application development by integrating analytical tools or models within a web framework.  Students are encouraged to focus on research topics that are relevant to their field of study.  
+Students may work together to help one another with computer or geospatial issues and discuss the materials that constitute the take-home exercise. However, each student is required to prepare and submit the take-home exercise (including any computer work) on their own. Cheating is strictly prohibited. Cheating includes but not limited to: plagiarism and submission of work that is not the student's
 
-The project is team work.  Students are required to form a project team of 3 members by the third week of the academic term.  Each project teams must start thinking about their project ideas between week 4 and week 7.  They are expected to discuss their project topic and scope of works with the instructor during the weeks too.  A project website will be prepared and submitted to the instructor for approval by the end of week 8.    
+### Geospatial Analytics Project
 
-All project teams will give a postal presentation outlining the database design and implementation process, analytical methods used and findings of their project in week 14.  Students are also required to prepare a project report or research paper of not more than 15 pages (excluding maps, figures, and tables) for submission by week 14.  Additional materials will be distributed in class to assist students with topics selection, project design, postal presentation, and project report.
+The purpose of the Geospatial Analytics Project is to provide students first-hand experience on collecting, processing and analysing spatial data using real world data. A project may involve creating geospatially enabled business data and subsequently analysing these data for business strategic or market analysis. Alternatively, a project may be in the form of application development by integrating analytical tools or models within a web framework. Students are encouraged to focus on research topics that are relevant to their field of study.
+
+The project is team work. Students are required to form a project team of 3 members by the third week of the academic term. Each project teams must start thinking about their project ideas between week 4 and week 7. They are expected to discuss their project topic and scope of works with the instructor during the weeks too. A project website will be prepared and submitted to the instructor for approval by the end of week 8.
+
+All project teams will give a postal presentation outlining the database design and implementation process, analytical methods used and findings of their project in week 14. Students are also required to prepare a project report or research paper of not more than 15 pages (excluding maps, figures, and tables) for submission by week 14. Additional materials will be distributed in class to assist students with topics selection, project design, postal presentation, and project report.
