@@ -19,11 +19,11 @@ Students are required to update their project websites with all the details incl
 Students are required to choose one of the following theme to develop the GeoSpaital Analytics Project:
 
 -   Spatial Point Patterns Analysis
--   Geographical Accessibility and Spatial Interaction Models
--   Flow and Movement Data Analytics
--   Geographically Weighted Regression Models
--   Analytical Regionalisation and Geographical Segmentation
 -   Exploratory Spatial Data Analysis
+-   Analytical Regionalisation and Geographical Segmentation
+-   Geographically Weighted Regression Models
+-   Flow and Movement Data Analytics
+-   Geographical Accessibility and Spatial Interaction Models
 
 Please feel free to approach me for more details.
 
@@ -39,11 +39,11 @@ Please feel free to approach me for more details.
 
 #### Project Github
 
-At the beginning of the project, project teams are required to create a project Github. The project Github should include all the materials used to develop the project and the written materials such as proposal, poster and practice research paper. It must be used to maintain a complete project versioning including the application and project documents. The Github link must be included in the project proposal. By the end of the project, the project team must pack the final version of the Github repository and upload onto eLearn for final submission. The Github link also must be provided on eLearn.
+At the beginning of the project, project teams are required to create a project [Github](https://github.com/). The project Github should include all the materials used to develop the project and the written materials such as proposal, poster and practice research paper. It must be used to maintain a complete project versioning including the application and project documents. The Github link must be included in the project proposal. By the end of the project, the project team must pack the final version of the Github repository and upload onto eLearn for final submission. The Github link also must be provided on eLearn.
 
 #### Project Website
 
-Each project team are required to create the project website by using either [blogdown](https://pkgs.rstudio.com/blogdown/) or [distill for RMarkdown](https://rstudio.github.io/distill/). It will be disseminated by using webserver such as [Netfity](https://www.netlify.com/).
+Each project team are required to create the project website by using [Quatro](https://quarto.org/docs/websites/). It will be disseminated by using [Netfity](https://www.netlify.com/) web service.
 
 As a first step, you should create a project summary at the course wiki that includes:
 
@@ -65,8 +65,6 @@ The project poster should provide an overview of your project. It should include
 
 -   Future Work - An explanation of how the work could be extended.
 
-The project poster must be prepared by using [posterdown](https://github.com/brentthorne/posterdown/wiki). The final output format of the poster must be in **pdf** format.
-
 **Note:** The poster will be considered a final deliverable, so don't forget to apply good visual design and data visualisation principles and best practice to your poster.
 
 ### Geospatial Analytics Application Practice Research Paper
@@ -80,7 +78,7 @@ The research paper should be in the form of Geospatial Analytics Application pra
 -   Discussion - What has the audience learned from your work? What new insights or practices has your system enabled? A full blown user study is not expected, but informal observations of use that help evaluate your system are encouraged.
 -   Future Work - A description of how your system could be extended or refined.
 
-The research paper should include an abstract of **not more than 300 words**. The actual research paper itself should **not more than 6 pages** excluding figures, tables, formula and references. The practice research paper must be edited by using **R Markdown** and the **ACM: Association for Computing Machinery** template of [**rticles**](https://github.com/rstudio/rticles) should be used.
+The research paper should include an abstract of **not more than 300 words**. The actual research paper itself should **not more than 6 pages** excluding figures, tables, formula and references. The practice research paper must be edited by using **ACM: Association for Computing Machinery** template of [Quarto Journal/Article](https://quarto.org/docs/journals/formats.html) template should be used.
 
 #### Sample practice research papers
 
@@ -89,14 +87,14 @@ The research paper should include an abstract of **not more than 300 words**. Th
 -   [SpatialEpiApp: A Shiny Web Application for the Analysis of Spatial and Spatio-Temporal Disease Data](https://cran.rstudio.com/web/packages/SpatialEpiApp/vignettes/manual.pdf)
 -   [Developing web-based data analysis tools for precision farming using R and Shiny](https://iopscience.iop.org/article/10.1088/1755-1315/20/1/012014)
 -   [EHDViz: clinical dashboard development using open-source technologies](https://www.ncbi.nlm.nih.gov/pubmed/27013597)
--   [Health Equity Assessment Toolkit](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-016-0229-9)\
+-   [Health Equity Assessment Toolkit](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-016-0229-9)
 -   [Interactive Pharmacometric Applications Using R and the Shiny Package](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4394611/)
 
 ### Final Deliverables
 
 The final deliverable will include:
 
--   artifact including the ShinyApp, data and all r modules.\
+-   artifact including the ShinyApp, data and all r modules.
 -   User Guide - Step-by-step guide on how to use the data visualisation functions designed.
 -   project poster
 -   a practice research paper
@@ -129,30 +127,15 @@ The poster will be graded based on the following criteria:
     -   [Signal](https://wiki.smu.edu.sg/1819t2is415/Signal_Proposal) and the [Shiny application](https://is415-ay1819-signal.shinyapps.io/Signal/).
 -   AY2020-2021 Term 1
     -   [J-Town](https://is415-t14-project-proposal.netlify.app/) and the [Shiny Application](https://erika-aldisa-gunawan.shinyapps.io/IS415_T14_EastKalimantan_New_JTown/)
+-   AY2021-2022 Term 1
+    -   Group 1: [Spatial Interaction Model](https://flosg-is415.netlify.app/)
+    -   Group 3: [Regionalisation in Reach](https://is412-g3-proposal.netlify.app/posts/welcome/)
+    -   Group 5: [Geographically Weighted Regression](https://g5-is415-proj.netlify.app/)
+    -   Group 7: [GeoeXplorer](https://geoxplorer.netlify.app/), a web-enabled geospatial analytics toolkit for detecting and visualising global spatial autocorrelation and local clusters and outliers from univariate geographically referenced data.
+    -   Group 8: [Spatial Pointers](https://spatial-pointers.netlify.app/project-proposal), a web-enabled Spatial Point Patterns Analysis toolkit for visualising and analysing both spatial and network constrained point patterns.
 
 ## Project Links
 
-### Group 1
 
-[Spatial Interaction Model](https://flosg-is415.netlify.app/)
 
-### Group 3
 
-[Regionalisation in Reach](https://is412-g3-proposal.netlify.app/posts/welcome/)
-
-### Group 5
-
-[Geographically Weighted Regression](https://g5-is415-proj.netlify.app/)
-
-### Group7
-
-[GeoeXplorer](https://geoxplorer.netlify.app/), a web-enabled geospatial analytics toolkit for detecting and visualising global spatial autocorrelation and local clusters and outliers from univariate geographically referenced data.
-
-### Group 8
-
-[Spatial Pointers](https://spatial-pointers.netlify.app/project-proposal), a web-enabled Spatial Point Patterns Analysis toolkit for visualising and analysing both spatial and network constrained point patterns.
-
-```{r echo=FALSE, eval=FALSE}
-library(pagedown)
-pagedown::chrome_print("_site/GAproject.html")
-```
