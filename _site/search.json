@@ -460,5 +460,12 @@
     "title": "Lesson 3: Thematic and Analytical Mapping",
     "section": "Content",
     "text": "Content\n\nClassification of maps\nPrinciples of map design\nThematic mapping techniques\nAnalytical mapping techniques\n\nPercentile map\nBox map\nStandard deviation map\nMapping rates"
+  },
+  {
+    "objectID": "outline/Lesson03_outline.html#hands-on-exercise",
+    "href": "outline/Lesson03_outline.html#hands-on-exercise",
+    "title": "Lesson 3: Thematic and Analytical Mapping",
+    "section": "Hands-on Exercise",
+    "text": "Hands-on Exercise\n\nChoropleth Mapping with R: tmap Methods\nIn-class Exercise 3: Analytical Mapping in html and in pdf format."
   }
 ]

@@ -1,15 +1,9 @@
 ---
 title: "Lesson 3: Thematic and Analytical Mapping"
 date: "`r Sys.Date()`"
-output:
-  distill::distill_article:
-    toc: true
-    toc_depth: 3
+format: html
+editor: visual
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
 
 This lesson aims to share with you the basic principles and methods of Thematic Mapping and Cartography Design.  You will also gain hands on experience on using [tmap](https://r-tmap.github.io/tmap/), an R package specially design for plotting cartographic quality maps. 
 
@@ -24,10 +18,11 @@ This lesson aims to share with you the basic principles and methods of Thematic 
     -   Standard deviation map
     -   Mapping rates
 
-## Lesson Slides and Hands-on Notes
+## Hands-on Exercise
 
--   Lesson slides on **Choropleth Mapping and tmap Methods** in [html](../lesson/Lesson03/lesson03a.html) and [pdf](../lesson/Lesson03/Lesson03a.pdf) formats
--   **Hands-on Exercise 3: Choropleth Mapping and tmap Methods** in [html](../Hands-on_Ex/Hands-on_Ex03/Hands-on_Ex03a.html) format.
+-   [Choropleth Mapping with R: tmap Methods](https://r4gdsa.netlify.app/chap02.html)
+
+
 -   **In-class Exercise 3: Analytical Mapping** in [html](../In-class_Ex/In-class_Ex03/In-class_Ex03.html) and in [pdf](../In-class_Ex/In-class_Ex03/In-class_Ex03.pdf) format.
 
 ## References
