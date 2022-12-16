@@ -151,14 +151,14 @@
     "href": "outline/Lesson02_outline.html#content",
     "title": "Lesson 2: Geospatial Data Handling and Wrangling",
     "section": "Content",
-    "text": "Content\nLesson slides in html\n\nAn overview of Geospatial Data Models\n\nVector and Raster data models\n\nMap Projection and Georeferencing\nGeocoding\nClasses of Spatial Data in R\n\nSpatial classes\nSimple features class\n\nR packages for Handling Spatial Data\n\nsf\nstar"
+    "text": "Content\n\nAn overview of Geospatial Data Models\n\nVector and Raster data models\n\nMap Projection and Georeferencing\nGeocoding\nClasses of Spatial Data in R\n\nSpatial classes\nSimple features class\n\nR packages for Handling Spatial Data\n\nsf\nstar"
   },
   {
     "objectID": "outline/Lesson02_outline.html#hands-on-exercise",
     "href": "outline/Lesson02_outline.html#hands-on-exercise",
     "title": "Lesson 2: Geospatial Data Handling and Wrangling",
     "section": "Hands-on Exercise",
-    "text": "Hands-on Exercise\nHands-on Exercise handout in html format."
+    "text": "Hands-on Exercise\n\nGeospatial Data Wrangling with R"
   },
   {
     "objectID": "outline/Lesson02_outline.html#reference",

@@ -5,11 +5,9 @@ format: html
 toc: true
 ---
 
-In this lesson, R objects used to store geospatial data will be discussed.  The discussion will focus on **simple features** and **sf** package.  Other R packages for storing (i.e. sp), transforming (i.e. rgdal) and processing (i.e. rgeos) geospatial data will be discussed briefly too. 
+In this lesson, R objects used to store geospatial data will be discussed. The discussion will focus on **simple features** and **sf** package. Other R packages for storing (i.e. sp), transforming (i.e. rgdal) and processing (i.e. rgeos) geospatial data will be discussed briefly too.
 
 ## Content
-
-Lesson slides in [html](../lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html)
 
 -   An overview of Geospatial Data Models
     -   Vector and Raster data models
@@ -24,7 +22,7 @@ Lesson slides in [html](../lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in
 
 ## Hands-on Exercise
 
-Hands-on Exercise handout in [html](../Hands-on_Ex/Hands-on_Ex02/Hands-on_Ex02.html) format.
+-   [Geospatial Data Wrangling with R](https://r4gdsa.netlify.app/chap01.html)
 
 ## Reference
 
@@ -44,8 +42,9 @@ Hands-on Exercise handout in [html](../Hands-on_Ex/Hands-on_Ex02/Hands-on_Ex02.h
 
 ## All About R:
 
--   [sf](https://r-spatial.github.io/sf/) package
-    -   
+-   
+
+    ## [sf](https://r-spatial.github.io/sf/) package
 
         1.  [Simple Features for R](https://r-spatial.github.io/sf/articles/sf1.html)
 
@@ -68,11 +67,16 @@ Hands-on Exercise handout in [html](../Hands-on_Ex/Hands-on_Ex02/Hands-on_Ex02.h
     -   
 
         6.  [Miscellaneous](https://r-spatial.github.io/sf/articles/sf6.html)
+
 -   [Stars](https://r-spatial.github.io/stars/index.html) package. To get started, refer to section
+
     -   [6.1: A four-dimensional data cube](https://keen-swartz-3146c4.netlify.app/datacube.html#a-four-dimensional-data-cube)
     -   [6.2: Dimensions, attributes, and support](https://keen-swartz-3146c4.netlify.app/datacube.html#dimensions-attributes-and-support)
     -   [6.3 Operations on data cubes](https://keen-swartz-3146c4.netlify.app/datacube.html#dcoperations)
     -   [7.4: Vector data cube examples](https://keen-swartz-3146c4.netlify.app/sf.html#vector-data-cube-examples) of Spatial Data Science.\
+
 -   Pebesma, Edzer, and Roger Bivand. 2018. [sp](https://CRAN.R-project.org/package=sp): Classes and Methods for Spatial Data.
+
 -   Bivand, Roger, Tim Keitt, and Barry Rowlingson. 2018. [Rgdal](https://CRAN.R-project.org/package=rgdal): Bindings for the 'Geospatial' Data Abstraction Library.
+
 -   Bivand, Roger, and Colin Rundel. 2018. [Rgeos](https://CRAN.R-project.org/package=rgeos): Interface to Geometry Engine - Open Source ('Geos').
