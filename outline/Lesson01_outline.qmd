@@ -22,15 +22,7 @@ toc: true
     -   Creating a github account
     -   Building a distill web blog
 
-## Lesson Slides and Hands-on Notes
-
-Lesson slide in [html](../lesson/lesson01/Lesson01-Introduction_to_GAA.html) and [pdf](../lesson/lesson01/Lesson01-Introduction_to_GAA.pdf) formats
-
-In-class Exercise:
-
--   [git in RStudio](https://r4dsa.netlify.app/posts/2021-05-22-git-in-rstudio/)
--   [Solving git(GitHub) token issue](https://r4dsa.netlify.app/posts/2021-05-23-git-token/)
--   [Building a blog with distill for R Markdown](https://r4dsa.netlify.app/posts/2021-05-21-building-a-blog-with-distill-for-r-markdown/)
+## Hands-on Exercise
 
 ## References
 
