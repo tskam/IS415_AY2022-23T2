@@ -42,41 +42,16 @@ In this lesson, R objects used to store geospatial data will be discussed. The d
 
 ## All About R:
 
--   
+-   [sf](https://r-spatial.github.io/sf/) package [Simple Features for R](https://r-spatial.github.io/sf/articles/sf1.html)
 
-    ## [sf](https://r-spatial.github.io/sf/) package
+    1.  [Reading, Writing and Converting Simple Features](https://r-spatial.github.io/sf/articles/sf2.html)
 
-        1.  [Simple Features for R](https://r-spatial.github.io/sf/articles/sf1.html)
+    2.  [Manipulating Simple Feature Geometries](https://r-spatial.github.io/sf/articles/sf3.html)
 
-    -   
+    3.  [Manipulating Simple Features](https://r-spatial.github.io/sf/articles/sf4.html)
 
-        2.  [Reading, Writing and Converting Simple Features](https://r-spatial.github.io/sf/articles/sf2.html)
+    4.  P[lotting Simple Features](https://r-spatial.github.io/sf/articles/sf5.html)
 
-    -   
+    5.  [Miscellaneous](https://r-spatial.github.io/sf/articles/sf6.html)
 
-        3.  [Manipulating Simple Feature Geometries](https://r-spatial.github.io/sf/articles/sf3.html)
 
-    -   
-
-        4.  [Manipulating Simple Features](https://r-spatial.github.io/sf/articles/sf4.html)
-
-    -   
-
-        5.  [Plotting Simple Features](https://r-spatial.github.io/sf/articles/sf5.html)
-
-    -   
-
-        6.  [Miscellaneous](https://r-spatial.github.io/sf/articles/sf6.html)
-
--   [Stars](https://r-spatial.github.io/stars/index.html) package. To get started, refer to section
-
-    -   [6.1: A four-dimensional data cube](https://keen-swartz-3146c4.netlify.app/datacube.html#a-four-dimensional-data-cube)
-    -   [6.2: Dimensions, attributes, and support](https://keen-swartz-3146c4.netlify.app/datacube.html#dimensions-attributes-and-support)
-    -   [6.3 Operations on data cubes](https://keen-swartz-3146c4.netlify.app/datacube.html#dcoperations)
-    -   [7.4: Vector data cube examples](https://keen-swartz-3146c4.netlify.app/sf.html#vector-data-cube-examples) of Spatial Data Science.\
-
--   Pebesma, Edzer, and Roger Bivand. 2018. [sp](https://CRAN.R-project.org/package=sp): Classes and Methods for Spatial Data.
-
--   Bivand, Roger, Tim Keitt, and Barry Rowlingson. 2018. [Rgdal](https://CRAN.R-project.org/package=rgdal): Bindings for the 'Geospatial' Data Abstraction Library.
-
--   Bivand, Roger, and Colin Rundel. 2018. [Rgeos](https://CRAN.R-project.org/package=rgeos): Interface to Geometry Engine - Open Source ('Geos').

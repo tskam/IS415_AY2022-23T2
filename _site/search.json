@@ -172,7 +172,7 @@
     "href": "outline/Lesson02_outline.html#all-about-r",
     "title": "Lesson 2: Geospatial Data Handling and Wrangling",
     "section": "All About R:",
-    "text": "All About R:\n\nsf package\n1.  [Simple Features for R](https://r-spatial.github.io/sf/articles/sf1.html)\n\n\nReading, Writing and Converting Simple Features\n\n\nManipulating Simple Feature Geometries\n\n\nManipulating Simple Features\n\n\nPlotting Simple Features\n\n\nMiscellaneous\n\n\nStars package. To get started, refer to section\n\n6.1: A four-dimensional data cube\n6.2: Dimensions, attributes, and support\n6.3 Operations on data cubes\n7.4: Vector data cube examples of Spatial Data Science.\n\n\nPebesma, Edzer, and Roger Bivand. 2018. sp: Classes and Methods for Spatial Data.\nBivand, Roger, Tim Keitt, and Barry Rowlingson. 2018. Rgdal: Bindings for the ‘Geospatial’ Data Abstraction Library.\nBivand, Roger, and Colin Rundel. 2018. Rgeos: Interface to Geometry Engine - Open Source (‘Geos’)."
+    "text": "All About R:\n\nsf package Simple Features for R\n\nReading, Writing and Converting Simple Features\nManipulating Simple Feature Geometries\nManipulating Simple Features\nPlotting Simple Features\nMiscellaneous"
   },
   {
     "objectID": "outline/Lesson03_outline.html",
