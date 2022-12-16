@@ -22,9 +22,6 @@ This lesson aims to share with you the basic principles and methods of Thematic 
 
 -   [Choropleth Mapping with R: tmap Methods](https://r4gdsa.netlify.app/chap02.html)
 
-
--   **In-class Exercise 3: Analytical Mapping** in [html](../In-class_Ex/In-class_Ex03/In-class_Ex03.html) and in [pdf](../In-class_Ex/In-class_Ex03/In-class_Ex03.pdf) format.
-
 ## References
 
 ### Principles and Methods of Thematic Mapping
