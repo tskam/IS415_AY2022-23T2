@@ -179,7 +179,7 @@
     "href": "outline/Lesson03_outline.html",
     "title": "Lesson 3: Thematic and Analytical Mapping",
     "section": "",
-    "text": "Classification of maps\nPrinciples of map design\nThematic mapping techniques\nAnalytical mapping techniques\n\nPercentile map\nBox map\nStandard deviation map\nMapping rates"
+    "text": "This lesson aims to share with you the basic principles and methods of Thematic Mapping and Cartography Design. You will also gain hands on experience on using tmap, an R package specially design for plotting cartographic quality maps."
   },
   {
     "objectID": "outline/Lesson03_outline.html#lesson-slides-and-hands-on-notes",
@@ -453,5 +453,12 @@
     "title": "Lesson 1: Introduction to Geospatial Analytics",
     "section": "Hands-on Exercise",
     "text": "Hands-on Exercise"
+  },
+  {
+    "objectID": "outline/Lesson03_outline.html#content",
+    "href": "outline/Lesson03_outline.html#content",
+    "title": "Lesson 3: Thematic and Analytical Mapping",
+    "section": "Content",
+    "text": "Content\n\nClassification of maps\nPrinciples of map design\nThematic mapping techniques\nAnalytical mapping techniques\n\nPercentile map\nBox map\nStandard deviation map\nMapping rates"
   }
 ]
