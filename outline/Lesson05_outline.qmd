@@ -1,0 +1,51 @@
+---
+title: "Lesson 5: Advanced Spatial Point Patterns Analysis"
+description: |
+  In this lesson, you will learn the basic concepts of on- and off- network spatial point processes and a family of spatial statistics methods for analysing network constrained spatial point processes.
+date: "`r Sys.Date()`"
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+### Content
+
+- Network Constrained Point Patterns Analysis
+    - Network point density estimation methods
+    - Network-Constrained K-function
+- Spatio-temporal Point Pattern Analysis
+
+### Meet-up Slides and Hands-on Notes 
+
+- Lesson slides in [html](../lesson/Lesson05/Lesson05-NetSPPA.html) and [pdf](../lesson/lesson05/Lesson05-NetSPPA.pdf) formats
+
+- Handout of Hands-on Exercise 5: NetSPPA in [html](../Hands-on_Ex/Hands-on_Ex05/Hands-on_Ex05-NetSPPA.html) and [pdf](../Hands-on_Ex/Hands-on_Ex05/Hands-on_Ex05-NetSPPA.pdf) formats.
+
+- Handout of Hands-on Exercise 5: MarkedSPPA in [html](../Hands-on_Ex/Hands-on_Ex05/Hands-on_Ex05-MarkedSPPA.html) and [pdf](../Hands-on_Ex/Hands-on_Ex05/Hands-on_Ex05-MarkedSPPA.pdf) formats.
+
+### Self-reading Before Meet-up
+
+### References
+
+- Floch, J.M., Marcon, E. and Puech, F. (2018) “Chapter 4: Spatial distribution of points” in Handbook of Spatial Analysis: Theory and Application with R. 
+- O’Sullivan, D., and Unwin, D. (2010) Geographic Information Analysis, Second Edition. John Wiley & Sons Inc., New Jersey, Canada. Chapter 5-6. 
+- Baddeley A.,  Rubak E. and Turner R. (2015) Spatial Point Patterns: Methodology and Applications with R, Chapman and Hall/CRC.
+
+### All About R
+
+- [spNetwork](https://cran.r-project.org/web/packages/spNetwork/) package.
+    - [Network Kernel Density Estimate](https://cran.r-project.org/web/packages/spNetwork/vignettes/NKDE.html)
+    - [Details about NKDE](https://cran.r-project.org/web/packages/spNetwork/vignettes/NKDEdetailed.html)
+    - [Network k Functions](https://cran.r-project.org/web/packages/spNetwork/vignettes/KNetworkFunctions.html)
+
+
+
+
+
+
+

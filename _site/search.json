@@ -110,5 +110,341 @@
     "title": "Geospatial Analytics Project",
     "section": "Project Links",
     "text": "Project Links"
+  },
+  {
+    "objectID": "outline/Lesson01_outline.html",
+    "href": "outline/Lesson01_outline.html",
+    "title": "Lesson 1: Introduction to Geospatial Analytics",
+    "section": "",
+    "text": "Introduction to Geospatial Analytics\n\nDemystifying Geospatial Analytics\nGeospatial Analytics vs Mapping\nGeospatial Analytics vs GIS\nGeospatial Analytics vs Statistical Analysis, Data Mining & Machine Learning\n\nMotivation of Geospatial Analytics\nA Tour Through the Geospatial Analytics Zoo\nGeospatial Analytics and Social Consciousness\nIn-class Exercise:\n\nInstalling R, RStudio, distill for R Markdown\nInstalling Rtools and devtools\nInstalling git\nCreating a github account\nBuilding a distill web blog"
+  },
+  {
+    "objectID": "outline/Lesson01_outline.html#lesson-slides-and-hands-on-notes",
+    "href": "outline/Lesson01_outline.html#lesson-slides-and-hands-on-notes",
+    "title": "Lesson 1: Introduction to Geospatial Analytics",
+    "section": "Lesson Slides and Hands-on Notes",
+    "text": "Lesson Slides and Hands-on Notes\nLesson slide in html and pdf formats\nIn-class Exercise:\n\ngit in RStudio\nSolving git(GitHub) token issue\nBuilding a blog with distill for R Markdown"
+  },
+  {
+    "objectID": "outline/Lesson01_outline.html#references",
+    "href": "outline/Lesson01_outline.html#references",
+    "title": "Lesson 1: Introduction to Geospatial Analytics",
+    "section": "References",
+    "text": "References\n\n“Spatial Data, Spatial Analysis, Spatial Data Science” by Prof. Luc Anselin. (This is a long lecture 1hr 15minutes but don’t turn away just because it is lengthy.)\nXie, Yiqun et. al. (2017) “Transdisciplinary Foundations of Geospatial Data Science” ISPRS international Journal of Geo-information, 2017, Vol.6 (12), p.395.\nPaez, A., and Scott, D.M. (2004) “Spatial statistics for urban analysis: A review of techniques with examples”, GeoJournal, 61: 53–67.\nGeospatial Analytics Will Eat The World, And You Won’t Even Know It."
+  },
+  {
+    "objectID": "outline/Lesson01_outline.html#r-packages-for-data-science",
+    "href": "outline/Lesson01_outline.html#r-packages-for-data-science",
+    "title": "Lesson 1: Introduction to Geospatial Analytics",
+    "section": "R packages for Data Science",
+    "text": "R packages for Data Science\n\ntidyverse: a family of modern R packages specially designed to meet the tasks of Data Science and Analytics.\nreadr: a fast and effective library to parse csv, txt, and tsv files as tibble data.frame in R. To get started, refer to Chapter 11 Data import of R for Data Science book.\n\ntidyr: an R package for tidying data. To get started, refer to Chapter 12 Tidy data of R for Data Science book.\n\ndplyr: a grammar of data manipulation. To get started, read articles under Getting Started and Articles tabs.\nggplot2: a grammar of graphics. To get started, read Chapter 3: Data Visualization and Chapter 28 Graphics for communication of R for Data Science book.\npipes: a powerful tool for clearly expressing a sequence of multiple operations. To get started, read Chapter 18: Pipes of R for Data Science book."
+  },
+  {
+    "objectID": "outline/Lesson02_outline.html",
+    "href": "outline/Lesson02_outline.html",
+    "title": "Lesson 2: Geospatial Data Handling and Wrangling",
+    "section": "",
+    "text": "In this lesson, R objects used to store geospatial data will be discussed. The discussion will focus on simple features and sf package. Other R packages for storing (i.e. sp), transforming (i.e. rgdal) and processing (i.e. rgeos) geospatial data will be discussed briefly too."
+  },
+  {
+    "objectID": "outline/Lesson02_outline.html#content",
+    "href": "outline/Lesson02_outline.html#content",
+    "title": "Lesson 2: Geospatial Data Handling and Wrangling",
+    "section": "Content",
+    "text": "Content\nLesson slides in html\n\nAn overview of Geospatial Data Models\n\nVector and Raster data models\n\nMap Projection and Georeferencing\nGeocoding\nClasses of Spatial Data in R\n\nSpatial classes\nSimple features class\n\nR packages for Handling Spatial Data\n\nsf\nstar"
+  },
+  {
+    "objectID": "outline/Lesson02_outline.html#hands-on-exercise",
+    "href": "outline/Lesson02_outline.html#hands-on-exercise",
+    "title": "Lesson 2: Geospatial Data Handling and Wrangling",
+    "section": "Hands-on Exercise",
+    "text": "Hands-on Exercise\nHands-on Exercise handout in html format."
+  },
+  {
+    "objectID": "outline/Lesson02_outline.html#reference",
+    "href": "outline/Lesson02_outline.html#reference",
+    "title": "Lesson 2: Geospatial Data Handling and Wrangling",
+    "section": "Reference",
+    "text": "Reference\nMust read\n\nChapter 2 Feature Representation of Intro to GIS and Spatial Analysis.\nChapter 9 Coordinate Systems of Intro to GIS and Spatial Analysis.\nGeocoding.\nPebesma, Edzer. (2018) “Simple Features for R: Standardized Support for Spatial Vector Data.” The R Journal, Vol. 10/1, 439:446.\n\nAdditional readings\n\nMaling, D. H. 1992. Coordinate Systems and Map Projections. 2nd ed. Oxford ; New York: Pergamon Press.\nPebesma, Edzer, Thomas Mailund, and James Hiebert. 2016. “Measurement Units in R.” The R Journal 8 (2): 486–94.\nAndreas Hackeloeer, Klaas Klasing, Jukka M. Krisp & Liqiu Meng (2014) “Georeferencing: a review of methods and applications”, Annals of GIS, 20:1, 61-69, DOI:10.1080/19475683.2013.86882.\nEla Dramowicz (2004) “Three Standard Geocoding Methods”, Directions Magazine."
+  },
+  {
+    "objectID": "outline/Lesson02_outline.html#all-about-r",
+    "href": "outline/Lesson02_outline.html#all-about-r",
+    "title": "Lesson 2: Geospatial Data Handling and Wrangling",
+    "section": "All About R:",
+    "text": "All About R:\n\nsf package\n1.  [Simple Features for R](https://r-spatial.github.io/sf/articles/sf1.html)\n\n\nReading, Writing and Converting Simple Features\n\n\nManipulating Simple Feature Geometries\n\n\nManipulating Simple Features\n\n\nPlotting Simple Features\n\n\nMiscellaneous\n\n\nStars package. To get started, refer to section\n\n6.1: A four-dimensional data cube\n6.2: Dimensions, attributes, and support\n6.3 Operations on data cubes\n7.4: Vector data cube examples of Spatial Data Science.\n\n\nPebesma, Edzer, and Roger Bivand. 2018. sp: Classes and Methods for Spatial Data.\nBivand, Roger, Tim Keitt, and Barry Rowlingson. 2018. Rgdal: Bindings for the ‘Geospatial’ Data Abstraction Library.\nBivand, Roger, and Colin Rundel. 2018. Rgeos: Interface to Geometry Engine - Open Source (‘Geos’)."
+  },
+  {
+    "objectID": "outline/Lesson03_outline.html",
+    "href": "outline/Lesson03_outline.html",
+    "title": "Lesson 3: Thematic and Analytical Mapping",
+    "section": "",
+    "text": "Classification of maps\nPrinciples of map design\nThematic mapping techniques\nAnalytical mapping techniques\n\nPercentile map\nBox map\nStandard deviation map\nMapping rates"
+  },
+  {
+    "objectID": "outline/Lesson03_outline.html#lesson-slides-and-hands-on-notes",
+    "href": "outline/Lesson03_outline.html#lesson-slides-and-hands-on-notes",
+    "title": "Lesson 3: Thematic and Analytical Mapping",
+    "section": "Lesson Slides and Hands-on Notes",
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson slides on Choropleth Mapping and tmap Methods in html and pdf formats\nHands-on Exercise 3: Choropleth Mapping and tmap Methods in html format.\nIn-class Exercise 3: Analytical Mapping in html and in pdf format."
+  },
+  {
+    "objectID": "outline/Lesson03_outline.html#references",
+    "href": "outline/Lesson03_outline.html#references",
+    "title": "Lesson 3: Thematic and Analytical Mapping",
+    "section": "References",
+    "text": "References\n\nPrinciples and Methods of Thematic Mapping\n\nProportional Symbols\nChoropleth Maps\nThe Basics of Data Classification\nChoropleth Mapping with Exploratory Data Analysis\nTennekes, M. (2018) “tmap: Thematic Maps in R”, Journal of Statistical Software, Vol 84:6, 1-39.\n\n\n\nAdditional Reading\n\nThe Concept of Map Symbols\nChoropleth map\nChoropleth Maps – A Guide to Data Classification\nBivariate Choropleth\nValue-by-alpha maps\nWhat to consider when creating choropleth maps\n\n\n\nAll About R:\n\ntmap package especially:\ntmap: get started!,\ntmap: version changes, and\nChapter 8 Making maps with R of Geocomputation with R."
+  },
+  {
+    "objectID": "outline/Lesson04_outline.html",
+    "href": "outline/Lesson04_outline.html",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "",
+    "text": "Introducing Spatial Point Patterns\n\nThe basic concepts of spatial point patterns\nSpatial Point Patterns in real world\n\n1st Order Spatial Point Patterns Analysis\n\nQuadrat analysis\nKernel density estimation\n\n2nd Order Spatial Point Patterns Analysis\n\nNearest Neighbour Index\nG-function\nF-function\nK-function\nL-function"
+  },
+  {
+    "objectID": "outline/Lesson04_outline.html#lesson-slides-and-hands-on-notes",
+    "href": "outline/Lesson04_outline.html#lesson-slides-and-hands-on-notes",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Lesson Slides and Hands-on Notes",
+    "text": "Lesson Slides and Hands-on Notes\n\nSlides in html and pdf formats\nHandout of Hands-on Exercise 4 in html and pdf formats.\n\n\nSelf-reading Before Meet-up\n\nChapter 7 Spatial Point Pattern Analysis of Roger S. Bivand, Edzer Pebesma and Virgilio Gómez-Rubio (2013) Applied Spatial Data Analysis with R (2nd Edition), Springer.\nChapter 4: Spatial distribution of points of Floch, J.M., Marcon, E. and Puech, F. (2018) Handbook of Spatial Analysis: Theory and Application with R.\n\n\n\nEnrichment Resources\nProf. Luc Anselin on point pattern analysis (YouTube):\n\nPoint Pattern Analysis Concepts\nPoint Pattern Analysis: Clustered, Regular and Dispersed Patterns\nPoint Pattern Analysis: Nearest Neighbor Statistics\nPoint Pattern Analysis: Quadrat Counts\nPoint Pattern Analysis: F and J Functions\nPoint Pattern Analysis: K, L and Kd Functions"
+  },
+  {
+    "objectID": "outline/Lesson04_outline.html#references",
+    "href": "outline/Lesson04_outline.html#references",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "References",
+    "text": "References\n\nO’Sullivan, D., and Unwin, D. (2010) Geographic Information Analysis, Second Edition. John Wiley & Sons Inc., New Jersey, Canada. Chapter 5-6.\nBaddeley A., Rubak E. and Turner R. (2015) Spatial Point Patterns: Methodology and Applications with R, Chapman and Hall/CRC.\nChapter 11 Point Pattern Analysis of Intro to GIS and Spatial Analysis. Section 11.2, 11.3, 11.3.1 and 11.4 • Ripley’s K-function.\n\n\nApplications\n\nNaveen Donthu and Roland T. Rust (1989) “Estimating Geographic Customer Densities Using Kernel Density Estimation”, Marketing Science, Vol. 8, No. 2, pp. 191-203.\nJoseph Wartman and Nicholas E. Malasavage (2010). “Spatial Analysis for Identifying Concentrations of Urban Damage” in Methods and Techniques in Urban Engineering, Armando Carlos de Pina Filho and Aloisio Carlos dePina (Ed.), ISBN: 978-953-307-096-4, InTech, Available from: http://www.intechopen.com/books/methods-and-techniques-in-urban-engineering/spatial-analysis-for-identifying-concentrations-of-urban-damage.\nGiuseppe Borruso and Andrea Porceddu (2009) “A Tale of Two Cities: Density Analysis of CBD on Two Midsize Urban Areas in Northeastern Italy” in Murgante, Beniamino; Borruso, Giuseppe & Lapucci, Alessandra (2009) Studies in Computational Intelligence, Geocomputation and Urban Planning, pp.37-56.\nKang, Youngok ; Cho, Nahye ; Son, Serin; Chen, Peng (2018) “Spatiotemporal characteristics of elderly population’s traffic accidents in Seoul using space-time cube and space-time kernel density estimation”, PloS one, 2018, Vol.13 (5)."
+  },
+  {
+    "objectID": "outline/Lesson04_outline.html#all-about-r",
+    "href": "outline/Lesson04_outline.html#all-about-r",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "All About R",
+    "text": "All About R\n\nspatstat at R Cran\nspatstat resource."
+  },
+  {
+    "objectID": "outline/Lesson05_outline.html",
+    "href": "outline/Lesson05_outline.html",
+    "title": "Lesson 5: Advanced Spatial Point Patterns Analysis",
+    "section": "",
+    "text": "Meet-up Slides and Hands-on Notes\n\nLesson slides in html and pdf formats\nHandout of Hands-on Exercise 5: NetSPPA in html and pdf formats.\nHandout of Hands-on Exercise 5: MarkedSPPA in html and pdf formats.\n\n\n\nSelf-reading Before Meet-up\n\n\nReferences\n\nFloch, J.M., Marcon, E. and Puech, F. (2018) “Chapter 4: Spatial distribution of points” in Handbook of Spatial Analysis: Theory and Application with R.\nO’Sullivan, D., and Unwin, D. (2010) Geographic Information Analysis, Second Edition. John Wiley & Sons Inc., New Jersey, Canada. Chapter 5-6.\nBaddeley A., Rubak E. and Turner R. (2015) Spatial Point Patterns: Methodology and Applications with R, Chapman and Hall/CRC.\n\n\n\nAll About R\n\nspNetwork package.\n\nNetwork Kernel Density Estimate\nDetails about NKDE\nNetwork k Functions"
+  },
+  {
+    "objectID": "outline/Lesson06_outline.html",
+    "href": "outline/Lesson06_outline.html",
+    "title": "Lesson 6: Spatial Weights and Applications",
+    "section": "",
+    "text": "Tobler’s First law of Geography\nPrinciples of Spatial Autocorrelation\nConcepts of Spatial Proximity and Spatial Weights\n\nContiguity-Based Spatial Weights: Rook’s & Queen’s\nDistance-Band Spatial Weights: fixed and adaptive\n\nApplications of Spatial Weights\n\nGlobal measures of spatial autocorrelation\nCorrelogram"
+  },
+  {
+    "objectID": "outline/Lesson06_outline.html#lesson-slides-and-hands-on-notes",
+    "href": "outline/Lesson06_outline.html#lesson-slides-and-hands-on-notes",
+    "title": "Lesson 6: Spatial Weights and Applications",
+    "section": "Lesson Slides and Hands-on Notes",
+    "text": "Lesson Slides and Hands-on Notes\n\nSlides in html and pdf formats\nHandout of Hands-on Exercise 6 in html\n\n\nSelf-reading Before Meet-up\nTo read before class:\n\nChapter 2. Codifying the neighbourhood structure of Handbook of Spatial Analysis: Theory and Application with R.\n\nAlternatively\n\nChapter 9: Modelling Areal Data of Applied Spatial Data Analysis with R (2nd Edition). This book is available in smu digital library. Until section 9.3.1."
+  },
+  {
+    "objectID": "outline/Lesson06_outline.html#references",
+    "href": "outline/Lesson06_outline.html#references",
+    "title": "Lesson 6: Spatial Weights and Applications",
+    "section": "References",
+    "text": "References\n\nFrançois Bavaud (2010) “Models for Spatial Weights: A Systematic Look” Geographical Analysis, Vol. 30, No.2, pp 153-171.\nTony H. Grubesic and Andrea L. Rosso (2014) “The Use of Spatially Lagged Explanatory Variables for Modeling Neighborhood Amenities and Mobility in Older Adults”, Cityscape, Vol. 16, No. 2, pp. 205-214."
+  },
+  {
+    "objectID": "outline/Lesson06_outline.html#all-about-r",
+    "href": "outline/Lesson06_outline.html#all-about-r",
+    "title": "Lesson 6: Spatial Weights and Applications",
+    "section": "All About R",
+    "text": "All About R\n\nspdep package\n\ndnearneigh()\nknearneigh()"
+  },
+  {
+    "objectID": "outline/Lesson07_outline.html",
+    "href": "outline/Lesson07_outline.html",
+    "title": "Lesson 7: Global and Local Measures of Spatial Autocorrelation",
+    "section": "",
+    "text": "These spatial statistics are well suited for:"
+  },
+  {
+    "objectID": "outline/Lesson07_outline.html#content",
+    "href": "outline/Lesson07_outline.html#content",
+    "title": "Lesson 7: Global and Local Measures of Spatial Autocorrelation",
+    "section": "Content",
+    "text": "Content\n\nWhat is Spatial Autocorrelation\n\nMeasures of Global Spatial Autocorrelation\nMeasures of Global High/Low Clustering\n\nIntroducing Localised Geospatial Analysis\n\nLocal Indicators of Spatial Association (LISA)\n\nCluster and Outlier Analysis\n\nLocal Moran and Local Geary\nMoran scatterplot\nLISA Cluster Map\n\nHot Spot and Cold Spot Areas Analysis\n\nGetis and Ord’s G-statistics\n\nCase Studies"
+  },
+  {
+    "objectID": "outline/Lesson07_outline.html#lesson-slides-and-hands-on-notes",
+    "href": "outline/Lesson07_outline.html#lesson-slides-and-hands-on-notes",
+    "title": "Lesson 7: Global and Local Measures of Spatial Autocorrelation",
+    "section": "Lesson Slides and Hands-on Notes",
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson slides in html and pdf formats\nHandout of Hands-on Exercise 7 in html and in pdf formats."
+  },
+  {
+    "objectID": "outline/Lesson07_outline.html#self-reading-before-meet-up",
+    "href": "outline/Lesson07_outline.html#self-reading-before-meet-up",
+    "title": "Lesson 7: Global and Local Measures of Spatial Autocorrelation",
+    "section": "Self-reading Before Meet-up",
+    "text": "Self-reading Before Meet-up\nTo read before class:\n\nMoran, P. A. P. (1950). “Notes on Continuous Stochastic Phenomena”. Biometrika. 37 (1): 17–23.\nGeary, R.C. (1954) “The Contiguity Ratio and Statistical Mapping”. The Incorporated Statistician, Vol. 5, No. 3, pp. 115-127.\nGetis, A., & Ord, K. (1992). “The Analysis of Spatial Association by Use of Distance Statistics”. Geographical Analysis, 24, 189–206.\nAnselin, L. (1995). “Local indicators of spatial association – LISA”. Geographical Analysis, 27(4): 93-115.\nGetis, A. and Ord, J.K. (1992) “The analysis of spatial association by use of distance statistics”. Geographical Analysis, 24(3): 189-206.\nOrd, J.K. and Getis, A. (2010) “Local spatial autocorrelation statistics: Distributional issues and an application”. Geographical Analysis, 27(4): 286-306.\n\nThese six papers are classics of Global and Local Spatial Autocorrelation. Be warned: All classic papers assume that the readers are academic researchers."
+  },
+  {
+    "objectID": "outline/Lesson07_outline.html#references",
+    "href": "outline/Lesson07_outline.html#references",
+    "title": "Lesson 7: Global and Local Measures of Spatial Autocorrelation",
+    "section": "References",
+    "text": "References\n\nD. A. Griffith (2009) “Spatial autocorrelation”.\nGetis, A., 2010 “B.3 Spatial Autocorrelation” in Fischer, M.M., and Getis, A. 2010 Handbook of Applied Spatial Analysis: Software Tools, Methods and Applications, Springer.\nAnselin, L. (1996) “The Moran scatterplot as an ESDA tool to assess local instability in spatial association”\nGriffith, Daniel (2009) “Modeling spatial autocorrelation in spatial interaction data: empirical evidence from 2002 Germany journey-to-work flows”. Journal of Geographical Systems, Vol.11(2), pp.117-140.\nCelebioglu, F., and Dall’erba, S. (2010) “Spatial disparities across the regions of Turkey: An exploratory spatial data analysis”. The Annals of Regional Science, 45:379–400.\nMack, Z.W.V. and Kam T.S. (2018) “Is There Space for Violence?: A Data-driven Approach to the Exploration of Spatial-Temporal Dimensions of Conflict” Proceedings of 2nd ACM SIGSPATIAL Workshop on Geospatial Humanities (ACM SIGSPATIAL’18). Seattle, Washington, USA, 10 pages.\nTAN, Yong Ying and KAM, Tin Seong (2019). “Exploring and Visualizing Household Electricity Consumption Patterns in Singapore: A Geospatial Analytics Approach”, Information in Contemporary Society: 14th International Conference, iConference 2019, Washington, DC, USA, March 31–April 3, 2019, Proceedings. Pp 785-796.\nSingh A., Pathak P.K., Chauhan R.K., and Pan, W. (2011) “Infant and Child Mortality in India in the Last Two Decades: A Geospatial Analysis”. PLoS ONE 6(11), 1:19."
+  },
+  {
+    "objectID": "outline/Lesson08_outline.html",
+    "href": "outline/Lesson08_outline.html",
+    "title": "Lesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis",
+    "section": "",
+    "text": "Basic concepts of geographic segmentation\nConventional cluster analysis techniques\nApproaches for clustering geographically referenced data\n\nHierarchical clustering with spatial constraints\nMinimum spanning trees"
+  },
+  {
+    "objectID": "outline/Lesson08_outline.html#lesson-slides-and-hands-on-notes",
+    "href": "outline/Lesson08_outline.html#lesson-slides-and-hands-on-notes",
+    "title": "Lesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis",
+    "section": "Lesson Slides and Hands-on Notes",
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson slides in html and pdf formats\nHandout of Hands-on Exercise 8 in html and pdf formats.\n\n\nSelf-reading Before Meet-up\nTo read before class:\n\nAssuncao, R. M., Neves, M.C., Camara, G. and Costa Freitas, C.D. 2006. “Efficient Regionalization Techniques for Socio-Economic Geographical Units Using Minimum Spanning Trees.” International Journal of Geographical Information Science 20: 797–811.\n\n\n\nReferences\n\nRovan, J. and Sambt, J. (2003) “Socio-economic Differences Among Slovenian Municipalities: A Cluster Analysis Approach”, Developments in Applied Statistics, pp. 265-278.\n\nDemeter, T. and Bratucu, G. (2013) “Statistical Analysis Of The EU Countries from A Touristic Point of View”, Bulletin of the Transilvania University of Braşov, 6(55): 121-130.\nBrown, N.S. & Watson, P. (2012) “What can a comprehensive plan really tell us about a region?: A cluster analysis of county comprehensive plans in Idaho”, Western Economics Forum. Pp.22-37.\n\n\n\nAll About R\n\nHierarchical Cluster Analysis.\nskater: A function from spdep package that implements a SKATER procedure for spatial clustering analysis.\nClustGeo: Hierarchical Clustering with Spatial Constraints\n\nIntroduction to Clustgeo\nChavent, M., Kuentz-Simonet, V., Labenne,A. and Saracco, J. 2018. “ClustGeo: an R package for hierarchical clustering with spatial constraints” Computational Statistics, 33: 1799-1822."
+  },
+  {
+    "objectID": "outline/Lesson09_outline.html",
+    "href": "outline/Lesson09_outline.html",
+    "title": "Lesson 9: Geograpgically Weighted Regression",
+    "section": "",
+    "text": "Basic concepts and principles of linear regression\n\nSimple linear regression\nMultiple linear regression\n\nThe spatial stationarity assumption of multiple linear regression.\nIntroducing Geographically Weighted Regression\n\nWeighting functions (kernel)\nWeighting schemes\nBandwidth\nInterpreting and Visualising"
+  },
+  {
+    "objectID": "outline/Lesson09_outline.html#lesson-slides-and-hands-on-notes",
+    "href": "outline/Lesson09_outline.html#lesson-slides-and-hands-on-notes",
+    "title": "Lesson 9: Geograpgically Weighted Regression",
+    "section": "Lesson Slides and Hands-on Notes",
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson slides in html and pdf formats\nHandout of Hands-on Exercise 9 in html and pdf formats."
+  },
+  {
+    "objectID": "outline/Lesson09_outline.html#self-reading-before-meet-up",
+    "href": "outline/Lesson09_outline.html#self-reading-before-meet-up",
+    "title": "Lesson 9: Geograpgically Weighted Regression",
+    "section": "Self-reading Before Meet-up",
+    "text": "Self-reading Before Meet-up\nTo read before class:\n\nBrunsdon, C., Fotheringham, A.S., and Charlton, M. (2002) “Geographically weighted regression: A method for exploring spatial nonstationarity”. Geographical Analysis, 28: 281-289.\nBrunsdon, C., Fotheringham, A.S. and Charlton, M., (1999) “Some Notes on Parametric Significance Tests for Geographically Weighted Regression”. Journal of Regional Science, 39(3), 497-524."
+  },
+  {
+    "objectID": "outline/Lesson09_outline.html#references",
+    "href": "outline/Lesson09_outline.html#references",
+    "title": "Lesson 9: Geograpgically Weighted Regression",
+    "section": "References",
+    "text": "References\n\nMennis, Jeremy (2006) “Mapping the Results of Geographically Weighted Regression”, The Cartographic Journal, Vol.43 (2), p.171-179.\nStephen A. Matthews ; Tse-Chuan Yang (2012) “Mapping the results of local statistics: Using geographically weighted regression”, Demographic Research, Vol.26, p.151-166."
+  },
+  {
+    "objectID": "outline/Lesson09_outline.html#all-about-r",
+    "href": "outline/Lesson09_outline.html#all-about-r",
+    "title": "Lesson 9: Geograpgically Weighted Regression",
+    "section": "All About R",
+    "text": "All About R\n\nGWmodel package, especially\n\nGollini, I et. al. (2015) “GWmodel: An R Package for Exploring Spatial Heterogeneity Using Geographically Weighted Models”, Journal of Statistical Software, Volume 63, Issue 17 and\nBinbin Lu, Paul Harris, Martin Charlton & Chris Brunsdon (2014) “The GWmodel R package: further topics for exploring spatial heterogeneity using geographically weighted models”, Geo-spatial Information Science, 17:2, 85-101, DOI: 10.1080/10095020.2014.917453.\n\nlctools package especially gw() and gwr() related functions.\nspgwr implements of geographically weighted regression methods for exploring possible non-stationarity.\ngwrr: its geographically weighted regression (GWR) models and has tools to diagnose and remediate collinearity in the GWR models. Also fits geographically weighted ridge regression (GWRR) and geographically weighted lasso (GWL) models."
+  },
+  {
+    "objectID": "outline/Lesson10_outline.html",
+    "href": "outline/Lesson10_outline.html",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "",
+    "text": "Basic Concepts of Spatial Interaction Models\nA Family of Gravity Models\n\nUnconstrained\nOrigin constrained\nDestination constrained\nDoubly constrained\n\nStatistical Approach\nInterpreting and Visualising Modelling Results"
+  },
+  {
+    "objectID": "outline/Lesson10_outline.html#lesson-slides-and-hands-on-notes",
+    "href": "outline/Lesson10_outline.html#lesson-slides-and-hands-on-notes",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "Lesson Slides and Hands-on Notes",
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson slides in html and pdf formats\nHandout of Hands-on Exercise 10 in html and pdf formats."
+  },
+  {
+    "objectID": "outline/Lesson10_outline.html#self-reading-before-meet-up",
+    "href": "outline/Lesson10_outline.html#self-reading-before-meet-up",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "Self-reading Before Meet-up",
+    "text": "Self-reading Before Meet-up\nRead before lesson:\n\nKingsley E. Haynes and A. Stewart Fotheringham (2020) Gravity and Spatial Interaction Models, Web Book of Regional Science. Chapter 1 and Sub-section 2.2.\nFarmer, C. and Oshan, T. (2017). “Spatial interaction”. The Geographic Information Science & Technology Body of Knowledge (4th Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2017.4.5 (link is external)\nFlowerdew R, Aitkin M (1982) “A method of fitting the gravity model based on the Poisson distribution”. Journal of Regional Science, 22: 191–202."
+  },
+  {
+    "objectID": "outline/Lesson10_outline.html#reference",
+    "href": "outline/Lesson10_outline.html#reference",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "Reference",
+    "text": "Reference\n\nPavel KLAPKA, et. al. (2013) “The Footfall of Shopping Centre in Olomouc (CZECH REPUBLIC): An Application of The Gravity Model”, Moravian Geographical Reports, Vol 21, pp. 12-26.\n\nYang Yue et. al. (2012) “Exploratory calibration of a spatial interaction model using taxi GPS trajectories”, Computers, Environment and Urban Systems, 36 (2012) 140–153."
+  },
+  {
+    "objectID": "outline/Lesson10_outline.html#all-about-r",
+    "href": "outline/Lesson10_outline.html#all-about-r",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "All About R:",
+    "text": "All About R:\n\nPaul Roback and Julie Legler (2020) Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R, CRC Press. On line version (January 26, 2021). Chapter 4\nNegative Binomial Regression and Poisson Regression from UCLA Institute for Digital Research & Education."
+  },
+  {
+    "objectID": "outline/Lesson11_outline.html",
+    "href": "outline/Lesson11_outline.html",
+    "title": "Lesson 11: Modelling Geographic of Accessibility",
+    "section": "",
+    "text": "Basic Concepts of Geographic Accessibility\nGravitational Law and Distance Decay Function\nIntroducing Potential Models\n\nThe classic model\n\nHansen Potential Accessibility Model\nTwo-step Floating Catchment Area (2SFCA) Method\nKernel Density Two-Step Floating Catchment Area (KD2SFCA) Method\nInterpreting and Visualising Modelling Results"
+  },
+  {
+    "objectID": "outline/Lesson11_outline.html#lesson-slides-and-hands-on-notes",
+    "href": "outline/Lesson11_outline.html#lesson-slides-and-hands-on-notes",
+    "title": "Lesson 11: Modelling Geographic of Accessibility",
+    "section": "Lesson Slides and Hands-on Notes",
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson slides in html and pdf formats\nHandout of Hands-on Exercise 11 in html and pdf formats."
+  },
+  {
+    "objectID": "outline/Lesson11_outline.html#self-reading-before-meet-up",
+    "href": "outline/Lesson11_outline.html#self-reading-before-meet-up",
+    "title": "Lesson 11: Modelling Geographic of Accessibility",
+    "section": "Self-reading Before Meet-up",
+    "text": "Self-reading Before Meet-up\nRead before lesson:\n\nLong, J. (2017). Modelling Accessibility. The Geographic Information Science & Technology Body of Knowledge (3rd Quarter 2017 Edition), John P. Wilson (ed.).\nHansen, W. G. (1959): “How Accessibility Shapes Land Use”. Journal of the American Institute of Planners, 25, 2, p. 73-76.\nLuo, W.; Wang, F. (2003) “Measures of spatial accessibility to health care in a GIS environment: synthesis and a case study in the Chicago region”. Environment and Planning B: Planning and Design. 30 (6): 865–884. doi:10.1068/b29120.\nLuo, W.; Qi, Y. (2009). “An enhanced two-step floating catchment area (E2SFCA) method for measuring spatial accessibility to primary care physicians”. Health & Place. 15 (4): 1100–1107."
+  },
+  {
+    "objectID": "outline/Lesson11_outline.html#reference",
+    "href": "outline/Lesson11_outline.html#reference",
+    "title": "Lesson 11: Modelling Geographic of Accessibility",
+    "section": "Reference",
+    "text": "Reference\n\nSection on “Transportation and Accessibility” in The Geography of Transport Systems.\nRich, D.C. (1980) Potential Models in Human Geography.\nOrpana, T./Lampinen, J. (2003) “Building spatial choice models from aggregate data”. Journal of Regional Science,43, 2, p. 319-347.\nTwo-step floating catchment area method.\nCheng, Gang et. al. (2016) “Spatial difference analysis for accessibility to high level hospitals based on travel time in Shenzhen, China” Habitat International, Vol.53, p.485-494.\nPolzin, Pierre ; Borges, José ; Coelho, António (2014) “An Extended Kernel Density Two-Step Floating Catchment Area Method to Analyze Access to Health Care” Environment and planning. B, Planning & design, Vol.41 (4), p.717-735."
+  },
+  {
+    "objectID": "outline/Lesson11_outline.html#all-about-r",
+    "href": "outline/Lesson11_outline.html#all-about-r",
+    "title": "Lesson 11: Modelling Geographic of Accessibility",
+    "section": "All About R:",
+    "text": "All About R:\n\nSpatialAcc package.\nPotential package."
+  },
+  {
+    "objectID": "outline/workshop.html",
+    "href": "outline/workshop.html",
+    "title": "Workshop on Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "",
+    "text": "Motivation of developing web-enabled applications\n\nBasic principles of web applications\n\nIntroducing R Shiny\n\nGetting to know Shiny\nArchitecture of Shiny\nBuilding block of Shiny app\n\nAdvanced R Shiny\n\nReactive feature of Shiny\nBuild interactive Shiny application by using plotly R\nBuild static, interactive and reactive geovisualisation application by using tmap\n\nManaging R Shiny Project\n\nThe basic development cycle of creating apps\nDebug errors in the codes\nBuild complex Shiny application using module\nImprove the productivity of Shiny applications development\n\nDeploying Shiny Application\n\nDeploy to the cloud: shinyapps.io\nDeploy on-premises (open source): Shiny Server\nDeploy on-premises (commercial): RStudio Connect"
+  },
+  {
+    "objectID": "outline/workshop.html#workshop-slides-and-hands-on-notes",
+    "href": "outline/workshop.html#workshop-slides-and-hands-on-notes",
+    "title": "Workshop on Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "Workshop Slides and Hands-on Notes",
+    "text": "Workshop Slides and Hands-on Notes\n\nIntroducing R Shiny slides in html and pdf formats\nAdvanced R Shiny I slides in html and pdf formats\nManaging R Shiny Project slides in html and pdf formats"
+  },
+  {
+    "objectID": "outline/workshop.html#must-do",
+    "href": "outline/workshop.html#must-do",
+    "title": "Workshop on Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "Must Do!",
+    "text": "Must Do!\n\nView the three parts series of Shiny Tutorial at this link."
+  },
+  {
+    "objectID": "outline/workshop.html#readings",
+    "href": "outline/workshop.html#readings",
+    "title": "Workshop on Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "Readings",
+    "text": "Readings\n\nCore Readings\n\nShiny reference guide at CRAN.\nHadley Wickham (2021) Mastering Shiny, O’Reilly Media. This is a highly recommended book. You can find the online version with this link.\nPaula Moraga (2020) Geospatial Health Data: Modeling and Visualization with R-INLA and Shiny, Chapman & Hall/CRC. Chapter 13, 14 and 15.\n\n\n\nAdditional references\n\nColin Fay, Sébastien Rochette, Vincent Guyader, Cervan Girard (2020), Engineering Production-Grade Shiny Apps, Chapman & Hall. You can find the online version with this link.\nOutstanding User Interfaces with Shiny.\nHow to Build a Shiny Application from Scratch.\n\n\n\nDeploying Shiny Application on shinyapps.io\n\nGetting started with shinyapps.io\nshinyapps.io user guide"
+  },
+  {
+    "objectID": "outline/workshop.html#gallery",
+    "href": "outline/workshop.html#gallery",
+    "title": "Workshop on Building Web-enabled Geospatial Analytics Applications with R Shiny",
+    "section": "Gallery",
+    "text": "Gallery\n\nWinners of the 1st Shiny Contest\nWinners of the 2nd Annual Shiny Contest\nWinners of the 3rd annual Shiny Contest\nShiny Gallery\nFifteen New Zealand government Shiny web apps\nShinyApps Gallery\ndreamRs shiny gallery\nTools for Teaching Quantitative Thinking"
   }
 ]

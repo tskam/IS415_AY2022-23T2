@@ -1,0 +1,51 @@
+---
+title: "Lesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis"
+description: |
+  A new article created using the Distill format.
+date: "`r Sys.Date()`"
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Content
+- Basic concepts of geographic segmentation
+- Conventional cluster analysis techniques
+- Approaches for clustering geographically referenced data
+    - Hierarchical clustering with spatial constraints
+    - Minimum spanning trees
+
+## Lesson Slides and Hands-on Notes 
+
+- Lesson slides in [html](../lesson/Lesson08/Lesson08-GeoKDD.html) and [pdf](../lesson/Lesson08/Lesson08-GeoKDD.pdf) formats
+
+- Handout of Hands-on Exercise 8 in [html](../Hands-on_Ex/Hands-on_Ex08/Hands-on_Ex08-GeoClust.html) and [pdf](../Hands-on_Ex/Hands-on_Ex08/Hands-on_Ex08-GeoClust.pdf) formats.
+
+
+### Self-reading Before Meet-up
+
+To read before class:
+
+- Assuncao, R. M., Neves, M.C., Camara, G. and Costa Freitas, C.D. 2006. “Efficient Regionalization Techniques for Socio-Economic Geographical Units Using Minimum Spanning Trees.” International Journal of Geographical Information Science 20: 797–811.
+
+### References
+- Rovan, J. and Sambt, J. (2003) [“Socio-economic Differences Among Slovenian Municipalities: A Cluster Analysis Approach”](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.126.4636&rep=rep1&type=pdf), Developments in Applied Statistics, pp. 265-278.  
+- Demeter, T.  and Bratucu, G. (2013) [“Statistical Analysis Of The EU Countries from A Touristic Point of View”](https://search-proquest-com.libproxy.smu.edu.sg/docview/1510289237?rfr_id=info%3Axri%2Fsid%3Aprimo), Bulletin of the Transilvania University of Braşov, 6(55): 121-130. 
+- Brown, N.S. & Watson, P. (2012) [“What can a comprehensive plan really tell us about a region?: A cluster analysis of county comprehensive plans in Idaho”](https://ageconsearch.umn.edu/record/176591/files/WEFFall2012v11n2_Brown.pdf), Western Economics Forum. Pp.22-37.  
+
+### All About R
+- [Hierarchical Cluster Analysis](http://uc-r.github.io/hc_clustering). 
+- [skater](https://www.rdocumentation.org/packages/spdep/versions/0.8-1/topics/skater):  A function from spdep package that implements a SKATER procedure for spatial clustering analysis. 
+- [ClustGeo: Hierarchical Clustering with Spatial Constraints](https://cran.r-project.org/web/packages/ClustGeo/index.html)
+    - [Introduction to Clustgeo](https://cran.r-project.org/web/packages/ClustGeo/vignettes/intro_ClustGeo.html)
+    - Chavent, M., Kuentz-Simonet, V., Labenne,A. and Saracco, J. 2018. “ClustGeo: an R package for hierarchical clustering with spatial constraints” *Computational Statistics*, 33: 1799-1822.
+
+
+
+
+

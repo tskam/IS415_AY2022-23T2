@@ -1,0 +1,81 @@
+---
+title: "Workshop on Building Web-enabled Geospatial Analytics Applications with R Shiny"
+description: |
+  In this workshop, you will learn the basic principles and methods of R Shiny.
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Content
+
++ Motivation of developing web-enabled applications
+    + Basic principles of web applications
++ Introducing R Shiny
+    + Getting to know Shiny
+    + Architecture of Shiny
+    + Building block of Shiny app
++ Advanced R Shiny 
+    + Reactive feature of Shiny
+    + Build interactive Shiny application by using plotly R
+    + Build static, interactive and reactive geovisualisation application by using tmap
++ Managing R Shiny Project
+    + The basic development cycle of creating apps
+    + Debug errors in the codes 
+    + Build complex Shiny application using module
+    + Improve the productivity of Shiny applications development
++ Deploying Shiny Application
+    + Deploy to the cloud: [shinyapps.io](https://www.shinyapps.io/?_ga=2.232377500.246763293.1636253702-1670780590.1620114500)
+    + Deploy on-premises (open source): [Shiny Server](https://www.rstudio.com/products/shiny/shiny-server/?_ga=2.164831420.246763293.1636253702-1670780590.1620114500)
+    + Deploy on-premises (commercial): [RStudio Connect](https://www.rstudio.com/products/connect/?_ga=2.232328220.246763293.1636253702-1670780590.1620114500)
+
+## Workshop Slides and Hands-on Notes 
+
++ Introducing R Shiny slides in [html](../workshop/Shiny1/Shiny1.html) and [pdf](../workshop/Shiny1/Shiny1.pdf) formats
+
++ Advanced R Shiny I slides in [html](../workshop/Shiny2/Shiny2.html) and [pdf](../workshop/Shiny2/Shiny2.pdf) formats
+
++ Managing R Shiny Project slides in [html](../workshop/Shiny3/Shiny3.html) and [pdf](../workshop/Shiny3/Shiny3.pdf) formats
+
+## Must Do!
+
++ View the three parts series of Shiny Tutorial at this [link](https://shiny.rstudio.com/tutorial/). 
+
+
+## Readings
+### Core Readings
+
+* [Shiny reference guide](https://cran.r-project.org/web/packages/shiny/shiny.pdf) at CRAN.
+* Hadley Wickham (2021) **Mastering Shiny**,  O’Reilly Media.  This is a highly recommended book.  You can find the online version with this [link](https://mastering-shiny.org/index.html).
+* Paula Moraga (2020) **Geospatial Health Data: Modeling and Visualization with R-INLA and Shiny**, Chapman & Hall/CRC.   Chapter [13](https://www.paulamoraga.com/book-geospatial/sec-shiny.html), [14](https://www.paulamoraga.com/book-geospatial/sec-dashboardswithshiny.html) and [15](https://www.paulamoraga.com/book-geospatial/sec-shinyexample.html).  
+
+
+### Additional references
+
+* Colin Fay, Sébastien Rochette, Vincent Guyader, Cervan Girard (2020), **Engineering Production-Grade Shiny Apps**, Chapman & Hall.  You can find the online version with this [link](https://engineering-shiny.org/).
+* [Outstanding User Interfaces with Shiny](https://unleash-shiny.rinterface.com/index.html).
+* [How to Build a Shiny Application from Scratch](https://bookdown.org/hadrien/how_to_build_a_shiny_app_from_scratch/).
+
+### Deploying Shiny Application on shinyapps.io
+
++ [Getting started with shinyapps.io](https://shiny.rstudio.com/articles/shinyapps.html)
++ [shinyapps.io user guide](https://docs.rstudio.com/shinyapps.io/index.html)
+
+
+## Gallery
+
+* [Winners of the 1st Shiny Contest](https://blog.rstudio.com/2019/04/05/first-shiny-contest-winners/)
+* [Winners of the 2nd Annual Shiny Contest](https://blog.rstudio.com/2020/07/13/winners-of-the-2nd-shiny-contest/)
+* [Winners of the 3rd annual Shiny Contest](https://blog.rstudio.com/2021/06/24/winners-of-the-3rd-annual-shiny-contest/)
+* [Shiny Gallery](https://shiny.rstudio.com/gallery/)
+* [Fifteen New Zealand government Shiny web apps](http://freerangestats.info/blog/2018/05/13/nz-govt-shinyapps)
+* [ShinyApps Gallery](https://shinyapps-recent.appspot.com/recent.html)
+* [dreamRs shiny gallery](http://shinyapps.dreamrs.fr/)
+* [Tools for Teaching Quantitative Thinking](https://r.tquant.eu/)
+
+
+
+

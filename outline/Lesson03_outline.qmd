@@ -1,0 +1,61 @@
+---
+title: "Lesson 3: Thematic and Analytical Mapping"
+description: |
+  In this topic, R objects used to store geospatial data will be discussed.  The discussion will focus on **simple features** and **sf** package.  Other R packages for storing (i.e. sp), transforming (i.e. rgdal) and processing (i.e. rgeos) geospatial data will be discussed briefly too. 
+date: "`r Sys.Date()`"
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Content
+
+- Classification of maps
+- Principles of map design
+- Thematic mapping techniques
+- Analytical mapping techniques
+    - Percentile map
+    - Box map
+    - Standard deviation map
+    - Mapping rates
+
+## Lesson Slides and Hands-on Notes 
+
+- Lesson slides on **Choropleth Mapping and tmap Methods** in [html](../lesson/Lesson03/lesson03a.html) and [pdf](../lesson/Lesson03/Lesson03a.pdf) formats
+- **Hands-on Exercise 3: Choropleth Mapping and tmap Methods** in [html](../Hands-on_Ex/Hands-on_Ex03/Hands-on_Ex03a.html) format.
+- **In-class Exercise 3: Analytical Mapping** in [html](../In-class_Ex/In-class_Ex03/In-class_Ex03.html) and in [pdf](../In-class_Ex/In-class_Ex03/In-class_Ex03.pdf) format.
+
+## References
+### Principles and Methods of Thematic Mapping
+
+- [Proportional Symbols](https://www.axismaps.com/guide/univariate/proportional-symbols/)
+- [Choropleth Maps](https://en.wikipedia.org/wiki/Choropleth_map Choropleth map)
+- [The Basics of Data Classification](https://www.axismaps.com/guide/data/data-classification/)
+- [Choropleth Mapping with Exploratory Data Analysis](https://www.directionsmag.com/article/3363) 
+- Tennekes, M. (2018) “[tmap: Thematic Maps in R](https://www.jstatsoft.org/article/view/v084i06)”, *Journal of Statistical Software*, Vol 84:6, 1-39.
+
+### Additional Reading
+
+- [The Concept of Map Symbols](https://www.yaaka.cc/unit/the-concept-of-map-symbols/) 
+- [Choropleth map](https://en.wikipedia.org/wiki/Choropleth_map) 
+- [Choropleth Maps – A Guide to Data Classification](https://gisgeography.com/choropleth-maps-data-classification/) 
+- [Bivariate Choropleth](https://www.axismaps.com/guide/multivariate/bivariate-choropleth/) 
+- [Value-by-alpha maps](http://andywoodruff.com/blog/value-by-alpha-maps/) 
+- [What to consider when creating choropleth maps](https://blog.datawrapper.de/choroplethmaps/)  
+
+### All About R:
+
+- [tmap](https://github.com/mtennekes/tmap) package especially:
+- [tmap: get started!](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html), 
+- [tmap: version changes](https://cran.r-project.org/web/packages/tmap/vignettes/tmap-changes.html), and 
+- [Chapter 8 Making maps with R](https://geocompr.robinlovelace.net/adv-map.html) of Geocomputation with R.
+
+
+
+
+

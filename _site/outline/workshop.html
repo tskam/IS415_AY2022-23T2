@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2022-12-16">
+<meta name="description" content="In this workshop, you will learn the basic principles and methods of R Shiny.">
+
+<title>IS415 AY2022-23T2 - Workshop on Building Web-enabled Geospatial Analytics Applications with R Shiny</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">IS415 AY2022-23T2</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html">Syllabus</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../lesson.html">Lesson Plan</a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-take-home-exercise" role="button" data-bs-toggle="dropdown" aria-expanded="false">Take-home Exercise</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-take-home-exercise">    
+        <li>
+    <a class="dropdown-item" href="../Take-home_Ex01.html">
+ <span class="dropdown-text">Take-home Exercise 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Take-home_Ex02.html">
+ <span class="dropdown-text">Take-home Exercise 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Take-home_Ex03.html">
+ <span class="dropdown-text">Take-home Exercise 3</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../GAproject.html">Geospatial Analytics Project</a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#content" id="toc-content" class="nav-link active" data-scroll-target="#content">Content</a></li>
+  <li><a href="#workshop-slides-and-hands-on-notes" id="toc-workshop-slides-and-hands-on-notes" class="nav-link" data-scroll-target="#workshop-slides-and-hands-on-notes">Workshop Slides and Hands-on Notes</a></li>
+  <li><a href="#must-do" id="toc-must-do" class="nav-link" data-scroll-target="#must-do">Must Do!</a></li>
+  <li><a href="#readings" id="toc-readings" class="nav-link" data-scroll-target="#readings">Readings</a>
+  <ul class="collapse">
+  <li><a href="#core-readings" id="toc-core-readings" class="nav-link" data-scroll-target="#core-readings">Core Readings</a></li>
+  <li><a href="#additional-references" id="toc-additional-references" class="nav-link" data-scroll-target="#additional-references">Additional references</a></li>
+  <li><a href="#deploying-shiny-application-on-shinyapps.io" id="toc-deploying-shiny-application-on-shinyapps.io" class="nav-link" data-scroll-target="#deploying-shiny-application-on-shinyapps.io">Deploying Shiny Application on shinyapps.io</a></li>
+  </ul></li>
+  <li><a href="#gallery" id="toc-gallery" class="nav-link" data-scroll-target="#gallery">Gallery</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Workshop on Building Web-enabled Geospatial Analytics Applications with R Shiny</h1>
+</div>
+
+<div>
+  <div class="description">
+    <p>In this workshop, you will learn the basic principles and methods of R Shiny.</p>
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 16, 2022</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<section id="content" class="level2">
+<h2 class="anchored" data-anchor-id="content">Content</h2>
+<ul>
+<li>Motivation of developing web-enabled applications
+<ul>
+<li>Basic principles of web applications</li>
+</ul></li>
+<li>Introducing R Shiny
+<ul>
+<li>Getting to know Shiny</li>
+<li>Architecture of Shiny</li>
+<li>Building block of Shiny app</li>
+</ul></li>
+<li>Advanced R Shiny
+<ul>
+<li>Reactive feature of Shiny</li>
+<li>Build interactive Shiny application by using plotly R</li>
+<li>Build static, interactive and reactive geovisualisation application by using tmap</li>
+</ul></li>
+<li>Managing R Shiny Project
+<ul>
+<li>The basic development cycle of creating apps</li>
+<li>Debug errors in the codes</li>
+<li>Build complex Shiny application using module</li>
+<li>Improve the productivity of Shiny applications development</li>
+</ul></li>
+<li>Deploying Shiny Application
+<ul>
+<li>Deploy to the cloud: <a href="https://www.shinyapps.io/?_ga=2.232377500.246763293.1636253702-1670780590.1620114500">shinyapps.io</a></li>
+<li>Deploy on-premises (open source): <a href="https://www.rstudio.com/products/shiny/shiny-server/?_ga=2.164831420.246763293.1636253702-1670780590.1620114500">Shiny Server</a></li>
+<li>Deploy on-premises (commercial): <a href="https://www.rstudio.com/products/connect/?_ga=2.232328220.246763293.1636253702-1670780590.1620114500">RStudio Connect</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="workshop-slides-and-hands-on-notes" class="level2">
+<h2 class="anchored" data-anchor-id="workshop-slides-and-hands-on-notes">Workshop Slides and Hands-on Notes</h2>
+<ul>
+<li><p>Introducing R Shiny slides in <a href="../workshop/Shiny1/Shiny1.html">html</a> and <a href="../workshop/Shiny1/Shiny1.pdf">pdf</a> formats</p></li>
+<li><p>Advanced R Shiny I slides in <a href="../workshop/Shiny2/Shiny2.html">html</a> and <a href="../workshop/Shiny2/Shiny2.pdf">pdf</a> formats</p></li>
+<li><p>Managing R Shiny Project slides in <a href="../workshop/Shiny3/Shiny3.html">html</a> and <a href="../workshop/Shiny3/Shiny3.pdf">pdf</a> formats</p></li>
+</ul>
+</section>
+<section id="must-do" class="level2">
+<h2 class="anchored" data-anchor-id="must-do">Must Do!</h2>
+<ul>
+<li>View the three parts series of Shiny Tutorial at this <a href="https://shiny.rstudio.com/tutorial/">link</a>.</li>
+</ul>
+</section>
+<section id="readings" class="level2">
+<h2 class="anchored" data-anchor-id="readings">Readings</h2>
+<section id="core-readings" class="level3">
+<h3 class="anchored" data-anchor-id="core-readings">Core Readings</h3>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/shiny/shiny.pdf">Shiny reference guide</a> at CRAN.</li>
+<li>Hadley Wickham (2021) <strong>Mastering Shiny</strong>, O’Reilly Media. This is a highly recommended book. You can find the online version with this <a href="https://mastering-shiny.org/index.html">link</a>.</li>
+<li>Paula Moraga (2020) <strong>Geospatial Health Data: Modeling and Visualization with R-INLA and Shiny</strong>, Chapman &amp; Hall/CRC. Chapter <a href="https://www.paulamoraga.com/book-geospatial/sec-shiny.html">13</a>, <a href="https://www.paulamoraga.com/book-geospatial/sec-dashboardswithshiny.html">14</a> and <a href="https://www.paulamoraga.com/book-geospatial/sec-shinyexample.html">15</a>.</li>
+</ul>
+</section>
+<section id="additional-references" class="level3">
+<h3 class="anchored" data-anchor-id="additional-references">Additional references</h3>
+<ul>
+<li>Colin Fay, Sébastien Rochette, Vincent Guyader, Cervan Girard (2020), <strong>Engineering Production-Grade Shiny Apps</strong>, Chapman &amp; Hall. You can find the online version with this <a href="https://engineering-shiny.org/">link</a>.</li>
+<li><a href="https://unleash-shiny.rinterface.com/index.html">Outstanding User Interfaces with Shiny</a>.</li>
+<li><a href="https://bookdown.org/hadrien/how_to_build_a_shiny_app_from_scratch/">How to Build a Shiny Application from Scratch</a>.</li>
+</ul>
+</section>
+<section id="deploying-shiny-application-on-shinyapps.io" class="level3">
+<h3 class="anchored" data-anchor-id="deploying-shiny-application-on-shinyapps.io">Deploying Shiny Application on shinyapps.io</h3>
+<ul>
+<li><a href="https://shiny.rstudio.com/articles/shinyapps.html">Getting started with shinyapps.io</a></li>
+<li><a href="https://docs.rstudio.com/shinyapps.io/index.html">shinyapps.io user guide</a></li>
+</ul>
+</section>
+</section>
+<section id="gallery" class="level2">
+<h2 class="anchored" data-anchor-id="gallery">Gallery</h2>
+<ul>
+<li><a href="https://blog.rstudio.com/2019/04/05/first-shiny-contest-winners/">Winners of the 1st Shiny Contest</a></li>
+<li><a href="https://blog.rstudio.com/2020/07/13/winners-of-the-2nd-shiny-contest/">Winners of the 2nd Annual Shiny Contest</a></li>
+<li><a href="https://blog.rstudio.com/2021/06/24/winners-of-the-3rd-annual-shiny-contest/">Winners of the 3rd annual Shiny Contest</a></li>
+<li><a href="https://shiny.rstudio.com/gallery/">Shiny Gallery</a></li>
+<li><a href="http://freerangestats.info/blog/2018/05/13/nz-govt-shinyapps">Fifteen New Zealand government Shiny web apps</a></li>
+<li><a href="https://shinyapps-recent.appspot.com/recent.html">ShinyApps Gallery</a></li>
+<li><a href="http://shinyapps.dreamrs.fr/">dreamRs shiny gallery</a></li>
+<li><a href="https://r.tquant.eu/">Tools for Teaching Quantitative Thinking</a></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

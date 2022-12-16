@@ -1,0 +1,78 @@
+---
+title: "Lesson 2: Geospatial Data Handling and Wrangling"
+date: "`r Sys.Date()`"
+format: html
+toc: true
+---
+
+In this lesson, R objects used to store geospatial data will be discussed.  The discussion will focus on **simple features** and **sf** package.  Other R packages for storing (i.e. sp), transforming (i.e. rgdal) and processing (i.e. rgeos) geospatial data will be discussed briefly too. 
+
+## Content
+
+Lesson slides in [html](../lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html)
+
+-   An overview of Geospatial Data Models
+    -   Vector and Raster data models
+-   Map Projection and Georeferencing
+-   Geocoding
+-   Classes of Spatial Data in R
+    -   Spatial classes
+    -   Simple features class
+-   R packages for Handling Spatial Data
+    -   sf
+    -   star
+
+## Hands-on Exercise
+
+Hands-on Exercise handout in [html](../Hands-on_Ex/Hands-on_Ex02/Hands-on_Ex02.html) format.
+
+## Reference
+
+**Must read**
+
+-   [Chapter 2 Feature Representation](https://mgimond.github.io/Spatial/feature-representation.html) of Intro to GIS and Spatial Analysis.
+-   [Chapter 9 Coordinate Systems](https://mgimond.github.io/Spatial/coordinate-systems.html) of Intro to GIS and Spatial Analysis.
+-   [Geocoding](https://en.wikipedia.org/wiki/Geocoding).
+-   Pebesma, Edzer. (2018) ["Simple Features for R: Standardized Support for Spatial Vector Data."](https://journal.r-project.org/archive/2018/RJ-2018-009/RJ-2018-009.pdf) *The R Journal*, Vol. 10/1, 439:446.
+
+**Additional readings**
+
+-   Maling, D. H. 1992. Coordinate Systems and Map Projections. 2nd ed. Oxford ; New York: Pergamon Press.
+-   Pebesma, Edzer, Thomas Mailund, and James Hiebert. 2016. ["Measurement Units in R."](https://cran.r-project.org/web/packages/units/vignettes/measurement_units_in_R.html) *The R Journal* 8 (2): 486--94.
+-   Andreas Hackeloeer, Klaas Klasing, Jukka M. Krisp & Liqiu Meng (2014) "[Georeferencing: a review of methods and applications](https://www.tandfonline.com/doi/pdf/10.1080/19475683.2013.868826?needAccess=true)", Annals of GIS, 20:1, 61-69, DOI:10.1080/19475683.2013.86882.
+-   Ela Dramowicz (2004) "[Three Standard Geocoding Methods](https://web.archive.org/web/20070601210655/http:/www.directionsmag.com/article.php?article_id=670&trv=1)", *Directions Magazine*.
+
+## All About R:
+
+-   [sf](https://r-spatial.github.io/sf/) package
+    -   
+
+        1.  [Simple Features for R](https://r-spatial.github.io/sf/articles/sf1.html)
+
+    -   
+
+        2.  [Reading, Writing and Converting Simple Features](https://r-spatial.github.io/sf/articles/sf2.html)
+
+    -   
+
+        3.  [Manipulating Simple Feature Geometries](https://r-spatial.github.io/sf/articles/sf3.html)
+
+    -   
+
+        4.  [Manipulating Simple Features](https://r-spatial.github.io/sf/articles/sf4.html)
+
+    -   
+
+        5.  [Plotting Simple Features](https://r-spatial.github.io/sf/articles/sf5.html)
+
+    -   
+
+        6.  [Miscellaneous](https://r-spatial.github.io/sf/articles/sf6.html)
+-   [Stars](https://r-spatial.github.io/stars/index.html) package. To get started, refer to section
+    -   [6.1: A four-dimensional data cube](https://keen-swartz-3146c4.netlify.app/datacube.html#a-four-dimensional-data-cube)
+    -   [6.2: Dimensions, attributes, and support](https://keen-swartz-3146c4.netlify.app/datacube.html#dimensions-attributes-and-support)
+    -   [6.3 Operations on data cubes](https://keen-swartz-3146c4.netlify.app/datacube.html#dcoperations)
+    -   [7.4: Vector data cube examples](https://keen-swartz-3146c4.netlify.app/sf.html#vector-data-cube-examples) of Spatial Data Science.\
+-   Pebesma, Edzer, and Roger Bivand. 2018. [sp](https://CRAN.R-project.org/package=sp): Classes and Methods for Spatial Data.
+-   Bivand, Roger, Tim Keitt, and Barry Rowlingson. 2018. [Rgdal](https://CRAN.R-project.org/package=rgdal): Bindings for the 'Geospatial' Data Abstraction Library.
+-   Bivand, Roger, and Colin Rundel. 2018. [Rgeos](https://CRAN.R-project.org/package=rgeos): Interface to Geometry Engine - Open Source ('Geos').

@@ -1,0 +1,74 @@
+---
+title: "Lesson 4: Spatial Point Patterns Analysis"
+description: |
+  Spatial Point Pattern Analysis is the evaluation of the pattern, or distribution, of a set of points on a surface. It can refer to the actual spatial or temporal location of these points or also include data from point sources. It is one of the most fundamental concepts in geography and spatial analysis.
+date: "`r Sys.Date()`"
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Content
+
+- Introducing Spatial Point Patterns
+    - The basic concepts of spatial point patterns
+    - Spatial Point Patterns in real world
+- 1st Order Spatial Point Patterns Analysis
+    - Quadrat analysis
+    - Kernel density estimation
+- 2nd Order Spatial Point Patterns Analysis
+    - Nearest Neighbour Index
+    - G-function
+    - F-function
+    - K-function
+    - L-function
+
+## Lesson Slides and Hands-on Notes 
+
+* Slides in [html](../lesson/Lesson04/Lesson04-SPPA.html) and [pdf](../lesson/Lesson04/Lesson04-SPPA.pdf) formats
+* Handout of Hands-on Exercise 4 in [html](../Hands-on_Ex/Hands-on_Ex04/Hands-on_Ex04-SPPA.html) and [pdf](../Hands-on_Ex/Hands-on_Ex04/Hands-on_Ex04-SPPA.pdf) formats.
+
+### Self-reading Before Meet-up
+
+- [Chapter 7 Spatial Point Pattern Analysis](https://link-springer-com.libproxy.smu.edu.sg/chapter/10.1007/978-1-4614-7618-4_7) of Roger S. Bivand, Edzer Pebesma and Virgilio Gómez-Rubio (2013) **Applied Spatial Data Analysis with R** (2nd Edition), Springer.
+- [Chapter 4: Spatial distribution of points](https://www.insee.fr/en/statistiques/fichier/3635545/imet131-h-chapitre-4.pdf) of Floch, J.M., Marcon, E. and Puech, F. (2018) **Handbook of Spatial Analysis: Theory and Application with R**.
+
+
+### Enrichment Resources
+Prof. Luc Anselin on point pattern analysis (YouTube):
+
+- [Point Pattern Analysis Concepts](https://www.youtube.com/watch?v=BN94XXT6Io4) 
+- [Point Pattern Analysis: Clustered, Regular and Dispersed Patterns](https://www.youtube.com/watch?v=FdcTgcOdAUg) 
+- [Point Pattern Analysis: Nearest Neighbor Statistics](•	Point Pattern Analysis: Nearest Neighbor Statistics)
+- [Point Pattern Analysis: Quadrat Counts](https://www.youtube.com/watch?v=Ww95WKxUoZk)
+- [Point Pattern Analysis: F and J Functions](https://www.youtube.com/watch?v=uNpbf7Y6WM8) 
+- [Point Pattern Analysis: K, L and Kd Functions](https://www.youtube.com/watch?v=oT_jMTkkld8) 
+
+## References
+
+- O’Sullivan, D., and Unwin, D. (2010) Geographic Information Analysis, Second Edition. John Wiley & Sons Inc., New Jersey, Canada. Chapter 5-6. 
+- Baddeley A.,  Rubak E. and Turner R. (2015) Spatial Point Patterns: Methodology and Applications with R, Chapman and Hall/CRC.
+- Chapter 11 Point Pattern Analysis of Intro to GIS and Spatial Analysis. Section 11.2, 11.3, 11.3.1 and 11.4
+•	Ripley’s K-function. 
+
+### Applications
+
+- Naveen Donthu and Roland T. Rust (1989) “Estimating Geographic Customer Densities Using Kernel Density Estimation”, Marketing Science, Vol. 8, No. 2, pp. 191-203.
+- Joseph Wartman and Nicholas E. Malasavage (2010). “Spatial Analysis for Identifying Concentrations of Urban Damage” in Methods and Techniques in Urban Engineering, Armando Carlos de Pina Filho and Aloisio Carlos dePina (Ed.), ISBN: 978-953-307-096-4, InTech, Available from: http://www.intechopen.com/books/methods-and-techniques-in-urban-engineering/spatial-analysis-for-identifying-concentrations-of-urban-damage.
+- Giuseppe Borruso and Andrea Porceddu (2009) “A Tale of Two Cities: Density Analysis of CBD on Two Midsize Urban Areas in Northeastern Italy” in Murgante, Beniamino; Borruso, Giuseppe & Lapucci, Alessandra (2009) Studies in Computational Intelligence, Geocomputation and Urban Planning, pp.37-56.
+- Kang, Youngok ; Cho, Nahye ; Son, Serin; Chen, Peng (2018) “Spatiotemporal characteristics of elderly population’s traffic accidents in Seoul using space-time cube and space-time kernel density estimation”, PloS one, 2018, Vol.13 (5).
+
+## All About R
+
+- [spatstat](https://cran.r-project.org/web/packages/spatstat/index.html) at R Cran 
+- [spatstat](https://spatstat.org/resources.html) resource.
+
+
+
+
+

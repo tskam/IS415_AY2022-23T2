@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2022-12-16">
+
+<title>IS415 AY2022-23T2 - Lesson 2: Geospatial Data Handling and Wrangling</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">IS415 AY2022-23T2</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html">Syllabus</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../lesson.html">Lesson Plan</a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-take-home-exercise" role="button" data-bs-toggle="dropdown" aria-expanded="false">Take-home Exercise</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-take-home-exercise">    
+        <li>
+    <a class="dropdown-item" href="../Take-home_Ex01.html">
+ <span class="dropdown-text">Take-home Exercise 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Take-home_Ex02.html">
+ <span class="dropdown-text">Take-home Exercise 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Take-home_Ex03.html">
+ <span class="dropdown-text">Take-home Exercise 3</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../GAproject.html">Geospatial Analytics Project</a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#content" id="toc-content" class="nav-link active" data-scroll-target="#content">Content</a></li>
+  <li><a href="#hands-on-exercise" id="toc-hands-on-exercise" class="nav-link" data-scroll-target="#hands-on-exercise">Hands-on Exercise</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">Reference</a></li>
+  <li><a href="#all-about-r" id="toc-all-about-r" class="nav-link" data-scroll-target="#all-about-r">All About R:</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lesson 2: Geospatial Data Handling and Wrangling</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 16, 2022</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<p>In this lesson, R objects used to store geospatial data will be discussed. The discussion will focus on <strong>simple features</strong> and <strong>sf</strong> package. Other R packages for storing (i.e.&nbsp;sp), transforming (i.e.&nbsp;rgdal) and processing (i.e.&nbsp;rgeos) geospatial data will be discussed briefly too.</p>
+<section id="content" class="level2">
+<h2 class="anchored" data-anchor-id="content">Content</h2>
+<p>Lesson slides in <a href="../lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html">html</a></p>
+<ul>
+<li>An overview of Geospatial Data Models
+<ul>
+<li>Vector and Raster data models</li>
+</ul></li>
+<li>Map Projection and Georeferencing</li>
+<li>Geocoding</li>
+<li>Classes of Spatial Data in R
+<ul>
+<li>Spatial classes</li>
+<li>Simple features class</li>
+</ul></li>
+<li>R packages for Handling Spatial Data
+<ul>
+<li>sf</li>
+<li>star</li>
+</ul></li>
+</ul>
+</section>
+<section id="hands-on-exercise" class="level2">
+<h2 class="anchored" data-anchor-id="hands-on-exercise">Hands-on Exercise</h2>
+<p>Hands-on Exercise handout in <a href="../Hands-on_Ex/Hands-on_Ex02/Hands-on_Ex02.html">html</a> format.</p>
+</section>
+<section id="reference" class="level2">
+<h2 class="anchored" data-anchor-id="reference">Reference</h2>
+<p><strong>Must read</strong></p>
+<ul>
+<li><a href="https://mgimond.github.io/Spatial/feature-representation.html">Chapter 2 Feature Representation</a> of Intro to GIS and Spatial Analysis.</li>
+<li><a href="https://mgimond.github.io/Spatial/coordinate-systems.html">Chapter 9 Coordinate Systems</a> of Intro to GIS and Spatial Analysis.</li>
+<li><a href="https://en.wikipedia.org/wiki/Geocoding">Geocoding</a>.</li>
+<li>Pebesma, Edzer. (2018) <a href="https://journal.r-project.org/archive/2018/RJ-2018-009/RJ-2018-009.pdf">“Simple Features for R: Standardized Support for Spatial Vector Data.”</a> <em>The R Journal</em>, Vol. 10/1, 439:446.</li>
+</ul>
+<p><strong>Additional readings</strong></p>
+<ul>
+<li>Maling, D. H. 1992. Coordinate Systems and Map Projections. 2nd ed.&nbsp;Oxford ; New York: Pergamon Press.</li>
+<li>Pebesma, Edzer, Thomas Mailund, and James Hiebert. 2016. <a href="https://cran.r-project.org/web/packages/units/vignettes/measurement_units_in_R.html">“Measurement Units in R.”</a> <em>The R Journal</em> 8 (2): 486–94.</li>
+<li>Andreas Hackeloeer, Klaas Klasing, Jukka M. Krisp &amp; Liqiu Meng (2014) “<a href="https://www.tandfonline.com/doi/pdf/10.1080/19475683.2013.868826?needAccess=true">Georeferencing: a review of methods and applications</a>”, Annals of GIS, 20:1, 61-69, DOI:10.1080/19475683.2013.86882.</li>
+<li>Ela Dramowicz (2004) “<a href="https://web.archive.org/web/20070601210655/http:/www.directionsmag.com/article.php?article_id=670&amp;trv=1">Three Standard Geocoding Methods</a>”, <em>Directions Magazine</em>.</li>
+</ul>
+</section>
+<section id="all-about-r" class="level2">
+<h2 class="anchored" data-anchor-id="all-about-r">All About R:</h2>
+<ul>
+<li><h2 id="sf-package" class="anchored"><a href="https://r-spatial.github.io/sf/">sf</a> package</h2>
+<pre><code>1.  [Simple Features for R](https://r-spatial.github.io/sf/articles/sf1.html)</code></pre>
+<ul>
+<li><ol start="2" type="1">
+<li><a href="https://r-spatial.github.io/sf/articles/sf2.html">Reading, Writing and Converting Simple Features</a></li>
+</ol></li>
+<li><ol start="3" type="1">
+<li><a href="https://r-spatial.github.io/sf/articles/sf3.html">Manipulating Simple Feature Geometries</a></li>
+</ol></li>
+<li><ol start="4" type="1">
+<li><a href="https://r-spatial.github.io/sf/articles/sf4.html">Manipulating Simple Features</a></li>
+</ol></li>
+<li><ol start="5" type="1">
+<li><a href="https://r-spatial.github.io/sf/articles/sf5.html">Plotting Simple Features</a></li>
+</ol></li>
+<li><ol start="6" type="1">
+<li><a href="https://r-spatial.github.io/sf/articles/sf6.html">Miscellaneous</a></li>
+</ol></li>
+</ul></li>
+<li><a href="https://r-spatial.github.io/stars/index.html">Stars</a> package. To get started, refer to section
+<ul>
+<li><a href="https://keen-swartz-3146c4.netlify.app/datacube.html#a-four-dimensional-data-cube">6.1: A four-dimensional data cube</a></li>
+<li><a href="https://keen-swartz-3146c4.netlify.app/datacube.html#dimensions-attributes-and-support">6.2: Dimensions, attributes, and support</a></li>
+<li><a href="https://keen-swartz-3146c4.netlify.app/datacube.html#dcoperations">6.3 Operations on data cubes</a></li>
+<li><a href="https://keen-swartz-3146c4.netlify.app/sf.html#vector-data-cube-examples">7.4: Vector data cube examples</a> of Spatial Data Science.<br>
+</li>
+</ul></li>
+<li>Pebesma, Edzer, and Roger Bivand. 2018. <a href="https://CRAN.R-project.org/package=sp">sp</a>: Classes and Methods for Spatial Data.</li>
+<li>Bivand, Roger, Tim Keitt, and Barry Rowlingson. 2018. <a href="https://CRAN.R-project.org/package=rgdal">Rgdal</a>: Bindings for the ‘Geospatial’ Data Abstraction Library.</li>
+<li>Bivand, Roger, and Colin Rundel. 2018. <a href="https://CRAN.R-project.org/package=rgeos">Rgeos</a>: Interface to Geometry Engine - Open Source (‘Geos’).</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

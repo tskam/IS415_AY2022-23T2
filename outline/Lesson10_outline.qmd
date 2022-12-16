@@ -1,0 +1,55 @@
+---
+title: "Lesson 10: Spatial Interaction Models"
+description: |
+  In this lesson, you will learn the basic concepts and methods of Spatial Interaction Models.
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Content
++ Basic Concepts of Spatial Interaction Models
++ A Family of Gravity Models
+  + Unconstrained
+  + Origin constrained
+  + Destination constrained
+  + Doubly constrained
++ Statistical Approach 
++ Interpreting and Visualising Modelling Results
+
+## Lesson Slides and Hands-on Notes 
+
+- Lesson slides in [html](../lesson/Lesson10/Lesson10-SIMs.html) and [pdf](../lesson/Lesson10/Lesson10-SIMs.pdf) formats
+
+- Handout of Hands-on Exercise 10 in [html](../Hands-on_Ex/Hands-on_Ex10/Hands-on_Ex10-SIMs.html) and [pdf](../Hands-on_Ex/Hands-on_Ex10/Hands-on_Ex10-SIMs.pdf) formats.
+
+
+## Self-reading Before Meet-up
+
+Read before lesson:
+
++ Kingsley E. Haynes and A. Stewart Fotheringham (2020) [**Gravity and Spatial Interaction Models**](https://researchrepository.wvu.edu/rri-web-book/16/), Web Book of Regional Science. Chapter 1 and Sub-section 2.2.
+
++ Farmer, C. and Oshan, T. (2017). ["Spatial interaction"](https://gistbok.ucgis.org/bok-topics/spatial-interaction). **The Geographic Information Science & Technology Body of Knowledge** (4th Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2017.4.5 (link is external)
+
++ Flowerdew R, Aitkin M (1982) ["A method of fitting the gravity model based on the Poisson distribution"](https://www.academia.edu/38321611/A_Method_of_Fitting_the_Gravity_Model_Based_on_the_Poisson_Distribution_). *Journal of Regional Science*, 22: 191–202.
+
+## Reference
+
++ Pavel KLAPKA, et. al. (2013) ["The Footfall of Shopping Centre in Olomouc (CZECH REPUBLIC): An Application of The Gravity Model"](https://sciendo.com/de/article/10.2478/mgr-2013-0013), *Moravian Geographical Reports*, Vol 21, pp. 12-26.    
++ Yang Yue et. al. (2012) "Exploratory calibration of a spatial interaction model using taxi GPS trajectories", *Computers, Environment and Urban Systems*, 36 (2012) 140–153.
+
+
+## All About R:
+
++ Paul Roback and Julie Legler (2020) **Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R**, CRC Press.  On line version (January 26, 2021). [Chapter 4](https://bookdown.org/roback/bookdown-BeyondMLR/ch-poissonreg.html)
+
++ [Negative Binomial Regression](https://stats.idre.ucla.edu/r/dae/negative-binomial-regression/) and [Poisson Regression](https://stats.idre.ucla.edu/r/dae/poisson-regression/) from UCLA Institute for Digital Research & Education.  
+
+
+
