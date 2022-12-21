@@ -4,6 +4,7 @@ project:
 website:
   title: "IS415 AY2022-23T2"
   navbar:
+    background: "#e0ae24"
     left:
     - text: "Syllabus"
       href: syllabus.html
