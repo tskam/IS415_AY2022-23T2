@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2022-12-22">
+<meta name="description" content="This page provides links to useful R packages and references.">
 
-<title>IS415 AY2022-23T2 - Lesson 3: Thematic and Analytical Mapping</title>
+<title>IS415 AY2022-23T2 - All About Quarto</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,22 +20,22 @@ ul.task-list{list-style: none;}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -56,7 +57,7 @@ ul.task-list{list-style: none;}
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -65,7 +66,7 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="../index.html">
+      <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">IS415 AY2022-23T2</span>
   </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -74,59 +75,59 @@ ul.task-list{list-style: none;}
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../syllabus.html">Syllabus</a>
+    <a class="nav-link" href="./syllabus.html">Syllabus</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../lesson.html">Lesson Plan</a>
+    <a class="nav-link" href="./lesson.html">Lesson Plan</a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-take-home-exercise" role="button" data-bs-toggle="dropdown" aria-expanded="false">Take-home Exercise</a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-take-home-exercise">    
         <li>
-    <a class="dropdown-item" href="../Take-home_Ex01.html">
+    <a class="dropdown-item" href="./Take-home_Ex01.html">
  <span class="dropdown-text">Take-home Exercise 1</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../Take-home_Ex02.html">
+    <a class="dropdown-item" href="./Take-home_Ex02.html">
  <span class="dropdown-text">Take-home Exercise 2</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../Take-home_Ex03.html">
+    <a class="dropdown-item" href="./Take-home_Ex03.html">
  <span class="dropdown-text">Take-home Exercise 3</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../GAproject.html">Geospatial Analytics Project</a>
+    <a class="nav-link" href="./GAproject.html">Geospatial Analytics Project</a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-shiny-workshop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shiny Workshop</a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-shiny-workshop">    
         <li>
-    <a class="dropdown-item" href="../ShinyWorkshop/Shiny1/Shiny1.html">
+    <a class="dropdown-item" href="./ShinyWorkshop/Shiny1/Shiny1.html">
  <span class="dropdown-text">R Shiny basic</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../ShinyWorkshop/Shiny2/Shiny2.html">
+    <a class="dropdown-item" href="./ShinyWorkshop/Shiny2/Shiny2.html">
  <span class="dropdown-text">Beyond the basic</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../ShinyWorkshop/Shiny3/Shiny3.html">
+    <a class="dropdown-item" href="./ShinyWorkshop/Shiny3/Shiny3.html">
  <span class="dropdown-text">Customising Shiny</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../ShinyResources.html">
+    <a class="dropdown-item" href="./ShinyResources.html">
  <span class="dropdown-text">Shiny Resources</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../quarto.html">All About Quarto</a>
+    <a class="nav-link" href="./quarto.html">All About Quarto</a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html">Home</a>
+    <a class="nav-link" href="./index.html">Home</a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -143,14 +144,9 @@ ul.task-list{list-style: none;}
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#content" id="toc-content" class="nav-link active" data-scroll-target="#content">Content</a></li>
-  <li><a href="#hands-on-exercise" id="toc-hands-on-exercise" class="nav-link" data-scroll-target="#hands-on-exercise">Hands-on Exercise</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a>
-  <ul class="collapse">
-  <li><a href="#principles-and-methods-of-thematic-mapping" id="toc-principles-and-methods-of-thematic-mapping" class="nav-link" data-scroll-target="#principles-and-methods-of-thematic-mapping">Principles and Methods of Thematic Mapping</a></li>
-  <li><a href="#additional-reading" id="toc-additional-reading" class="nav-link" data-scroll-target="#additional-reading">Additional Reading</a></li>
-  <li><a href="#all-about-r" id="toc-all-about-r" class="nav-link" data-scroll-target="#all-about-r">All About R:</a></li>
-  </ul></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#create-websites-and-blogs" id="toc-create-websites-and-blogs" class="nav-link" data-scroll-target="#create-websites-and-blogs">Create websites and blogs</a></li>
+  <li><a href="#authoring-guide" id="toc-authoring-guide" class="nav-link" data-scroll-target="#authoring-guide">Authoring Guide</a></li>
   </ul>
 </nav>
     </div>
@@ -159,9 +155,14 @@ ul.task-list{list-style: none;}
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lesson 3: Thematic and Analytical Mapping</h1>
+<h1 class="title">All About Quarto</h1>
 </div>
 
+<div>
+  <div class="description">
+    <p>This page provides links to useful R packages and references.</p>
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -179,62 +180,36 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<p>This lesson aims to share with you the basic principles and methods of Thematic Mapping and Cartography Design. You will also gain hands on experience on using <a href="https://r-tmap.github.io/tmap/">tmap</a>, an R package specially design for plotting cartographic quality maps.</p>
-<section id="content" class="level2">
-<h2 class="anchored" data-anchor-id="content">Content</h2>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <ul>
-<li>Classification of maps</li>
-<li>Principles of map design</li>
-<li>Thematic mapping techniques</li>
-<li>Analytical mapping techniques
-<ul>
-<li>Percentile map</li>
-<li>Box map</li>
-<li>Standard deviation map</li>
-<li>Mapping rates</li>
-</ul></li>
+<li><a href="https://quarto.org/docs/get-started/">Getting Started</a></li>
+<li><a href="https://quarto.org/docs/tools/rstudio.html">RStudio IDE</a></li>
+<li><a href="https://quarto.org/docs/computations/r.html">Using R</a></li>
+<li><a href="https://quarto.org/docs/output-formats/html-basics.html">HTML Basics</a></li>
 </ul>
 </section>
-<section id="hands-on-exercise" class="level2">
-<h2 class="anchored" data-anchor-id="hands-on-exercise">Hands-on Exercise</h2>
+<section id="create-websites-and-blogs" class="level2">
+<h2 class="anchored" data-anchor-id="create-websites-and-blogs">Create websites and blogs</h2>
 <ul>
-<li><a href="https://r4gdsa.netlify.app/chap02.html">Choropleth Mapping with R: tmap Methods</a></li>
+<li><a href="https://quarto.org/docs/websites/">Creating a Website</a></li>
+<li><a href="https://quarto.org/docs/websites/website-navigation.html">Website Navigation</a></li>
+<li><a href="https://quarto.org/docs/websites/website-listings.html">Document Listings</a></li>
 </ul>
 </section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
-<section id="principles-and-methods-of-thematic-mapping" class="level3">
-<h3 class="anchored" data-anchor-id="principles-and-methods-of-thematic-mapping">Principles and Methods of Thematic Mapping</h3>
+<section id="authoring-guide" class="level2">
+<h2 class="anchored" data-anchor-id="authoring-guide">Authoring Guide</h2>
 <ul>
-<li><a href="https://www.axismaps.com/guide/univariate/proportional-symbols/">Proportional Symbols</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Choropleth_map%20Choropleth%20map">Choropleth Maps</a></li>
-<li><a href="https://www.axismaps.com/guide/data/data-classification/">The Basics of Data Classification</a></li>
-<li><a href="https://www.directionsmag.com/article/3363">Choropleth Mapping with Exploratory Data Analysis</a></li>
-<li>Tennekes, M. (2018) “<a href="https://www.jstatsoft.org/article/view/v084i06">tmap: Thematic Maps in R</a>”, <em>Journal of Statistical Software</em>, Vol 84:6, 1-39.</li>
-</ul>
-</section>
-<section id="additional-reading" class="level3">
-<h3 class="anchored" data-anchor-id="additional-reading">Additional Reading</h3>
-<ul>
-<li><a href="https://www.yaaka.cc/unit/the-concept-of-map-symbols/">The Concept of Map Symbols</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Choropleth_map">Choropleth map</a></li>
-<li><a href="https://gisgeography.com/choropleth-maps-data-classification/">Choropleth Maps – A Guide to Data Classification</a></li>
-<li><a href="https://www.axismaps.com/guide/multivariate/bivariate-choropleth/">Bivariate Choropleth</a></li>
-<li><a href="http://andywoodruff.com/blog/value-by-alpha-maps/">Value-by-alpha maps</a></li>
-<li><a href="https://blog.datawrapper.de/choroplethmaps/">What to consider when creating choropleth maps</a></li>
-</ul>
-</section>
-<section id="all-about-r" class="level3">
-<h3 class="anchored" data-anchor-id="all-about-r">All About R:</h3>
-<ul>
-<li><a href="https://github.com/mtennekes/tmap">tmap</a> package especially:</li>
-<li><a href="https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html">tmap: get started!</a>,</li>
-<li><a href="https://cran.r-project.org/web/packages/tmap/vignettes/tmap-changes.html">tmap: version changes</a>, and</li>
-<li><a href="https://geocompr.robinlovelace.net/adv-map.html">Chapter 8 Making maps with R</a> of Geocomputation with R.</li>
+<li><a href="https://quarto.org/docs/authoring/markdown-basics.html">Markdown Basics</a></li>
+<li><a href="https://quarto.org/docs/authoring/figures.html">Figures</a></li>
+<li><a href="https://quarto.org/docs/authoring/tables.html">Tables</a></li>
+<li><a href="https://quarto.org/docs/authoring/diagrams.html">Diagrams</a></li>
+<li><a href="https://quarto.org/docs/authoring/footnotes-and-citations.html">Citations &amp; Footnotes</a></li>
+<li><a href="https://quarto.org/docs/authoring/cross-references.html">Cross References</a></li>
+<li><a href="https://quarto.org/docs/authoring/article-layout.html">Article Layout</a></li>
 </ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

@@ -1,66 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "IS415 Geospatial Analytics and Application",
-    "section": "",
-    "text": "In this web site, you will find all course materials here.\nInstructor: Dr. Kam Tin Seong, Associate Professor of Information Systems (Practice)\nConsultation booking link.\nVirtual Meeting Room: Zoom\n\n\n\nSection\nTime\nVenue\n\n\n\n\nG1\n8:15-11:30\nSCIS1 SR 2-2\n\n\n\n\n\n\n\nAll acts of academic dishonesty (including, but not limited to, plagiarism, cheating, fabrication, facilitation of acts of academic dishonesty by others, unauthorized possession of exam questions, or tampering with the academic work of other students) are serious offences. All work (whether oral or written) submitted for purposes of assessment must be the student’s own work. Penalties for violation of the policy range from zero marks for the component assessment to expulsion, depending on the nature of the offense. When in doubt, students should consult the instructors of the course. Details on the SMU Code of Academic Integrity may be accessed at http://www.smuscd.org/resources.html\n\n\n\nCourse materials obtained during your course of study at SMU are meant for personal use only, namely, for the purposes of studying and research. You are strictly not permitted to make copies of or print additional copies or distribute such copies of the course materials or any parts thereof, for commercial gain or exchange. For example, offering such materials on the Internet through CourseHero, Carousell and the like, is strictly prohibited.\nThe selling of these materials and/or any copies thereof are strictly prohibited under Singapore copyright laws. Printed materials and electronic materials are both protected by copyright laws. All students are subject to Singapore copyright laws and must strictly adhere to SMU’s procedures and requirements relating to copyright.\nPlease also note that for some materials, the publishers may specifically state that each copy is for the personal use of one individual only and no further reprographic reproduction is allowed, including for personal use. These restrictions are spelt out clearly on these specific sets of resources and students are required to adhere to these rules.\nStudents who infringe any of the aforesaid rules, laws and requirements shall be liable to disciplinary action by SMU. In addition, such students may also leave themselves open to suits by copyright owners who are entitled to take legal action against persons who infringe their copyright.\nWe strongly urge all students to respect the copyright laws and abide by SMU’s procedures and requirements relating to copyright.\n\n\n\nSMU strives to make learning experiences accessible for all. If you anticipate or experience physical or academic barriers due to disability, please let the instructor know immediately. You are also welcome to contact the university’s disability support team if you have questions or concerns about academic accommodations:included@smu.edu.sg\nPlease be aware that the accessible tables in our seminar room should remain available for students who require them. Emergency Preparedness for Teaching and Learning (EPTL): As part of emergency preparedness, Instructors may conduct lessons online via the WebEx platform during the term, to prepare students for online learning. During an actual emergency, students will be notified to access the WebEx platform for their online lessons. The class schedule will mirror the current face-to-face class timetable unless otherwise stated."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "lesson.html",
-    "href": "lesson.html",
-    "title": "Weekly Lesson Plan",
-    "section": "",
-    "text": "Week\nDate\nTopic\nRemarks\n\n\n\n\n1\n9/1/2023\nLesson 1: Introduction to Geospatial Analytics\n\n\n\n2\n16/1/2023\nLesson 2: Geospatial Data Handling and Wrangling\n\n\n\n3\n25/1/2023\nLesson 3: Thematic and Analytical Mapping\nReplacement lesson 7:00PM-10:30PM\n\n\n4\n30/1/2023\nLesson 4: Spatial Point Patterns Analysis\n\n\n\n5\n6/2/2023\nLesson 5: Advanced Spatial Point Patterns Analysis\n\n\n\n6\n13/2/2023\nLesson 6: Spatial Weights and Applications\n\n\n\n7\n20/2/2023\nLesson 7: Measures of Global and Local Spatial Association\n\n\n\n8\n27/2/2023\nMid-term break Workshop on R Shiny\n\n\n\n9\n6/3/2023\nLesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis\n\n\n\n10\n13/3/2023\nLesson 9: Geographically Weighted Regression\n\n\n\n11\n20/3/2023\nLesson 10: Spatial Interaction Models\n\n\n\n12\n27/3/2023\nLesson 11: Modelling Geographic of Accessibility\n\n\n\n13\n3/4/2023\nLesson 12: The Epilogue\n\n\n\n14\n10/4/2023\nTownhall Presentation"
-  },
-  {
-    "objectID": "syllabus.html",
-    "href": "syllabus.html",
-    "title": "Syllabus",
-    "section": "",
-    "text": "Where should the next new business outlet be located in order to optimise the profit? What are the location factors that affect the resale prices of HDB housing units? Which are the economic or service activities such as IT professional firms, car workshops, fast food chains (ie. KFC, McDonalds), coffee outlets (Starbucks, Ya Kun Kaya Toast, Toast Box) that tend to be located close to one another and which are the ones that tend to be a distance apart? Do these observed patterns and processes occur at random or are they being constrained by geographical factors? These and many other related questions are the challenges faced by data scientists and data analysts today especially when geographical data are used.\nGeospatial analytics offers the solutions to these questions by providing data scientists and analysts a problem-driven and data-centric analysis framework focusing on discovering actionable understanding from geographically referenced data. It makes extensive use of geospatial data wrangling, geoprocessing, spatial statistical, geospatial machine learning and spatial data visualisation techniques to support decision- and strategy-making.\nThis course provides students with an introduction to the concepts, principles and methods of geospatial analytics and their practical applications of geospatial analytics in real world operations. Emphasis will be placed on\n\nperforming geospatial data science tasks such as importing, tidying, manipulating, transforming, projecting and processing geospatial data programmatically,\nvisualising, analysing and describing geographical patterns and process using appropriate geovisualisation and thematic mapping techniques,\nConducting geospatial analysis by using appropriate spatial statistics and machine learning methods and\nbuilding web-based geospatial analytics applications."
-  },
-  {
-    "objectID": "syllabus.html#course-objectives",
-    "href": "syllabus.html#course-objectives",
-    "title": "Syllabus",
-    "section": "Course Objectives",
-    "text": "Course Objectives\nUpon completion of the course, students will be able to:\n\nProvide accurate explanation of the mathematical and input data requirements of the analysis method(s) used,\nImport, extract, process, transform and assemble geospatial analytical sandbox programmatically,\nApply appropriate geospatial analysis methods in addressing specific analysis needs,\nCommunicate the analysis results effectively and in an easy to understand manner with the help of appropriate geo- and data visualisation techniques, and\nDesign and implement web-based geospatial analytics applications."
-  },
-  {
-    "objectID": "syllabus.html#competencies",
-    "href": "syllabus.html#competencies",
-    "title": "Syllabus",
-    "section": "Competencies",
-    "text": "Competencies\n\nDefining Geospatial Analytics and describing the applications of geospatial analytics by using real-world examples.\nExplaining the differences between Geospatial Analytics and Geographic Information Systems (GIS).\nImporting, wrangling and transforming aspatial data by using tidyverse family of packages\nImporting, wrangling and transforming geographical data by sing sf package.\nGeocoding and georeferencing geographical data programmatically.\nPerforming geoprocessing operations programmatically by using sf packages.\nPerforming Exploratory Data Analysis (EDA) using ggplot2 and Confirmatory Data Analysis using ggstatsplot.\nPreparing cartographic quality analytical maps by using tmap package.\nVisualising and analysing multivariate geospatial data using corrplot and heatmaply packages.\nExplaining the principles and methods of spatial point patterns and complete spatial randomness.\nPerforming spatial point pattern analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nExplaining the principles and methods of spatial weights.\nComputing spatial weights by using appropriate functions of spdep package.\nExplaining the concepts of spatial autocorrelation, spatial clusters, hot spot and cold spot areas.\nComputing localised geospatial statistics by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nExplaining the principles of explanatory modelling and methods of geographically weighted regression.\nCalibrating geographically weighted regression models by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nExplaining the concept of geographic segmentation and methods of spatially constrained clustering.\nPerforming spatially constrained cluster analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nExplaining the concept of spatial dependency and methods of spatial interpolation.\nPerforming spatial interpolation by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nDefining geographic accessibility and explaining the methods of accessibility analysis.\nPerforming geographic accessibility analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nDesigning geospatial application programmatically by using free and open source software and packages (i.e. R, R packages and Shinny)."
-  },
-  {
-    "objectID": "syllabus.html#prerequisitesco-requisites",
-    "href": "syllabus.html#prerequisitesco-requisites",
-    "title": "Syllabus",
-    "section": "Prerequisites/Co-requisites",
-    "text": "Prerequisites/Co-requisites\nNIL. (But a basic working knowledge of computer and numeracy will be assumed. Students are expected to understand Windows-based operating systems and to manage files and disk space responsibly. More importantly, students taking this course must be willing to learn R programming.)"
-  },
-  {
-    "objectID": "syllabus.html#course-assessments",
-    "href": "syllabus.html#course-assessments",
-    "title": "Syllabus",
-    "section": "Course Assessments",
-    "text": "Course Assessments\nAssessment Categories Weightage (%)\n\nClass Participation and In-class Exercise 25%\nTake-Home Exercise (15% x 3) 45%\nGeospatial Analytics Project 30%"
-  },
-  {
-    "objectID": "syllabus.html#course-assessment-details",
-    "href": "syllabus.html#course-assessment-details",
-    "title": "Syllabus",
-    "section": "Course Assessment Details",
-    "text": "Course Assessment Details\n\nClass Participation\nA strict requirement for each class meeting is to complete the assigned readings and to try out the hands-on exercises before coming to class. Readings will be provided from the textbook on technical information and from provided documents and articles on real-world applications of geospatial analytics. Students are required to review the recommended readings and class exercises before coming to class. Without preparation, the learning and discussions would not be as meaningful. Student sharing of insights from readings and hands-on exercises of assigned materials in class participation will form a large part of the learning in this course. Students may also be quizzed in class and thereby contribute to class participation.\n\n\nTake-home Exercise\nThere are three take-home exercises that are due throughout the term. They aim to provide students the opportunities to apply the methods learned in class by working through mini real world cases.\nStudents may work together to help one another with computer or geospatial issues and discuss the materials that constitute the take-home exercise. However, each student is required to prepare and submit the take-home exercise (including any computer work) on their own. Cheating is strictly prohibited. Cheating includes but not limited to: plagiarism and submission of work that is not the student’s\n\n\nGeospatial Analytics Project\nThe purpose of the Geospatial Analytics Project is to provide students first-hand experience on collecting, processing and analysing spatial data using real world data. A project may involve creating geospatially enabled business data and subsequently analysing these data for business strategic or market analysis. Alternatively, a project may be in the form of application development by integrating analytical tools or models within a web framework. Students are encouraged to focus on research topics that are relevant to their field of study.\nThe project is team work. Students are required to form a project team of 3 members by the third week of the academic term. Each project teams must start thinking about their project ideas between week 4 and week 7. They are expected to discuss their project topic and scope of works with the instructor during the weeks too. A project website will be prepared and submitted to the instructor for approval by the end of week 8.\nAll project teams will give a postal presentation outlining the database design and implementation process, analytical methods used and findings of their project in week 14. Students are also required to prepare a project report or research paper of not more than 15 pages (excluding maps, figures, and tables) for submission by week 14. Additional materials will be distributed in class to assist students with topics selection, project design, postal presentation, and project report."
   },
   {
     "objectID": "GAproject.html",
@@ -112,6 +56,20 @@
     "text": "Project Links"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "IS415 Geospatial Analytics and Application",
+    "section": "",
+    "text": "In this web site, you will find all course materials here.\nInstructor: Dr. Kam Tin Seong, Associate Professor of Information Systems (Practice)\nConsultation booking link.\nVirtual Meeting Room: Zoom\n\n\n\nSection\nTime\nVenue\n\n\n\n\nG1\n8:15-11:30\nSCIS1 SR 2-2\n\n\n\n\n\n\n\nAll acts of academic dishonesty (including, but not limited to, plagiarism, cheating, fabrication, facilitation of acts of academic dishonesty by others, unauthorized possession of exam questions, or tampering with the academic work of other students) are serious offences. All work (whether oral or written) submitted for purposes of assessment must be the student’s own work. Penalties for violation of the policy range from zero marks for the component assessment to expulsion, depending on the nature of the offense. When in doubt, students should consult the instructors of the course. Details on the SMU Code of Academic Integrity may be accessed at http://www.smuscd.org/resources.html\n\n\n\nCourse materials obtained during your course of study at SMU are meant for personal use only, namely, for the purposes of studying and research. You are strictly not permitted to make copies of or print additional copies or distribute such copies of the course materials or any parts thereof, for commercial gain or exchange. For example, offering such materials on the Internet through CourseHero, Carousell and the like, is strictly prohibited.\nThe selling of these materials and/or any copies thereof are strictly prohibited under Singapore copyright laws. Printed materials and electronic materials are both protected by copyright laws. All students are subject to Singapore copyright laws and must strictly adhere to SMU’s procedures and requirements relating to copyright.\nPlease also note that for some materials, the publishers may specifically state that each copy is for the personal use of one individual only and no further reprographic reproduction is allowed, including for personal use. These restrictions are spelt out clearly on these specific sets of resources and students are required to adhere to these rules.\nStudents who infringe any of the aforesaid rules, laws and requirements shall be liable to disciplinary action by SMU. In addition, such students may also leave themselves open to suits by copyright owners who are entitled to take legal action against persons who infringe their copyright.\nWe strongly urge all students to respect the copyright laws and abide by SMU’s procedures and requirements relating to copyright.\n\n\n\nSMU strives to make learning experiences accessible for all. If you anticipate or experience physical or academic barriers due to disability, please let the instructor know immediately. You are also welcome to contact the university’s disability support team if you have questions or concerns about academic accommodations:included@smu.edu.sg\nPlease be aware that the accessible tables in our seminar room should remain available for students who require them. Emergency Preparedness for Teaching and Learning (EPTL): As part of emergency preparedness, Instructors may conduct lessons online via the WebEx platform during the term, to prepare students for online learning. During an actual emergency, students will be notified to access the WebEx platform for their online lessons. The class schedule will mirror the current face-to-face class timetable unless otherwise stated."
+  },
+  {
+    "objectID": "lesson.html",
+    "href": "lesson.html",
+    "title": "Weekly Lesson Plan",
+    "section": "",
+    "text": "Week\nDate\nTopic\nRemarks\n\n\n\n\n1\n9/1/2023\nLesson 1: Introduction to Geospatial Analytics\n\n\n\n2\n16/1/2023\nLesson 2: Geospatial Data Handling and Wrangling\n\n\n\n3\n25/1/2023\nLesson 3: Thematic and Analytical Mapping\nReplacement lesson 7:00PM-10:30PM\n\n\n4\n30/1/2023\nLesson 4: Spatial Point Patterns Analysis\n\n\n\n5\n6/2/2023\nLesson 5: Advanced Spatial Point Patterns Analysis\n\n\n\n6\n13/2/2023\nLesson 6: Spatial Weights and Applications\n\n\n\n7\n20/2/2023\nLesson 7: Measures of Global and Local Spatial Association\n\n\n\n8\n27/2/2023\nMid-term break Workshop on R Shiny\n\n\n\n9\n6/3/2023\nLesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis\n\n\n\n10\n13/3/2023\nLesson 9: Geographically Weighted Regression\n\n\n\n11\n20/3/2023\nLesson 10: Spatial Interaction Models\n\n\n\n12\n27/3/2023\nLesson 11: Modelling Geographic of Accessibility\n\n\n\n13\n3/4/2023\nLesson 12: The Epilogue\n\n\n\n14\n10/4/2023\nTownhall Presentation"
+  },
+  {
     "objectID": "outline/Lesson01_outline.html",
     "href": "outline/Lesson01_outline.html",
     "title": "Lesson 1: Introduction to Geospatial Analytics",
@@ -119,11 +77,11 @@
     "text": "Introduction to Geospatial Analytics\n\nDemystifying Geospatial Analytics\nGeospatial Analytics vs Mapping\nGeospatial Analytics vs GIS\nGeospatial Analytics vs Statistical Analysis, Data Mining & Machine Learning\n\nMotivation of Geospatial Analytics\nA Tour Through the Geospatial Analytics Zoo\nGeospatial Analytics and Social Consciousness\nIn-class Exercise:\n\nInstalling R, RStudio, distill for R Markdown\nInstalling Rtools and devtools\nInstalling git\nCreating a github account\nBuilding a distill web blog"
   },
   {
-    "objectID": "outline/Lesson01_outline.html#lesson-slides-and-hands-on-notes",
-    "href": "outline/Lesson01_outline.html#lesson-slides-and-hands-on-notes",
+    "objectID": "outline/Lesson01_outline.html#hands-on-exercise",
+    "href": "outline/Lesson01_outline.html#hands-on-exercise",
     "title": "Lesson 1: Introduction to Geospatial Analytics",
-    "section": "Lesson Slides and Hands-on Notes",
-    "text": "Lesson Slides and Hands-on Notes\nLesson slide in html and pdf formats\nIn-class Exercise:\n\ngit in RStudio\nSolving git(GitHub) token issue\nBuilding a blog with distill for R Markdown"
+    "section": "Hands-on Exercise",
+    "text": "Hands-on Exercise"
   },
   {
     "objectID": "outline/Lesson01_outline.html#references",
@@ -182,11 +140,18 @@
     "text": "This lesson aims to share with you the basic principles and methods of Thematic Mapping and Cartography Design. You will also gain hands on experience on using tmap, an R package specially design for plotting cartographic quality maps."
   },
   {
-    "objectID": "outline/Lesson03_outline.html#lesson-slides-and-hands-on-notes",
-    "href": "outline/Lesson03_outline.html#lesson-slides-and-hands-on-notes",
+    "objectID": "outline/Lesson03_outline.html#content",
+    "href": "outline/Lesson03_outline.html#content",
     "title": "Lesson 3: Thematic and Analytical Mapping",
-    "section": "Lesson Slides and Hands-on Notes",
-    "text": "Lesson Slides and Hands-on Notes\n\nLesson slides on Choropleth Mapping and tmap Methods in html and pdf formats\nHands-on Exercise 3: Choropleth Mapping and tmap Methods in html format.\nIn-class Exercise 3: Analytical Mapping in html and in pdf format."
+    "section": "Content",
+    "text": "Content\n\nClassification of maps\nPrinciples of map design\nThematic mapping techniques\nAnalytical mapping techniques\n\nPercentile map\nBox map\nStandard deviation map\nMapping rates"
+  },
+  {
+    "objectID": "outline/Lesson03_outline.html#hands-on-exercise",
+    "href": "outline/Lesson03_outline.html#hands-on-exercise",
+    "title": "Lesson 3: Thematic and Analytical Mapping",
+    "section": "Hands-on Exercise",
+    "text": "Hands-on Exercise\n\nChoropleth Mapping with R: tmap Methods"
   },
   {
     "objectID": "outline/Lesson03_outline.html#references",
@@ -203,11 +168,18 @@
     "text": "Spatial Point Pattern Analysis is the evaluation of the pattern, or distribution, of a set of points on a surface. It can refer to the actual spatial or temporal location of these points or also include data from point sources. It is one of the most fundamental concepts in geography and spatial analysis. This lesson aims to share with you the basic concepts and methods of Spatial Point Pattern Analysis. You will also gain hands experience on using spatstat, an R package specially designed for Spatial Point Pattern Analysis."
   },
   {
-    "objectID": "outline/Lesson04_outline.html#lesson-slides-and-hands-on-notes",
-    "href": "outline/Lesson04_outline.html#lesson-slides-and-hands-on-notes",
+    "objectID": "outline/Lesson04_outline.html#content",
+    "href": "outline/Lesson04_outline.html#content",
     "title": "Lesson 4: Spatial Point Patterns Analysis",
-    "section": "Lesson Slides and Hands-on Notes",
-    "text": "Lesson Slides and Hands-on Notes\n\nSlides in html and pdf formats\nHandout of Hands-on Exercise 4 in html and pdf formats.\n\n\nSelf-reading Before Meet-up\n\nChapter 7 Spatial Point Pattern Analysis of Roger S. Bivand, Edzer Pebesma and Virgilio Gómez-Rubio (2013) Applied Spatial Data Analysis with R (2nd Edition), Springer.\nChapter 4: Spatial distribution of points of Floch, J.M., Marcon, E. and Puech, F. (2018) Handbook of Spatial Analysis: Theory and Application with R.\n\n\n\nEnrichment Resources\nProf. Luc Anselin on point pattern analysis (YouTube):\n\nPoint Pattern Analysis Concepts\nPoint Pattern Analysis: Clustered, Regular and Dispersed Patterns\nPoint Pattern Analysis: Nearest Neighbor Statistics\nPoint Pattern Analysis: Quadrat Counts\nPoint Pattern Analysis: F and J Functions\nPoint Pattern Analysis: K, L and Kd Functions"
+    "section": "Content",
+    "text": "Content\n\nIntroducing Spatial Point Patterns\n\nThe basic concepts of spatial point patterns\nSpatial Point Patterns in real world\n\n1st Order Spatial Point Patterns Analysis\n\nQuadrat analysis\nKernel density estimation\n\n2nd Order Spatial Point Patterns Analysis\n\nNearest Neighbour Index\nG-function\nF-function\nK-function\nL-function"
+  },
+  {
+    "objectID": "outline/Lesson04_outline.html#hands-on-exercise",
+    "href": "outline/Lesson04_outline.html#hands-on-exercise",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Hands-on Exercise",
+    "text": "Hands-on Exercise\n\nSelf-reading Before Meet-up\n\nChapter 7 Spatial Point Pattern Analysis of Roger S. Bivand, Edzer Pebesma and Virgilio Gómez-Rubio (2013) Applied Spatial Data Analysis with R (2nd Edition), Springer.\nChapter 4: Spatial distribution of points of Floch, J.M., Marcon, E. and Puech, F. (2018) Handbook of Spatial Analysis: Theory and Application with R.\n\n\n\nEnrichment Resources\nProf. Luc Anselin on point pattern analysis (YouTube):\n\nPoint Pattern Analysis Concepts\nPoint Pattern Analysis: Clustered, Regular and Dispersed Patterns\nPoint Pattern Analysis: Nearest Neighbor Statistics\nPoint Pattern Analysis: Quadrat Counts\nPoint Pattern Analysis: F and J Functions\nPoint Pattern Analysis: K, L and Kd Functions"
   },
   {
     "objectID": "outline/Lesson04_outline.html#references",
@@ -448,38 +420,73 @@
     "text": "Gallery\n\nWinners of the 1st Shiny Contest\nWinners of the 2nd Annual Shiny Contest\nWinners of the 3rd annual Shiny Contest\nShiny Gallery\nFifteen New Zealand government Shiny web apps\nShinyApps Gallery\ndreamRs shiny gallery\nTools for Teaching Quantitative Thinking"
   },
   {
-    "objectID": "outline/Lesson01_outline.html#hands-on-exercise",
-    "href": "outline/Lesson01_outline.html#hands-on-exercise",
-    "title": "Lesson 1: Introduction to Geospatial Analytics",
-    "section": "Hands-on Exercise",
-    "text": "Hands-on Exercise"
+    "objectID": "Quarto.html",
+    "href": "Quarto.html",
+    "title": "All About Quarto",
+    "section": "",
+    "text": "Getting Started\nRStudio IDE\nUsing R\nHTML Basics"
   },
   {
-    "objectID": "outline/Lesson03_outline.html#content",
-    "href": "outline/Lesson03_outline.html#content",
-    "title": "Lesson 3: Thematic and Analytical Mapping",
-    "section": "Content",
-    "text": "Content\n\nClassification of maps\nPrinciples of map design\nThematic mapping techniques\nAnalytical mapping techniques\n\nPercentile map\nBox map\nStandard deviation map\nMapping rates"
+    "objectID": "Quarto.html#create-websites-and-blogs",
+    "href": "Quarto.html#create-websites-and-blogs",
+    "title": "All About Quarto",
+    "section": "Create websites and blogs",
+    "text": "Create websites and blogs\n\nCreating a Website\nWebsite Navigation\nDocument Listings"
   },
   {
-    "objectID": "outline/Lesson03_outline.html#hands-on-exercise",
-    "href": "outline/Lesson03_outline.html#hands-on-exercise",
-    "title": "Lesson 3: Thematic and Analytical Mapping",
-    "section": "Hands-on Exercise",
-    "text": "Hands-on Exercise\n\nChoropleth Mapping with R: tmap Methods"
+    "objectID": "Quarto.html#authoring-guide",
+    "href": "Quarto.html#authoring-guide",
+    "title": "All About Quarto",
+    "section": "Authoring Guide",
+    "text": "Authoring Guide\n\nMarkdown Basics\nFigures\nTables\nDiagrams\nCitations & Footnotes\nCross References\nArticle Layout"
   },
   {
-    "objectID": "outline/Lesson04_outline.html#content",
-    "href": "outline/Lesson04_outline.html#content",
-    "title": "Lesson 4: Spatial Point Patterns Analysis",
-    "section": "Content",
-    "text": "Content\n\nIntroducing Spatial Point Patterns\n\nThe basic concepts of spatial point patterns\nSpatial Point Patterns in real world\n\n1st Order Spatial Point Patterns Analysis\n\nQuadrat analysis\nKernel density estimation\n\n2nd Order Spatial Point Patterns Analysis\n\nNearest Neighbour Index\nG-function\nF-function\nK-function\nL-function"
+    "objectID": "ShinyResources.html",
+    "href": "ShinyResources.html",
+    "title": "Shiny Resources",
+    "section": "",
+    "text": "Hadley Wickham (2020) Mastering Shiny. Everything you need to know about Shiny can be found here. It is not an easy to read book but worth investing time and effort to read.\nShiny from R Studio\nLearn Shiny\nFunction reference\nThe Shiny Cheat sheet\nColin Fay, Sébastien Rochette, Vincent Guyader, Cervan Girard (2020) Engineering Production-Grade Shiny Apps\nDavid Granjon (2020) Outstanding User Interfaces with Shiny\nHow to Build a Shiny Application from Scratch\nShiny 入門\n\n\n\n\n\nGallery\nShiny Contest Winners 2019 - Full List\nFifteen New Zealand government Shiny web apps\nIntroducing the New Zealand Trade Intelligence Dashboard"
   },
   {
-    "objectID": "outline/Lesson04_outline.html#hands-on-exercise",
-    "href": "outline/Lesson04_outline.html#hands-on-exercise",
-    "title": "Lesson 4: Spatial Point Patterns Analysis",
-    "section": "Hands-on Exercise",
-    "text": "Hands-on Exercise\n\nSelf-reading Before Meet-up\n\nChapter 7 Spatial Point Pattern Analysis of Roger S. Bivand, Edzer Pebesma and Virgilio Gómez-Rubio (2013) Applied Spatial Data Analysis with R (2nd Edition), Springer.\nChapter 4: Spatial distribution of points of Floch, J.M., Marcon, E. and Puech, F. (2018) Handbook of Spatial Analysis: Theory and Application with R.\n\n\n\nEnrichment Resources\nProf. Luc Anselin on point pattern analysis (YouTube):\n\nPoint Pattern Analysis Concepts\nPoint Pattern Analysis: Clustered, Regular and Dispersed Patterns\nPoint Pattern Analysis: Nearest Neighbor Statistics\nPoint Pattern Analysis: Quadrat Counts\nPoint Pattern Analysis: F and J Functions\nPoint Pattern Analysis: K, L and Kd Functions"
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Where should the next new business outlet be located in order to optimise the profit? What are the location factors that affect the resale prices of HDB housing units? Which are the economic or service activities such as IT professional firms, car workshops, fast food chains (ie. KFC, McDonalds), coffee outlets (Starbucks, Ya Kun Kaya Toast, Toast Box) that tend to be located close to one another and which are the ones that tend to be a distance apart? Do these observed patterns and processes occur at random or are they being constrained by geographical factors? These and many other related questions are the challenges faced by data scientists and data analysts today especially when geographical data are used.\nGeospatial analytics offers the solutions to these questions by providing data scientists and analysts a problem-driven and data-centric analysis framework focusing on discovering actionable understanding from geographically referenced data. It makes extensive use of geospatial data wrangling, geoprocessing, spatial statistical, geospatial machine learning and spatial data visualisation techniques to support decision- and strategy-making.\nThis course provides students with an introduction to the concepts, principles and methods of geospatial analytics and their practical applications of geospatial analytics in real world operations. Emphasis will be placed on\n\nperforming geospatial data science tasks such as importing, tidying, manipulating, transforming, projecting and processing geospatial data programmatically,\nvisualising, analysing and describing geographical patterns and process using appropriate geovisualisation and thematic mapping techniques,\nConducting geospatial analysis by using appropriate spatial statistics and machine learning methods and\nbuilding web-based geospatial analytics applications."
+  },
+  {
+    "objectID": "syllabus.html#course-objectives",
+    "href": "syllabus.html#course-objectives",
+    "title": "Syllabus",
+    "section": "Course Objectives",
+    "text": "Course Objectives\nUpon completion of the course, students will be able to:\n\nProvide accurate explanation of the mathematical and input data requirements of the analysis method(s) used,\nImport, extract, process, transform and assemble geospatial analytical sandbox programmatically,\nApply appropriate geospatial analysis methods in addressing specific analysis needs,\nCommunicate the analysis results effectively and in an easy to understand manner with the help of appropriate geo- and data visualisation techniques, and\nDesign and implement web-based geospatial analytics applications."
+  },
+  {
+    "objectID": "syllabus.html#competencies",
+    "href": "syllabus.html#competencies",
+    "title": "Syllabus",
+    "section": "Competencies",
+    "text": "Competencies\n\nDefining Geospatial Analytics and describing the applications of geospatial analytics by using real-world examples.\nExplaining the differences between Geospatial Analytics and Geographic Information Systems (GIS).\nImporting, wrangling and transforming aspatial data by using tidyverse family of packages\nImporting, wrangling and transforming geographical data by sing sf package.\nGeocoding and georeferencing geographical data programmatically.\nPerforming geoprocessing operations programmatically by using sf packages.\nPerforming Exploratory Data Analysis (EDA) using ggplot2 and Confirmatory Data Analysis using ggstatsplot.\nPreparing cartographic quality analytical maps by using tmap package.\nVisualising and analysing multivariate geospatial data using corrplot and heatmaply packages.\nExplaining the principles and methods of spatial point patterns and complete spatial randomness.\nPerforming spatial point pattern analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nExplaining the principles and methods of spatial weights.\nComputing spatial weights by using appropriate functions of spdep package.\nExplaining the concepts of spatial autocorrelation, spatial clusters, hot spot and cold spot areas.\nComputing localised geospatial statistics by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nExplaining the principles of explanatory modelling and methods of geographically weighted regression.\nCalibrating geographically weighted regression models by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nExplaining the concept of geographic segmentation and methods of spatially constrained clustering.\nPerforming spatially constrained cluster analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nExplaining the concept of spatial dependency and methods of spatial interpolation.\nPerforming spatial interpolation by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nDefining geographic accessibility and explaining the methods of accessibility analysis.\nPerforming geographic accessibility analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nDesigning geospatial application programmatically by using free and open source software and packages (i.e. R, R packages and Shinny)."
+  },
+  {
+    "objectID": "syllabus.html#prerequisitesco-requisites",
+    "href": "syllabus.html#prerequisitesco-requisites",
+    "title": "Syllabus",
+    "section": "Prerequisites/Co-requisites",
+    "text": "Prerequisites/Co-requisites\nNIL. (But a basic working knowledge of computer and numeracy will be assumed. Students are expected to understand Windows-based operating systems and to manage files and disk space responsibly. More importantly, students taking this course must be willing to learn R programming.)"
+  },
+  {
+    "objectID": "syllabus.html#course-assessments",
+    "href": "syllabus.html#course-assessments",
+    "title": "Syllabus",
+    "section": "Course Assessments",
+    "text": "Course Assessments\nAssessment Categories Weightage (%)\n\nClass Participation and In-class Exercise 25%\nTake-Home Exercise (15% x 3) 45%\nGeospatial Analytics Project 30%"
+  },
+  {
+    "objectID": "syllabus.html#course-assessment-details",
+    "href": "syllabus.html#course-assessment-details",
+    "title": "Syllabus",
+    "section": "Course Assessment Details",
+    "text": "Course Assessment Details\n\nClass Participation\nA strict requirement for each class meeting is to complete the assigned readings and to try out the hands-on exercises before coming to class. Readings will be provided from the textbook on technical information and from provided documents and articles on real-world applications of geospatial analytics. Students are required to review the recommended readings and class exercises before coming to class. Without preparation, the learning and discussions would not be as meaningful. Student sharing of insights from readings and hands-on exercises of assigned materials in class participation will form a large part of the learning in this course. Students may also be quizzed in class and thereby contribute to class participation.\n\n\nTake-home Exercise\nThere are three take-home exercises that are due throughout the term. They aim to provide students the opportunities to apply the methods learned in class by working through mini real world cases.\nStudents may work together to help one another with computer or geospatial issues and discuss the materials that constitute the take-home exercise. However, each student is required to prepare and submit the take-home exercise (including any computer work) on their own. Cheating is strictly prohibited. Cheating includes but not limited to: plagiarism and submission of work that is not the student’s\n\n\nGeospatial Analytics Project\nThe purpose of the Geospatial Analytics Project is to provide students first-hand experience on collecting, processing and analysing spatial data using real world data. A project may involve creating geospatially enabled business data and subsequently analysing these data for business strategic or market analysis. Alternatively, a project may be in the form of application development by integrating analytical tools or models within a web framework. Students are encouraged to focus on research topics that are relevant to their field of study.\nThe project is team work. Students are required to form a project team of 3 members by the third week of the academic term. Each project teams must start thinking about their project ideas between week 4 and week 7. They are expected to discuss their project topic and scope of works with the instructor during the weeks too. A project website will be prepared and submitted to the instructor for approval by the end of week 8.\nAll project teams will give a postal presentation outlining the database design and implementation process, analytical methods used and findings of their project in week 14. Students are also required to prepare a project report or research paper of not more than 15 pages (excluding maps, figures, and tables) for submission by week 14. Additional materials will be distributed in class to assist students with topics selection, project design, postal presentation, and project report."
   }
 ]
