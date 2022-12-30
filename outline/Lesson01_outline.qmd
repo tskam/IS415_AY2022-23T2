@@ -15,21 +15,23 @@ toc: true
 -   Motivation of Geospatial Analytics
 -   A Tour Through the Geospatial Analytics Zoo
 -   Geospatial Analytics and Social Consciousness
--   In-class Exercise:
-    -   Installing R, RStudio, distill for R Markdown
-    -   Installing Rtools and devtools
-    -   Installing git
-    -   Creating a github account
-    -   Building a distill web blog
+
+## In-class Exercise:
+-   Installing and configuring R and RStudio
+-   Installing Rtools and devtools
+-   Installing and configuring git
+-   Creating a github account
+-   Building a course website using Quarto
+-   Publishing the course website on Netlify
 
 ## Hands-on Exercise
 
 ## References
 
 -   ["Spatial Data, Spatial Analysis, Spatial Data Science"](https://www.youtube.com/watch?v=MmCYeJ27DsA) by Prof. Luc Anselin. (This is a long lecture 1hr 15minutes but don't turn away just because it is lengthy.)
--   Xie, Yiqun et. al. (2017) "Transdisciplinary Foundations of Geospatial Data Science" ISPRS international Journal of Geo-information, 2017, Vol.6 (12), p.395.
--   Paez, A., and Scott, D.M. (2004) "Spatial statistics for urban analysis: A review of techniques with examples", GeoJournal, 61: 53--67.
--   [Geospatial Analytics Will Eat The World, And You Won't Even Know It](https://www.forbes.com/sites/forbestechcouncil/2018/07/16/geospatial-analytics-will-eat-the-world-and-you-wont-even-know-it/#31f961db726a).
+-   Xie, Yiqun et. al. (2017) ["Transdisciplinary Foundations of Geospatial Data Science"](https://www.mdpi.com/2220-9964/6/12/395) *ISPRS International Journal of Geo-information*, 2017, Vol.6 (12), p.395.
+-   Paez, A., and Scott, D.M. (2004) "Spatial statistics for urban analysis: A review of techniques with examples", *GeoJournal*, 61: 53-67. Available in SMU eLibrary. 
+-   ["Geospatial Analytics Will Eat The World, And You Won't Even Know It"](https://www.forbes.com/sites/forbestechcouncil/2018/07/16/geospatial-analytics-will-eat-the-world-and-you-wont-even-know-it/#31f961db726a).
 
 ## R packages for Data Science
 
@@ -37,5 +39,5 @@ toc: true
 -   [readr](https://readr.tidyverse.org/): a fast and effective library to parse csv, txt, and tsv files as [tibble data.frame](https://r4ds.had.co.nz/tibbles.html) in R. To get started, refer to Chapter 11 Data import of R for Data Science book.\
 -   [tidyr](https://tidyr.tidyverse.org/): an R package for tidying data. To get started, refer to [Chapter 12 Tidy data](https://r4ds.had.co.nz/tidy-data.html) of R for Data Science book.\
 -   [dplyr](https://dplyr.tidyverse.org/): a grammar of data manipulation. To get started, read articles under [Getting Started](https://dplyr.tidyverse.org/articles/dplyr.html) and Articles tabs.
--   [ggplot2](https://ggplot2.tidyverse.org/): a grammar of graphics. To get started, read [Chapter 3: Data Visualization](https://r4ds.had.co.nz/data-visualisation.html) and [Chapter 28 Graphics for communication](Chapter%2028%20Graphics%20for%20communication) of R for Data Science book.
--   pipes: a powerful tool for clearly expressing a sequence of multiple operations. To get started, read [Chapter 18: Pipes](https://r4ds.had.co.nz/pipes.html) of R for Data Science book.
+-   [ggplot2](https://ggplot2.tidyverse.org/): a grammar of graphics. To get started, read [Chapter 2: Data Visualization](https://r4ds.hadley.nz/data-visualize.html) and [Chapter 13 Communication](https://r4ds.hadley.nz/communication.html) of R for Data Science (2ed) book.
+-   pipes: a powerful tool for clearly expressing a sequence of multiple operations. To get started, read [Chapter 5 Workflow: pipes](https://r4ds.hadley.nz/workflow-pipes.html) of R for Data Science (2ed) book.

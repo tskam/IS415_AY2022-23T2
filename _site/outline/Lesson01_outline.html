@@ -2,20 +2,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.37">
+<meta name="generator" content="quarto-1.2.269">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2022-12-22">
+<meta name="dcterms.date" content="2022-12-30">
 
 <title>IS415 AY2022-23T2 - Lesson 1: Introduction to Geospatial Analytics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -65,22 +70,28 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="../index.html">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">IS415 AY2022-23T2</span>
-  </a>
+    </a>
+  </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../syllabus.html">Syllabus</a>
+    <a class="nav-link" href="../syllabus.html">
+ <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../lesson.html">Lesson Plan</a>
+    <a class="nav-link" href="../lesson.html">
+ <span class="menu-text">Lesson Plan</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-take-home-exercise" role="button" data-bs-toggle="dropdown" aria-expanded="false">Take-home Exercise</a>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-take-home-exercise" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Take-home Exercise</span>
+    </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-take-home-exercise">    
         <li>
     <a class="dropdown-item" href="../Take-home_Ex01.html">
@@ -97,10 +108,13 @@ ul.task-list{list-style: none;}
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../GAproject.html">Geospatial Analytics Project</a>
+    <a class="nav-link" href="../GAproject.html">
+ <span class="menu-text">Geospatial Analytics Project</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-shiny-workshop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shiny Workshop</a>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-shiny-workshop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Shiny Workshop</span>
+    </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-shiny-workshop">    
         <li>
     <a class="dropdown-item" href="../ShinyWorkshop/Shiny1/Shiny1.html">
@@ -121,12 +135,14 @@ ul.task-list{list-style: none;}
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../quarto.html">All About Quarto</a>
+    <a class="nav-link" href="../quarto.html">
+ <span class="menu-text">All About Quarto</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html">Home</a>
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -139,11 +155,12 @@ ul.task-list{list-style: none;}
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
   <li><a href="#content" id="toc-content" class="nav-link active" data-scroll-target="#content">Content</a></li>
+  <li><a href="#in-class-exercise" id="toc-in-class-exercise" class="nav-link" data-scroll-target="#in-class-exercise">In-class Exercise:</a></li>
   <li><a href="#hands-on-exercise" id="toc-hands-on-exercise" class="nav-link" data-scroll-target="#hands-on-exercise">Hands-on Exercise</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   <li><a href="#r-packages-for-data-science" id="toc-r-packages-for-data-science" class="nav-link" data-scroll-target="#r-packages-for-data-science">R packages for Data Science</a></li>
@@ -166,9 +183,10 @@ ul.task-list{list-style: none;}
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 22, 2022</p>
+      <p class="date">December 30, 2022</p>
     </div>
   </div>
+  
     
   </div>
   
@@ -188,14 +206,17 @@ ul.task-list{list-style: none;}
 <li>Motivation of Geospatial Analytics</li>
 <li>A Tour Through the Geospatial Analytics Zoo</li>
 <li>Geospatial Analytics and Social Consciousness</li>
-<li>In-class Exercise:
+</ul>
+</section>
+<section id="in-class-exercise" class="level2">
+<h2 class="anchored" data-anchor-id="in-class-exercise">In-class Exercise:</h2>
 <ul>
-<li>Installing R, RStudio, distill for R Markdown</li>
+<li>Installing and configuring R and RStudio</li>
 <li>Installing Rtools and devtools</li>
-<li>Installing git</li>
+<li>Installing and configuring git</li>
 <li>Creating a github account</li>
-<li>Building a distill web blog</li>
-</ul></li>
+<li>Building a course website using Quarto</li>
+<li>Publishing the course website on Netlify</li>
 </ul>
 </section>
 <section id="hands-on-exercise" class="level2">
@@ -205,9 +226,9 @@ ul.task-list{list-style: none;}
 <h2 class="anchored" data-anchor-id="references">References</h2>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=MmCYeJ27DsA">“Spatial Data, Spatial Analysis, Spatial Data Science”</a> by Prof.&nbsp;Luc Anselin. (This is a long lecture 1hr 15minutes but don’t turn away just because it is lengthy.)</li>
-<li>Xie, Yiqun et. al.&nbsp;(2017) “Transdisciplinary Foundations of Geospatial Data Science” ISPRS international Journal of Geo-information, 2017, Vol.6 (12), p.395.</li>
-<li>Paez, A., and Scott, D.M. (2004) “Spatial statistics for urban analysis: A review of techniques with examples”, GeoJournal, 61: 53–67.</li>
-<li><a href="https://www.forbes.com/sites/forbestechcouncil/2018/07/16/geospatial-analytics-will-eat-the-world-and-you-wont-even-know-it/#31f961db726a">Geospatial Analytics Will Eat The World, And You Won’t Even Know It</a>.</li>
+<li>Xie, Yiqun et. al.&nbsp;(2017) <a href="https://www.mdpi.com/2220-9964/6/12/395">“Transdisciplinary Foundations of Geospatial Data Science”</a> <em>ISPRS International Journal of Geo-information</em>, 2017, Vol.6 (12), p.395.</li>
+<li>Paez, A., and Scott, D.M. (2004) “Spatial statistics for urban analysis: A review of techniques with examples”, <em>GeoJournal</em>, 61: 53-67. Available in SMU eLibrary.</li>
+<li><a href="https://www.forbes.com/sites/forbestechcouncil/2018/07/16/geospatial-analytics-will-eat-the-world-and-you-wont-even-know-it/#31f961db726a">“Geospatial Analytics Will Eat The World, And You Won’t Even Know It”</a>.</li>
 </ul>
 </section>
 <section id="r-packages-for-data-science" class="level2">
@@ -219,8 +240,8 @@ ul.task-list{list-style: none;}
 <li><a href="https://tidyr.tidyverse.org/">tidyr</a>: an R package for tidying data. To get started, refer to <a href="https://r4ds.had.co.nz/tidy-data.html">Chapter 12 Tidy data</a> of R for Data Science book.<br>
 </li>
 <li><a href="https://dplyr.tidyverse.org/">dplyr</a>: a grammar of data manipulation. To get started, read articles under <a href="https://dplyr.tidyverse.org/articles/dplyr.html">Getting Started</a> and Articles tabs.</li>
-<li><a href="https://ggplot2.tidyverse.org/">ggplot2</a>: a grammar of graphics. To get started, read <a href="https://r4ds.had.co.nz/data-visualisation.html">Chapter 3: Data Visualization</a> and <a href="Chapter%2028%20Graphics%20for%20communication">Chapter 28 Graphics for communication</a> of R for Data Science book.</li>
-<li>pipes: a powerful tool for clearly expressing a sequence of multiple operations. To get started, read <a href="https://r4ds.had.co.nz/pipes.html">Chapter 18: Pipes</a> of R for Data Science book.</li>
+<li><a href="https://ggplot2.tidyverse.org/">ggplot2</a>: a grammar of graphics. To get started, read <a href="https://r4ds.hadley.nz/data-visualize.html">Chapter 2: Data Visualization</a> and <a href="https://r4ds.hadley.nz/communication.html">Chapter 13 Communication</a> of R for Data Science (2ed) book.</li>
+<li>pipes: a powerful tool for clearly expressing a sequence of multiple operations. To get started, read <a href="https://r4ds.hadley.nz/workflow-pipes.html">Chapter 5 Workflow: pipes</a> of R for Data Science (2ed) book.</li>
 </ul>
 
 
@@ -268,7 +289,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -296,31 +334,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
