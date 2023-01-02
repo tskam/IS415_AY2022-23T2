@@ -77,6 +77,11 @@ There are three take-home exercises that are due throughout the term. They aim t
 
 Students may work together to help one another with computer or geospatial issues and discuss the materials that constitute the take-home exercise. However, each student is required to prepare and submit the take-home exercise (including any computer work) on their own. Cheating is strictly prohibited. Cheating includes but not limited to: plagiarism and submission of work that is not the student's
 
+#### AY2021-22 Sample Take-home Exercises
+
+- [Take-home Exercise 1](https://is415.netlify.app/th_ex1.html)
+
+
 ### Geospatial Analytics Project
 
 The purpose of the Geospatial Analytics Project is to provide students first-hand experience on collecting, processing and analysing spatial data using real world data. A project may involve creating geospatially enabled business data and subsequently analysing these data for business strategic or market analysis. Alternatively, a project may be in the form of application development by integrating analytical tools or models within a web framework. Students are encouraged to focus on research topics that are relevant to their field of study.
