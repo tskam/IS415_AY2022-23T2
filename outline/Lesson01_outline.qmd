@@ -16,7 +16,12 @@ toc: true
 -   A Tour Through the Geospatial Analytics Zoo
 -   Geospatial Analytics and Social Consciousness
 
+## Lesson Slides
+
+- [Introduction to Geospatial Analytics and Applications](lesson/Lesson01-Introduction_to_GAA.pdf)
+
 ## In-class Exercise:
+
 -   Installing and configuring R and RStudio
 -   Installing Rtools and devtools
 -   Installing and configuring git
@@ -30,7 +35,7 @@ toc: true
 
 -   ["Spatial Data, Spatial Analysis, Spatial Data Science"](https://www.youtube.com/watch?v=MmCYeJ27DsA) by Prof. Luc Anselin. (This is a long lecture 1hr 15minutes but don't turn away just because it is lengthy.)
 -   Xie, Yiqun et. al. (2017) ["Transdisciplinary Foundations of Geospatial Data Science"](https://www.mdpi.com/2220-9964/6/12/395) *ISPRS International Journal of Geo-information*, 2017, Vol.6 (12), p.395.
--   Paez, A., and Scott, D.M. (2004) "Spatial statistics for urban analysis: A review of techniques with examples", *GeoJournal*, 61: 53-67. Available in SMU eLibrary. 
+-   Paez, A., and Scott, D.M. (2004) "Spatial statistics for urban analysis: A review of techniques with examples", *GeoJournal*, 61: 53-67. Available in SMU eLibrary.
 -   ["Geospatial Analytics Will Eat The World, And You Won't Even Know It"](https://www.forbes.com/sites/forbestechcouncil/2018/07/16/geospatial-analytics-will-eat-the-world-and-you-wont-even-know-it/#31f961db726a).
 
 ## R packages for Data Science

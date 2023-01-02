@@ -495,5 +495,12 @@
     "title": "Lesson 1: Introduction to Geospatial Analytics",
     "section": "In-class Exercise:",
     "text": "In-class Exercise:\n\nInstalling and configuring R and RStudio\nInstalling Rtools and devtools\nInstalling and configuring git\nCreating a github account\nBuilding a course website using Quarto\nPublishing the course website on Netlify"
+  },
+  {
+    "objectID": "outline/Lesson01_outline.html#lesson-slides",
+    "href": "outline/Lesson01_outline.html#lesson-slides",
+    "title": "Lesson 1: Introduction to Geospatial Analytics",
+    "section": "Lesson Slides",
+    "text": "Lesson Slides\n\nIntroduction to Geospatial Analytics and Applications"
   }
 ]
