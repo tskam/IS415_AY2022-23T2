@@ -28,8 +28,8 @@ In this lesson, R objects used to store geospatial data will be discussed. The d
 
 **Must read**
 
--   [Chapter 2 Feature Representation](https://mgimond.github.io/Spatial/feature-representation.html) of Intro to GIS and Spatial Analysis.
--   [Chapter 9 Coordinate Systems](https://mgimond.github.io/Spatial/coordinate-systems.html) of Intro to GIS and Spatial Analysis.
+-   [Chapter 2 Feature Representation](https://mgimond.github.io/Spatial/chp02_0.html) of Intro to GIS and Spatial Analysis.
+-   [Chapter 9 Coordinate Systems](https://mgimond.github.io/Spatial/chp09_0.html) of Intro to GIS and Spatial Analysis.
 -   [Geocoding](https://en.wikipedia.org/wiki/Geocoding).
 -   Pebesma, Edzer. (2018) ["Simple Features for R: Standardized Support for Spatial Vector Data."](https://journal.r-project.org/archive/2018/RJ-2018-009/RJ-2018-009.pdf) *The R Journal*, Vol. 10/1, 439:446.
 
@@ -42,16 +42,16 @@ In this lesson, R objects used to store geospatial data will be discussed. The d
 
 ## All About R:
 
--   [sf](https://r-spatial.github.io/sf/) package [Simple Features for R](https://r-spatial.github.io/sf/articles/sf1.html)
+-   [sf](https://r-spatial.github.io/sf/) package
 
-    1.  [Reading, Writing and Converting Simple Features](https://r-spatial.github.io/sf/articles/sf2.html)
+    1.  [Simple Features for R](https://r-spatial.github.io/sf/articles/sf1.html)
 
-    2.  [Manipulating Simple Feature Geometries](https://r-spatial.github.io/sf/articles/sf3.html)
+    2.  [Reading, Writing and Converting Simple Features](https://r-spatial.github.io/sf/articles/sf2.html)
 
-    3.  [Manipulating Simple Features](https://r-spatial.github.io/sf/articles/sf4.html)
+    3.  [Manipulating Simple Feature Geometries](https://r-spatial.github.io/sf/articles/sf3.html)
 
-    4.  P[lotting Simple Features](https://r-spatial.github.io/sf/articles/sf5.html)
+    4.  [Manipulating Simple Features](https://r-spatial.github.io/sf/articles/sf4.html)
 
-    5.  [Miscellaneous](https://r-spatial.github.io/sf/articles/sf6.html)
+    5.  P[lotting Simple Features](https://r-spatial.github.io/sf/articles/sf5.html)
 
-
+    6.  [Miscellaneous](https://r-spatial.github.io/sf/articles/sf6.html)

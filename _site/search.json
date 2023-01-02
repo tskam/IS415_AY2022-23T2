@@ -130,7 +130,7 @@
     "href": "outline/Lesson02_outline.html#all-about-r",
     "title": "Lesson 2: Geospatial Data Handling and Wrangling",
     "section": "All About R:",
-    "text": "All About R:\n\nsf package Simple Features for R\n\nReading, Writing and Converting Simple Features\nManipulating Simple Feature Geometries\nManipulating Simple Features\nPlotting Simple Features\nMiscellaneous"
+    "text": "All About R:\n\nsf package\n\nSimple Features for R\nReading, Writing and Converting Simple Features\nManipulating Simple Feature Geometries\nManipulating Simple Features\nPlotting Simple Features\nMiscellaneous"
   },
   {
     "objectID": "outline/Lesson03_outline.html",
