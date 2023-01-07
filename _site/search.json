@@ -502,5 +502,89 @@
     "title": "Lesson 1: Introduction to Geospatial Analytics",
     "section": "Lesson Slides",
     "text": "Lesson Slides\n\nIntroduction to Geospatial Analytics and Applications"
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "Demystifying Geospatial Analytics",
+    "text": "Demystifying Geospatial Analytics\n\nA Geographical Information System (GIS) is a toolkit for creating, managing, analysing, visualising, and sharing data of any kind according to where it’s located.\n\n\n\nGeospatial analytics is more than a GIS."
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics-1",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics-1",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "Demystifying Geospatial Analytics",
+    "text": "Demystifying Geospatial Analytics\n\nGeospatial analytics is more than data visualisation\n\n\n\n\n\nSource: Singapore’s first disease map delivers real-time information on infectious diseases"
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics-2",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics-2",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "Demystifying Geospatial Analytics",
+    "text": "Demystifying Geospatial Analytics\n\nGeospatial analytics is more than just mapping."
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "Motivation of Geospatial Analytics",
+    "text": "Motivation of Geospatial Analytics\n\nAbout 80% of all data maintained by organisations around the world has a location component.\n\n\n\n(Source: BusinessWeek Research Services, 2006)"
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-1",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-1",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "Motivation of Geospatial Analytics",
+    "text": "Motivation of Geospatial Analytics\n\nGeospatial information in Smart Nation.\n\n\n\nSee more at this link"
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-2",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-2",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "Motivation of Geospatial Analytics",
+    "text": "Motivation of Geospatial Analytics\n\nThe explosion in the availability of open geospatial data from both the public and private sectors at national and international levels."
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-3",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-3",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "Motivation of Geospatial Analytics",
+    "text": "Motivation of Geospatial Analytics\n\nThe national geospatial master plan.\n\n\n\nSource: Singapore Geospatial Master Plan"
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "The role of Geospatial Analytics",
+    "text": "The role of Geospatial Analytics\n\nUncovering insights not found in statistical graphs and tables.\n\n\n\nSource: SGSAS - Simple Geo-Spatial Analysis using R Shiny"
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-1",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-1",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "The role of Geospatial Analytics",
+    "text": "The role of Geospatial Analytics\n\nTo reveal the untapped property of spatial contiguity in geographic knowledge discovery in databases.\n\n\n\nSource: SGSAS - Simple Geo-Spatial Analysis using R Shiny"
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-2",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-2",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "The role of Geospatial Analytics",
+    "text": "The role of Geospatial Analytics\n\nTo uncover the complexity of the real world relationship.\n\n\n\nSource: SGSAS - Simple Geo-Spatial Analysis using R Shiny"
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-3",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-3",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "The role of Geospatial Analytics",
+    "text": "The role of Geospatial Analytics\n\nTo model spatial interactions and flows.\n\n\n\nSource: IS415 Bus Rider Flow Project"
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#geospatial-analytics-and-social-consciousness",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#geospatial-analytics-and-social-consciousness",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "Geospatial Analytics and Social Consciousness",
+    "text": "Geospatial Analytics and Social Consciousness\nThe true power of geospatial analytics is to provide decision makers and planners with data-driven and process information for better problem solving and more efficient use of resources."
   }
 ]

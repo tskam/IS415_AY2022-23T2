@@ -1,0 +1,144 @@
+---
+title: 'Lesson 1: Introduction to Geospatial Analytics and Applications'
+author: "Dr. Kam Tin Seong<br/>Assoc. Professor of Information Systems (Practice)"
+institute: "School of Computing and Information Systems,<br/>Singapore Management University"
+date: "`r Sys.Date()`"
+format: 
+  revealjs:
+    width: 1600
+    height: 900
+    show-notes: true
+    slide-number: true
+    show-slide-number: 'all'
+editor: visual
+---
+
+# Content
+
+-   Demystifying Geospatial Analytics
+-   Motivation of Geospatial Analytics
+-   The Role of Geospatial Analytics
+-   Geospatial Analytics and Social Consciousness
+
+## Demystifying Geospatial Analytics
+
+-   A **Geographical Information System (GIS)** is a toolkit for creating, managing, analysing, visualising, and sharing data of any kind according to where it's located.
+
+![](img/image1-11.jpg){fig-align="center" width="121"}
+
+::: {style="font-size: 1.5em; text-align: center"}
+Geospatial analytics is more than a GIS.
+:::
+
+## Demystifying Geospatial Analytics
+
+-   Geospatial analytics is more than data visualisation
+
+::: columns
+::: {.column width="50%"}
+![](img/image1-6a.jpg)
+
+::: {style="font-size: 0.65em; text-align: center"}
+Source: [Singapore's first disease map delivers real-time information on infectious diseases](https://www.straitstimes.com/singapore/health/singapores-first-disease-map-delivers-real-time-information-on-infectious-diseases)
+:::
+:::
+
+::: {.column width="50%"}
+![](img/image1-6b.jpg)
+:::
+:::
+
+## Demystifying Geospatial Analytics
+
+-   Geospatial analytics is more than just mapping.
+
+![](img/image1-5.jpg)
+
+## Motivation of Geospatial Analytics
+
+-   About 80% of all data maintained by organisations around the world has a location component.
+
+![](img/image1-1.jpg){fig-align="center"}
+
+::: {style="font-size: 0.65em; text-align: center"}
+(Source: BusinessWeek Research Services, 2006)
+:::
+
+## Motivation of Geospatial Analytics
+
+-   Geospatial information in Smart Nation.
+
+![](img/image1-2.jpg){fig-align="center"}
+
+::: {style="font-size: 0.65em"}
+See more at this [link](http://www.straitstimes.com/news/singapore/more-singapore-stories/story/new-3d-map-collate-local-knowledge-part-smart-nation-pro#sthash.aUxbyCei.dpuf)
+:::
+
+## Motivation of Geospatial Analytics
+
+-   The explosion in the availability of open geospatial data from both the public and private sectors at national and international levels.
+
+![](img/image1-3.jpg){fig-align="center"}
+
+## Motivation of Geospatial Analytics
+
+-   The national geospatial master plan.
+
+![](img/image1-4.jpg){fig-align="center"}
+
+::: {style="font-size: 0.65em; text-align: center"}
+Source: [Singapore Geospatial Master Plan](https://www.sla.gov.sg/qql/slot/u149/initiatives/Singapore-Geospatial-Master-Plan.pdf)
+:::
+
+## The role of Geospatial Analytics
+
+-   Uncovering insights not found in statistical graphs and tables.
+
+![](img/image1-7.jpg)
+
+::: {style="font-size: 0.65em; text-align: center"}
+Source: [SGSAS - Simple Geo-Spatial Analysis using R Shiny](https://wiki.smu.edu.sg/1920t2isss608/Group11_application)
+:::
+
+## The role of Geospatial Analytics
+
+-   To reveal the untapped property of spatial contiguity in geographic knowledge discovery in databases.
+
+![](img/image1-8.jpg){fig-align="center"}
+
+::: {style="font-size: 0.65em; text-align: center"}
+Source: [SGSAS - Simple Geo-Spatial Analysis using R Shiny](https://wiki.smu.edu.sg/1920t2isss608/Group11_application)
+:::
+
+## The role of Geospatial Analytics
+
+-   To uncover the complexity of the real world relationship.
+
+![](img/image1-9.jpg){fig-align="center"}
+
+::: {style="font-size: 0.65em; text-align: center"}
+Source: [SGSAS - Simple Geo-Spatial Analysis using R Shiny](https://wiki.smu.edu.sg/1920t2isss608/Group11_application)
+:::
+
+## The role of Geospatial Analytics
+
+-   To model spatial interactions and flows.
+
+![](img/image1-10.jpg){fig-align="center"}
+
+::: {style="font-size: 0.65em; text-align: center"}
+Source: [IS415 Bus Rider Flow Project](https://bus-rider-flow.shinyapps.io/is415-project/)
+:::
+
+## Geospatial Analytics and Social Consciousness
+
+The true power of geospatial analytics is to provide decision makers and planners with data-driven and process information for better problem solving and more efficient use of resources.
+
+![](img/image1-12.jpg){fig-align="center" width="1015"}
+
+```{r}
+#| eval: false
+#| echo: false
+
+to_pdf(from = "Lesson01-Introduction_to_GAA.qmd")
+```
