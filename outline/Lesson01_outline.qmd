@@ -18,7 +18,7 @@ toc: true
 
 ## Lesson Slides
 
-- [Introduction to Geospatial Analytics and Applications](lesson/Lesson01-Introduction_to_GAA.pdf)
+-   Lesson 1 slides in [html](..\lesson\Lesson01\Lesson01-Introduction_to_GAA.html) and [pdf]() formats.
 
 ## In-class Exercise:
 
