@@ -18,7 +18,7 @@ toc: true
 
 ## Lesson Slides
 
--   Lesson 1 slides in [html](..\lesson\Lesson01\Lesson01-Introduction_to_GAA.html) and [pdf]() formats.
+-   Lesson 1 slides in [html](..\lesson\Lesson01\Lesson01-Introduction_to_GAA.html) and [pdf](..\lesson\Lesson01\lesson01-introduction_to_gaa.pdf) formats.
 
 ## In-class Exercise:
 
@@ -46,5 +46,3 @@ toc: true
 -   [dplyr](https://dplyr.tidyverse.org/): a grammar of data manipulation. To get started, read articles under [Getting Started](https://dplyr.tidyverse.org/articles/dplyr.html) and Articles tabs.
 -   [ggplot2](https://ggplot2.tidyverse.org/): a grammar of graphics. To get started, read [Chapter 2: Data Visualization](https://r4ds.hadley.nz/data-visualize.html) and [Chapter 13 Communication](https://r4ds.hadley.nz/communication.html) of R for Data Science (2ed) book.
 -   pipes: a powerful tool for clearly expressing a sequence of multiple operations. To get started, read [Chapter 5 Workflow: pipes](https://r4ds.hadley.nz/workflow-pipes.html) of R for Data Science (2ed) book.
-
-
