@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2023-01-08">
+<meta name="description" content="This handout provides the context, the task, the expectation and the grading criteria of Take-home Exercise 1. Students must review and understand them before getting started with the take-home exercise.">
+
+<title>IS415 AY2022-23T2 - Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">IS415 AY2022-23T2</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./syllabus.html">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./lesson.html">
+ <span class="menu-text">Lesson Plan</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-take-home-exercise" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Take-home Exercise</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-take-home-exercise">    
+        <li>
+    <a class="dropdown-item" href="./th_ex1.html">
+ <span class="dropdown-text">Take-home Exercise 1 (Past Year)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Take-home_Ex02.html">
+ <span class="dropdown-text">Take-home Exercise 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./Take-home_Ex03.html">
+ <span class="dropdown-text">Take-home Exercise 3</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./GAproject.html">
+ <span class="menu-text">Geospatial Analytics Project</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-shiny-workshop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Shiny Workshop</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-shiny-workshop">    
+        <li>
+    <a class="dropdown-item" href="./ShinyWorkshop/Shiny1/Shiny1.html">
+ <span class="dropdown-text">R Shiny basic</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ShinyWorkshop/Shiny2/Shiny2.html">
+ <span class="dropdown-text">Beyond the basic</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ShinyWorkshop/Shiny3/Shiny3.html">
+ <span class="dropdown-text">Customising Shiny</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./ShinyResources.html">
+ <span class="dropdown-text">Shiny Resources</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./quarto.html">
+ <span class="menu-text">All About Quarto</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#setting-the-scene" id="toc-setting-the-scene" class="nav-link active" data-scroll-target="#setting-the-scene">Setting the Scene</a></li>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
+  <li><a href="#the-task" id="toc-the-task" class="nav-link" data-scroll-target="#the-task">The Task</a>
+  <ul class="collapse">
+  <li><a href="#data-extraction-wrangling-and-integration" id="toc-data-extraction-wrangling-and-integration" class="nav-link" data-scroll-target="#data-extraction-wrangling-and-integration">Data Extraction, Wrangling and Integration</a></li>
+  <li><a href="#thematic-mapping" id="toc-thematic-mapping" class="nav-link" data-scroll-target="#thematic-mapping">Thematic Mapping</a></li>
+  <li><a href="#analytical-mapping" id="toc-analytical-mapping" class="nav-link" data-scroll-target="#analytical-mapping">Analytical Mapping</a></li>
+  </ul></li>
+  <li><a href="#the-data" id="toc-the-data" class="nav-link" data-scroll-target="#the-data">The Data</a></li>
+  <li><a href="#grading-criteria" id="toc-grading-criteria" class="nav-link" data-scroll-target="#grading-criteria">Grading Criteria</a></li>
+  <li><a href="#submission-instructions" id="toc-submission-instructions" class="nav-link" data-scroll-target="#submission-instructions">Submission Instructions</a></li>
+  <li><a href="#due-date" id="toc-due-date" class="nav-link" data-scroll-target="#due-date">Due Date</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link" data-scroll-target="#reference">Reference</a></li>
+  <li><a href="#learning-from-senior" id="toc-learning-from-senior" class="nav-link" data-scroll-target="#learning-from-senior">Learning from senior</a></li>
+  <li><a href="#q-a" id="toc-q-a" class="nav-link" data-scroll-target="#q-a">Q &amp; A</a>
+  <ul class="collapse">
+  <li><a href="#q1" id="toc-q1" class="nav-link" data-scroll-target="#q1">Q1:</a></li>
+  <li><a href="#q2" id="toc-q2" class="nav-link" data-scroll-target="#q2">Q2:</a></li>
+  <li><a href="#q3" id="toc-q3" class="nav-link" data-scroll-target="#q3">Q3:</a></li>
+  <li><a href="#q4" id="toc-q4" class="nav-link" data-scroll-target="#q4">Q4:</a></li>
+  <li><a href="#q5" id="toc-q5" class="nav-link" data-scroll-target="#q5">Q5:</a></li>
+  </ul></li>
+  <li><a href="#peer-learning" id="toc-peer-learning" class="nav-link" data-scroll-target="#peer-learning">Peer Learning</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia</h1>
+</div>
+
+<div>
+  <div class="description">
+    <p>This handout provides the context, the task, the expectation and the grading criteria of Take-home Exercise 1. Students must review and understand them before getting started with the take-home exercise.</p>
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 8, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is a sample <strong>Take-home Exercise 1 for AY2021-22 Term 1</strong> and not for this academic term.</p>
+</div>
+</div>
+<section id="setting-the-scene" class="level2">
+<h2 class="anchored" data-anchor-id="setting-the-scene">Setting the Scene</h2>
+<p>Since late December 2019, an outbreak of a novel coronavirus disease (COVID-19; previously known as 2019-nCoV) was reported in Wuhan, China, which had subsequently affected 210 countries worldwide. In general, COVID-19 is an acute resolved disease but it can also be deadly, with a 2% case fatality rate.</p>
+<p>The COVID-19 pandemic in Indonesia is part of the ongoing worldwide pandemic of coronavirus disease 2019 (COVID-19) caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The virus was confirmed to have reached Indonesia on March 2, 2020. It started with two cases in March. As of July 31 2021, there had been 3,409,658 cumulative confirmed cases of COVID-19 in Indonesia and 94,119 reported cumulative deaths. All cases were spread in 34 provinces in Indonesia. Among all the provinces, DKI Jakarta (Indonesian: Daerah Khusus Ibukota Jakarta and in English: Special Capital Region of Jakarta) contributed close to 24% of the cumulative confirmed cases.</p>
+<p>Despite its compactness, the cumulative confirmed cases were not evenly distributed within DKI Jakarta as Figure below reveals at the district and sub-district levels. The question was where were the sub-districts with relatively higher number of confirmed cases and how they changed over time.</p>
+</section>
+<section id="objectives" class="level2">
+<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
+<p>The take-home exercise aims to embark you the skill of perform geospatial analysis to “Think Globally, Act Locally”. You will also acquire the skills of documenting the analysis procedures conform to reproducible best practice using RMarkdown. Last but not least, you will also learn the skill of communicating your work via web post.</p>
+<p>The specific objective of the exercise is to reveal the spatio-temporal patterns of monthly cumulative confirmed COVID-19 rate and death rate at <em>sub-district</em> or <a href="https://en.wikipedia.org/wiki/Subdivisions_of_Indonesia"><em>kelurahan</em></a>.</p>
+</section>
+<section id="the-task" class="level2">
+<h2 class="anchored" data-anchor-id="the-task">The Task</h2>
+<p>In this take-home exercise, you are tasked to reveal the spatia-temporal patterns of COVID-19 case at DKI Jakarta. The temporal interval must be at <em>month</em> (last day of the month) and the geographic should be at <em>sub-district</em> or <a href="https://en.wikipedia.org/wiki/Subdivisions_of_Indonesia"><em>kelurahan</em></a> in Indonesia language. The specific tasks are as follow:</p>
+<section id="data-extraction-wrangling-and-integration" class="level3">
+<h3 class="anchored" data-anchor-id="data-extraction-wrangling-and-integration">Data Extraction, Wrangling and Integration</h3>
+<section id="apstial-data" class="level4">
+<h4 class="anchored" data-anchor-id="apstial-data">Apstial data</h4>
+<ul>
+<li>Download the daily COVID-19 data of DKI Jakarta,</li>
+<li>Extract ID_KEL, Nama_provinsi, nama_kota, nama_kecamatan nama_kelurahan, POSITIF (cumulative confirmed cases) and meninggal (cumulative death cases) from <code>data</code> worksheet of the daily COVID-19 data, and</li>
+<li>Integrate the daily data into a data frame by month.</li>
+</ul>
+</section>
+<section id="geospatial-data" class="level4">
+<h4 class="anchored" data-anchor-id="geospatial-data">Geospatial data</h4>
+<ul>
+<li>Download <code>DKI Jarkata</code> shapefile,</li>
+<li>Import the shapefile into R and save it in a simple feature data frame format, (Note: The national Projected Coordinates Systems of Indonesia is DGN95 / Indonesia TM-3 zone 54.1)</li>
+<li>Exclude all the outer islands from the DKI Jakarta sf data frame, and</li>
+<li>Retain the first nine fields in the DKI Jakarta sf data frame. The ninth field <em>JUMLAH_PEN = Total Population</em>.</li>
+</ul>
+</section>
+<section id="geospatial-data-integration" class="level4">
+<h4 class="anchored" data-anchor-id="geospatial-data-integration">Geospatial data integration</h4>
+<ul>
+<li>Combine the geospatial and aspatial data frame into simple feature data frame.<br>
+</li>
+<li>Calculate the cumulative confirmed cases rate (i.e.&nbsp;cases per 10000 population) and the cumulative death rate by month.</li>
+</ul>
+</section>
+</section>
+<section id="thematic-mapping" class="level3">
+<h3 class="anchored" data-anchor-id="thematic-mapping">Thematic Mapping</h3>
+<ul>
+<li>Plot maps to show the spatio-temporal distribution of cumulative confirmed cases rate and death rate at sub-direct level by using appropriate thematic mapping technique provided by tmap package.</li>
+</ul>
+</section>
+<section id="analytical-mapping" class="level3">
+<h3 class="anchored" data-anchor-id="analytical-mapping">Analytical Mapping</h3>
+<ul>
+<li>Plot analytical maps to show the spatio-temporal distribution of cumulative confirmed cases rate and death rate at sub-direct level by using appropriate thematic mapping technique provided by tmap package.</li>
+</ul>
+</section>
+</section>
+<section id="the-data" class="level2">
+<h2 class="anchored" data-anchor-id="the-data">The Data</h2>
+<p>For the purpose of this assignment, the following data should be used:</p>
+<ul>
+<li><p><a href="https://riwayat-file-covid-19-dki-jakarta-jakartagis.hub.arcgis.com/">Open Data Covid-19 Provinsi DKI Jakarta</a>. This portal provides daily update of COVID-19 measures at both sub-district and district level. For the purpose of this exercise, data at the sub-district level will be used. This data is available in <code>data</code> worksheet.</p></li>
+<li><p><a href="https://www.indonesia-geospasial.com/">Indonesia Geospatial</a>. This portal provides a comprehensive collection of geospatial data mainly in ESRI shapefile format at different geographical levels. For the purpose of this study, the <strong>Shapefile (SHP) Batas Desa Provinsi DKI Jakarta</strong> provided at <a href="https://www.indonesia-geospasial.com/2020/04/download-shapefile-shp-batas-desa.html">PODES 2019</a> geospatial layer should be used.</p></li>
+</ul>
+</section>
+<section id="grading-criteria" class="level2">
+<h2 class="anchored" data-anchor-id="grading-criteria">Grading Criteria</h2>
+<p>This exercise will be graded by using the following criteria:</p>
+<ul>
+<li><p><strong>Geospatial Data Wrangling (20 marks):</strong> This is an important aspect of geospatial analytics. You will be assessed on your ability to employ appropriate R functions from various R packages specifically designed for modern data science such as readxl, tidyverse (tidyr, dplyr, ggplot2), sf just to mention a few of them, to perform the entire geospatial data wrangling processes, including. This is not limited to data import, data extraction, data cleaning and data transformation. Besides assessing your ability to use the R functions, this criterion also includes your ability to clean and derive appropriate variables to meet the analysis need. (Warning: All data are like vast grassland full of land mines. Your job is to clear those mines and not to step on them).</p></li>
+<li><p><strong>Geospatial Analysis (30 marks):</strong> In this exercise, you are expected to use the appropriate thematic and analytics mapping techniques and R functions introduced in class to analysis the geospatial data prepared. You will be assessed on your ability to derive analytical maps by using appropriate rate mapping techniques.</p></li>
+<li><p><strong>Geovisualisation (20 marks):</strong> In this section, you will be assessed on your ability to communicate the complex spatial statistics results in business friendly visual representations. This course is geospatial centric, hence, it is important for you to demonstrate your competency in using appropriate geovisualisation techniques to reveal and communicate the findings of your analysis.</p></li>
+<li><p><strong>Reproducibility (20 marks):</strong> This is an important learning outcome of this exercise. You will be assessed on your ability to provide a comprehensive documentation of the analysis procedures in the form of code chunks of RMarkdown. It is important to note that it is not enough by merely providing the code chunk without any explanation on the purpose and R function(s) used.</p></li>
+<li><p><strong>Bonus (10 marks):</strong> Demonstrate your ability to employ methods beyond what you had learned in class to gain insights from the data. The methods used must be geospatial in nature.</p></li>
+</ul>
+</section>
+<section id="submission-instructions" class="level2">
+<h2 class="anchored" data-anchor-id="submission-instructions">Submission Instructions</h2>
+<ul>
+<li>The write-up of the take-home exercise must be in <a href="https://rstudio.github.io/distill/"><strong>distill</strong></a> or <a href="https://github.com/rstudio/blogdown"><strong>blogdown</strong></a> format. You are required to publish the write-up on <a href="https://www.netlify.com/"><strong>Netlify</strong></a>.</li>
+<li>The R project of the take-home exercise must be pushed onto your <a href="https://github.com/">Github</a> repository.</li>
+<li>You are required to provide the links to Netlify service of the take-home exercise write-up and github repository on eLearn.</li>
+</ul>
+</section>
+<section id="due-date" class="level2">
+<h2 class="anchored" data-anchor-id="due-date">Due Date</h2>
+<p>10th September 2021 (Friday), 11.59pm (midnight).</p>
+</section>
+<section id="reference" class="level2">
+<h2 class="anchored" data-anchor-id="reference">Reference</h2>
+<p>Health Ministry of Indonesia. Published 2020. Accessed March 30, 2020. https://covid19.go.id/</p>
+<p><a href="https://corona.jakarta.go.id/en">JAKARTA’s COVID-19 RESPONSE TEAM</a>. Accessed August 12, 2021.</p>
+</section>
+<section id="learning-from-senior" class="level2">
+<h2 class="anchored" data-anchor-id="learning-from-senior">Learning from senior</h2>
+<p>You are advised to review these sample submissions prepared by your seniors.</p>
+<ul>
+<li><p><a href="https://rpubs.com/xiaorongw/IS415_Take-home_Ex01">Take-home Exercise 1: Geographic Analysis of the Supply and Demand of Childcare Services in Singapore</a> by Xiao Rong Wong</p></li>
+<li><p><a href="https://rpubs.com/rax/Take_Home_Ex01">Take-home Exercise 1: Understanding and Analysing Changes in the Supply of Childcare Services</a> by Rajiv Abraham Xavier</p></li>
+</ul>
+</section>
+<section id="q-a" class="level2">
+<h2 class="anchored" data-anchor-id="q-a">Q &amp; A</h2>
+<section id="q1" class="level3">
+<h3 class="anchored" data-anchor-id="q1">Q1:</h3>
+<p>I noted that the data link you provided will lead us to a webpage of daily updates (https://riwayat-file-covid-19-dki-jakarta-jakartagis.hub.arcgis.com/).</p>
+<p>When you mention to “Download the daily COVID-19 data of DKI Jakarta” Do you mean to do this manually or are we to use a google drive connector since all of these links are linked to a google drive sheet.</p>
+<blockquote class="blockquote">
+<p>Prof.&nbsp;Kam: You are expected to download the file one by one. The data are cumulative. Hence, to download the data by month, you only need to download every last day of the month. In this case, there are only 19 files to download (assuming that 31 January 2020 - 31 July 2021). I have downloaded the data manual to try out myself and it won’t take more than 15minutes to download all of them. In fact, for your information, I have downloaded all the daily data until yesterday. This is the job of a data analyst 😞</p>
+</blockquote>
+</section>
+<section id="q2" class="level3">
+<h3 class="anchored" data-anchor-id="q2">Q2:</h3>
+<p>In addition, when you mention “Integrate the daily data into a data frame by month” Do you mean we have to download multiple sheets and combine the data? If so does this mean we need to download for the last 30 days? or multiple months?</p>
+<blockquote class="blockquote">
+<p>Prof Kam: Refer to earlier reply above.</p>
+</blockquote>
+<p>(I am unsure if this is the case or whether you refer to a specific feature. Unfortunately i do not understand the data at all given that most of the features are in a foreign language)</p>
+<blockquote class="blockquote">
+<p>Prof.&nbsp;Kam: Yes, you have to download multiple workbooks and extract the worksheet and columns you need and then combine them into an integrated data file. This is what we called data wrangling in Data Science. You will learn how to do it using readxl, tydyr and dplyr package. With regard the foreign language, less worry because translation will be provided. In will be included in the revised version of the Take-home Exercise 1 handout latest by tomorrow morning 9.00am.</p>
+</blockquote>
+</section>
+<section id="q3" class="level3">
+<h3 class="anchored" data-anchor-id="q3">Q3:</h3>
+<p>Lastly, when you mention “Download the DKI Jarkata shapefile” Is this manual downloading or do we need to dynamically download by code and extract and import from there?</p>
+<blockquote class="blockquote">
+<p>Prof.&nbsp;Kam: Personally, I think download manually is easier because I just need to click on the link provided. After downloading, you are required to use sf package of r to parse the data into R and save it as a simple feature data frame. You will learn more on how to work with R package in next week lesson.</p>
+</blockquote>
+</section>
+<section id="q4" class="level3">
+<h3 class="anchored" data-anchor-id="q4">Q4:</h3>
+<p>In this case, there are only 19 files to download (assuming that 31 January 2020 - 31 July 2021). On the webpage of daily updates (https://riwayat-file-covid-19-dki-jakarta-jakartagis.hub.arcgis.com/), I am only able to see the data file starting from 25 March 2020 onwards. In addition, the link to access the data file for 31 January 2021 is broken.</p>
+<blockquote class="blockquote">
+<p>Prof Kam: Since the data only starts on 25 March 2020, then there is nothing wrong the first month data is on 31st March 2020. Likewise if 31st January 2021 is not available, there is nothing wrong 30th January 2021 data set is used. More important, you are required to document these two issues on your report.</p>
+</blockquote>
+</section>
+<section id="q5" class="level3">
+<h3 class="anchored" data-anchor-id="q5">Q5:</h3>
+<p>Some of the excel files had duplicate columns with the same name. For the <code>Meninggal</code> column, can I confirm that we look at the column without N/A values?</p>
+<blockquote class="blockquote">
+<p>Prof Kam: We are interested in analysing the geographical distribution of <strong>Cumulative Death</strong>. In this case, the <code>Meninggal</code> without NA values should be used.</p>
+</blockquote>
+</section>
+</section>
+<section id="peer-learning" class="level2">
+<h2 class="anchored" data-anchor-id="peer-learning">Peer Learning</h2>
+<p><a href="https://niharika-is415.netlify.app/posts/take%20home%20exercise-1/">AVULA NIHARIKA</a></p>
+<p><a href="https://sarahs-is415-blog.netlify.app/posts/2021-09-03-take-home-assignment-1/">CHIN SHAN PEI SARAH</a></p>
+<p><a href="https://darryl-is415-blog.netlify.app/posts/2021-09-06-take-home-exercise-1/">DARRYL KWOK BING HENG</a></p>
+<p><a href="https://geniceee-is415-blog.netlify.app/posts/2021-09-10-take-home-exercise-1/">GOH JIA XIN GENICE</a></p>
+<p><a href="https://blue-clues-2.netlify.app/">JEROME GOH TING CHUAN</a></p>
+<p><a href="https://kwekyichen-is415.netlify.app/posts/2021-09-06-takehome-ex01/">KWEK YI CHEN</a></p>
+<p><a href="https://is415-msty.netlify.app/posts/2021-09-10-take-home-exercise-1/">MEGAN SIM TZE YEN</a></p>
+<ul>
+<li><strong>What is so special</strong>: The data important, extracting, wrangling and processing process were appropriately performed and comprehensively documented. The choropleth maps were well designed. All process are highly reproducible.</li>
+</ul>
+<p><a href="https://yan-is415-blog3.netlify.app/posts/2021-10-26-take-home-exercise-1/">NGAH XIN YAN</a></p>
+<p><a href="https://aisyahajit2018-is415.netlify.app/posts/2021-09-10-take-home-exercise-1/?panelset1=code-chunk2">NOR AISYAH BINTE AJIT</a></p>
+<ul>
+<li><strong>What is so special</strong>: Appropriate used of functions to reduce copy-paste of codes. Ability to apply analytical mapping techniques appropriately.</li>
+</ul>
+<p><a href="https://teojp3-is415.netlify.app/posts/2021-08-27-take-home-exercise-1/">TEO JUN PENG</a></p>
+<p><a href="https://junlong-is415.netlify.app/posts/2021-09-06-take-home-exercise-1/">TOH JUN LONG</a></p>
+<p><a href="https://wlwong2018-is415-blog.netlify.app/posts/2021-09-09-take-home-exercise-1/">WONG WEI LING</a></p>
+<p><a href="https://jolly-goodall-704484.netlify.app/posts/2021-09-04-take-home-exercise-1/">XU PENGTAI</a></p>
+<p><a href="https://yiling-is415-blog.netlify.app/posts/2021-09-25-take-home-exercise-1/">YU YILING</a></p>
+<div class="cell">
+
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

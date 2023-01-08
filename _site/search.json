@@ -677,5 +677,89 @@
     "title": "Syllabus",
     "section": "Course Assessment Details",
     "text": "Course Assessment Details\n\nClass Participation\nA strict requirement for each class meeting is to complete the assigned readings and to try out the hands-on exercises before coming to class. Readings will be provided from the textbook on technical information and from provided documents and articles on real-world applications of geospatial analytics. Students are required to review the recommended readings and class exercises before coming to class. Without preparation, the learning and discussions would not be as meaningful. Student sharing of insights from readings and hands-on exercises of assigned materials in class participation will form a large part of the learning in this course. Students may also be quizzed in class and thereby contribute to class participation.\n\n\nTake-home Exercise\nThere are three take-home exercises that are due throughout the term. They aim to provide students the opportunities to apply the methods learned in class by working through mini real world cases.\nStudents may work together to help one another with computer or geospatial issues and discuss the materials that constitute the take-home exercise. However, each student is required to prepare and submit the take-home exercise (including any computer work) on their own. Cheating is strictly prohibited. Cheating includes but not limited to: plagiarism and submission of work that is not the student’s\n\nAY2021-22 Sample Take-home Exercises\n\nTake-home Exercise 1\n\n\n\n\nGeospatial Analytics Project\nThe purpose of the Geospatial Analytics Project is to provide students first-hand experience on collecting, processing and analysing spatial data using real world data. A project may involve creating geospatially enabled business data and subsequently analysing these data for business strategic or market analysis. Alternatively, a project may be in the form of application development by integrating analytical tools or models within a web framework. Students are encouraged to focus on research topics that are relevant to their field of study.\nThe project is team work. Students are required to form a project team of 3 members by the third week of the academic term. Each project teams must start thinking about their project ideas between week 4 and week 7. They are expected to discuss their project topic and scope of works with the instructor during the weeks too. A project website will be prepared and submitted to the instructor for approval by the end of week 8.\nAll project teams will give a postal presentation outlining the database design and implementation process, analytical methods used and findings of their project in week 14. Students are also required to prepare a project report or research paper of not more than 15 pages (excluding maps, figures, and tables) for submission by week 14. Additional materials will be distributed in class to assist students with topics selection, project design, postal presentation, and project report."
+  },
+  {
+    "objectID": "th_ex1.html",
+    "href": "th_ex1.html",
+    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "section": "",
+    "text": "Note\n\n\n\nThis is a sample Take-home Exercise 1 for AY2021-22 Term 1 and not for this academic term."
+  },
+  {
+    "objectID": "th_ex1.html#setting-the-scene",
+    "href": "th_ex1.html#setting-the-scene",
+    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "section": "Setting the Scene",
+    "text": "Setting the Scene\nSince late December 2019, an outbreak of a novel coronavirus disease (COVID-19; previously known as 2019-nCoV) was reported in Wuhan, China, which had subsequently affected 210 countries worldwide. In general, COVID-19 is an acute resolved disease but it can also be deadly, with a 2% case fatality rate.\nThe COVID-19 pandemic in Indonesia is part of the ongoing worldwide pandemic of coronavirus disease 2019 (COVID-19) caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The virus was confirmed to have reached Indonesia on March 2, 2020. It started with two cases in March. As of July 31 2021, there had been 3,409,658 cumulative confirmed cases of COVID-19 in Indonesia and 94,119 reported cumulative deaths. All cases were spread in 34 provinces in Indonesia. Among all the provinces, DKI Jakarta (Indonesian: Daerah Khusus Ibukota Jakarta and in English: Special Capital Region of Jakarta) contributed close to 24% of the cumulative confirmed cases.\nDespite its compactness, the cumulative confirmed cases were not evenly distributed within DKI Jakarta as Figure below reveals at the district and sub-district levels. The question was where were the sub-districts with relatively higher number of confirmed cases and how they changed over time."
+  },
+  {
+    "objectID": "th_ex1.html#objectives",
+    "href": "th_ex1.html#objectives",
+    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "section": "Objectives",
+    "text": "Objectives\nThe take-home exercise aims to embark you the skill of perform geospatial analysis to “Think Globally, Act Locally”. You will also acquire the skills of documenting the analysis procedures conform to reproducible best practice using RMarkdown. Last but not least, you will also learn the skill of communicating your work via web post.\nThe specific objective of the exercise is to reveal the spatio-temporal patterns of monthly cumulative confirmed COVID-19 rate and death rate at sub-district or kelurahan."
+  },
+  {
+    "objectID": "th_ex1.html#the-task",
+    "href": "th_ex1.html#the-task",
+    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "section": "The Task",
+    "text": "The Task\nIn this take-home exercise, you are tasked to reveal the spatia-temporal patterns of COVID-19 case at DKI Jakarta. The temporal interval must be at month (last day of the month) and the geographic should be at sub-district or kelurahan in Indonesia language. The specific tasks are as follow:\n\nData Extraction, Wrangling and Integration\n\nApstial data\n\nDownload the daily COVID-19 data of DKI Jakarta,\nExtract ID_KEL, Nama_provinsi, nama_kota, nama_kecamatan nama_kelurahan, POSITIF (cumulative confirmed cases) and meninggal (cumulative death cases) from data worksheet of the daily COVID-19 data, and\nIntegrate the daily data into a data frame by month.\n\n\n\nGeospatial data\n\nDownload DKI Jarkata shapefile,\nImport the shapefile into R and save it in a simple feature data frame format, (Note: The national Projected Coordinates Systems of Indonesia is DGN95 / Indonesia TM-3 zone 54.1)\nExclude all the outer islands from the DKI Jakarta sf data frame, and\nRetain the first nine fields in the DKI Jakarta sf data frame. The ninth field JUMLAH_PEN = Total Population.\n\n\n\nGeospatial data integration\n\nCombine the geospatial and aspatial data frame into simple feature data frame.\n\nCalculate the cumulative confirmed cases rate (i.e. cases per 10000 population) and the cumulative death rate by month.\n\n\n\n\nThematic Mapping\n\nPlot maps to show the spatio-temporal distribution of cumulative confirmed cases rate and death rate at sub-direct level by using appropriate thematic mapping technique provided by tmap package.\n\n\n\nAnalytical Mapping\n\nPlot analytical maps to show the spatio-temporal distribution of cumulative confirmed cases rate and death rate at sub-direct level by using appropriate thematic mapping technique provided by tmap package."
+  },
+  {
+    "objectID": "th_ex1.html#the-data",
+    "href": "th_ex1.html#the-data",
+    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "section": "The Data",
+    "text": "The Data\nFor the purpose of this assignment, the following data should be used:\n\nOpen Data Covid-19 Provinsi DKI Jakarta. This portal provides daily update of COVID-19 measures at both sub-district and district level. For the purpose of this exercise, data at the sub-district level will be used. This data is available in data worksheet.\nIndonesia Geospatial. This portal provides a comprehensive collection of geospatial data mainly in ESRI shapefile format at different geographical levels. For the purpose of this study, the Shapefile (SHP) Batas Desa Provinsi DKI Jakarta provided at PODES 2019 geospatial layer should be used."
+  },
+  {
+    "objectID": "th_ex1.html#grading-criteria",
+    "href": "th_ex1.html#grading-criteria",
+    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "section": "Grading Criteria",
+    "text": "Grading Criteria\nThis exercise will be graded by using the following criteria:\n\nGeospatial Data Wrangling (20 marks): This is an important aspect of geospatial analytics. You will be assessed on your ability to employ appropriate R functions from various R packages specifically designed for modern data science such as readxl, tidyverse (tidyr, dplyr, ggplot2), sf just to mention a few of them, to perform the entire geospatial data wrangling processes, including. This is not limited to data import, data extraction, data cleaning and data transformation. Besides assessing your ability to use the R functions, this criterion also includes your ability to clean and derive appropriate variables to meet the analysis need. (Warning: All data are like vast grassland full of land mines. Your job is to clear those mines and not to step on them).\nGeospatial Analysis (30 marks): In this exercise, you are expected to use the appropriate thematic and analytics mapping techniques and R functions introduced in class to analysis the geospatial data prepared. You will be assessed on your ability to derive analytical maps by using appropriate rate mapping techniques.\nGeovisualisation (20 marks): In this section, you will be assessed on your ability to communicate the complex spatial statistics results in business friendly visual representations. This course is geospatial centric, hence, it is important for you to demonstrate your competency in using appropriate geovisualisation techniques to reveal and communicate the findings of your analysis.\nReproducibility (20 marks): This is an important learning outcome of this exercise. You will be assessed on your ability to provide a comprehensive documentation of the analysis procedures in the form of code chunks of RMarkdown. It is important to note that it is not enough by merely providing the code chunk without any explanation on the purpose and R function(s) used.\nBonus (10 marks): Demonstrate your ability to employ methods beyond what you had learned in class to gain insights from the data. The methods used must be geospatial in nature."
+  },
+  {
+    "objectID": "th_ex1.html#submission-instructions",
+    "href": "th_ex1.html#submission-instructions",
+    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "section": "Submission Instructions",
+    "text": "Submission Instructions\n\nThe write-up of the take-home exercise must be in distill or blogdown format. You are required to publish the write-up on Netlify.\nThe R project of the take-home exercise must be pushed onto your Github repository.\nYou are required to provide the links to Netlify service of the take-home exercise write-up and github repository on eLearn."
+  },
+  {
+    "objectID": "th_ex1.html#due-date",
+    "href": "th_ex1.html#due-date",
+    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "section": "Due Date",
+    "text": "Due Date\n10th September 2021 (Friday), 11.59pm (midnight)."
+  },
+  {
+    "objectID": "th_ex1.html#reference",
+    "href": "th_ex1.html#reference",
+    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "section": "Reference",
+    "text": "Reference\nHealth Ministry of Indonesia. Published 2020. Accessed March 30, 2020. https://covid19.go.id/\nJAKARTA’s COVID-19 RESPONSE TEAM. Accessed August 12, 2021."
+  },
+  {
+    "objectID": "th_ex1.html#learning-from-senior",
+    "href": "th_ex1.html#learning-from-senior",
+    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "section": "Learning from senior",
+    "text": "Learning from senior\nYou are advised to review these sample submissions prepared by your seniors.\n\nTake-home Exercise 1: Geographic Analysis of the Supply and Demand of Childcare Services in Singapore by Xiao Rong Wong\nTake-home Exercise 1: Understanding and Analysing Changes in the Supply of Childcare Services by Rajiv Abraham Xavier"
+  },
+  {
+    "objectID": "th_ex1.html#q-a",
+    "href": "th_ex1.html#q-a",
+    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "section": "Q & A",
+    "text": "Q & A\n\nQ1:\nI noted that the data link you provided will lead us to a webpage of daily updates (https://riwayat-file-covid-19-dki-jakarta-jakartagis.hub.arcgis.com/).\nWhen you mention to “Download the daily COVID-19 data of DKI Jakarta” Do you mean to do this manually or are we to use a google drive connector since all of these links are linked to a google drive sheet.\n\nProf. Kam: You are expected to download the file one by one. The data are cumulative. Hence, to download the data by month, you only need to download every last day of the month. In this case, there are only 19 files to download (assuming that 31 January 2020 - 31 July 2021). I have downloaded the data manual to try out myself and it won’t take more than 15minutes to download all of them. In fact, for your information, I have downloaded all the daily data until yesterday. This is the job of a data analyst 😞\n\n\n\nQ2:\nIn addition, when you mention “Integrate the daily data into a data frame by month” Do you mean we have to download multiple sheets and combine the data? If so does this mean we need to download for the last 30 days? or multiple months?\n\nProf Kam: Refer to earlier reply above.\n\n(I am unsure if this is the case or whether you refer to a specific feature. Unfortunately i do not understand the data at all given that most of the features are in a foreign language)\n\nProf. Kam: Yes, you have to download multiple workbooks and extract the worksheet and columns you need and then combine them into an integrated data file. This is what we called data wrangling in Data Science. You will learn how to do it using readxl, tydyr and dplyr package. With regard the foreign language, less worry because translation will be provided. In will be included in the revised version of the Take-home Exercise 1 handout latest by tomorrow morning 9.00am.\n\n\n\nQ3:\nLastly, when you mention “Download the DKI Jarkata shapefile” Is this manual downloading or do we need to dynamically download by code and extract and import from there?\n\nProf. Kam: Personally, I think download manually is easier because I just need to click on the link provided. After downloading, you are required to use sf package of r to parse the data into R and save it as a simple feature data frame. You will learn more on how to work with R package in next week lesson.\n\n\n\nQ4:\nIn this case, there are only 19 files to download (assuming that 31 January 2020 - 31 July 2021). On the webpage of daily updates (https://riwayat-file-covid-19-dki-jakarta-jakartagis.hub.arcgis.com/), I am only able to see the data file starting from 25 March 2020 onwards. In addition, the link to access the data file for 31 January 2021 is broken.\n\nProf Kam: Since the data only starts on 25 March 2020, then there is nothing wrong the first month data is on 31st March 2020. Likewise if 31st January 2021 is not available, there is nothing wrong 30th January 2021 data set is used. More important, you are required to document these two issues on your report.\n\n\n\nQ5:\nSome of the excel files had duplicate columns with the same name. For the Meninggal column, can I confirm that we look at the column without N/A values?\n\nProf Kam: We are interested in analysing the geographical distribution of Cumulative Death. In this case, the Meninggal without NA values should be used."
+  },
+  {
+    "objectID": "th_ex1.html#peer-learning",
+    "href": "th_ex1.html#peer-learning",
+    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "section": "Peer Learning",
+    "text": "Peer Learning\nAVULA NIHARIKA\nCHIN SHAN PEI SARAH\nDARRYL KWOK BING HENG\nGOH JIA XIN GENICE\nJEROME GOH TING CHUAN\nKWEK YI CHEN\nMEGAN SIM TZE YEN\n\nWhat is so special: The data important, extracting, wrangling and processing process were appropriately performed and comprehensively documented. The choropleth maps were well designed. All process are highly reproducible.\n\nNGAH XIN YAN\nNOR AISYAH BINTE AJIT\n\nWhat is so special: Appropriate used of functions to reduce copy-paste of codes. Ability to apply analytical mapping techniques appropriately.\n\nTEO JUN PENG\nTOH JUN LONG\nWONG WEI LING\nXU PENGTAI\nYU YILING"
   }
 ]
