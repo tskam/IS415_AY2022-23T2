@@ -1,5 +1,5 @@
 ---
-title: "IS415 Geospatial Analytics and Application"
+title: "IS415 Geospatial Analytics and Applications"
 ---
 
 # Welcome to the IS415 Geospatial Analytics and Applications!
