@@ -29,6 +29,12 @@ toc: true
 -   Building a course website using Quarto
 -   Publishing the course website on Netlify
 
+### Slides
+
+- [My First Date with Quarto](..\in-class\In-class_Ex01\In-class_Ex01.html)
+
+
+
 ## Hands-on Exercise
 
 ## References

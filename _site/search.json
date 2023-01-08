@@ -249,7 +249,7 @@
     "href": "outline/Lesson01_outline.html#in-class-exercise",
     "title": "Lesson 1: Introduction to Geospatial Analytics",
     "section": "In-class Exercise:",
-    "text": "In-class Exercise:\n\nInstalling and configuring R and RStudio\nInstalling Rtools and devtools\nInstalling and configuring git\nCreating a github account\nBuilding a course website using Quarto\nPublishing the course website on Netlify"
+    "text": "In-class Exercise:\n\nInstalling and configuring R and RStudio\nInstalling Rtools and devtools\nInstalling and configuring git\nCreating a github account\nBuilding a course website using Quarto\nPublishing the course website on Netlify\n\n\nSlides\n\nMy First Date with Quarto"
   },
   {
     "objectID": "outline/Lesson01_outline.html#hands-on-exercise",
@@ -761,5 +761,89 @@
     "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
     "section": "Peer Learning",
     "text": "Peer Learning\nAVULA NIHARIKA\nCHIN SHAN PEI SARAH\nDARRYL KWOK BING HENG\nGOH JIA XIN GENICE\nJEROME GOH TING CHUAN\nKWEK YI CHEN\nMEGAN SIM TZE YEN\n\nWhat is so special: The data important, extracting, wrangling and processing process were appropriately performed and comprehensively documented. The choropleth maps were well designed. All process are highly reproducible.\n\nNGAH XIN YAN\nNOR AISYAH BINTE AJIT\n\nWhat is so special: Appropriate used of functions to reduce copy-paste of codes. Ability to apply analytical mapping techniques appropriately.\n\nTEO JUN PENG\nTOH JUN LONG\nWONG WEI LING\nXU PENGTAI\nYU YILING"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#content",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#content",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "Content",
+    "text": "Content\n\nIntroduction to Quarto\nWhat is Reproducible Research\nA brief introduction to R and RStudio\nIntroduction to Quarto\nBuilding the course webpage by using Quarto\nDoing Data Science with tidyverse"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#what-is-reproducible-research",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#what-is-reproducible-research",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "What is Reproducible Research?",
+    "text": "What is Reproducible Research?\n\n\n\nResearch is considered to be reproducible when the exact results can be reproduced if given access to the original data, software, or code.\nReproducible research is sometimes known as reproducibility, reproducible statistical analysis, reproducible data analysis, reproducible reporting, and literate programming.\n\n\n\nSource: https://www.displayr.com/what-is-reproducible-research/"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#why-research-need-to-be-reproducible",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#why-research-need-to-be-reproducible",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "Why Research need to be Reproducible?",
+    "text": "Why Research need to be Reproducible?\n\n\n\nAccording to a Nature, more than 70% of researchers have tried and failed to reproduce another scientist’s experiments, and more than half have failed to reproduce their own experiments."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#r-a-very-brief-introduction",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#r-a-very-brief-introduction",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "R: A very brief introduction",
+    "text": "R: A very brief introduction\n\nR is a powerful language and environment for statistical computing and graphics. It is a re-implementation of the S language, which was developed in the 1980’s.\nR is a high level language. The core language has some superficial similarities to C, but many things are handled automatically in R that are not in C.\nIt is a free and open source software (FOSS) under the terms of the Free Software Foundation’s GNU General Public License in source code form.\nIt compiles and runs on a wide variety of UNIX platforms and similar systems (including FreeBSD and Linux), Windows and MacOS.\nIt is available from The Comprehensive R Archive Network"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-r-studio",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-r-studio",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "Introducing R Studio",
+    "text": "Introducing R Studio\n\nA free and open-source integrated development environment (IDE) for R."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "Introducing Quarto",
+    "text": "Introducing Quarto\n\nQuarto is a new open-source scientific and technical publishing system designed and developed by posit formally known as RStudio."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto-1",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto-1",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "Introducing Quarto",
+    "text": "Introducing Quarto\n\nQuarto documents are authored using markdown, an easy to write plain text format.\nQuarto documents are generated using Pandoc, a universal document converter."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto-2",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto-2",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "Introducing Quarto",
+    "text": "Introducing Quarto\n\nA method of literate programming that embed code and output from Python, R, and JavaScript via integration with Jupyter, Knitr, and Observable."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#downloading-and-installing-quarto",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#downloading-and-installing-quarto",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "Downloading and Installing Quarto",
+    "text": "Downloading and Installing Quarto\n\nVisit this site and download the Quarto of your choice."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#its-time-to-get-your-hands-dirty",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#its-time-to-get-your-hands-dirty",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "It’s Time to Get Your Hands Dirty!",
+    "text": "It’s Time to Get Your Hands Dirty!"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#to-learn-more",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#to-learn-more",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "To Learn more",
+    "text": "To Learn more\nMarkdown Basics\nFigures\nTables\nDiagrams\nCallout Blocks\nArticle Layout\nRStudio IDE\nQuarto Guide"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto-3",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto-3",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "Introducing Quarto",
+    "text": "Introducing Quarto\n\nA variety of extensions to Pandoc markdown useful for technical writing including cross-references, sub-figures, layout panels, hoverable citations and footnotes, callouts, and more.\nA project system for rendering groups of documents at once, sharing options across documents, and producing aggregate output like websites and books.\nAuthoring using a wide variety of editors and notebooks including JupyterLab, RStudio, and VS Code.\nA visual markdown editor that provides a productive writing interface for composing long-form documents.\n\nLearn more about Quarto at https://quarto.org."
   }
 ]

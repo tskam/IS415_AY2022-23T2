@@ -1,0 +1,208 @@
+---
+title: "In-class Exercise 1: My First Date with Quarto"
+subtitle: ""  
+author: "Dr. Kam Tin Seong<br/>Assoc. Professor of Information Systems"
+institute: "School of Computing and Information Systems,<br/>Singapore Management University"
+date: "`r Sys.Date()`"
+format: 
+  revealjs:
+    width: 1600
+    height: 900
+    show-notes: false
+    slide-number: true
+    show-slide-number: 'all'
+date-format: "DD MMM YYYY"    
+editor: visual
+---
+
+## Content
+
+-   Introduction to Quarto
+-   What is Reproducible Research
+-   A brief introduction to R and RStudio
+-   Introduction to Quarto
+-   Building the course webpage by using Quarto
+-   Doing Data Science with tidyverse
+
+## What is Reproducible Research?
+
+::: columns
+::: {.column width="50%"}
+-   Research is considered to be reproducible when the exact results can be reproduced if given access to the original data, software, or code.
+
+-   Reproducible research is sometimes known as reproducibility, reproducible statistical analysis, reproducible data analysis, reproducible reporting, and literate programming.
+:::
+
+::: {.column width="50%"}
+![](img/image1.jpg)
+
+Source: https://www.displayr.com/what-is-reproducible-research/
+:::
+:::
+
+## Why Research need to be Reproducible?
+
+::: columns
+::: {.column width="50%"}
+-   According to a [Nature](https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970), more than 70% of researchers have tried and failed to reproduce another scientist's experiments, and more than half have failed to reproduce their own experiments.
+:::
+
+::: {.column width="50%"}
+![](img/image2.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### What needs to be reproduced?
+
+The "what" that needs to be reproduced is typically:
+
+-   Actual results themselves, which includes:
+    -   Tables
+
+    -   Visualizations/figures/graphs
+
+    -   Values reported in the text
+-   The statistical evidence in support of the findings (e.g., p-values, confidence intervals, credible intervals).
+
+------------------------------------------------------------------------
+
+### [Ten simple rules for reproducible research](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003285#s9)
+
+-   For every result, keep track of how it was produced.
+-   Avoid manual data manipulation steps.
+-   Archive the excat versions of all external programmes used.
+-   Version control all custom scripts.
+-   Record all intermedia results, when possible in standard formats.
+-   For analysis that include randomness, note underlying random seeds.
+-   Always store raw data behind plots.
+-   Generate hierarchical analysis output, allowing layers of increasing detail to be inspected.
+-   Connect textual statements to underlying results.
+-   Provide public access to scripts, runs, and results.
+
+## R: A very brief introduction
+
+-   R is a powerful **language** and **environment** for **statistical computing and graphics**. It is a re-implementation of the S language, which was developed in the 1980's.
+
+-   R is a high level language. The core language has some superficial similarities to C, but many things are handled automatically in R that are not in C.
+
+-   It is a [**free and open source software (FOSS)**](https://en.wikipedia.org/wiki/Free_and_open-source_software) under the terms of the Free Software Foundation's [GNU](https://en.wikipedia.org/wiki/GNU) General Public License in source code form.
+
+-   It compiles and runs on a wide variety of UNIX platforms and similar systems (including FreeBSD and Linux), Windows and MacOS.
+
+-   It is available from [The Comprehensive R Archive Network](https://cran.r-project.org)
+
+------------------------------------------------------------------------
+
+### The R environment
+
+-   An effective data handling and storage facility,
+
+-   A suite of operators for calculations on arrays, in particular matrices,
+
+-   A large, coherent, integrated collection of intermediate tools for data analysis, graphical facilities for data analysis and display either on-screen or on hardcopy, and a well-developed, simple and effective programming language which includes conditionals, loops, user-defined recursive functions and input and output facilities.
+
+-   It is highly *extensible* and it has thousands of well-documented extensions (named R packages) for a very broad range of applications areas such as finance, business, economic, biostatistics and etc (As of August 2022 \~18471 R packages).
+
+-   It has a vast community both in academia and in business such as [stack overflow](https://stackoverflow.com/) and [RStudio Community](https://community.rstudio.com/).
+
+------------------------------------------------------------------------
+
+### [The CRAN Task View](https://www.maths.lancs.ac.uk/~rowlings/R/TaskViews/)
+
+![](img/image7.jpg){fig-align="center"}
+
+------------------------------------------------------------------------
+
+### Installing and Configurating R
+
+-   Download R installer by visiting one of the following links:
+
+    -   [Windows user](https://cran.r-project.org/bin/windows/base/)
+
+    -   [MacOS user](https://cran.r-project.org/bin/macosx/)
+
+-   Install R by clicking on the installer. If necessary, provide the installer administrator right. Install R in the root directory when prompted.
+
+-   After the installation completed, check the environment variable of your computer. If R path is not defined, you should update the path manually.
+
+![](img/image3a.jpg){fig-align="center"}
+
+------------------------------------------------------------------------
+
+### Introducing Rtools
+
+-   A toolchain bundle used for building R packages from source (those that need compilation of C/C++ or Fortran code) and for build R itself.
+
+-   Download RTools from this [site](https://cran.r-project.org/bin/windows/Rtools/).
+
+-   After the installation complete, check the environment variable of your computer to ensure that RTools path is there.
+
+![](img/image3b.jpg){width="800"}
+
+## Introducing [R Studio](https://www.rstudio.com/products/RStudio/)
+
+-   A free and open-source integrated development environment (IDE) for R.
+
+![](img/image3.jpg)
+
+## Introducing Quarto![](img/image4a.jpg){fig-align="center" width="180"}
+
+-   [Quarto](https://quarto.org/) is a new open-source scientific and technical publishing system designed and developed by [posit](https://posit.co/) formally known as RStudio.
+
+![](img/image4.jpg){width="1067"}
+
+## Introducing Quarto
+
+-   Quarto documents are authored using [markdown](https://en.wikipedia.org/wiki/Markdown), an easy to write plain text format.
+
+-   Quarto documents are generated using [Pandoc](https://pandoc.org/), a universal document converter.
+
+![](img/image4b.jpg)
+
+## Introducing Quarto
+
+-   A method of [*literate programming*](https://en.wikipedia.org/wiki/Literate_programming) that embed code and output from Python, R, and JavaScript via integration with [Jupyter](https://jupyter.org/), [Knitr](https://yihui.org/knitr/), and [Observable](https://github.com/observablehq/).
+
+    ![](img/image5.jpg){width="1000"}
+
+## Introducing Quarto
+
+-   A variety of extensions to Pandoc markdown useful for technical writing including cross-references, sub-figures, layout panels, hoverable citations and footnotes, callouts, and more.
+
+-   A project system for rendering groups of documents at once, sharing options across documents, and producing aggregate output like [websites](https://quarto.org/docs/websites/) and [books](https://quarto.org/docs/books/).
+
+-   Authoring using a wide variety of editors and notebooks including [JupyterLab](https://quarto.org/docs/tools/jupyter-lab.html), [RStudio](https://quarto.org/docs/tools/rstudio.html), and [VS Code](https://quarto.org/docs/tools/vscode.html).
+
+-   A [visual markdown editor](https://quarto.org/docs/visual-editor/) that provides a productive writing interface for composing long-form documents.
+
+Learn more about Quarto at <https://quarto.org>.
+
+## Downloading and Installing Quarto
+
+-   Visit this [site](https://quarto.org/docs/get-started/) and download the Quarto of your choice.
+
+![](img/image6.jpg)
+
+## It's Time to Get Your Hands Dirty!
+
+![](img/image9.jpg)
+
+## To Learn more
+
+[Markdown Basics](https://quarto.org/docs/authoring/markdown-basics.html)
+
+[Figures](https://quarto.org/docs/authoring/figures.html)
+
+[Tables](https://quarto.org/docs/authoring/tables.html)
+
+[Diagrams](https://quarto.org/docs/authoring/diagrams.html)
+
+[Callout Blocks](https://quarto.org/docs/authoring/callouts.html)
+
+[Article Layout](https://quarto.org/docs/authoring/article-layout.html)
+
+[RStudio IDE](https://quarto.org/docs/tools/rstudio.html)
+
+Quarto [Guide](https://quarto.org/docs/guide/)
