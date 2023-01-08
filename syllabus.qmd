@@ -21,10 +21,11 @@ This course provides students with an introduction to the concepts, principles a
 Upon completion of the course, students will be able to:
 
 -   Provide accurate explanation of the mathematical and input data requirements of the analysis method(s) used,
--   Import, extract, process, transform and assemble geospatial analytical sandbox programmatically,
--   Apply appropriate geospatial analysis methods in addressing specific analysis needs,
+-   Import, extract, process, transform and assemble geospatial analytical sandbox programmatically to meet the analysis needs,
+-   Apply appropriate geospatial analysis methods in addressing specific analysis tasks,
+-   Communicate the analysis procedures in a reproducible manner,
 -   Communicate the analysis results effectively and in an easy to understand manner with the help of appropriate geo- and data visualisation techniques, and
--   Design and implement web-based geospatial analytics applications.
+-   Design and implement web-enabled geospatial analytics applications.
 
 ## Competencies
 
@@ -51,7 +52,7 @@ Upon completion of the course, students will be able to:
 21. Performing spatial interpolation by using appropriate R package(s) and providing accurate interpretation of the analysis results.
 22. Defining geographic accessibility and explaining the methods of accessibility analysis.
 23. Performing geographic accessibility analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.
-24. Designing geospatial application programmatically by using free and open source software and packages (i.e. R, R packages and Shinny).
+24. Designing geospatial application programmatically by using free and open source software and packages (i.e. R, R packages and Shiny).
 
 ## Prerequisites/Co-requisites
 
@@ -79,8 +80,7 @@ Students may work together to help one another with computer or geospatial issue
 
 #### AY2021-22 Sample Take-home Exercises
 
-- [Take-home Exercise 1](https://is415.netlify.app/th_ex1.html)
-
+-   [Take-home Exercise 1](https://is415.netlify.app/th_ex1.html)
 
 ### Geospatial Analytics Project
 

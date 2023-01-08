@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "1 + 1\n\n[1] 2"
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "GAproject.html",
@@ -63,11 +63,172 @@
     "text": "In this web site, you will find all course materials here.\nInstructor: Dr. Kam Tin Seong, Associate Professor of Information Systems (Practice)\nConsultation booking link.\nVirtual Meeting Room: Zoom\n\n\n\nSection\nTime\nVenue\n\n\n\n\nG1\n8:15-11:30\nSCIS1 SR 2-2\n\n\n\n\n\n\n\nAll acts of academic dishonesty (including, but not limited to, plagiarism, cheating, fabrication, facilitation of acts of academic dishonesty by others, unauthorized possession of exam questions, or tampering with the academic work of other students) are serious offences. All work (whether oral or written) submitted for purposes of assessment must be the student’s own work. Penalties for violation of the policy range from zero marks for the component assessment to expulsion, depending on the nature of the offense. When in doubt, students should consult the instructors of the course. Details on the SMU Code of Academic Integrity may be accessed at http://www.smuscd.org/resources.html\n\n\n\nCourse materials obtained during your course of study at SMU are meant for personal use only, namely, for the purposes of studying and research. You are strictly not permitted to make copies of or print additional copies or distribute such copies of the course materials or any parts thereof, for commercial gain or exchange. For example, offering such materials on the Internet through CourseHero, Carousell and the like, is strictly prohibited.\nThe selling of these materials and/or any copies thereof are strictly prohibited under Singapore copyright laws. Printed materials and electronic materials are both protected by copyright laws. All students are subject to Singapore copyright laws and must strictly adhere to SMU’s procedures and requirements relating to copyright.\nPlease also note that for some materials, the publishers may specifically state that each copy is for the personal use of one individual only and no further reprographic reproduction is allowed, including for personal use. These restrictions are spelt out clearly on these specific sets of resources and students are required to adhere to these rules.\nStudents who infringe any of the aforesaid rules, laws and requirements shall be liable to disciplinary action by SMU. In addition, such students may also leave themselves open to suits by copyright owners who are entitled to take legal action against persons who infringe their copyright.\nWe strongly urge all students to respect the copyright laws and abide by SMU’s procedures and requirements relating to copyright.\n\n\n\nSMU strives to make learning experiences accessible for all. If you anticipate or experience physical or academic barriers due to disability, please let the instructor know immediately. You are also welcome to contact the university’s disability support team if you have questions or concerns about academic accommodations:included@smu.edu.sg\nPlease be aware that the accessible tables in our seminar room should remain available for students who require them. Emergency Preparedness for Teaching and Learning (EPTL): As part of emergency preparedness, Instructors may conduct lessons online via the WebEx platform during the term, to prepare students for online learning. During an actual emergency, students will be notified to access the WebEx platform for their online lessons. The class schedule will mirror the current face-to-face class timetable unless otherwise stated."
   },
   {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "Demystifying Geospatial Analytics",
+    "text": "Demystifying Geospatial Analytics\n\nA Geographical Information System (GIS) is a toolkit for creating, managing, analysing, visualising, and sharing data of any kind according to where it’s located.\n\n\n\nGeospatial analytics is more than a GIS."
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics-1",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics-1",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "Demystifying Geospatial Analytics",
+    "text": "Demystifying Geospatial Analytics\n\nGeospatial analytics is more than data visualisation\n\n\n\n\n\nSource: Singapore’s first disease map delivers real-time information on infectious diseases"
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics-2",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics-2",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "Demystifying Geospatial Analytics",
+    "text": "Demystifying Geospatial Analytics\n\nGeospatial analytics is more than just mapping."
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "Motivation of Geospatial Analytics",
+    "text": "Motivation of Geospatial Analytics\n\nAbout 80% of all data maintained by organisations around the world has a location component.\n\n\n\n(Source: BusinessWeek Research Services, 2006)"
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-1",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-1",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "Motivation of Geospatial Analytics",
+    "text": "Motivation of Geospatial Analytics\n\nGeospatial information in Smart Nation.\n\n\n\nSee more at this link"
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-2",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-2",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "Motivation of Geospatial Analytics",
+    "text": "Motivation of Geospatial Analytics\n\nThe explosion in the availability of open geospatial data from both the public and private sectors at national and international levels."
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-3",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-3",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "Motivation of Geospatial Analytics",
+    "text": "Motivation of Geospatial Analytics\n\nThe national geospatial master plan.\n\n\n\nSource: Singapore Geospatial Master Plan"
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "The role of Geospatial Analytics",
+    "text": "The role of Geospatial Analytics\n\nUncovering insights not found in statistical graphs and tables.\n\n\n\nSource: SGSAS - Simple Geo-Spatial Analysis using R Shiny"
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-1",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-1",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "The role of Geospatial Analytics",
+    "text": "The role of Geospatial Analytics\n\nTo reveal the untapped property of spatial contiguity in geographic knowledge discovery in databases.\n\n\n\nSource: SGSAS - Simple Geo-Spatial Analysis using R Shiny"
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-2",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-2",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "The role of Geospatial Analytics",
+    "text": "The role of Geospatial Analytics\n\nTo uncover the complexity of the real world relationship.\n\n\n\nSource: SGSAS - Simple Geo-Spatial Analysis using R Shiny"
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-3",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-3",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "The role of Geospatial Analytics",
+    "text": "The role of Geospatial Analytics\n\nTo model spatial interactions and flows.\n\n\n\nSource: IS415 Bus Rider Flow Project"
+  },
+  {
+    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#geospatial-analytics-and-social-consciousness",
+    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#geospatial-analytics-and-social-consciousness",
+    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
+    "section": "Geospatial Analytics and Social Consciousness",
+    "text": "Geospatial Analytics and Social Consciousness\nThe true power of geospatial analytics is to provide decision makers and planners with data-driven and process information for better problem solving and more efficient use of resources."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#content",
+    "href": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#content",
+    "title": "Lesson 2: Wrangling Geospatial Data in R: sf approach and methods",
+    "section": "Content",
+    "text": "Content\n\nAn overview of Geospatial Data Models\n\nVector and raster data model\nCoordinate systems and map projection\n\nHandling Geospatial Data in R: An Overview\nSimple features approach\n\nsf package\n\n\n\nThis lesson consists of two parts. First, I will talk about Geospatial Data Models. For students who have taken SMT201 GIS for Urban Planning, this is not new at all. However, for students who did not read SMT201, this will be new. Anyway, the focus of this section will be on R. Hence, even for students who have taken SMT201 before, this will be a good revision.\nIn part two of this lesson, I will introduce sp package. It is a relatively new R package specially developed to handle geospatial data R using tidyverse principle."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#geospatial-data-models",
+    "href": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#geospatial-data-models",
+    "title": "Lesson 2: Wrangling Geospatial Data in R: sf approach and methods",
+    "section": "Geospatial Data Models",
+    "text": "Geospatial Data Models\nWhy should we worry about?\n\n\nIt is important for us to note that what ever data capture in a database is a model of the real world. When we say model, this means that it is a simplify version of the real world and not the real world themselves."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#basic-spatial-data-models",
+    "href": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#basic-spatial-data-models",
+    "title": "Lesson 2: Wrangling Geospatial Data in R: sf approach and methods",
+    "section": "Basic Spatial Data Models",
+    "text": "Basic Spatial Data Models\n\nVector - implementation of discrete object conceptual model\n\nPoint, line and polygon representations.\nWidely used in cartography, and network analysis.\n\nRaster – implementation of field conceptual model\n\nArray of cells used to represent objects.\nUseful as background maps and for spatial analysis.\n\n\n\nIn general, there are two types of geospatial data models, namely vector and raster data models.\nVector data model tends to be used to store geospatial data that are discrete in nature. For example bus stop, building footprint, planning area.\nRaster data model, one the other hands, are used to store continuous fenomena such as air polution, elevation and precipitation."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#coordinate-systems-and-map-projections",
+    "href": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#coordinate-systems-and-map-projections",
+    "title": "Lesson 2: Wrangling Geospatial Data in R: sf approach and methods",
+    "section": "Coordinate Systems and Map Projections",
+    "text": "Coordinate Systems and Map Projections\nWhat is a coordinate system?\n\n\nA coordinate system is an important property of an geospatial data. It provides a location reference to the geospatial data.\n\nThere are two common types of coordinate systems used in mapping, namely: geographic coordinate systems and projected coordinate system.\n\n\n\n\n\n\n\nFurther Reading\n\n\n\nRefer to this article and Chapter 9 Coordinate Systems to learn more about map projection.\n\n\n\n\n\n\n\n\n\n\nA coordinate system is a reference system used to represent the locations of geographic features, imagery, and observations such as GPS locations within a common geographic framework.\nEach coordinate system is defined by:\n\nIts measurement framework which is either geographic (in which spherical coordinates are measured from the earth’s center) or planimetric (in which the earth’s coordinates are projected onto a two-dimensional planar surface).\nUnit of measurement (typically feet or meters for projected coordinate systems or decimal degrees for latitude–longitude).\nThe definition of the map projection for projected coordinate systems.\nOther measurement system properties such as a spheroid of reference, a datum, and projection parameters like one or more standard parallels, a central meridian, and possible shifts in the x- and y-directions."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#standard-for-geospatial-data-handling-and-analysis",
+    "href": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#standard-for-geospatial-data-handling-and-analysis",
+    "title": "Lesson 2: Wrangling Geospatial Data in R: sf approach and methods",
+    "section": "Standard for Geospatial Data Handling and Analysis",
+    "text": "Standard for Geospatial Data Handling and Analysis\n\n\n\n\n\n\n\nFurther Reading\n\n\nFor more information, visit this link.\n\n\n\n\nThe OGC OpenGIS Implementation Standard for Geographic Information / ISO 19125 defines:\n\nGeometric objects which can be of type point, line, polygon, multi-point, etc, and are associated to a given Coordinate Reference System;\nMethods on geometric objects return properties like dimension, boundary, area, centroid, etc;\nMethods for testing spatial relations between geometric objects equals, disjoint, intersects, touches, crosses, within, contains, overlaps and relate, which returns TRUE or FALSE;\nMethods that support spatial analysis distance, which returns a distance, and buffer, convex hull, intersection, union, difference, and symmetric difference, which returns new geometric objects.\n\nSource: www.opengeospatial.org/standards/sfa"
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#an-introduction-to-simple-features",
+    "href": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#an-introduction-to-simple-features",
+    "title": "Lesson 2: Wrangling Geospatial Data in R: sf approach and methods",
+    "section": "An introduction to simple features",
+    "text": "An introduction to simple features\n\nfeature: abstraction of real world phenomena (type or instance); has a geometry and other attributes (properties)\nsimple feature: feature with all geometric attributes described piecewise by straight line or planar interpolation between sets of points (no curves)\nIt is a hierarchical data model that simplifies geographic data by condensing a complex range of geographic forms into a single geometry class."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#geospatial-data-object-framework",
+    "href": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#geospatial-data-object-framework",
+    "title": "Lesson 2: Wrangling Geospatial Data in R: sf approach and methods",
+    "section": "Geospatial Data Object Framework",
+    "text": "Geospatial Data Object Framework\n\nTo begin with, all contributed packages for handling spatial data in R had different representations of the data. This made it difficult to exchange data both within R between packages, and between R and external le formats and applications.\nThe first general package to provide classes and methods for spatial data types that was developed for R is called sp. It was first released on CRAN in 2005.\nIn late October 2016, sf was first released on CRAN to provide standardised support for vector data in R."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#r-packages-that-support-spatial-classes",
+    "href": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#r-packages-that-support-spatial-classes",
+    "title": "Lesson 2: Wrangling Geospatial Data in R: sf approach and methods",
+    "section": "R packages that support spatial classes",
+    "text": "R packages that support spatial classes\nIn general, three R packages will be used to handle vector-based geospatial data in spatial classes, they are:\n\nsp provides classes and methods for dealing with spatial data in R.\nrgdal allows R to understand the structure of a geospatial data file by providing functions to read and convert geospatial data into easy-to-work-with R dataframes.\nrgeos implements the methods of the OGC standard."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#introducing-sf-package",
+    "href": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#introducing-sf-package",
+    "title": "Lesson 2: Wrangling Geospatial Data in R: sf approach and methods",
+    "section": "Introducing sf Package",
+    "text": "Introducing sf Package\n\nsf package provides a syntax and data-structures which are coherent with the tidyverse.\nA quick introduction can be found here.\nFor more detail, visit this link."
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#sf-functions",
+    "href": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#sf-functions",
+    "title": "Lesson 2: Wrangling Geospatial Data in R: sf approach and methods",
+    "section": "sf functions",
+    "text": "sf functions\n\nGeospatial data handling\nGeometric confirmation\nGeometric operations\nGeometry creation\nGeometry operations\nGeometric measurement"
+  },
+  {
+    "objectID": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#references",
+    "href": "lesson/Lesson02/Lesson02-Wrangling_Geospatial_Data_in_R.html#references",
+    "title": "Lesson 2: Wrangling Geospatial Data in R: sf approach and methods",
+    "section": "References",
+    "text": "References\nAll About sf package\n\n\nReference manual\nTidy spatial data analysis\n\nVignettes:\n\nSimple Features for R\nReading, Writing and Converting Simple Features\nManipulating Simple Feature Geometries\nManipulating Simple Features\nPlotting Simple Features\nMiscellaneous\nSpherical geometry in sf using s2geometry\n\nOthers:\n\nR spatial follows GDAL and PROJ development"
+  },
+  {
     "objectID": "lesson.html",
     "href": "lesson.html",
     "title": "Weekly Lesson Plan",
     "section": "",
-    "text": "Week\nDate\nTopic\nRemarks\n\n\n\n\n1\n9/1/2023\nLesson 1: Introduction to Geospatial Analytics\n\n\n\n2\n16/1/2023\nLesson 2: Geospatial Data Handling and Wrangling\n\n\n\n3\n25/1/2023\nLesson 3: Thematic and Analytical Mapping\nReplacement lesson 7:00PM-10:30PM\n\n\n4\n30/1/2023\nLesson 4: Spatial Point Patterns Analysis\n\n\n\n5\n6/2/2023\nLesson 5: Advanced Spatial Point Patterns Analysis\n\n\n\n6\n13/2/2023\nLesson 6: Spatial Weights and Applications\n\n\n\n7\n20/2/2023\nLesson 7: Measures of Global and Local Spatial Association\n\n\n\n8\n27/2/2023\nMid-term break Workshop on R Shiny\n\n\n\n9\n6/3/2023\nLesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis\n\n\n\n10\n13/3/2023\nLesson 9: Geographically Weighted Regression\n\n\n\n11\n20/3/2023\nLesson 10: Spatial Interaction Models\n\n\n\n12\n27/3/2023\nLesson 11: Modelling Geographic of Accessibility\n\n\n\n13\n3/4/2023\nLesson 12: The Epilogue\n\n\n\n14\n10/4/2023\nTownhall Presentation"
+    "text": "Week\nDate\nTopic\nRemarks\n\n\n\n\n1\n9/1/2023\nLesson 1: Introduction to Geospatial Analytics\n\n\n\n2\n16/1/2023\nLesson 2: Geospatial Data Handling and Wrangling\n\n\n\n3\n25/1/2023\nLesson 3: Thematic and Analytical Mapping.\nVenue: SR3-4, SCIS1. Time: 7:00-10:30PM\nReplacement lesson\n\n\n4\n30/1/2023\nLesson 4: Spatial Point Patterns Analysis\n\n\n\n5\n6/2/2023\nLesson 5: Advanced Spatial Point Patterns Analysis\n\n\n\n6\n13/2/2023\nLesson 6: Spatial Weights and Applications\n\n\n\n7\n20/2/2023\nLesson 7: Measures of Global and Local Spatial Association\n\n\n\n8\n27/2/2023\nMid-term break\nWorkshop on Building Web-enabled Geospatial Analytics Applications with Shiny. Venue: SR2-2 SCIS1, Time: 9:00am-12:00pm, 1:30pm-4:30pm.\n\n\n\n9\n6/3/2023\nLesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis\n\n\n\n10\n13/3/2023\nLesson 9: Geographically Weighted Regression\n\n\n\n11\n20/3/2023\nLesson 10: Spatial Interaction Models\n\n\n\n12\n27/3/2023\nLesson 11: Modelling Geographic of Accessibility\n\n\n\n13\n3/4/2023\nLesson 12: The Epilogue\n\n\n\n14\n10/4/2023\nTownhall Presentation"
   },
   {
     "objectID": "outline/Lesson01_outline.html",
@@ -75,6 +236,20 @@
     "title": "Lesson 1: Introduction to Geospatial Analytics",
     "section": "",
     "text": "Introduction to Geospatial Analytics\n\nDemystifying Geospatial Analytics\nGeospatial Analytics vs Mapping\nGeospatial Analytics vs GIS\nGeospatial Analytics vs Statistical Analysis, Data Mining & Machine Learning\n\nMotivation of Geospatial Analytics\nA Tour Through the Geospatial Analytics Zoo\nGeospatial Analytics and Social Consciousness"
+  },
+  {
+    "objectID": "outline/Lesson01_outline.html#lesson-slides",
+    "href": "outline/Lesson01_outline.html#lesson-slides",
+    "title": "Lesson 1: Introduction to Geospatial Analytics",
+    "section": "Lesson Slides",
+    "text": "Lesson Slides\n\nLesson 1 slides in html and pdf formats."
+  },
+  {
+    "objectID": "outline/Lesson01_outline.html#in-class-exercise",
+    "href": "outline/Lesson01_outline.html#in-class-exercise",
+    "title": "Lesson 1: Introduction to Geospatial Analytics",
+    "section": "In-class Exercise:",
+    "text": "In-class Exercise:\n\nInstalling and configuring R and RStudio\nInstalling Rtools and devtools\nInstalling and configuring git\nCreating a github account\nBuilding a course website using Quarto\nPublishing the course website on Netlify"
   },
   {
     "objectID": "outline/Lesson01_outline.html#hands-on-exercise",
@@ -200,7 +375,7 @@
     "href": "outline/Lesson05_outline.html",
     "title": "Lesson 5: Advanced Spatial Point Patterns Analysis",
     "section": "",
-    "text": "Meet-up Slides and Hands-on Notes\n\nLesson slides in html and pdf formats\nHandout of Hands-on Exercise 5: NetSPPA in html and pdf formats.\nHandout of Hands-on Exercise 5: MarkedSPPA in html and pdf formats.\n\n\n\nSelf-reading Before Meet-up\n\n\nReferences\n\nFloch, J.M., Marcon, E. and Puech, F. (2018) “Chapter 4: Spatial distribution of points” in Handbook of Spatial Analysis: Theory and Application with R.\nO’Sullivan, D., and Unwin, D. (2010) Geographic Information Analysis, Second Edition. John Wiley & Sons Inc., New Jersey, Canada. Chapter 5-6.\nBaddeley A., Rubak E. and Turner R. (2015) Spatial Point Patterns: Methodology and Applications with R, Chapman and Hall/CRC.\n\n\n\nAll About R\n\nspNetwork package.\n\nNetwork Kernel Density Estimate\nDetails about NKDE\nNetwork k Functions"
+    "text": "Content\n\nNetwork Constrained Point Patterns Analysis\n\nNetwork point density estimation methods\nNetwork-Constrained K-function\n\nSpatio-temporal Point Pattern Analysis\n\n\n\nMeet-up Slides and Hands-on Notes\n\nLesson slides in html and pdf formats\nHandout of Hands-on Exercise 5: NetSPPA in html and pdf formats.\nHandout of Hands-on Exercise 5: MarkedSPPA in html and pdf formats.\n\n\n\nSelf-reading Before Meet-up\n\n\nReferences\n\nFloch, J.M., Marcon, E. and Puech, F. (2018) “Chapter 4: Spatial distribution of points” in Handbook of Spatial Analysis: Theory and Application with R.\nO’Sullivan, D., and Unwin, D. (2010) Geographic Information Analysis, Second Edition. John Wiley & Sons Inc., New Jersey, Canada. Chapter 5-6.\nBaddeley A., Rubak E. and Turner R. (2015) Spatial Point Patterns: Methodology and Applications with R, Chapman and Hall/CRC.\n\n\n\nAll About R\n\nspNetwork package.\n\nNetwork Kernel Density Estimate\nDetails about NKDE\nNetwork k Functions"
   },
   {
     "objectID": "outline/Lesson06_outline.html",
@@ -441,11 +616,25 @@
     "text": "Authoring Guide\n\nMarkdown Basics\nFigures\nTables\nDiagrams\nCitations & Footnotes\nCross References\nArticle Layout"
   },
   {
+    "objectID": "Quarto.html#useful-web-resources",
+    "href": "Quarto.html#useful-web-resources",
+    "title": "All About Quarto",
+    "section": "Useful web resources",
+    "text": "Useful web resources\n\nAwesome Quarto. This github repository provides a comprehensive listing of Quarto resources. It should be the second stop (after Quarto homepage) if you need to look for revelent materials about Quarto."
+  },
+  {
     "objectID": "ShinyResources.html",
     "href": "ShinyResources.html",
     "title": "Shiny Resources",
     "section": "",
     "text": "Hadley Wickham (2020) Mastering Shiny. Everything you need to know about Shiny can be found here. It is not an easy to read book but worth investing time and effort to read.\nShiny from R Studio\nLearn Shiny\nFunction reference\nThe Shiny Cheat sheet\nColin Fay, Sébastien Rochette, Vincent Guyader, Cervan Girard (2020) Engineering Production-Grade Shiny Apps\nDavid Granjon (2020) Outstanding User Interfaces with Shiny\nHow to Build a Shiny Application from Scratch\nShiny 入門\n\n\n\n\n\nGallery\nShiny Contest Winners 2019 - Full List\nFifteen New Zealand government Shiny web apps\nIntroducing the New Zealand Trade Intelligence Dashboard"
+  },
+  {
+    "objectID": "ShinyResources.html#others",
+    "href": "ShinyResources.html#others",
+    "title": "Shiny Resources",
+    "section": "Others",
+    "text": "Others\n\nAwesome Shiny Extensions"
   },
   {
     "objectID": "syllabus.html",
@@ -459,14 +648,14 @@
     "href": "syllabus.html#course-objectives",
     "title": "Syllabus",
     "section": "Course Objectives",
-    "text": "Course Objectives\nUpon completion of the course, students will be able to:\n\nProvide accurate explanation of the mathematical and input data requirements of the analysis method(s) used,\nImport, extract, process, transform and assemble geospatial analytical sandbox programmatically,\nApply appropriate geospatial analysis methods in addressing specific analysis needs,\nCommunicate the analysis results effectively and in an easy to understand manner with the help of appropriate geo- and data visualisation techniques, and\nDesign and implement web-based geospatial analytics applications."
+    "text": "Course Objectives\nUpon completion of the course, students will be able to:\n\nProvide accurate explanation of the mathematical and input data requirements of the analysis method(s) used,\nImport, extract, process, transform and assemble geospatial analytical sandbox programmatically to meet the analysis needs,\nApply appropriate geospatial analysis methods in addressing specific analysis tasks,\nCommunicate the analysis procedures in a reproducible manner,\nCommunicate the analysis results effectively and in an easy to understand manner with the help of appropriate geo- and data visualisation techniques, and\nDesign and implement web-enabled geospatial analytics applications."
   },
   {
     "objectID": "syllabus.html#competencies",
     "href": "syllabus.html#competencies",
     "title": "Syllabus",
     "section": "Competencies",
-    "text": "Competencies\n\nDefining Geospatial Analytics and describing the applications of geospatial analytics by using real-world examples.\nExplaining the differences between Geospatial Analytics and Geographic Information Systems (GIS).\nImporting, wrangling and transforming aspatial data by using tidyverse family of packages\nImporting, wrangling and transforming geographical data by sing sf package.\nGeocoding and georeferencing geographical data programmatically.\nPerforming geoprocessing operations programmatically by using sf packages.\nPerforming Exploratory Data Analysis (EDA) using ggplot2 and Confirmatory Data Analysis using ggstatsplot.\nPreparing cartographic quality analytical maps by using tmap package.\nVisualising and analysing multivariate geospatial data using corrplot and heatmaply packages.\nExplaining the principles and methods of spatial point patterns and complete spatial randomness.\nPerforming spatial point pattern analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nExplaining the principles and methods of spatial weights.\nComputing spatial weights by using appropriate functions of spdep package.\nExplaining the concepts of spatial autocorrelation, spatial clusters, hot spot and cold spot areas.\nComputing localised geospatial statistics by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nExplaining the principles of explanatory modelling and methods of geographically weighted regression.\nCalibrating geographically weighted regression models by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nExplaining the concept of geographic segmentation and methods of spatially constrained clustering.\nPerforming spatially constrained cluster analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nExplaining the concept of spatial dependency and methods of spatial interpolation.\nPerforming spatial interpolation by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nDefining geographic accessibility and explaining the methods of accessibility analysis.\nPerforming geographic accessibility analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nDesigning geospatial application programmatically by using free and open source software and packages (i.e. R, R packages and Shinny)."
+    "text": "Competencies\n\nDefining Geospatial Analytics and describing the applications of geospatial analytics by using real-world examples.\nExplaining the differences between Geospatial Analytics and Geographic Information Systems (GIS).\nImporting, wrangling and transforming aspatial data by using tidyverse family of packages\nImporting, wrangling and transforming geographical data by sing sf package.\nGeocoding and georeferencing geographical data programmatically.\nPerforming geoprocessing operations programmatically by using sf packages.\nPerforming Exploratory Data Analysis (EDA) using ggplot2 and Confirmatory Data Analysis using ggstatsplot.\nPreparing cartographic quality analytical maps by using tmap package.\nVisualising and analysing multivariate geospatial data using corrplot and heatmaply packages.\nExplaining the principles and methods of spatial point patterns and complete spatial randomness.\nPerforming spatial point pattern analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nExplaining the principles and methods of spatial weights.\nComputing spatial weights by using appropriate functions of spdep package.\nExplaining the concepts of spatial autocorrelation, spatial clusters, hot spot and cold spot areas.\nComputing localised geospatial statistics by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nExplaining the principles of explanatory modelling and methods of geographically weighted regression.\nCalibrating geographically weighted regression models by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nExplaining the concept of geographic segmentation and methods of spatially constrained clustering.\nPerforming spatially constrained cluster analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nExplaining the concept of spatial dependency and methods of spatial interpolation.\nPerforming spatial interpolation by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nDefining geographic accessibility and explaining the methods of accessibility analysis.\nPerforming geographic accessibility analysis by using appropriate R package(s) and providing accurate interpretation of the analysis results.\nDesigning geospatial application programmatically by using free and open source software and packages (i.e. R, R packages and Shiny)."
   },
   {
     "objectID": "syllabus.html#prerequisitesco-requisites",
@@ -488,103 +677,5 @@
     "title": "Syllabus",
     "section": "Course Assessment Details",
     "text": "Course Assessment Details\n\nClass Participation\nA strict requirement for each class meeting is to complete the assigned readings and to try out the hands-on exercises before coming to class. Readings will be provided from the textbook on technical information and from provided documents and articles on real-world applications of geospatial analytics. Students are required to review the recommended readings and class exercises before coming to class. Without preparation, the learning and discussions would not be as meaningful. Student sharing of insights from readings and hands-on exercises of assigned materials in class participation will form a large part of the learning in this course. Students may also be quizzed in class and thereby contribute to class participation.\n\n\nTake-home Exercise\nThere are three take-home exercises that are due throughout the term. They aim to provide students the opportunities to apply the methods learned in class by working through mini real world cases.\nStudents may work together to help one another with computer or geospatial issues and discuss the materials that constitute the take-home exercise. However, each student is required to prepare and submit the take-home exercise (including any computer work) on their own. Cheating is strictly prohibited. Cheating includes but not limited to: plagiarism and submission of work that is not the student’s\n\nAY2021-22 Sample Take-home Exercises\n\nTake-home Exercise 1\n\n\n\n\nGeospatial Analytics Project\nThe purpose of the Geospatial Analytics Project is to provide students first-hand experience on collecting, processing and analysing spatial data using real world data. A project may involve creating geospatially enabled business data and subsequently analysing these data for business strategic or market analysis. Alternatively, a project may be in the form of application development by integrating analytical tools or models within a web framework. Students are encouraged to focus on research topics that are relevant to their field of study.\nThe project is team work. Students are required to form a project team of 3 members by the third week of the academic term. Each project teams must start thinking about their project ideas between week 4 and week 7. They are expected to discuss their project topic and scope of works with the instructor during the weeks too. A project website will be prepared and submitted to the instructor for approval by the end of week 8.\nAll project teams will give a postal presentation outlining the database design and implementation process, analytical methods used and findings of their project in week 14. Students are also required to prepare a project report or research paper of not more than 15 pages (excluding maps, figures, and tables) for submission by week 14. Additional materials will be distributed in class to assist students with topics selection, project design, postal presentation, and project report."
-  },
-  {
-    "objectID": "outline/Lesson01_outline.html#in-class-exercise",
-    "href": "outline/Lesson01_outline.html#in-class-exercise",
-    "title": "Lesson 1: Introduction to Geospatial Analytics",
-    "section": "In-class Exercise:",
-    "text": "In-class Exercise:\n\nInstalling and configuring R and RStudio\nInstalling Rtools and devtools\nInstalling and configuring git\nCreating a github account\nBuilding a course website using Quarto\nPublishing the course website on Netlify"
-  },
-  {
-    "objectID": "outline/Lesson01_outline.html#lesson-slides",
-    "href": "outline/Lesson01_outline.html#lesson-slides",
-    "title": "Lesson 1: Introduction to Geospatial Analytics",
-    "section": "Lesson Slides",
-    "text": "Lesson Slides\n\nLesson 1 slides in html and pdf formats."
-  },
-  {
-    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics",
-    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics",
-    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "Demystifying Geospatial Analytics",
-    "text": "Demystifying Geospatial Analytics\n\nA Geographical Information System (GIS) is a toolkit for creating, managing, analysing, visualising, and sharing data of any kind according to where it’s located.\n\n\n\nGeospatial analytics is more than a GIS."
-  },
-  {
-    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics-1",
-    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics-1",
-    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "Demystifying Geospatial Analytics",
-    "text": "Demystifying Geospatial Analytics\n\nGeospatial analytics is more than data visualisation\n\n\n\n\n\nSource: Singapore’s first disease map delivers real-time information on infectious diseases"
-  },
-  {
-    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics-2",
-    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#demystifying-geospatial-analytics-2",
-    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "Demystifying Geospatial Analytics",
-    "text": "Demystifying Geospatial Analytics\n\nGeospatial analytics is more than just mapping."
-  },
-  {
-    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics",
-    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics",
-    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "Motivation of Geospatial Analytics",
-    "text": "Motivation of Geospatial Analytics\n\nAbout 80% of all data maintained by organisations around the world has a location component.\n\n\n\n(Source: BusinessWeek Research Services, 2006)"
-  },
-  {
-    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-1",
-    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-1",
-    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "Motivation of Geospatial Analytics",
-    "text": "Motivation of Geospatial Analytics\n\nGeospatial information in Smart Nation.\n\n\n\nSee more at this link"
-  },
-  {
-    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-2",
-    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-2",
-    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "Motivation of Geospatial Analytics",
-    "text": "Motivation of Geospatial Analytics\n\nThe explosion in the availability of open geospatial data from both the public and private sectors at national and international levels."
-  },
-  {
-    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-3",
-    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#motivation-of-geospatial-analytics-3",
-    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "Motivation of Geospatial Analytics",
-    "text": "Motivation of Geospatial Analytics\n\nThe national geospatial master plan.\n\n\n\nSource: Singapore Geospatial Master Plan"
-  },
-  {
-    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics",
-    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics",
-    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "The role of Geospatial Analytics",
-    "text": "The role of Geospatial Analytics\n\nUncovering insights not found in statistical graphs and tables.\n\n\n\nSource: SGSAS - Simple Geo-Spatial Analysis using R Shiny"
-  },
-  {
-    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-1",
-    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-1",
-    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "The role of Geospatial Analytics",
-    "text": "The role of Geospatial Analytics\n\nTo reveal the untapped property of spatial contiguity in geographic knowledge discovery in databases.\n\n\n\nSource: SGSAS - Simple Geo-Spatial Analysis using R Shiny"
-  },
-  {
-    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-2",
-    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-2",
-    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "The role of Geospatial Analytics",
-    "text": "The role of Geospatial Analytics\n\nTo uncover the complexity of the real world relationship.\n\n\n\nSource: SGSAS - Simple Geo-Spatial Analysis using R Shiny"
-  },
-  {
-    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-3",
-    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#the-role-of-geospatial-analytics-3",
-    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "The role of Geospatial Analytics",
-    "text": "The role of Geospatial Analytics\n\nTo model spatial interactions and flows.\n\n\n\nSource: IS415 Bus Rider Flow Project"
-  },
-  {
-    "objectID": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#geospatial-analytics-and-social-consciousness",
-    "href": "lesson/Lesson01/Lesson01-Introduction_to_GAA.html#geospatial-analytics-and-social-consciousness",
-    "title": "Lesson 1: Introduction to Geospatial Analytics and Applications",
-    "section": "Geospatial Analytics and Social Consciousness",
-    "text": "Geospatial Analytics and Social Consciousness\nThe true power of geospatial analytics is to provide decision makers and planners with data-driven and process information for better problem solving and more efficient use of resources."
   }
 ]

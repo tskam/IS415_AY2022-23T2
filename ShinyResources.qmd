@@ -28,3 +28,6 @@ editor: visual
 -   [Fifteen New Zealand government Shiny web apps](http://freerangestats.info/blog/2018/05/13/nz-govt-shinyapps)
 -   [Introducing the New Zealand Trade Intelligence Dashboard](https://nzprimarysectortrade.w%20ordpress.com/2018/10/15/introducing-the-new-zealand-trade-intelligence-dashboard/)
 
+## Others
+
+-   [Awesome Shiny Extensions](https://github.com/nanxstats/awesome-shiny-extensions)

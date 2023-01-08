@@ -3,19 +3,38 @@ title: "Weekly Lesson Plan"
 editor: visual
 ---
 
-| Week | Date      | Topic                                                                                                          | Remarks                           |
-|------|-----------|----------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| 1    | 9/1/2023  | [Lesson 1: Introduction to Geospatial Analytics](outline/lesson01_outline.html)                                |                                   |
-| 2    | 16/1/2023 | [Lesson 2: Geospatial Data Handling and Wrangling](outline/lesson02_outline.html)                              |                                   |
-| 3    | 25/1/2023 | [Lesson 3: Thematic and Analytical Mapping](outline/lesson03_outline.html)                                     | Replacement lesson 7:00PM-10:30PM |
-| 4    | 30/1/2023 | [Lesson 4: Spatial Point Patterns Analysis](outline/lesson04_outline.html)                                     |                                   |
-| 5    | 6/2/2023  | [Lesson 5: Advanced Spatial Point Patterns Analysis](outline/lesson05_outline.html)                            |                                   |
-| 6    | 13/2/2023 | [Lesson 6: Spatial Weights and Applications](outline/lesson06_outline.html)                                    |                                   |
-| 7    | 20/2/2023 | [Lesson 7: Measures of Global and Local Spatial Association](outline/lesson07_outline.html)                    |                                   |
-| 8    | 27/2/2023 | Mid-term break Workshop on R Shiny                                                                             |                                   |
-| 9    | 6/3/2023  | [Lesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis](outline/lesson08_outline.html) |                                   |
-| 10   | 13/3/2023 | [Lesson 9: Geographically Weighted Regression](outline/lesson09_outline.html)                                  |                                   |
-| 11   | 20/3/2023 | [Lesson 10: Spatial Interaction Models](outline/lesson10_outline.html)                                         |                                   |
-| 12   | 27/3/2023 | [Lesson 11: Modelling Geographic of Accessibility](outline/lesson11_outline.html)                              |                                   |
-| 13   | 3/4/2023  | [Lesson 12: The Epilogue](outline/lesson12_outline.html)                                                       |                                   |
-| 14   | 10/4/2023 | Townhall Presentation                                                                                          |                                   |
++---------+-----------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------+
+| Week    | Date      | Topic                                                                                                                                    | Remarks             |
++=========+===========+==========================================================================================================================================+=====================+
+| 1       | 9/1/2023  | [Lesson 1: Introduction to Geospatial Analytics](outline/lesson01_outline.html)                                                          |                     |
++---------+-----------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------+
+| 2       | 16/1/2023 | [Lesson 2: Geospatial Data Handling and Wrangling](outline/lesson02_outline.html)                                                        |                     |
++---------+-----------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------+
+| 3       | 25/1/2023 | [Lesson 3: Thematic and Analytical Mapping](outline/lesson03_outline.html).                                                              | Replacement lesson  |
+|         |           |                                                                                                                                          |                     |
+|         |           | Venue: SR3-4, SCIS1. Time: 7:00-10:30PM                                                                                                  |                     |
++---------+-----------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------+
+| 4       | 30/1/2023 | [Lesson 4: Spatial Point Patterns Analysis](outline/lesson04_outline.html)                                                               |                     |
++---------+-----------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------+
+| 5       | 6/2/2023  | [Lesson 5: Advanced Spatial Point Patterns Analysis](outline/lesson05_outline.html)                                                      |                     |
++---------+-----------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------+
+| 6       | 13/2/2023 | [Lesson 6: Spatial Weights and Applications](outline/lesson06_outline.html)                                                              |                     |
++---------+-----------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------+
+| 7       | 20/2/2023 | [Lesson 7: Measures of Global and Local Spatial Association](outline/lesson07_outline.html)                                              |                     |
++---------+-----------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------+
+| 8       | 27/2/2023 | Mid-term break                                                                                                                           |                     |
+|         |           |                                                                                                                                          |                     |
+|         |           | Workshop on Building Web-enabled Geospatial Analytics Applications with Shiny. Venue: SR2-2 SCIS1, Time: 9:00am-12:00pm, 1:30pm-4:30pm.  |                     |
++---------+-----------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------+
+| 9       | 6/3/2023  | [Lesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis](outline/lesson08_outline.html)                           |                     |
++---------+-----------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------+
+| 10      | 13/3/2023 | [Lesson 9: Geographically Weighted Regression](outline/lesson09_outline.html)                                                            |                     |
++---------+-----------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------+
+| 11      | 20/3/2023 | [Lesson 10: Spatial Interaction Models](outline/lesson10_outline.html)                                                                   |                     |
++---------+-----------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------+
+| 12      | 27/3/2023 | [Lesson 11: Modelling Geographic of Accessibility](outline/lesson11_outline.html)                                                        |                     |
++---------+-----------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------+
+| 13      | 3/4/2023  | [Lesson 12: The Epilogue](outline/lesson12_outline.html)                                                                                 |                     |
++---------+-----------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------+
+| 14      | 10/4/2023 | Townhall Presentation                                                                                                                    |                     |
++---------+-----------+------------------------------------------------------------------------------------------------------------------------------------------+---------------------+

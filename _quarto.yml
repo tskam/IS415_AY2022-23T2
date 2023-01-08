@@ -30,9 +30,10 @@ website:
         href: "ShinyWorkshop/Shiny3/Shiny3.html"
       - text: "Shiny Resources"
         href: ShinyResources.html
-    - text: "All About Quarto"
-      href: quarto.html    
+       
     right:
+    - text: "All About Quarto"
+      href: quarto.html 
     - text: "Home"
       href: index.html
 
