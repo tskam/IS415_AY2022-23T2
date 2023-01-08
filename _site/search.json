@@ -845,5 +845,138 @@
     "title": "In-class Exercise 1: My First Date with Quarto",
     "section": "Introducing Quarto",
     "text": "Introducing Quarto\n\nA variety of extensions to Pandoc markdown useful for technical writing including cross-references, sub-figures, layout panels, hoverable citations and footnotes, callouts, and more.\nA project system for rendering groups of documents at once, sharing options across documents, and producing aggregate output like websites and books.\nAuthoring using a wide variety of editors and notebooks including JupyterLab, RStudio, and VS Code.\nA visual markdown editor that provides a productive writing interface for composing long-form documents.\n\nLearn more about Quarto at https://quarto.org."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#content",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#content",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Content",
+    "text": "Content\n\nAn Overview of Data Science\nGetting Data into R\nData Cleaning and Tidying\nData Manipulation and Transformation\nExploratory Data Analysis\nModelling\nCommunication"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---an-overview",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---an-overview",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Data Science Process - An Overview",
+    "text": "Data Science Process - An Overview\n\nReference: R for Data Science"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-r-tools",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-r-tools",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Data Science R Tools",
+    "text": "Data Science R Tools"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#introducing-tidyverse",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#introducing-tidyverse",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Introducing Tidyverse",
+    "text": "Introducing Tidyverse\n\n\nTidyverse is a collection of R packages that share common philosophies and designed to work together for doing data science."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---getting-data",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---getting-data",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Data Science Process - Getting Data",
+    "text": "Data Science Process - Getting Data"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#readr-package",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#readr-package",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "readr Package",
+    "text": "readr Package\n\n\n\n\nThe goal of readr is to provide a fast and friendly way to read rectangular data (like csv, tsv, and fwf).\nIt is designed to flexibly parse many types of data found in the wild, while still cleanly failing when data unexpectedly changes.\nreadr supports seven file formats with seven read_ functions:\n\nread_csv(): comma separated (CSV) files\nread_csv2(): uses ; for the field separator and , for the decimal point. This is common in some European countries\nread_tsv(): tab separated files\nread_delim(): general delimited files\n\n\n\n\n\n\nreadr\n\nread_fwf(): fixed width files\nread_table(): tabular files where colums are separated by white-space.\nread_log(): web log files."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---tidy-data",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---tidy-data",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Data Science Process - Tidy Data",
+    "text": "Data Science Process - Tidy Data"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#introducing-tidyr-package",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#introducing-tidyr-package",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Introducing tidyr Package",
+    "text": "Introducing tidyr Package\n\n\n\nA package that makes it easy to “tidy” your data (not general reshaping or aggregating).\nIt is an evolution of ‘reshape2’.\nFive main categories:\n\nPivotting\nRectangling\nNesting\nSplitting and combining\nMissing values"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#getting-to-know-or-pipe-operator",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#getting-to-know-or-pipe-operator",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Getting to know %>% or pipe() operator",
+    "text": "Getting to know %>% or pipe() operator\n\nPipe operator (i.e. %>%) is provided by the magrittr package.\nIt forwards a value, or the result of an expression, into the next function call/expression.\nRefer to the magrittr vignette for more examples."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---data-manipulation-and-transformation",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---data-manipulation-and-transformation",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Data Science Process - Data Manipulation and Transformation",
+    "text": "Data Science Process - Data Manipulation and Transformation"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#what-is-dplyr-package",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#what-is-dplyr-package",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "What is dplyr Package?",
+    "text": "What is dplyr Package?\n\n\n\nA grammar of data manipulation.\nIt provides easy tools for the most common data manipulation tasks.\nIt is built to work directly with data frames."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#why-use-dplyr",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#why-use-dplyr",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Why use dplyr?",
+    "text": "Why use dplyr?\n\nSpeed: dplyr is really fast.\nReadability: the code syntax is straightforward and easy to read.\nChaining: never break the chain. More on this later.\nIntegrates with ggplot2: plot your data in the same workflow that you manipulate it with.\nCan be used to analyse external databases without knowledge of additional database query languages."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#deriving-new-columns-from-existing-columns-mutate",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#deriving-new-columns-from-existing-columns-mutate",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Deriving New Columns from Existing Columns: mutate()",
+    "text": "Deriving New Columns from Existing Columns: mutate()\n\n\n\n\nThe newly derived columns will be added at the end of the existing data.frame. The existing columns will be preserved.\nUseful functions available in calculations of variables:\n\n+, -, *log()*, etc., for their usual mathematical meanings.\n*lead()*, *lag()*.\n*dense_rank()*, *min_rank()*, *percent_rank()*, *row_number()*, *cume_dist()*, *ntile()*.\n*cumsum()*, *cummean()*, *cummin()*, *cummax()*, *cumany()*, *cumall()*.\n*na_if()*, *coalesce()*.\n*if_else()*, *recode()*, *case_when()*."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#group-by-one-or-more-columns-group_by-and-ungroup",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#group-by-one-or-more-columns-group_by-and-ungroup",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Group by one or more columns: group_by() and ungroup()",
+    "text": "Group by one or more columns: group_by() and ungroup()\n\n\nAllows for group operations in the “split-apply-combine” concept.\nUsually, group_by() will follow by another dplyr verb such as summarise()"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#two-table-verbs---join-functions",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#two-table-verbs---join-functions",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Two-table Verbs - Join functions",
+    "text": "Two-table Verbs - Join functions\nIn dplyr, there are three types of joins:\n\nMutating joins combine the columns (variables) of 2 tables;\nFiltering joins affect only the cases or observations (rows) of 2 tables;\nSet operations on 2 tables expect both tables to have the same variables and treat them like sets that can be combined or intersected."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#mutating-joins",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#mutating-joins",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Mutating joins",
+    "text": "Mutating joins\n\nMutating joins combine the variables (columns) of 2 tables x and y.\nThe term mutating is used in analogy to the dplyr::mutate command: Just as mutate creates new variables (columns), a mutating join adds new variables (columns) to a table x from matching cases (rows) of another table y."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#mutating-joins-1",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#mutating-joins-1",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Mutating joins",
+    "text": "Mutating joins\nThere are 4 types of mutating joins to combine the cases (rows) and variables (columns) of tables x and y:\n\nleft_join(x, y): Return all rows from x, and all columns from x and y. Rows in x with no match in y will have NA values in the new columns. If there are multiple matches between x and y, all combinations of the matches are returned.\nright_join(x, y): Same as left_join(y, x), and hence redundant.\nfull_join(x, y): Return all rows and all columns that exist in x or in y. If there are non-matching values, return NA for the ones missing.\ninner_join(x, y): Return all rows from x where there are matching values in y, and all columns from x and y. If there are multiple matches between x and y, all combination of the matches are returned."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#mutating-joins-2",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#mutating-joins-2",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Mutating joins",
+    "text": "Mutating joins"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#reference",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#reference",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Reference",
+    "text": "Reference\n\n\n\nR for Data Science especially\n\nChapter 5 Data transformation,\nChapter 10 Tibbles,\nChapter 11 Data Imports,\nChapter 12 Tidy data,\nChapter 13 Relational data and\nChapter 18 Pipes.\n\nTidyverse\ntidyr\ndplyr\nreadr\ntibble"
   }
 ]

@@ -1,0 +1,983 @@
+---
+title: "In-class Exercise 1: <br/>Doing Data Science with R<br/>tidyverse methods"
+subtitle: ""
+author: "Dr. Kam Tin Seong<br/>Assoc. Professor of Information Systems"
+institute: "School of Computing and Information Systems,<br/>Singapore Management University"
+date: "`r Sys.Date()`"
+format: 
+  revealjs:
+    width: 1600
+    height: 900
+    show-notes: false
+    slide-number: true
+    show-slide-number: 'all'
+date-format: "DD MMM YYYY"    
+editor: visual
+---
+
+## Content
+
+-   An Overview of Data Science
+
+-   Getting Data into R
+
+-   Data Cleaning and Tidying
+
+-   Data Manipulation and Transformation
+
+-   Exploratory Data Analysis
+
+-   Modelling
+
+-   Communication
+
+## Data Science Process - An Overview
+
+![](img/DDS1.png)
+
+Reference: [R for Data Science](https://r4ds.had.co.nz/)
+
+------------------------------------------------------------------------
+
+### Programming Data Science best practice
+
+![](img/img1-5.jpg)
+
+------------------------------------------------------------------------
+
+## Data Science R Tools
+
+![](img/image1a.jpg)
+
+------------------------------------------------------------------------
+
+## Introducing Tidyverse
+
+::: columns
+::: {.column width="50%"}
+Tidyverse is a collection of R packages that share common philosophies and designed to work together for doing data science.
+
+![](img/image2-1a.jpg){width="800"}
+:::
+
+::: {.column width="50%"}
+![](img/image2-1.jpg){width="649"}
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Installing and Loading Tidyverse
+
+```{r}
+#| echo: true
+pacman::p_load(tidyverse, psych)
+```
+
+The code chunk above performs the following three tasks:
+
+-   Create a packaging list called packages.
+
+-   Check if the package(s) on the list have been installed in R, if they have yet to be installed then go ahead to install the missing package(s).
+
+-   Launch the packages in R using library().
+
+## Data Science Process - Getting Data
+
+![](img/DDS2.png)
+
+## [**readr**](http://readr.tidyverse.org) Package
+
+::: columns
+::: {.column width="50%"}
+::: {style="font-size: 0.8em"}
+-   The goal of **readr** is to provide a fast and friendly way to read rectangular data (like csv, tsv, and fwf).
+
+-   It is designed to flexibly parse many types of data found in the wild, while still cleanly failing when data unexpectedly changes.
+
+-   **readr** supports seven file formats with seven `read_` functions:
+
+    -   `read_csv()`: comma separated (CSV) files
+
+    -   `read_csv2()`: uses ; for the field separator and , for the decimal point. This is common in some European countries
+
+    -   `read_tsv()`: tab separated files
+
+    -   `read_delim()`: general delimited files
+:::
+:::
+
+::: {.column width="50%"}
+::: {style="font-size: 0.8em"}
+-   readr
+
+    -   `read_fwf()`: fixed width files
+
+    -   `read_table()`: tabular files where colums are separated by white-space.
+
+    -   `read_log()`: web log files.
+
+![](img/image2-3.jpg)
+:::
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Data types of **readr**
+
+*readr* functions guess the types of each column and convert types when appropriate (but will NOT convert strings to factors automatically).
+
+![](img/image2-3b.jpg){fig-align="center" width="168"}
+
+------------------------------------------------------------------------
+
+### What else you can do with **readr**?
+
+::: columns
+::: {.column width="50%"}
+![](img/image2-3c.jpg){width="700"}
+:::
+
+::: {.column width="50%"}
+![](img/image2-3d.jpg){width="700"}
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Importing data using **readr** versus Base R
+
+The code:
+
+```{r}
+#| echo: true
+realis2019 <- read_csv("data/REALIS2019.csv")
+```
+
+Compared to the corresponding base functions, **readr** functions:
+
+-   Use a consistent naming scheme for the parameters (e.g. col_names and col_types not header and colClasses).
+
+-   Are much faster (up to 10x).
+
+-   Leave strings as is by default, and automatically parse common date/time formats.
+
+-   Have a helpful progress bar if loading is going to take a while.
+
+-   All functions work exactly the same way regardless of the current locale. To override the US-centric defaults, use locale().
+
+```{r}
+realis2019.csv <- read.csv("data/REALIS2019.csv")
+```
+
+------------------------------------------------------------------------
+
+### Tidyverse approach to view the data - `tbl_df()`
+
+::: columns
+::: {.column width="50%"}
+-   `tbl_df()` wraps a local data frame.
+
+-   The main advantage to using a *tbl_df* over a regular data frame is the printing:
+
+    -   *tbl* objects only print a few rows and all the columns that fit on one screen, describing the rest of it as text.
+
+-   `tbl_df()` is a function of **tibble** package. **tibble** package can be installed either from RCRAN directly or from tidayverse package.
+
+-   For more, read [Chapter 10: Tibble of R for Data Science](https://r4ds.had.co.nz/tibbles.html)
+:::
+
+::: {.column width="50%"}
+![](img/image2-4.jpg){width="690"}
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Tidyverse approach to view the data
+
+Now, use the code below to view the data.
+
+```{r}
+#| echo: true
+realis2019
+```
+
+Notice that only the first ten records will be displayed. Furthermore, only the columns that can be displayed on the view will appear.
+
+## Data Science Process - Tidy Data
+
+![](img/DDS3.png)
+
+------------------------------------------------------------------------
+
+### Why Data Tidying
+
+-   Classroom data are like teddy bears and real world data are like a grizzly bear with salmon blood dripping out its mouth.
+
+![](img/img1-2.jpg)
+
+------------------------------------------------------------------------
+
+### The Tidy Data
+
+A dataset is messy or tidy depending on how rows, columns and tables are matched up with observation.
+
+![](img/image2-6a.jpg)
+
+------------------------------------------------------------------------
+
+### The Tidy Data
+
+![](img/image2-6b.jpg)
+
+------------------------------------------------------------------------
+
+### The Tidy Data
+
+![](img/image2-6c.jpg)
+
+## Introducing [**tidyr**](https://tidyr.tidyverse.org/) Package
+
+::: columns
+::: {.column width="50%"}
+-   A package that makes it easy to "tidy" your data (not general reshaping or aggregating).
+
+-   It is an evolution of 'reshape2'.
+
+-   Five main categories:
+
+    -   Pivotting
+    -   Rectangling
+    -   Nesting
+    -   Splitting and combining
+    -   Missing values
+:::
+
+::: {.column width="50%"}
+![](img/image2-10b.jpg){width="519"}
+:::
+:::
+
+------------------------------------------------------------------------
+
+### The data
+
+-   *PopData2019_fat.csv* dataset will be used in this section of our discussion.
+
+-   Importing the data. The code chunk should look like below:
+
+```{r}
+popdata_fat <- read_csv("data/PopData2019_fat.csv")
+```
+
+------------------------------------------------------------------------
+
+### Messy Data 1: Column headers are values, not variable names
+
+-   One of the first issue we found in the newly imported *popdata_fat* is the column headers 0_to_4:90_and_over, straightly speaking, they are values and not variable names.
+
+![](img/image2-8.jpg)
+
+------------------------------------------------------------------------
+
+### Messy Data 1: Column headers are values, not variable names
+
+#### The tidy dataframe
+
+-   Reshape *popdata_fat* so that it looks similar to the table below. In this data table, the column headers 0_to_4:90_and_over should be transformed and stored into a new column called *AgeGroup* and their corresponding population values should be stored in a new column called *Population*.
+
+![](img/image2-9.jpg)
+
+------------------------------------------------------------------------
+
+### [Pivotting](https://tidyr.tidyverse.org/articles/pivot.html)
+
+-   "Pivotting" which converts between long and wide forms.
+
+-   tidyr 1.0.0 introduces `pivot_longer()` and `pivot_wider()`, replacing the older `spread()` and `gather()` functions.
+
+![](img/image2-7.jpg)
+
+------------------------------------------------------------------------
+
+### Pivotting with [`pivot_longer()`](https://tidyr.tidyverse.org/reference/pivot_longer.html)
+
+::: columns
+::: {.column width="50%"}
+-   `pivot_longer()` "lengthens" data, increasing the number of rows and decreasing the number of columns.
+
+![](img/image2-7b.jpg)
+:::
+
+::: {.column width="50%"}
+-   The code chunk is:
+
+```{r}
+#| echo: true
+popdata_long <- popdata_fat %>%
+  pivot_longer(c(3:21),
+               names_to = "Age Group", 
+               values_to = "Population")
+```
+
+-   For more example, refer to [pivot_longer](https://tidyr.tidyverse.org/reference/pivot_longer.html)
+:::
+:::
+
+## Getting to know `%>%` or `pipe()` operator
+
+-   Pipe operator (i.e. %\>%) is provided by the **magrittr** package.
+
+-   It forwards a value, or the result of an expression, into the next function call/expression.
+
+-   Refer to the [magrittr vignette](https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html) for more examples.
+
+------------------------------------------------------------------------
+
+### More advanced usage of `pivot_longer()`
+
+A more challenging situation occurs when you have multiple variables crammed into the column names. For example, take the *who* dataset:
+
+```{r}
+#| echo: true
+who
+```
+
+------------------------------------------------------------------------
+
+### More advanced usage of `pivot_longer()`
+
+We can break these variables up by specifying multiple column names in names_to, and then either providing names_sep or names_pattern. Here names_pattern is the most natural fit. It has a similar interface to extract: you give it a regular expression containing groups (defined by ()) and it puts each group in a column.
+
+```{r}
+#| echo: true
+#| eval: false
+who_longer1 <- who %>%
+  pivot_longer(
+    cols = new_sp_m014:newrel_f65,
+    names_to = c("diagnosis", "gender", "age"),
+    names_pattern = "new_?(.*)_(.)(.*)",
+    values_to = "count")
+```
+
+------------------------------------------------------------------------
+
+### More advanced usage of `pivot_longer()`
+
+The output data frame will look similar to below.
+
+```{r}
+#| echo=FALSE
+who_longer1 <- who %>%
+  pivot_longer(
+    cols = new_sp_m014:newrel_f65,
+    names_to = c("diagnosis", "gender", "age"),
+    names_pattern = "new_?(.*)_(.)(.*)",
+    values_to = "count")
+who_longer1
+```
+
+------------------------------------------------------------------------
+
+### More advanced usage of `pivot_longer()`
+
+We could go one step further and specify the types of the gender and age columns. I think this is good practice when you have categorical variables with a known set of values.
+
+```{r}
+#| echo: true
+#| eval: false
+who_longer2 <- who %>%
+  pivot_longer(
+    cols = new_sp_m014:newrel_f65,
+    names_to = c("diagnosis", "gender", "age"),
+    names_pattern = "new_?(.*)_(.)(.*)",
+    names_ptypes = list(
+      gender = factor(levels = c("f", "m")),
+      age = factor(levels = c("014", "1524", "2534", 
+                              "3544", "4554", "5564", "65"), 
+                   ordered = TRUE)),
+    values_to = "count",)
+```
+
+------------------------------------------------------------------------
+
+### More advanced usage of `pivot_longer()`
+
+The data frame will look similar to below.
+
+```{r}
+#| echo: false
+
+who_longer2 <- who %>%
+  pivot_longer(cols = new_sp_m014:newrel_f65,
+               names_to = c("diagnosis", "gender", "age"),
+               names_pattern = "new_?(.*)_(.)(.*)",
+               names_ptypes = list(gender = factor(levels = c("f", "m")),
+                                   age = factor(levels = c("014", "1524", "2534", "3544", "4554", "5564", "65"),
+                                                ordered = TRUE)),
+               values_to = "count",)
+who_longer2
+```
+
+## Data Science Process - Data Manipulation and Transformation
+
+![](img/DDS4.png)
+
+------------------------------------------------------------------------
+
+## What is [**dplyr**](http://dplyr.tidyverse.org/index.html) Package?
+
+::: columns
+::: {.column width="50%"}
+-   A grammar of data manipulation.
+
+-   It provides easy tools for the most common data manipulation tasks.
+
+-   It is built to work directly with data frames.
+:::
+
+::: {.column width="50%"}
+![](img/image2-10e.jpg){width="700"}
+:::
+:::
+
+------------------------------------------------------------------------
+
+## Why use **dplyr**?
+
+-   Speed: dplyr is really fast.
+
+-   Readability: the code syntax is straightforward and easy to read.
+
+-   Chaining: never break the chain. More on this later.
+
+-   Integrates with ggplot2: plot your data in the same workflow that you manipulate it with.
+
+-   Can be used to analyse external databases without knowledge of additional database query languages.
+
+------------------------------------------------------------------------
+
+### The Seven Verbs of **dplyr**
+
+dplyr aims to provide a function for each basic verb of data manipulation:
+
+-   `select()` to select variables based on their names.
+
+-   `filter()` to select cases based on their values.
+
+-   `arrange()` to reorder the cases.
+
+-   `mutate()` and `transmute()` to add new variables that are functions of existing variables.
+
+-   `group_by()` allows for group operations in the "split-apply-combine" concept
+
+-   `summarise()` to condense multiple values to a single value.
+
+-   `join()` to join to table using unique identifiers from the join tables.
+
+------------------------------------------------------------------------
+
+### The syntax of **dplyr** functions
+
+-   The first argument is a data frame.
+
+-   The subsequent arguments describe what to do with the data frame, using the variable names (without quotes).
+
+-   The result is a new data frame.
+
+------------------------------------------------------------------------
+
+### The data
+
+-   *REALIS2019.csv* data set consists of private residential property transaction records of 2019. It is extracted from RELIAS of URA. The service is accessibility via SMU Library's eDatabase.
+
+-   Use the code chunk below to read the data set into R.
+
+```{r}
+#| echo: true
+realis2019 <- read_csv("data/REALIS2019.csv")
+```
+
+------------------------------------------------------------------------
+
+### Selecting Columns of Interest: [`select()`](https://dplyr.tidyverse.org/reference/select.html)
+
+-   `select()` function selects columns by names.
+
+-   `select()` keeps only the columns you mention.
+
+-   the ":" selects range and "-" select everything except the variable(s).
+
+-   There are a number of special functions that only work inside `select()`, they are:
+
+    -   `contains()`, selects columns whose name contains a character string.
+    -   `ends_with()`, selects columns whose name ends with a string.
+    -   `everything()`, selects every column.
+    -   `matches()`, selects columns whose name matches a regular expression.
+    -   `num_range()`, selects columns named x1, x2, x3, x4, x5.
+    -   `one_of()`, selects columns whose names are in a group of names.
+    -   `starts_with()`, selects columns whose name starts with a character string.
+
+------------------------------------------------------------------------
+
+### Selecting columns to retain
+
+```{r}
+#| echo: true
+realis2019_selected <- realis2019 %>%
+  select(`Project Name`,
+         `Transacted Price ($)`,
+         `Property Type`)
+realis2019_selected
+```
+
+------------------------------------------------------------------------
+
+### Selecting columns to drop
+
+```{r}
+#| echo: true
+realis2019_selected <- realis2019 %>%
+  select(- `Address`, -`Unit Price ($ psf)`, 
+         -`Nett Price($)`, -`Completion Date`, 
+         -`Tenure`)
+realis2019_selected
+```
+
+------------------------------------------------------------------------
+
+### Selecting Records of Interest: [`filter()`](https://dplyr.tidyverse.org/reference/filter.html)
+
+::: columns
+::: {.column width="50%"}
+-   Filtering data (also known as querying data in database management) is a common task to select observations (e.g. records) in which a particular variable matches a specific value/condition.
+
+-   `filter()` provides this capability.
+
+-   Two families of logical rules can be applied in `filter()` , they are: comparison and logic rules.
+:::
+
+::: {.column width="50%"}
+![](img/image2-11.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Comparison operators for `filter()`
+
+::: columns
+::: {.column width="50%"}
+-   A wide collection of R comparison operators can be used to select the records you want effectively, they are:
+
+-   "\<" less than
+
+-   "\>" greater than
+
+-   "==" equal to
+
+-   "\<=" less than or equal to
+
+-   "\>=" greater than or equal to
+
+-   "!=" not equal to
+
+-   "%in%" not equal to
+
+-   "is.na" is NA
+
+-   "!is.na" is not NA
+:::
+
+::: {.column width="50%"}
+**Warning**:
+
+-   Avoid using "=" when testing for equality.
+
+-   Likewise, for floating point numbers, use near() instead of "==" comparison operator.
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Selecting records by using `filter()`
+
+-   To extract all new sale private property transaction records.
+
+```{r}
+#| echo: true
+realis2019_filtered <- realis2019_selected %>%
+  filter(`Type of Sale` == "New Sale")
+```
+
+-   To extract all private property transaction records whereby area greater than 3000 sqm.
+
+```{r}
+#| echo: true
+realis2019_filtered <- realis2019_selected %>%
+filter(`Area (sqm)` > 3000)
+```
+
+------------------------------------------------------------------------
+
+### Logic operators to be used together with `filter()`
+
+::: columns
+::: {.column width="50%"}
+-   A wide collection of R logic operators can be used with `filter()` function, they are:
+
+-   "&" boolean and
+
+-   "\|" boolean or
+
+-   "xor" exactly or
+
+-   "!" not
+
+-   "any" any true
+
+-   "all" all true
+:::
+
+::: {.column width="50%"}
+![](img/image2-16.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Selecting records by using `filter()` and logical operator
+
+-   Both condominium and apartment property types.
+
+```{r}
+#| echo: true
+realis2019_filtered <- realis2019_selected %>%
+  filter(`Property Type` =="Condominium" |
+           `Property Type`== "Apartment")
+```
+
+-   Condominium and resale
+
+```{r}
+#| echo: true
+realis2019_filtered <- realis2019_selected %>%
+  filter(`Property Type` =="Condominium" &
+           `Type of Sale`== "Resale")
+```
+
+------------------------------------------------------------------------
+
+### An intermediate level usage of `filter()` with logical operator
+
+-   Both new sale condominium and apartment with unit price less than or equal to S\$13000 psm.
+
+```{r}
+#| echo: true
+realis2019_filtered <- realis2019_selected %>%
+  filter(`Property Type` =="Condominium" |
+           `Property Type`== "Apartment") %>%
+  filter(`Type of Sale` == "New Sale") %>%
+  filter(`Unit Price ($ psm)` <= 13000)
+```
+
+## Deriving New Columns from Existing Columns: [`mutate()`](https://dplyr.tidyverse.org/reference/mutate.html)
+
+::: columns
+::: {.column width="50%"}
+::: {style="font-size: 0.8em"}
+-   The newly derived columns will be added at the end of the existing data.frame. The existing columns will be preserved.
+
+-   Useful functions available in calculations of variables:
+
+    -   +, -, \*log()\*, etc., for their usual mathematical meanings.
+
+    -   \*lead()\*, \*lag()\*.
+
+    -   \*dense_rank()\*, \*min_rank()\*, \*percent_rank()\*, \*row_number()\*, \*cume_dist()\*, \*ntile()\*.
+
+    -   \*cumsum()\*, \*cummean()\*, \*cummin()\*, \*cummax()\*, \*cumany()\*, \*cumall()\*.
+
+    -   \*na_if()\*, \*coalesce()\*.
+
+    -   \*if_else()\*, \*recode()\*, \*case_when()\*.
+:::
+:::
+
+::: {.column width="50%"}
+![](img/image2-12.png){width="640"}
+:::
+:::
+
+------------------------------------------------------------------------
+
+### A basic level usage of `mutate()`
+
+-   Deriving a new column for area in square ft. from existing Area (sqm) column and save the newly derived values in a new column called *Area (sqft)*
+
+```{r}
+#| echo: true
+realis2019_mutated <- realis2019_selected %>%
+  mutate(`Area (sqft)` = `Area (sqm)` * 10.7639104)
+```
+
+-   log10 transform the transacted price and save the newly derived values in a new column called ***log10_Price***
+
+```{r}
+#| echo: true
+realis2019_mutated <- realis2019_selected %>%
+  mutate(log10_Price = log10(`Transacted Price ($)`))
+```
+
+------------------------------------------------------------------------
+
+### An intermediate level usage of `mutate()`
+
+-   computing Z-score of unit price
+
+```{r}
+#| echo: true
+realis2019_mutated <- realis2019_selected %>%
+  mutate(`Z-score Unit Price` = (
+    `Unit Price ($ psm)` - mean(`Unit Price ($ psm)`))/
+      sd(`Unit Price ($ psm)`))
+describe(realis2019_mutated$`Z-score Unit Price`)
+```
+
+Note: `describe()` of **psych** package is used here instead of `summary()` of Base R because the earlier provides standard deviation.
+
+------------------------------------------------------------------------
+
+### An intermediate level usage of `mutate()`
+
+**The task:**
+
+Using `mutate()` to derive a new column by summing values from several columns across.
+
+-   Import *PopData2019_fat.csv* into RStudio and save it as a tibble data.frame.
+
+```{r}
+#| echo: false
+popdata_fat <- read_csv("data/PopData2019_fat.csv")
+```
+
+------------------------------------------------------------------------
+
+### An intermediate usage of `mutate()`
+
+-   Perform the summation using the code chunk below.
+
+```{r}
+#| echo: true
+popdata <- popdata_fat %>%
+  mutate(`Aged Group` = rowSums(.[16:21]),
+         `Total Pop` = rowSums(.[3:21]),
+         `Pct Aged` = `Aged Group` / `Total Pop` * 100) %>%
+select(-c(3:21))
+
+glimpse(popdata)
+```
+
+------------------------------------------------------------------------
+
+### An adavnced level usage of `mutate()`
+
+![](img/image2-13.png)
+
+------------------------------------------------------------------------
+
+## Group by one or more columns: [`group_by()`](https://dplyr.tidyverse.org/reference/group_by.html) and `ungroup()`
+
+::: {style="font-size: 0.8em"}
+-   Allows for group operations in the "split-apply-combine" concept.
+
+-   Usually, `group_by()` will follow by another dplyr verb such as [`summarise()`](https://dplyr.tidyverse.org/reference/summarise.html)
+:::
+
+![](img/image2-17.jpg){width="605"}
+
+------------------------------------------------------------------------
+
+### A basic level usage of `group_by()` and `ungroup()`
+
+-   In the code chunk below, `group_by()` is used to group transaction records by Property Type, then `summarise()` is used to calculate the sum of unit sold.
+
+-   It is important to remember to end the code chunk with `ungroup()`.
+
+```{r}
+#| echo: true
+realis2019_grouped <- realis2019 %>%
+  group_by(`Property Type`) %>%
+  summarise(`Total units sold` = sum(`No. of Units`)) %>%
+ungroup()
+realis2019_grouped
+```
+
+------------------------------------------------------------------------
+
+### An intermediate level usage of `group_by()` and `ungroup()`
+
+-   In the code chunk below, `group_by()` is used to group transaction records by Property Type, Type of Sale, and Planning Area, then `summarise()` is used to calculate their respective sum of unit sold, average unit price and median unit price.
+
+```{r}
+#| echo: true
+realis2019_grouped <- realis2019 %>%
+  group_by(`Property Type`, `Type of Sale`, `Planning Area`) %>%
+  summarise(`Total units sold` = sum(`No. of Units`),
+            `Average unit price` = mean(`Unit Price ($ psm)`),
+            `Median unit price` = median(`Unit Price ($ psm)`)) %>%
+  ungroup()
+realis2019_grouped
+```
+
+------------------------------------------------------------------------
+
+### Other grouping functions in **dplyr** package
+
+-   [`group_by_all()`](https://dplyr.tidyverse.org/reference/group_by_all.html),
+
+-   [`group_indices()`](https://dplyr.tidyverse.org/reference/group_indices.html),
+
+-   [`group_keys()`](https://dplyr.tidyverse.org/reference/group_split.html),
+
+-   [`group_map()`](https://dplyr.tidyverse.org/reference/group_map.html),
+
+-   [`group_nest()`](https://dplyr.tidyverse.org/reference/group_nest.html),
+
+-   [`group_rows()`](https://dplyr.tidyverse.org/reference/group_data.html),
+
+-   [`group_size()`](https://dplyr.tidyverse.org/reference/group_size.html),
+
+-   [`group_trim()`](https://dplyr.tidyverse.org/reference/group_trim.html),
+
+-   [`groups()`](https://dplyr.tidyverse.org/reference/groups.html)
+
+------------------------------------------------------------------------
+
+### Useful functions of `summarise()` (or `summarize()`)
+
+-   Center: `mean()`, `median()`
+
+-   Spread: `sd()`, `IQR()`, `mad()`
+
+-   Range: `min()`, `max()`, `quantile()`
+
+-   Position: `first()`, `last()`, `nth()`
+
+-   Count: `n()`, `n_distinct()`
+
+-   Logical: `any()`, `all()`
+
+------------------------------------------------------------------------
+
+## Two-table Verbs - Join functions
+
+In **dplyr**, there are three types of joins:
+
+-   Mutating joins combine the columns (variables) of 2 tables;
+
+-   Filtering joins affect only the cases or observations (rows) of 2 tables;
+
+-   Set operations on 2 tables expect both tables to have the same variables and treat them like sets that can be combined or intersected.
+
+------------------------------------------------------------------------
+
+## Mutating joins
+
+-   Mutating joins combine the variables (columns) of 2 tables x and y.
+
+-   The term mutating is used in analogy to the dplyr::mutate command: Just as mutate creates new variables (columns), a mutating join adds new variables (columns) to a table x from matching cases (rows) of another table y.
+
+------------------------------------------------------------------------
+
+## [Mutating joins](https://dplyr.tidyverse.org/reference/mutate-joins.html)
+
+There are 4 types of mutating joins to combine the cases (rows) and variables (columns) of tables x and y:
+
+-   left_join(x, y): Return all rows from x, and all columns from x and y. Rows in x with no match in y will have NA values in the new columns. If there are multiple matches between x and y, all combinations of the matches are returned.
+
+-   right_join(x, y): Same as left_join(y, x), and hence redundant.
+
+-   full_join(x, y): Return all rows and all columns that exist in x or in y. If there are non-matching values, return NA for the ones missing.
+
+-   inner_join(x, y): Return all rows from x where there are matching values in y, and all columns from x and y. If there are multiple matches between x and y, all combination of the matches are returned.
+
+------------------------------------------------------------------------
+
+## [Mutating joins](https://dplyr.tidyverse.org/reference/mutate-joins.html)
+
+![](img/image2-18.jpg){width="392"}
+
+------------------------------------------------------------------------
+
+### A basic level usage of `join` function
+
+-   Prepare the join table by using the code chunk below.
+
+```{r}
+#| echo: true
+realis2019_grouped1 <- realis2019 %>%
+  group_by(`Property Type`, `Type of Sale`, `Planning Area`) %>%
+  summarise(`Total units sold` = sum(`No. of Units`),
+            `Average unit price` = mean(`Unit Price ($ psm)`),
+            `Median unit price` = median(`Unit Price ($ psm)`)) %>% 
+  filter(`Property Type`=="Condominium" & `Type of Sale`=="New Sale" ) %>%
+ungroup()
+```
+
+-   Prepare the left table using the code chunk below.
+
+```{r}
+#| echo: true
+table_left <- read_csv("data/PopDwellingType2019.csv") %>%
+  select(`PA`, `SZ`, `Condominiums and Other Apartments`) %>%
+  rename(`Planning Area`= `PA`)
+```
+
+------------------------------------------------------------------------
+
+### A basic level usage of `join` function
+
+The `left_join()` case
+
+Next, use the code chunk below to perform a left join.
+
+```{r}
+#| echo: true
+joined_table <- table_left %>%
+  left_join(realis2019_grouped1,
+            by = "Planning Area")
+```
+
+------------------------------------------------------------------------
+
+## Reference
+
+::: columns
+::: {.column width="50%"}
+-   [R for Data Science](https://r4ds.had.co.nz/) especially
+
+    -   [Chapter 5 Data transformation](https://r4ds.had.co.nz/transform.html),
+    -   [Chapter 10 Tibbles](https://r4ds.had.co.nz/tibbles.html),
+    -   [Chapter 11 Data Imports](https://r4ds.had.co.nz/data-import.html),
+    -   [Chapter 12 Tidy data](https://r4ds.had.co.nz/tidy-data.html),
+    -   [Chapter 13 Relational data](https://r4ds.had.co.nz/relational-data.html) and
+    -   [Chapter 18 Pipes](https://r4ds.had.co.nz/pipes.html).
+
+-   [Tidyverse](https://www.tidyverse.org/packages/)
+
+-   [tidyr](http://tidyr.tidyverse.org/index.html)
+
+-   [dplyr](http://dplyr.tidyverse.org/index.html)
+
+-   [readr](http://readr.tidyverse.org/index.html)
+
+-   [tibble](http://tibble.tidyverse.org/index.html)
+:::
+
+::: {.column width="50%"}
+![](img/R4DS.jpg)
+:::
+:::
