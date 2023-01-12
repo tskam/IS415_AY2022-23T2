@@ -20,6 +20,11 @@ In this lesson, R objects used to store geospatial data will be discussed. The d
     -   sf
     -   star
 
+## Lesson Slides
+
+-   Lesson 2 slides in [html](..\lesson\Lesson02\Lesson02-Wrangling_Geospatial_Data_in_R.html) and [pdf](..\lesson\Lesson02\Lesson02-Wrangling_Geospatial_Data_in_R.pdf) formats.
+
+
 ## Hands-on Exercise
 
 -   [Geospatial Data Wrangling with R](https://r4gdsa.netlify.app/chap01.html)

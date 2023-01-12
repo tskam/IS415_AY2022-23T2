@@ -31,9 +31,7 @@ toc: true
 
 ### Slides
 
-- [My First Date with Quarto](..\in-class\In-class_Ex01\In-class_Ex01.html)
-
-
+-   [My First Date with Quarto](..\in-class\In-class_Ex01\In-class_Ex01.html)
 
 ## Hands-on Exercise
 

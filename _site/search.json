@@ -978,5 +978,12 @@
     "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
     "section": "Reference",
     "text": "Reference\n\n\n\nR for Data Science especially\n\nChapter 5 Data transformation,\nChapter 10 Tibbles,\nChapter 11 Data Imports,\nChapter 12 Tidy data,\nChapter 13 Relational data and\nChapter 18 Pipes.\n\nTidyverse\ntidyr\ndplyr\nreadr\ntibble"
+  },
+  {
+    "objectID": "outline/Lesson02_outline.html#lesson-slides",
+    "href": "outline/Lesson02_outline.html#lesson-slides",
+    "title": "Lesson 2: Geospatial Data Handling and Wrangling",
+    "section": "Lesson Slides",
+    "text": "Lesson Slides\n\nLesson 2 slides in html and pdf formats."
   }
 ]
