@@ -3,7 +3,7 @@ title: 'Lesson 2: Wrangling Geospatial Data in R: sf approach and methods'
 subtitle: ""
 author: "Dr. Kam Tin Seong<br/>Assoc. Professor of Information Systems(Practice)"
 institute: "School of Computing and Information Systems,<br/>Singapore Management University"
-date: "2020/4/26 (updated: `r Sys.Date()`)"
+date: "`r Sys.Date()`"
 format: 
   revealjs:
     width: 1600
@@ -11,6 +11,7 @@ format:
     show-notes: false
     slide-number: true
     show-slide-number: all
+date-format: "DD MMM YYYY"    
 editor: visual
 ---
 
