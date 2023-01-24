@@ -1090,5 +1090,12 @@
     "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
     "section": "References",
     "text": "References\nAll About tmap package\n\ntmap: Thematic Maps in R\nDevelopment site\ntmap Reference\ntmap: get started!\ntmap: version changes\ntmap: creating thematic maps in a flexible way (useR!2015)\nExploring and presenting maps with tmap (useR!2017)"
+  },
+  {
+    "objectID": "outline/Lesson03_outline.html#lesson-slides",
+    "href": "outline/Lesson03_outline.html#lesson-slides",
+    "title": "Lesson 3: Thematic and Analytical Mapping",
+    "section": "Lesson Slides",
+    "text": "Lesson Slides\n\nLesson 2 slides in html format."
   }
 ]

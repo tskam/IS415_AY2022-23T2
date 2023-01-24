@@ -5,7 +5,7 @@ format: html
 editor: visual
 ---
 
-This lesson aims to share with you the basic principles and methods of Thematic Mapping and Cartography Design.  You will also gain hands on experience on using [tmap](https://r-tmap.github.io/tmap/), an R package specially design for plotting cartographic quality maps. 
+This lesson aims to share with you the basic principles and methods of Thematic Mapping and Cartography Design. You will also gain hands on experience on using [tmap](https://r-tmap.github.io/tmap/), an R package specially design for plotting cartographic quality maps.
 
 ## Content
 
@@ -17,6 +17,10 @@ This lesson aims to share with you the basic principles and methods of Thematic 
     -   Box map
     -   Standard deviation map
     -   Mapping rates
+
+## Lesson Slides
+
+-   Lesson 2 slides in [html](..\lesson\Lesson03\Lesson03-Thematic_and_Analytical_Mapping.html) format.
 
 ## Hands-on Exercise
 
