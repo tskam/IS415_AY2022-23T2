@@ -1040,7 +1040,7 @@
     "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements-1",
     "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
     "section": "tmap elements",
-    "text": "tmap elements\nBase layers\n\nNext, one, or a combination of the following drawing layers should be specified:"
+    "text": "tmap elements\nBase layers\n\nNext, one, or a combination of the following drawing layers should be specified:\n\n\n\nLinks to tm_polygons(), tm_symbols(), tm_lines(), tm_raster() and tm_text()"
   },
   {
     "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements-2",
@@ -1054,7 +1054,7 @@
     "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements-3",
     "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
     "section": "tmap elements",
-    "text": "tmap elements\nDerived layers\n\nThe supported derived layers are as follows:"
+    "text": "tmap elements\nDerived layers\n\n\nEach aesthetic can take a constant value or a data variable name. For instance, tm_fill(col=\"blue\") colors all polygons blue, while tm_fill(col=\"var1\"), where “var1” is the name of a data variable in the shape object, creates a choropleth.\n\nThe supported derived layers are as follows:"
   },
   {
     "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements-4",
@@ -1068,14 +1068,14 @@
     "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#data-classification-methods-of-tmap",
     "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
     "section": "Data classification methods of tmap",
-    "text": "Data classification methods of tmap\n\n\nMost choropleth maps employ some method of data classification. The point of classification is to take a large number of observations and group them into data ranges or classes.\n\n\n\n\n\n\nNote\n\n\n\ntmap provides a total ten data classification methods, namely: fixed, sd, equal, pretty (default), quantile, kmeans, hclust, bclust, fisher, and jenks.\nTo define a data classification method, the style argument of tm_fill() or tm_polygons() will be used.\nThe choropleth map on the right shows a quantile data classification with 8 classes are used.\n\n\n\n\n\n\ntm_shape(mpszpop2020)+\n  tm_fill(\"DEPENDENCY\",\n          n = 8,\n          style = \"quantile\") +\n  tm_borders(alpha = 0.5)"
+    "text": "Data classification methods of tmap\n\n\nMost choropleth maps employ some method of data classification. The point of classification is to take a large number of observations and group them into data ranges or classes.\n\n\n\n\n\n\nNote\n\n\n\ntmap provides a total ten data classification methods, namely: fixed, sd, equal, pretty (default), quantile, kmeans, hclust, bclust, fisher, and jenks.\nTo define a data classification method, the style argument of tm_fill() or tm_polygons() will be used.\nThe choropleth map on the right shows a quantile data classification with 8 classes are used.\n\n\n\n\n\n\n\ntm_shape(mpszpop2020)+\n  tm_fill(\"DEPENDENCY\",\n          n = 8,\n          style = \"quantile\") +\n  tm_borders(alpha = 0.5)"
   },
   {
     "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#colour-scheme-1",
     "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#colour-scheme-1",
     "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
     "section": "Colour Scheme",
-    "text": "Colour Scheme\n\n\ntmap supports colour ramps either defined by the user or a set of predefined colour ramps from the RColorBrewer package.\n\n\n\n\n\n\nNote\n\n\n\nTo change the colour, we assign the preferred colour to palette argument of tm_fill().\nNotice that the word blues is used instead of blue and the alphabet b is in uppercase.\n\n\n\n\n\n\ntm_shape(mpszpop2020)+\n  tm_fill(\"DEPENDENCY\",\n          n = 6,\n          style = \"quantile\",\n          palette = \"Blues\") +\n  tm_borders(alpha = 0.5)"
+    "text": "Colour Scheme\n\n\ntmap supports colour ramps either defined by the user or a set of predefined colour ramps from the RColorBrewer package.\n\n\n\n\n\n\nNote\n\n\n\nTo change the colour, we assign the preferred colour to palette argument of tm_fill().\nNotice that the word blues is used instead of blue and the alphabet b is in uppercase.\n\n\n\n\n\n\n\ntm_shape(mpszpop2020)+\n  tm_fill(\"DEPENDENCY\",\n          n = 6,\n          style = \"quantile\",\n          palette = \"Blues\") +\n  tm_borders(alpha = 0.5)"
   },
   {
     "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#reference",

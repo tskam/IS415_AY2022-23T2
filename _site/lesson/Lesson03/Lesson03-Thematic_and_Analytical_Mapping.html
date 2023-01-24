@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.2.269">
 
   <meta name="author" content="Dr.&nbsp;Kam Tin Seong Assoc. Professor of Information Systems(Practice)">
-  <meta name="dcterms.date" content="2023-01-13">
+  <meta name="dcterms.date" content="2023-01-24">
   <title>IS415 AY2022-23T2 - Lesson 3: Thematic and Analytical Mapping: tmap Methods</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -402,7 +402,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
     </div>
 </div>
 
-  <p class="date">13 Jan 2023</p>
+  <p class="date">24 Jan 2023</p>
 </section>
 <section id="content" class="slide level2">
 <h2>Content</h2>
@@ -650,12 +650,14 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <li><p><code>fill</code> argument is used to map the attribute (i.e.&nbsp;DEPENDENCY)</p></li>
 </ul>
 </div><div class="column" style="width:50%;">
+<div style="font-size: 1.2em">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">tmap_mode</span>(<span class="st">"plot"</span>)</span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="fu">qtm</span>(mpszpop2020, </span>
 <span id="cb1-3"><a href="#cb1-3"></a>    <span class="at">fill =</span> <span class="st">"DEPENDENCY"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></p>
+</div>
 </div>
 </div>
 </div>
@@ -676,7 +678,10 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <li>Next, one, or a combination of the following drawing layers should be specified:</li>
 </ul>
 
-<img data-src="img/image3-5.jpg" class="r-stretch"></section>
+<img data-src="img/image3-5.jpg" class="r-stretch"><ul>
+<li>Links to <a href="https://r-tmap.github.io/tmap/reference/tm_polygons.html"><code>tm_polygons()</code></a>, <a href="https://r-tmap.github.io/tmap/reference/tm_symbols.html"><code>tm_symbols()</code></a>, <a href="https://r-tmap.github.io/tmap/reference/tm_lines.html"><code>tm_lines()</code></a>, <a href="https://r-tmap.github.io/tmap/reference/tm_raster.html"><code>tm_raster()</code></a> and <a href="https://r-tmap.github.io/tmap/reference/tm_text.html"><code>tm_text()</code></a></li>
+</ul>
+</section>
 <section id="tmap-elements-2" class="slide level2">
 <h2><strong>tmap</strong> elements</h2>
 <h3 id="base-layers-1">Base layers</h3>
@@ -691,17 +696,14 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <section id="tmap-elements-3" class="slide level2">
 <h2><strong>tmap</strong> elements</h2>
 <h3 id="derived-layers">Derived layers</h3>
-<ul>
-<li>The supported derived layers are as follows:</li>
-</ul>
-
-<img data-src="img/image3-6.jpg" class="r-stretch"></section>
-<section id="tmap-elements-4" class="slide level2">
-<h2><strong>tmap</strong> elements</h2>
-<h3 id="derived-layers-1">Derived layers</h3>
-<ul>
-<li>Each aesthetic can take a constant value or a data variable name. For instance, <code>tm_fill(col="blue")</code> colors all polygons blue, while <code>tm_fill(col="var1")</code>, where “var1” is the name of a data variable in the shape object, creates a choropleth.</li>
-</ul>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>Each aesthetic can take a constant value or a data variable name. For instance, <code>tm_fill(col="blue")</code> colors all polygons blue, while <code>tm_fill(col="var1")</code>, where “var1” is the name of a data variable in the shape object, creates a choropleth.</p>
+</div><div class="column" style="width:60%;">
+<p>The supported derived layers are as follows:</p>
+<p><img data-src="img/image3-6.jpg"></p>
+</div>
+</div>
 </section>
 <section class="slide level2">
 
@@ -723,11 +725,13 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 </div>
 </div>
 </div><div class="column" style="width:50%;">
+<div style="font-size: 1.2em">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">tm_shape</span>(mpszpop2020) <span class="sc">+</span></span>
 <span id="cb2-2"><a href="#cb2-2"></a>  <span class="fu">tm_polygons</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
+<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-4-1.png" width="768"></p>
+</div>
 </div>
 </div>
 </div>
@@ -758,11 +762,13 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 </div>
 </div>
 </div><div class="column" style="width:50%;">
+<div style="font-size: 1.2em">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">tm_shape</span>(mpszpop2020)<span class="sc">+</span></span>
 <span id="cb3-2"><a href="#cb3-2"></a>  <span class="fu">tm_polygons</span>(<span class="st">"DEPENDENCY"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-5-1.png" width="960"></p>
+<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-5-1.png" width="768"></p>
+</div>
 </div>
 </div>
 </div>
@@ -792,11 +798,13 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 </div>
 </div>
 </div><div class="column" style="width:50%;">
+<div style="font-size: 1.2em">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">tm_shape</span>(mpszpop2020) <span class="sc">+</span></span>
 <span id="cb4-2"><a href="#cb4-2"></a>  <span class="fu">tm_fill</span>(<span class="st">"DEPENDENCY"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-6-1.png" width="960"></p>
+<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-6-1.png" width="768"></p>
+</div>
 </div>
 </div>
 </div>
@@ -808,8 +816,10 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>To add the boundary of the planning subzones, <code>tm_border()</code> will be used.</p>
+<div style="font-size: 1.2em">
 <div class="cell">
 
+</div>
 </div>
 <div class="callout callout-note callout-captioned callout-style-default">
 <div class="callout-body">
@@ -831,13 +841,15 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 </div>
 </div>
 </div><div class="column" style="width:50%;">
+<div style="font-size: 1.2em">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="fu">tm_shape</span>(mpszpop2020)<span class="sc">+</span></span>
 <span id="cb5-2"><a href="#cb5-2"></a>  <span class="fu">tm_fill</span>(<span class="st">"DEPENDENCY"</span>) <span class="sc">+</span></span>
 <span id="cb5-3"><a href="#cb5-3"></a>  <span class="fu">tm_borders</span>(<span class="at">lwd =</span> <span class="fl">0.1</span>,  </span>
 <span id="cb5-4"><a href="#cb5-4"></a>             <span class="at">alpha =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-8-1.png" width="960"></p>
+<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-8-1.png" width="768"></p>
+</div>
 </div>
 </div>
 </div>
@@ -866,6 +878,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 </div>
 </div>
 </div><div class="column" style="width:50%;">
+<div style="font-size: 1.2em">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">tm_shape</span>(mpszpop2020)<span class="sc">+</span></span>
 <span id="cb6-2"><a href="#cb6-2"></a>  <span class="fu">tm_fill</span>(<span class="st">"DEPENDENCY"</span>,</span>
@@ -873,7 +886,8 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <span id="cb6-4"><a href="#cb6-4"></a>          <span class="at">style =</span> <span class="st">"quantile"</span>) <span class="sc">+</span></span>
 <span id="cb6-5"><a href="#cb6-5"></a>  <span class="fu">tm_borders</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-9-1.png" width="960"></p>
+<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-9-1.png" width="768"></p>
+</div>
 </div>
 </div>
 </div>
@@ -888,6 +902,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 </ul>
 <div class="columns">
 <div class="column" style="width:50%;">
+<div style="font-size: 1.2em">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="fu">tm_shape</span>(mpszpop2020)<span class="sc">+</span></span>
 <span id="cb7-2"><a href="#cb7-2"></a>  <span class="fu">tm_fill</span>(<span class="st">"DEPENDENCY"</span>,</span>
@@ -898,7 +913,9 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-10-1.png" width="960"></p>
 </div>
 </div>
+</div>
 </div><div class="column" style="width:50%;">
+<div style="font-size: 1.2em">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">tm_shape</span>(mpszpop2020)<span class="sc">+</span></span>
 <span id="cb8-2"><a href="#cb8-2"></a>  <span class="fu">tm_fill</span>(<span class="st">"DEPENDENCY"</span>,</span>
@@ -907,6 +924,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <span id="cb8-5"><a href="#cb8-5"></a>  <span class="fu">tm_borders</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-11-1.png" width="960"></p>
+</div>
 </div>
 </div>
 </div>
@@ -934,6 +952,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 </div>
 </div>
 </div><div class="column" style="width:50%;">
+<div style="font-size: 1.2em">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">tm_shape</span>(mpszpop2020)<span class="sc">+</span></span>
 <span id="cb9-2"><a href="#cb9-2"></a>  <span class="fu">tm_fill</span>(<span class="st">"DEPENDENCY"</span>,</span>
@@ -942,7 +961,8 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <span id="cb9-5"><a href="#cb9-5"></a>          <span class="at">palette =</span> <span class="st">"Blues"</span>) <span class="sc">+</span></span>
 <span id="cb9-6"><a href="#cb9-6"></a>  <span class="fu">tm_borders</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-12-1.png" width="960"></p>
+<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-12-1.png" width="768"></p>
+</div>
 </div>
 </div>
 </div>
@@ -969,6 +989,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 </div>
 </div>
 </div><div class="column" style="width:50%;">
+<div style="font-size: 1.2em">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">tm_shape</span>(mpszpop2020)<span class="sc">+</span></span>
 <span id="cb10-2"><a href="#cb10-2"></a>  <span class="fu">tm_fill</span>(<span class="st">"DEPENDENCY"</span>,</span>
@@ -976,7 +997,8 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <span id="cb10-4"><a href="#cb10-4"></a>          <span class="at">palette =</span> <span class="st">"-Blues"</span>) <span class="sc">+</span></span>
 <span id="cb10-5"><a href="#cb10-5"></a>  <span class="fu">tm_borders</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-13-1.png" width="960"></p>
+<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-13-1.png" width="768"></p>
+</div>
 </div>
 </div>
 <p>Notice that the colour scheme has been reversed.</p>
@@ -1001,6 +1023,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>In <strong>tmap</strong>, several <em>legend</em> options are provided to change the placement, format and appearance of the legend.</p>
+<div style="font-size: 1.2em">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">tm_shape</span>(mpszpop2020)<span class="sc">+</span></span>
 <span id="cb11-2"><a href="#cb11-2"></a>  <span class="fu">tm_fill</span>(<span class="st">"DEPENDENCY"</span>, </span>
@@ -1019,10 +1042,11 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <span id="cb11-15"><a href="#cb11-15"></a>            <span class="at">frame =</span> <span class="cn">FALSE</span>) <span class="sc">+</span> </span>
 <span id="cb11-16"><a href="#cb11-16"></a>  <span class="fu">tm_borders</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</div>
 </div><div class="column" style="width:50%;">
 <div class="cell">
 <div class="cell-output-display">
-<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-15-1.png" width="960"></p>
+<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-15-1.png" width="768"></p>
 </div>
 </div>
 </div>
@@ -1058,6 +1082,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 </div>
 </div><div class="column" style="width:50%;">
 <p>Chloropleth map below is plotted by using <em>classic</em> style.</p>
+<div style="font-size: 1.2em">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="fu">tm_shape</span>(mpszpop2020)<span class="sc">+</span></span>
 <span id="cb12-2"><a href="#cb12-2"></a>  <span class="fu">tm_fill</span>(<span class="st">"DEPENDENCY"</span>, </span>
@@ -1066,7 +1091,8 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <span id="cb12-5"><a href="#cb12-5"></a>  <span class="fu">tm_borders</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
 <span id="cb12-6"><a href="#cb12-6"></a>  <span class="fu">tmap_style</span>(<span class="st">"classic"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-16-1.png" width="960"></p>
+<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-16-1.png" width="768"></p>
+</div>
 </div>
 </div>
 </div>
@@ -1080,6 +1106,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <div style="font-size: 0.85em">
 <p>Beside map style, <strong>tmap</strong> also also provides arguments to draw other map furniture such as compass, scale bar and grid lines. In the choropleth below, <a href="https://r-tmap.github.io/tmap/reference/tm_compass.html"><code>tm_compass()</code></a>, <a href="https://r-tmap.github.io/tmap/reference/tm_scale_bar.html"><code>tm_scale_bar()</code></a> and <a href="https://r-tmap.github.io/tmap/reference/tm_grid.html"><code>tm_grid()</code></a> are used to add compass, scale bar and grid lines onto the choropleth map.</p>
 </div>
+<div style="font-size: 1.2em">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">tm_shape</span>(mpszpop2020)<span class="sc">+</span></span>
 <span id="cb13-2"><a href="#cb13-2"></a>  <span class="fu">tm_fill</span>(<span class="st">"DEPENDENCY"</span>, </span>
@@ -1099,10 +1126,11 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <span id="cb13-16"><a href="#cb13-16"></a>  <span class="fu">tm_credits</span>(<span class="st">"Source: Planning Sub-zone boundary from Urban Redevelopment Authorithy (URA)</span><span class="sc">\n</span><span class="st"> and Population data from Department of Statistics DOS"</span>,</span>
 <span id="cb13-17"><a href="#cb13-17"></a>             <span class="at">position =</span> <span class="fu">c</span>(<span class="st">"left"</span>, <span class="st">"bottom"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</div>
 </div><div class="column" style="width:50%;">
 <div class="cell">
 <div class="cell-output-display">
-<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-18-1.png" width="960"></p>
+<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-18-1.png" width="768"></p>
 </div>
 </div>
 </div>
@@ -1123,6 +1151,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 
 <h3 id="by-assigning-multiple-values-to-at-least-one-of-the-aesthetic-arguments">By assigning multiple values to at least one of the aesthetic arguments</h3>
 <p>In this example, small multiple choropleth maps are created by defining <em>ncols</em> in <code>tm_fill()</code>.</p>
+<div style="font-size: 1.2em">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">tm_shape</span>(mpszpop2020)<span class="sc">+</span></span>
 <span id="cb14-2"><a href="#cb14-2"></a>  <span class="fu">tm_fill</span>(<span class="fu">c</span>(<span class="st">"YOUNG"</span>, <span class="st">"AGED"</span>),</span>
@@ -1131,26 +1160,36 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <span id="cb14-5"><a href="#cb14-5"></a>  <span class="fu">tm_layout</span>(<span class="at">legend.position =</span> <span class="fu">c</span>(<span class="st">"right"</span>, <span class="st">"bottom"</span>)) <span class="sc">+</span></span>
 <span id="cb14-6"><a href="#cb14-6"></a>  <span class="fu">tm_borders</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
 <span id="cb14-7"><a href="#cb14-7"></a>  <span class="fu">tmap_style</span>(<span class="st">"white"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
+<div class="cell-output-display">
+<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-19-1.png" width="1728"></p>
 </div>
-<img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-19-1.png" width="960" class="r-stretch"></section>
+</div>
+</div>
+</section>
 <section class="slide level2">
 
 <h3 id="by-assigning-multiple-values-to-at-least-one-of-the-aesthetic-arguments-1">By assigning multiple values to at least one of the aesthetic arguments</h3>
 <p>In this example, small multiple choropleth maps are created by assigning multiple values to at least one of the aesthetic arguments</p>
+<div style="font-size: 1.2em">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="fu">tm_shape</span>(mpszpop2020)<span class="sc">+</span> </span>
 <span id="cb15-2"><a href="#cb15-2"></a>  <span class="fu">tm_polygons</span>(<span class="fu">c</span>(<span class="st">"DEPENDENCY"</span>,<span class="st">"AGED"</span>),</span>
 <span id="cb15-3"><a href="#cb15-3"></a>          <span class="at">style =</span> <span class="fu">c</span>(<span class="st">"equal"</span>, <span class="st">"quantile"</span>), </span>
 <span id="cb15-4"><a href="#cb15-4"></a>          <span class="at">palette =</span> <span class="fu">list</span>(<span class="st">"Blues"</span>,<span class="st">"Greens"</span>)) <span class="sc">+</span></span>
 <span id="cb15-5"><a href="#cb15-5"></a>  <span class="fu">tm_layout</span>(<span class="at">legend.position =</span> <span class="fu">c</span>(<span class="st">"right"</span>, <span class="st">"bottom"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
+<div class="cell-output-display">
+<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-20-1.png" width="1728"></p>
 </div>
-<img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch"></section>
+</div>
+</div>
+</section>
 <section class="slide level2">
 
 <h3 id="by-creating-multiple-stand-alone-maps-with-tmap_arrange">By creating multiple stand-alone maps with <code>tmap_arrange()</code></h3>
+<div class="columns">
+<div class="column" style="width:50%;">
 <p>In this example, multiple small choropleth maps are created by creating multiple stand-alone maps with <a href="https://r-tmap.github.io/tmap/reference/tmap_arrange.html"><code>tmap_arrange()</code></a>.</p>
+<div style="font-size: 1.2em">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a>youngmap <span class="ot">&lt;-</span> <span class="fu">tm_shape</span>(mpszpop2020)<span class="sc">+</span> </span>
 <span id="cb16-2"><a href="#cb16-2"></a>  <span class="fu">tm_polygons</span>(<span class="st">"YOUNG"</span>, </span>
@@ -1162,16 +1201,27 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <span id="cb16-8"><a href="#cb16-8"></a>              <span class="at">style =</span> <span class="st">"quantile"</span>, </span>
 <span id="cb16-9"><a href="#cb16-9"></a>              <span class="at">palette =</span> <span class="st">"Blues"</span>)</span>
 <span id="cb16-10"><a href="#cb16-10"></a></span>
-<span id="cb16-11"><a href="#cb16-11"></a><span class="fu">tmap_arrange</span>(youngmap, agedmap, <span class="at">asp=</span><span class="dv">1</span>, <span class="at">ncol=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
+<span id="cb16-11"><a href="#cb16-11"></a><span class="fu">tmap_arrange</span>(youngmap, </span>
+<span id="cb16-12"><a href="#cb16-12"></a>             agedmap, </span>
+<span id="cb16-13"><a href="#cb16-13"></a>             <span class="at">ncol=</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-21-1.png" width="960" class="r-stretch"></section>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-22-1.png" width="768"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
 <section class="slide level2">
 
 <h3 id="by-defining-a-group-by-variable-in-tm_facets">By defining a group-by variable in <code>tm_facets()</code></h3>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>In this example, multiple small choropleth maps are created by using <a href="https://r-tmap.github.io/tmap/reference/tm_facets.html"><code>tm_facets()</code></a>.</p>
+<div style="font-size: 1.2em">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">tm_shape</span>(mpszpop2020) <span class="sc">+</span></span>
 <span id="cb17-2"><a href="#cb17-2"></a>  <span class="fu">tm_fill</span>(<span class="st">"DEPENDENCY"</span>,</span>
@@ -1187,10 +1237,11 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <span id="cb17-12"><a href="#cb17-12"></a>            <span class="at">title.size =</span> <span class="dv">20</span>) <span class="sc">+</span></span>
 <span id="cb17-13"><a href="#cb17-13"></a>  <span class="fu">tm_borders</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</div>
 </div><div class="column" style="width:50%;">
 <div class="cell">
 <div class="cell-output-display">
-<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-23-1.png" width="960"></p>
+<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-24-1.png" width="768"></p>
 </div>
 </div>
 </div>
@@ -1202,6 +1253,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>Instead of creating small multiple choropleth map, you can also use selection function to map spatial objects meeting the selection criterion.</p>
+<div style="font-size: 1.2em">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="fu">tm_shape</span>(mpszpop2020</span>
 <span id="cb18-2"><a href="#cb18-2"></a>         [mpszpop2020<span class="sc">$</span>REGION_N<span class="sc">==</span><span class="st">"CENTRAL REGION"</span>, ]) <span class="sc">+</span> </span>
@@ -1219,10 +1271,11 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <span id="cb18-14"><a href="#cb18-14"></a>            <span class="at">frame =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
 <span id="cb18-15"><a href="#cb18-15"></a>  <span class="fu">tm_borders</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</div>
 </div><div class="column" style="width:50%;">
 <div class="cell">
 <div class="cell-output-display">
-<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-25-1.png" width="960"></p>
+<p><img data-src="Lesson03-Thematic_and_Analytical_Mapping_files/figure-revealjs/unnamed-chunk-26-1.png" width="864"></p>
 </div>
 </div>
 </div>

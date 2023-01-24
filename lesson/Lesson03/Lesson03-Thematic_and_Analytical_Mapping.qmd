@@ -104,7 +104,7 @@ Not sure how many classes to use? Have a look at the distribution of your data i
 ::: {.column width="70%"}
 -   Divides the range of attribute values into equally sized classes.
 
-![](img/image3-11b.jpg){width=900}
+![](img/image3-11b.jpg){width="900"}
 :::
 
 ::: {.column width="30%"}
@@ -231,6 +231,7 @@ The easiest and quickest to draw a choropleth map using **tmap** is using `qtm()
 :::
 
 ::: {.column width="50%"}
+::: {style="font-size: 1.2em"}
 ```{r}
 #| echo: true
 tmap_mode("plot")
@@ -239,9 +240,9 @@ qtm(mpszpop2020,
 ```
 :::
 :::
+:::
 
 ## **tmap** elements
-
 ### `tm_shape()`
 
 -   The first element to start with is [`tm_shape()`](https://r-tmap.github.io/tmap/reference/tm_shape.html), which specifies the shape object.
@@ -255,6 +256,8 @@ qtm(mpszpop2020,
 -   Next, one, or a combination of the following drawing layers should be specified:
 
 ![](img/image3-5.jpg)
+
+- Links to [`tm_polygons()`](https://r-tmap.github.io/tmap/reference/tm_polygons.html), [`tm_symbols()`](https://r-tmap.github.io/tmap/reference/tm_symbols.html), [`tm_lines()`](https://r-tmap.github.io/tmap/reference/tm_lines.html), [`tm_raster()`](https://r-tmap.github.io/tmap/reference/tm_raster.html) and [`tm_text()`](https://r-tmap.github.io/tmap/reference/tm_text.html) 
 
 ## **tmap** elements
 
@@ -270,15 +273,19 @@ qtm(mpszpop2020,
 
 ### Derived layers
 
--   The supported derived layers are as follows:
+::: columns
+::: {.column width="40%"}
+Each aesthetic can take a constant value or a data variable name. For instance, `tm_fill(col="blue")` colors all polygons blue, while `tm_fill(col="var1")`, where "var1" is the name of a data variable in the shape object, creates a choropleth.
+:::
+
+::: {.column width="60%"}
+The supported derived layers are as follows:
 
 ![](img/image3-6.jpg)
+:::
+:::
 
-## **tmap** elements
 
-### Derived layers
-
--   Each aesthetic can take a constant value or a data variable name. For instance, `tm_fill(col="blue")` colors all polygons blue, while `tm_fill(col="var1")`, where "var1" is the name of a data variable in the shape object, creates a choropleth.
 
 ------------------------------------------------------------------------
 
@@ -296,11 +303,14 @@ The "+" sign should be place at the end of a code line and not at the front of a
 :::
 
 ::: {.column width="50%"}
+::: {style="font-size: 1.2em"}
 ```{r}
 #| echo: true
+#| fig-width: 8
 tm_shape(mpszpop2020) +
   tm_polygons()
 ```
+:::
 :::
 :::
 
@@ -323,11 +333,14 @@ To draw a choropleth map showing the geographical distribution of a selected var
 :::
 
 ::: {.column width="50%"}
+::: {style="font-size: 1.2em"}
 ```{r}
 #| echo: true
+#| fig-width: 8
 tm_shape(mpszpop2020)+
   tm_polygons("DEPENDENCY")
 ```
+:::
 :::
 :::
 
@@ -346,11 +359,14 @@ tm_shape(mpszpop2020)+
 :::
 
 ::: {.column width="50%"}
+::: {style="font-size: 1.2em"}
 ```{r}
 #| echo: true
+#| fig-width: 8
 tm_shape(mpszpop2020) +
   tm_fill("DEPENDENCY")
 ```
+:::
 :::
 :::
 
@@ -362,6 +378,7 @@ tm_shape(mpszpop2020) +
 ::: {.column width="50%"}
 To add the boundary of the planning subzones, `tm_border()` will be used.
 
+::: {style="font-size: 1.2em"}
 ```{r}
 #| eval: false
 tm_shape(mpszpop2020)+
@@ -369,6 +386,7 @@ tm_shape(mpszpop2020)+
   tm_borders(lwd = 0.1,   
              alpha = 1) 
 ```
+:::
 
 ::: callout-note
 Notice that light-gray border lines have been added on the choropleth map.
@@ -381,13 +399,16 @@ Notice that light-gray border lines have been added on the choropleth map.
 :::
 
 ::: {.column width="50%"}
+::: {style="font-size: 1.2em"}
 ```{r}
 #| echo: true
+#| fig-width: 8
 tm_shape(mpszpop2020)+
   tm_fill("DEPENDENCY") +
   tm_borders(lwd = 0.1,  
              alpha = 1)
 ```
+:::
 :::
 :::
 
@@ -405,14 +426,17 @@ Most choropleth maps employ some method of data classification. The point of cla
 :::
 
 ::: {.column width="50%"}
+::: {style="font-size: 1.2em"}
 ```{r}
 #| echo: true
+#| fig-width: 8
 tm_shape(mpszpop2020)+
   tm_fill("DEPENDENCY",
           n = 8,
           style = "quantile") +
   tm_borders(alpha = 0.5)
 ```
+:::
 :::
 :::
 
@@ -426,6 +450,7 @@ Choropleth maps on the left and right below show *quantile* and *equal* data cla
 
 ::: columns
 ::: {.column width="50%"}
+::: {style="font-size: 1.2em"}
 ```{r}
 #| echo: true
 tm_shape(mpszpop2020)+
@@ -435,8 +460,10 @@ tm_shape(mpszpop2020)+
   tm_borders(alpha = 0.5)
 ```
 :::
+:::
 
 ::: {.column width="50%"}
+::: {style="font-size: 1.2em"}
 ```{r}
 #| echo: true
 tm_shape(mpszpop2020)+
@@ -445,6 +472,7 @@ tm_shape(mpszpop2020)+
           style = "equal") +
   tm_borders(alpha = 0.5)
 ```
+:::
 :::
 :::
 
@@ -461,8 +489,10 @@ tm_shape(mpszpop2020)+
 :::
 
 ::: {.column width="50%"}
+::: {style="font-size: 1.2em"}
 ```{r}
 #| echo: true
+#| fig-width: 8
 tm_shape(mpszpop2020)+
   tm_fill("DEPENDENCY",
           n = 6,
@@ -470,6 +500,7 @@ tm_shape(mpszpop2020)+
           palette = "Blues") +
   tm_borders(alpha = 0.5)
 ```
+:::
 :::
 :::
 
@@ -485,14 +516,17 @@ tm_shape(mpszpop2020)+
 :::
 
 ::: {.column width="50%"}
+::: {style="font-size: 1.2em"}
 ```{r}
 #| echo: true
+#| fig-width: 8
 tm_shape(mpszpop2020)+
   tm_fill("DEPENDENCY",
           style = "quantile",
           palette = "-Blues") +
   tm_borders(alpha = 0.5)
 ```
+:::
 
 Notice that the colour scheme has been reversed.
 :::
@@ -518,6 +552,7 @@ Notice that the colour scheme has been reversed.
 ::: {.column width="50%"}
 In **tmap**, several *legend* options are provided to change the placement, format and appearance of the legend.
 
+::: {style="font-size: 1.2em"}
 ```{r}
 #| echo: true
 #| eval: false
@@ -539,10 +574,12 @@ tm_shape(mpszpop2020)+
   tm_borders(alpha = 0.5)
 ```
 :::
+:::
 
 ::: {.column width="50%"}
 ```{r}
 #| echo: false
+#| fig-width: 8
 tm_shape(mpszpop2020)+
   tm_fill("DEPENDENCY", 
           style = "jenks", 
@@ -586,8 +623,10 @@ tm_shape(mpszpop2020)+
 ::: {.column width="50%"}
 Chloropleth map below is plotted by using *classic* style.
 
+::: {style="font-size: 1.2em"}
 ```{r}
 #| echo: true
+#| fig-width: 8
 tm_shape(mpszpop2020)+
   tm_fill("DEPENDENCY", 
           style = "quantile", 
@@ -595,6 +634,7 @@ tm_shape(mpszpop2020)+
   tm_borders(alpha = 0.5) +
   tmap_style("classic")
 ```
+:::
 :::
 :::
 
@@ -608,6 +648,7 @@ tm_shape(mpszpop2020)+
 Beside map style, **tmap** also also provides arguments to draw other map furniture such as compass, scale bar and grid lines. In the choropleth below, [`tm_compass()`](https://r-tmap.github.io/tmap/reference/tm_compass.html), [`tm_scale_bar()`](https://r-tmap.github.io/tmap/reference/tm_scale_bar.html) and [`tm_grid()`](https://r-tmap.github.io/tmap/reference/tm_grid.html) are used to add compass, scale bar and grid lines onto the choropleth map.
 :::
 
+::: {style="font-size: 1.2em"}
 ```{r}
 #| echo: true
 #| eval: false
@@ -631,10 +672,12 @@ tm_shape(mpszpop2020)+
              position = c("left", "bottom"))
 ```
 :::
+:::
 
 ::: {.column width="50%"}
 ```{r}
 #| echo: false
+#| fig-width: 8
 tmap_style("white")
 tm_shape(mpszpop2020)+
   tm_fill("DEPENDENCY", 
@@ -675,8 +718,10 @@ In **tmap**, small multiple maps can be plotted in three ways:
 
 In this example, small multiple choropleth maps are created by defining *ncols* in `tm_fill()`.
 
+::: {style="font-size: 1.2em"}
 ```{r}
 #| echo: true
+#| fig-width: 18
 tm_shape(mpszpop2020)+
   tm_fill(c("YOUNG", "AGED"),
           style = "equal", 
@@ -685,6 +730,7 @@ tm_shape(mpszpop2020)+
   tm_borders(alpha = 0.5) +
   tmap_style("white")
 ```
+:::
 
 ------------------------------------------------------------------------
 
@@ -692,23 +738,30 @@ tm_shape(mpszpop2020)+
 
 In this example, small multiple choropleth maps are created by assigning multiple values to at least one of the aesthetic arguments
 
+::: {style="font-size: 1.2em"}
 ```{r}
 #| echo: true
+#| fig-width: 18
 tm_shape(mpszpop2020)+ 
   tm_polygons(c("DEPENDENCY","AGED"),
           style = c("equal", "quantile"), 
           palette = list("Blues","Greens")) +
   tm_layout(legend.position = c("right", "bottom"))
 ```
+:::
 
 ------------------------------------------------------------------------
 
 ### By creating multiple stand-alone maps with `tmap_arrange()`
 
+::: columns
+::: {.column width="50%"}
 In this example, multiple small choropleth maps are created by creating multiple stand-alone maps with [`tmap_arrange()`](https://r-tmap.github.io/tmap/reference/tmap_arrange.html).
 
+::: {style="font-size: 1.2em"}
 ```{r}
 #| echo: true
+#| eval: false
 youngmap <- tm_shape(mpszpop2020)+ 
   tm_polygons("YOUNG", 
               style = "quantile", 
@@ -719,8 +772,35 @@ agedmap <- tm_shape(mpszpop2020)+
               style = "quantile", 
               palette = "Blues")
 
-tmap_arrange(youngmap, agedmap, asp=1, ncol=2)
+tmap_arrange(youngmap, 
+             agedmap, 
+             ncol=1)
 ```
+:::
+:::
+
+::: {.column width="50%"}
+```{r}
+#| echo: false
+#| fig-width: 8
+#| fig-height: 8
+youngmap <- tm_shape(mpszpop2020)+ 
+  tm_polygons("YOUNG", 
+              style = "quantile", 
+              palette = "Blues")
+
+agedmap <- tm_shape(mpszpop2020)+ 
+  tm_polygons("AGED", 
+              style = "quantile", 
+              palette = "Blues")
+
+tmap_arrange(youngmap, 
+             agedmap, 
+             ncol=1)
+```
+:::
+:::
+
 
 ------------------------------------------------------------------------
 
@@ -730,6 +810,7 @@ tmap_arrange(youngmap, agedmap, asp=1, ncol=2)
 ::: {.column width="50%"}
 In this example, multiple small choropleth maps are created by using [`tm_facets()`](https://r-tmap.github.io/tmap/reference/tm_facets.html).
 
+::: {style="font-size: 1.2em"}
 ```{r}
 #| echo: true
 #| eval: false
@@ -748,10 +829,12 @@ tm_shape(mpszpop2020) +
   tm_borders(alpha = 0.5)
 ```
 :::
+:::
 
 ::: {.column width="50%"}
 ```{r}
 #| echo: false
+#| fig-width: 8
 tm_shape(mpszpop2020) +
   tm_fill("DEPENDENCY",
           style = "quantile",
@@ -777,6 +860,7 @@ tm_shape(mpszpop2020) +
 ::: {.column width="50%"}
 Instead of creating small multiple choropleth map, you can also use selection function to map spatial objects meeting the selection criterion.
 
+::: {style="font-size: 1.2em"}
 ```{r}
 #| echo: true
 #| eval: false
@@ -797,10 +881,12 @@ tm_shape(mpszpop2020
   tm_borders(alpha = 0.5)
 ```
 :::
+:::
 
 ::: {.column width="50%"}
 ```{r}
 #| echo: false
+#| fig-width: 9
 tm_shape(mpszpop2020
          [mpszpop2020$REGION_N=="CENTRAL REGION", ])+
   tm_fill("DEPENDENCY", 
@@ -811,7 +897,7 @@ tm_shape(mpszpop2020
           legend.hist.z = 0.1) +
   tm_layout(legend.outside = TRUE,
             legend.height = 0.45, 
-            legend.width = 5.0,
+            legend.width = 6.0,
             legend.position = c("right", 
                                 "bottom"),
             frame = FALSE) +
