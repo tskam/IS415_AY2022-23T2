@@ -243,6 +243,7 @@ qtm(mpszpop2020,
 :::
 
 ## **tmap** elements
+
 ### `tm_shape()`
 
 -   The first element to start with is [`tm_shape()`](https://r-tmap.github.io/tmap/reference/tm_shape.html), which specifies the shape object.
@@ -257,7 +258,7 @@ qtm(mpszpop2020,
 
 ![](img/image3-5.jpg)
 
-- Links to [`tm_polygons()`](https://r-tmap.github.io/tmap/reference/tm_polygons.html), [`tm_symbols()`](https://r-tmap.github.io/tmap/reference/tm_symbols.html), [`tm_lines()`](https://r-tmap.github.io/tmap/reference/tm_lines.html), [`tm_raster()`](https://r-tmap.github.io/tmap/reference/tm_raster.html) and [`tm_text()`](https://r-tmap.github.io/tmap/reference/tm_text.html) 
+-   Links to [`tm_polygons()`](https://r-tmap.github.io/tmap/reference/tm_polygons.html), [`tm_symbols()`](https://r-tmap.github.io/tmap/reference/tm_symbols.html), [`tm_lines()`](https://r-tmap.github.io/tmap/reference/tm_lines.html), [`tm_raster()`](https://r-tmap.github.io/tmap/reference/tm_raster.html) and [`tm_text()`](https://r-tmap.github.io/tmap/reference/tm_text.html)
 
 ## **tmap** elements
 
@@ -284,8 +285,6 @@ The supported derived layers are as follows:
 ![](img/image3-6.jpg)
 :::
 :::
-
-
 
 ------------------------------------------------------------------------
 
@@ -801,7 +800,6 @@ tmap_arrange(youngmap,
 :::
 :::
 
-
 ------------------------------------------------------------------------
 
 ### By defining a group-by variable in `tm_facets()`
@@ -945,5 +943,5 @@ tm_shape(mpszpop2020
 #| eval: false
 #| echo: false
 
-renderthis::to_pdf(from = "Lesson03-Thematic_and_Analytical_Mapping.qmd")
+renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html")
 ```
