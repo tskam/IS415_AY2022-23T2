@@ -20,7 +20,7 @@ This lesson aims to share with you the basic principles and methods of Thematic 
 
 ## Lesson Slides
 
--   Lesson 2 slides in [html](..\lesson\Lesson03\Lesson03-Thematic_and_Analytical_Mapping.html) format.
+-   Lesson 3 slides in [html](..\lesson\Lesson03\Lesson03-Thematic_and_Analytical_Mapping.html) and [pdf](..\lesson\Lesson03\Lesson03-Thematic_and_Analytical_Mapping.pdf) formats.
 
 ## Hands-on Exercise
 
