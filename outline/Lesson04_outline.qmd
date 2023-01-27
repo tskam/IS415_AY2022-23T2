@@ -5,7 +5,7 @@ format: html
 editor: visual
 ---
 
-Spatial Point Pattern Analysis is the evaluation of the pattern, or distribution, of a set of points on a surface. It can refer to the actual spatial or temporal location of these points or also include data from point sources. It is one of the most fundamental concepts in geography and spatial analysis.  This lesson aims to share with you the basic concepts and methods of Spatial Point Pattern Analysis.  You will also gain hands experience on using [spatstat](https://cran.r-project.org/web/packages/spatstat/index.html), an R package specially designed for Spatial Point Pattern Analysis.   
+Spatial Point Pattern Analysis is the evaluation of the pattern, or distribution, of a set of points on a surface. It can refer to the actual spatial or temporal location of these points or also include data from point sources. It is one of the most fundamental concepts in geography and spatial analysis. This lesson aims to share with you the basic concepts and methods of Spatial Point Pattern Analysis. You will also gain hands experience on using [spatstat](https://cran.r-project.org/web/packages/spatstat/index.html), an R package specially designed for Spatial Point Pattern Analysis.
 
 ## Content
 
@@ -22,7 +22,13 @@ Spatial Point Pattern Analysis is the evaluation of the pattern, or distribution
     -   K-function
     -   L-function
 
+## Lesson Slides
+
+-   Lesson 4 slides in [html](..\lesson\Lesson04\Lesson04-SPPA.html) and [pdf](..\lesson\Lesson04\Lesson04-SPPA.pdf) formats.
+
 ## Hands-on Exercise
+
+-   [Chapter 4: 1st Order Spatial Point Patterns Analysis Methods](https://r4gdsa.netlify.app/chap04.html)
 
 
 ### Self-reading Before Meet-up

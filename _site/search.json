@@ -354,7 +354,7 @@
     "href": "outline/Lesson04_outline.html#hands-on-exercise",
     "title": "Lesson 4: Spatial Point Patterns Analysis",
     "section": "Hands-on Exercise",
-    "text": "Hands-on Exercise\n\nSelf-reading Before Meet-up\n\nChapter 7 Spatial Point Pattern Analysis of Roger S. Bivand, Edzer Pebesma and Virgilio Gómez-Rubio (2013) Applied Spatial Data Analysis with R (2nd Edition), Springer.\nChapter 4: Spatial distribution of points of Floch, J.M., Marcon, E. and Puech, F. (2018) Handbook of Spatial Analysis: Theory and Application with R.\n\n\n\nEnrichment Resources\nProf. Luc Anselin on point pattern analysis (YouTube):\n\nPoint Pattern Analysis Concepts\nPoint Pattern Analysis: Clustered, Regular and Dispersed Patterns\nPoint Pattern Analysis: Nearest Neighbor Statistics\nPoint Pattern Analysis: Quadrat Counts\nPoint Pattern Analysis: F and J Functions\nPoint Pattern Analysis: K, L and Kd Functions"
+    "text": "Hands-on Exercise\n\nChapter 4: 1st Order Spatial Point Patterns Analysis Methods\n\n\nSelf-reading Before Meet-up\n\nChapter 7 Spatial Point Pattern Analysis of Roger S. Bivand, Edzer Pebesma and Virgilio Gómez-Rubio (2013) Applied Spatial Data Analysis with R (2nd Edition), Springer.\nChapter 4: Spatial distribution of points of Floch, J.M., Marcon, E. and Puech, F. (2018) Handbook of Spatial Analysis: Theory and Application with R.\n\n\n\nEnrichment Resources\nProf. Luc Anselin on point pattern analysis (YouTube):\n\nPoint Pattern Analysis Concepts\nPoint Pattern Analysis: Clustered, Regular and Dispersed Patterns\nPoint Pattern Analysis: Nearest Neighbor Statistics\nPoint Pattern Analysis: Quadrat Counts\nPoint Pattern Analysis: F and J Functions\nPoint Pattern Analysis: K, L and Kd Functions"
   },
   {
     "objectID": "outline/Lesson04_outline.html#references",
@@ -1104,5 +1104,12 @@
     "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
     "section": "",
     "text": "Choropleth Mapping with in R\n\nType of choropleth map\nChoosing number of classes\nData classification methods\nSelecting colour scheme\n\ntmap Methods\n\ntmap framewok\ntmap elements\ntmap layers\ntmap layout\ntmap style\ntmap facet\n\n\n\n\nThis lesson consists of two parts. First, I will share with you the concepts and design principles of choropleth maps. Next, I will introduce you to tmap, an R package specially designed for thematic mapping based on Layered Grammar of Graphics"
+  },
+  {
+    "objectID": "outline/Lesson04_outline.html#lesson-slides",
+    "href": "outline/Lesson04_outline.html#lesson-slides",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Lesson Slides",
+    "text": "Lesson Slides\n\nLesson 4 slides in html and pdf formats."
   }
 ]
