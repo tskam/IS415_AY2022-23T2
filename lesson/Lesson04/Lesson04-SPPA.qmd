@@ -667,6 +667,6 @@ The modified L function
 #| eval: false
 #| echo: false
 
-renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html",
-                   to = "../../_site/lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.pdf")
+renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson04/Lesson04-SPPA.html",
+                   to = "../../_site/lesson/Lesson04/Lesson04-SPPA.html.pdf")
 ```
