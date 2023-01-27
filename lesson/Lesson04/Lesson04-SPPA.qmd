@@ -68,7 +68,7 @@ The lesson proceeding is divided into three main section. First, I will share wi
 
 -   Distribution of car collisions.
 
-![](img/image4-2.jpg)
+![](img/image4-2.jpg){fig-align="left" width="400"}
 
 ------------------------------------------------------------------------
 
@@ -76,7 +76,7 @@ The lesson proceeding is divided into three main section. First, I will share wi
 
 -   Distribution of crime incidents.
 
-![](img/image4-3.jpg)
+![](img/image4-3.jpg){fig-align="left"}
 
 ------------------------------------------------------------------------
 
@@ -92,7 +92,7 @@ The lesson proceeding is divided into three main section. First, I will share wi
 
 -   Locations of the different channel stores.
 
-![](img/image4-5.jpg)
+![](img/image4-5.jpg){fig-align="left"}
 
 ------------------------------------------------------------------------
 
