@@ -30,7 +30,6 @@ Spatial Point Pattern Analysis is the evaluation of the pattern, or distribution
 
 -   [Chapter 4: 1st Order Spatial Point Patterns Analysis Methods](https://r4gdsa.netlify.app/chap04.html)
 
-
 ### Self-reading Before Meet-up
 
 -   [Chapter 7 Spatial Point Pattern Analysis](https://link-springer-com.libproxy.smu.edu.sg/chapter/10.1007/978-1-4614-7618-4_7) of Roger S. Bivand, Edzer Pebesma and Virgilio Gómez-Rubio (2013) **Applied Spatial Data Analysis with R** (2nd Edition), Springer.
