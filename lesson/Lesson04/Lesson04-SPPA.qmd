@@ -1,0 +1,672 @@
+---
+title: "Lesson 4: Spatial Point Patterns Analysis"
+author: "Dr. Kam Tin Seong<br/>Assoc. Professor of Information Systems(Practice)"
+institute: "School of Computing and Information Systems,<br/>Singapore Management University"
+date: "`r Sys.Date()`"
+format: 
+  revealjs:
+    width: 1600
+    height: 900
+    show-notes: false
+    slide-number: true
+    show-slide-number: all
+date-format: "DD MMM YYYY"
+editor: visual
+---
+
+## Content
+
+::: columns
+::: {.column width="50%"}
+-   Introducing Spatial Point Patterns
+    -   The basic concepts of spatial point patterns
+    -   1st Order versus 2nd Order
+    -   Spatial Point Patterns in real world
+-   1st Order Spatial Point Patterns Analysis
+    -   Quadrat analysis
+    -   Kernel density estimation
+:::
+
+::: {.column width="50%"}
+-   2nd Order Spatial Point Patterns Analysis
+    -   Nearest Neighbour Index
+    -   G-function
+    -   F-function
+    -   K-function
+    -   L-function
+:::
+:::
+
+::: notes
+Welcome to Lesson 4: Spatial Point Pattern Analysis, a family of spatial statistics specially developed to model and to test distribution of spatial point events.
+
+The lesson proceeding is divided into three main section. First, I will share with you what are real world spatial point events. This is followed by explaining the concepts and methods of 1st-order and 2nd-order spatial point patterns analysis.
+:::
+
+## What is Spatial Point Patterns
+
+-   Points as Events
+
+-   Mapped pattern
+
+    -   Not a sample
+    -   Selection bias
+
+-   Events are mapped, but non-events are not
+
+------------------------------------------------------------------------
+
+### Spatial Point Patterns in Real World
+
+-   Distribution of dieses such as dengue fever.
+
+![](img/image4-1.jpg)
+
+------------------------------------------------------------------------
+
+### Spatial Point Patterns in Real World
+
+-   Distribution of car collisions.
+
+![](img/image4-2.jpg)
+
+------------------------------------------------------------------------
+
+### Spatial Point Patterns in Real World
+
+-   Distribution of crime incidents.
+
+![](img/image4-3.jpg)
+
+------------------------------------------------------------------------
+
+### Spatial Point Patterns in Real World
+
+-   Distribution of public services such as education institutions.
+
+![](img/image4-4.jpg)
+
+------------------------------------------------------------------------
+
+### Spatial Point Patterns in Real World
+
+-   Locations of the different channel stores.
+
+![](img/image4-5.jpg)
+
+------------------------------------------------------------------------
+
+### Spatial Point Patterns in Real World
+
+-   Distribution of social media data such as tweets.
+
+![](img/image4-6.jpg)
+
+## Real World Question
+
+-   Location only
+    -   are points randomly located or patterned
+-   Location and value
+    -   marked point pattern
+    -   is combination of location and value random or patterned
+-   What is the underlying process?
+
+::: notes
+It is important note that SPPA is exploratory and confirmatory in nature. They are specially developed for describing the spatial point pattern and for confirming the observed patterns statistically. However, they are explanatory nor for prediction.
+:::
+
+## Points on a Plane
+
+-   Classic point pattern analysis
+    -   points on an isotropic plane
+    -   no effect of translation and rotation
+    -   classic examples: tree seedlings, rocks, etc
+-   Distance
+    -   straight line only
+
+------------------------------------------------------------------------
+
+### Real world spatial point patterns
+
+-   Is this a random distribution?
+
+![](img/image4-7.jpg)
+
+------------------------------------------------------------------------
+
+### Real world spatial point patterns
+
+-   Is this a random distribution?
+
+![](img/image4-8.jpg)
+
+## Spatial Point Patterns Analysis
+
+-   Point pattern analysis (PPA) is the study of the spatial arrangements of points in (usually 2-dimensional) space.
+-   The simplest formulation is a set X = {x ∈ D} where D, which can be called the **study region**, is a subset of Rn, a n-dimensional **Euclidean space**.
+-   A fundamental problem of PPA is inferring whether a given arrangement is merely **random** or the result of some process.
+
+![](img/image4-9.jpg)
+
+## Spatial Point Patterns Analysis Techniques
+
+-   First-order vs Second-order Analysis of spatial point patterns.
+
+![](img/image4-10.jpg)
+
+Reference: [11.4 First and second order effects of Intro to GIS and Spatial Analysis](https://mgimond.github.io/Spatial/point-pattern-analysis.html#first-and-second-order-effects)
+
+::: notes
+The first-order properties describe the way in which the expected value (mean or average) of the spatial point pattern varies across space (i.e., the intensity of the spatial point pattern). Such properties are usually measured with the so-called quadrat analysis, nearest neighbour index and kernel estimation. Second-order properties describe the covariance (or correlation) between values of the spatial point pattern at different regions in space and are usually measured with the G function, K function and L function. Applied to point event data, both properties could be used to explore the spatial variation in the risk of being victimized by a crime, spatial and space-time clustering of criminal activities, and the raised incidence of criminal activities around point sources, such as robberies around ATM machines, subway entrances and exits, etc.
+:::
+
+------------------------------------------------------------------------
+
+### First-order Spatial Point Patterns Analysis Techniques
+
+-   Density-based
+    -   Kernel density estimation
+    -   Quadrat analysis,
+-   Distance-based
+    -   Nearest Neighbour Index
+
+------------------------------------------------------------------------
+
+### Basic concept of density-based measures
+
+![](img/image4-11.jpg)
+
+## Kernel density estimation (Silverman 1986)
+
+-   A method to compute the intensity of a point distribution.
+
+::: columns
+::: {.column width="50%"}
+The general formula:
+
+![](img/image4-19.jpg){width="450"}
+:::
+
+::: {.column width="50%"}
+Graphically
+
+![](img/image4-20.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### KDE Step 1: Computing point intensity
+
+![](img/image4-21.jpg){width="317"}
+
+------------------------------------------------------------------------
+
+### KDE Step 2: Spatial interpolation using kernel function
+
+![](img/image4-22.jpg)
+
+------------------------------------------------------------------------
+
+### KDE Map of Childcare Services, Singapore
+
+![](img/image4-20b.png)
+
+------------------------------------------------------------------------
+
+### Adaptive Bandwidth
+
+::: columns
+::: {.column width="50%"}
+Adaptive schemes adjust itself according to the density of data: - Shorter bandwidths where data are dense and longer where sparse.
+
+-   Finding nearest neighbors are one of the often used approaches.
+:::
+
+::: {.column width="50%"}
+![](img/image4-24.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Fixed bandwidth
+
+::: columns
+::: {.column width="50%"}
+-   Might produce large estimate variances where data are sparse, while mask subtle local variations where data are dense.
+
+-   In extreme condition, fixed schemes might not be able to calibrate in local areas where data are too sparse to satisfy the calibration requirements (observations must be more than parameters).
+:::
+
+::: {.column width="50%"}
+![](img/image4-23.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Quadrat Analysis -- Step 1
+
+::: columns
+::: {.column width="70%"}
+-   Divide the study area into subregion of equal size,
+    -   often squares, but don't have to be.
+
+![](img/image4-12.jpg){width="1007"}
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Quadrat Analysis -- Step 2
+
+::: columns
+::: {.column width="70%"}
+-   Count the frequency of events in each region.
+
+![](img/image4-13.jpg){width="1214"}
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Quadrat Analysis -- Step 3
+
+::: columns
+::: {.column width="70%"}
+-   Calculate the intensity of events in each region.
+
+![](img/image4-14.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Quadrat Analysis -- Step 4
+
+-   Calculate the quadrat statistics and perform CSR test.
+
+![](img/image4-15.jpg)
+
+------------------------------------------------------------------------
+
+### Quadrat Analysis -- Variance-Mean Ratio (VMR)
+
+-   For an **uniform** distribution, the variance is zero, - therefore, we expect a variance-mean ratio **close to 0**.
+
+-   For a **random** distribution, the variance and mean are the same,
+
+    -   therefore, we expect a variance-mean ratio **close to 1**.
+
+-   For a **cluster** distribution, the variance is relatively large,
+
+    -   therefore, we expect a variance-mean ratio **greater than 1**.\]
+
+------------------------------------------------------------------------
+
+### Complete Spatial Randomness (CSR)
+
+::: columns
+::: {.column width="50%"}
+-   CSR/IRP satisfy two conditions: - Any event has equal probability of being in any location, a **1st order** effect.
+
+    -   The location of one event is independent of the location of another event, a **2nd order** effect.
+
+Reference: [Chapter 12 Hypothesis testing of Intro to GIS and Spatial Analysis](https://mgimond.github.io/Spatial/hypothesis-testing.html)
+:::
+
+::: {.column width="50%"}
+![](img/image4-16.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Quadrat Analysis: The interpretation
+
+::: columns
+::: {.column width="70%"}
+![](img/image4-17.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Weaknesses of quadrat analysis
+
+::: columns
+::: {.column width="50%"}
+-   It is sensitive to the quadrat size.
+
+    -   If the quadrat size is too small, they may contain only a couple of points, and
+    -   If the quadrat size is too large, they may contain too many points.
+
+-   It is a measure of **dispersion** rather than a measure of **pattern**.
+
+-   It results in a single measure for the entire distribution, so variation within the region are not recognised.
+:::
+
+::: {.column width="50%"}
+![](img/image4-18.jpg)
+:::
+:::
+
+## Distance-based: Nearest Neighbour Index
+
+### What is Nearest Neighbour?
+
+Direct distance from a point to its nearest neighbour.
+
+![](img/image4-25.jpg)
+
+## Nearest Neighbour Index
+
+The Nearest Neighbour Index is expressed as the ratio of the **Observed Mean Distance** to the **Expected Mean Distance**.
+
+![](img/image4-26.jpg)
+
+------------------------------------------------------------------------
+
+### Calculating Nearest Neighbour Index
+
+![](img/image4-27.jpg)
+
+------------------------------------------------------------------------
+
+### Interpreting Nearest Neighbour Index
+
+The expected distance is the average distance between neighbours in a hypothetical random distribution.
+
+-   If the index is less than 1, the pattern exhibits clustering,
+-   If the index is equal to 1, the patterns exhibits random, and
+-   If the index is greater than 1, the trend is toward dispersion or competition.
+
+![](img/image4-28.jpg){fig-align="center" width="350"}
+
+------------------------------------------------------------------------
+
+### The test statistics
+
+::: columns
+::: {.column width="80%"}
+-   Null Hypothesis: Points are randomly distributed
+
+-   Test statistics:
+
+![](img/image4-29.jpg){width="295"}
+
+-   Reject the null hypothesis if the z-score is large and p-value is smaller than the alpha value.
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Interpreting Nearest Neighbour Index
+
+::: columns
+::: {.column width="70%"}
+![](img/image4-30.jpg)
+
+The p-value is smaller than 0.05 =\> Reject the null hypothesis that the point patterns are randomly distributed.
+:::
+:::
+
+## G function
+
+::: columns
+::: {.column width="50%"}
+The formula
+
+![](img/image4-31.jpg){width="505"}
+:::
+
+::: {.column width="50%"}
+![](img/image4-32.jpg){width="502"}
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Interpretation of G-function
+
+::: columns
+::: {.column width="50%"}
+The shape of G-function tells us the way the events are spaced in a point pattern.
+
+-   Clustered: G increases rapidly at short distance.
+
+-   Evenness: G increases slowly up to distance where most events spaced, then increases rapidly.
+:::
+
+::: column
+![](img/image4-33.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### How do we tell if G is significant?
+
+::: columns
+::: {.column width="50%"}
+-   The significant of any departure from CSR (either cluster or regularity) can be evaluated using simulated "confidence envelopes"
+:::
+
+::: {.column width="50%"}
+![](img/image4-34.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Monte Carlo simulation test of CSR
+
+-   Perform m independent simulation of n events (i.e. 999) in the study region.
+
+-   For each simulated point pattern, estimate G(r) and use the maximum (95th) and minimum (5th) of these functions for the simulated patterns to define an upper and lower simulation envelope.
+
+-   If the estimated G(r) lies above the upper envelope or below the lower envelope, the estimated G(r) is statistically significant.
+
+------------------------------------------------------------------------
+
+### The significant test of G-function
+
+![](img/image4-35.jpg)
+
+## F function
+
+-   Select a sample of point locations anywhere in the study region at random
+    -   Determine minimum distance from each point to any event in the study area.
+-   Three steps:
+    -   Randomly select m points (p1, p2, ....., pn),
+
+    -   Calculate dmin(pi,s) as the minimum distance from location pi to any event in the point patterns, and
+
+    -   Calculate F(d).
+
+------------------------------------------------------------------------
+
+### The F function formula
+
+![](img/image4-36.jpg){fig-align="center"}
+
+------------------------------------------------------------------------
+
+### Interpretation of F-function
+
+-   Clustered = F(r) rises slowly at first, but more rapidly at longer distances.
+
+-   Evenness = F(r) rises rapidly at first, then slowly at longer distances.
+
+------------------------------------------------------------------------
+
+### The significant test of F-function
+
+![](img/image4-37.jpg)
+
+------------------------------------------------------------------------
+
+### Comparison between G and F
+
+![](img/image4-38.jpg)
+
+## Ripley's K function (Ripley, 1981)
+
+-   Limitation of nearest neighbor distance method is that it uses only nearest distance
+
+-   Considers only the shortest scales of variation.
+
+-   K function uses more points.
+
+    -   Provides an estimate of spatial dependence over a wider range of scales.
+    -   Based on all the distances between events in the study area.
+    -   Assumes isotropy over the region.
+
+------------------------------------------------------------------------
+
+### Calculating the K function
+
+::: columns
+::: {.column width="50%"}
+-   Construct a circle of radius h around each point event(i).
+
+-   Count the number of other events (j) that fall inside this circle.
+
+-   Repeat these two steps for all points (i) and sum results.
+
+-   Increment h by a small amount and repeat the calculation.
+:::
+
+::: {.column width="50%"}
+![](img/image4-39.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### K function
+
+::: columns
+::: {.column width="90%"}
+The formula:
+
+![](img/image4-40.jpg){width="1153"}
+:::
+:::
+
+------------------------------------------------------------------------
+
+### The K function complete spatial randomness test
+
+-   K(h) can be plotted against different values of h.
+
+-   But what should K look like for no spatial dependence?
+
+-   Consider what K(h) should look like for a random point process (CSR)
+
+    -   The probability of an event at any point in R is independent of what other events have occurred and equally likely anywhere in R
+
+------------------------------------------------------------------------
+
+### Interpreting the K function complete spatial randomness test
+
+::: columns
+::: {.column width="50%"}
+Under the assumption of CSR, the expected number of events within distance h of an event is:
+
+![](img/image4-41.jpg)
+
+Compare K(h) to 𝜋ℎ\^2
+
+-   K(h) \< 𝜋ℎ\^2 if point pattern is regular
+-   K(h) \> 𝜋ℎ\^2 if point pattern is clustered
+:::
+
+::: {.column width="50%"}
+![](img/image4-42.jpg)
+
+-   Above the envelop: significant cluster pattern - Below the envelop: significant regular
+-   Inside the envelop: CSR
+:::
+:::
+
+------------------------------------------------------------------------
+
+## The L function (Besag 1977)
+
+::: columns
+::: {.column width="50%"}
+In practice, K function will be normalised to obtained a benchmark of zero.
+
+The formula:
+
+![](img/image4-43.jpg){width="448"}
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Interpreting the L function complete spatial randomness test
+
+::: columns
+::: {.column width="50%"}
+::: {style="font-size: 0.80em"}
+-   When an observed L value is greater than its corresponding L(theo)(i.e. red break line) value for a particular distance and above the upper confidence envelop, spatial clustering for that distance is statistically significant (e.g. distance beyond C).
+-   When an observed L value is greater than its corresponding L(theo) value for a particular distance and lower than the upper confidence envelop, spatial clustering for that distance is statistically NOT significant (e.g. distance between B and C).
+-   When an observed L value is smaller than its corresponding L(theo) value for a particular distance and beyond the lower confidence envelop, spatial dispersion for that distance is statistically significant. - When an observed L value is smaller than its corresponding L(theo) value for a particular distance and within the lower confidence envelop, spatial dispersion for that distance is statistically NOT significant (e.g. distance between A and B).
+:::
+:::
+
+::: {.column width="50%"}
+::: {style="font-size: 0.80em"}
+-   The grey zone indicates the confident envelop (i.e. 95%).
+:::
+
+![](img/image4-44.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### The L function (Besag 1977)
+
+::: columns
+::: {.column width="50%"}
+The modified L function
+
+![](img/image4-45.jpg){width="458"}
+
+-   L(r)\>0 indicates that the observed distribution is geographically concentrated.
+
+-   L(r)\<0 implies dispersion.
+
+-   L(r)=0 indicates complete spatial randomness (CRS).
+:::
+
+::: {.column width="50%"}
+![](img/image4-46.jpg)
+:::
+:::
+
+## References
+
+-   [Chapter 11 Point Pattern Analysis](https://mgimond.github.io/Spatial/point-pattern-analysis.html) of **Intro to GIS and Spatial Analysis**. Section 11.2, 11.3, 11.3.1 and 11.4
+
+-   GIS&T Body of Knowledge [AM-07-Point Pattern Analysis](https://gistbok.ucgis.org/bok-basic-page/welcome-gist-body-knowledge)
+
+-   GIS&T Body of Knowledge [AM-08-Kernels and Density Estimation](https://gistbok.ucgis.org/bok-topics/kernels-and-density-estimation)
+
+-   [Analyzing Patterns in Business Point Data](https://www.directionsmag.com/article/3289), Directions Magazine March 17, 2005.
+
+-   O'Sullivan, D., and Unwin, D. (2010) **Geographic Information Analysis**, Second Edition. John Wiley & Sons Inc., New Jersey, Canada. Chapter 5-6.
+
+-   Baddeley A., Rubak E. and Turner R. (2015) **Spatial Point Patterns: Methodology and Applications with R**, Chapman and Hall/CRC.
+
+```{r}
+#| eval: false
+#| echo: false
+
+renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html",
+                   to = "../../_site/lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.pdf")
+```

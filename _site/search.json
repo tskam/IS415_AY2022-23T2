@@ -1111,5 +1111,103 @@
     "title": "Lesson 4: Spatial Point Patterns Analysis",
     "section": "Lesson Slides",
     "text": "Lesson Slides\n\nLesson 4 slides in html and pdf formats."
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#content",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#content",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Content",
+    "text": "Content\n\n\n\nIntroducing Spatial Point Patterns\n\nThe basic concepts of spatial point patterns\n1st Order versus 2nd Order\nSpatial Point Patterns in real world\n\n1st Order Spatial Point Patterns Analysis\n\nQuadrat analysis\nKernel density estimation\n\n\n\n\n2nd Order Spatial Point Patterns Analysis\n\nNearest Neighbour Index\nG-function\nF-function\nK-function\nL-function\n\n\n\n\n\nWelcome to Lesson 4: Spatial Point Pattern Analysis, a family of spatial statistics specially developed to model and to test distribution of spatial point events.\nThe lesson proceeding is divided into three main section. First, I will share with you what are real world spatial point events. This is followed by explaining the concepts and methods of 1st-order and 2nd-order spatial point patterns analysis."
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#what-is-spatial-point-patterns",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#what-is-spatial-point-patterns",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "What is Spatial Point Patterns",
+    "text": "What is Spatial Point Patterns\n\nPoints as Events\nMapped pattern\n\nNot a sample\nSelection bias\n\nEvents are mapped, but non-events are not"
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#real-world-question",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#real-world-question",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Real World Question",
+    "text": "Real World Question\n\nLocation only\n\nare points randomly located or patterned\n\nLocation and value\n\nmarked point pattern\nis combination of location and value random or patterned\n\nWhat is the underlying process?\n\n\nIt is important note that SPPA is exploratory and confirmatory in nature. They are specially developed for describing the spatial point pattern and for confirming the observed patterns statistically. However, they are explanatory nor for prediction."
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#points-on-a-plane",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#points-on-a-plane",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Points on a Plane",
+    "text": "Points on a Plane\n\nClassic point pattern analysis\n\npoints on an isotropic plane\nno effect of translation and rotation\nclassic examples: tree seedlings, rocks, etc\n\nDistance\n\nstraight line only"
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#spatial-point-patterns-analysis",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#spatial-point-patterns-analysis",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Spatial Point Patterns Analysis",
+    "text": "Spatial Point Patterns Analysis\n\nPoint pattern analysis (PPA) is the study of the spatial arrangements of points in (usually 2-dimensional) space.\nThe simplest formulation is a set X = {x ∈ D} where D, which can be called the study region, is a subset of Rn, a n-dimensional Euclidean space.\nA fundamental problem of PPA is inferring whether a given arrangement is merely random or the result of some process."
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#spatial-point-patterns-analysis-techniques",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#spatial-point-patterns-analysis-techniques",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Spatial Point Patterns Analysis Techniques",
+    "text": "Spatial Point Patterns Analysis Techniques\n\nFirst-order vs Second-order Analysis of spatial point patterns.\n\n\nReference: 11.4 First and second order effects of Intro to GIS and Spatial Analysis\n\nThe first-order properties describe the way in which the expected value (mean or average) of the spatial point pattern varies across space (i.e., the intensity of the spatial point pattern). Such properties are usually measured with the so-called quadrat analysis, nearest neighbour index and kernel estimation. Second-order properties describe the covariance (or correlation) between values of the spatial point pattern at different regions in space and are usually measured with the G function, K function and L function. Applied to point event data, both properties could be used to explore the spatial variation in the risk of being victimized by a crime, spatial and space-time clustering of criminal activities, and the raised incidence of criminal activities around point sources, such as robberies around ATM machines, subway entrances and exits, etc."
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#kernel-density-estimation-silverman-1986",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#kernel-density-estimation-silverman-1986",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Kernel density estimation (Silverman 1986)",
+    "text": "Kernel density estimation (Silverman 1986)\n\nA method to compute the intensity of a point distribution.\n\n\n\nThe general formula:\n\n\nGraphically"
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#distance-based-nearest-neighbour-index",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#distance-based-nearest-neighbour-index",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Distance-based: Nearest Neighbour Index",
+    "text": "Distance-based: Nearest Neighbour Index\nWhat is Nearest Neighbour?\nDirect distance from a point to its nearest neighbour."
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#nearest-neighbour-index",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#nearest-neighbour-index",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Nearest Neighbour Index",
+    "text": "Nearest Neighbour Index\nThe Nearest Neighbour Index is expressed as the ratio of the Observed Mean Distance to the Expected Mean Distance."
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#g-function",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#g-function",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "G function",
+    "text": "G function\n\n\nThe formula"
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#f-function",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#f-function",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "F function",
+    "text": "F function\n\nSelect a sample of point locations anywhere in the study region at random\n\nDetermine minimum distance from each point to any event in the study area.\n\nThree steps:\n\nRandomly select m points (p1, p2, ….., pn),\nCalculate dmin(pi,s) as the minimum distance from location pi to any event in the point patterns, and\nCalculate F(d)."
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#ripleys-k-function-ripley-1981",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#ripleys-k-function-ripley-1981",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Ripley’s K function (Ripley, 1981)",
+    "text": "Ripley’s K function (Ripley, 1981)\n\nLimitation of nearest neighbor distance method is that it uses only nearest distance\nConsiders only the shortest scales of variation.\nK function uses more points.\n\nProvides an estimate of spatial dependence over a wider range of scales.\nBased on all the distances between events in the study area.\nAssumes isotropy over the region."
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#the-l-function-besag-1977",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#the-l-function-besag-1977",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "The L function (Besag 1977)",
+    "text": "The L function (Besag 1977)\n\n\nIn practice, K function will be normalised to obtained a benchmark of zero.\nThe formula:"
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#references",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#references",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "References",
+    "text": "References\n\nChapter 11 Point Pattern Analysis of Intro to GIS and Spatial Analysis. Section 11.2, 11.3, 11.3.1 and 11.4\nGIS&T Body of Knowledge AM-07-Point Pattern Analysis\nGIS&T Body of Knowledge AM-08-Kernels and Density Estimation\nAnalyzing Patterns in Business Point Data, Directions Magazine March 17, 2005.\nO’Sullivan, D., and Unwin, D. (2010) Geographic Information Analysis, Second Edition. John Wiley & Sons Inc., New Jersey, Canada. Chapter 5-6.\nBaddeley A., Rubak E. and Turner R. (2015) Spatial Point Patterns: Methodology and Applications with R, Chapman and Hall/CRC."
   }
 ]
