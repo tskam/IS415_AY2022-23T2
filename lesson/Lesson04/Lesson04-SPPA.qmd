@@ -668,5 +668,5 @@ The modified L function
 #| echo: false
 
 renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson04/Lesson04-SPPA.html",
-                   to = "../../_site/lesson/Lesson04/Lesson04-SPPA.html.pdf")
+                   to = "../../_site/lesson/Lesson04/Lesson04-SPPA.pdf")
 ```
