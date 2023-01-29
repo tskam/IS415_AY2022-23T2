@@ -24,12 +24,13 @@ In this lesson, R objects used to store geospatial data will be discussed. The d
 
 -   Lesson 2 slides in [html](..\lesson\Lesson02\Lesson02-Wrangling_Geospatial_Data_in_R.html) and [pdf](..\lesson\Lesson02\Lesson02-Wrangling_Geospatial_Data_in_R.pdf) formats.
 
-
 ## Hands-on Exercise
 
 -   [Geospatial Data Wrangling with R](https://r4gdsa.netlify.app/chap01.html)
 
-## Reference
+## In-class Exercise
+
+-   [Geospatial Data Wrangling: Nigeria water point use case](https://is415-gaa-tskam.netlify.app/in-class_ex/in-class_ex02/in-class_ex02)
 
 **Must read**
 

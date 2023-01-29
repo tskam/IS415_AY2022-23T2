@@ -1188,5 +1188,19 @@
     "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
     "section": "Peer Learning",
     "text": "Peer Learning"
+  },
+  {
+    "objectID": "outline/Lesson03_outline.html#in-class-exercise",
+    "href": "outline/Lesson03_outline.html#in-class-exercise",
+    "title": "Lesson 3: Thematic and Analytical Mapping",
+    "section": "In-class Exercise",
+    "text": "In-class Exercise\n\nAnalytical Mapping\n\n\nPrinciples and Methods of Thematic Mapping\n\nProportional Symbols\nChoropleth Maps\nThe Basics of Data Classification\nChoropleth Mapping with Exploratory Data Analysis\nTennekes, M. (2018) “tmap: Thematic Maps in R”, Journal of Statistical Software, Vol 84:6, 1-39.\n\n\n\nAdditional Reading\n\nThe Concept of Map Symbols\nChoropleth map\nChoropleth Maps – A Guide to Data Classification\nBivariate Choropleth\nValue-by-alpha maps\nWhat to consider when creating choropleth maps\n\n\n\nAll About R:\n\ntmap package especially:\ntmap: get started!,\ntmap: version changes, and\nChapter 8 Making maps with R of Geocomputation with R."
+  },
+  {
+    "objectID": "outline/Lesson02_outline.html#in-class-exercise",
+    "href": "outline/Lesson02_outline.html#in-class-exercise",
+    "title": "Lesson 2: Geospatial Data Handling and Wrangling",
+    "section": "In-class Exercise",
+    "text": "In-class Exercise\n\nGeospatial Data Wrangling: Nigeria water point use case\n\nMust read\n\nChapter 2 Feature Representation of Intro to GIS and Spatial Analysis.\nChapter 9 Coordinate Systems of Intro to GIS and Spatial Analysis.\nGeocoding.\nPebesma, Edzer. (2018) “Simple Features for R: Standardized Support for Spatial Vector Data.” The R Journal, Vol. 10/1, 439:446.\n\nAdditional readings\n\nMaling, D. H. 1992. Coordinate Systems and Map Projections. 2nd ed. Oxford ; New York: Pergamon Press.\nPebesma, Edzer, Thomas Mailund, and James Hiebert. 2016. “Measurement Units in R.” The R Journal 8 (2): 486–94.\nAndreas Hackeloeer, Klaas Klasing, Jukka M. Krisp & Liqiu Meng (2014) “Georeferencing: a review of methods and applications”, Annals of GIS, 20:1, 61-69, DOI:10.1080/19475683.2013.86882.\nEla Dramowicz (2004) “Three Standard Geocoding Methods”, Directions Magazine."
   }
 ]
