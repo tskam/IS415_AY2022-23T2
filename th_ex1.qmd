@@ -1,69 +1,62 @@
 ---
-title: "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia"
-description: |
-  This handout provides the context, the task, the expectation and the grading criteria of Take-home Exercise 1.  Students must review and understand them before getting started with the take-home exercise. 
+title: "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria"
 date: "`r Sys.Date()`"
 format: html
 editor: visual
 ---
 
-::: {.callout-note}
-This is a sample **Take-home Exercise 1 for AY2021-22 Term 1** and not for this academic term. 
+::: callout-note
+This handout provides the context, the task, the expectation and the grading criteria of Take-home Exercise 1.  Students must review and understand them before getting started with the take-home exercise. 
 :::
 
 ## Setting the Scene
 
-Since late December 2019, an outbreak of a novel coronavirus disease (COVID-19; previously known as 2019-nCoV) was reported in Wuhan, China, which had subsequently affected 210 countries worldwide. In general, COVID-19 is an acute resolved disease but it can also be deadly, with a 2% case fatality rate.
+Water is an important resource to mankind. Clean and accessible water is critical to human health. It provides a healthy environment, a sustainable economy, reduces poverty and ensures peace and security. Yet over 40% of the global population does not have access to sufficient clean water. By 2025, 1.8 billion people will be living in countries or regions with absolute water scarcity, according to UN-Water. The lack of water poses a major threat to several sectors, including food security. Agriculture uses about 70% of the world's accessible freshwater.
 
-The COVID-19 pandemic in Indonesia is part of the ongoing worldwide pandemic of coronavirus disease 2019 (COVID-19) caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The virus was confirmed to have reached Indonesia on March 2, 2020. It started with two cases in March. As of July 31 2021, there had been 3,409,658 cumulative confirmed cases of COVID-19 in Indonesia and 94,119 reported cumulative deaths. All cases were spread in 34 provinces in Indonesia. Among all the provinces, DKI Jakarta (Indonesian: Daerah Khusus Ibukota Jakarta and in English: Special Capital Region of Jakarta) contributed close to 24% of the cumulative confirmed cases.
+Developing countries are most affected by water shortages and poor water quality. Up to 80% of illnesses in the developing world are linked to inadequate water and sanitation. Despite technological advancement, providing clean water to the rural community is still a major development issues in many countries globally, especially countries in the Africa continent.
 
-Despite its compactness, the cumulative confirmed cases were not evenly distributed within DKI Jakarta as Figure below reveals at the district and sub-district levels. The question was where were the sub-districts with relatively higher number of confirmed cases and how they changed over time.
+To address the issue of providing clean and sustainable water supply to the rural community, a global [Water Point Data Exchange (WPdx)](https://www.waterpointdata.org/about/) project has been initiated. The main aim of this initiative is to collect water point related data from rural areas at the water point or small water scheme level and share the data via WPdx Data Repository, a cloud-based data library. What is so special of this project is that data are collected based on [WPDx Data Standard](https://www.waterpointdata.org/wp-content/uploads/2021/04/WPDx_Data_Standard.pdf).
 
 ## Objectives
 
-The take-home exercise aims to embark you the skill of perform geospatial analysis to "Think Globally, Act Locally". You will also acquire the skills of documenting the analysis procedures conform to reproducible best practice using RMarkdown. Last but not least, you will also learn the skill of communicating your work via web post.
-
-The specific objective of the exercise is to reveal the spatio-temporal patterns of monthly cumulative confirmed COVID-19 rate and death rate at *sub-district* or [*kelurahan*](https://en.wikipedia.org/wiki/Subdivisions_of_Indonesia).
+Geospatial analytics hold tremendous potential to address complex problems facing society. In this study, you are tasked to apply appropriate spatial point patterns analysis methods to discover the geographical distribution of functional and non-function water points and their co-locations if any in Osun State, Nigeria.
 
 ## The Task
 
-In this take-home exercise, you are tasked to reveal the spatia-temporal patterns of COVID-19 case at DKI Jakarta. The temporal interval must be at *month* (last day of the month) and the geographic should be at *sub-district* or [*kelurahan*](https://en.wikipedia.org/wiki/Subdivisions_of_Indonesia) in Indonesia language. The specific tasks are as follow:
+The specific tasks of this take-home exercise are as follows:
 
-### Data Extraction, Wrangling and Integration
+### Exploratory Spatial Data Analysis (ESDA)
 
-#### Apstial data
+- Derive kernel density maps of functional and non-functional water points.  Using appropriate tmap functions, 
+- Display the kernel density maps on openstreetmap of Osub State, Nigeria. 
+- Describe the spatial patterns revealed by the kernel density maps. Highlight the advantage of kernel density map over point map.
 
--   Download the daily COVID-19 data of DKI Jakarta,
--   Extract ID_KEL, Nama_provinsi, nama_kota, nama_kecamatan nama_kelurahan, POSITIF (cumulative confirmed cases) and meninggal (cumulative death cases) from `data` worksheet of the daily COVID-19 data, and
--   Integrate the daily data into a data frame by month.
+### Second-order Spatial Point Patterns Analysis
 
-#### Geospatial data
+With reference to the spatial point patterns observed in ESDA:
 
--   Download `DKI Jarkata` shapefile,
--   Import the shapefile into R and save it in a simple feature data frame format, (Note: The national Projected Coordinates Systems of Indonesia is DGN95 / Indonesia TM-3 zone 54.1)
--   Exclude all the outer islands from the DKI Jakarta sf data frame, and
--   Retain the first nine fields in the DKI Jakarta sf data frame. The ninth field *JUMLAH_PEN = Total Population*.
+- Formulate the null hypothesis and alternative hypothesis and select the confidence level.
+- Perform the test by using appropriate Second order spatial point patterns analysis technique.
+- With reference to the analysis results, draw statistical conclusions.
 
-#### Geospatial data integration
+### Spatial Correlation Analysis
 
--   Combine the geospatial and aspatial data frame into simple feature data frame.\
--   Calculate the cumulative confirmed cases rate (i.e. cases per 10000 population) and the cumulative death rate by month.
+In this section, you are required to confirm statistically if the spatial distribution of functional and non-functional water points are independent from each other. 
 
-### Thematic Mapping
-
--   Plot maps to show the spatio-temporal distribution of cumulative confirmed cases rate and death rate at sub-direct level by using appropriate thematic mapping technique provided by tmap package.
-
-### Analytical Mapping
-
--   Plot analytical maps to show the spatio-temporal distribution of cumulative confirmed cases rate and death rate at sub-direct level by using appropriate thematic mapping technique provided by tmap package.
+- Formulate the null hypothesis and alternative hypothesis and select the confidence level.
+- Perform the test by using appropriate Second order spatial point patterns analysis technique.
+- With reference to the analysis results, draw statistical conclusions.
 
 ## The Data
 
-For the purpose of this assignment, the following data should be used:
+#### Apstial data
 
--   [Open Data Covid-19 Provinsi DKI Jakarta](https://riwayat-file-covid-19-dki-jakarta-jakartagis.hub.arcgis.com/). This portal provides daily update of COVID-19 measures at both sub-district and district level. For the purpose of this exercise, data at the sub-district level will be used. This data is available in `data` worksheet.
+For the purpose of this assignment, data from [WPdx Global Data Repositories](https://www.waterpointdata.org/access-data/) will be used. There are two versions of the data. They are: WPdx-Basic and WPdx+. You are required to use **WPdx+** data set.
 
--   [Indonesia Geospatial](https://www.indonesia-geospasial.com/). This portal provides a comprehensive collection of geospatial data mainly in ESRI shapefile format at different geographical levels. For the purpose of this study, the **Shapefile (SHP) Batas Desa Provinsi DKI Jakarta** provided at [PODES 2019](https://www.indonesia-geospasial.com/2020/04/download-shapefile-shp-batas-desa.html) geospatial layer should be used.
+#### Geospatial data
+
+This study will focus of Osun State, Nigeria.  The state boundary GIS data of Nigeria can be downloaded either from The [Humanitarian Data Exchange](https://data.humdata.org/) portal or [geoBoundaries](https://www.geoboundaries.org/index.html).
+
 
 ## Grading Criteria
 
@@ -81,19 +74,14 @@ This exercise will be graded by using the following criteria:
 
 ## Submission Instructions
 
--   The write-up of the take-home exercise must be in [**distill**](https://rstudio.github.io/distill/) or [**blogdown**](https://github.com/rstudio/blogdown) format. You are required to publish the write-up on [**Netlify**](https://www.netlify.com/).
+-   The write-up of the take-home exercise must be in **Quarto html document** format. You are required to publish the write-up on [**Netlify**](https://www.netlify.com/).
 -   The R project of the take-home exercise must be pushed onto your [Github](https://github.com/) repository.
 -   You are required to provide the links to Netlify service of the take-home exercise write-up and github repository on eLearn.
 
 ## Due Date
 
-10th September 2021 (Friday), 11.59pm (midnight).
+12th February 2023 (Sunday), 11.59pm (midnight).
 
-## Reference
-
-Health Ministry of Indonesia. Published 2020. Accessed March 30, 2020. https://covid19.go.id/
-
-[JAKARTA's COVID-19 RESPONSE TEAM](https://corona.jakarta.go.id/en). Accessed August 12, 2021.
 
 ## Learning from senior
 
@@ -101,81 +89,13 @@ You are advised to review these sample submissions prepared by your seniors.
 
 -   [Take-home Exercise 1: Geographic Analysis of the Supply and Demand of Childcare Services in Singapore](https://rpubs.com/xiaorongw/IS415_Take-home_Ex01) by Xiao Rong Wong
 
--   [Take-home Exercise 1: Understanding and Analysing Changes in the Supply of Childcare Services](https://rpubs.com/rax/Take_Home_Ex01) by Rajiv Abraham Xavier
+-   [Take-Home Exercise 2: Spatial Point Patterns Analysis of Airbnb Listings in Singapore](https://is415-msty.netlify.app/posts/2021-09-19-take-home-exercise-2/) by MEGAN SIM TZE YEN
 
 ## Q & A
 
-### Q1:
-
-I noted that the data link you provided will lead us to a webpage of daily updates (https://riwayat-file-covid-19-dki-jakarta-jakartagis.hub.arcgis.com/).
-
-When you mention to "Download the daily COVID-19 data of DKI Jakarta" Do you mean to do this manually or are we to use a google drive connector since all of these links are linked to a google drive sheet.
-
-> Prof. Kam: You are expected to download the file one by one. The data are cumulative. Hence, to download the data by month, you only need to download every last day of the month. In this case, there are only 19 files to download (assuming that 31 January 2020 - 31 July 2021). I have downloaded the data manual to try out myself and it won't take more than 15minutes to download all of them. In fact, for your information, I have downloaded all the daily data until yesterday. This is the job of a data analyst 😞
-
-### Q2:
-
-In addition, when you mention "Integrate the daily data into a data frame by month" Do you mean we have to download multiple sheets and combine the data? If so does this mean we need to download for the last 30 days? or multiple months?
-
-> Prof Kam: Refer to earlier reply above.
-
-(I am unsure if this is the case or whether you refer to a specific feature. Unfortunately i do not understand the data at all given that most of the features are in a foreign language)
-
-> Prof. Kam: Yes, you have to download multiple workbooks and extract the worksheet and columns you need and then combine them into an integrated data file. This is what we called data wrangling in Data Science. You will learn how to do it using readxl, tydyr and dplyr package. With regard the foreign language, less worry because translation will be provided. In will be included in the revised version of the Take-home Exercise 1 handout latest by tomorrow morning 9.00am.
-
-### Q3:
-
-Lastly, when you mention "Download the DKI Jarkata shapefile" Is this manual downloading or do we need to dynamically download by code and extract and import from there?
-
-> Prof. Kam: Personally, I think download manually is easier because I just need to click on the link provided. After downloading, you are required to use sf package of r to parse the data into R and save it as a simple feature data frame. You will learn more on how to work with R package in next week lesson.
-
-### Q4:
-
-In this case, there are only 19 files to download (assuming that 31 January 2020 - 31 July 2021). On the webpage of daily updates (https://riwayat-file-covid-19-dki-jakarta-jakartagis.hub.arcgis.com/), I am only able to see the data file starting from 25 March 2020 onwards. In addition, the link to access the data file for 31 January 2021 is broken.
-
-> Prof Kam: Since the data only starts on 25 March 2020, then there is nothing wrong the first month data is on 31st March 2020. Likewise if 31st January 2021 is not available, there is nothing wrong 30th January 2021 data set is used. More important, you are required to document these two issues on your report.
-
-### Q5:
-
-Some of the excel files had duplicate columns with the same name. For the `Meninggal` column, can I confirm that we look at the column without N/A values?
-
-> Prof Kam: We are interested in analysing the geographical distribution of **Cumulative Death**. In this case, the `Meninggal` without NA values should be used.
+Please submit your questions or queries related to this take-home exercise on Piazza. 
 
 ## Peer Learning
 
-[AVULA NIHARIKA](https://niharika-is415.netlify.app/posts/take%20home%20exercise-1/)
 
-[CHIN SHAN PEI SARAH](https://sarahs-is415-blog.netlify.app/posts/2021-09-03-take-home-assignment-1/)
 
-[DARRYL KWOK BING HENG](https://darryl-is415-blog.netlify.app/posts/2021-09-06-take-home-exercise-1/)
-
-[GOH JIA XIN GENICE](https://geniceee-is415-blog.netlify.app/posts/2021-09-10-take-home-exercise-1/)
-
-[JEROME GOH TING CHUAN](https://blue-clues-2.netlify.app/)
-
-[KWEK YI CHEN](https://kwekyichen-is415.netlify.app/posts/2021-09-06-takehome-ex01/)
-
-[MEGAN SIM TZE YEN](https://is415-msty.netlify.app/posts/2021-09-10-take-home-exercise-1/)
-
--   **What is so special**: The data important, extracting, wrangling and processing process were appropriately performed and comprehensively documented. The choropleth maps were well designed. All process are highly reproducible.
-
-[NGAH XIN YAN](https://yan-is415-blog3.netlify.app/posts/2021-10-26-take-home-exercise-1/)
-
-[NOR AISYAH BINTE AJIT](https://aisyahajit2018-is415.netlify.app/posts/2021-09-10-take-home-exercise-1/?panelset1=code-chunk2)
-
--   **What is so special**: Appropriate used of functions to reduce copy-paste of codes. Ability to apply analytical mapping techniques appropriately.
-
-[TEO JUN PENG](https://teojp3-is415.netlify.app/posts/2021-08-27-take-home-exercise-1/)
-
-[TOH JUN LONG](https://junlong-is415.netlify.app/posts/2021-09-06-take-home-exercise-1/)
-
-[WONG WEI LING](https://wlwong2018-is415-blog.netlify.app/posts/2021-09-09-take-home-exercise-1/)
-
-[XU PENGTAI](https://jolly-goodall-704484.netlify.app/posts/2021-09-04-take-home-exercise-1/)
-
-[YU YILING](https://yiling-is415-blog.netlify.app/posts/2021-09-25-take-home-exercise-1/)
-
-```{r echo=FALSE, eval=FALSE}
-library(pagedown)
-pagedown::chrome_print("_site/th_ex1.html")
-```

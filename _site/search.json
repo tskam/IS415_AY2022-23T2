@@ -56,6 +56,223 @@
     "text": "Project Links"
   },
   {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#content",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#content",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "Content",
+    "text": "Content\n\nIntroduction to Quarto\nWhat is Reproducible Research\nA brief introduction to R and RStudio\nIntroduction to Quarto\nBuilding the course webpage by using Quarto\nDoing Data Science with tidyverse"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#what-is-reproducible-research",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#what-is-reproducible-research",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "What is Reproducible Research?",
+    "text": "What is Reproducible Research?\n\n\n\nResearch is considered to be reproducible when the exact results can be reproduced if given access to the original data, software, or code.\nReproducible research is sometimes known as reproducibility, reproducible statistical analysis, reproducible data analysis, reproducible reporting, and literate programming.\n\n\n\nSource: https://www.displayr.com/what-is-reproducible-research/"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#why-research-need-to-be-reproducible",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#why-research-need-to-be-reproducible",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "Why Research need to be Reproducible?",
+    "text": "Why Research need to be Reproducible?\n\n\n\nAccording to a Nature, more than 70% of researchers have tried and failed to reproduce another scientist’s experiments, and more than half have failed to reproduce their own experiments."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#r-a-very-brief-introduction",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#r-a-very-brief-introduction",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "R: A very brief introduction",
+    "text": "R: A very brief introduction\n\nR is a powerful language and environment for statistical computing and graphics. It is a re-implementation of the S language, which was developed in the 1980’s.\nR is a high level language. The core language has some superficial similarities to C, but many things are handled automatically in R that are not in C.\nIt is a free and open source software (FOSS) under the terms of the Free Software Foundation’s GNU General Public License in source code form.\nIt compiles and runs on a wide variety of UNIX platforms and similar systems (including FreeBSD and Linux), Windows and MacOS.\nIt is available from The Comprehensive R Archive Network"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-r-studio",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-r-studio",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "Introducing R Studio",
+    "text": "Introducing R Studio\n\nA free and open-source integrated development environment (IDE) for R."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "Introducing Quarto",
+    "text": "Introducing Quarto\n\nQuarto is a new open-source scientific and technical publishing system designed and developed by posit formally known as RStudio."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto-1",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto-1",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "Introducing Quarto",
+    "text": "Introducing Quarto\n\nQuarto documents are authored using markdown, an easy to write plain text format.\nQuarto documents are generated using Pandoc, a universal document converter."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto-2",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto-2",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "Introducing Quarto",
+    "text": "Introducing Quarto\n\nA method of literate programming that embed code and output from Python, R, and JavaScript via integration with Jupyter, Knitr, and Observable."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto-3",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto-3",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "Introducing Quarto",
+    "text": "Introducing Quarto\n\nA variety of extensions to Pandoc markdown useful for technical writing including cross-references, sub-figures, layout panels, hoverable citations and footnotes, callouts, and more.\nA project system for rendering groups of documents at once, sharing options across documents, and producing aggregate output like websites and books.\nAuthoring using a wide variety of editors and notebooks including JupyterLab, RStudio, and VS Code.\nA visual markdown editor that provides a productive writing interface for composing long-form documents.\n\nLearn more about Quarto at https://quarto.org."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#downloading-and-installing-quarto",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#downloading-and-installing-quarto",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "Downloading and Installing Quarto",
+    "text": "Downloading and Installing Quarto\n\nVisit this site and download the Quarto of your choice."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#its-time-to-get-your-hands-dirty",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#its-time-to-get-your-hands-dirty",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "It’s Time to Get Your Hands Dirty!",
+    "text": "It’s Time to Get Your Hands Dirty!"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#to-learn-more",
+    "href": "in-class/In-class_Ex01/In-class_Ex01.html#to-learn-more",
+    "title": "In-class Exercise 1: My First Date with Quarto",
+    "section": "To Learn more",
+    "text": "To Learn more\nMarkdown Basics\nFigures\nTables\nDiagrams\nCallout Blocks\nArticle Layout\nRStudio IDE\nQuarto Guide"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#content",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#content",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Content",
+    "text": "Content\n\nAn Overview of Data Science\nGetting Data into R\nData Cleaning and Tidying\nData Manipulation and Transformation\nExploratory Data Analysis\nModelling\nCommunication"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---an-overview",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---an-overview",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Data Science Process - An Overview",
+    "text": "Data Science Process - An Overview\n\nReference: R for Data Science"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-r-tools",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-r-tools",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Data Science R Tools",
+    "text": "Data Science R Tools"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#introducing-tidyverse",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#introducing-tidyverse",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Introducing Tidyverse",
+    "text": "Introducing Tidyverse\n\n\nTidyverse is a collection of R packages that share common philosophies and designed to work together for doing data science."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---getting-data",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---getting-data",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Data Science Process - Getting Data",
+    "text": "Data Science Process - Getting Data"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#readr-package",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#readr-package",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "readr Package",
+    "text": "readr Package\n\n\n\n\nThe goal of readr is to provide a fast and friendly way to read rectangular data (like csv, tsv, and fwf).\nIt is designed to flexibly parse many types of data found in the wild, while still cleanly failing when data unexpectedly changes.\nreadr supports seven file formats with seven read_ functions:\n\nread_csv(): comma separated (CSV) files\nread_csv2(): uses ; for the field separator and , for the decimal point. This is common in some European countries\nread_tsv(): tab separated files\nread_delim(): general delimited files\n\n\n\n\n\n\nreadr\n\nread_fwf(): fixed width files\nread_table(): tabular files where colums are separated by white-space.\nread_log(): web log files."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---tidy-data",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---tidy-data",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Data Science Process - Tidy Data",
+    "text": "Data Science Process - Tidy Data"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#introducing-tidyr-package",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#introducing-tidyr-package",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Introducing tidyr Package",
+    "text": "Introducing tidyr Package\n\n\n\nA package that makes it easy to “tidy” your data (not general reshaping or aggregating).\nIt is an evolution of ‘reshape2’.\nFive main categories:\n\nPivotting\nRectangling\nNesting\nSplitting and combining\nMissing values"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#getting-to-know-or-pipe-operator",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#getting-to-know-or-pipe-operator",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Getting to know %>% or pipe() operator",
+    "text": "Getting to know %>% or pipe() operator\n\nPipe operator (i.e. %>%) is provided by the magrittr package.\nIt forwards a value, or the result of an expression, into the next function call/expression.\nRefer to the magrittr vignette for more examples."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---data-manipulation-and-transformation",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---data-manipulation-and-transformation",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Data Science Process - Data Manipulation and Transformation",
+    "text": "Data Science Process - Data Manipulation and Transformation"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#what-is-dplyr-package",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#what-is-dplyr-package",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "What is dplyr Package?",
+    "text": "What is dplyr Package?\n\n\n\nA grammar of data manipulation.\nIt provides easy tools for the most common data manipulation tasks.\nIt is built to work directly with data frames."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#why-use-dplyr",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#why-use-dplyr",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Why use dplyr?",
+    "text": "Why use dplyr?\n\nSpeed: dplyr is really fast.\nReadability: the code syntax is straightforward and easy to read.\nChaining: never break the chain. More on this later.\nIntegrates with ggplot2: plot your data in the same workflow that you manipulate it with.\nCan be used to analyse external databases without knowledge of additional database query languages."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#deriving-new-columns-from-existing-columns-mutate",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#deriving-new-columns-from-existing-columns-mutate",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Deriving New Columns from Existing Columns: mutate()",
+    "text": "Deriving New Columns from Existing Columns: mutate()\n\n\n\n\nThe newly derived columns will be added at the end of the existing data.frame. The existing columns will be preserved.\nUseful functions available in calculations of variables:\n\n+, -, *log()*, etc., for their usual mathematical meanings.\n*lead()*, *lag()*.\n*dense_rank()*, *min_rank()*, *percent_rank()*, *row_number()*, *cume_dist()*, *ntile()*.\n*cumsum()*, *cummean()*, *cummin()*, *cummax()*, *cumany()*, *cumall()*.\n*na_if()*, *coalesce()*.\n*if_else()*, *recode()*, *case_when()*."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#group-by-one-or-more-columns-group_by-and-ungroup",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#group-by-one-or-more-columns-group_by-and-ungroup",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Group by one or more columns: group_by() and ungroup()",
+    "text": "Group by one or more columns: group_by() and ungroup()\n\n\nAllows for group operations in the “split-apply-combine” concept.\nUsually, group_by() will follow by another dplyr verb such as summarise()"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#two-table-verbs---join-functions",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#two-table-verbs---join-functions",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Two-table Verbs - Join functions",
+    "text": "Two-table Verbs - Join functions\nIn dplyr, there are three types of joins:\n\nMutating joins combine the columns (variables) of 2 tables;\nFiltering joins affect only the cases or observations (rows) of 2 tables;\nSet operations on 2 tables expect both tables to have the same variables and treat them like sets that can be combined or intersected."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#mutating-joins",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#mutating-joins",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Mutating joins",
+    "text": "Mutating joins\n\nMutating joins combine the variables (columns) of 2 tables x and y.\nThe term mutating is used in analogy to the dplyr::mutate command: Just as mutate creates new variables (columns), a mutating join adds new variables (columns) to a table x from matching cases (rows) of another table y."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#mutating-joins-1",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#mutating-joins-1",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Mutating joins",
+    "text": "Mutating joins\nThere are 4 types of mutating joins to combine the cases (rows) and variables (columns) of tables x and y:\n\nleft_join(x, y): Return all rows from x, and all columns from x and y. Rows in x with no match in y will have NA values in the new columns. If there are multiple matches between x and y, all combinations of the matches are returned.\nright_join(x, y): Same as left_join(y, x), and hence redundant.\nfull_join(x, y): Return all rows and all columns that exist in x or in y. If there are non-matching values, return NA for the ones missing.\ninner_join(x, y): Return all rows from x where there are matching values in y, and all columns from x and y. If there are multiple matches between x and y, all combination of the matches are returned."
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#mutating-joins-2",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#mutating-joins-2",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Mutating joins",
+    "text": "Mutating joins"
+  },
+  {
+    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#reference",
+    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#reference",
+    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
+    "section": "Reference",
+    "text": "Reference\n\n\n\nR for Data Science especially\n\nChapter 5 Data transformation,\nChapter 10 Tibbles,\nChapter 11 Data Imports,\nChapter 12 Tidy data,\nChapter 13 Relational data and\nChapter 18 Pipes.\n\nTidyverse\ntidyr\ndplyr\nreadr\ntibble"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "IS415 Geospatial Analytics and Applications",
@@ -224,6 +441,202 @@
     "text": "References\nAll About sf package\n\n\nReference manual\nTidy spatial data analysis\n\nVignettes:\n\nSimple Features for R\nReading, Writing and Converting Simple Features\nManipulating Simple Feature Geometries\nManipulating Simple Features\nPlotting Simple Features\nMiscellaneous\nSpherical geometry in sf using s2geometry\n\nOthers:\n\nR spatial follows GDAL and PROJ development"
   },
   {
+    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#content",
+    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#content",
+    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
+    "section": "Content",
+    "text": "Content\n\n\nChoropleth Mapping with in R\n\nType of choropleth map\nChoosing number of classes\nData classification methods\nSelecting colour scheme\n\ntmap Methods\n\ntmap framewok\ntmap elements\ntmap layers\ntmap layout\ntmap style\ntmap facet\n\n\n\n\nThis lesson consists of two parts. First, I will share with you the concepts and design principles of choropleth maps. Next, I will introduce you to tmap, an R package specially designed for thematic mapping based on Layered Grammar of Graphics"
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#choropleth-map",
+    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#choropleth-map",
+    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
+    "section": "Choropleth Map",
+    "text": "Choropleth Map\nA choropleth map is a type of thematic map in which areas are shaded or patterned in proportion to a statistical variable that represents an aggregate summary of a geographic characteristic within each area, such as population or per-capita income."
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#data-classification",
+    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#data-classification",
+    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
+    "section": "Data classification",
+    "text": "Data classification\n\n\nNot sure how many classes to use? Have a look at the distribution of your data in a histogram (see examples below): Are there obvious clusters within your data? Are there large gaps in your data range that suggest nice compact data classes? If so, pick that number of classes and place those class breaks around those clusters."
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#colour-scheme",
+    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#colour-scheme",
+    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
+    "section": "Colour scheme",
+    "text": "Colour scheme\nColorBrewer"
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#mapping-packages-in-r",
+    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#mapping-packages-in-r",
+    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
+    "section": "Mapping packages in R",
+    "text": "Mapping packages in R\n\n\nSelected popular mapping packages\nCRAN Task View: Analysis of Spatial Data\n\ntmap\nmapsf\nleaflet\nggplot2. Read Chapter 6: Maps of ‘ggplot2: Elegant Graphics for Data Analysis’ for more detail.\nggmap\nquickmapr\nmapview\n\n\nOther packages\n\nRColorBrewer\nclassInt"
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#introducing-tmap",
+    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#introducing-tmap",
+    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
+    "section": "Introducing tmap",
+    "text": "Introducing tmap\n\n\n\ntmap is a R package specially designed for creating thematic maps using the pricinples of the Grammar of Graphics.\nIt offers a flexible, layer-based, and easy to use approach to create thematic maps, such as choropleths and proportional symbol maps.\nIt supports two modes: plot(static maps) and view (interactive maps).\nIt provides shiny integration(with tmapOutput and renderTmap)."
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements",
+    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements",
+    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
+    "section": "tmap elements",
+    "text": "tmap elements\ntm_shape()\n\nThe first element to start with is tm_shape(), which specifies the shape object."
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements-1",
+    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements-1",
+    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
+    "section": "tmap elements",
+    "text": "tmap elements\nBase layers\n\nNext, one, or a combination of the following drawing layers should be specified:\n\n\n\nLinks to tm_polygons(), tm_symbols(), tm_lines(), tm_raster() and tm_text()"
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements-2",
+    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements-2",
+    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
+    "section": "tmap elements",
+    "text": "tmap elements\nBase layers\n\nEach of these functions specifies the geometry, mapping, and scaling component of the LGTM.\nAn aesthetic can take a constant value, a data variable name, or a vector consisting of values or variable names.\nIf a data variable is provided, the scale is automatically configured according to the values of this variable, but can be adjusted with several arguments. For instance, the main scaling arguments for a color aesthetic are color palette, the preferred number of classes, and a style to create classes.\nAlso, for each aesthetic, except for the text labels, a legend is automatically created.\nIf a vector of variable names is provided, small multiples are created, which will be explained further below."
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements-3",
+    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements-3",
+    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
+    "section": "tmap elements",
+    "text": "tmap elements\nDerived layers\n\n\nEach aesthetic can take a constant value or a data variable name. For instance, tm_fill(col=\"blue\") colors all polygons blue, while tm_fill(col=\"var1\"), where “var1” is the name of a data variable in the shape object, creates a choropleth.\n\nThe supported derived layers are as follows:"
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#data-classification-methods-of-tmap",
+    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#data-classification-methods-of-tmap",
+    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
+    "section": "Data classification methods of tmap",
+    "text": "Data classification methods of tmap\n\n\nMost choropleth maps employ some method of data classification. The point of classification is to take a large number of observations and group them into data ranges or classes.\n\n\n\n\n\n\nNote\n\n\n\ntmap provides a total ten data classification methods, namely: fixed, sd, equal, pretty (default), quantile, kmeans, hclust, bclust, fisher, and jenks.\nTo define a data classification method, the style argument of tm_fill() or tm_polygons() will be used.\nThe choropleth map on the right shows a quantile data classification with 8 classes are used.\n\n\n\n\n\n\n\ntm_shape(mpszpop2020)+\n  tm_fill(\"DEPENDENCY\",\n          n = 8,\n          style = \"quantile\") +\n  tm_borders(alpha = 0.5)"
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#colour-scheme-1",
+    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#colour-scheme-1",
+    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
+    "section": "Colour Scheme",
+    "text": "Colour Scheme\n\n\ntmap supports colour ramps either defined by the user or a set of predefined colour ramps from the RColorBrewer package.\n\n\n\n\n\n\nNote\n\n\n\nTo change the colour, we assign the preferred colour to palette argument of tm_fill().\nNotice that the word blues is used instead of blue and the alphabet b is in uppercase.\n\n\n\n\n\n\n\ntm_shape(mpszpop2020)+\n  tm_fill(\"DEPENDENCY\",\n          n = 6,\n          style = \"quantile\",\n          palette = \"Blues\") +\n  tm_borders(alpha = 0.5)"
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#reference",
+    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#reference",
+    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
+    "section": "Reference",
+    "text": "Reference\nPrinciples, Concepts and Methods of Choropleth Maps Design\nCore Reading\n\nChoropleth Maps\nThe Basics of Data Classification\n\nAdditional Readings\n\nChoropleth Maps – A Guide to Data Classification\nBivariate Choropleth\nValue-by-alpha maps\nWhat to consider when creating choropleth maps\nChoropleth Mapping with Exploratory Data Analysis"
+  },
+  {
+    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#references",
+    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#references",
+    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
+    "section": "References",
+    "text": "References\nAll About tmap package\n\ntmap: Thematic Maps in R\nDevelopment site\ntmap Reference\ntmap: get started!\ntmap: version changes\ntmap: creating thematic maps in a flexible way (useR!2015)\nExploring and presenting maps with tmap (useR!2017)"
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#content",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#content",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Content",
+    "text": "Content\n\n\n\nIntroducing Spatial Point Patterns\n\nThe basic concepts of spatial point patterns\n1st Order versus 2nd Order\nSpatial Point Patterns in real world\n\n1st Order Spatial Point Patterns Analysis\n\nQuadrat analysis\nKernel density estimation\n\n\n\n\n2nd Order Spatial Point Patterns Analysis\n\nNearest Neighbour Index\nG-function\nF-function\nK-function\nL-function\n\n\n\n\n\nWelcome to Lesson 4: Spatial Point Pattern Analysis, a family of spatial statistics specially developed to model and to test distribution of spatial point events.\nThe lesson proceeding is divided into three main section. First, I will share with you what are real world spatial point events. This is followed by explaining the concepts and methods of 1st-order and 2nd-order spatial point patterns analysis."
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#what-is-spatial-point-patterns",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#what-is-spatial-point-patterns",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "What is Spatial Point Patterns",
+    "text": "What is Spatial Point Patterns\n\nPoints as Events\nMapped pattern\n\nNot a sample\nSelection bias\n\nEvents are mapped, but non-events are not"
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#real-world-question",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#real-world-question",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Real World Question",
+    "text": "Real World Question\n\nLocation only\n\nare points randomly located or patterned\n\nLocation and value\n\nmarked point pattern\nis combination of location and value random or patterned\n\nWhat is the underlying process?\n\n\nIt is important note that SPPA is exploratory and confirmatory in nature. They are specially developed for describing the spatial point pattern and for confirming the observed patterns statistically. However, they are explanatory nor for prediction."
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#points-on-a-plane",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#points-on-a-plane",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Points on a Plane",
+    "text": "Points on a Plane\n\nClassic point pattern analysis\n\npoints on an isotropic plane\nno effect of translation and rotation\nclassic examples: tree seedlings, rocks, etc\n\nDistance\n\nstraight line only"
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#spatial-point-patterns-analysis",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#spatial-point-patterns-analysis",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Spatial Point Patterns Analysis",
+    "text": "Spatial Point Patterns Analysis\n\nPoint pattern analysis (PPA) is the study of the spatial arrangements of points in (usually 2-dimensional) space.\nThe simplest formulation is a set X = {x ∈ D} where D, which can be called the study region, is a subset of Rn, a n-dimensional Euclidean space.\nA fundamental problem of PPA is inferring whether a given arrangement is merely random or the result of some process."
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#spatial-point-patterns-analysis-techniques",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#spatial-point-patterns-analysis-techniques",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Spatial Point Patterns Analysis Techniques",
+    "text": "Spatial Point Patterns Analysis Techniques\n\nFirst-order vs Second-order Analysis of spatial point patterns.\n\n\nReference: 11.4 First and second order effects of Intro to GIS and Spatial Analysis\n\nThe first-order properties describe the way in which the expected value (mean or average) of the spatial point pattern varies across space (i.e., the intensity of the spatial point pattern). Such properties are usually measured with the so-called quadrat analysis, nearest neighbour index and kernel estimation. Second-order properties describe the covariance (or correlation) between values of the spatial point pattern at different regions in space and are usually measured with the G function, K function and L function. Applied to point event data, both properties could be used to explore the spatial variation in the risk of being victimized by a crime, spatial and space-time clustering of criminal activities, and the raised incidence of criminal activities around point sources, such as robberies around ATM machines, subway entrances and exits, etc."
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#kernel-density-estimation-silverman-1986",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#kernel-density-estimation-silverman-1986",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Kernel density estimation (Silverman 1986)",
+    "text": "Kernel density estimation (Silverman 1986)\n\nA method to compute the intensity of a point distribution.\n\n\n\nThe general formula:\n\n\nGraphically"
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#distance-based-nearest-neighbour-index",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#distance-based-nearest-neighbour-index",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Distance-based: Nearest Neighbour Index",
+    "text": "Distance-based: Nearest Neighbour Index\nWhat is Nearest Neighbour?\nDirect distance from a point to its nearest neighbour."
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#nearest-neighbour-index",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#nearest-neighbour-index",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Nearest Neighbour Index",
+    "text": "Nearest Neighbour Index\nThe Nearest Neighbour Index is expressed as the ratio of the Observed Mean Distance to the Expected Mean Distance."
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#g-function",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#g-function",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "G function",
+    "text": "G function\n\n\nThe formula"
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#f-function",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#f-function",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "F function",
+    "text": "F function\n\nSelect a sample of point locations anywhere in the study region at random\n\nDetermine minimum distance from each point to any event in the study area.\n\nThree steps:\n\nRandomly select m points (p1, p2, ….., pn),\nCalculate dmin(pi,s) as the minimum distance from location pi to any event in the point patterns, and\nCalculate F(d)."
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#ripleys-k-function-ripley-1981",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#ripleys-k-function-ripley-1981",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Ripley’s K function (Ripley, 1981)",
+    "text": "Ripley’s K function (Ripley, 1981)\n\nLimitation of nearest neighbor distance method is that it uses only nearest distance\nConsiders only the shortest scales of variation.\nK function uses more points.\n\nProvides an estimate of spatial dependence over a wider range of scales.\nBased on all the distances between events in the study area.\nAssumes isotropy over the region."
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#the-l-function-besag-1977",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#the-l-function-besag-1977",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "The L function (Besag 1977)",
+    "text": "The L function (Besag 1977)\n\n\nIn practice, K function will be normalised to obtained a benchmark of zero.\nThe formula:"
+  },
+  {
+    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#references",
+    "href": "lesson/Lesson04/Lesson04-SPPA.html#references",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "References",
+    "text": "References\n\nChapter 11 Point Pattern Analysis of Intro to GIS and Spatial Analysis. Section 11.2, 11.3, 11.3.1 and 11.4\nGIS&T Body of Knowledge AM-07-Point Pattern Analysis\nGIS&T Body of Knowledge AM-08-Kernels and Density Estimation\nAnalyzing Patterns in Business Point Data, Directions Magazine March 17, 2005.\nO’Sullivan, D., and Unwin, D. (2010) Geographic Information Analysis, Second Edition. John Wiley & Sons Inc., New Jersey, Canada. Chapter 5-6.\nBaddeley A., Rubak E. and Turner R. (2015) Spatial Point Patterns: Methodology and Applications with R, Chapman and Hall/CRC."
+  },
+  {
     "objectID": "lesson.html",
     "href": "lesson.html",
     "title": "Weekly Lesson Plan",
@@ -287,6 +700,13 @@
     "text": "Content\n\nAn overview of Geospatial Data Models\n\nVector and Raster data models\n\nMap Projection and Georeferencing\nGeocoding\nClasses of Spatial Data in R\n\nSpatial classes\nSimple features class\n\nR packages for Handling Spatial Data\n\nsf\nstar"
   },
   {
+    "objectID": "outline/Lesson02_outline.html#lesson-slides",
+    "href": "outline/Lesson02_outline.html#lesson-slides",
+    "title": "Lesson 2: Geospatial Data Handling and Wrangling",
+    "section": "Lesson Slides",
+    "text": "Lesson Slides\n\nLesson 2 slides in html and pdf formats."
+  },
+  {
     "objectID": "outline/Lesson02_outline.html#hands-on-exercise",
     "href": "outline/Lesson02_outline.html#hands-on-exercise",
     "title": "Lesson 2: Geospatial Data Handling and Wrangling",
@@ -322,6 +742,13 @@
     "text": "Content\n\nClassification of maps\nPrinciples of map design\nThematic mapping techniques\nAnalytical mapping techniques\n\nPercentile map\nBox map\nStandard deviation map\nMapping rates"
   },
   {
+    "objectID": "outline/Lesson03_outline.html#lesson-slides",
+    "href": "outline/Lesson03_outline.html#lesson-slides",
+    "title": "Lesson 3: Thematic and Analytical Mapping",
+    "section": "Lesson Slides",
+    "text": "Lesson Slides\n\nLesson 3 slides in html and pdf formats."
+  },
+  {
     "objectID": "outline/Lesson03_outline.html#hands-on-exercise",
     "href": "outline/Lesson03_outline.html#hands-on-exercise",
     "title": "Lesson 3: Thematic and Analytical Mapping",
@@ -348,6 +775,13 @@
     "title": "Lesson 4: Spatial Point Patterns Analysis",
     "section": "Content",
     "text": "Content\n\nIntroducing Spatial Point Patterns\n\nThe basic concepts of spatial point patterns\nSpatial Point Patterns in real world\n\n1st Order Spatial Point Patterns Analysis\n\nQuadrat analysis\nKernel density estimation\n\n2nd Order Spatial Point Patterns Analysis\n\nNearest Neighbour Index\nG-function\nF-function\nK-function\nL-function"
+  },
+  {
+    "objectID": "outline/Lesson04_outline.html#lesson-slides",
+    "href": "outline/Lesson04_outline.html#lesson-slides",
+    "title": "Lesson 4: Spatial Point Patterns Analysis",
+    "section": "Lesson Slides",
+    "text": "Lesson Slides\n\nLesson 4 slides in html and pdf formats."
   },
   {
     "objectID": "outline/Lesson04_outline.html#hands-on-exercise",
@@ -681,533 +1115,78 @@
   {
     "objectID": "th_ex1.html",
     "href": "th_ex1.html",
-    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
     "section": "",
-    "text": "Note\n\n\n\nThis is a sample Take-home Exercise 1 for AY2021-22 Term 1 and not for this academic term."
+    "text": "Note\n\n\n\nThis handout provides the context, the task, the expectation and the grading criteria of Take-home Exercise 1. Students must review and understand them before getting started with the take-home exercise."
   },
   {
     "objectID": "th_ex1.html#setting-the-scene",
     "href": "th_ex1.html#setting-the-scene",
-    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
     "section": "Setting the Scene",
-    "text": "Setting the Scene\nSince late December 2019, an outbreak of a novel coronavirus disease (COVID-19; previously known as 2019-nCoV) was reported in Wuhan, China, which had subsequently affected 210 countries worldwide. In general, COVID-19 is an acute resolved disease but it can also be deadly, with a 2% case fatality rate.\nThe COVID-19 pandemic in Indonesia is part of the ongoing worldwide pandemic of coronavirus disease 2019 (COVID-19) caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The virus was confirmed to have reached Indonesia on March 2, 2020. It started with two cases in March. As of July 31 2021, there had been 3,409,658 cumulative confirmed cases of COVID-19 in Indonesia and 94,119 reported cumulative deaths. All cases were spread in 34 provinces in Indonesia. Among all the provinces, DKI Jakarta (Indonesian: Daerah Khusus Ibukota Jakarta and in English: Special Capital Region of Jakarta) contributed close to 24% of the cumulative confirmed cases.\nDespite its compactness, the cumulative confirmed cases were not evenly distributed within DKI Jakarta as Figure below reveals at the district and sub-district levels. The question was where were the sub-districts with relatively higher number of confirmed cases and how they changed over time."
+    "text": "Setting the Scene\nWater is an important resource to mankind. Clean and accessible water is critical to human health. It provides a healthy environment, a sustainable economy, reduces poverty and ensures peace and security. Yet over 40% of the global population does not have access to sufficient clean water. By 2025, 1.8 billion people will be living in countries or regions with absolute water scarcity, according to UN-Water. The lack of water poses a major threat to several sectors, including food security. Agriculture uses about 70% of the world’s accessible freshwater.\nDeveloping countries are most affected by water shortages and poor water quality. Up to 80% of illnesses in the developing world are linked to inadequate water and sanitation. Despite technological advancement, providing clean water to the rural community is still a major development issues in many countries globally, especially countries in the Africa continent.\nTo address the issue of providing clean and sustainable water supply to the rural community, a global Water Point Data Exchange (WPdx) project has been initiated. The main aim of this initiative is to collect water point related data from rural areas at the water point or small water scheme level and share the data via WPdx Data Repository, a cloud-based data library. What is so special of this project is that data are collected based on WPDx Data Standard."
   },
   {
     "objectID": "th_ex1.html#objectives",
     "href": "th_ex1.html#objectives",
-    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
     "section": "Objectives",
-    "text": "Objectives\nThe take-home exercise aims to embark you the skill of perform geospatial analysis to “Think Globally, Act Locally”. You will also acquire the skills of documenting the analysis procedures conform to reproducible best practice using RMarkdown. Last but not least, you will also learn the skill of communicating your work via web post.\nThe specific objective of the exercise is to reveal the spatio-temporal patterns of monthly cumulative confirmed COVID-19 rate and death rate at sub-district or kelurahan."
+    "text": "Objectives\nGeospatial analytics hold tremendous potential to address complex problems facing society. In this study, you are tasked to apply appropriate spatial point patterns analysis methods to discover the geographical distribution of functional and non-function water points and their co-locations if any in Osun State, Nigeria."
   },
   {
     "objectID": "th_ex1.html#the-task",
     "href": "th_ex1.html#the-task",
-    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
     "section": "The Task",
-    "text": "The Task\nIn this take-home exercise, you are tasked to reveal the spatia-temporal patterns of COVID-19 case at DKI Jakarta. The temporal interval must be at month (last day of the month) and the geographic should be at sub-district or kelurahan in Indonesia language. The specific tasks are as follow:\n\nData Extraction, Wrangling and Integration\n\nApstial data\n\nDownload the daily COVID-19 data of DKI Jakarta,\nExtract ID_KEL, Nama_provinsi, nama_kota, nama_kecamatan nama_kelurahan, POSITIF (cumulative confirmed cases) and meninggal (cumulative death cases) from data worksheet of the daily COVID-19 data, and\nIntegrate the daily data into a data frame by month.\n\n\n\nGeospatial data\n\nDownload DKI Jarkata shapefile,\nImport the shapefile into R and save it in a simple feature data frame format, (Note: The national Projected Coordinates Systems of Indonesia is DGN95 / Indonesia TM-3 zone 54.1)\nExclude all the outer islands from the DKI Jakarta sf data frame, and\nRetain the first nine fields in the DKI Jakarta sf data frame. The ninth field JUMLAH_PEN = Total Population.\n\n\n\nGeospatial data integration\n\nCombine the geospatial and aspatial data frame into simple feature data frame.\n\nCalculate the cumulative confirmed cases rate (i.e. cases per 10000 population) and the cumulative death rate by month.\n\n\n\n\nThematic Mapping\n\nPlot maps to show the spatio-temporal distribution of cumulative confirmed cases rate and death rate at sub-direct level by using appropriate thematic mapping technique provided by tmap package.\n\n\n\nAnalytical Mapping\n\nPlot analytical maps to show the spatio-temporal distribution of cumulative confirmed cases rate and death rate at sub-direct level by using appropriate thematic mapping technique provided by tmap package."
+    "text": "The Task\nThe specific tasks of this take-home exercise are as follows:\n\nExploratory Spatial Data Analysis (ESDA)\n\nDerive kernel density maps of functional and non-functional water points. Using appropriate tmap functions,\nDisplay the kernel density maps on openstreetmap of Osub State, Nigeria.\nDescribe the spatial patterns revealed by the kernel density maps. Highlight the advantage of kernel density map over point map.\n\n\n\nSecond-order Spatial Point Patterns Analysis\nWith reference to the spatial point patterns observed in ESDA:\n\nFormulate the null hypothesis and alternative hypothesis and select the confidence level.\nPerform the test by using appropriate Second order spatial point patterns analysis technique.\nWith reference to the analysis results, draw statistical conclusions.\n\n\n\nSpatial Correlation Analysis\nIn this section, you are required to confirm statistically if the spatial distribution of functional and non-functional water points are independent from each other.\n\nFormulate the null hypothesis and alternative hypothesis and select the confidence level.\nPerform the test by using appropriate Second order spatial point patterns analysis technique.\nWith reference to the analysis results, draw statistical conclusions."
   },
   {
     "objectID": "th_ex1.html#the-data",
     "href": "th_ex1.html#the-data",
-    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
     "section": "The Data",
-    "text": "The Data\nFor the purpose of this assignment, the following data should be used:\n\nOpen Data Covid-19 Provinsi DKI Jakarta. This portal provides daily update of COVID-19 measures at both sub-district and district level. For the purpose of this exercise, data at the sub-district level will be used. This data is available in data worksheet.\nIndonesia Geospatial. This portal provides a comprehensive collection of geospatial data mainly in ESRI shapefile format at different geographical levels. For the purpose of this study, the Shapefile (SHP) Batas Desa Provinsi DKI Jakarta provided at PODES 2019 geospatial layer should be used."
+    "text": "The Data\n\nApstial data\nFor the purpose of this assignment, data from WPdx Global Data Repositories will be used. There are two versions of the data. They are: WPdx-Basic and WPdx+. You are required to use WPdx+ data set.\n\n\nGeospatial data\nThis study will focus of Osun State, Nigeria. The state boundary GIS data of Nigeria can be downloaded either from The Humanitarian Data Exchange portal or geoBoundaries."
   },
   {
     "objectID": "th_ex1.html#grading-criteria",
     "href": "th_ex1.html#grading-criteria",
-    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
     "section": "Grading Criteria",
     "text": "Grading Criteria\nThis exercise will be graded by using the following criteria:\n\nGeospatial Data Wrangling (20 marks): This is an important aspect of geospatial analytics. You will be assessed on your ability to employ appropriate R functions from various R packages specifically designed for modern data science such as readxl, tidyverse (tidyr, dplyr, ggplot2), sf just to mention a few of them, to perform the entire geospatial data wrangling processes, including. This is not limited to data import, data extraction, data cleaning and data transformation. Besides assessing your ability to use the R functions, this criterion also includes your ability to clean and derive appropriate variables to meet the analysis need. (Warning: All data are like vast grassland full of land mines. Your job is to clear those mines and not to step on them).\nGeospatial Analysis (30 marks): In this exercise, you are expected to use the appropriate thematic and analytics mapping techniques and R functions introduced in class to analysis the geospatial data prepared. You will be assessed on your ability to derive analytical maps by using appropriate rate mapping techniques.\nGeovisualisation (20 marks): In this section, you will be assessed on your ability to communicate the complex spatial statistics results in business friendly visual representations. This course is geospatial centric, hence, it is important for you to demonstrate your competency in using appropriate geovisualisation techniques to reveal and communicate the findings of your analysis.\nReproducibility (20 marks): This is an important learning outcome of this exercise. You will be assessed on your ability to provide a comprehensive documentation of the analysis procedures in the form of code chunks of RMarkdown. It is important to note that it is not enough by merely providing the code chunk without any explanation on the purpose and R function(s) used.\nBonus (10 marks): Demonstrate your ability to employ methods beyond what you had learned in class to gain insights from the data. The methods used must be geospatial in nature."
   },
   {
     "objectID": "th_ex1.html#submission-instructions",
     "href": "th_ex1.html#submission-instructions",
-    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
     "section": "Submission Instructions",
-    "text": "Submission Instructions\n\nThe write-up of the take-home exercise must be in distill or blogdown format. You are required to publish the write-up on Netlify.\nThe R project of the take-home exercise must be pushed onto your Github repository.\nYou are required to provide the links to Netlify service of the take-home exercise write-up and github repository on eLearn."
+    "text": "Submission Instructions\n\nThe write-up of the take-home exercise must be in Quarto html document format. You are required to publish the write-up on Netlify.\nThe R project of the take-home exercise must be pushed onto your Github repository.\nYou are required to provide the links to Netlify service of the take-home exercise write-up and github repository on eLearn."
   },
   {
     "objectID": "th_ex1.html#due-date",
     "href": "th_ex1.html#due-date",
-    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
     "section": "Due Date",
-    "text": "Due Date\n10th September 2021 (Friday), 11.59pm (midnight)."
-  },
-  {
-    "objectID": "th_ex1.html#reference",
-    "href": "th_ex1.html#reference",
-    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
-    "section": "Reference",
-    "text": "Reference\nHealth Ministry of Indonesia. Published 2020. Accessed March 30, 2020. https://covid19.go.id/\nJAKARTA’s COVID-19 RESPONSE TEAM. Accessed August 12, 2021."
+    "text": "Due Date\n12th February 2023 (Sunday), 11.59pm (midnight)."
   },
   {
     "objectID": "th_ex1.html#learning-from-senior",
     "href": "th_ex1.html#learning-from-senior",
-    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
     "section": "Learning from senior",
-    "text": "Learning from senior\nYou are advised to review these sample submissions prepared by your seniors.\n\nTake-home Exercise 1: Geographic Analysis of the Supply and Demand of Childcare Services in Singapore by Xiao Rong Wong\nTake-home Exercise 1: Understanding and Analysing Changes in the Supply of Childcare Services by Rajiv Abraham Xavier"
+    "text": "Learning from senior\nYou are advised to review these sample submissions prepared by your seniors.\n\nTake-home Exercise 1: Geographic Analysis of the Supply and Demand of Childcare Services in Singapore by Xiao Rong Wong\nTake-Home Exercise 2: Spatial Point Patterns Analysis of Airbnb Listings in Singapore by MEGAN SIM TZE YEN"
   },
   {
     "objectID": "th_ex1.html#q-a",
     "href": "th_ex1.html#q-a",
-    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
     "section": "Q & A",
-    "text": "Q & A\n\nQ1:\nI noted that the data link you provided will lead us to a webpage of daily updates (https://riwayat-file-covid-19-dki-jakarta-jakartagis.hub.arcgis.com/).\nWhen you mention to “Download the daily COVID-19 data of DKI Jakarta” Do you mean to do this manually or are we to use a google drive connector since all of these links are linked to a google drive sheet.\n\nProf. Kam: You are expected to download the file one by one. The data are cumulative. Hence, to download the data by month, you only need to download every last day of the month. In this case, there are only 19 files to download (assuming that 31 January 2020 - 31 July 2021). I have downloaded the data manual to try out myself and it won’t take more than 15minutes to download all of them. In fact, for your information, I have downloaded all the daily data until yesterday. This is the job of a data analyst 😞\n\n\n\nQ2:\nIn addition, when you mention “Integrate the daily data into a data frame by month” Do you mean we have to download multiple sheets and combine the data? If so does this mean we need to download for the last 30 days? or multiple months?\n\nProf Kam: Refer to earlier reply above.\n\n(I am unsure if this is the case or whether you refer to a specific feature. Unfortunately i do not understand the data at all given that most of the features are in a foreign language)\n\nProf. Kam: Yes, you have to download multiple workbooks and extract the worksheet and columns you need and then combine them into an integrated data file. This is what we called data wrangling in Data Science. You will learn how to do it using readxl, tydyr and dplyr package. With regard the foreign language, less worry because translation will be provided. In will be included in the revised version of the Take-home Exercise 1 handout latest by tomorrow morning 9.00am.\n\n\n\nQ3:\nLastly, when you mention “Download the DKI Jarkata shapefile” Is this manual downloading or do we need to dynamically download by code and extract and import from there?\n\nProf. Kam: Personally, I think download manually is easier because I just need to click on the link provided. After downloading, you are required to use sf package of r to parse the data into R and save it as a simple feature data frame. You will learn more on how to work with R package in next week lesson.\n\n\n\nQ4:\nIn this case, there are only 19 files to download (assuming that 31 January 2020 - 31 July 2021). On the webpage of daily updates (https://riwayat-file-covid-19-dki-jakarta-jakartagis.hub.arcgis.com/), I am only able to see the data file starting from 25 March 2020 onwards. In addition, the link to access the data file for 31 January 2021 is broken.\n\nProf Kam: Since the data only starts on 25 March 2020, then there is nothing wrong the first month data is on 31st March 2020. Likewise if 31st January 2021 is not available, there is nothing wrong 30th January 2021 data set is used. More important, you are required to document these two issues on your report.\n\n\n\nQ5:\nSome of the excel files had duplicate columns with the same name. For the Meninggal column, can I confirm that we look at the column without N/A values?\n\nProf Kam: We are interested in analysing the geographical distribution of Cumulative Death. In this case, the Meninggal without NA values should be used."
+    "text": "Q & A\nPlease submit your questions or queries related to this take-home exercise on Piazza."
   },
   {
     "objectID": "th_ex1.html#peer-learning",
     "href": "th_ex1.html#peer-learning",
-    "title": "Take-home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
     "section": "Peer Learning",
-    "text": "Peer Learning\nAVULA NIHARIKA\nCHIN SHAN PEI SARAH\nDARRYL KWOK BING HENG\nGOH JIA XIN GENICE\nJEROME GOH TING CHUAN\nKWEK YI CHEN\nMEGAN SIM TZE YEN\n\nWhat is so special: The data important, extracting, wrangling and processing process were appropriately performed and comprehensively documented. The choropleth maps were well designed. All process are highly reproducible.\n\nNGAH XIN YAN\nNOR AISYAH BINTE AJIT\n\nWhat is so special: Appropriate used of functions to reduce copy-paste of codes. Ability to apply analytical mapping techniques appropriately.\n\nTEO JUN PENG\nTOH JUN LONG\nWONG WEI LING\nXU PENGTAI\nYU YILING"
-  },
-  {
-    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#content",
-    "href": "in-class/In-class_Ex01/In-class_Ex01.html#content",
-    "title": "In-class Exercise 1: My First Date with Quarto",
-    "section": "Content",
-    "text": "Content\n\nIntroduction to Quarto\nWhat is Reproducible Research\nA brief introduction to R and RStudio\nIntroduction to Quarto\nBuilding the course webpage by using Quarto\nDoing Data Science with tidyverse"
-  },
-  {
-    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#what-is-reproducible-research",
-    "href": "in-class/In-class_Ex01/In-class_Ex01.html#what-is-reproducible-research",
-    "title": "In-class Exercise 1: My First Date with Quarto",
-    "section": "What is Reproducible Research?",
-    "text": "What is Reproducible Research?\n\n\n\nResearch is considered to be reproducible when the exact results can be reproduced if given access to the original data, software, or code.\nReproducible research is sometimes known as reproducibility, reproducible statistical analysis, reproducible data analysis, reproducible reporting, and literate programming.\n\n\n\nSource: https://www.displayr.com/what-is-reproducible-research/"
-  },
-  {
-    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#why-research-need-to-be-reproducible",
-    "href": "in-class/In-class_Ex01/In-class_Ex01.html#why-research-need-to-be-reproducible",
-    "title": "In-class Exercise 1: My First Date with Quarto",
-    "section": "Why Research need to be Reproducible?",
-    "text": "Why Research need to be Reproducible?\n\n\n\nAccording to a Nature, more than 70% of researchers have tried and failed to reproduce another scientist’s experiments, and more than half have failed to reproduce their own experiments."
-  },
-  {
-    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#r-a-very-brief-introduction",
-    "href": "in-class/In-class_Ex01/In-class_Ex01.html#r-a-very-brief-introduction",
-    "title": "In-class Exercise 1: My First Date with Quarto",
-    "section": "R: A very brief introduction",
-    "text": "R: A very brief introduction\n\nR is a powerful language and environment for statistical computing and graphics. It is a re-implementation of the S language, which was developed in the 1980’s.\nR is a high level language. The core language has some superficial similarities to C, but many things are handled automatically in R that are not in C.\nIt is a free and open source software (FOSS) under the terms of the Free Software Foundation’s GNU General Public License in source code form.\nIt compiles and runs on a wide variety of UNIX platforms and similar systems (including FreeBSD and Linux), Windows and MacOS.\nIt is available from The Comprehensive R Archive Network"
-  },
-  {
-    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-r-studio",
-    "href": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-r-studio",
-    "title": "In-class Exercise 1: My First Date with Quarto",
-    "section": "Introducing R Studio",
-    "text": "Introducing R Studio\n\nA free and open-source integrated development environment (IDE) for R."
-  },
-  {
-    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto",
-    "href": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto",
-    "title": "In-class Exercise 1: My First Date with Quarto",
-    "section": "Introducing Quarto",
-    "text": "Introducing Quarto\n\nQuarto is a new open-source scientific and technical publishing system designed and developed by posit formally known as RStudio."
-  },
-  {
-    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto-1",
-    "href": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto-1",
-    "title": "In-class Exercise 1: My First Date with Quarto",
-    "section": "Introducing Quarto",
-    "text": "Introducing Quarto\n\nQuarto documents are authored using markdown, an easy to write plain text format.\nQuarto documents are generated using Pandoc, a universal document converter."
-  },
-  {
-    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto-2",
-    "href": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto-2",
-    "title": "In-class Exercise 1: My First Date with Quarto",
-    "section": "Introducing Quarto",
-    "text": "Introducing Quarto\n\nA method of literate programming that embed code and output from Python, R, and JavaScript via integration with Jupyter, Knitr, and Observable."
-  },
-  {
-    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#downloading-and-installing-quarto",
-    "href": "in-class/In-class_Ex01/In-class_Ex01.html#downloading-and-installing-quarto",
-    "title": "In-class Exercise 1: My First Date with Quarto",
-    "section": "Downloading and Installing Quarto",
-    "text": "Downloading and Installing Quarto\n\nVisit this site and download the Quarto of your choice."
-  },
-  {
-    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#its-time-to-get-your-hands-dirty",
-    "href": "in-class/In-class_Ex01/In-class_Ex01.html#its-time-to-get-your-hands-dirty",
-    "title": "In-class Exercise 1: My First Date with Quarto",
-    "section": "It’s Time to Get Your Hands Dirty!",
-    "text": "It’s Time to Get Your Hands Dirty!"
-  },
-  {
-    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#to-learn-more",
-    "href": "in-class/In-class_Ex01/In-class_Ex01.html#to-learn-more",
-    "title": "In-class Exercise 1: My First Date with Quarto",
-    "section": "To Learn more",
-    "text": "To Learn more\nMarkdown Basics\nFigures\nTables\nDiagrams\nCallout Blocks\nArticle Layout\nRStudio IDE\nQuarto Guide"
-  },
-  {
-    "objectID": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto-3",
-    "href": "in-class/In-class_Ex01/In-class_Ex01.html#introducing-quarto-3",
-    "title": "In-class Exercise 1: My First Date with Quarto",
-    "section": "Introducing Quarto",
-    "text": "Introducing Quarto\n\nA variety of extensions to Pandoc markdown useful for technical writing including cross-references, sub-figures, layout panels, hoverable citations and footnotes, callouts, and more.\nA project system for rendering groups of documents at once, sharing options across documents, and producing aggregate output like websites and books.\nAuthoring using a wide variety of editors and notebooks including JupyterLab, RStudio, and VS Code.\nA visual markdown editor that provides a productive writing interface for composing long-form documents.\n\nLearn more about Quarto at https://quarto.org."
-  },
-  {
-    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#content",
-    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#content",
-    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
-    "section": "Content",
-    "text": "Content\n\nAn Overview of Data Science\nGetting Data into R\nData Cleaning and Tidying\nData Manipulation and Transformation\nExploratory Data Analysis\nModelling\nCommunication"
-  },
-  {
-    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---an-overview",
-    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---an-overview",
-    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
-    "section": "Data Science Process - An Overview",
-    "text": "Data Science Process - An Overview\n\nReference: R for Data Science"
-  },
-  {
-    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-r-tools",
-    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-r-tools",
-    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
-    "section": "Data Science R Tools",
-    "text": "Data Science R Tools"
-  },
-  {
-    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#introducing-tidyverse",
-    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#introducing-tidyverse",
-    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
-    "section": "Introducing Tidyverse",
-    "text": "Introducing Tidyverse\n\n\nTidyverse is a collection of R packages that share common philosophies and designed to work together for doing data science."
-  },
-  {
-    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---getting-data",
-    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---getting-data",
-    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
-    "section": "Data Science Process - Getting Data",
-    "text": "Data Science Process - Getting Data"
-  },
-  {
-    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#readr-package",
-    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#readr-package",
-    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
-    "section": "readr Package",
-    "text": "readr Package\n\n\n\n\nThe goal of readr is to provide a fast and friendly way to read rectangular data (like csv, tsv, and fwf).\nIt is designed to flexibly parse many types of data found in the wild, while still cleanly failing when data unexpectedly changes.\nreadr supports seven file formats with seven read_ functions:\n\nread_csv(): comma separated (CSV) files\nread_csv2(): uses ; for the field separator and , for the decimal point. This is common in some European countries\nread_tsv(): tab separated files\nread_delim(): general delimited files\n\n\n\n\n\n\nreadr\n\nread_fwf(): fixed width files\nread_table(): tabular files where colums are separated by white-space.\nread_log(): web log files."
-  },
-  {
-    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---tidy-data",
-    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---tidy-data",
-    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
-    "section": "Data Science Process - Tidy Data",
-    "text": "Data Science Process - Tidy Data"
-  },
-  {
-    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#introducing-tidyr-package",
-    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#introducing-tidyr-package",
-    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
-    "section": "Introducing tidyr Package",
-    "text": "Introducing tidyr Package\n\n\n\nA package that makes it easy to “tidy” your data (not general reshaping or aggregating).\nIt is an evolution of ‘reshape2’.\nFive main categories:\n\nPivotting\nRectangling\nNesting\nSplitting and combining\nMissing values"
-  },
-  {
-    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#getting-to-know-or-pipe-operator",
-    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#getting-to-know-or-pipe-operator",
-    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
-    "section": "Getting to know %>% or pipe() operator",
-    "text": "Getting to know %>% or pipe() operator\n\nPipe operator (i.e. %>%) is provided by the magrittr package.\nIt forwards a value, or the result of an expression, into the next function call/expression.\nRefer to the magrittr vignette for more examples."
-  },
-  {
-    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---data-manipulation-and-transformation",
-    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#data-science-process---data-manipulation-and-transformation",
-    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
-    "section": "Data Science Process - Data Manipulation and Transformation",
-    "text": "Data Science Process - Data Manipulation and Transformation"
-  },
-  {
-    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#what-is-dplyr-package",
-    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#what-is-dplyr-package",
-    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
-    "section": "What is dplyr Package?",
-    "text": "What is dplyr Package?\n\n\n\nA grammar of data manipulation.\nIt provides easy tools for the most common data manipulation tasks.\nIt is built to work directly with data frames."
-  },
-  {
-    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#why-use-dplyr",
-    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#why-use-dplyr",
-    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
-    "section": "Why use dplyr?",
-    "text": "Why use dplyr?\n\nSpeed: dplyr is really fast.\nReadability: the code syntax is straightforward and easy to read.\nChaining: never break the chain. More on this later.\nIntegrates with ggplot2: plot your data in the same workflow that you manipulate it with.\nCan be used to analyse external databases without knowledge of additional database query languages."
-  },
-  {
-    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#deriving-new-columns-from-existing-columns-mutate",
-    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#deriving-new-columns-from-existing-columns-mutate",
-    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
-    "section": "Deriving New Columns from Existing Columns: mutate()",
-    "text": "Deriving New Columns from Existing Columns: mutate()\n\n\n\n\nThe newly derived columns will be added at the end of the existing data.frame. The existing columns will be preserved.\nUseful functions available in calculations of variables:\n\n+, -, *log()*, etc., for their usual mathematical meanings.\n*lead()*, *lag()*.\n*dense_rank()*, *min_rank()*, *percent_rank()*, *row_number()*, *cume_dist()*, *ntile()*.\n*cumsum()*, *cummean()*, *cummin()*, *cummax()*, *cumany()*, *cumall()*.\n*na_if()*, *coalesce()*.\n*if_else()*, *recode()*, *case_when()*."
-  },
-  {
-    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#group-by-one-or-more-columns-group_by-and-ungroup",
-    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#group-by-one-or-more-columns-group_by-and-ungroup",
-    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
-    "section": "Group by one or more columns: group_by() and ungroup()",
-    "text": "Group by one or more columns: group_by() and ungroup()\n\n\nAllows for group operations in the “split-apply-combine” concept.\nUsually, group_by() will follow by another dplyr verb such as summarise()"
-  },
-  {
-    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#two-table-verbs---join-functions",
-    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#two-table-verbs---join-functions",
-    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
-    "section": "Two-table Verbs - Join functions",
-    "text": "Two-table Verbs - Join functions\nIn dplyr, there are three types of joins:\n\nMutating joins combine the columns (variables) of 2 tables;\nFiltering joins affect only the cases or observations (rows) of 2 tables;\nSet operations on 2 tables expect both tables to have the same variables and treat them like sets that can be combined or intersected."
-  },
-  {
-    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#mutating-joins",
-    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#mutating-joins",
-    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
-    "section": "Mutating joins",
-    "text": "Mutating joins\n\nMutating joins combine the variables (columns) of 2 tables x and y.\nThe term mutating is used in analogy to the dplyr::mutate command: Just as mutate creates new variables (columns), a mutating join adds new variables (columns) to a table x from matching cases (rows) of another table y."
-  },
-  {
-    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#mutating-joins-1",
-    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#mutating-joins-1",
-    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
-    "section": "Mutating joins",
-    "text": "Mutating joins\nThere are 4 types of mutating joins to combine the cases (rows) and variables (columns) of tables x and y:\n\nleft_join(x, y): Return all rows from x, and all columns from x and y. Rows in x with no match in y will have NA values in the new columns. If there are multiple matches between x and y, all combinations of the matches are returned.\nright_join(x, y): Same as left_join(y, x), and hence redundant.\nfull_join(x, y): Return all rows and all columns that exist in x or in y. If there are non-matching values, return NA for the ones missing.\ninner_join(x, y): Return all rows from x where there are matching values in y, and all columns from x and y. If there are multiple matches between x and y, all combination of the matches are returned."
-  },
-  {
-    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#mutating-joins-2",
-    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#mutating-joins-2",
-    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
-    "section": "Mutating joins",
-    "text": "Mutating joins"
-  },
-  {
-    "objectID": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#reference",
-    "href": "in-class/In-class_Ex01-tidyverse/In-class_Ex01-tidyverse_methods.html#reference",
-    "title": "In-class Exercise 1: Doing Data Science with Rtidyverse methods",
-    "section": "Reference",
-    "text": "Reference\n\n\n\nR for Data Science especially\n\nChapter 5 Data transformation,\nChapter 10 Tibbles,\nChapter 11 Data Imports,\nChapter 12 Tidy data,\nChapter 13 Relational data and\nChapter 18 Pipes.\n\nTidyverse\ntidyr\ndplyr\nreadr\ntibble"
-  },
-  {
-    "objectID": "outline/Lesson02_outline.html#lesson-slides",
-    "href": "outline/Lesson02_outline.html#lesson-slides",
-    "title": "Lesson 2: Geospatial Data Handling and Wrangling",
-    "section": "Lesson Slides",
-    "text": "Lesson Slides\n\nLesson 2 slides in html and pdf formats."
-  },
-  {
-    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#content",
-    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#content",
-    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
-    "section": "Content",
-    "text": "Content\n\n\nChoropleth Mapping with in R\n\nType of choropleth map\nChoosing number of classes\nData classification methods\nSelecting colour scheme\n\ntmap Methods\n\ntmap framewok\ntmap elements\ntmap layers\ntmap layout\ntmap style\ntmap facet\n\n\n\n\nThis lesson consists of two parts. First, I will share with you the concepts and design principles of choropleth maps. Next, I will introduce you to tmap, an R package specially designed for thematic mapping based on Layered Grammar of Graphics"
-  },
-  {
-    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#choropleth-map",
-    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#choropleth-map",
-    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
-    "section": "Choropleth Map",
-    "text": "Choropleth Map\nA choropleth map is a type of thematic map in which areas are shaded or patterned in proportion to a statistical variable that represents an aggregate summary of a geographic characteristic within each area, such as population or per-capita income.\n\n\n\nClassified choropleth map\n\nChoropleth maps can be either classified or unclassified.\nA classed choropleth map combines areal units into a smaller number of groups. Interval levels may vary, but typically 4 to 7 are used in a map. There is different classification techniques used to divide up the intervals.\n\n\n\n\n\nUnclassified choropleth map\n\nUnclassed choropleth maps are similar to classed choropleth maps; however, unclassed choropleth maps do not have an averaged statistic towards each particular colour.\n\n\n\n\n\nChoosing an appropriate number of classes\n\n\nThe more classes you use, the less data generalization (which is good), but this comes at the expense of legibility and the associated risk of map reading errors since more colors are harder to see and print reliably (which is bad). The key question is how much generalization do you want? A map with 3 classes/colors (e.g., low, medium, high) will be easy to see and remember, but may gloss over some very important aspects of the data and create artificial geographic patterns by lumping together many places that are in fact quite different. There is no ideal number of classes for a map, so experiment."
-  },
-  {
-    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#data-classification",
-    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#data-classification",
-    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
-    "section": "Data classification",
-    "text": "Data classification\n\n\nNot sure how many classes to use? Have a look at the distribution of your data in a histogram (see examples below): Are there obvious clusters within your data? Are there large gaps in your data range that suggest nice compact data classes? If so, pick that number of classes and place those class breaks around those clusters.\n\n\n\nMethods of choosing classes\n\nBased on the nature of the distribution\n\nquantile, equal interval, natural breaks, standard deviations, defined interval\n\nArbitrary\n\nCan be based on round numbers.\nExamples: Grouping according to age or census housing categories\nCan result in empty categories\n\n\n\n\n\nData classification method: Quantile\n\nSame number of features per class.\n\n\n\n\n\n\n\n\n\nData classification method: Equal interval\n\n\n\nDivides the range of attribute values into equally sized classes.\n\n\n\n\n\n\n\n\n\nCaution\n\n\n\nAvoid equal interval if your data are skewed to one end or if you have one or two really large outlier values. Outliers in that case will likely produce empty classes, wasting perfectly good classes with no observations in them. Since the hotel data above doesn’t have really large outliers, this is a data distribution that works well with equal interval.\n\n\n\n\n\n\n\nData classification method: Jenks (also known as Natural breaks)\n\nDefault Jenk’s statistical optimization\nFinds natural groupings in the data\n\n\n\n\n\nData classification: Standard deviation\n\nA measure of dispersion.\nUse if the distribution approximates a normal distribution (bell-shaped curve)"
-  },
-  {
-    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#colour-scheme",
-    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#colour-scheme",
-    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
-    "section": "Colour scheme",
-    "text": "Colour scheme\nColorBrewer"
-  },
-  {
-    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#mapping-packages-in-r",
-    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#mapping-packages-in-r",
-    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
-    "section": "Mapping packages in R",
-    "text": "Mapping packages in R\n\n\n\nSelected popular mapping packages\nCRAN Task View: Analysis of Spatial Data\n\ntmap\nmapsf\nleaflet\nggplot2. Read Chapter 6: Maps of ‘ggplot2: Elegant Graphics for Data Analysis’ for more detail.\nggmap\nquickmapr\nmapview\n\n\n\n\nOther packages\n\nRColorBrewer\nclassInt"
-  },
-  {
-    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#introducing-tmap",
-    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#introducing-tmap",
-    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
-    "section": "Introducing tmap",
-    "text": "Introducing tmap\n\n\n\ntmap is a R package specially designed for creating thematic maps using the pricinples of the Grammar of Graphics.\nIt offers a flexible, layer-based, and easy to use approach to create thematic maps, such as choropleths and proportional symbol maps.\nIt supports two modes: plot(static maps) and view (interactive maps).\nIt provides shiny integration(with tmapOutput and renderTmap).\n\n\n\n\n\n\n\nShape objects\n\ntmap supports simple features from the new sf package.\nIt also supports the class Spatial and Raster, respectively from the sp and the raster package. The supported subclasses are:\n\n\n\n\n\n\n\n\n\n\n\nPlotting functions of tmap\nTwo approaches can be used to prepare thematic map using tmap, they are:\n\nPlotting a thematic map quickly by using qtm().\nPlotting highly customisable thematic map by using tmap elements.\n\n\n\n\nPlotting a choropleth map quickly by using qtm()\n\n\nThe easiest and quickest to draw a choropleth map using tmap is using qtm(). It is concise and provides a good default visualisation in many cases.\n\ntmap_mode() with “plot” option is used to produce a static map. For interactive mode, “view” option should be used.\nfill argument is used to map the attribute (i.e. DEPENDENCY)\n\n\n\n\ntmap_mode(\"plot\")\n\ntmap mode set to plotting\n\nqtm(mpszpop2020, \n    fill = \"DEPENDENCY\")"
-  },
-  {
-    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements",
-    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements",
-    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
-    "section": "tmap elements",
-    "text": "tmap elements\n\ntm_shape()\n\nThe first element to start with is tm_shape(), which specifies the shape object."
-  },
-  {
-    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements-1",
-    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements-1",
-    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
-    "section": "tmap elements",
-    "text": "tmap elements\n\nBase layers\n\nNext, one, or a combination of the following drawing layers should be specified:\n\n\n\nLinks to tm_polygons(), tm_symbols(), tm_lines(), tm_raster() and tm_text()"
-  },
-  {
-    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements-2",
-    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements-2",
-    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
-    "section": "tmap elements",
-    "text": "tmap elements\n\nBase layers\n\nEach of these functions specifies the geometry, mapping, and scaling component of the LGTM.\nAn aesthetic can take a constant value, a data variable name, or a vector consisting of values or variable names.\nIf a data variable is provided, the scale is automatically configured according to the values of this variable, but can be adjusted with several arguments. For instance, the main scaling arguments for a color aesthetic are color palette, the preferred number of classes, and a style to create classes.\nAlso, for each aesthetic, except for the text labels, a legend is automatically created.\nIf a vector of variable names is provided, small multiples are created, which will be explained further below."
-  },
-  {
-    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements-3",
-    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements-3",
-    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
-    "section": "tmap elements",
-    "text": "tmap elements\n\nDerived layers\n\n\nEach aesthetic can take a constant value or a data variable name. For instance, tm_fill(col=\"blue\") colors all polygons blue, while tm_fill(col=\"var1\"), where “var1” is the name of a data variable in the shape object, creates a choropleth.\n\nThe supported derived layers are as follows:\n\n\n\n\n\n\nDrawing a base map\n\n\nThe basic building block of tmap is tm_shape() followed by one or more layer elements such as tm_fill() and tm_polygons().\n\n\n\n\n\n\nBe warned\n\n\n\nThe “+” sign should be place at the end of a code line and not at the front of a code line.\n\n\n\n\n\ntm_shape(mpszpop2020) +\n  tm_polygons()\n\n\n\n\n\n\n\n\n\n\nDrawing a choropleth map using tm_polygons()\n\n\nTo draw a choropleth map showing the geographical distribution of a selected variable by planning subzone, we just need to assign the target variable such as DEPENDENCY to tm_polygons().\n\n\n\n\n\n\nThings to learn from tm_polygons():\n\n\n\n\nBy default, 5 bins will be used.\nThe default data classification method used is called “pretty”.\nThe default colour scheme used is “YlOrRd” of ColorBrewer. You will learn more about the color palette later.\nBy default, Missing value will be shaded in gray.\n\n\n\n\n\n\ntm_shape(mpszpop2020)+\n  tm_polygons(\"DEPENDENCY\")\n\n\n\n\n\n\n\n\n\n\nDrawing a choropleth map using tm_fill() and tm_border()\n\n\n\n\n\n\n\n\nNote\n\n\n\n\nActually, tm_polygons() is a wrapper of tm_fill() and tm_border().\ntm_fill() shades the polygons by using the default colour scheme.\ntm_borders() adds the borders of the shapefile onto the choropleth map.\nNotice that the planning subzones are shared according to the respective dependency values\n\n\n\n\n\n\ntm_shape(mpszpop2020) +\n  tm_fill(\"DEPENDENCY\")\n\n\n\n\n\n\n\n\n\n\nDrawing a choropleth map using tm_border()\n\n\nTo add the boundary of the planning subzones, tm_border() will be used.\n\n\ntm_shape(mpszpop2020)+\n  tm_fill(\"DEPENDENCY\") +\n  tm_borders(lwd = 0.1,   \n             alpha = 1) \n\n\n\n\n\n\n\n\nNote\n\n\n\nNotice that light-gray border lines have been added on the choropleth map.\n\nlwd = border line width. The default is 1,\nalpha = transparency number between 0 (totally transparent) and 1 (not transparent). By default, the alpha value of the col is used (normally 1),\ncol = border colour, and\nlty = border line type. The default is “solid”.\n\n\n\n\n\n\ntm_shape(mpszpop2020)+\n  tm_fill(\"DEPENDENCY\") +\n  tm_borders(lwd = 0.1,  \n             alpha = 1)"
-  },
-  {
-    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements-4",
-    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#tmap-elements-4",
-    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
-    "section": "tmap elements",
-    "text": "tmap elements\nDerived layers\n\nEach aesthetic can take a constant value or a data variable name. For instance, tm_fill(col=\"blue\") colors all polygons blue, while tm_fill(col=\"var1\"), where “var1” is the name of a data variable in the shape object, creates a choropleth."
-  },
-  {
-    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#data-classification-methods-of-tmap",
-    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#data-classification-methods-of-tmap",
-    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
-    "section": "Data classification methods of tmap",
-    "text": "Data classification methods of tmap\n\n\nMost choropleth maps employ some method of data classification. The point of classification is to take a large number of observations and group them into data ranges or classes.\n\n\n\n\n\n\nNote\n\n\n\n\ntmap provides a total ten data classification methods, namely: fixed, sd, equal, pretty (default), quantile, kmeans, hclust, bclust, fisher, and jenks.\nTo define a data classification method, the style argument of tm_fill() or tm_polygons() will be used.\nThe choropleth map on the right shows a quantile data classification with 8 classes are used.\n\n\n\n\n\n\ntm_shape(mpszpop2020)+\n  tm_fill(\"DEPENDENCY\",\n          n = 8,\n          style = \"quantile\") +\n  tm_borders(alpha = 0.5)\n\n\n\n\n\n\n\n\n\nComparing Quantile and Equal Interval\nChoropleth maps on the left and right below show quantile and equal data classification methods are used.\n\nNotice that the distribution of quantile data classification method are more evenly distributed then equal data classification method.\n\n\n\n\n\ntm_shape(mpszpop2020)+\n  tm_fill(\"DEPENDENCY\",\n          n = 6,\n          style = \"quantile\") +\n  tm_borders(alpha = 0.5)\n\n\n\n\n\n\n\n\ntm_shape(mpszpop2020)+\n  tm_fill(\"DEPENDENCY\",\n          n = 6,\n          style = \"equal\") +\n  tm_borders(alpha = 0.5)"
-  },
-  {
-    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#colour-scheme-1",
-    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#colour-scheme-1",
-    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
-    "section": "Colour Scheme",
-    "text": "Colour Scheme\n\n\ntmap supports colour ramps either defined by the user or a set of predefined colour ramps from the RColorBrewer package.\n\n\n\n\n\n\nNote\n\n\n\n\nTo change the colour, we assign the preferred colour to palette argument of tm_fill().\nNotice that the word blues is used instead of blue and the alphabet b is in uppercase.\n\n\n\n\n\n\ntm_shape(mpszpop2020)+\n  tm_fill(\"DEPENDENCY\",\n          n = 6,\n          style = \"quantile\",\n          palette = \"Blues\") +\n  tm_borders(alpha = 0.5)\n\n\n\n\n\n\n\n\n\nMore about colour\n\n\n\n\n\n\n\n\nNote\n\n\n\n\nTo reverse the colour shading, add a “-” prefix.\n\n\n\n\n\n\ntm_shape(mpszpop2020)+\n  tm_fill(\"DEPENDENCY\",\n          style = \"quantile\",\n          palette = \"-Blues\") +\n  tm_borders(alpha = 0.5)\n\n\n\n\n\nNotice that the colour scheme has been reversed.\n\n\n\n\n\ntmap Layouts\n\n\nMap layout refers to the combination of all map elements into a cohensive map.\n\nMap elements include among others the objects to be mapped, the title, the scale bar, the compass, margins and aspects ratios, while the colour settings and data classification methods covered in the previous section relate to the palette and break-points used to affect how the map looks.\n\n\n\n\n\n\ntmap Legend\n\n\nIn tmap, several legend options are provided to change the placement, format and appearance of the legend.\n\n\ntm_shape(mpszpop2020)+\n  tm_fill(\"DEPENDENCY\", \n          style = \"jenks\", \n          palette = \"Blues\", \n          legend.hist = TRUE, \n          legend.is.portrait = TRUE,\n          legend.hist.z = 0.1) +\n  tm_layout(main.title = \"Distribution of Dependency Ratio by planning subzone \\n(Jenks classification)\", \n            main.title.position = \"center\", \n            main.title.size = 1, \n            legend.height = 0.45, \n            legend.width = 0.35, \n            legend.outside = FALSE, \n            legend.position = c(\"right\", \"bottom\"), \n            frame = FALSE) + \n  tm_borders(alpha = 0.5)\n\n\n\n\n\n\n\n\n\n\n\n\n\ntmap style\n\n\ntmap allows a wide variety of layout settings to be changed. They can be called by using tmap_style().\n\n\n\n\n\n\nNote\n\n\n\n\n“white”: White background, commonly used colors (default)\n“gray”/“grey”: Grey background, useful to highlight sequential palettes (e.g. in choropleths)\n“natural”: Emulation of natural view: blue waters and green land\n“bw”: Greyscale, obviously useful for greyscale printing\n“classic”: Classic styled maps (recommended)\n“cobalt”: Inspired by latex beamer style cobalt\n“albatross”: Inspired by latex beamer style albatross\n“beaver”: Inspired by latex beamer style beaver\n\n\n\n\nChloropleth map below is plotted by using classic style.\n\n\ntm_shape(mpszpop2020)+\n  tm_fill(\"DEPENDENCY\", \n          style = \"quantile\", \n          palette = \"-Greens\") +\n  tm_borders(alpha = 0.5) +\n  tmap_style(\"classic\")\n\ntmap style set to \"classic\"\n\n\nother available styles are: \"white\", \"gray\", \"natural\", \"cobalt\", \"col_blind\", \"albatross\", \"beaver\", \"bw\", \"watercolor\" \n\n\n\n\n\n\n\n\n\n\n\nCartographic Furniture\n\n\n\nBeside map style, tmap also also provides arguments to draw other map furniture such as compass, scale bar and grid lines. In the choropleth below, tm_compass(), tm_scale_bar() and tm_grid() are used to add compass, scale bar and grid lines onto the choropleth map.\n\n\n\ntm_shape(mpszpop2020)+\n  tm_fill(\"DEPENDENCY\", \n          style = \"quantile\", \n          palette = \"Blues\",\n          title = \"No. of persons\") +\n  tm_layout(main.title = \"Distribution of Dependency Ratio \\nby planning subzone\",\n            main.title.position = \"center\",\n            main.title.size = 1.2,\n            legend.height = 0.45, \n            legend.width = 0.35,\n            frame = TRUE) +\n  tm_borders(alpha = 0.5) +\n  tm_compass(type=\"8star\", size = 2) +\n  tm_scale_bar(width = 0.15) +\n  tm_grid(lwd = 0.1, alpha = 0.2) + \n  tm_credits(\"Source: Planning Sub-zone boundary from Urban Redevelopment Authorithy (URA)\\n and Population data from Department of Statistics DOS\",\n             position = c(\"left\", \"bottom\"))\n\n\n\n\n\ntmap style set to \"white\"\n\n\nother available styles are: \"gray\", \"natural\", \"cobalt\", \"col_blind\", \"albatross\", \"beaver\", \"bw\", \"classic\", \"watercolor\" \n\n\n\n\n\n\n\n\n\n\nDrawing Small Multiple Choropleth Maps\nSmall multiple maps, also refered to facet maps, are composed of many maps arrange side-by-side, and sometimes stacked vertically. Small multiple maps enable the visualisation of how spatial relationships change with respect to another variable, such as time.\nIn tmap, small multiple maps can be plotted in three ways:\n\nby assigning multiple values to at least one of the asthetic arguments,\nby defining a group-by variable in tm_facets(), and\nby creating multiple stand-alone maps with tmap_arrange().\n\n\n\n\nBy assigning multiple values to at least one of the aesthetic arguments\nIn this example, small multiple choropleth maps are created by defining ncols in tm_fill().\n\n\ntm_shape(mpszpop2020)+\n  tm_fill(c(\"YOUNG\", \"AGED\"),\n          style = \"equal\", \n          palette = \"Blues\") +\n  tm_layout(legend.position = c(\"right\", \"bottom\")) +\n  tm_borders(alpha = 0.5) +\n  tmap_style(\"white\")\n\ntmap style set to \"white\"\n\n\nother available styles are: \"gray\", \"natural\", \"cobalt\", \"col_blind\", \"albatross\", \"beaver\", \"bw\", \"classic\", \"watercolor\" \n\n\n\n\n\n\n\n\n\nBy assigning multiple values to at least one of the aesthetic arguments\nIn this example, small multiple choropleth maps are created by assigning multiple values to at least one of the aesthetic arguments\n\n\ntm_shape(mpszpop2020)+ \n  tm_polygons(c(\"DEPENDENCY\",\"AGED\"),\n          style = c(\"equal\", \"quantile\"), \n          palette = list(\"Blues\",\"Greens\")) +\n  tm_layout(legend.position = c(\"right\", \"bottom\"))\n\n\n\n\n\n\n\n\nBy creating multiple stand-alone maps with tmap_arrange()\n\n\nIn this example, multiple small choropleth maps are created by creating multiple stand-alone maps with tmap_arrange().\n\n\nyoungmap <- tm_shape(mpszpop2020)+ \n  tm_polygons(\"YOUNG\", \n              style = \"quantile\", \n              palette = \"Blues\")\n\nagedmap <- tm_shape(mpszpop2020)+ \n  tm_polygons(\"AGED\", \n              style = \"quantile\", \n              palette = \"Blues\")\n\ntmap_arrange(youngmap, \n             agedmap, \n             ncol=1)\n\n\n\n\n\n\n\n\n\n\n\n\n\nBy defining a group-by variable in tm_facets()\n\n\nIn this example, multiple small choropleth maps are created by using tm_facets().\n\n\ntm_shape(mpszpop2020) +\n  tm_fill(\"DEPENDENCY\",\n          style = \"quantile\",\n          palette = \"Blues\",\n          thres.poly = 0) + \n  tm_facets(by=\"REGION_N\", \n            free.coords=TRUE, \n            drop.shapes=TRUE) + \n  tm_layout(legend.show = FALSE,\n            title.position = c(\"center\",\n                               \"center\"), \n            title.size = 20) +\n  tm_borders(alpha = 0.5)\n\n\n\n\n\nWarning: The argument drop.shapes has been renamed to drop.units, and is\ntherefore deprecated\n\n\n\n\n\n\n\n\n\n\nMappping Spatial Object Meeting a Selection Criterion\n\n\nInstead of creating small multiple choropleth map, you can also use selection function to map spatial objects meeting the selection criterion.\n\n\ntm_shape(mpszpop2020\n         [mpszpop2020$REGION_N==\"CENTRAL REGION\", ]) + \n  tm_fill(\"DEPENDENCY\", \n          style = \"quantile\", \n          palette = \"Blues\", \n          legend.hist = TRUE, \n          legend.is.portrait = TRUE,\n          legend.hist.z = 0.1) +\n  tm_layout(legend.outside = TRUE,\n            legend.height = 0.45, \n            legend.width = 5.0,\n            legend.position = c(\"right\", \n                                \"bottom\"),\n            frame = FALSE) +\n  tm_borders(alpha = 0.5)\n\n\n\n\n\nWarning in pre_process_gt(x, interactive = interactive, orig_crs =\ngm$shape.orig_crs): legend.width controls the width of the legend within a map.\nPlease use legend.outside.size to control the width of the outside legend"
-  },
-  {
-    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#reference",
-    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#reference",
-    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
-    "section": "Reference",
-    "text": "Reference\n\nPrinciples, Concepts and Methods of Choropleth Maps Design\nCore Reading\n\nChoropleth Maps\nThe Basics of Data Classification\n\nAdditional Readings\n\nChoropleth Maps – A Guide to Data Classification\nBivariate Choropleth\nValue-by-alpha maps\nWhat to consider when creating choropleth maps\nChoropleth Mapping with Exploratory Data Analysis"
-  },
-  {
-    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#references",
-    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html#references",
-    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
-    "section": "References",
-    "text": "References\n\nAll About tmap package\n\ntmap: Thematic Maps in R\nDevelopment site\ntmap Reference\ntmap: get started!\ntmap: version changes\ntmap: creating thematic maps in a flexible way (useR!2015)\nExploring and presenting maps with tmap (useR!2017)"
-  },
-  {
-    "objectID": "outline/Lesson03_outline.html#lesson-slides",
-    "href": "outline/Lesson03_outline.html#lesson-slides",
-    "title": "Lesson 3: Thematic and Analytical Mapping",
-    "section": "Lesson Slides",
-    "text": "Lesson Slides\n\nLesson 3 slides in html and pdf formats."
-  },
-  {
-    "objectID": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html",
-    "href": "lesson/Lesson03/Lesson03-Thematic_and_Analytical_Mapping.html",
-    "title": "Lesson 3: Thematic and Analytical Mapping: tmap Methods",
-    "section": "",
-    "text": "Choropleth Mapping with in R\n\nType of choropleth map\nChoosing number of classes\nData classification methods\nSelecting colour scheme\n\ntmap Methods\n\ntmap framewok\ntmap elements\ntmap layers\ntmap layout\ntmap style\ntmap facet\n\n\n\n\nThis lesson consists of two parts. First, I will share with you the concepts and design principles of choropleth maps. Next, I will introduce you to tmap, an R package specially designed for thematic mapping based on Layered Grammar of Graphics"
-  },
-  {
-    "objectID": "outline/Lesson04_outline.html#lesson-slides",
-    "href": "outline/Lesson04_outline.html#lesson-slides",
-    "title": "Lesson 4: Spatial Point Patterns Analysis",
-    "section": "Lesson Slides",
-    "text": "Lesson Slides\n\nLesson 4 slides in html and pdf formats."
-  },
-  {
-    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#content",
-    "href": "lesson/Lesson04/Lesson04-SPPA.html#content",
-    "title": "Lesson 4: Spatial Point Patterns Analysis",
-    "section": "Content",
-    "text": "Content\n\n\n\nIntroducing Spatial Point Patterns\n\nThe basic concepts of spatial point patterns\n1st Order versus 2nd Order\nSpatial Point Patterns in real world\n\n1st Order Spatial Point Patterns Analysis\n\nQuadrat analysis\nKernel density estimation\n\n\n\n\n2nd Order Spatial Point Patterns Analysis\n\nNearest Neighbour Index\nG-function\nF-function\nK-function\nL-function\n\n\n\n\n\nWelcome to Lesson 4: Spatial Point Pattern Analysis, a family of spatial statistics specially developed to model and to test distribution of spatial point events.\nThe lesson proceeding is divided into three main section. First, I will share with you what are real world spatial point events. This is followed by explaining the concepts and methods of 1st-order and 2nd-order spatial point patterns analysis."
-  },
-  {
-    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#what-is-spatial-point-patterns",
-    "href": "lesson/Lesson04/Lesson04-SPPA.html#what-is-spatial-point-patterns",
-    "title": "Lesson 4: Spatial Point Patterns Analysis",
-    "section": "What is Spatial Point Patterns",
-    "text": "What is Spatial Point Patterns\n\nPoints as Events\nMapped pattern\n\nNot a sample\nSelection bias\n\nEvents are mapped, but non-events are not"
-  },
-  {
-    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#real-world-question",
-    "href": "lesson/Lesson04/Lesson04-SPPA.html#real-world-question",
-    "title": "Lesson 4: Spatial Point Patterns Analysis",
-    "section": "Real World Question",
-    "text": "Real World Question\n\nLocation only\n\nare points randomly located or patterned\n\nLocation and value\n\nmarked point pattern\nis combination of location and value random or patterned\n\nWhat is the underlying process?\n\n\nIt is important note that SPPA is exploratory and confirmatory in nature. They are specially developed for describing the spatial point pattern and for confirming the observed patterns statistically. However, they are explanatory nor for prediction."
-  },
-  {
-    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#points-on-a-plane",
-    "href": "lesson/Lesson04/Lesson04-SPPA.html#points-on-a-plane",
-    "title": "Lesson 4: Spatial Point Patterns Analysis",
-    "section": "Points on a Plane",
-    "text": "Points on a Plane\n\nClassic point pattern analysis\n\npoints on an isotropic plane\nno effect of translation and rotation\nclassic examples: tree seedlings, rocks, etc\n\nDistance\n\nstraight line only"
-  },
-  {
-    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#spatial-point-patterns-analysis",
-    "href": "lesson/Lesson04/Lesson04-SPPA.html#spatial-point-patterns-analysis",
-    "title": "Lesson 4: Spatial Point Patterns Analysis",
-    "section": "Spatial Point Patterns Analysis",
-    "text": "Spatial Point Patterns Analysis\n\nPoint pattern analysis (PPA) is the study of the spatial arrangements of points in (usually 2-dimensional) space.\nThe simplest formulation is a set X = {x ∈ D} where D, which can be called the study region, is a subset of Rn, a n-dimensional Euclidean space.\nA fundamental problem of PPA is inferring whether a given arrangement is merely random or the result of some process."
-  },
-  {
-    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#spatial-point-patterns-analysis-techniques",
-    "href": "lesson/Lesson04/Lesson04-SPPA.html#spatial-point-patterns-analysis-techniques",
-    "title": "Lesson 4: Spatial Point Patterns Analysis",
-    "section": "Spatial Point Patterns Analysis Techniques",
-    "text": "Spatial Point Patterns Analysis Techniques\n\nFirst-order vs Second-order Analysis of spatial point patterns.\n\n\nReference: 11.4 First and second order effects of Intro to GIS and Spatial Analysis\n\nThe first-order properties describe the way in which the expected value (mean or average) of the spatial point pattern varies across space (i.e., the intensity of the spatial point pattern). Such properties are usually measured with the so-called quadrat analysis, nearest neighbour index and kernel estimation. Second-order properties describe the covariance (or correlation) between values of the spatial point pattern at different regions in space and are usually measured with the G function, K function and L function. Applied to point event data, both properties could be used to explore the spatial variation in the risk of being victimized by a crime, spatial and space-time clustering of criminal activities, and the raised incidence of criminal activities around point sources, such as robberies around ATM machines, subway entrances and exits, etc."
-  },
-  {
-    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#kernel-density-estimation-silverman-1986",
-    "href": "lesson/Lesson04/Lesson04-SPPA.html#kernel-density-estimation-silverman-1986",
-    "title": "Lesson 4: Spatial Point Patterns Analysis",
-    "section": "Kernel density estimation (Silverman 1986)",
-    "text": "Kernel density estimation (Silverman 1986)\n\nA method to compute the intensity of a point distribution.\n\n\n\nThe general formula:\n\n\nGraphically"
-  },
-  {
-    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#distance-based-nearest-neighbour-index",
-    "href": "lesson/Lesson04/Lesson04-SPPA.html#distance-based-nearest-neighbour-index",
-    "title": "Lesson 4: Spatial Point Patterns Analysis",
-    "section": "Distance-based: Nearest Neighbour Index",
-    "text": "Distance-based: Nearest Neighbour Index\nWhat is Nearest Neighbour?\nDirect distance from a point to its nearest neighbour."
-  },
-  {
-    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#nearest-neighbour-index",
-    "href": "lesson/Lesson04/Lesson04-SPPA.html#nearest-neighbour-index",
-    "title": "Lesson 4: Spatial Point Patterns Analysis",
-    "section": "Nearest Neighbour Index",
-    "text": "Nearest Neighbour Index\nThe Nearest Neighbour Index is expressed as the ratio of the Observed Mean Distance to the Expected Mean Distance."
-  },
-  {
-    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#g-function",
-    "href": "lesson/Lesson04/Lesson04-SPPA.html#g-function",
-    "title": "Lesson 4: Spatial Point Patterns Analysis",
-    "section": "G function",
-    "text": "G function\n\n\nThe formula"
-  },
-  {
-    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#f-function",
-    "href": "lesson/Lesson04/Lesson04-SPPA.html#f-function",
-    "title": "Lesson 4: Spatial Point Patterns Analysis",
-    "section": "F function",
-    "text": "F function\n\nSelect a sample of point locations anywhere in the study region at random\n\nDetermine minimum distance from each point to any event in the study area.\n\nThree steps:\n\nRandomly select m points (p1, p2, ….., pn),\nCalculate dmin(pi,s) as the minimum distance from location pi to any event in the point patterns, and\nCalculate F(d)."
-  },
-  {
-    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#ripleys-k-function-ripley-1981",
-    "href": "lesson/Lesson04/Lesson04-SPPA.html#ripleys-k-function-ripley-1981",
-    "title": "Lesson 4: Spatial Point Patterns Analysis",
-    "section": "Ripley’s K function (Ripley, 1981)",
-    "text": "Ripley’s K function (Ripley, 1981)\n\nLimitation of nearest neighbor distance method is that it uses only nearest distance\nConsiders only the shortest scales of variation.\nK function uses more points.\n\nProvides an estimate of spatial dependence over a wider range of scales.\nBased on all the distances between events in the study area.\nAssumes isotropy over the region."
-  },
-  {
-    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#the-l-function-besag-1977",
-    "href": "lesson/Lesson04/Lesson04-SPPA.html#the-l-function-besag-1977",
-    "title": "Lesson 4: Spatial Point Patterns Analysis",
-    "section": "The L function (Besag 1977)",
-    "text": "The L function (Besag 1977)\n\n\nIn practice, K function will be normalised to obtained a benchmark of zero.\nThe formula:"
-  },
-  {
-    "objectID": "lesson/Lesson04/Lesson04-SPPA.html#references",
-    "href": "lesson/Lesson04/Lesson04-SPPA.html#references",
-    "title": "Lesson 4: Spatial Point Patterns Analysis",
-    "section": "References",
-    "text": "References\n\nChapter 11 Point Pattern Analysis of Intro to GIS and Spatial Analysis. Section 11.2, 11.3, 11.3.1 and 11.4\nGIS&T Body of Knowledge AM-07-Point Pattern Analysis\nGIS&T Body of Knowledge AM-08-Kernels and Density Estimation\nAnalyzing Patterns in Business Point Data, Directions Magazine March 17, 2005.\nO’Sullivan, D., and Unwin, D. (2010) Geographic Information Analysis, Second Edition. John Wiley & Sons Inc., New Jersey, Canada. Chapter 5-6.\nBaddeley A., Rubak E. and Turner R. (2015) Spatial Point Patterns: Methodology and Applications with R, Chapman and Hall/CRC."
+    "text": "Peer Learning"
   }
 ]

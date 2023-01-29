@@ -40,11 +40,8 @@ SMU strives to make learning experiences accessible for all. If you anticipate o
 
 Please be aware that the accessible tables in our seminar room should remain available for students who require them. Emergency Preparedness for Teaching and Learning (EPTL): As part of emergency preparedness, Instructors may conduct lessons online via the WebEx platform during the term, to prepare students for online learning. During an actual emergency, students will be notified to access the WebEx platform for their online lessons. The class schedule will mirror the current face-to-face class timetable unless otherwise stated.
 
-
 ```{r}
 #| eval: false 
 #| echo: false 
 renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/lesson01/lesson01-introduction_to_gaa.html")
 ```
-
-
