@@ -809,7 +809,7 @@
     "href": "outline/Lesson05_outline.html",
     "title": "Lesson 5: Advanced Spatial Point Patterns Analysis",
     "section": "",
-    "text": "Content\n\nNetwork Constrained Point Patterns Analysis\n\nNetwork point density estimation methods\nNetwork-Constrained K-function\n\nSpatio-temporal Point Pattern Analysis\n\n\n\nMeet-up Slides and Hands-on Notes\n\nLesson slides in html and pdf formats\nHandout of Hands-on Exercise 5: NetSPPA in html and pdf formats.\nHandout of Hands-on Exercise 5: MarkedSPPA in html and pdf formats.\n\n\n\nSelf-reading Before Meet-up\n\n\nReferences\n\nFloch, J.M., Marcon, E. and Puech, F. (2018) “Chapter 4: Spatial distribution of points” in Handbook of Spatial Analysis: Theory and Application with R.\nO’Sullivan, D., and Unwin, D. (2010) Geographic Information Analysis, Second Edition. John Wiley & Sons Inc., New Jersey, Canada. Chapter 5-6.\nBaddeley A., Rubak E. and Turner R. (2015) Spatial Point Patterns: Methodology and Applications with R, Chapman and Hall/CRC.\n\n\n\nAll About R\n\nspNetwork package.\n\nNetwork Kernel Density Estimate\nDetails about NKDE\nNetwork k Functions"
+    "text": "Local Co-Location Quotient\n\nBasic oncept of co-location\nApplications of Co-location Quotient\nThe formula\n\n\n\n\n\nLesson slides in html and pdf formats\nHandout of In-class Exercise 5: Local Co-Location Quotient in html and pdf formats."
   },
   {
     "objectID": "outline/Lesson06_outline.html",
@@ -1115,77 +1115,77 @@
   {
     "objectID": "th_ex1.html",
     "href": "th_ex1.html",
-    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osun State, Nigeria",
     "section": "",
     "text": "Note\n\n\n\nThis handout provides the context, the task, the expectation and the grading criteria of Take-home Exercise 1. Students must review and understand them before getting started with the take-home exercise."
   },
   {
     "objectID": "th_ex1.html#setting-the-scene",
     "href": "th_ex1.html#setting-the-scene",
-    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osun State, Nigeria",
     "section": "Setting the Scene",
     "text": "Setting the Scene\nWater is an important resource to mankind. Clean and accessible water is critical to human health. It provides a healthy environment, a sustainable economy, reduces poverty and ensures peace and security. Yet over 40% of the global population does not have access to sufficient clean water. By 2025, 1.8 billion people will be living in countries or regions with absolute water scarcity, according to UN-Water. The lack of water poses a major threat to several sectors, including food security. Agriculture uses about 70% of the world’s accessible freshwater.\nDeveloping countries are most affected by water shortages and poor water quality. Up to 80% of illnesses in the developing world are linked to inadequate water and sanitation. Despite technological advancement, providing clean water to the rural community is still a major development issues in many countries globally, especially countries in the Africa continent.\nTo address the issue of providing clean and sustainable water supply to the rural community, a global Water Point Data Exchange (WPdx) project has been initiated. The main aim of this initiative is to collect water point related data from rural areas at the water point or small water scheme level and share the data via WPdx Data Repository, a cloud-based data library. What is so special of this project is that data are collected based on WPDx Data Standard."
   },
   {
     "objectID": "th_ex1.html#objectives",
     "href": "th_ex1.html#objectives",
-    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osun State, Nigeria",
     "section": "Objectives",
     "text": "Objectives\nGeospatial analytics hold tremendous potential to address complex problems facing society. In this study, you are tasked to apply appropriate spatial point patterns analysis methods to discover the geographical distribution of functional and non-function water points and their co-locations if any in Osun State, Nigeria."
   },
   {
     "objectID": "th_ex1.html#the-task",
     "href": "th_ex1.html#the-task",
-    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osun State, Nigeria",
     "section": "The Task",
     "text": "The Task\nThe specific tasks of this take-home exercise are as follows:\n\nExploratory Spatial Data Analysis (ESDA)\n\nDerive kernel density maps of functional and non-functional water points. Using appropriate tmap functions,\nDisplay the kernel density maps on openstreetmap of Osub State, Nigeria.\nDescribe the spatial patterns revealed by the kernel density maps. Highlight the advantage of kernel density map over point map.\n\n\n\nSecond-order Spatial Point Patterns Analysis\nWith reference to the spatial point patterns observed in ESDA:\n\nFormulate the null hypothesis and alternative hypothesis and select the confidence level.\nPerform the test by using appropriate Second order spatial point patterns analysis technique.\nWith reference to the analysis results, draw statistical conclusions.\n\n\n\nSpatial Correlation Analysis\nIn this section, you are required to confirm statistically if the spatial distribution of functional and non-functional water points are independent from each other.\n\nFormulate the null hypothesis and alternative hypothesis and select the confidence level.\nPerform the test by using appropriate Second order spatial point patterns analysis technique.\nWith reference to the analysis results, draw statistical conclusions."
   },
   {
     "objectID": "th_ex1.html#the-data",
     "href": "th_ex1.html#the-data",
-    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osun State, Nigeria",
     "section": "The Data",
     "text": "The Data\n\nApstial data\nFor the purpose of this assignment, data from WPdx Global Data Repositories will be used. There are two versions of the data. They are: WPdx-Basic and WPdx+. You are required to use WPdx+ data set.\n\n\nGeospatial data\nThis study will focus of Osun State, Nigeria. The state boundary GIS data of Nigeria can be downloaded either from The Humanitarian Data Exchange portal or geoBoundaries."
   },
   {
     "objectID": "th_ex1.html#grading-criteria",
     "href": "th_ex1.html#grading-criteria",
-    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osun State, Nigeria",
     "section": "Grading Criteria",
     "text": "Grading Criteria\nThis exercise will be graded by using the following criteria:\n\nGeospatial Data Wrangling (20 marks): This is an important aspect of geospatial analytics. You will be assessed on your ability to employ appropriate R functions from various R packages specifically designed for modern data science such as readxl, tidyverse (tidyr, dplyr, ggplot2), sf just to mention a few of them, to perform the entire geospatial data wrangling processes, including. This is not limited to data import, data extraction, data cleaning and data transformation. Besides assessing your ability to use the R functions, this criterion also includes your ability to clean and derive appropriate variables to meet the analysis need. (Warning: All data are like vast grassland full of land mines. Your job is to clear those mines and not to step on them).\nGeospatial Analysis (30 marks): In this exercise, you are expected to use the appropriate thematic and analytics mapping techniques and R functions introduced in class to analysis the geospatial data prepared. You will be assessed on your ability to derive analytical maps by using appropriate rate mapping techniques.\nGeovisualisation (20 marks): In this section, you will be assessed on your ability to communicate the complex spatial statistics results in business friendly visual representations. This course is geospatial centric, hence, it is important for you to demonstrate your competency in using appropriate geovisualisation techniques to reveal and communicate the findings of your analysis.\nReproducibility (20 marks): This is an important learning outcome of this exercise. You will be assessed on your ability to provide a comprehensive documentation of the analysis procedures in the form of code chunks of RMarkdown. It is important to note that it is not enough by merely providing the code chunk without any explanation on the purpose and R function(s) used.\nBonus (10 marks): Demonstrate your ability to employ methods beyond what you had learned in class to gain insights from the data. The methods used must be geospatial in nature."
   },
   {
     "objectID": "th_ex1.html#submission-instructions",
     "href": "th_ex1.html#submission-instructions",
-    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osun State, Nigeria",
     "section": "Submission Instructions",
     "text": "Submission Instructions\n\nThe write-up of the take-home exercise must be in Quarto html document format. You are required to publish the write-up on Netlify.\nThe R project of the take-home exercise must be pushed onto your Github repository.\nYou are required to provide the links to Netlify service of the take-home exercise write-up and github repository on eLearn."
   },
   {
     "objectID": "th_ex1.html#due-date",
     "href": "th_ex1.html#due-date",
-    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osun State, Nigeria",
     "section": "Due Date",
     "text": "Due Date\n12th February 2023 (Sunday), 11.59pm (midnight)."
   },
   {
     "objectID": "th_ex1.html#learning-from-senior",
     "href": "th_ex1.html#learning-from-senior",
-    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osun State, Nigeria",
     "section": "Learning from senior",
     "text": "Learning from senior\nYou are advised to review these sample submissions prepared by your seniors.\n\nTake-home Exercise 1: Geographic Analysis of the Supply and Demand of Childcare Services in Singapore by Xiao Rong Wong\nTake-Home Exercise 2: Spatial Point Patterns Analysis of Airbnb Listings in Singapore by MEGAN SIM TZE YEN"
   },
   {
     "objectID": "th_ex1.html#q-a",
     "href": "th_ex1.html#q-a",
-    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osun State, Nigeria",
     "section": "Q & A",
     "text": "Q & A\nPlease submit your questions or queries related to this take-home exercise on Piazza."
   },
   {
     "objectID": "th_ex1.html#peer-learning",
     "href": "th_ex1.html#peer-learning",
-    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria",
+    "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osun State, Nigeria",
     "section": "Peer Learning",
     "text": "Peer Learning"
   },
@@ -1202,5 +1202,19 @@
     "title": "Lesson 2: Geospatial Data Handling and Wrangling",
     "section": "In-class Exercise",
     "text": "In-class Exercise\n\nGeospatial Data Wrangling: Nigeria water point use case\n\nMust read\n\nChapter 2 Feature Representation of Intro to GIS and Spatial Analysis.\nChapter 9 Coordinate Systems of Intro to GIS and Spatial Analysis.\nGeocoding.\nPebesma, Edzer. (2018) “Simple Features for R: Standardized Support for Spatial Vector Data.” The R Journal, Vol. 10/1, 439:446.\n\nAdditional readings\n\nMaling, D. H. 1992. Coordinate Systems and Map Projections. 2nd ed. Oxford ; New York: Pergamon Press.\nPebesma, Edzer, Thomas Mailund, and James Hiebert. 2016. “Measurement Units in R.” The R Journal 8 (2): 486–94.\nAndreas Hackeloeer, Klaas Klasing, Jukka M. Krisp & Liqiu Meng (2014) “Georeferencing: a review of methods and applications”, Annals of GIS, 20:1, 61-69, DOI:10.1080/19475683.2013.86882.\nEla Dramowicz (2004) “Three Standard Geocoding Methods”, Directions Magazine."
+  },
+  {
+    "objectID": "outline/Lesson05_outline.html#references",
+    "href": "outline/Lesson05_outline.html#references",
+    "title": "Lesson 5: Advanced Spatial Point Patterns Analysis",
+    "section": "References",
+    "text": "References\n\nTimothy F. Leslie, & Barry J. Kronenfeld (2011). “The Colocation Quotient: A New Measure of Spatial Association Between Categorical Subsets of Points.” Geographical Analysis, Vol. 43 (3), 306-326. doi: 10.1111/j.1538-4632.2011.00821.x\nCromley, R.B., Hanink, D.M. & Bently, G.C. (2014) “Geographically Weighted Colocation Quotients: Specification and Application”, Professional Geographer, Vol 66, No. 1. pp. 138-148. SMU e-library.\nYue, H. et. al (2017) “The Local Colocation Patterns of Crime and Land-Use Features in Wuhan, China”, International Journal of Geo-Information.\nFahui Wang, Yujie Hu, Shuai Wang & Xiaojuan Li (2017). “Local Indicator of Colocation Quotient with a Statistical Significance Test: Examining Spatial Association of Crime and Facilities.” The Professional Geographer Vol. 69 (1), 22-31. doi: 10.1080/00330124.2016.1157498. SMU e-Library."
+  },
+  {
+    "objectID": "outline/Lesson05_outline.html#all-about-r",
+    "href": "outline/Lesson05_outline.html#all-about-r",
+    "title": "Lesson 5: Advanced Spatial Point Patterns Analysis",
+    "section": "All About R",
+    "text": "All About R\n\nspdep package.\n\nColocation Quotients CLQs"
   }
 ]

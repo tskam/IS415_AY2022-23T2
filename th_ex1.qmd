@@ -1,12 +1,12 @@
 ---
-title: "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osub State, Nigeria"
+title: "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osun State, Nigeria"
 date: "`r Sys.Date()`"
 format: html
 editor: visual
 ---
 
 ::: callout-note
-This handout provides the context, the task, the expectation and the grading criteria of Take-home Exercise 1.  Students must review and understand them before getting started with the take-home exercise. 
+This handout provides the context, the task, the expectation and the grading criteria of Take-home Exercise 1. Students must review and understand them before getting started with the take-home exercise.
 :::
 
 ## Setting the Scene
@@ -27,25 +27,25 @@ The specific tasks of this take-home exercise are as follows:
 
 ### Exploratory Spatial Data Analysis (ESDA)
 
-- Derive kernel density maps of functional and non-functional water points.  Using appropriate tmap functions, 
-- Display the kernel density maps on openstreetmap of Osub State, Nigeria. 
-- Describe the spatial patterns revealed by the kernel density maps. Highlight the advantage of kernel density map over point map.
+-   Derive kernel density maps of functional and non-functional water points. Using appropriate tmap functions,
+-   Display the kernel density maps on openstreetmap of Osub State, Nigeria.
+-   Describe the spatial patterns revealed by the kernel density maps. Highlight the advantage of kernel density map over point map.
 
 ### Second-order Spatial Point Patterns Analysis
 
 With reference to the spatial point patterns observed in ESDA:
 
-- Formulate the null hypothesis and alternative hypothesis and select the confidence level.
-- Perform the test by using appropriate Second order spatial point patterns analysis technique.
-- With reference to the analysis results, draw statistical conclusions.
+-   Formulate the null hypothesis and alternative hypothesis and select the confidence level.
+-   Perform the test by using appropriate Second order spatial point patterns analysis technique.
+-   With reference to the analysis results, draw statistical conclusions.
 
 ### Spatial Correlation Analysis
 
-In this section, you are required to confirm statistically if the spatial distribution of functional and non-functional water points are independent from each other. 
+In this section, you are required to confirm statistically if the spatial distribution of functional and non-functional water points are independent from each other.
 
-- Formulate the null hypothesis and alternative hypothesis and select the confidence level.
-- Perform the test by using appropriate Second order spatial point patterns analysis technique.
-- With reference to the analysis results, draw statistical conclusions.
+-   Formulate the null hypothesis and alternative hypothesis and select the confidence level.
+-   Perform the test by using appropriate Second order spatial point patterns analysis technique.
+-   With reference to the analysis results, draw statistical conclusions.
 
 ## The Data
 
@@ -55,8 +55,7 @@ For the purpose of this assignment, data from [WPdx Global Data Repositories](ht
 
 #### Geospatial data
 
-This study will focus of Osun State, Nigeria.  The state boundary GIS data of Nigeria can be downloaded either from The [Humanitarian Data Exchange](https://data.humdata.org/) portal or [geoBoundaries](https://www.geoboundaries.org/index.html).
-
+This study will focus of Osun State, Nigeria. The state boundary GIS data of Nigeria can be downloaded either from The [Humanitarian Data Exchange](https://data.humdata.org/) portal or [geoBoundaries](https://www.geoboundaries.org/index.html).
 
 ## Grading Criteria
 
@@ -82,7 +81,6 @@ This exercise will be graded by using the following criteria:
 
 12th February 2023 (Sunday), 11.59pm (midnight).
 
-
 ## Learning from senior
 
 You are advised to review these sample submissions prepared by your seniors.
@@ -93,9 +91,6 @@ You are advised to review these sample submissions prepared by your seniors.
 
 ## Q & A
 
-Please submit your questions or queries related to this take-home exercise on Piazza. 
+Please submit your questions or queries related to this take-home exercise on Piazza.
 
 ## Peer Learning
-
-
-

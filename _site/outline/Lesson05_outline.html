@@ -6,8 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-01-29">
-<meta name="description" content="In this lesson, you will learn the basic concepts of on- and off- network spatial point processes and a family of spatial statistics methods for analysing network constrained spatial point processes.">
+<meta name="dcterms.date" content="2022-12-31">
+<meta name="description" content="In this lesson, you will learn the basic concepts of Local Colocation Quotients CLQs (in short Local CLQ)">
 
 <title>IS415 AY2022-23T2 - Lesson 5: Advanced Spatial Point Patterns Analysis</title>
 <style>
@@ -160,9 +160,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#content" id="toc-content" class="nav-link active" data-scroll-target="#content">Content</a></li>
-  <li><a href="#meet-up-slides-and-hands-on-notes" id="toc-meet-up-slides-and-hands-on-notes" class="nav-link" data-scroll-target="#meet-up-slides-and-hands-on-notes">Meet-up Slides and Hands-on Notes</a></li>
-  <li><a href="#self-reading-before-meet-up" id="toc-self-reading-before-meet-up" class="nav-link" data-scroll-target="#self-reading-before-meet-up">Self-reading Before Meet-up</a></li>
+  <li><a href="#content" id="toc-content" class="nav-link active" data-scroll-target="#content">Content</a>
+  <ul class="collapse">
+  <li><a href="#lesson-slides-and-hands-on-notes" id="toc-lesson-slides-and-hands-on-notes" class="nav-link" data-scroll-target="#lesson-slides-and-hands-on-notes">Lesson Slides and Hands-on Notes</a></li>
+  </ul></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   <li><a href="#all-about-r" id="toc-all-about-r" class="nav-link" data-scroll-target="#all-about-r">All About R</a></li>
   </ul>
@@ -178,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    <p>In this lesson, you will learn the basic concepts of on- and off- network spatial point processes and a family of spatial statistics methods for analysing network constrained spatial point processes.</p>
+    In this lesson, you will learn the basic concepts of Local Colocation Quotients CLQs (in short Local CLQ)
   </div>
 </div>
 
@@ -189,54 +190,55 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 29, 2023</p>
+      <p class="date">December 31, 2022</p>
     </div>
   </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">February 5, 2023</p>
+    </div>
+  </div>
     
   </div>
   
 
 </header>
 
-<section id="content" class="level3">
-<h3 class="anchored" data-anchor-id="content">Content</h3>
+<section id="content" class="level2">
+<h2 class="anchored" data-anchor-id="content">Content</h2>
 <ul>
-<li>Network Constrained Point Patterns Analysis
+<li>Local Co-Location Quotient
 <ul>
-<li>Network point density estimation methods</li>
-<li>Network-Constrained K-function</li>
+<li>Basic oncept of co-location</li>
+<li>Applications of Co-location Quotient</li>
+<li>The formula</li>
 </ul></li>
-<li>Spatio-temporal Point Pattern Analysis</li>
 </ul>
-</section>
-<section id="meet-up-slides-and-hands-on-notes" class="level3">
-<h3 class="anchored" data-anchor-id="meet-up-slides-and-hands-on-notes">Meet-up Slides and Hands-on Notes</h3>
+<section id="lesson-slides-and-hands-on-notes" class="level3">
+<h3 class="anchored" data-anchor-id="lesson-slides-and-hands-on-notes">Lesson Slides and Hands-on Notes</h3>
 <ul>
 <li><p>Lesson slides in <a href="../lesson/Lesson05/Lesson05-NetSPPA.html">html</a> and <a href="../lesson/lesson05/Lesson05-NetSPPA.pdf">pdf</a> formats</p></li>
-<li><p>Handout of Hands-on Exercise 5: NetSPPA in <a href="../Hands-on_Ex/Hands-on_Ex05/Hands-on_Ex05-NetSPPA.html">html</a> and <a href="../Hands-on_Ex/Hands-on_Ex05/Hands-on_Ex05-NetSPPA.pdf">pdf</a> formats.</p></li>
-<li><p>Handout of Hands-on Exercise 5: MarkedSPPA in <a href="../Hands-on_Ex/Hands-on_Ex05/Hands-on_Ex05-MarkedSPPA.html">html</a> and <a href="../Hands-on_Ex/Hands-on_Ex05/Hands-on_Ex05-MarkedSPPA.pdf">pdf</a> formats.</p></li>
+<li><p>Handout of In-class Exercise 5: Local Co-Location Quotient in <a href="../Hands-on_Ex/Hands-on_Ex05/In-class_Ex05-LCLQ.html">html</a> and <a href="../Hands-on_Ex/Hands-on_Ex05/Hands-on_Ex05-NetSPPA.pdf">pdf</a> formats.</p></li>
 </ul>
 </section>
-<section id="self-reading-before-meet-up" class="level3">
-<h3 class="anchored" data-anchor-id="self-reading-before-meet-up">Self-reading Before Meet-up</h3>
 </section>
-<section id="references" class="level3">
-<h3 class="anchored" data-anchor-id="references">References</h3>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
 <ul>
-<li>Floch, J.M., Marcon, E. and Puech, F. (2018) “Chapter 4: Spatial distribution of points” in Handbook of Spatial Analysis: Theory and Application with R.</li>
-<li>O’Sullivan, D., and Unwin, D. (2010) Geographic Information Analysis, Second Edition. John Wiley &amp; Sons Inc., New Jersey, Canada. Chapter 5-6.</li>
-<li>Baddeley A., Rubak E. and Turner R. (2015) Spatial Point Patterns: Methodology and Applications with R, Chapman and Hall/CRC.</li>
+<li><p>Timothy F. Leslie, &amp; Barry J. Kronenfeld (2011). <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.2011.00821.x?systemMessage=Wiley+Online+Library+will+be+disrupted+on+15+December+from+10%3A00-12%3A00+GMT+%2805%3A00-07%3A00+EST%29+for+essential+maintenance">“The Colocation Quotient: A New Measure of Spatial Association Between Categorical Subsets of Points.”</a> <em>Geographical Analysis</em>, Vol. 43 (3), 306-326. doi: 10.1111/j.1538-4632.2011.00821.x</p></li>
+<li><p>Cromley, R.B., Hanink, D.M. &amp; Bently, G.C. (2014) “Geographically Weighted Colocation Quotients: Specification and Application”, <em>Professional Geographer</em>, Vol 66, No.&nbsp;1. pp.&nbsp;138-148. SMU e-library.</p></li>
+<li><p>Yue, H. et. al (2017) <a href="https://www.mdpi.com/2220-9964/6/10/307">“The Local Colocation Patterns of Crime and Land-Use Features in Wuhan, China”</a>, <em>International Journal of Geo-Information</em>.</p></li>
+<li><p>Fahui Wang, Yujie Hu, Shuai Wang &amp; Xiaojuan Li (2017). “Local Indicator of Colocation Quotient with a Statistical Significance Test: Examining Spatial Association of Crime and Facilities.” <em>The Professional Geographer</em> Vol. 69 (1), 22-31. doi: 10.1080/00330124.2016.1157498. SMU e-Library.</p></li>
 </ul>
 </section>
-<section id="all-about-r" class="level3">
-<h3 class="anchored" data-anchor-id="all-about-r">All About R</h3>
+<section id="all-about-r" class="level2">
+<h2 class="anchored" data-anchor-id="all-about-r">All About R</h2>
 <ul>
-<li><a href="https://cran.r-project.org/web/packages/spNetwork/">spNetwork</a> package.
+<li><a href="https://sfdep.josiahparry.com/index.html">spdep</a> package.
 <ul>
-<li><a href="https://cran.r-project.org/web/packages/spNetwork/vignettes/NKDE.html">Network Kernel Density Estimate</a></li>
-<li><a href="https://cran.r-project.org/web/packages/spNetwork/vignettes/NKDEdetailed.html">Details about NKDE</a></li>
-<li><a href="https://cran.r-project.org/web/packages/spNetwork/vignettes/KNetworkFunctions.html">Network k Functions</a></li>
+<li><a href="https://sfdep.josiahparry.com/articles/colocation-analysis.html">Colocation Quotients CLQs</a></li>
 </ul></li>
 </ul>
 

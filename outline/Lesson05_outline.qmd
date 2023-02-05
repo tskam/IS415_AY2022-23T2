@@ -1,51 +1,41 @@
 ---
 title: "Lesson 5: Advanced Spatial Point Patterns Analysis"
-description: |
-  In this lesson, you will learn the basic concepts of on- and off- network spatial point processes and a family of spatial statistics methods for analysing network constrained spatial point processes.
-date: "`r Sys.Date()`"
-output:
-  distill::distill_article:
-    toc: true
-    toc_depth: 3
+description: "In this lesson, you will learn the basic concepts of Local Colocation Quotients CLQs (in short Local CLQ)"
+date: "31 December 2022"
+date-modified: "`r Sys.Date()`"
+format: html
+editor: visual
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+## Content
 
-### Content
+-   Local Co-Location Quotient 
+    -   Basic oncept of co-location
+    -   Applications of Co-location Quotient
+    -   The formula
 
-- Network Constrained Point Patterns Analysis
-    - Network point density estimation methods
-    - Network-Constrained K-function
-- Spatio-temporal Point Pattern Analysis
+### Lesson Slides and Hands-on Notes
 
-### Meet-up Slides and Hands-on Notes 
+-   Lesson slides in [html](../lesson/Lesson05/Lesson05-NetSPPA.html) and [pdf](../lesson/lesson05/Lesson05-NetSPPA.pdf) formats
 
-- Lesson slides in [html](../lesson/Lesson05/Lesson05-NetSPPA.html) and [pdf](../lesson/lesson05/Lesson05-NetSPPA.pdf) formats
-
-- Handout of Hands-on Exercise 5: NetSPPA in [html](../Hands-on_Ex/Hands-on_Ex05/Hands-on_Ex05-NetSPPA.html) and [pdf](../Hands-on_Ex/Hands-on_Ex05/Hands-on_Ex05-NetSPPA.pdf) formats.
-
-- Handout of Hands-on Exercise 5: MarkedSPPA in [html](../Hands-on_Ex/Hands-on_Ex05/Hands-on_Ex05-MarkedSPPA.html) and [pdf](../Hands-on_Ex/Hands-on_Ex05/Hands-on_Ex05-MarkedSPPA.pdf) formats.
-
-### Self-reading Before Meet-up
-
-### References
-
-- Floch, J.M., Marcon, E. and Puech, F. (2018) “Chapter 4: Spatial distribution of points” in Handbook of Spatial Analysis: Theory and Application with R. 
-- O’Sullivan, D., and Unwin, D. (2010) Geographic Information Analysis, Second Edition. John Wiley & Sons Inc., New Jersey, Canada. Chapter 5-6. 
-- Baddeley A.,  Rubak E. and Turner R. (2015) Spatial Point Patterns: Methodology and Applications with R, Chapman and Hall/CRC.
-
-### All About R
-
-- [spNetwork](https://cran.r-project.org/web/packages/spNetwork/) package.
-    - [Network Kernel Density Estimate](https://cran.r-project.org/web/packages/spNetwork/vignettes/NKDE.html)
-    - [Details about NKDE](https://cran.r-project.org/web/packages/spNetwork/vignettes/NKDEdetailed.html)
-    - [Network k Functions](https://cran.r-project.org/web/packages/spNetwork/vignettes/KNetworkFunctions.html)
+-   Handout of In-class Exercise 5: Local Co-Location Quotient in [html](../Hands-on_Ex/Hands-on_Ex05/In-class_Ex05-LCLQ.html) and [pdf](../Hands-on_Ex/Hands-on_Ex05/Hands-on_Ex05-NetSPPA.pdf) formats.
 
 
+## References
+
+- Timothy F. Leslie, & Barry J. Kronenfeld (2011). ["The Colocation Quotient: A New Measure of Spatial Association Between Categorical Subsets of Points."](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.2011.00821.x?systemMessage=Wiley+Online+Library+will+be+disrupted+on+15+December+from+10%3A00-12%3A00+GMT+%2805%3A00-07%3A00+EST%29+for+essential+maintenance) *Geographical Analysis*, Vol. 43 (3), 306-326. doi: 10.1111/j.1538-4632.2011.00821.x
+
+- Cromley, R.B., Hanink, D.M. & Bently, G.C. (2014) "Geographically Weighted Colocation Quotients: Specification and Application", *Professional Geographer*, Vol 66, No. 1.  pp. 138-148. SMU e-library.
+
+- Yue, H. et. al (2017) ["The Local Colocation Patterns of Crime and Land-Use Features in Wuhan, China"](https://www.mdpi.com/2220-9964/6/10/307), *International Journal of Geo-Information*. 
+
+- Fahui Wang, Yujie Hu, Shuai Wang & Xiaojuan Li (2017). "Local Indicator of Colocation Quotient with a Statistical Significance Test: Examining Spatial Association of Crime and Facilities." *The Professional Geographer* Vol. 69 (1), 22-31. doi: 10.1080/00330124.2016.1157498. SMU e-Library.
 
 
+## All About R
+
+-   [spdep](https://sfdep.josiahparry.com/index.html) package.
+    -   [Colocation Quotients CLQs](https://sfdep.josiahparry.com/articles/colocation-analysis.html)
 
 
 
