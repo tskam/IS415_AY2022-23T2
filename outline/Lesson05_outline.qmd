@@ -16,7 +16,7 @@ editor: visual
 
 ### Lesson Slides and Hands-on Notes
 
--   Lesson slides in [html](../lesson/Lesson05/Lesson05-LCLQ.html) and [pdf](../lesson/lesson05/Lesson05-NetSPPA.pdf) formats
+-   Lesson slides in [html](../lesson/Lesson05/Lesson05-LCLQ.html) and [pdf](../lesson/Lesson05/Lesson05-LCLQ.pdf) formats
 
 -   Handout of In-class Exercise 5: Local Co-Location Quotient in [html](../Hands-on_Ex/Hands-on_Ex05/In-class_Ex05-LCLQ.html) and [pdf](../Hands-on_Ex/Hands-on_Ex05/Hands-on_Ex05-NetSPPA.pdf) formats.
 

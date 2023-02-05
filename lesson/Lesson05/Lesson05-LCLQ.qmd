@@ -128,6 +128,6 @@ If the value of wij is negative for the Bisquare kernel, the weight assigned is 
 #| eval: false
 #| echo: false
 
-renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson04/Lesson04-SPPA.html",
-                   to = "../../_site/lesson/Lesson04/Lesson04-SPPA.pdf")
+renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson05/Lesson05-LCLQ.html",
+                   to = "../../_site/lesson/Lesson05/Lesson05-LCLQ.pdf")
 ```
