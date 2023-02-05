@@ -1216,5 +1216,47 @@
     "title": "Lesson 5: Advanced Spatial Point Patterns Analysis",
     "section": "All About R",
     "text": "All About R\n\nspdep package.\n\nColocation Quotients CLQs"
+  },
+  {
+    "objectID": "lesson/Lesson05/Lesson05-LCLQ.html#content",
+    "href": "lesson/Lesson05/Lesson05-LCLQ.html#content",
+    "title": "Lesson 5: Advanced Spatial Point Patterns Analysis:  Local Co-Location Quotient",
+    "section": "Content",
+    "text": "Content\n\nIntroduction to Local Co-Location Quotient (LCLQ)\nBasic Principles\nApplication of LCLQ\nMathematics of LCLQ\nInterpretation of LCLQ"
+  },
+  {
+    "objectID": "lesson/Lesson05/Lesson05-LCLQ.html#what-is-co-location",
+    "href": "lesson/Lesson05/Lesson05-LCLQ.html#what-is-co-location",
+    "title": "Lesson 5: Advanced Spatial Point Patterns Analysis:  Local Co-Location Quotient",
+    "section": "What is Co-location?",
+    "text": "What is Co-location?\nMeasures local patterns of spatial association, or colocation, between two categories of point features using the colocation quotient statistic."
+  },
+  {
+    "objectID": "lesson/Lesson05/Lesson05-LCLQ.html#what-is-colocated",
+    "href": "lesson/Lesson05/Lesson05-LCLQ.html#what-is-colocated",
+    "title": "Lesson 5: Advanced Spatial Point Patterns Analysis:  Local Co-Location Quotient",
+    "section": "What is Colocated?",
+    "text": "What is Colocated?\nA point event category A is colocated with point events of category B if it is surrounded by several point event category B within a specified distance."
+  },
+  {
+    "objectID": "lesson/Lesson05/Lesson05-LCLQ.html#real-world-application-question",
+    "href": "lesson/Lesson05/Lesson05-LCLQ.html#real-world-application-question",
+    "title": "Lesson 5: Advanced Spatial Point Patterns Analysis:  Local Co-Location Quotient",
+    "section": "Real World Application Question",
+    "text": "Real World Application Question\n\nAre certain business types likely to be colocated (such as coffee shops and retail stores)?\nAre locations of residential theft more likely to occur or be colocated with certain housing types?\nAre there specific areas in your study area where failed restaurant inspections are colocated with insect infestations?"
+  },
+  {
+    "objectID": "lesson/Lesson05/Lesson05-LCLQ.html#how-the-colocation-quotient-is-calculated",
+    "href": "lesson/Lesson05/Lesson05-LCLQ.html#how-the-colocation-quotient-is-calculated",
+    "title": "Lesson 5: Advanced Spatial Point Patterns Analysis:  Local Co-Location Quotient",
+    "section": "How the colocation quotient is calculated?",
+    "text": "How the colocation quotient is calculated?\n\n\nEach feature in the Category of Interest (category A) is evaluated individually for colocation with the presence of the Neighboring Category (category B) found within its neighborhood. In general, if the proportion of B points within the neighborhood of A is more than the global proportion of B, the colocation quotient will be high. If the neighborhood of A contains many other A points or many other categories other than B, the colocation between the Category of Interest (category A) and the Neighboring Category (category B) will be small."
+  },
+  {
+    "objectID": "lesson/Lesson05/Lesson05-LCLQ.html#common-questions-of-two-point-events",
+    "href": "lesson/Lesson05/Lesson05-LCLQ.html#common-questions-of-two-point-events",
+    "title": "Lesson 5: Advanced Spatial Point Patterns Analysis:  Local Co-Location Quotient",
+    "section": "Common Questions of Two Point Events",
+    "text": "Common Questions of Two Point Events\n\nAre certain business types likely to be colocated (such as coffee shops and retail stores)?\nAre locations of residential theft more likely to occur or be colocated with certain housing types?\nAre there specific areas in your study area where failed restaurant inspections are colocated with insect infestations?"
   }
 ]

@@ -9,33 +9,28 @@ editor: visual
 
 ## Content
 
--   Local Co-Location Quotient 
+-   Local Co-Location Quotient
     -   Basic oncept of co-location
     -   Applications of Co-location Quotient
     -   The formula
 
 ### Lesson Slides and Hands-on Notes
 
--   Lesson slides in [html](../lesson/Lesson05/Lesson05-NetSPPA.html) and [pdf](../lesson/lesson05/Lesson05-NetSPPA.pdf) formats
+-   Lesson slides in [html](../lesson/Lesson05/Lesson05-LCLQ.html) and [pdf](../lesson/lesson05/Lesson05-NetSPPA.pdf) formats
 
 -   Handout of In-class Exercise 5: Local Co-Location Quotient in [html](../Hands-on_Ex/Hands-on_Ex05/In-class_Ex05-LCLQ.html) and [pdf](../Hands-on_Ex/Hands-on_Ex05/Hands-on_Ex05-NetSPPA.pdf) formats.
 
-
 ## References
 
-- Timothy F. Leslie, & Barry J. Kronenfeld (2011). ["The Colocation Quotient: A New Measure of Spatial Association Between Categorical Subsets of Points."](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.2011.00821.x?systemMessage=Wiley+Online+Library+will+be+disrupted+on+15+December+from+10%3A00-12%3A00+GMT+%2805%3A00-07%3A00+EST%29+for+essential+maintenance) *Geographical Analysis*, Vol. 43 (3), 306-326. doi: 10.1111/j.1538-4632.2011.00821.x
+-   Timothy F. Leslie, & Barry J. Kronenfeld (2011). ["The Colocation Quotient: A New Measure of Spatial Association Between Categorical Subsets of Points."](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.2011.00821.x?systemMessage=Wiley+Online+Library+will+be+disrupted+on+15+December+from+10%3A00-12%3A00+GMT+%2805%3A00-07%3A00+EST%29+for+essential+maintenance) *Geographical Analysis*, Vol. 43 (3), 306-326. doi: 10.1111/j.1538-4632.2011.00821.x
 
-- Cromley, R.B., Hanink, D.M. & Bently, G.C. (2014) "Geographically Weighted Colocation Quotients: Specification and Application", *Professional Geographer*, Vol 66, No. 1.  pp. 138-148. SMU e-library.
+-   Cromley, R.B., Hanink, D.M. & Bently, G.C. (2014) "Geographically Weighted Colocation Quotients: Specification and Application", *Professional Geographer*, Vol 66, No. 1. pp. 138-148. SMU e-library.
 
-- Yue, H. et. al (2017) ["The Local Colocation Patterns of Crime and Land-Use Features in Wuhan, China"](https://www.mdpi.com/2220-9964/6/10/307), *International Journal of Geo-Information*. 
+-   Yue, H. et. al (2017) ["The Local Colocation Patterns of Crime and Land-Use Features in Wuhan, China"](https://www.mdpi.com/2220-9964/6/10/307), *International Journal of Geo-Information*.
 
-- Fahui Wang, Yujie Hu, Shuai Wang & Xiaojuan Li (2017). "Local Indicator of Colocation Quotient with a Statistical Significance Test: Examining Spatial Association of Crime and Facilities." *The Professional Geographer* Vol. 69 (1), 22-31. doi: 10.1080/00330124.2016.1157498. SMU e-Library.
-
+-   Fahui Wang, Yujie Hu, Shuai Wang & Xiaojuan Li (2017). "Local Indicator of Colocation Quotient with a Statistical Significance Test: Examining Spatial Association of Crime and Facilities." *The Professional Geographer* Vol. 69 (1), 22-31. doi: 10.1080/00330124.2016.1157498. SMU e-Library.
 
 ## All About R
 
 -   [spdep](https://sfdep.josiahparry.com/index.html) package.
     -   [Colocation Quotients CLQs](https://sfdep.josiahparry.com/articles/colocation-analysis.html)
-
-
-
