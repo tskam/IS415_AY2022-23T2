@@ -1,6 +1,7 @@
 ---
 title: "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osun State, Nigeria"
-date: "`r Sys.Date()`"
+date: "27 January 2023"
+date-modified: "`r Sys.Date()`"
 format: html
 editor: visual
 ---
@@ -85,9 +86,11 @@ This exercise will be graded by using the following criteria:
 
 You are advised to review these sample submissions prepared by your seniors.
 
--   [Take-home Exercise 1: Geographic Analysis of the Supply and Demand of Childcare Services in Singapore](https://rpubs.com/xiaorongw/IS415_Take-home_Ex01) by Xiao Rong Wong
+-   [Take-home Exercise 1: Geographic Analysis of the Supply and Demand of Childcare Services in Singapore](https://rpubs.com/xiaorongw/IS415_Take-home_Ex01) by Xiao Rong Wong.
 
--   [Take-Home Exercise 2: Spatial Point Patterns Analysis of Airbnb Listings in Singapore](https://is415-msty.netlify.app/posts/2021-09-19-take-home-exercise-2/) by MEGAN SIM TZE YEN
+-   [Take-Home Exercise 2: Spatial Point Patterns Analysis of Airbnb Listings in Singapore](https://is415-msty.netlify.app/posts/2021-09-19-take-home-exercise-2/) by MEGAN SIM TZE YEN.
+
+-   [Interactive Plotting of Second-order Spatial Point Patterns Analysis: Childcare Centres in Singapore](https://rpubs.com/deniseadele/secondorder_pointpattern) by Denise Adele Chua.    
 
 ## Q & A
 
