@@ -625,3 +625,12 @@ Spatial statistics methods are not a blackbox. Before performing the analysis, a
 -   Getis, A. and Ord, J.K. (1992) "The analysis of spatial association by use of distance statistics". *Geographical Analysis*, 24(3): 189-206.
 
 -   Ord, J.K. and Getis, A. (2010) "Local spatial autocorrelation statistics: Distributional issues and an application". *Geographical Analysis*, 27(4): 286-306.
+
+```{r}
+#| eval: false
+#| echo: false
+
+renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson07/Lesson07-GLSA.html",
+                   to = "../../_site/lesson/Lesson07/Lesson07-GLSA.pdf")
+```
+
