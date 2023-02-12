@@ -1363,5 +1363,33 @@
     "title": "Lesson 6: Spatial Weights and Applications",
     "section": "References",
     "text": "References\n\nChapter 2. Codifying the neighbourhood structure of Handbook of Spatial Analysis: Theory and Application with R.\nFrançois Bavaud (2010) “Models for Spatial Weights: A Systematic Look” Geographical Analysis, Vol. 30, No.2, pp 153-171.\nTony H. Grubesic and Andrea L. Rosso (2014) “The Use of Spatially Lagged Explanatory Variables for Modeling Neighborhood Amenities and Mobility in Older Adults”, Cityscape, Vol. 16, No. 2, pp. 205-214."
+  },
+  {
+    "objectID": "lesson/Lesson06/Lesson06-Spatial_Weights.html#what-is-geographically-referenced-attribute",
+    "href": "lesson/Lesson06/Lesson06-Spatial_Weights.html#what-is-geographically-referenced-attribute",
+    "title": "Lesson 6: Spatial Weights and Applications",
+    "section": "What is geographically referenced attribute?",
+    "text": "What is geographically referenced attribute?\n\n\n\n\n\nRows: 323\nColumns: 12\n$ SUBZONE_N        <chr> \"MARINA SOUTH\", \"PEARL'S HILL\", \"BOAT QUAY\", \"HENDERS…\n$ SUBZONE_C        <fct> MSSZ01, OTSZ01, SRSZ03, BMSZ08, BMSZ03, BMSZ07, BMSZ0…\n$ PLN_AREA_N       <fct> MARINA SOUTH, OUTRAM, SINGAPORE RIVER, BUKIT MERAH, B…\n$ PLN_AREA_C       <fct> MS, OT, SR, BM, BM, BM, BM, SR, QT, QT, QT, BM, ME, R…\n$ REGION_N         <fct> CENTRAL REGION, CENTRAL REGION, CENTRAL REGION, CENTR…\n$ REGION_C         <fct> CR, CR, CR, CR, CR, CR, CR, CR, CR, CR, CR, CR, CR, C…\n$ YOUNG            <dbl> NA, 1100, 0, 2620, 2840, 2910, 2850, 0, 1120, 30, NA,…\n$ `ECONOMY ACTIVE` <dbl> NA, 3420, 50, 7500, 6260, 7560, 8340, 50, 2750, 210, …\n$ AGED             <dbl> NA, 2110, 20, 3260, 1630, 3310, 3590, 10, 560, 50, NA…\n$ TOTAL            <dbl> NA, 6630, 70, 13380, 10730, 13780, 14780, 60, 4430, 2…\n$ DEPENDENCY       <dbl> NA, 0.9385965, 0.4000000, 0.7840000, 0.7140575, 0.822…\n$ geometry         <MULTIPOLYGON [m]> MULTIPOLYGON (((31495.56 30..., MULTIPOL…\n\n\n\nA kind of data that is very similar to an ordinary data. The only difference is that each observation is associated with some form of geography such as numbers of aged population by planning subzone."
+  },
+  {
+    "objectID": "lesson/Lesson06/Lesson06-Spatial_Weights.html#what-are-spatial-weights-wij",
+    "href": "lesson/Lesson06/Lesson06-Spatial_Weights.html#what-are-spatial-weights-wij",
+    "title": "Lesson 6: Spatial Weights and Applications",
+    "section": "What are Spatial Weights (wij)",
+    "text": "What are Spatial Weights (wij)\n\nA way to define spatial neighbourhood.\n\n\n\nBefore we can perform statistics test of spatial randomness, we need to understand how spatial relationship among geographical areas can be defined mathematically."
+  },
+  {
+    "objectID": "lesson/Lesson06/Lesson06-Spatial_Weights.html#applications-of-spatial-weights",
+    "href": "lesson/Lesson06/Lesson06-Spatial_Weights.html#applications-of-spatial-weights",
+    "title": "Lesson 6: Spatial Weights and Applications",
+    "section": "Applications of Spatial Weights",
+    "text": "Applications of Spatial Weights\nFormally, for observation i, the spatial lag of yi, referred to as [Wy]i (the variable Wy observed for location i) is:\n\nwhere the weights wij consist of the elements of the i-th row of the matrix W, matched up with the corresponding elements of the vector y.\n\nWith a neighbor structure defined by the non-zero elements of the spatial weights matrix W, a spatially lagged variable is a weighted sum or a weighted average of the neighboring values for that variable. In most commonly used notation, the spatial lag of y is then expressed as Wy."
+  },
+  {
+    "objectID": "lesson/Lesson06/Lesson06-Spatial_Weights.html#references",
+    "href": "lesson/Lesson06/Lesson06-Spatial_Weights.html#references",
+    "title": "Lesson 6: Spatial Weights and Applications",
+    "section": "References",
+    "text": "References\n\nChapter 2. Codifying the neighbourhood structure of Handbook of Spatial Analysis: Theory and Application with R.\nFrançois Bavaud (2010) “Models for Spatial Weights: A Systematic Look” Geographical Analysis, Vol. 30, No.2, pp 153-171.\nTony H. Grubesic and Andrea L. Rosso (2014) “The Use of Spatially Lagged Explanatory Variables for Modeling Neighborhood Amenities and Mobility in Older Adults”, Cityscape, Vol. 16, No. 2, pp. 205-214."
   }
 ]
