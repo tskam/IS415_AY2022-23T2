@@ -1397,7 +1397,7 @@
     "href": "lesson/Lesson07/Lesson07-GLSA.html#content",
     "title": "Lesson 7: Global and Local Measures of Spatial Association",
     "section": "Content",
-    "text": "Content\n\nWhat is Spatial Autocorrelation\n\nMeasures of Global Spatial Autocorrelation\nMeasures of Global High/Low Clustering\n\nIntroducing Localised Geospatial Analysis\n\nLocal Indicators of Spatial Association (LISA)\n\nCluster and Outlier Analysis\n\nLocal Moran and Local Geary\nMoran scatterplot\nLISA Cluster Map\n\nHot Spot and Cold Spot Areas Analysis\n\nGetis and Ord’s G-statistics\n\nEmerging Hot Spot Analysis (EHSA)\n\nSpacetime and spacetime cubes\nMann-Kendall Test\nEHSA map"
+    "text": "Content\n\n\n\nWhat is Spatial Autocorrelation\n\nMeasures of Global Spatial Autocorrelation\nMeasures of Global High/Low Clustering\n\nIntroducing Localised Geospatial Analysis\n\nLocal Indicators of Spatial Association (LISA)\n\nCluster and Outlier Analysis\n\nLocal Moran and Local Geary\nMoran scatterplot\nLISA Cluster Map\n\n\n\n\nHot Spot and Cold Spot Areas Analysis\n\nGetis and Ord’s G-statistics\n\nEmerging Hot Spot Analysis (EHSA)\n\nSpacetime and spacetime cubes\nMann-Kendall Test\nEHSA map"
   },
   {
     "objectID": "lesson/Lesson07/Lesson07-GLSA.html#what-is-spatial-autocorrelation",

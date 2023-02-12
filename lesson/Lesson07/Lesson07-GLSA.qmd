@@ -16,6 +16,8 @@ editor: visual
 
 ## Content
 
+::: columns
+::: {.column width="50%"}
 -   What is Spatial Autocorrelation
     -   Measures of Global Spatial Autocorrelation
     -   Measures of Global High/Low Clustering
@@ -25,12 +27,18 @@ editor: visual
     -   Local Moran and Local Geary
     -   Moran scatterplot
     -   LISA Cluster Map
+::: 
+
+::: {.column width="50%"}
+    
 -   Hot Spot and Cold Spot Areas Analysis
     -   Getis and Ord's G-statistics
 -   Emerging Hot Spot Analysis (EHSA)
     -   Spacetime and spacetime cubes
     -   Mann-Kendall Test
     -   EHSA map
+:::
+:::
 
 ## What is Spatial Autocorrelation
 
@@ -88,6 +96,7 @@ Reference: [A Computer Movie Simulating Urban Growth in the Detroit Region](http
 
 ::: columns
 ::: {.column width="50%"}
+::: {style="font-size: 0.9em"}
 -   Spatial autocorrelation is the term used to describe the presence of systematic spatial variation in a variable.
 
 -   The variable can assume values either:
@@ -95,6 +104,7 @@ Reference: [A Computer Movie Simulating Urban Growth in the Detroit Region](http
     -   at any point on a continuous surface (such as land use type or annual precipitation levels in a region);
     -   at a set of fixed sites located within a region (such as prices at a set of retail outlets); or
     -   across a set of areas that subdivide a region (such as the count or proportion of households with two or more cars in a set of Census tracts that divide an urban region).
+:::
 :::
 
 ::: {.column width="50%"}
@@ -542,7 +552,7 @@ Before running the test, you should ensure that:
 
 ::: {style="font-size: 0.60em"}
 | Pattern Name          | Defination                                                                                                                                                                                                                                                                                                               |
-|-------------------|-----------------------------------------------------|
+|--------------------|----------------------------------------------------|
 | No pattern detected   | Does not fall into any of the hot or cold spot patterns defined below.                                                                                                                                                                                                                                                   |
 | New Hot Spot          | A location that is a statistically significant hot spot for the final time step and has never been a statistically significant hot spot before.                                                                                                                                                                          |
 | Consecutive Hot Spot  | A location with a single uninterrupted run of at least two statistically significant hot spot bins in the final time-step intervals. The location has never been a statistically significant hot spot prior to the final hot spot run and less than 90 percent of all bins are statistically significant hot spots.      |
@@ -559,16 +569,16 @@ Before running the test, you should ensure that:
 ### EHSA Patterns: Cold Spot Trends
 
 ::: {style="font-size: 0.60em"}
-| Pattern Name          | Definition                                                                                                                                                                                                                                                                                                               |
-|-------------------|-----------------------------------------------------|
-| New Cold Spot         | A location that is a statistically significant cold spot for the final time step and has never been a statistically significant cold spot before. |
-| Consecutive Cold Spot  | A location with a single uninterrupted run of at least two statistically significant cold spot bins in the final time-step intervals. The location has never been a statistically significant cold spot prior to the final cold spot run and less than 90 percent of all bins are statistically significant cold spots.  |
-| Intensifying Cold Spot | A location that has been a statistically significant cold spot for 90 percent of the time-step intervals, including the final time step. In addition, the intensity of clustering of low counts in each time step is increasing overall and that increase is statistically significant. |
-| Persistent Cold Spot   | A location that has been a statistically significant cold spot for 90 percent of the time-step intervals with no discernible trend in the intensity of clustering of counts over time. |
-| Diminishing Cold Spot  | A location that has been a statistically significant cold spot for 90 percent of the time-step intervals, including the final time step. In addition, the intensity of clustering of low counts in each time step is decreasing overall and that decrease is statistically significant. |
+| Pattern Name           | Definition                                                                                                                                                                                                                                                                                                                 |
+|--------------------|----------------------------------------------------|
+| New Cold Spot          | A location that is a statistically significant cold spot for the final time step and has never been a statistically significant cold spot before.                                                                                                                                                                          |
+| Consecutive Cold Spot  | A location with a single uninterrupted run of at least two statistically significant cold spot bins in the final time-step intervals. The location has never been a statistically significant cold spot prior to the final cold spot run and less than 90 percent of all bins are statistically significant cold spots.    |
+| Intensifying Cold Spot | A location that has been a statistically significant cold spot for 90 percent of the time-step intervals, including the final time step. In addition, the intensity of clustering of low counts in each time step is increasing overall and that increase is statistically significant.                                    |
+| Persistent Cold Spot   | A location that has been a statistically significant cold spot for 90 percent of the time-step intervals with no discernible trend in the intensity of clustering of counts over time.                                                                                                                                     |
+| Diminishing Cold Spot  | A location that has been a statistically significant cold spot for 90 percent of the time-step intervals, including the final time step. In addition, the intensity of clustering of low counts in each time step is decreasing overall and that decrease is statistically significant.                                    |
 | Sporadic Cold Spot     | A statistically significant cold spot for the final time-step interval with a history of also being an on-again and off-again cold spot. Less than 90 percent of the time-step intervals have been statistically significant cold spots and none of the time-step intervals have been statistically significant hot spots. |
-| Oscillating Cold Spot  | A statistically significant cold spot for the final time-step interval that has a history of also being a statistically significant hot spot during a prior time step. Less than 90 percent of the time-step intervals have been statistically significant cold spots. |
-| Historical Cold Spot   | The most recent time period is not cold, but at least 90 percent of the time-step intervals have been statistically significant cold spots. |
+| Oscillating Cold Spot  | A statistically significant cold spot for the final time-step interval that has a history of also being a statistically significant hot spot during a prior time step. Less than 90 percent of the time-step intervals have been statistically significant cold spots.                                                     |
+| Historical Cold Spot   | The most recent time period is not cold, but at least 90 percent of the time-step intervals have been statistically significant cold spots.                                                                                                                                                                                |
 :::
 
 ------------------------------------------------------------------------
