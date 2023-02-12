@@ -74,7 +74,7 @@ These six papers are classics of Global and Local Spatial Autocorrelation. Be wa
 #| eval: false
 #| echo: false
 
-renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson07/Lesson07-SpaAuto.html",
+renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson07/Lesson07-GLSA.html",
                    to = "../../_site/lesson/Lesson07/Lesson07-GLSA.pdf")
 ```
 
