@@ -15,41 +15,38 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Content
 
-- Tobler’s First law of Geography
-- Principles of Spatial Autocorrelation
-- Concepts of Spatial Proximity and Spatial Weights
-    - Contiguity-Based Spatial Weights: Rook's & Queen's
-    - Distance-Band Spatial Weights: fixed and adaptive
-- Applications of Spatial Weights
-    - Global measures of spatial autocorrelation
-    - Correlogram
+-   Tobler's First law of Geography
+-   Principles of Spatial Autocorrelation
+-   Concepts of Spatial Proximity and Spatial Weights
+    -   Contiguity-Based Spatial Weights: Rook's & Queen's
+    -   Distance-Band Spatial Weights: fixed and adaptive
+-   Applications of Spatial Weights
+    -   Global measures of spatial autocorrelation
+    -   Correlogram
 
-## Lesson Slides and Hands-on Notes 
+## Lesson Slides and Hands-on Notes
 
-+ Slides in [html](../lesson/Lesson06/Lesson06-Spatial_Weights.html) and [pdf](../lesson/Lesson06/Lesson06-Spatial_Weights.pdf) formats
-+ Handout of Hands-on Exercise 6 in [html](../Hands-on_Ex/Hands-on_Ex06/Hands-on_Ex06-SWsA.html)
+-   Slides in [html](../lesson/Lesson06/Lesson06-Spatial_Weights.html) and [pdf](../lesson/Lesson06/Lesson06-Spatial_Weights.pdf) formats
+-   Handout of Hands-on Exercise 6 in [html](https://r4gdsa.netlify.app/chap08.html)
 
 ### Self-reading Before Meet-up
 
 To read before class:
 
-- Chapter 2. [Codifying the neighbourhood structure](https://www.insee.fr/en/statistiques/fichier/3635545/imet131-f-chapitre-2.pdf) of [Handbook of Spatial Analysis: Theory and Application with R](https://www.insee.fr/en/information/3635545).
+-   Chapter 2. [Codifying the neighbourhood structure](https://www.insee.fr/en/statistiques/fichier/3635545/imet131-f-chapitre-2.pdf) of [Handbook of Spatial Analysis: Theory and Application with R](https://www.insee.fr/en/information/3635545).
 
 Alternatively
 
-- Chapter 9: Modelling Areal Data of Applied Spatial Data Analysis with R (2nd Edition).  This book is available in smu digital library.  Until section 9.3.1.
+-   Chapter 9: Modelling Areal Data of Applied Spatial Data Analysis with R (2nd Edition). This book is available in smu digital library. Until section 9.3.1.
 
 ## References
 
-* François Bavaud (2010) ["Models for Spatial Weights: A Systematic Look"](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.1998.tb00394.x) *Geographical Analysis*, Vol. 30, No.2, pp 153-171.
+-   François Bavaud (2010) ["Models for Spatial Weights: A Systematic Look"](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.1998.tb00394.x) *Geographical Analysis*, Vol. 30, No.2, pp 153-171.
 
-* Tony H. Grubesic and Andrea L. Rosso (2014) ["The Use of Spatially Lagged Explanatory Variables for Modeling Neighborhood Amenities and Mobility in Older Adults"](https://www-jstor-org.libproxy.smu.edu.sg/stable/26326897?sid=primo&seq=1#metadata_info_tab_contents), *Cityscape*, Vol. 16, No. 2, pp. 205-214.
+-   Tony H. Grubesic and Andrea L. Rosso (2014) ["The Use of Spatially Lagged Explanatory Variables for Modeling Neighborhood Amenities and Mobility in Older Adults"](https://www-jstor-org.libproxy.smu.edu.sg/stable/26326897?sid=primo&seq=1#metadata_info_tab_contents), *Cityscape*, Vol. 16, No. 2, pp. 205-214.
 
 ## All About R
 
-- [spdep](https://r-spatial.github.io/spdep/articles/CO69.html) package
-    - [dnearneigh()](https://r-spatial.github.io/spdep/reference/dnearneigh.html)
-    - [knearneigh()](https://r-spatial.github.io/spdep/reference/knearneigh.html)
-
-
-
+-   [spdep](https://r-spatial.github.io/spdep/articles/CO69.html) package
+    -   [dnearneigh()](https://r-spatial.github.io/spdep/reference/dnearneigh.html)
+    -   [knearneigh()](https://r-spatial.github.io/spdep/reference/knearneigh.html)

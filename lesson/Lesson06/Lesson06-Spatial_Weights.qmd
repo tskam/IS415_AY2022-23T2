@@ -286,8 +286,8 @@ Spatial window sum, on the other hand, summed up the GDPPC of all neighbours and
 #| eval: false
 #| echo: false
 
-renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson05/Lesson05-LCLQ.html",
-                   to = "../../_site/lesson/Lesson05/Lesson05-LCLQ.pdf")
+renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson06/Lesson06-Spatial_Weights.html",
+                   to = "../../_site/lesson/Lesson06/Lesson06-Spatial_Weights.pdf")
 ```
 
 
