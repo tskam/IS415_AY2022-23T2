@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-01-27">
+<meta name="dcterms.date" content="2023-02-10">
 
-<title>IS415 AY2022-23T2 - Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osun State, Nigeria</title>
+<title>IS415 AY2022-23T2 - Take-home Exercise 2: Spatio-temporal Analysis of COVID-19 Vaccination Trends at the Sub-district Level, DKI Jakarta</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -163,9 +163,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
   <li><a href="#the-task" id="toc-the-task" class="nav-link" data-scroll-target="#the-task">The Task</a>
   <ul class="collapse">
-  <li><a href="#exploratory-spatial-data-analysis-esda" id="toc-exploratory-spatial-data-analysis-esda" class="nav-link" data-scroll-target="#exploratory-spatial-data-analysis-esda">Exploratory Spatial Data Analysis (ESDA)</a></li>
-  <li><a href="#second-order-spatial-point-patterns-analysis" id="toc-second-order-spatial-point-patterns-analysis" class="nav-link" data-scroll-target="#second-order-spatial-point-patterns-analysis">Second-order Spatial Point Patterns Analysis</a></li>
-  <li><a href="#spatial-correlation-analysis" id="toc-spatial-correlation-analysis" class="nav-link" data-scroll-target="#spatial-correlation-analysis">Spatial Correlation Analysis</a></li>
+  <li><a href="#choropleth-mapping-and-analysis" id="toc-choropleth-mapping-and-analysis" class="nav-link" data-scroll-target="#choropleth-mapping-and-analysis">Choropleth Mapping and Analysis</a></li>
+  <li><a href="#local-gi-analysis" id="toc-local-gi-analysis" class="nav-link" data-scroll-target="#local-gi-analysis">Local Gi* Analysis</a></li>
+  <li><a href="#emerging-hot-spot-analysisehsa" id="toc-emerging-hot-spot-analysisehsa" class="nav-link" data-scroll-target="#emerging-hot-spot-analysisehsa">Emerging Hot Spot Analysis(EHSA)</a></li>
   </ul></li>
   <li><a href="#the-data" id="toc-the-data" class="nav-link" data-scroll-target="#the-data">The Data</a></li>
   <li><a href="#grading-criteria" id="toc-grading-criteria" class="nav-link" data-scroll-target="#grading-criteria">Grading Criteria</a></li>
@@ -182,7 +182,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osun State, Nigeria</h1>
+<h1 class="title">Take-home Exercise 2: Spatio-temporal Analysis of COVID-19 Vaccination Trends at the Sub-district Level, DKI Jakarta</h1>
 </div>
 
 
@@ -193,14 +193,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 27, 2023</p>
+      <p class="date">February 10, 2023</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">February 7, 2023</p>
+      <p class="date-modified">February 12, 2023</p>
     </div>
   </div>
     
@@ -224,41 +224,45 @@ Note
 </div>
 <section id="setting-the-scene" class="level2">
 <h2 class="anchored" data-anchor-id="setting-the-scene">Setting the Scene</h2>
-<p>Water is an important resource to mankind. Clean and accessible water is critical to human health. It provides a healthy environment, a sustainable economy, reduces poverty and ensures peace and security. Yet over 40% of the global population does not have access to sufficient clean water. By 2025, 1.8 billion people will be living in countries or regions with absolute water scarcity, according to UN-Water. The lack of water poses a major threat to several sectors, including food security. Agriculture uses about 70% of the world’s accessible freshwater.</p>
-<p>Developing countries are most affected by water shortages and poor water quality. Up to 80% of illnesses in the developing world are linked to inadequate water and sanitation. Despite technological advancement, providing clean water to the rural community is still a major development issues in many countries globally, especially countries in the Africa continent.</p>
-<p>To address the issue of providing clean and sustainable water supply to the rural community, a global <a href="https://www.waterpointdata.org/about/">Water Point Data Exchange (WPdx)</a> project has been initiated. The main aim of this initiative is to collect water point related data from rural areas at the water point or small water scheme level and share the data via WPdx Data Repository, a cloud-based data library. What is so special of this project is that data are collected based on <a href="https://www.waterpointdata.org/wp-content/uploads/2021/04/WPDx_Data_Standard.pdf">WPDx Data Standard</a>.</p>
+<p>Since late December 2019, an outbreak of a novel coronavirus disease (COVID-19; previously known as 2019-nCoV) was reported in Wuhan, China, which had subsequently affected 210 countries worldwide. In general, COVID-19 is an acute resolved disease but it can also be deadly, with a 2% case fatality rate.</p>
+<p>The COVID-19 vaccination in Indonesia is an ongoing mass immunisation in response to the COVID-19 pandemic in Indonesia. On 13 January 2021, the program commenced when President Joko Widodo was vaccinated at the presidential palace. In terms of total doses given, Indonesia ranks third in Asia and fifth in the world.</p>
+<p>According to wikipedia, as of 5 February 2023 at 18:00 WIB (UTC+7), 204,266,655 people had received the first dose of the vaccine and 175,131,893 people had been fully vaccinated; 69,597,474 of them had been inoculated with the booster or the third dose, while 1,585,164 had received the fourth dose. Jakarta has the highest percentage of population fully vaccinated with 103.46%, followed by Bali and Special Region of Yogyakarta with 85.45% and 83.02% respectively.</p>
+<p>Despite its compactness, the cumulative vaccination rate are not evenly distributed within DKI Jakarta. The question is where are the sub-districts with relatively higher number of vaccination rate and how they changed over time.</p>
 </section>
 <section id="objectives" class="level2">
 <h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
-<p>Geospatial analytics hold tremendous potential to address complex problems facing society. In this study, you are tasked to apply appropriate spatial point patterns analysis methods to discover the geographical distribution of functional and non-function water points and their co-locations if any in Osun State, Nigeria.</p>
+<p>Exploratory Spatial Data Analysis (ESDA) hold tremendous potential to address complex problems facing society. In this study, you are tasked to apply appropriate Local Indicators of Spatial Association (LISA) and Emerging Hot Spot Analysis (EHSA) to undercover the spatio-temporal trends of COVID-19 vaccination in DKI Jakarta.</p>
 </section>
 <section id="the-task" class="level2">
 <h2 class="anchored" data-anchor-id="the-task">The Task</h2>
 <p>The specific tasks of this take-home exercise are as follows:</p>
-<section id="exploratory-spatial-data-analysis-esda" class="level3">
-<h3 class="anchored" data-anchor-id="exploratory-spatial-data-analysis-esda">Exploratory Spatial Data Analysis (ESDA)</h3>
+<section id="choropleth-mapping-and-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="choropleth-mapping-and-analysis">Choropleth Mapping and Analysis</h3>
 <ul>
-<li>Derive kernel density maps of functional and non-functional water points. Using appropriate tmap functions,</li>
-<li>Display the kernel density maps on openstreetmap of Osub State, Nigeria.</li>
-<li>Describe the spatial patterns revealed by the kernel density maps. Highlight the advantage of kernel density map over point map.</li>
+<li>Compute the monthly vaccination rate from July 2021 to June 2022 at sub-district (also known as kelurahan in Bahasa Indonesia) level,</li>
+<li>Prepare the monthly vaccination rate maps by using appropriate tmap functions,</li>
+<li>Describe the spatial patterns revealed by the choropleth maps (not more than 200 words).</li>
 </ul>
 </section>
-<section id="second-order-spatial-point-patterns-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="second-order-spatial-point-patterns-analysis">Second-order Spatial Point Patterns Analysis</h3>
-<p>With reference to the spatial point patterns observed in ESDA:</p>
+<section id="local-gi-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="local-gi-analysis">Local Gi* Analysis</h3>
+<p>With reference to the vaccination rate maps prepared in ESDA:</p>
 <ul>
-<li>Formulate the null hypothesis and alternative hypothesis and select the confidence level.</li>
-<li>Perform the test by using appropriate Second order spatial point patterns analysis technique.</li>
-<li>With reference to the analysis results, draw statistical conclusions.</li>
+<li>Compute local Gi* values of the monthly vaccination rate,</li>
+<li>Display the Gi* maps of the monthly vaccination rate. The maps should only display the significant (i.e.&nbsp;p-value &lt; 0.05)<br>
+</li>
+<li>With reference to the analysis results, draw statistical conclusions (not more than 250 words).</li>
 </ul>
 </section>
-<section id="spatial-correlation-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="spatial-correlation-analysis">Spatial Correlation Analysis</h3>
-<p>In this section, you are required to confirm statistically if the spatial distribution of functional and non-functional water points are independent from each other.</p>
+<section id="emerging-hot-spot-analysisehsa" class="level3">
+<h3 class="anchored" data-anchor-id="emerging-hot-spot-analysisehsa">Emerging Hot Spot Analysis(EHSA)</h3>
+<p>With reference to the local Gi* values of the vaccination rate maps prepared in the previous section:</p>
 <ul>
-<li>Formulate the null hypothesis and alternative hypothesis and select the confidence level.</li>
-<li>Perform the test by using appropriate Second order spatial point patterns analysis technique.</li>
-<li>With reference to the analysis results, draw statistical conclusions.</li>
+<li>Perform Mann-Kendall Test by using the spatio-temporal local Gi* values,</li>
+<li>Select three sub-districts and describe the temporal trends revealed (not more than 250 words), and</li>
+<li>Prepared a EHSA map of the Gi* values of vaccination rate. The maps should only display the significant (i.e.&nbsp;p-value &lt; 0.05).<br>
+</li>
+<li>With reference to the EHSA map prepared, describe the spatial patterns revelaed. (not more than 250 words).</li>
 </ul>
 </section>
 </section>
@@ -266,11 +270,28 @@ Note
 <h2 class="anchored" data-anchor-id="the-data">The Data</h2>
 <section id="apstial-data" class="level4">
 <h4 class="anchored" data-anchor-id="apstial-data">Apstial data</h4>
-<p>For the purpose of this assignment, data from <a href="https://www.waterpointdata.org/access-data/">WPdx Global Data Repositories</a> will be used. There are two versions of the data. They are: WPdx-Basic and WPdx+. You are required to use <strong>WPdx+</strong> data set.</p>
+<p>For the purpose of this assignment, data from <a href="https://riwayat-file-vaksinasi-dki-jakarta-jakartagis.hub.arcgis.com/">Riwayat File Vaksinasi DKI Jakarta</a> will be used. Daily vaccination data are provides. You are only required to download either the first day of the month or last day of the month of the study period.</p>
 </section>
 <section id="geospatial-data" class="level4">
 <h4 class="anchored" data-anchor-id="geospatial-data">Geospatial data</h4>
-<p>This study will focus of Osun State, Nigeria. The state boundary GIS data of Nigeria can be downloaded either from The <a href="https://data.humdata.org/">Humanitarian Data Exchange</a> portal or <a href="https://www.geoboundaries.org/index.html">geoBoundaries</a>.</p>
+<p>For the purpose of this study, DKI Jakarta administration boundary 2019 will be used. The data set can be downloaded at Indonesia Geospatial portal, specifically at <a href="https://www.indonesia-geospasial.com/2020/04/download-shapefile-shp-batas-desa.html">this page</a>.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>The national Projected Coordinates Systems of Indonesia is DGN95 / Indonesia TM-3 zone 54.1.</li>
+<li>Exclude all the outer islands from the DKI Jakarta sf data frame, and</li>
+<li>Retain the first nine fields in the DKI Jakarta sf data frame. The ninth field JUMLAH_PEN = Total Population.</li>
+</ul>
+</div>
+</div>
 </section>
 </section>
 <section id="grading-criteria" class="level2">
@@ -294,15 +315,14 @@ Note
 </section>
 <section id="due-date" class="level2">
 <h2 class="anchored" data-anchor-id="due-date">Due Date</h2>
-<p>12th February 2023 (Sunday), 11.59pm (midnight).</p>
+<p>28th February 2023 (Tuesday), 11.59pm (midnight).</p>
 </section>
 <section id="learning-from-senior" class="level2">
 <h2 class="anchored" data-anchor-id="learning-from-senior">Learning from senior</h2>
 <p>You are advised to review these sample submissions prepared by your seniors.</p>
 <ul>
-<li><p><a href="https://rpubs.com/xiaorongw/IS415_Take-home_Ex01">Take-home Exercise 1: Geographic Analysis of the Supply and Demand of Childcare Services in Singapore</a> by Xiao Rong Wong.</p></li>
-<li><p><a href="https://is415-msty.netlify.app/posts/2021-09-19-take-home-exercise-2/">Take-Home Exercise 2: Spatial Point Patterns Analysis of Airbnb Listings in Singapore</a> by MEGAN SIM TZE YEN.</p></li>
-<li><p><a href="https://rpubs.com/deniseadele/secondorder_pointpattern">Interactive Plotting of Second-order Spatial Point Patterns Analysis: Childcare Centres in Singapore</a> by Denise Adele Chua.</p></li>
+<li><p><a href="https://rpubs.com/xiaorongw/IS415_Take-home_Ex02">Detecting Spatio-Temporal Patterns of COVID-19 in Central Mexico</a> by Xiao Rong Wong.</p></li>
+<li><p><a href="https://is415-msty.netlify.app/posts/2021-09-10-take-home-exercise-1/">Take-Home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia</a> by MEGAN SIM TZE YEN.</p></li>
 </ul>
 </section>
 <section id="q-a" class="level2">

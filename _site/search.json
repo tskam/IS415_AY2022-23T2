@@ -1258,5 +1258,82 @@
     "title": "Lesson 5: Advanced Spatial Point Patterns Analysis:  Local Co-Location Quotient",
     "section": "Common Questions of Two Point Events",
     "text": "Common Questions of Two Point Events\n\nAre certain business types likely to be colocated (such as coffee shops and retail stores)?\nAre locations of residential theft more likely to occur or be colocated with certain housing types?\nAre there specific areas in your study area where failed restaurant inspections are colocated with insect infestations?"
+  },
+  {
+    "objectID": "th_ex2.html",
+    "href": "th_ex2.html",
+    "title": "Take-home Exercise 2: Spatio-temporal Analysis of COVID-19 Vaccination Trends at the Sub-district Level, DKI Jakarta",
+    "section": "",
+    "text": "Note\n\n\n\nThis handout provides the context, the task, the expectation and the grading criteria of Take-home Exercise 1. Students must review and understand them before getting started with the take-home exercise."
+  },
+  {
+    "objectID": "th_ex2.html#setting-the-scene",
+    "href": "th_ex2.html#setting-the-scene",
+    "title": "Take-home Exercise 2: Spatio-temporal Analysis of COVID-19 Vaccination Trends at the Sub-district Level, DKI Jakarta",
+    "section": "Setting the Scene",
+    "text": "Setting the Scene\nSince late December 2019, an outbreak of a novel coronavirus disease (COVID-19; previously known as 2019-nCoV) was reported in Wuhan, China, which had subsequently affected 210 countries worldwide. In general, COVID-19 is an acute resolved disease but it can also be deadly, with a 2% case fatality rate.\nThe COVID-19 vaccination in Indonesia is an ongoing mass immunisation in response to the COVID-19 pandemic in Indonesia. On 13 January 2021, the program commenced when President Joko Widodo was vaccinated at the presidential palace. In terms of total doses given, Indonesia ranks third in Asia and fifth in the world.\nAccording to wikipedia, as of 5 February 2023 at 18:00 WIB (UTC+7), 204,266,655 people had received the first dose of the vaccine and 175,131,893 people had been fully vaccinated; 69,597,474 of them had been inoculated with the booster or the third dose, while 1,585,164 had received the fourth dose. Jakarta has the highest percentage of population fully vaccinated with 103.46%, followed by Bali and Special Region of Yogyakarta with 85.45% and 83.02% respectively.\nDespite its compactness, the cumulative vaccination rate are not evenly distributed within DKI Jakarta. The question is where are the sub-districts with relatively higher number of vaccination rate and how they changed over time."
+  },
+  {
+    "objectID": "th_ex2.html#objectives",
+    "href": "th_ex2.html#objectives",
+    "title": "Take-home Exercise 2: Spatio-temporal Analysis of COVID-19 Vaccination Trends at the Sub-district Level, DKI Jakarta",
+    "section": "Objectives",
+    "text": "Objectives\nExploratory Spatial Data Analysis (ESDA) hold tremendous potential to address complex problems facing society. In this study, you are tasked to apply appropriate Local Indicators of Spatial Association (LISA) and Emerging Hot Spot Analysis (EHSA) to undercover the spatio-temporal trends of COVID-19 vaccination in DKI Jakarta."
+  },
+  {
+    "objectID": "th_ex2.html#the-task",
+    "href": "th_ex2.html#the-task",
+    "title": "Take-home Exercise 2: Spatio-temporal Analysis of COVID-19 Vaccination Trends at the Sub-district Level, DKI Jakarta",
+    "section": "The Task",
+    "text": "The Task\nThe specific tasks of this take-home exercise are as follows:\n\nChoropleth Mapping and Analysis\n\nCompute the monthly vaccination rate from July 2021 to June 2022 at sub-district (also known as kelurahan in Bahasa Indonesia) level,\nPrepare the monthly vaccination rate maps by using appropriate tmap functions,\nDescribe the spatial patterns revealed by the choropleth maps (not more than 200 words).\n\n\n\nLocal Gi* Analysis\nWith reference to the vaccination rate maps prepared in ESDA:\n\nCompute local Gi* values of the monthly vaccination rate,\nDisplay the Gi* maps of the monthly vaccination rate. The maps should only display the significant (i.e. p-value < 0.05)\n\nWith reference to the analysis results, draw statistical conclusions (not more than 250 words).\n\n\n\nEmerging Hot Spot Analysis(EHSA)\nWith reference to the local Gi* values of the vaccination rate maps prepared in the previous section:\n\nPerform Mann-Kendall Test by using the spatio-temporal local Gi* values,\nSelect three sub-districts and describe the temporal trends revealed (not more than 250 words), and\nPrepared a EHSA map of the Gi* values of vaccination rate. The maps should only display the significant (i.e. p-value < 0.05).\n\nWith reference to the EHSA map prepared, describe the spatial patterns revelaed. (not more than 250 words)."
+  },
+  {
+    "objectID": "th_ex2.html#the-data",
+    "href": "th_ex2.html#the-data",
+    "title": "Take-home Exercise 2: Spatio-temporal Analysis of COVID-19 Vaccination Trends at the Sub-district Level, DKI Jakarta",
+    "section": "The Data",
+    "text": "The Data\n\nApstial data\nFor the purpose of this assignment, data from Riwayat File Vaksinasi DKI Jakarta will be used. Daily vaccination data are provides. You are only required to download either the first day of the month or last day of the month of the study period.\n\n\nGeospatial data\nFor the purpose of this study, DKI Jakarta administration boundary 2019 will be used. The data set can be downloaded at Indonesia Geospatial portal, specifically at this page.\n\n\n\n\n\n\nNote\n\n\n\n\nThe national Projected Coordinates Systems of Indonesia is DGN95 / Indonesia TM-3 zone 54.1.\nExclude all the outer islands from the DKI Jakarta sf data frame, and\nRetain the first nine fields in the DKI Jakarta sf data frame. The ninth field JUMLAH_PEN = Total Population."
+  },
+  {
+    "objectID": "th_ex2.html#grading-criteria",
+    "href": "th_ex2.html#grading-criteria",
+    "title": "Take-home Exercise 2: Spatio-temporal Analysis of COVID-19 Vaccination Trends at the Sub-district Level, DKI Jakarta",
+    "section": "Grading Criteria",
+    "text": "Grading Criteria\nThis exercise will be graded by using the following criteria:\n\nGeospatial Data Wrangling (20 marks): This is an important aspect of geospatial analytics. You will be assessed on your ability to employ appropriate R functions from various R packages specifically designed for modern data science such as readxl, tidyverse (tidyr, dplyr, ggplot2), sf just to mention a few of them, to perform the entire geospatial data wrangling processes, including. This is not limited to data import, data extraction, data cleaning and data transformation. Besides assessing your ability to use the R functions, this criterion also includes your ability to clean and derive appropriate variables to meet the analysis need. (Warning: All data are like vast grassland full of land mines. Your job is to clear those mines and not to step on them).\nGeospatial Analysis (30 marks): In this exercise, you are expected to use the appropriate thematic and analytics mapping techniques and R functions introduced in class to analysis the geospatial data prepared. You will be assessed on your ability to derive analytical maps by using appropriate rate mapping techniques.\nGeovisualisation (20 marks): In this section, you will be assessed on your ability to communicate the complex spatial statistics results in business friendly visual representations. This course is geospatial centric, hence, it is important for you to demonstrate your competency in using appropriate geovisualisation techniques to reveal and communicate the findings of your analysis.\nReproducibility (20 marks): This is an important learning outcome of this exercise. You will be assessed on your ability to provide a comprehensive documentation of the analysis procedures in the form of code chunks of RMarkdown. It is important to note that it is not enough by merely providing the code chunk without any explanation on the purpose and R function(s) used.\nBonus (10 marks): Demonstrate your ability to employ methods beyond what you had learned in class to gain insights from the data. The methods used must be geospatial in nature."
+  },
+  {
+    "objectID": "th_ex2.html#submission-instructions",
+    "href": "th_ex2.html#submission-instructions",
+    "title": "Take-home Exercise 2: Spatio-temporal Analysis of COVID-19 Vaccination Trends at the Sub-district Level, DKI Jakarta",
+    "section": "Submission Instructions",
+    "text": "Submission Instructions\n\nThe write-up of the take-home exercise must be in Quarto html document format. You are required to publish the write-up on Netlify.\nThe R project of the take-home exercise must be pushed onto your Github repository.\nYou are required to provide the links to Netlify service of the take-home exercise write-up and github repository on eLearn."
+  },
+  {
+    "objectID": "th_ex2.html#due-date",
+    "href": "th_ex2.html#due-date",
+    "title": "Take-home Exercise 2: Spatio-temporal Analysis of COVID-19 Vaccination Trends at the Sub-district Level, DKI Jakarta",
+    "section": "Due Date",
+    "text": "Due Date\n28th February 2023 (Tuesday), 11.59pm (midnight)."
+  },
+  {
+    "objectID": "th_ex2.html#learning-from-senior",
+    "href": "th_ex2.html#learning-from-senior",
+    "title": "Take-home Exercise 2: Spatio-temporal Analysis of COVID-19 Vaccination Trends at the Sub-district Level, DKI Jakarta",
+    "section": "Learning from senior",
+    "text": "Learning from senior\nYou are advised to review these sample submissions prepared by your seniors.\n\nDetecting Spatio-Temporal Patterns of COVID-19 in Central Mexico by Xiao Rong Wong.\nTake-Home Exercise 1: Analysing and Visualising Spatio-temporal Patterns of COVID-19 in DKI Jakarta, Indonesia by MEGAN SIM TZE YEN."
+  },
+  {
+    "objectID": "th_ex2.html#q-a",
+    "href": "th_ex2.html#q-a",
+    "title": "Take-home Exercise 2: Spatio-temporal Analysis of COVID-19 Vaccination Trends at the Sub-district Level, DKI Jakarta",
+    "section": "Q & A",
+    "text": "Q & A\nPlease submit your questions or queries related to this take-home exercise on Piazza."
+  },
+  {
+    "objectID": "th_ex2.html#peer-learning",
+    "href": "th_ex2.html#peer-learning",
+    "title": "Take-home Exercise 2: Spatio-temporal Analysis of COVID-19 Vaccination Trends at the Sub-district Level, DKI Jakarta",
+    "section": "Peer Learning",
+    "text": "Peer Learning"
   }
 ]

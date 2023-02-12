@@ -15,9 +15,9 @@ website:
       - text: "Take-home Exercise 1"
         href: th_ex1.html
       - text: "Take-home Exercise 2"
-        href: Take-home_Ex02.html
+        href: th_ex2.html
       - text: "Take-home Exercise 3"
-        href: Take-home_Ex03.html
+        href: th_ex3.html
     - text: "Geospatial Analytics Project"
       href: GAproject.html
     - text: "Shiny Workshop"
