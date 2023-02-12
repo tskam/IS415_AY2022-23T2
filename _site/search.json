@@ -1391,5 +1391,103 @@
     "title": "Lesson 6: Spatial Weights and Applications",
     "section": "References",
     "text": "References\n\nChapter 2. Codifying the neighbourhood structure of Handbook of Spatial Analysis: Theory and Application with R.\nFrançois Bavaud (2010) “Models for Spatial Weights: A Systematic Look” Geographical Analysis, Vol. 30, No.2, pp 153-171.\nTony H. Grubesic and Andrea L. Rosso (2014) “The Use of Spatially Lagged Explanatory Variables for Modeling Neighborhood Amenities and Mobility in Older Adults”, Cityscape, Vol. 16, No. 2, pp. 205-214."
+  },
+  {
+    "objectID": "lesson/Lesson07/Lesson07-GLSA.html#content",
+    "href": "lesson/Lesson07/Lesson07-GLSA.html#content",
+    "title": "Lesson 7: Global and Local Measures of Spatial Association",
+    "section": "Content",
+    "text": "Content\n\nWhat is Spatial Autocorrelation\n\nMeasures of Global Spatial Autocorrelation\nMeasures of Global High/Low Clustering\n\nIntroducing Localised Geospatial Analysis\n\nLocal Indicators of Spatial Association (LISA)\n\nCluster and Outlier Analysis\n\nLocal Moran and Local Geary\nMoran scatterplot\nLISA Cluster Map\n\nHot Spot and Cold Spot Areas Analysis\n\nGetis and Ord’s G-statistics\n\nEmerging Hot Spot Analysis (EHSA)\n\nSpacetime and spacetime cubes\nMann-Kendall Test\nEHSA map"
+  },
+  {
+    "objectID": "lesson/Lesson07/Lesson07-GLSA.html#what-is-spatial-autocorrelation",
+    "href": "lesson/Lesson07/Lesson07-GLSA.html#what-is-spatial-autocorrelation",
+    "title": "Lesson 7: Global and Local Measures of Spatial Association",
+    "section": "What is Spatial Autocorrelation",
+    "text": "What is Spatial Autocorrelation\n\nToble’s First Law of Geography\nSpatial Dependency\nSpatial Autocorrelation\n\nPositive autocorrelation\nNegative autocorrelation"
+  },
+  {
+    "objectID": "lesson/Lesson07/Lesson07-GLSA.html#measures-of-global-spatial-autocorrelation",
+    "href": "lesson/Lesson07/Lesson07-GLSA.html#measures-of-global-spatial-autocorrelation",
+    "title": "Lesson 7: Global and Local Measures of Spatial Association",
+    "section": "Measures of Global Spatial Autocorrelation",
+    "text": "Measures of Global Spatial Autocorrelation\n\nMoran’s I\nGeary’s c"
+  },
+  {
+    "objectID": "lesson/Lesson07/Lesson07-GLSA.html#measures-of-global-highlow-clustering-getis-ord-global-g",
+    "href": "lesson/Lesson07/Lesson07-GLSA.html#measures-of-global-highlow-clustering-getis-ord-global-g",
+    "title": "Lesson 7: Global and Local Measures of Spatial Association",
+    "section": "Measures of Global High/Low Clustering: Getis-Ord Global G",
+    "text": "Measures of Global High/Low Clustering: Getis-Ord Global G\n\n\n\nGetis-Ord Global G statistic is concerned with the overall concentration or lack of concentration in all pairs that are neighbours given the definition of neighbouring areas.\nThe variable must contain only positive values to be used.\n\n\n\nSource: Getis, A., & Ord, K. (1992). “The Analysis of Spatial Association by Use of Distance Statistics”. Geographical Analysis, 24, 189–206."
+  },
+  {
+    "objectID": "lesson/Lesson07/Lesson07-GLSA.html#local-spatial-autocorrelation-statistics",
+    "href": "lesson/Lesson07/Lesson07-GLSA.html#local-spatial-autocorrelation-statistics",
+    "title": "Lesson 7: Global and Local Measures of Spatial Association",
+    "section": "Local Spatial Autocorrelation Statistics",
+    "text": "Local Spatial Autocorrelation Statistics\n\nA collection of geospatial statistical analysis methods for analysing the location related tendency (clusters or outliers) in the attributes of geographically referenced data (points or areas).\nCan be indecies decomposited from their global measures such as local Moran’s I, local Geary’s c, and Getis-Ord Gi*.\nThese spatial statistics are well suited for:\n\ndetecting clusters or outliers;\nidentifying hot spot or cold spot areas;\nassessing the assumptions of stationarity; and\nidentifying distances beyond which no discernible association obtains."
+  },
+  {
+    "objectID": "lesson/Lesson07/Lesson07-GLSA.html#local-indicator-of-spatial-association-lisa",
+    "href": "lesson/Lesson07/Lesson07-GLSA.html#local-indicator-of-spatial-association-lisa",
+    "title": "Lesson 7: Global and Local Measures of Spatial Association",
+    "section": "Local Indicator of Spatial Association (LISA)",
+    "text": "Local Indicator of Spatial Association (LISA)\n\nA subset of localised geospatial statistics methods.\nAny spatial statistics that satisfies the following two requirements (Anselin, L. 1995):\n\nthe LISA for each observation gives an indication of the extent of significant spatial clustering of similar values around that observation;\nthe sum of LISAs for all observations is proportional to a global indicator of spatial association."
+  },
+  {
+    "objectID": "lesson/Lesson07/Lesson07-GLSA.html#local-morans-i",
+    "href": "lesson/Lesson07/Lesson07-GLSA.html#local-morans-i",
+    "title": "Lesson 7: Global and Local Measures of Spatial Association",
+    "section": "Local Moran’s I",
+    "text": "Local Moran’s I\nGiven a geographically referenced attribute field, X the formula of local Moran’s I is:"
+  },
+  {
+    "objectID": "lesson/Lesson07/Lesson07-GLSA.html#detecting-hot-and-cold-spot-areas",
+    "href": "lesson/Lesson07/Lesson07-GLSA.html#detecting-hot-and-cold-spot-areas",
+    "title": "Lesson 7: Global and Local Measures of Spatial Association",
+    "section": "Detecting hot and cold spot areas",
+    "text": "Detecting hot and cold spot areas\n\n\n\nGiven a set of geospatial features (i.e. points or polygons) and an analysis field, the spatial statistics tell you where features with either high (i.e. hot spots) or low values (cold spots) cluster spatially.\nThe spatial statistic used is called Getis-Ord Gi* statistic (pronounced G-i-star).\nGetis and Ord (1992) define the local G and G∗ statistics for region i (i=1,···,n) as:"
+  },
+  {
+    "objectID": "lesson/Lesson07/Lesson07-GLSA.html#fixed-weighting-scheme",
+    "href": "lesson/Lesson07/Lesson07-GLSA.html#fixed-weighting-scheme",
+    "title": "Lesson 7: Global and Local Measures of Spatial Association",
+    "section": "Fixed weighting scheme",
+    "text": "Fixed weighting scheme\n\n\n\nThings to consider if fixed distance is used: - All features should have at least one neighbour.\n\nNo feature should have all other features as neighbours.\nEspecially if the values for the input field are skewed, you want features to have about eight neighbors each.\nMight produce large estimate variances where data are sparse, while mask subtle local variations where data are dense.\nIn extreme condition, fixed schemes might not be able to calibrate in local areas where data are too sparse to satisfy the calibration requirements (observations must be more than parameters)."
+  },
+  {
+    "objectID": "lesson/Lesson07/Lesson07-GLSA.html#adaptive-weighting-schemes",
+    "href": "lesson/Lesson07/Lesson07-GLSA.html#adaptive-weighting-schemes",
+    "title": "Lesson 7: Global and Local Measures of Spatial Association",
+    "section": "Adaptive weighting schemes",
+    "text": "Adaptive weighting schemes\n\n\n\nAdaptive schemes adjust itself according to the density of data\n\nShorter bandwidths where data are dense and longer where sparse.\nFinding nearest neighbors are one of the often used approaches.\n\n\n\n]"
+  },
+  {
+    "objectID": "lesson/Lesson07/Lesson07-GLSA.html#best-practice-guidelines",
+    "href": "lesson/Lesson07/Lesson07-GLSA.html#best-practice-guidelines",
+    "title": "Lesson 7: Global and Local Measures of Spatial Association",
+    "section": "Best practice guidelines",
+    "text": "Best practice guidelines\n\nResults are only reliable if the input feature class contains at least 30 features.\nThe input field mst be in continuous data type such as a count, rate, or other numeric measurement, no categorical attribute field is allowed."
+  },
+  {
+    "objectID": "lesson/Lesson07/Lesson07-GLSA.html#in-colclusion",
+    "href": "lesson/Lesson07/Lesson07-GLSA.html#in-colclusion",
+    "title": "Lesson 7: Global and Local Measures of Spatial Association",
+    "section": "In colclusion",
+    "text": "In colclusion\nSpatial statistics methods are not a blackbox. Before performing the analysis, a geospatial analyst should consider the followings:\n\nWhat is the geographical question?\nWhat is the geospatial feature?\nWhat is the analysis field?\nWhich conceptualization of spatial relationships is appropriate?"
+  },
+  {
+    "objectID": "lesson/Lesson07/Lesson07-GLSA.html#references",
+    "href": "lesson/Lesson07/Lesson07-GLSA.html#references",
+    "title": "Lesson 7: Global and Local Measures of Spatial Association",
+    "section": "References",
+    "text": "References\n\nMoran, P. A. P. (1950). “Notes on Continuous Stochastic Phenomena”. Biometrika. 37 (1): 17–23.\nGeary, R.C. (1954) “The Contiguity Ratio and Statistical Mapping”. The Incorporated Statistician, Vol. 5, No. 3, pp. 115-127. - Moran’s I\nGeary’s c - Getis, A., & Ord, K. (1992). “The Analysis of Spatial Association by Use of Distance Statistics”. Geographical Analysis, 24, 189–206.\nAnselin, L. (1995). “Local indicators of spatial association – LISA”. Geographical Analysis, 27(4): 93-115.\nGetis, A. and Ord, J.K. (1992) “The analysis of spatial association by use of distance statistics”. Geographical Analysis, 24(3): 189-206.\nOrd, J.K. and Getis, A. (2010) “Local spatial autocorrelation statistics: Distributional issues and an application”. Geographical Analysis, 27(4): 286-306."
+  },
+  {
+    "objectID": "lesson/Lesson07/Lesson07-GLSA.html#emerging-hot-spot-analysis-ehsa",
+    "href": "lesson/Lesson07/Lesson07-GLSA.html#emerging-hot-spot-analysis-ehsa",
+    "title": "Lesson 7: Global and Local Measures of Spatial Association",
+    "section": "Emerging Hot Spot Analysis (EHSA)",
+    "text": "Emerging Hot Spot Analysis (EHSA)\n\nA technique that falls under exploratory spatial data analysis (ESDA).\nIt combines the traditional ESDA technique of hot spot analysis using the Getis-Ord Gi* statistic with the traditional time-series Mann-Kendall test for monotonic trends.\nThe goal of EHSA is to evaluate how hot and cold spots are changing over time. It helps us answer the questions: are they becoming increasingly hotter, are they cooling down, or are they staying the same?"
   }
 ]
