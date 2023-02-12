@@ -9,64 +9,73 @@ output:
     toc_depth: 3
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
 These spatial statistics are well suited for:
 
-- detecting clusters or outliers;
-- identifying hot spot or cold spot areas; 
-- assessing the assumptions of stationarity; and
-- identifying distances beyond which no discernible association obtains.
+-   detecting clusters or outliers;
+-   identifying hot spot or cold spot areas;
+-   assessing the assumptions of stationarity; and
+-   identifying distances beyond which no discernible association obtains.
 
 ## Content
 
-- What is Spatial Autocorrelation
-    - Measures of Global Spatial Autocorrelation
-    - Measures of Global High/Low Clustering
-- Introducing Localised Geospatial Analysis
-    - Local Indicators of Spatial Association (LISA)
-- Cluster and Outlier Analysis
-    - Local Moran and Local Geary
-    - Moran scatterplot
-    - LISA Cluster Map
-- Hot Spot and Cold Spot Areas Analysis
-    - Getis and Ord’s G-statistics
-- Case Studies
+-   What is Spatial Autocorrelation
+    -   Measures of Global Spatial Autocorrelation
+    -   Measures of Global High/Low Clustering
+-   Introducing Localised Geospatial Analysis
+    -   Local Indicators of Spatial Association (LISA)
+-   Cluster and Outlier Analysis
+    -   Local Moran and Local Geary
+    -   Moran scatterplot
+    -   LISA Cluster Map
+-   Hot Spot and Cold Spot Areas Analysis
+    -   Getis and Ord's G-statistics
+-   Case Studies
 
-## Lesson Slides and Hands-on Notes 
+## Lesson Slides and Hands-on Notes
 
-- Lesson slides in [html](../lesson/Lesson07/Lesson07-SpaAuto.html) and [pdf](../lesson/Lesson07/Lesson07-SpaAuto.pdf) formats
+-   Lesson slides in [html](../lesson/Lesson07/Lesson07-GLSA.html) and [pdf](../lesson/Lesson07/Lesson07-GLSA.pdf) formats
 
-- Handout of Hands-on Exercise 7 in [html](../Hands-on_Ex/Hands-on_Ex07/Hands-on_Ex07-GLSA.html) and in [pdf](../Hands-on_Ex/Hands-on_Ex07/Hands-on_Ex07-GLSA.pdf) formats.
+-   Hands-on Exercises:
+
+    -   [Chapter 9: Global Measures of Spatial Autocorrelation](https://r4gdsa.netlify.app/chap09.html).
+
+    -   [Chapter 10: Local Measures of Spatial Autocorrelation](https://r4gdsa.netlify.app/chap10.html)
 
 ## Self-reading Before Meet-up
 
 To read before class:
 
-- Moran, P. A. P. (1950). ["Notes on Continuous Stochastic Phenomena"](https://www-jstor-org.libproxy.smu.edu.sg/stable/2332142?seq=1#metadata_info_tab_contents). Biometrika. 37 (1): 17–23.
+-   Moran, P. A. P. (1950). ["Notes on Continuous Stochastic Phenomena"](https://www-jstor-org.libproxy.smu.edu.sg/stable/2332142?seq=1#metadata_info_tab_contents). Biometrika. 37 (1): 17--23.
 
-- Geary, R.C. (1954) ["The Contiguity Ratio and Statistical Mapping"](https://www-jstor-org.libproxy.smu.edu.sg/stable/2986645?sid=primo&origin=crossref&seq=1#metadata_info_tab_contents). *The Incorporated Statistician*, Vol. 5, No. 3, pp. 115-127. 
+-   Geary, R.C. (1954) ["The Contiguity Ratio and Statistical Mapping"](https://www-jstor-org.libproxy.smu.edu.sg/stable/2986645?sid=primo&origin=crossref&seq=1#metadata_info_tab_contents). *The Incorporated Statistician*, Vol. 5, No. 3, pp. 115-127.
 
-- Getis, A., & Ord, K. (1992). ["The Analysis of Spatial Association by Use of Distance Statistics"](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.1992.tb00261.x). *Geographical Analysis*, 24, 189–206.
+-   Getis, A., & Ord, K. (1992). ["The Analysis of Spatial Association by Use of Distance Statistics"](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.1992.tb00261.x). *Geographical Analysis*, 24, 189--206.
 
-- Anselin, L. (1995). ["Local indicators of spatial association – LISA"](https://onlinelibrary.wiley.com/doi/10.1111/j.1538-4632.1995.tb00338.x). *Geographical Analysis*, 27(4): 93-115. 
+-   Anselin, L. (1995). ["Local indicators of spatial association -- LISA"](https://onlinelibrary.wiley.com/doi/10.1111/j.1538-4632.1995.tb00338.x). *Geographical Analysis*, 27(4): 93-115.
 
-- Getis, A. and Ord, J.K. (1992) [“The analysis of spatial association by use of distance statistics”](https://onlinelibrary.wiley.com/doi/10.1111/j.1538-4632.1992.tb00261.x). *Geographical Analysis*, 24(3): 189-206.
+-   Getis, A. and Ord, J.K. (1992) ["The analysis of spatial association by use of distance statistics"](https://onlinelibrary.wiley.com/doi/10.1111/j.1538-4632.1992.tb00261.x). *Geographical Analysis*, 24(3): 189-206.
 
-- Ord, J.K. and Getis, A. (2010) [“Local spatial autocorrelation statistics: Distributional issues and an application”](https://onlinelibrary.wiley.com/doi/10.1111/j.1538-4632.1995.tb00912.x). *Geographical Analysis*, 27(4): 286-306.
+-   Ord, J.K. and Getis, A. (2010) ["Local spatial autocorrelation statistics: Distributional issues and an application"](https://onlinelibrary.wiley.com/doi/10.1111/j.1538-4632.1995.tb00912.x). *Geographical Analysis*, 27(4): 286-306.
 
 These six papers are classics of Global and Local Spatial Autocorrelation. Be warned: All classic papers assume that the readers are academic researchers.
 
 ## References
 
-- D. A. Griffith (2009) “Spatial autocorrelation”.
-- Getis, A., 2010 “B.3 Spatial Autocorrelation” in Fischer, M.M., and Getis, A. 2010 Handbook of Applied Spatial Analysis: Software Tools, Methods and Applications, Springer.
-- Anselin, L. (1996) “The Moran scatterplot as an ESDA tool to assess local instability in spatial association”
-- Griffith, Daniel (2009) “Modeling spatial autocorrelation in spatial interaction data: empirical evidence from 2002 Germany journey-to-work flows”. Journal of Geographical Systems, Vol.11(2), pp.117-140.
-- Celebioglu, F., and Dall’erba, S. (2010) “Spatial disparities across the regions of Turkey: An exploratory spatial data analysis”. The Annals of Regional Science, 45:379–400.
-- Mack, Z.W.V. and Kam T.S. (2018) [“Is There Space for Violence?: A Data-driven Approach to the Exploration of Spatial-Temporal Dimensions of Conflict”](https://ink.library.smu.edu.sg/sis_research/4331/) *Proceedings of 2nd ACM SIGSPATIAL Workshop on Geospatial Humanities (ACM SIGSPATIAL’18)*. Seattle, Washington, USA, 10 pages.
-- TAN, Yong Ying and KAM, Tin Seong (2019). [“Exploring and Visualizing Household Electricity Consumption Patterns in Singapore: A Geospatial Analytics Approach”](https://ink.library.smu.edu.sg/sis_research/4376/), *Information in Contemporary Society: 14th International Conference*, iConference 2019, Washington, DC, USA, March 31–April 3, 2019, Proceedings. Pp 785-796. 
-- Singh A., Pathak P.K., Chauhan R.K., and Pan, W. (2011) “Infant and Child Mortality in India in the Last Two Decades: A Geospatial Analysis”. PLoS ONE 6(11), 1:19.
+-   D. A. Griffith (2009) "Spatial autocorrelation".
+-   Getis, A., 2010 "B.3 Spatial Autocorrelation" in Fischer, M.M., and Getis, A. 2010 Handbook of Applied Spatial Analysis: Software Tools, Methods and Applications, Springer.
+-   Anselin, L. (1996) "The Moran scatterplot as an ESDA tool to assess local instability in spatial association"
+-   Griffith, Daniel (2009) "Modeling spatial autocorrelation in spatial interaction data: empirical evidence from 2002 Germany journey-to-work flows". Journal of Geographical Systems, Vol.11(2), pp.117-140.
+-   Celebioglu, F., and Dall'erba, S. (2010) "Spatial disparities across the regions of Turkey: An exploratory spatial data analysis". The Annals of Regional Science, 45:379--400.
+-   Mack, Z.W.V. and Kam T.S. (2018) ["Is There Space for Violence?: A Data-driven Approach to the Exploration of Spatial-Temporal Dimensions of Conflict"](https://ink.library.smu.edu.sg/sis_research/4331/) *Proceedings of 2nd ACM SIGSPATIAL Workshop on Geospatial Humanities (ACM SIGSPATIAL'18)*. Seattle, Washington, USA, 10 pages.
+-   TAN, Yong Ying and KAM, Tin Seong (2019). ["Exploring and Visualizing Household Electricity Consumption Patterns in Singapore: A Geospatial Analytics Approach"](https://ink.library.smu.edu.sg/sis_research/4376/), *Information in Contemporary Society: 14th International Conference*, iConference 2019, Washington, DC, USA, March 31--April 3, 2019, Proceedings. Pp 785-796.
+-   Singh A., Pathak P.K., Chauhan R.K., and Pan, W. (2011) "Infant and Child Mortality in India in the Last Two Decades: A Geospatial Analysis". PLoS ONE 6(11), 1:19.
+
+```{r}
+#| eval: false
+#| echo: false
+
+renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson07/Lesson07-SpaAuto.html",
+                   to = "../../_site/lesson/Lesson07/Lesson07-GLSA.pdf")
+```
+
 
