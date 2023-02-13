@@ -16,15 +16,15 @@ editor: visual
 
 # Content
 
-- Introduction to Spatial Weights
-- Contiguity-Based Spatial Weights
-    - Rook's
-    - Queen's
-- Distance-Band Spatial Weights
-- Applications of Spatial Weights
+-   Introduction to Spatial Weights
+-   Contiguity-Based Spatial Weights
+    -   Rook's
+    -   Queen's
+-   Distance-Band Spatial Weights
+-   Applications of Spatial Weights
 
 ::: notes
-This lesson consists of three main sections.  First, I am going to explain the basic concept of spatial weights.  This is followed by a discussion on various methods used to compute spatial weights.  Lastly, the applications of spatial wiehgts will be discussed.
+This lesson consists of three main sections. First, I am going to explain the basic concept of spatial weights. This is followed by a discussion on various methods used to compute spatial weights. Lastly, the applications of spatial wiehgts will be discussed.
 :::
 
 ## What is geographically referenced attribute?
@@ -40,12 +40,11 @@ geodemog <- read_rds("data/geodemog.RDS")
 glimpse(geodemog)
 ```
 
-
 ::: notes
-A kind of data that is very similar to an ordinary data.  The only difference is that each observation is associated with some form of geography such as numbers of aged population by planning subzone.
+A kind of data that is very similar to an ordinary data. The only difference is that each observation is associated with some form of geography such as numbers of aged population by planning subzone.
 :::
 
----
+------------------------------------------------------------------------
 
 ### Describing attribute distribution
 
@@ -63,15 +62,14 @@ gghistostats(data = geodemog,
 ```
 
 ::: notes
-In statistics, we are interested to study if the observed distribution resemble normal distribution.  To provide an answer to the question, we have to go beyond EDA and apply Confirmatory Data Analysis or also know as statistical test to confirm the observated pattern is indeed resemble normal distribution.
+In statistics, we are interested to study if the observed distribution resemble normal distribution. To provide an answer to the question, we have to go beyond EDA and apply Confirmatory Data Analysis or also know as statistical test to confirm the observated pattern is indeed resemble normal distribution.
 :::
 
----
+------------------------------------------------------------------------
 
 ### Geographical distribution question
 
 Are the planning subzones with high proportion of dependency ratio randomly distributed over space?
-
 
 ```{r}
 #| echo: false
@@ -93,10 +91,10 @@ tm_shape(geodemog)+
 ```
 
 ::: notes
-When come of geographically referenced attributes, beside the distribution of the value, we are also interested to find out if the observed geographical patterns are randomly distributed.  Similarly to statistical, geovisualisation is not enough because the visual impression will change when different data classification methods is used. 
+When come of geographically referenced attributes, beside the distribution of the value, we are also interested to find out if the observed geographical patterns are randomly distributed. Similarly to statistical, geovisualisation is not enough because the visual impression will change when different data classification methods is used.
 :::
 
----
+------------------------------------------------------------------------
 
 ### Geographical distribution question
 
@@ -120,7 +118,8 @@ tm_shape(geodemog)+
             frame = TRUE) +
   tm_borders(alpha = 0.5) 
 ```
-]
+
+\]
 
 ::: notes
 As a result, a formal statistical test of spatial randomness is needed.
@@ -128,7 +127,7 @@ As a result, a formal statistical test of spatial randomness is needed.
 
 ## What are Spatial Weights *(wij)*
 
-- A way to define spatial neighbourhood.
+-   A way to define spatial neighbourhood.
 
 ![](img/image6-6.jpg)
 
@@ -136,36 +135,36 @@ As a result, a formal statistical test of spatial randomness is needed.
 Before we can perform statistics test of spatial randomness, we need to understand how spatial relationship among geographical areas can be defined mathematically.
 :::
 
----
+------------------------------------------------------------------------
 
 ### Defining Spatial Weights
 
 ![](img/image6-7.jpg)
 
 ::: notes
-There are at least two popular methods can be used to define spatial weights of geographical areas.  They are contiguity and distance.  Both of them are encoded in binary.
+There are at least two popular methods can be used to define spatial weights of geographical areas. They are contiguity and distance. Both of them are encoded in binary.
 
-According to contiguity principle, two geographical areas are consider as neighbour if they share a common boundary.  Hence, if two geographical areas are neighbour, they will be indicated as 1.  On the other hand, if the two geographical areas are not neighbour, they will be indicated as 0.
+According to contiguity principle, two geographical areas are consider as neighbour if they share a common boundary. Hence, if two geographical areas are neighbour, they will be indicated as 1. On the other hand, if the two geographical areas are not neighbour, they will be indicated as 0.
 
-According to distance principle, two geographical areas are consider as neighbour if their centroid as within a spefic distance.  Hence, if two geographical areas are neighbour, they will be indicated as 1.  On the other hand, if the two geographical areas are not neighbour, they will be indicated as 0.
+According to distance principle, two geographical areas are consider as neighbour if their centroid as within a spefic distance. Hence, if two geographical areas are neighbour, they will be indicated as 1. On the other hand, if the two geographical areas are not neighbour, they will be indicated as 0.
 :::
 
----
+------------------------------------------------------------------------
 
 ### Contiguity Neighbours
 
-- Contiguity (common boundary)
+-   Contiguity (common boundary)
 
-- What is a “shared” boundary?
+-   What is a "shared" boundary?
 
 ![](img/image6-8.jpg)
 
 ::: notes
-This figure shows three different ways to define contiguity neighbours.  They are Rooks, Bishop and Queens methods.  Rooks and Queens are the two commonly used methods.  
+This figure shows three different ways to define contiguity neighbours. They are Rooks, Bishop and Queens methods. Rooks and Queens are the two commonly used methods.\
 The main different between Queens and Rooks is that Rooks only consider geographical areas that shared common boundaries but Queens method includes geographical areas touching at the tips of the target geographical area.
 :::
 
----
+------------------------------------------------------------------------
 
 ### Beyond the basic contiguity neighbours
 
@@ -174,10 +173,10 @@ There are also second-order, third-order, forth-order, etc contiguity
 ![](img/image6-18.jpg)
 
 ::: notes
-The figure show contiguity neighbours beyond the first order. As you can see that the second-order contiguity neighbours are also defined according to Rooks and Queens case. 
+The figure show contiguity neighbours beyond the first order. As you can see that the second-order contiguity neighbours are also defined according to Rooks and Queens case.
 :::
 
----
+------------------------------------------------------------------------
 
 ### Weights matrix: Adjacency-based neighbours
 
@@ -186,10 +185,10 @@ The figure show contiguity neighbours beyond the first order. As you can see tha
 ![](img/image6-9.jpg)
 
 ::: notes
-This figure shows a geographical area with nine locations.  Let us focus on location 1202.  According to Queens case, it has seven neighbours.  They are 1101, 1201, 1301, 1102, 1302, 1000, and 0901.  If Rooks case is consider, 1101 and 1301 will not be considered as neighbours because they do not share common boundaries with 1202. 
+This figure shows a geographical area with nine locations. Let us focus on location 1202. According to Queens case, it has seven neighbours. They are 1101, 1201, 1301, 1102, 1302, 1000, and 0901. If Rooks case is consider, 1101 and 1301 will not be considered as neighbours because they do not share common boundaries with 1202.
 :::
 
----
+------------------------------------------------------------------------
 
 ### Weights Matrix: Distance-based neighbours
 
@@ -198,20 +197,20 @@ This figure shows a geographical area with nine locations.  Let us focus on loca
 ![](img/image6-10.jpg)
 
 ::: notes
-In this figure, a cut-off distance of 650m is used.  In this case, locations B, C and D are considered as neighbours of location A because all of them are with the 650m distance from A.  On the other hand, location E is not a neighbour of location A because their distance is 757m apart.
+In this figure, a cut-off distance of 650m is used. In this case, locations B, C and D are considered as neighbours of location A because all of them are with the 650m distance from A. On the other hand, location E is not a neighbour of location A because their distance is 757m apart.
 :::
 
----
+------------------------------------------------------------------------
 
 ### Weights matrix: Measured distances
 
 ![](img/image6-11.jpg)
 
 ::: notes
-In this figure, spatial weights are calculated as the inversed function of the distance.  In other word, two locations that are closer will be given higher weight than two locations that are further away.  For example, the distance of AB is 353 and the diatnce of AE is 757 and the spatial weights are 0.00283 and 0.00132 respectively. 
+In this figure, spatial weights are calculated as the inversed function of the distance. In other word, two locations that are closer will be given higher weight than two locations that are further away. For example, the distance of AB is 353 and the diatnce of AE is 757 and the spatial weights are 0.00283 and 0.00132 respectively.
 :::
 
----
+------------------------------------------------------------------------
 
 ### Row standardisation
 
@@ -220,24 +219,22 @@ In practice, row-standardised weights instead of spatial weights will be used.
 ![](img/image6-12.jpg)
 
 ::: notes
-Row-standardised weights increase the influence of links from observations with few neighbours, which binary weights vary the influence of observations.
- + Those with many neighbours are up-weighted compared to those with few.
- + In this case, raw 1 have four neighbours, hence each neighbour will have a value of 1/4.  On the other hand, row number 2, has only two neighbour, hence each neighbour will be given a value of 1/2.
+Row-standardised weights increase the influence of links from observations with few neighbours, which binary weights vary the influence of observations. + Those with many neighbours are up-weighted compared to those with few. + In this case, raw 1 have four neighbours, hence each neighbour will have a value of 1/4. On the other hand, row number 2, has only two neighbour, hence each neighbour will be given a value of 1/2.
 :::
 
 ## Applications of Spatial Weights
 
-Formally, for observation i, the spatial lag of yi, referred to as [Wy]i (the variable Wy observed for location i) is:
+Formally, for observation i, the spatial lag of yi, referred to as \[Wy\]i (the variable Wy observed for location i) is:
 
 ![](img/image6-17.jpg)
 
 where the weights wij consist of the elements of the i-th row of the matrix W, matched up with the corresponding elements of the vector y.
 
-:::notes
+::: notes
 With a neighbor structure defined by the non-zero elements of the spatial weights matrix W, a **spatially lagged variable** is a weighted sum or a weighted average of the neighboring values for that variable. In most commonly used notation, the spatial lag of y is then expressed as Wy.
 :::
 
----
+------------------------------------------------------------------------
 
 ### Spatially Lagged Variables
 
@@ -249,7 +246,7 @@ Spatial lag with row-standardized weights.
 This figure shows the spatially lagged of GPDPC summed up the GDPPC of all its neighbours except the target location itself.
 :::
 
----
+------------------------------------------------------------------------
 
 ### Spatial window sum
 
@@ -263,24 +260,9 @@ Spatial window sum, on the other hand, summed up the GDPPC of all neighbours and
 
 ## References
 
-- Chapter 2. [Codifying the neighbourhood structure](https://www.insee.fr/en/statistiques/fichier/3635545/imet131-f-chapitre-2.pdf) of [Handbook of Spatial Analysis: Theory and Application with R](https://www.insee.fr/en/information/3635545).
-- François Bavaud (2010) ["Models for Spatial Weights: A Systematic Look"](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.1998.tb00394.x) *Geographical Analysis*, Vol. 30, No.2, pp 153-171.
-- Tony H. Grubesic and Andrea L. Rosso (2014) ["The Use of Spatially Lagged Explanatory Variables for Modeling Neighborhood Amenities and Mobility in Older Adults"](https://www-jstor-org.libproxy.smu.edu.sg/stable/26326897?sid=primo&seq=1#metadata_info_tab_contents), *Cityscape*, Vol. 16, No. 2, pp. 205-214.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-   Chapter 2. [Codifying the neighbourhood structure](https://www.insee.fr/en/statistiques/fichier/3635545/imet131-f-chapitre-2.pdf) of [Handbook of Spatial Analysis: Theory and Application with R](https://www.insee.fr/en/information/3635545).
+-   François Bavaud (2010) ["Models for Spatial Weights: A Systematic Look"](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.1998.tb00394.x) *Geographical Analysis*, Vol. 30, No.2, pp 153-171.
+-   Tony H. Grubesic and Andrea L. Rosso (2014) ["The Use of Spatially Lagged Explanatory Variables for Modeling Neighborhood Amenities and Mobility in Older Adults"](https://www-jstor-org.libproxy.smu.edu.sg/stable/26326897?sid=primo&seq=1#metadata_info_tab_contents), *Cityscape*, Vol. 16, No. 2, pp. 205-214.
 
 ```{r}
 #| eval: false
@@ -289,5 +271,3 @@ Spatial window sum, on the other hand, summed up the GDPPC of all neighbours and
 renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson06/Lesson06-Spatial_Weights.html",
                    to = "../../_site/lesson/Lesson06/Lesson06-Spatial_Weights.pdf")
 ```
-
-
