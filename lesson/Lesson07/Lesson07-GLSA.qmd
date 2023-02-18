@@ -27,10 +27,9 @@ editor: visual
     -   Local Moran and Local Geary
     -   Moran scatterplot
     -   LISA Cluster Map
-::: 
+:::
 
 ::: {.column width="50%"}
-    
 -   Hot Spot and Cold Spot Areas Analysis
     -   Getis and Ord's G-statistics
 -   Emerging Hot Spot Analysis (EHSA)
@@ -367,7 +366,7 @@ The summation of local Moran is
 ## Detecting hot and cold spot areas
 
 ::: columns
-::: {.column width="70%"}
+::: {.column width="90%"}
 -   Given a set of geospatial features (i.e. points or polygons) and an analysis field, the spatial statistics tell you where features with either high (i.e. hot spots) or low values (cold spots) cluster spatially.
 -   The spatial statistic used is called Getis-Ord Gi\* statistic (pronounced G-i-star).
 -   Getis and Ord (1992) define the local G and G∗ statistics for region i (i=1,···,n) as:
@@ -552,7 +551,7 @@ Before running the test, you should ensure that:
 
 ::: {style="font-size: 0.60em"}
 | Pattern Name          | Defination                                                                                                                                                                                                                                                                                                               |
-|--------------------|----------------------------------------------------|
+|----------------------|--------------------------------------------------|
 | No pattern detected   | Does not fall into any of the hot or cold spot patterns defined below.                                                                                                                                                                                                                                                   |
 | New Hot Spot          | A location that is a statistically significant hot spot for the final time step and has never been a statistically significant hot spot before.                                                                                                                                                                          |
 | Consecutive Hot Spot  | A location with a single uninterrupted run of at least two statistically significant hot spot bins in the final time-step intervals. The location has never been a statistically significant hot spot prior to the final hot spot run and less than 90 percent of all bins are statistically significant hot spots.      |
@@ -570,7 +569,7 @@ Before running the test, you should ensure that:
 
 ::: {style="font-size: 0.60em"}
 | Pattern Name           | Definition                                                                                                                                                                                                                                                                                                                 |
-|--------------------|----------------------------------------------------|
+|----------------------|--------------------------------------------------|
 | New Cold Spot          | A location that is a statistically significant cold spot for the final time step and has never been a statistically significant cold spot before.                                                                                                                                                                          |
 | Consecutive Cold Spot  | A location with a single uninterrupted run of at least two statistically significant cold spot bins in the final time-step intervals. The location has never been a statistically significant cold spot prior to the final cold spot run and less than 90 percent of all bins are statistically significant cold spots.    |
 | Intensifying Cold Spot | A location that has been a statistically significant cold spot for 90 percent of the time-step intervals, including the final time step. In addition, the intensity of clustering of low counts in each time step is increasing overall and that increase is statistically significant.                                    |
@@ -633,4 +632,3 @@ Spatial statistics methods are not a blackbox. Before performing the analysis, a
 renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson07/Lesson07-GLSA.html",
                    to = "../../_site/lesson/Lesson07/Lesson07-GLSA.pdf")
 ```
-
