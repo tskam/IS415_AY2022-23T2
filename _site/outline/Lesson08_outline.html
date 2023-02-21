@@ -7,9 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2023-01-29">
-<meta name="description" content="A new article created using the Distill format.">
 
-<title>IS415 AY2022-23T2 - Lesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis</title>
+<title>IS415 AY2022-23T2 - Lesson 8: Geograpgically Weighted Regression</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -99,11 +98,11 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Take-home Exercise 1</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../Take-home_Ex02.html">
+    <a class="dropdown-item" href="../th_ex2.html">
  <span class="dropdown-text">Take-home Exercise 2</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../Take-home_Ex03.html">
+    <a class="dropdown-item" href="../th_ex3.html">
  <span class="dropdown-text">Take-home Exercise 3</span></a>
   </li>  
     </ul>
@@ -161,12 +160,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#content" id="toc-content" class="nav-link active" data-scroll-target="#content">Content</a></li>
-  <li><a href="#lesson-slides-and-hands-on-notes" id="toc-lesson-slides-and-hands-on-notes" class="nav-link" data-scroll-target="#lesson-slides-and-hands-on-notes">Lesson Slides and Hands-on Notes</a>
-  <ul class="collapse">
+  <li><a href="#lesson-slides-and-hands-on-notes" id="toc-lesson-slides-and-hands-on-notes" class="nav-link" data-scroll-target="#lesson-slides-and-hands-on-notes">Lesson Slides and Hands-on Notes</a></li>
   <li><a href="#self-reading-before-meet-up" id="toc-self-reading-before-meet-up" class="nav-link" data-scroll-target="#self-reading-before-meet-up">Self-reading Before Meet-up</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   <li><a href="#all-about-r" id="toc-all-about-r" class="nav-link" data-scroll-target="#all-about-r">All About R</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
@@ -175,14 +172,9 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis</h1>
+<h1 class="title">Lesson 8: Geograpgically Weighted Regression</h1>
 </div>
 
-<div>
-  <div class="description">
-    <p>A new article created using the Distill format.</p>
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -195,60 +187,78 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">February 21, 2023</p>
+    </div>
+  </div>
     
   </div>
   
+<div>
+  <div class="abstract">
+    <div class="abstract-title">Abstract</div>
+    In this lesson, you will learn the basic concepts and methods of geographically weighted regression.
+  </div>
+</div>
 
 </header>
 
 <section id="content" class="level2">
 <h2 class="anchored" data-anchor-id="content">Content</h2>
 <ul>
-<li>Basic concepts of geographic segmentation</li>
-<li>Conventional cluster analysis techniques</li>
-<li>Approaches for clustering geographically referenced data
+<li>Basic concepts and principles of linear regression
 <ul>
-<li>Hierarchical clustering with spatial constraints</li>
-<li>Minimum spanning trees</li>
+<li>Simple linear regression</li>
+<li>Multiple linear regression</li>
+</ul></li>
+<li>The spatial stationarity assumption of multiple linear regression.</li>
+<li>Introducing Geographically Weighted Regression
+<ul>
+<li>Weighting functions (kernel)</li>
+<li>Weighting schemes</li>
+<li>Bandwidth</li>
+<li>Interpreting and Visualising</li>
 </ul></li>
 </ul>
 </section>
 <section id="lesson-slides-and-hands-on-notes" class="level2">
 <h2 class="anchored" data-anchor-id="lesson-slides-and-hands-on-notes">Lesson Slides and Hands-on Notes</h2>
 <ul>
-<li><p>Lesson slides in <a href="../lesson/Lesson08/Lesson08-GeoKDD.html">html</a> and <a href="../lesson/Lesson08/Lesson08-GeoKDD.pdf">pdf</a> formats</p></li>
-<li><p>Handout of Hands-on Exercise 8 in <a href="../Hands-on_Ex/Hands-on_Ex08/Hands-on_Ex08-GeoClust.html">html</a> and <a href="../Hands-on_Ex/Hands-on_Ex08/Hands-on_Ex08-GeoClust.pdf">pdf</a> formats.</p></li>
+<li><p>Lesson slides in <a href="../lesson/lesson08/lesson08-gwr.html">html</a> and <a href="../lesson/lesson08/lesson08-gwr.pdf">pdf</a> formats</p></li>
+<li><p>Handout of Hands-on Exercise 8 in <a href="https://r4gdsa.netlify.app/chap13.html">html</a> format.</p></li>
 </ul>
-<section id="self-reading-before-meet-up" class="level3">
-<h3 class="anchored" data-anchor-id="self-reading-before-meet-up">Self-reading Before Meet-up</h3>
+</section>
+<section id="self-reading-before-meet-up" class="level2">
+<h2 class="anchored" data-anchor-id="self-reading-before-meet-up">Self-reading Before Meet-up</h2>
 <p>To read before class:</p>
 <ul>
-<li>Assuncao, R. M., Neves, M.C., Camara, G. and Costa Freitas, C.D. 2006. “Efficient Regionalization Techniques for Socio-Economic Geographical Units Using Minimum Spanning Trees.” International Journal of Geographical Information Science 20: 797–811.</li>
+<li>Brunsdon, C., Fotheringham, A.S., and Charlton, M. (2002) “Geographically weighted regression: A method for exploring spatial nonstationarity”. Geographical Analysis, 28: 281-289.</li>
+<li>Brunsdon, C., Fotheringham, A.S. and Charlton, M., (1999) “Some Notes on Parametric Significance Tests for Geographically Weighted Regression”. Journal of Regional Science, 39(3), 497-524.</li>
 </ul>
 </section>
-<section id="references" class="level3">
-<h3 class="anchored" data-anchor-id="references">References</h3>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
 <ul>
-<li>Rovan, J. and Sambt, J. (2003) <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.126.4636&amp;rep=rep1&amp;type=pdf">“Socio-economic Differences Among Slovenian Municipalities: A Cluster Analysis Approach”</a>, Developments in Applied Statistics, pp.&nbsp;265-278.<br>
-</li>
-<li>Demeter, T. and Bratucu, G. (2013) <a href="https://search-proquest-com.libproxy.smu.edu.sg/docview/1510289237?rfr_id=info%3Axri%2Fsid%3Aprimo">“Statistical Analysis Of The EU Countries from A Touristic Point of View”</a>, Bulletin of the Transilvania University of Braşov, 6(55): 121-130.</li>
-<li>Brown, N.S. &amp; Watson, P. (2012) <a href="https://ageconsearch.umn.edu/record/176591/files/WEFFall2012v11n2_Brown.pdf">“What can a comprehensive plan really tell us about a region?: A cluster analysis of county comprehensive plans in Idaho”</a>, Western Economics Forum. Pp.22-37.</li>
+<li>Mennis, Jeremy (2006) “Mapping the Results of Geographically Weighted Regression”, The Cartographic Journal, Vol.43 (2), p.171-179.</li>
+<li>Stephen A. Matthews ; Tse-Chuan Yang (2012) “Mapping the results of local statistics: Using geographically weighted regression”, Demographic Research, Vol.26, p.151-166.</li>
 </ul>
 </section>
-<section id="all-about-r" class="level3">
-<h3 class="anchored" data-anchor-id="all-about-r">All About R</h3>
+<section id="all-about-r" class="level2">
+<h2 class="anchored" data-anchor-id="all-about-r">All About R</h2>
 <ul>
-<li><a href="http://uc-r.github.io/hc_clustering">Hierarchical Cluster Analysis</a>.</li>
-<li><a href="https://www.rdocumentation.org/packages/spdep/versions/0.8-1/topics/skater">skater</a>: A function from spdep package that implements a SKATER procedure for spatial clustering analysis.</li>
-<li><a href="https://cran.r-project.org/web/packages/ClustGeo/index.html">ClustGeo: Hierarchical Clustering with Spatial Constraints</a>
+<li><a href="https://cran.r-project.org/web/packages/GWmodel/"><strong>GWmodel</strong></a> package, especially
 <ul>
-<li><a href="https://cran.r-project.org/web/packages/ClustGeo/vignettes/intro_ClustGeo.html">Introduction to Clustgeo</a></li>
-<li>Chavent, M., Kuentz-Simonet, V., Labenne,A. and Saracco, J. 2018. “ClustGeo: an R package for hierarchical clustering with spatial constraints” <em>Computational Statistics</em>, 33: 1799-1822.</li>
+<li>Gollini, I et. al.&nbsp;(2015) <a href="https://www.jstatsoft.org/article/view/v063i17">“GWmodel: An R Package for Exploring Spatial Heterogeneity Using Geographically Weighted Models”</a>, <em>Journal of Statistical Software</em>, Volume 63, Issue 17 and</li>
+<li>Binbin Lu, Paul Harris, Martin Charlton &amp; Chris Brunsdon (2014) <a href="https://www.tandfonline.com/doi/full/10.1080/10095020.2014.917453">“The GWmodel R package: further topics for exploring spatial heterogeneity using geographically weighted models”</a>, <em>Geo-spatial Information Science</em>, 17:2, 85-101, DOI: 10.1080/10095020.2014.917453.</li>
 </ul></li>
+<li><a href="https://cran.r-project.org/web/packages/lctools/index.html"><strong>lctools</strong></a> package especially <em>gw()</em> and <em>gwr()</em> related functions.</li>
+<li><a href="https://cran.r-project.org/web/packages/spgwr/index.html"><strong>spgwr</strong></a> implements of geographically weighted regression methods for exploring possible non-stationarity.</li>
+<li><a href="https://cran.r-project.org/web/packages/gwrr/index.html"><strong>gwrr</strong></a>: its geographically weighted regression (GWR) models and has tools to diagnose and remediate collinearity in the GWR models. Also fits geographically weighted ridge regression (GWRR) and geographically weighted lasso (GWL) models.</li>
 </ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

@@ -1,51 +1,47 @@
 ---
-title: "Lesson 8: Geographic Segmentation with Spatially Constrained Cluster Analysis"
-description: |
-  A new article created using the Distill format.
-date: "`r Sys.Date()`"
-output:
-  distill::distill_article:
-    toc: true
-    toc_depth: 3
+title: "Lesson 8: Geograpgically Weighted Regression"
+abstract: "In this lesson, you will learn the basic concepts and methods of geographically weighted regression."
+date: "29 January 2023"  
+date-modified: "`r Sys.Date()`"
+format: html
+editor: visual
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
 ## Content
-- Basic concepts of geographic segmentation
-- Conventional cluster analysis techniques
-- Approaches for clustering geographically referenced data
-    - Hierarchical clustering with spatial constraints
-    - Minimum spanning trees
 
-## Lesson Slides and Hands-on Notes 
+-   Basic concepts and principles of linear regression
+    -   Simple linear regression
+    -   Multiple linear regression
+-   The spatial stationarity assumption of multiple linear regression.
+-   Introducing Geographically Weighted Regression
+    -   Weighting functions (kernel)
+    -   Weighting schemes
+    -   Bandwidth
+    -   Interpreting and Visualising
 
-- Lesson slides in [html](../lesson/Lesson08/Lesson08-GeoKDD.html) and [pdf](../lesson/Lesson08/Lesson08-GeoKDD.pdf) formats
+## Lesson Slides and Hands-on Notes
 
-- Handout of Hands-on Exercise 8 in [html](../Hands-on_Ex/Hands-on_Ex08/Hands-on_Ex08-GeoClust.html) and [pdf](../Hands-on_Ex/Hands-on_Ex08/Hands-on_Ex08-GeoClust.pdf) formats.
+-   Lesson slides in [html](../lesson/lesson08/lesson08-gwr.html) and [pdf](../lesson/lesson08/lesson08-gwr.pdf) formats
 
+-   Handout of Hands-on Exercise 8 in [html](https://r4gdsa.netlify.app/chap13.html) format.
 
-### Self-reading Before Meet-up
+## Self-reading Before Meet-up
 
 To read before class:
 
-- Assuncao, R. M., Neves, M.C., Camara, G. and Costa Freitas, C.D. 2006. “Efficient Regionalization Techniques for Socio-Economic Geographical Units Using Minimum Spanning Trees.” International Journal of Geographical Information Science 20: 797–811.
+-   Brunsdon, C., Fotheringham, A.S., and Charlton, M. (2002) "Geographically weighted regression: A method for exploring spatial nonstationarity". Geographical Analysis, 28: 281-289.
+-   Brunsdon, C., Fotheringham, A.S. and Charlton, M., (1999) "Some Notes on Parametric Significance Tests for Geographically Weighted Regression". Journal of Regional Science, 39(3), 497-524.
 
-### References
-- Rovan, J. and Sambt, J. (2003) [“Socio-economic Differences Among Slovenian Municipalities: A Cluster Analysis Approach”](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.126.4636&rep=rep1&type=pdf), Developments in Applied Statistics, pp. 265-278.  
-- Demeter, T.  and Bratucu, G. (2013) [“Statistical Analysis Of The EU Countries from A Touristic Point of View”](https://search-proquest-com.libproxy.smu.edu.sg/docview/1510289237?rfr_id=info%3Axri%2Fsid%3Aprimo), Bulletin of the Transilvania University of Braşov, 6(55): 121-130. 
-- Brown, N.S. & Watson, P. (2012) [“What can a comprehensive plan really tell us about a region?: A cluster analysis of county comprehensive plans in Idaho”](https://ageconsearch.umn.edu/record/176591/files/WEFFall2012v11n2_Brown.pdf), Western Economics Forum. Pp.22-37.  
+## References
 
-### All About R
-- [Hierarchical Cluster Analysis](http://uc-r.github.io/hc_clustering). 
-- [skater](https://www.rdocumentation.org/packages/spdep/versions/0.8-1/topics/skater):  A function from spdep package that implements a SKATER procedure for spatial clustering analysis. 
-- [ClustGeo: Hierarchical Clustering with Spatial Constraints](https://cran.r-project.org/web/packages/ClustGeo/index.html)
-    - [Introduction to Clustgeo](https://cran.r-project.org/web/packages/ClustGeo/vignettes/intro_ClustGeo.html)
-    - Chavent, M., Kuentz-Simonet, V., Labenne,A. and Saracco, J. 2018. “ClustGeo: an R package for hierarchical clustering with spatial constraints” *Computational Statistics*, 33: 1799-1822.
+-   Mennis, Jeremy (2006) "Mapping the Results of Geographically Weighted Regression", The Cartographic Journal, Vol.43 (2), p.171-179.
+-   Stephen A. Matthews ; Tse-Chuan Yang (2012) "Mapping the results of local statistics: Using geographically weighted regression", Demographic Research, Vol.26, p.151-166.
 
+## All About R
 
-
-
-
+-   [**GWmodel**](https://cran.r-project.org/web/packages/GWmodel/) package, especially
+    -   Gollini, I et. al. (2015) ["GWmodel: An R Package for Exploring Spatial Heterogeneity Using Geographically Weighted Models"](https://www.jstatsoft.org/article/view/v063i17), *Journal of Statistical Software*, Volume 63, Issue 17 and
+    -   Binbin Lu, Paul Harris, Martin Charlton & Chris Brunsdon (2014) ["The GWmodel R package: further topics for exploring spatial heterogeneity using geographically weighted models"](https://www.tandfonline.com/doi/full/10.1080/10095020.2014.917453), *Geo-spatial Information Science*, 17:2, 85-101, DOI: 10.1080/10095020.2014.917453.
+-   [**lctools**](https://cran.r-project.org/web/packages/lctools/index.html) package especially *gw()* and *gwr()* related functions.
+-   [**spgwr**](https://cran.r-project.org/web/packages/spgwr/index.html) implements of geographically weighted regression methods for exploring possible non-stationarity.
+-   [**gwrr**](https://cran.r-project.org/web/packages/gwrr/index.html): its geographically weighted regression (GWR) models and has tools to diagnose and remediate collinearity in the GWR models. Also fits geographically weighted ridge regression (GWRR) and geographically weighted lasso (GWL) models.
