@@ -232,7 +232,7 @@ Checking if the input variables are highly correlated (i.e. correlation coeffici
 
 ### Visual interpretation of hierarchical clusters: Dendrogram with heatmap
 
-![](img/image8-28.jpg){width="941"}
+![](img/image8-28.jpg){fig-align="left" width="941"}
 
 ------------------------------------------------------------------------
 
