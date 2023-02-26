@@ -1489,5 +1489,61 @@
     "title": "Lesson 8: Geographically Weighted Regression",
     "section": "References",
     "text": "References\nBrunsdon, C., Fotheringham, A.S., and Charlton, M. (2002) “Geographically weighted regression: A method for exploring spatial nonstationarity”. Geographical Analysis, 28: 281-289.\nBrunsdon, C., Fotheringham, A.S. and Charlton, M., (1999) [“Some Notes on Parametric Significance Tests for Geographically Weighted Regression”](https://onlinelibrary-wiley-com.libproxy.smu.edu.sg/doi/abs/10.1111/0022-4146.00146. Journal of Regional Science, 39(3), 497-524.\nMennis, Jeremy (2006) “Mapping the Results of Geographically Weighted Regression”, The Cartographic Journal, Vol.43 (2), p.171-179.\nStephen A. Matthews ; Tse-Chuan Yang (2012) “Mapping the results of local statistics: Using geographically weighted regression”, Demographic Research, Vol.26, p.151-166."
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GeoKDD.html#content",
+    "href": "lesson/Lesson09/Lesson09-GeoKDD.html#content",
+    "title": "Lesson 9: Geographic Segmentation with Spatially Constrained Cluster Analysis",
+    "section": "Content",
+    "text": "Content\n\nWhat is Geographic Segmentation?\nIntroducing Cluster Analysis\nHierarchical Class Analysis\nCluster Analysis Process\nSpatially Constrained Clustering Techniques"
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GeoKDD.html#what-is-geographical-segmentation",
+    "href": "lesson/Lesson09/Lesson09-GeoKDD.html#what-is-geographical-segmentation",
+    "title": "Lesson 9: Geographic Segmentation with Spatially Constrained Cluster Analysis",
+    "section": "What is Geographical Segmentation?",
+    "text": "What is Geographical Segmentation?\n\n\n\nGeographic segmentation divides a target market by location so marketers can better serve customers in a particular area.\nThis type of market segmentation is based on the geographic units themselves (countries, states, cities, etc.), but also on various geographic factors, such as climate, cultural preferences, populations, and more.\nFor business applications of geographic segmentation, refer to this blog post"
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GeoKDD.html#cluster-analysis",
+    "href": "lesson/Lesson09/Lesson09-GeoKDD.html#cluster-analysis",
+    "title": "Lesson 9: Geographic Segmentation with Spatially Constrained Cluster Analysis",
+    "section": "Cluster Analysis",
+    "text": "Cluster Analysis\n\n\n\nCluster analysis or Clustering is the task of grouping a set of an object in such a way object in the same group(called cluster) are more similar( in some sense or another to each other than to those in another group (clusters).\nIn modern machine learning age, it is belong to the family of exploratory data mining.\nIt has been used in many fields including Machine Learning, Pattern Recognition, Image Analysis, Information Retrieval, Bioinformatics, Data Compression, and Computer Graphics."
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GeoKDD.html#hierarchical-clustering",
+    "href": "lesson/Lesson09/Lesson09-GeoKDD.html#hierarchical-clustering",
+    "title": "Lesson 9: Geographic Segmentation with Spatially Constrained Cluster Analysis",
+    "section": "Hierarchical Clustering",
+    "text": "Hierarchical Clustering\n\nProduces a set of nested clusters organized as a hierarchical tree."
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GeoKDD.html#bivariate-eda",
+    "href": "lesson/Lesson09/Lesson09-GeoKDD.html#bivariate-eda",
+    "title": "Lesson 9: Geographic Segmentation with Spatially Constrained Cluster Analysis",
+    "section": "Bivariate EDA",
+    "text": "Bivariate EDA\nChecking if the input variables are highly correlated (i.e. correlation coefficient >=0.85)."
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GeoKDD.html#spatially-constrained-clustering-methods",
+    "href": "lesson/Lesson09/Lesson09-GeoKDD.html#spatially-constrained-clustering-methods",
+    "title": "Lesson 9: Geographic Segmentation with Spatially Constrained Cluster Analysis",
+    "section": "Spatially Constrained Clustering Methods",
+    "text": "Spatially Constrained Clustering Methods\n\nGrouping contiguous objects that are similar into new aggregate areal units\n\ntension between attribute similarity.\n\nGrouping of similar observations\n\nlocational similarity: group spatially contiguous observations only."
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GeoKDD.html#introducing-skater-method",
+    "href": "lesson/Lesson09/Lesson09-GeoKDD.html#introducing-skater-method",
+    "title": "Lesson 9: Geographic Segmentation with Spatially Constrained Cluster Analysis",
+    "section": "Introducing SKATER method",
+    "text": "Introducing SKATER method\n\n\n\nSpatial Kluster Analysis by Tree Edge Removal Assuncao (2006) algorithm.\nConstruct minimum spanning tree from adjacency graph.\nPrune the tree (cut edges) to achieve maximum internal homogeneity.\n\nReference: AssunÇão, R. M ; Neves, M. C ; Câmara, G ; Da Costa Freitas, C (2006) “Efficient regionalization techniques for socio-economic geographical units using minimum spanning trees”, International Journal of Geographical Information Science, Vol.20 (7), p.797-811 ."
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GeoKDD.html#spatially-constrained-clustering-using-skater",
+    "href": "lesson/Lesson09/Lesson09-GeoKDD.html#spatially-constrained-clustering-using-skater",
+    "title": "Lesson 9: Geographic Segmentation with Spatially Constrained Cluster Analysis",
+    "section": "Spatially Constrained Clustering using SKATER",
+    "text": "Spatially Constrained Clustering using SKATER"
   }
 ]

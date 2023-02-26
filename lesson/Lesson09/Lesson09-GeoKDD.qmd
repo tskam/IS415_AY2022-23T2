@@ -1,0 +1,338 @@
+---
+title: "Lesson 9: Geographic Segmentation with Spatially Constrained Cluster Analysis"
+author: "Dr. Kam Tin Seong<br/>Assoc. Professor of Information Systems(Practice)"
+institute: "School of Computing and Information Systems,<br/>Singapore Management University"
+date: "`r Sys.Date()`"
+format: 
+  revealjs:
+    width: 1600
+    height: 900
+    show-notes: false
+    slide-number: true
+    show-slide-number: all
+date-format: "DD MMM YYYY"
+editor: visual
+---
+
+## Content
+
+-   What is Geographic Segmentation?
+
+-   Introducing Cluster Analysis
+
+-   Hierarchical Class Analysis
+
+-   Cluster Analysis Process
+
+-   Spatially Constrained Clustering Techniques
+
+## What is Geographical Segmentation?
+
+::: columns
+::: {.column width="50%"}
+-   Geographic segmentation divides a target market by location so marketers can better serve customers in a particular area.
+
+-   This type of market segmentation is based on the geographic units themselves (countries, states, cities, etc.), but also on various geographic factors, such as climate, cultural preferences, populations, and more.
+
+-   For business applications of geographic segmentation, refer to this [blog post](https://manychat.com/blog/geographic-segmentation/)
+:::
+
+::: {.column width="50%"}
+![](img/image8-1.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Advantages of Geographic Segmentation
+
+-   It's an effective approach for companies with large national or international markets because different consumers in different regions have different needs, wants, and cultural characteristics that can be specifically targeted.
+
+-   It can also be an effective approach for small businesses with limited budgets. They can focus on their defined area and not expend needless marketing dollars on approaches ill-suited for their target geographic segment.
+
+-   It works well in different areas of population density. Consumers in an urban environment often have different needs and wants than people in suburban and rural environments. There are even cultural differences between these three areas.
+
+## Cluster Analysis
+
+::: columns
+::: {.column width="50%"}
+-   **Cluster analysis** or **Clustering** is the task of grouping a set of an object in such a way object in the same group(called cluster) are more similar( in some sense or another to each other than to those in another group (clusters).
+
+-   In modern machine learning age, it is belong to the family of exploratory data mining.
+
+-   It has been used in many fields including Machine Learning, Pattern Recognition, Image Analysis, Information Retrieval, Bioinformatics, Data Compression, and Computer Graphics.
+:::
+
+::: {.column width="50%"}
+![](img/image8-2.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Typology of Cluster Analysis Techniques
+
+::: columns
+::: {.column width="50%"}
+-   Hierarchical clustering
+    -   A set of nested clusters organized as a hierarchical tree.
+:::
+
+::: {.column width="50%"}
+-   Partitioning clustering (also known as k-means)
+    -   A division data objects into non-overlapping subsets (clusters) such that each data object is in exactly one subset.
+:::
+:::
+
+![](img/image8-3.jpg){fig-align="center"}
+
+## Hierarchical Clustering
+
+-   Produces a set of nested clusters organized as a hierarchical tree.
+
+![](img/image8-4.jpg)
+
+------------------------------------------------------------------------
+
+### Hierarchical Methods
+
+::: columns
+::: {.column width="50%"}
+::: {style="font-size: 0.85em"}
+-   Agglomerative clustering: It's also known as **AGNES (Agglomerative Nesting)**. It works in a bottom-up manner. That is, each object is initially considered as a single-element cluster (leaf). At each step of the algorithm, the two clusters that are the most similar are combined into a new bigger cluster (nodes). This procedure is iterated until all points are member of just one single big cluster (root). The result is a tree which can be plotted as a dendrogram.
+-   Divisive hierarchical clustering: It's also known as **DIANA (Divise Analysis)** and it works in a top-down manner. The algorithm is an inverse order of AGNES. It begins with the root, in which all objects are included in a single cluster. At each step of iteration, the most heterogeneous cluster is divided into two. The process is iterated until all objects are in their own cluster.
+:::
+:::
+
+::: {.column width="50%"}
+![](img/image8-5.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Basic Agglomerative Hierarchical Clustering Algorithm
+
+::: columns
+::: {.column width="50%"}
+![](img/image8-6.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### What is Proximity Matrix?
+
+-   Measures of Similarity or Dissimilarity.
+
+![](img/image8-9.jpg)
+
+------------------------------------------------------------------------
+
+### Three commonly used methods to calculate proximity matrix
+
+![](img/image8-8.jpg)
+
+------------------------------------------------------------------------
+
+### Proximity matrix: Euclidean distance
+
+![](img/image8-10.jpg)
+
+------------------------------------------------------------------------
+
+### Proximity matrix: City-block distance
+
+![](img/image8-11.jpg)
+
+------------------------------------------------------------------------
+
+### Proximity matrix: Chebychev distance
+
+![](img/image8-12.jpg)
+
+------------------------------------------------------------------------
+
+### Agglomerative Hierarchical Clustering Algorithms
+
+::: {style="font-size: 0.85em"}
+The most common types methods are:
+
+-   **Maximum** or **complete linkage** clustering: It computes all pairwise dissimilarities between the elements in cluster 1 and the elements in cluster 2, and considers the largest value (i.e., maximum value) of these dissimilarities as the distance between the two clusters. It tends to produce more compact clusters.
+
+-   **Minimum** or **single linkage** clustering: It computes all pairwise dissimilarities between the elements in cluster 1 and the elements in cluster 2, and considers the smallest of these dissimilarities as a linkage criterion. It tends to produce long, "loose" clusters.
+
+-   **Mean** or **average linkage** clustering: It computes all pairwise dissimilarities between the elements in cluster 1 and the elements in cluster 2, and considers the average of these dissimilarities as the distance between the two clusters.
+
+-   **Centroid** linkage clustering: It computes the dissimilarity between the centroid for cluster 1 (a mean vector of length p variables) and the centroid for cluster 2.
+
+-   **Ward's minimum variance** method: It minimizes the total within-cluster variance. At each step the pair of clusters with minimum between-cluster distance are merged.
+:::
+
+------------------------------------------------------------------------
+
+### Agglomerative Hierarchical Clustering Algorithms - Dendrograms
+
+![](img/image8-13.jpg)
+
+------------------------------------------------------------------------
+
+### Cluster Analysis Process
+
+![](img/image8-14.jpg)
+
+------------------------------------------------------------------------
+
+### Data Preparation
+
+::: columns
+::: {.column width="50%"}
+To perform a cluster analysis in R, generally, the data should be prepared as follows:
+
+-   Rows are observations (individuals) and columns are variables.
+-   Input variables must be inline with the segmentation task.
+-   Ideally, the input variables must be in continuous data type.
+-   Any missing value in the data must be removed or estimated.
+:::
+
+::: {.column width="50%"}
+![](img/image8-15.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Univariate EDA
+
+-   Checking the distribution of the cluster variables, if their data ranges differences are very large then data standardisation is required.
+
+![](img/image8-16.jpg)
+
+------------------------------------------------------------------------
+
+### Variable standardisation techniques
+
+![](img/image8-17.jpg)
+
+------------------------------------------------------------------------
+
+## Bivariate EDA
+
+Checking if the input variables are highly correlated (i.e. correlation coefficient \>=0.85).
+
+![](img/image8-18.jpg)
+
+------------------------------------------------------------------------
+
+### Visual interpretation of hierarchical clusters: Dendrogram
+
+![](img/image8-19.jpg)
+
+------------------------------------------------------------------------
+
+### Visual interpretation of hierarchical clusters: Dendrogram with heatmap
+
+![](img/image8-28.jpg)
+
+------------------------------------------------------------------------
+
+### Limitation of non-spatial clustering algorithm
+
+-   Spatially fragmented regions.
+
+![](img/image8-20.jpg){fig-align="left"}
+
+## Spatially Constrained Clustering Methods
+
+-   Grouping contiguous objects that are similar into new aggregate areal units
+    -   tension between attribute similarity.
+-   Grouping of similar observations
+    -   locational similarity: group spatially contiguous observations only.
+
+## Introducing SKATER method
+
+::: columns
+::: {.column width="50%"}
+-   **S**patial **K**luster **A**nalysis by **T**ree **E**dge **R**emoval **A**ssuncao (2006) algorithm.
+
+-   Construct minimum spanning tree from adjacency graph.
+
+-   Prune the tree (cut edges) to achieve maximum internal homogeneity.
+
+Reference: AssunÇão, R. M ; Neves, M. C ; Câmara, G ; Da Costa Freitas, C (2006) "[Efficient regionalization techniques for socio-economic geographical units using minimum spanning trees](https://web-a-ebscohost-com.libproxy.smu.edu.sg/ehost/detail/detail?vid=0&sid=60b437ef-2130-43e1-808f-e1933ac625a8%40sdc-v-sessmgr03&bdata=JnNpdGU9ZWhvc3QtbGl2ZSZzY29wZT1zaXRl#db=asn&AN=21895448)", *International Journal of Geographical Information Science*, Vol.20 (7), p.797-811 .
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Contiguity as a Graph
+
+::: columns
+::: {.column width="50%"}
+-   Network connectivity based on adjacency between nodes (locations).
+
+-   Edge value reflects dissimilarity between nodes.
+
+![](img/image8-21.jpg)
+
+-   Objective is to minimize within-group dissimilarity (maximize between-group).
+:::
+
+::: {.column width="50%"}
+![](img/image8-22.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### Minimum Spanning Tree Algorithm (Assuncao et al 2006)
+
+::: columns
+::: {.column width="50%"}
+-   Connectivity graph G = (V, L), V vertices (nodes), L edges path
+    -   a sequence of nodes connected by edges v1 to vk: (v1,v2), ..., (vk-1,vk).
+-   Spanning tree
+    -   tree with n nodes of G unique path connecting any two nodes n-1 edges.
+-   Minimum spanning tree
+    -   spanning tree that minimizes a cost function minimize sum of dissimilarities over all nodes.
+:::
+
+::: {.column width="50%"}
+![](img/image8-23.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+### SKATER - A heuristic for fast tree partitioning
+
+::: columns
+::: {.column width="50%"}
+![](img/image8-24.jpg)
+:::
+
+::: {.column width="50%"}
+![](img/image8-25.jpg)
+:::
+:::
+
+------------------------------------------------------------------------
+
+## Spatially Constrained Clustering using SKATER
+
+::: columns
+::: {.column width="50%"}
+![](img/image8-26.jpg){width="752"}
+:::
+
+::: {.column width="50%"}
+![](img/image8-27.jpg){width="534"}
+:::
+:::
+
+```{r}
+#| eval: false
+#| echo: false
+renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson09/Lesson09-GeoKDD.html",
+                   to = "../../_site/lesson/Lesson09/Lesson09-GeoKDD.pdf")
+```
