@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.2.269">
 
   <meta name="author" content="Dr.&nbsp;Kam Tin Seong Assoc. Professor of Information Systems">
-  <meta name="dcterms.date" content="2023-01-29">
+  <meta name="dcterms.date" content="2023-02-21">
   <title>IS415 AY2022-23T2 - In-class Exercise 1: Doing Data Science with Rtidyverse methods</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -402,7 +402,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems
     </div>
 </div>
 
-  <p class="date">29 Jan 2023</p>
+  <p class="date">21 Feb 2023</p>
 </section>
 <section id="content" class="slide level2">
 <h2>Content</h2>
@@ -704,7 +704,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 7,240 × 60
    country     iso2  iso3   year new_s…¹ new_s…² new_s…³ new_s…⁴ new_s…⁵ new_s…⁶
-   &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt; &lt;int&gt;   &lt;int&gt;   &lt;int&gt;   &lt;int&gt;   &lt;int&gt;   &lt;int&gt;   &lt;int&gt;
+   &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt; &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;
  1 Afghanistan AF    AFG    1980      NA      NA      NA      NA      NA      NA
  2 Afghanistan AF    AFG    1981      NA      NA      NA      NA      NA      NA
  3 Afghanistan AF    AFG    1982      NA      NA      NA      NA      NA      NA
@@ -715,13 +715,13 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems
  8 Afghanistan AF    AFG    1987      NA      NA      NA      NA      NA      NA
  9 Afghanistan AF    AFG    1988      NA      NA      NA      NA      NA      NA
 10 Afghanistan AF    AFG    1989      NA      NA      NA      NA      NA      NA
-# … with 7,230 more rows, 50 more variables: new_sp_m65 &lt;int&gt;,
-#   new_sp_f014 &lt;int&gt;, new_sp_f1524 &lt;int&gt;, new_sp_f2534 &lt;int&gt;,
-#   new_sp_f3544 &lt;int&gt;, new_sp_f4554 &lt;int&gt;, new_sp_f5564 &lt;int&gt;,
-#   new_sp_f65 &lt;int&gt;, new_sn_m014 &lt;int&gt;, new_sn_m1524 &lt;int&gt;,
-#   new_sn_m2534 &lt;int&gt;, new_sn_m3544 &lt;int&gt;, new_sn_m4554 &lt;int&gt;,
-#   new_sn_m5564 &lt;int&gt;, new_sn_m65 &lt;int&gt;, new_sn_f014 &lt;int&gt;,
-#   new_sn_f1524 &lt;int&gt;, new_sn_f2534 &lt;int&gt;, new_sn_f3544 &lt;int&gt;, …</code></pre>
+# … with 7,230 more rows, 50 more variables: new_sp_m65 &lt;dbl&gt;,
+#   new_sp_f014 &lt;dbl&gt;, new_sp_f1524 &lt;dbl&gt;, new_sp_f2534 &lt;dbl&gt;,
+#   new_sp_f3544 &lt;dbl&gt;, new_sp_f4554 &lt;dbl&gt;, new_sp_f5564 &lt;dbl&gt;,
+#   new_sp_f65 &lt;dbl&gt;, new_sn_m014 &lt;dbl&gt;, new_sn_m1524 &lt;dbl&gt;,
+#   new_sn_m2534 &lt;dbl&gt;, new_sn_m3544 &lt;dbl&gt;, new_sn_m4554 &lt;dbl&gt;,
+#   new_sn_m5564 &lt;dbl&gt;, new_sn_m65 &lt;dbl&gt;, new_sn_f014 &lt;dbl&gt;,
+#   new_sn_f1524 &lt;dbl&gt;, new_sn_f2534 &lt;dbl&gt;, new_sn_f3544 &lt;dbl&gt;, …</code></pre>
 </div>
 </div>
 </section>
@@ -746,7 +746,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 405,440 × 8
    country     iso2  iso3   year diagnosis gender age   count
-   &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt; &lt;int&gt; &lt;chr&gt;     &lt;chr&gt;  &lt;chr&gt; &lt;int&gt;
+   &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt; &lt;dbl&gt; &lt;chr&gt;     &lt;chr&gt;  &lt;chr&gt; &lt;dbl&gt;
  1 Afghanistan AF    AFG    1980 sp        m      014      NA
  2 Afghanistan AF    AFG    1980 sp        m      1524     NA
  3 Afghanistan AF    AFG    1980 sp        m      2534     NA
@@ -787,7 +787,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 405,440 × 8
    country     iso2  iso3   year diagnosis gender age   count
-   &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt; &lt;int&gt; &lt;chr&gt;     &lt;fct&gt;  &lt;ord&gt; &lt;int&gt;
+   &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt; &lt;dbl&gt; &lt;chr&gt;     &lt;fct&gt;  &lt;ord&gt; &lt;dbl&gt;
  1 Afghanistan AF    AFG    1980 sp        m      014      NA
  2 Afghanistan AF    AFG    1980 sp        m      1524     NA
  3 Afghanistan AF    AFG    1980 sp        m      2534     NA

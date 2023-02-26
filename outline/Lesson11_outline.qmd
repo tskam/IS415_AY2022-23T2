@@ -2,61 +2,52 @@
 title: "Lesson 11: Modelling Geographic of Accessibility"
 description: |
   A new article created using the Distill format.
-output:
-  distill::distill_article:
-    toc: true
-    toc_depth: 3
+date: "28 December 2022"
+date-modified:  "`r Sys.Date()`"
+format: html
+editor: visual
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
 ## Content
-- Basic Concepts of Geographic Accessibility
-- Gravitational Law and Distance Decay Function
-- Introducing Potential Models
-    - The classic model
-- Hansen Potential Accessibility Model
-- Two-step Floating Catchment Area (2SFCA) Method 
-- Kernel Density Two-Step Floating Catchment Area (KD2SFCA) Method
-- Interpreting and Visualising Modelling Results
 
-## Lesson Slides and Hands-on Notes 
+-   Basic Concepts of Geographic Accessibility
+-   Gravitational Law and Distance Decay Function
+-   Introducing Potential Models
+    -   The classic model
+-   Hansen Potential Accessibility Model
+-   Two-step Floating Catchment Area (2SFCA) Method
+-   Kernel Density Two-Step Floating Catchment Area (KD2SFCA) Method
+-   Interpreting and Visualising Modelling Results
 
-- Lesson slides in [html](../lesson/lesson11/lesson11.html) and [pdf](../lesson/lesson11/lesson11.pdf) formats
+## Lesson Slides and Hands-on Notes
 
-- Handout of Hands-on Exercise 11 in [html](../Hands-on_Ex/Hands-on_Ex11/Hands-on_Ex11.html) and [pdf](../Hands-on_Ex/Hands-on_Ex11/Hands-on_Ex11.pdf) formats.
+-   Lesson slides in [html](../lesson/lesson11/lesson11.html) and [pdf](../lesson/lesson11/lesson11.pdf) formats
 
+-   Handout of Hands-on Exercise 11 in [html](https://r4gdsa.netlify.app/chap16.html) format.
 
 ## Self-reading Before Meet-up
 
 Read before lesson:
 
-- Long, J. (2017). [Modelling Accessibility. The Geographic Information Science & Technology Body of Knowledge](https://gistbok.ucgis.org/bok-topics/modelling-accessibility) (3rd Quarter 2017 Edition), John P. Wilson (ed.). 
+-   Long, J. (2017). [Modelling Accessibility. The Geographic Information Science & Technology Body of Knowledge](https://gistbok.ucgis.org/bok-topics/modelling-accessibility) (3rd Quarter 2017 Edition), John P. Wilson (ed.).
 
-- Hansen, W. G. (1959): [“How Accessibility Shapes Land Use”](https://dspace.mit.edu/bitstream/handle/1721.1/74869/32597665-MIT.pdf?...2). *Journal of the American Institute of Planners*, 25, 2, p. 73-76.
+-   Hansen, W. G. (1959): ["How Accessibility Shapes Land Use"](https://dspace.mit.edu/bitstream/handle/1721.1/74869/32597665-MIT.pdf?...2). *Journal of the American Institute of Planners*, 25, 2, p. 73-76.
 
-- Luo, W.; Wang, F. (2003) ["Measures of spatial accessibility to health care in a GIS environment: synthesis and a case study in the Chicago region"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8238135/). *Environment and Planning B: Planning and Design.* 30 (6): 865–884. doi:10.1068/b29120.
+-   Luo, W.; Wang, F. (2003) ["Measures of spatial accessibility to health care in a GIS environment: synthesis and a case study in the Chicago region"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8238135/). *Environment and Planning B: Planning and Design.* 30 (6): 865--884. doi:10.1068/b29120.
 
-- Luo, W.; Qi, Y. (2009). ["An enhanced two-step floating catchment area (E2SFCA) method for measuring spatial accessibility to primary care physicians"](https://www.researchgate.net/publication/26646789_An_Enhanced_Two-Step_Floating_Catchment_Area_E2SFCA_Method_for_Measuring_Spatial_Accessibility_to_Primary_Care_Physicians). *Health & Place*. 15 (4): 1100–1107.
+-   Luo, W.; Qi, Y. (2009). ["An enhanced two-step floating catchment area (E2SFCA) method for measuring spatial accessibility to primary care physicians"](https://www.researchgate.net/publication/26646789_An_Enhanced_Two-Step_Floating_Catchment_Area_E2SFCA_Method_for_Measuring_Spatial_Accessibility_to_Primary_Care_Physicians). *Health & Place*. 15 (4): 1100--1107.
 
 ## Reference
-- Section on “Transportation and Accessibility” in The Geography of Transport Systems.
-- Rich, D.C. (1980) Potential Models in Human Geography.
-- Orpana, T./Lampinen, J. (2003) “Building spatial choice models from aggregate data”. Journal of Regional Science,43, 2, p. 319-347.
-- [Two-step floating catchment area method](https://en.wikipedia.org/wiki/Two-step_floating_catchment_area_method).
-- Cheng, Gang et. al. (2016) “Spatial difference analysis for accessibility to high level hospitals based on travel time in Shenzhen, China” Habitat International, Vol.53, p.485-494.
-- Polzin, Pierre ; Borges, José ; Coelho, António  (2014) “An Extended Kernel Density Two-Step Floating Catchment Area Method to Analyze Access to Health Care” Environment and planning. B, Planning & design, Vol.41 (4), p.717-735.     
+
+-   Section on "Transportation and Accessibility" in The Geography of Transport Systems.
+-   Rich, D.C. (1980) Potential Models in Human Geography.
+-   Orpana, T./Lampinen, J. (2003) "Building spatial choice models from aggregate data". Journal of Regional Science,43, 2, p. 319-347.
+-   [Two-step floating catchment area method](https://en.wikipedia.org/wiki/Two-step_floating_catchment_area_method).
+-   Cheng, Gang et. al. (2016) "Spatial difference analysis for accessibility to high level hospitals based on travel time in Shenzhen, China" Habitat International, Vol.53, p.485-494.
+-   Polzin, Pierre ; Borges, José ; Coelho, António (2014) "An Extended Kernel Density Two-Step Floating Catchment Area Method to Analyze Access to Health Care" Environment and planning. B, Planning & design, Vol.41 (4), p.717-735.
 
 ## All About R:
 
-+ [SpatialAcc](https://cran.r-project.org/web/packages/SpatialAcc/) package.
+-   [SpatialAcc](https://cran.r-project.org/web/packages/SpatialAcc/) package.
 
-+ [Potential](https://riatelab.github.io/potential/index.html) package.
-
-
-
-
-
-
+-   [Potential](https://riatelab.github.io/potential/index.html) package.
