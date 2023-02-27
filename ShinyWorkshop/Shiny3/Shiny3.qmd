@@ -1,5 +1,5 @@
 ---
-title: "Building Web-enabled Visual Analytics Application with Shiny: Beyond the basic"
+title: "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic"
 subtitle: ""  
 author: "Dr. Kam Tin Seong<br/>Assoc. Professor of Information Systems"
 institute: "School of Computing and Information Systems,<br/>Singapore Management University"
