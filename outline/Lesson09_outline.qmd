@@ -16,7 +16,7 @@ editor: visual
 
 ## Lesson Slides and Hands-on Notes
 
--   Lesson slides in [html](../lesson/Lesson08/Lesson08-GeoKDD.html) and [pdf](../lesson/Lesson08/Lesson08-GeoKDD.pdf) formats
+-   Lesson slides in [html](../lesson/Lesson09/Lesson09-GeoKDD.html) and [pdf](../lesson/Lesson09/Lesson09-GeoKDD.pdf) formats
 
 -   Handout of Hands-on Exercise 9 in [html](https://r4gdsa.netlify.app/chap12.html) format.
 

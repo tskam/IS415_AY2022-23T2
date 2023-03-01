@@ -1860,5 +1860,12 @@
     "title": "Building Web-enabled Geospatial Analytics Application with Shiny: Beyond the basic",
     "section": "References",
     "text": "References\nShiny Layout\n\nApplication layout guide\n\nShiny Module\n\nChapter 19 Shiny modules of Mastering Shiny.\nModularizing Shiny app code, online article\nCommunication between modules. This is a relatively old article, some functions have changed.\nShiny Modules\nShiny Modules (part 1) : Why using modules?\nShiny Modules (part 2): Share reactive among multiple modules\nShiny Modules (part 3): Dynamic module call"
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GeoKDD.html",
+    "href": "lesson/Lesson09/Lesson09-GeoKDD.html",
+    "title": "Lesson 9: Geographic Segmentation with Spatially Constrained Cluster Analysis",
+    "section": "",
+    "text": "What is Geographic Segmentation?\nIntroducing Cluster Analysis\nHierarchical Class Analysis\nCluster Analysis Process\nSpatially Constrained Clustering Techniques"
   }
 ]
