@@ -95,6 +95,7 @@ Representing mobility as a spatial interaction involves several considerations:
 
 ## Gravity Models
 
+::: {style="font-size: 0.85em"}
 ::: columns
 ::: {.column width="50%"}
 The general formula (also known as unconstrained):
@@ -109,6 +110,7 @@ The general formula (also known as unconstrained):
 -   𝑊 is a vector of destination attributes relating to the attractiveness of all destinations in the dataset, 𝑗 -- similarly, this could be any of the destination related variables.
 -   𝑑 is a matrix of costs (frequently distances -- hence, d) relating to the flows between 𝑖 and 𝑗.
 -   𝑘, 𝜇, 𝛼 and 𝛽 are all model parameters to be estimated. 𝛽 is assumed to be negative, as with an increase in cost/distance we would expect interaction to decrease.
+:::
 :::
 :::
 
@@ -276,3 +278,12 @@ Hence, T11 is calculated as shown below:
 Notice that A1 and B1 are computed by using computer.
 :::
 :::
+
+
+
+```{r}
+#| eval: false
+#| echo: false
+renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson10/Lesson10-SIM.html",
+                   to = "../../_site/lesson/Lesson10/Lesson10-SIM.pdf")
+```
