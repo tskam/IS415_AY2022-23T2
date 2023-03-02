@@ -1902,5 +1902,54 @@
     "title": "Lesson 10: Spatial Interaction Models",
     "section": "Content",
     "text": "Content\n\nCharacteristics of Spatial Interaction Data\nSpatial Interaction Models\n\nUnconstrained\nOrigin constrined\nDestination constrained\nDoubly constrained"
+  },
+  {
+    "objectID": "lesson/Lesson11/Lesson11-GeoAcc.html#content",
+    "href": "lesson/Lesson11/Lesson11-GeoAcc.html#content",
+    "title": "Lesson 11: Modelling Geographic of Accessibility",
+    "section": "Content",
+    "text": "Content\n\nBasic Concepts of Geography of Accessibility\nAccessibility Models\n\nStewart Potential model\nReilly model\nHuff model"
+  },
+  {
+    "objectID": "lesson/Lesson11/Lesson11-GeoAcc.html#what-is-geography-of-accessibility",
+    "href": "lesson/Lesson11/Lesson11-GeoAcc.html#what-is-geography-of-accessibility",
+    "title": "Lesson 11: Modelling Geographic of Accessibility",
+    "section": "What is Geography of Accessibility?",
+    "text": "What is Geography of Accessibility?\n\n\n\nAccessibility is the measure of the capacity of a location to be reached from, or to be reached by, different locations. Therefore, the capacity and the arrangement of transport infrastructure are key elements in the determination of accessibility."
+  },
+  {
+    "objectID": "lesson/Lesson11/Lesson11-GeoAcc.html#measuring-distances",
+    "href": "lesson/Lesson11/Lesson11-GeoAcc.html#measuring-distances",
+    "title": "Lesson 11: Modelling Geographic of Accessibility",
+    "section": "Measuring Distances",
+    "text": "Measuring Distances\n\nDifferent spatial and distance conceptualizations that are commonly employed when measuring and modelling accessibility."
+  },
+  {
+    "objectID": "lesson/Lesson11/Lesson11-GeoAcc.html#the-geographical-unit",
+    "href": "lesson/Lesson11/Lesson11-GeoAcc.html#the-geographical-unit",
+    "title": "Lesson 11: Modelling Geographic of Accessibility",
+    "section": "The Geographical Unit",
+    "text": "The Geographical Unit\n\nThis issue of irregularly shaped polygons created arbitrarily (such as county boundaries or block groups that have been created from a political process)."
+  },
+  {
+    "objectID": "lesson/Lesson11/Lesson11-GeoAcc.html#the-potential-model",
+    "href": "lesson/Lesson11/Lesson11-GeoAcc.html#the-potential-model",
+    "title": "Lesson 11: Modelling Geographic of Accessibility",
+    "section": "The Potential Model",
+    "text": "The Potential Model\nThe classic model"
+  },
+  {
+    "objectID": "lesson/Lesson11/Lesson11-GeoAcc.html#two-step-floating-catchment-area-method-2sfca",
+    "href": "lesson/Lesson11/Lesson11-GeoAcc.html#two-step-floating-catchment-area-method-2sfca",
+    "title": "Lesson 11: Modelling Geographic of Accessibility",
+    "section": "Two-step floating catchment area method (2SFCA)",
+    "text": "Two-step floating catchment area method (2SFCA)\n\n\n\nA special case of a potential model for measuring spatial accessibility to primary social services and public facilities.\nIt was inspired by the spatial decomposition idea first proposed by Radke and Mu (2000).\n\n\nReference: Luo, W.; Wang, F. (2003b). “Measures of spatial accessibility to health care in a GIS environment: synthesis and a case study in the Chicago region”. Environment and Planning B: Planning and Design. 30 (6): 865–884.\n\n\nAn earlier version of 2SFCA"
+  },
+  {
+    "objectID": "lesson/Lesson11/Lesson11-GeoAcc.html#spatial-accessibility-measure-sam",
+    "href": "lesson/Lesson11/Lesson11-GeoAcc.html#spatial-accessibility-measure-sam",
+    "title": "Lesson 11: Modelling Geographic of Accessibility",
+    "section": "Spatial Accessibility Measure (SAM)",
+    "text": "Spatial Accessibility Measure (SAM)\nThe formula:\n\nwhere\n\nAai is the accessibility in ED i,\nnj is the capacity of the target facility j.\npi is the demand of this ED, and\ndij is the network distance between the EDi and each facility j.\n\n\nReference: Stamatis Kalogirou & Ronan Foley (2006) “Health, place and Hanly: Modelling accessibility to hospitals in Ireland”, Irish Geography, Volume 39(1), 2006, 52-68."
   }
 ]

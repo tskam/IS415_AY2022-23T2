@@ -21,7 +21,7 @@ editor: visual
 
 ## Lesson Slides and Hands-on Notes
 
--   Lesson slides in [html](../lesson/lesson11/lesson11.html) and [pdf](../lesson/lesson11/lesson11.pdf) formats
+-   Lesson slides in [html](../lesson/lesson11/lesson11-GeoAcc.html) and [pdf](../lesson/lesson11/lesson11-GeoAcc.pdf) formats
 
 -   Handout of Hands-on Exercise 11 in [html](https://r4gdsa.netlify.app/chap16.html) format.
 
