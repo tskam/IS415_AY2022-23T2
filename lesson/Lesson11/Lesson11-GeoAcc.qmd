@@ -314,6 +314,6 @@ Reference: Stamatis Kalogirou & Ronan Foley (2006) ["Health, place and Hanly: Mo
 ```{r}
 #| eval: false
 #| echo: false
-renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson10/Lesson10-SIM.html",
-                   to = "../../_site/lesson/Lesson10/Lesson10-SIM.pdf")
+renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson11/Lesson11-GeoAcc.html",
+                   to = "../../_site/lesson/Lesson11/Lesson11-GeoAcc.pdf")
 ```
