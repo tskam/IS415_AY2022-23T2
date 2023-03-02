@@ -9,9 +9,9 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.2.269">
 
-  <meta name="author" content="Dr.&nbsp;Kam Tin Seong Assoc. Professor of Information Systems(Practice)">
+  <meta name="author" content="Dr.&nbsp;Kam Tin Seong  Assoc. Professor of Information Systems(Practice)">
   <meta name="dcterms.date" content="2023-03-02">
-  <title>IS415 AY2022-23T2 - Lesson 4: Spatial Point Patterns Analysis</title>
+  <title>IS415 AY2022-23T2 - Lesson 10: Spatial Interaction Models</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -325,12 +325,12 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Lesson 4: Spatial Point Patterns Analysis</h1>
+  <h1 class="title">Lesson 10: <br>Spatial Interaction Models</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice) 
+Dr.&nbsp;Kam Tin Seong <br>Assoc. Professor of Information Systems(Practice) 
 </div>
         <p class="quarto-title-affiliation">
             School of Computing and Information Systems,<br>Singapore Management University
@@ -342,186 +342,53 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 </section>
 <section id="content" class="slide level2">
 <h2>Content</h2>
+<ul>
+<li>Characteristics of Spatial Interaction Data</li>
+<li>Spatial Interaction Models
+<ul>
+<li>Unconstrained</li>
+<li>Origin constrined</li>
+<li>Destination constrained</li>
+<li>Doubly constrained</li>
+</ul></li>
+</ul>
+</section>
+<section id="what-spatial-interaction-models-are" class="slide level2">
+<h2>What Spatial Interaction Models are?</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>Introducing Spatial Point Patterns
-<ul>
-<li>The basic concepts of spatial point patterns</li>
-<li>1st Order versus 2nd Order</li>
-<li>Spatial Point Patterns in real world</li>
-</ul></li>
-<li>1st Order Spatial Point Patterns Analysis
-<ul>
-<li>Quadrat analysis</li>
-<li>Kernel density estimation</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>2nd Order Spatial Point Patterns Analysis
-<ul>
-<li>Nearest Neighbour Index</li>
-<li>G-function</li>
-<li>F-function</li>
-<li>K-function</li>
-<li>L-function</li>
-</ul></li>
-</ul>
+<div class="column" style="width:65%;">
+<p>Spatial interaction or “gravity models” estimate the flow of people, material, or information between locations in geographical space.</p>
+<p><img data-src="img/image10-1.jpg"></p>
+</div><div class="column" style="width:35%;">
+<div class="callout callout-note callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Spatial interaction models seek to explain existing spatial flows. As such it is possible to measure flows and predict the consequences of changes in the conditions generating them. When such attributes are known, it is possible to better allocate transport resources such as conveyances, infrastructure, and terminals.</p>
 </div>
 </div>
-<aside class="notes">
-<p>Welcome to Lesson 4: Spatial Point Pattern Analysis, a family of spatial statistics specially developed to model and to test distribution of spatial point events.</p>
-<p>The lesson proceeding is divided into three main section. First, I will share with you what are real world spatial point events. This is followed by explaining the concepts and methods of 1st-order and 2nd-order spatial point patterns analysis.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="what-is-spatial-point-patterns" class="slide level2">
-<h2>What is Spatial Point Patterns</h2>
-<ul>
-<li><p>Points as Events</p></li>
-<li><p>Mapped pattern</p>
-<ul>
-<li>Not a sample</li>
-<li>Selection bias</li>
-</ul></li>
-<li><p>Events are mapped, but non-events are not</p></li>
-</ul>
+</div>
+</div>
+</div>
 </section>
 <section class="slide level2">
 
-<h3 id="spatial-point-patterns-in-real-world">Spatial Point Patterns in Real World</h3>
+<h3 id="conditions-for-spatial-flows">Conditions for Spatial Flows</h3>
 <ul>
-<li>Distribution of dieses such as dengue fever.</li>
+<li>Three interdependent conditions are necessary for a spatial interaction to occur:</li>
 </ul>
 
-<img data-src="img/image4-1.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="spatial-point-patterns-in-real-world-1">Spatial Point Patterns in Real World</h3>
+<img data-src="img/image10-2.jpg" class="r-stretch"><aside class="notes">
 <ul>
-<li>Distribution of car collisions.</li>
+<li><strong>Complementarity</strong>. There must be a supply and a demand between the interacting locations. A residential zone is complementary to an employment zone because the first is supplying workers while the second is supplying jobs. The same can be said concerning the complementarity between a store and its customers and between an industry and its suppliers (movements of freight). An economic system is based on a large array of complementary activities.</li>
+<li><strong>Intervening opportunity (lack of)</strong>. Refers to a location that may offer a better alternative as a point of origin or as a point of destination. For instance, in order to have an interaction of a customer to a store, there must not be a closer store that offers a similar array of goods. Otherwise, the customer will likely patronize the closer store and the initial interaction will not take place.</li>
+<li><strong>Transferability</strong>. Mobility must be supported by transport infrastructures, implying that the origin and the destination must be linked. Costs to overcome distance must not be higher than the benefits of the related interaction, even if there are complementarity and no alternative opportunity.</li>
 </ul>
-
-<img data-src="img/image4-2.jpg" width="400" class="r-stretch quarto-figure-left"></section>
-<section class="slide level2">
-
-<h3 id="spatial-point-patterns-in-real-world-2">Spatial Point Patterns in Real World</h3>
-<ul>
-<li>Distribution of crime incidents.</li>
-</ul>
-
-<img data-src="img/image4-3.jpg" class="r-stretch quarto-figure-left"></section>
-<section class="slide level2">
-
-<h3 id="spatial-point-patterns-in-real-world-3">Spatial Point Patterns in Real World</h3>
-<ul>
-<li>Distribution of public services such as education institutions.</li>
-</ul>
-
-<img data-src="img/image4-4.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="spatial-point-patterns-in-real-world-4">Spatial Point Patterns in Real World</h3>
-<ul>
-<li>Locations of the different channel stores.</li>
-</ul>
-
-<img data-src="img/image4-5.jpg" class="r-stretch quarto-figure-left"></section>
-<section class="slide level2">
-
-<h3 id="spatial-point-patterns-in-real-world-5">Spatial Point Patterns in Real World</h3>
-<ul>
-<li>Distribution of social media data such as tweets.</li>
-</ul>
-
-<img data-src="img/image4-6.jpg" class="r-stretch"></section>
-<section id="real-world-question" class="slide level2">
-<h2>Real World Question</h2>
-<ul>
-<li>Location only
-<ul>
-<li>are points randomly located or patterned</li>
-</ul></li>
-<li>Location and value
-<ul>
-<li>marked point pattern</li>
-<li>is combination of location and value random or patterned</li>
-</ul></li>
-<li>What is the underlying process?</li>
-</ul>
-<aside class="notes">
-<p>It is important note that SPPA is exploratory and confirmatory in nature. They are specially developed for describing the spatial point pattern and for confirming the observed patterns statistically. However, they are explanatory nor for prediction.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="points-on-a-plane" class="slide level2">
-<h2>Points on a Plane</h2>
-<ul>
-<li>Classic point pattern analysis
-<ul>
-<li>points on an isotropic plane</li>
-<li>no effect of translation and rotation</li>
-<li>classic examples: tree seedlings, rocks, etc</li>
-</ul></li>
-<li>Distance
-<ul>
-<li>straight line only</li>
-</ul></li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="real-world-spatial-point-patterns">Real world spatial point patterns</h3>
-<ul>
-<li>Is this a random distribution?</li>
-</ul>
-
-<img data-src="img/image4-7.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="real-world-spatial-point-patterns-1">Real world spatial point patterns</h3>
-<ul>
-<li>Is this a random distribution?</li>
-</ul>
-
-<img data-src="img/image4-8.jpg" class="r-stretch"></section>
-<section id="spatial-point-patterns-analysis" class="slide level2">
-<h2>Spatial Point Patterns Analysis</h2>
-<ul>
-<li>Point pattern analysis (PPA) is the study of the spatial arrangements of points in (usually 2-dimensional) space.</li>
-<li>The simplest formulation is a set X = {x ∈ D} where D, which can be called the <strong>study region</strong>, is a subset of Rn, a n-dimensional <strong>Euclidean space</strong>.</li>
-<li>A fundamental problem of PPA is inferring whether a given arrangement is merely <strong>random</strong> or the result of some process.</li>
-</ul>
-
-<img data-src="img/image4-9.jpg" class="r-stretch"></section>
-<section id="spatial-point-patterns-analysis-techniques" class="slide level2">
-<h2>Spatial Point Patterns Analysis Techniques</h2>
-<ul>
-<li>First-order vs Second-order Analysis of spatial point patterns.</li>
-</ul>
-
-<img data-src="img/image4-10.jpg" class="r-stretch"><p>Reference: <a href="https://mgimond.github.io/Spatial/point-pattern-analysis.html#first-and-second-order-effects">11.4 First and second order effects of Intro to GIS and Spatial Analysis</a></p>
-<aside class="notes">
-<p>The first-order properties describe the way in which the expected value (mean or average) of the spatial point pattern varies across space (i.e., the intensity of the spatial point pattern). Such properties are usually measured with the so-called quadrat analysis, nearest neighbour index and kernel estimation. Second-order properties describe the covariance (or correlation) between values of the spatial point pattern at different regions in space and are usually measured with the G function, K function and L function. Applied to point event data, both properties could be used to explore the spatial variation in the risk of being victimized by a crime, spatial and space-time clustering of criminal activities, and the raised incidence of criminal activities around point sources, such as robberies around ATM machines, subway entrances and exits, etc.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -536,466 +403,196 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 </section>
 <section class="slide level2">
 
-<h3 id="first-order-spatial-point-patterns-analysis-techniques">First-order Spatial Point Patterns Analysis Techniques</h3>
-<ul>
-<li>Density-based
-<ul>
-<li>Kernel density estimation</li>
-<li>Quadrat analysis,</li>
-</ul></li>
-<li>Distance-based
-<ul>
-<li>Nearest Neighbour Index</li>
-</ul></li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="basic-concept-of-density-based-measures">Basic concept of density-based measures</h3>
-
-<img data-src="img/image4-11.jpg" class="r-stretch"></section>
-<section id="kernel-density-estimation-silverman-1986" class="slide level2">
-<h2>Kernel density estimation (Silverman 1986)</h2>
-<ul>
-<li>A method to compute the intensity of a point distribution.</li>
-</ul>
+<h3 id="representation-of-a-movement-as-a-spatial-interaction">Representation of a Movement as a Spatial Interaction</h3>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>The general formula:</p>
-<p><img data-src="img/image4-19.jpg" width="450"></p>
-</div><div class="column" style="width:50%;">
-<p>Graphically</p>
-<p><img data-src="img/image4-20.jpg"></p>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="kde-step-1-computing-point-intensity">KDE Step 1: Computing point intensity</h3>
-
-<img data-src="img/image4-21.jpg" width="317" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="kde-step-2-spatial-interpolation-using-kernel-function">KDE Step 2: Spatial interpolation using kernel function</h3>
-
-<img data-src="img/image4-22.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="kde-map-of-childcare-services-singapore">KDE Map of Childcare Services, Singapore</h3>
-
-<img data-src="img/image4-20b.png" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="adaptive-bandwidth">Adaptive Bandwidth</h3>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Adaptive schemes adjust itself according to the density of data: - Shorter bandwidths where data are dense and longer where sparse.</p>
+<p>Representing mobility as a spatial interaction involves several considerations:</p>
 <ul>
-<li>Finding nearest neighbors are one of the often used approaches.</li>
+<li>Locations: A movement is occurring between a location of origin and a location of destination. i generally denotes an origin while j is a destination.</li>
+<li>Centroid: An abstraction of the attributes of a zone at a point.</li>
+<li>Flows: Flows are generally expressed by a valued vector Tij representing an interaction between locations i and j.</li>
+<li>Vectors: A vector Tij links two centroids and has a value assigned to it (50) which can represents movements.</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><img data-src="img/image4-24.jpg"></p>
+<p><img data-src="img/image10-3.jpg"></p>
 </div>
 </div>
+<aside class="notes">
+<ul>
+<li>Locations. A movement is occurring between a location of origin and a location of destination. i generally denotes an origin while j is a destination. The representation of origins and destinations commonly involves centroids.</li>
+<li>Centroid. An abstraction of the attributes of a zone at a point. This is of particular relevance when the attributes generating mobility are zonal (e.g.&nbsp;ZIP codes, cities, states, etc.) while the graphic representation requires specific origins and destinations. For instance, showing flows between ZIP codes would implicitly require the generation of one centroid for each ZIP code.</li>
+<li>Flows. Flows are generally expressed by a valued vector Tij representing an interaction between locations i and j.</li>
+<li>Vectors. On the above figure, two areas, zone i and zone j, are represented as two centroids, i and j. A vector Tij links two centroids and has a value assigned to it (50) which can represents movements such as tons of freight, numbers of passengers per day, or number of phone calls.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section class="slide level2">
+<section id="constructing-an-od-matrix" class="slide level2">
+<h2>Constructing an O/D Matrix</h2>
+<ul>
+<li>The construction of an origin / destination matrix requires directional flow information between a series of locations.</li>
+<li>Figure below represents movements (O/D pairs) between five locations (A, B, C, D and E). From this graph, an O/D matrix can be built where each O/D pair becomes a cell. A value of 0 is assigned for each O/D pair that does not have an observed flow.</li>
+</ul>
 
-<h3 id="fixed-bandwidth">Fixed bandwidth</h3>
+<img data-src="img/image10-4.jpg" class="r-stretch"></section>
+<section id="three-basic-types-of-interaction-models" class="slide level2">
+<h2>Three Basic Types of Interaction Models</h2>
+<ul>
+<li>The general formulation of the spatial interaction model is stated as <strong>Tij</strong>, which is the interaction between location i (origin) and location j (destination). <strong>Vi</strong> are the attributes of the location of origin i, <strong>Wj</strong> are the attributes of the location of destination j, and <strong>Sij</strong> are the attributes of separation between the location of origin i and the location of destination j.</li>
+<li>From this general formulation, three basic types of interaction models can be derived:</li>
+</ul>
+
+<img data-src="img/image10-5.jpg" class="r-stretch"></section>
+<section id="gravity-models" class="slide level2">
+<h2>Gravity Models</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
+<p>The general formula (also known as unconstrained):</p>
+<p><img data-src="img/image10-6a.jpg"></p>
 <ul>
-<li><p>Might produce large estimate variances where data are sparse, while mask subtle local variations where data are dense.</p></li>
-<li><p>In extreme condition, fixed schemes might not be able to calibrate in local areas where data are too sparse to satisfy the calibration requirements (observations must be more than parameters).</p></li>
+<li>Tij is the transition/trip or flow, 𝑇, between origin 𝑖 (always the rows in a matrix) and destination 𝑗 (always the columns in a matrix). If you are not overly familiar with matrix notation, the 𝑖 and 𝑗 are just generic indexes to allow us to refer to any cell in the matrix.</li>
+<li>𝑉 is a vector (a 1 dimensional matrix – or, if you like, a single line of numbers) of origin attributes which relate to the emissivity of all origins in the dataset, 𝑖 – this could be any of the origin-related variables.</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><img data-src="img/image4-23.jpg"></p>
+<ul>
+<li>𝑊 is a vector of destination attributes relating to the attractiveness of all destinations in the dataset, 𝑗 – similarly, this could be any of the destination related variables.</li>
+<li>𝑑 is a matrix of costs (frequently distances – hence, d) relating to the flows between 𝑖 and 𝑗.</li>
+<li>𝑘, 𝜇, 𝛼 and 𝛽 are all model parameters to be estimated. 𝛽 is assumed to be negative, as with an increase in cost/distance we would expect interaction to decrease.</li>
+</ul>
 </div>
 </div>
 </section>
 <section class="slide level2">
 
-<h3 id="quadrat-analysis-step-1">Quadrat Analysis – Step 1</h3>
-<div class="columns">
-<div class="column" style="width:70%;">
-<ul>
-<li>Divide the study area into subregion of equal size,
-<ul>
-<li>often squares, but don’t have to be.</li>
-</ul></li>
-</ul>
-<p><img data-src="img/image4-12.jpg" width="1007"></p>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="quadrat-analysis-step-2">Quadrat Analysis – Step 2</h3>
-<div class="columns">
-<div class="column" style="width:70%;">
-<ul>
-<li>Count the frequency of events in each region.</li>
-</ul>
-<p><img data-src="img/image4-13.jpg" width="1214"></p>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="quadrat-analysis-step-3">Quadrat Analysis – Step 3</h3>
-<div class="columns">
-<div class="column" style="width:70%;">
-<ul>
-<li>Calculate the intensity of events in each region.</li>
-</ul>
-<p><img data-src="img/image4-14.jpg"></p>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="quadrat-analysis-step-4">Quadrat Analysis – Step 4</h3>
-<ul>
-<li>Calculate the quadrat statistics and perform CSR test.</li>
-</ul>
-
-<img data-src="img/image4-15.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="quadrat-analysis-variance-mean-ratio-vmr">Quadrat Analysis – Variance-Mean Ratio (VMR)</h3>
-<ul>
-<li><p>For an <strong>uniform</strong> distribution, the variance is zero, - therefore, we expect a variance-mean ratio <strong>close to 0</strong>.</p></li>
-<li><p>For a <strong>random</strong> distribution, the variance and mean are the same,</p>
-<ul>
-<li>therefore, we expect a variance-mean ratio <strong>close to 1</strong>.</li>
-</ul></li>
-<li><p>For a <strong>cluster</strong> distribution, the variance is relatively large,</p>
-<ul>
-<li>therefore, we expect a variance-mean ratio <strong>greater than 1</strong>.]</li>
-</ul></li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="complete-spatial-randomness-csr">Complete Spatial Randomness (CSR)</h3>
+<h3 id="unconstrained-totally-constrained-case">Unconstrained (Totally constrained) case</h3>
 <div class="columns">
 <div class="column" style="width:50%;">
-<ul>
-<li><p>CSR/IRP satisfy two conditions: - Any event has equal probability of being in any location, a <strong>1st order</strong> effect.</p>
-<ul>
-<li>The location of one event is independent of the location of another event, a <strong>2nd order</strong> effect.</li>
-</ul></li>
-</ul>
-<p>Reference: <a href="https://mgimond.github.io/Spatial/hypothesis-testing.html">Chapter 12 Hypothesis testing of Intro to GIS and Spatial Analysis</a></p>
+<p>The O-D Matrix</p>
+<p><img data-src="img/image10-6c.jpg"></p>
+<p>and distance matrix:</p>
+<p><img data-src="img/image10-6d.jpg" width="500"></p>
+<p><img data-src="img/image10-6e.jpg"></p>
 </div><div class="column" style="width:50%;">
-<p><img data-src="img/image4-16.jpg"></p>
+<p>The estimated O-D matrix:</p>
+<p><img data-src="img/image10-6f.jpg"></p>
+<p>and the calculation T11</p>
+<p><img data-src="img/image10-6g.jpg" width="400"></p>
 </div>
 </div>
 </section>
 <section class="slide level2">
 
-<h3 id="quadrat-analysis-the-interpretation">Quadrat Analysis: The interpretation</h3>
-<div class="columns">
-<div class="column" style="width:70%;">
-<p><img data-src="img/image4-17.jpg"></p>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="weaknesses-of-quadrat-analysis">Weaknesses of quadrat analysis</h3>
+<h3 id="the-origin-production-constrained-model">The Origin (Production) Constrained Model</h3>
 <div class="columns">
 <div class="column" style="width:50%;">
+<p>In the Origin Constrained Model,</p>
 <ul>
-<li><p>It is sensitive to the quadrat size.</p>
-<ul>
-<li>If the quadrat size is too small, they may contain only a couple of points, and</li>
-<li>If the quadrat size is too large, they may contain too many points.</li>
-</ul></li>
-<li><p>It is a measure of <strong>dispersion</strong> rather than a measure of <strong>pattern</strong>.</p></li>
-<li><p>It results in a single measure for the entire distribution, so variation within the region are not recognised.</p></li>
+<li>𝑂𝑖 does not have a parameter as it is a known <strong>constraint</strong>.</li>
+<li>𝐴𝑖 is known as a <strong>balancing factor</strong> and is a vector of values which relate to each origin 𝑖 which do the equivalent job as 𝑘 in the unconstrained/total constrained model but ensure that flow estimates from each origin sum to the know totals 𝑂𝑖 rather than just the overall total.</li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><img data-src="img/image4-18.jpg"></p>
-</div>
-</div>
-</section>
-<section id="distance-based-nearest-neighbour-index" class="slide level2">
-<h2>Distance-based: Nearest Neighbour Index</h2>
-<h3 id="what-is-nearest-neighbour">What is Nearest Neighbour?</h3>
-<p>Direct distance from a point to its nearest neighbour.</p>
-
-<img data-src="img/image4-25.jpg" class="r-stretch"></section>
-<section id="nearest-neighbour-index" class="slide level2">
-<h2>Nearest Neighbour Index</h2>
-<p>The Nearest Neighbour Index is expressed as the ratio of the <strong>Observed Mean Distance</strong> to the <strong>Expected Mean Distance</strong>.</p>
-
-<img data-src="img/image4-26.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="calculating-nearest-neighbour-index">Calculating Nearest Neighbour Index</h3>
-
-<img data-src="img/image4-27.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="interpreting-nearest-neighbour-index">Interpreting Nearest Neighbour Index</h3>
-<p>The expected distance is the average distance between neighbours in a hypothetical random distribution.</p>
-<ul>
-<li>If the index is less than 1, the pattern exhibits clustering,</li>
-<li>If the index is equal to 1, the patterns exhibits random, and</li>
-<li>If the index is greater than 1, the trend is toward dispersion or competition.</li>
-</ul>
-
-<img data-src="img/image4-28.jpg" width="350" class="r-stretch quarto-figure-center"></section>
-<section class="slide level2">
-
-<h3 id="the-test-statistics">The test statistics</h3>
-<div class="columns">
-<div class="column" style="width:80%;">
-<ul>
-<li><p>Null Hypothesis: Points are randomly distributed</p></li>
-<li><p>Test statistics:</p></li>
-</ul>
-<p><img data-src="img/image4-29.jpg" width="295"></p>
-<ul>
-<li>Reject the null hypothesis if the z-score is large and p-value is smaller than the alpha value.</li>
-</ul>
+<p><img data-src="img/image10-6b.jpg"></p>
 </div>
 </div>
 </section>
 <section class="slide level2">
 
-<h3 id="interpreting-nearest-neighbour-index-1">Interpreting Nearest Neighbour Index</h3>
-<div class="columns">
-<div class="column" style="width:70%;">
-<p><img data-src="img/image4-30.jpg"></p>
-<p>The p-value is smaller than 0.05 =&gt; Reject the null hypothesis that the point patterns are randomly distributed.</p>
-</div>
-</div>
-</section>
-<section id="g-function" class="slide level2">
-<h2>G function</h2>
+<h3 id="oringin-production-constrained-case">Oringin (Production) constrained case</h3>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>The formula</p>
-<p><img data-src="img/image4-31.jpg" width="505"></p>
+<p>The O-D Matrix</p>
+<p><img data-src="img/image10-6c.jpg"></p>
+<p>and distance matrix:</p>
+<p><img data-src="img/image10-6d.jpg" width="500"></p>
+<p><img data-src="img/image10-6e.jpg"></p>
 </div><div class="column" style="width:50%;">
-<p><img data-src="img/image4-32.jpg" width="502"></p>
+<p>The estimated O-D matrix:</p>
+<p><img data-src="img/image10-7a.jpg"></p>
+<p>A1 is calculated as shown below:</p>
+<p><img data-src="img/image10-7b.jpg"></p>
+<p>Hence, T11 is calculated as shown below:</p>
+<p><img data-src="img/image10-7c.jpg" width="450"></p>
 </div>
 </div>
 </section>
 <section class="slide level2">
 
-<h3 id="interpretation-of-g-function">Interpretation of G-function</h3>
+<h3 id="the-destination-attraction-constrained-model">The Destination (Attraction) Constrained Model</h3>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>The shape of G-function tells us the way the events are spaced in a point pattern.</p>
-<ul>
-<li><p>Clustered: G increases rapidly at short distance.</p></li>
-<li><p>Evenness: G increases slowly up to distance where most events spaced, then increases rapidly.</p></li>
-</ul>
-</div><div class="column">
-<p><img data-src="img/image4-33.jpg"></p>
+<p><img data-src="img/image10-8a.jpg"></p>
 </div>
 </div>
 </section>
 <section class="slide level2">
 
-<h3 id="how-do-we-tell-if-g-is-significant">How do we tell if G is significant?</h3>
+<h3 id="destination-attraction-constrained-case">Destination (Attraction) constrained case</h3>
 <div class="columns">
 <div class="column" style="width:50%;">
-<ul>
-<li>The significant of any departure from CSR (either cluster or regularity) can be evaluated using simulated “confidence envelopes”</li>
-</ul>
+<p>The O-D Matrix</p>
+<p><img data-src="img/image10-6c.jpg"></p>
+<p>and distance matrix:</p>
+<p><img data-src="img/image10-6d.jpg" width="500"></p>
+<p><img data-src="img/image10-6e.jpg"></p>
 </div><div class="column" style="width:50%;">
-<p><img data-src="img/image4-34.jpg"></p>
+<p>The estimated O-D matrix:</p>
+<p><img data-src="img/image10-8b.jpg"></p>
+<p>B1 is calculated as shown below:</p>
+<p><img data-src="img/image10-8c.jpg"></p>
+<p>Hence, T11 is calculated as shown below:</p>
+<p><img data-src="img/image10-8d.jpg" width="500"></p>
 </div>
 </div>
 </section>
 <section class="slide level2">
 
-<h3 id="monte-carlo-simulation-test-of-csr">Monte Carlo simulation test of CSR</h3>
-<ul>
-<li><p>Perform m independent simulation of n events (i.e.&nbsp;999) in the study region.</p></li>
-<li><p>For each simulated point pattern, estimate G(r) and use the maximum (95th) and minimum (5th) of these functions for the simulated patterns to define an upper and lower simulation envelope.</p></li>
-<li><p>If the estimated G(r) lies above the upper envelope or below the lower envelope, the estimated G(r) is statistically significant.</p></li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="the-significant-test-of-g-function">The significant test of G-function</h3>
-
-<img data-src="img/image4-35.jpg" class="r-stretch"></section>
-<section id="f-function" class="slide level2">
-<h2>F function</h2>
-<ul>
-<li>Select a sample of point locations anywhere in the study region at random
-<ul>
-<li>Determine minimum distance from each point to any event in the study area.</li>
-</ul></li>
-<li>Three steps:
-<ul>
-<li><p>Randomly select m points (p1, p2, ….., pn),</p></li>
-<li><p>Calculate dmin(pi,s) as the minimum distance from location pi to any event in the point patterns, and</p></li>
-<li><p>Calculate F(d).</p></li>
-</ul></li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="the-f-function-formula">The F function formula</h3>
-
-<img data-src="img/image4-36.jpg" class="r-stretch quarto-figure-center"></section>
-<section class="slide level2">
-
-<h3 id="interpretation-of-f-function">Interpretation of F-function</h3>
-<ul>
-<li><p>Clustered = F(r) rises slowly at first, but more rapidly at longer distances.</p></li>
-<li><p>Evenness = F(r) rises rapidly at first, then slowly at longer distances.</p></li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="the-significant-test-of-f-function">The significant test of F-function</h3>
-
-<img data-src="img/image4-37.jpg" class="r-stretch"></section>
-<section class="slide level2">
-
-<h3 id="comparison-between-g-and-f">Comparison between G and F</h3>
-
-<img data-src="img/image4-38.jpg" class="r-stretch"></section>
-<section id="ripleys-k-function-ripley-1981" class="slide level2">
-<h2>Ripley’s K function (Ripley, 1981)</h2>
-<ul>
-<li><p>Limitation of nearest neighbor distance method is that it uses only nearest distance</p></li>
-<li><p>Considers only the shortest scales of variation.</p></li>
-<li><p>K function uses more points.</p>
-<ul>
-<li>Provides an estimate of spatial dependence over a wider range of scales.</li>
-<li>Based on all the distances between events in the study area.</li>
-<li>Assumes isotropy over the region.</li>
-</ul></li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="calculating-the-k-function">Calculating the K function</h3>
+<h3 id="the-doubly-constrained-model">The Doubly Constrained Model</h3>
 <div class="columns">
 <div class="column" style="width:50%;">
-<ul>
-<li><p>Construct a circle of radius h around each point event(i).</p></li>
-<li><p>Count the number of other events (j) that fall inside this circle.</p></li>
-<li><p>Repeat these two steps for all points (i) and sum results.</p></li>
-<li><p>Increment h by a small amount and repeat the calculation.</p></li>
-</ul>
+<p><img data-src="img/image10-9a.jpg"></p>
 </div><div class="column" style="width:50%;">
-<p><img data-src="img/image4-39.jpg"></p>
+<div class="callout callout-note callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Note that the calculation of 𝐴𝑖 relies on knowing 𝐵𝑗 and the calculation of 𝐵𝑗 relies on knowing 𝐴𝑖 – something of a conundrum to which the solution is elegantly described by Senior (1979), who sketches out a very useful algorithm for iteratively arriving at values for 𝐴𝑖 and 𝐵𝑗 by setting each to equal 1 initially and then continuing to calculate each in turn until the difference between successive iterations of the 𝐴𝑖 and 𝐵𝑗 values is small enough not to matter.</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
 <section class="slide level2">
 
-<h3 id="k-function">K function</h3>
-<div class="columns">
-<div class="column" style="width:90%;">
-<p>The formula:</p>
-<p><img data-src="img/image4-40.jpg" width="1153"></p>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="the-k-function-complete-spatial-randomness-test">The K function complete spatial randomness test</h3>
-<ul>
-<li><p>K(h) can be plotted against different values of h.</p></li>
-<li><p>But what should K look like for no spatial dependence?</p></li>
-<li><p>Consider what K(h) should look like for a random point process (CSR)</p>
-<ul>
-<li>The probability of an event at any point in R is independent of what other events have occurred and equally likely anywhere in R</li>
-</ul></li>
-</ul>
-</section>
-<section class="slide level2">
-
-<h3 id="interpreting-the-k-function-complete-spatial-randomness-test">Interpreting the K function complete spatial randomness test</h3>
+<h3 id="doubly-constrained-case">Doubly constrained case</h3>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Under the assumption of CSR, the expected number of events within distance h of an event is:</p>
-<p><img data-src="img/image4-41.jpg"></p>
-<p>Compare K(h) to 𝜋ℎ^2</p>
-<ul>
-<li>K(h) &lt; 𝜋ℎ^2 if point pattern is regular</li>
-<li>K(h) &gt; 𝜋ℎ^2 if point pattern is clustered</li>
-</ul>
+<p>The O-D Matrix</p>
+<p><img data-src="img/image10-6c.jpg"></p>
+<p>and distance matrix:</p>
+<p><img data-src="img/image10-6d.jpg" width="500"></p>
+<p><img data-src="img/image10-6e.jpg"></p>
 </div><div class="column" style="width:50%;">
-<p><img data-src="img/image4-42.jpg"></p>
-<ul>
-<li>Above the envelop: significant cluster pattern - Below the envelop: significant regular</li>
-<li>Inside the envelop: CSR</li>
-</ul>
+<p>The estimated O-D matrix:</p>
+<p><img data-src="img/image10-9b.jpg"></p>
+<p>Hence, T11 is calculated as shown below:</p>
+<p><img data-src="img/image10-9c.jpg" width="500"></p>
+<p>Notice that A1 and B1 are computed by using computer.</p>
 </div>
-</div>
-</section>
-<section id="the-l-function-besag-1977" class="slide level2">
-<h2>The L function (Besag 1977)</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>In practice, K function will be normalised to obtained a benchmark of zero.</p>
-<p>The formula:</p>
-<p><img data-src="img/image4-43.jpg" width="448"></p>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="interpreting-the-l-function-complete-spatial-randomness-test">Interpreting the L function complete spatial randomness test</h3>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div style="font-size: 0.80em">
-<ul>
-<li>When an observed L value is greater than its corresponding L(theo)(i.e.&nbsp;red break line) value for a particular distance and above the upper confidence envelop, spatial clustering for that distance is statistically significant (e.g.&nbsp;distance beyond C).</li>
-<li>When an observed L value is greater than its corresponding L(theo) value for a particular distance and lower than the upper confidence envelop, spatial clustering for that distance is statistically NOT significant (e.g.&nbsp;distance between B and C).</li>
-<li>When an observed L value is smaller than its corresponding L(theo) value for a particular distance and beyond the lower confidence envelop, spatial dispersion for that distance is statistically significant. - When an observed L value is smaller than its corresponding L(theo) value for a particular distance and within the lower confidence envelop, spatial dispersion for that distance is statistically NOT significant (e.g.&nbsp;distance between A and B).</li>
-</ul>
-</div>
-</div><div class="column" style="width:50%;">
-<div style="font-size: 0.80em">
-<ul>
-<li>The grey zone indicates the confident envelop (i.e.&nbsp;95%).</li>
-</ul>
-</div>
-<p><img data-src="img/image4-44.jpg"></p>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<h3 id="the-l-function-besag-1977-1">The L function (Besag 1977)</h3>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>The modified L function</p>
-<p><img data-src="img/image4-45.jpg" width="458"></p>
-<ul>
-<li><p>L(r)&gt;0 indicates that the observed distribution is geographically concentrated.</p></li>
-<li><p>L(r)&lt;0 implies dispersion.</p></li>
-<li><p>L(r)=0 indicates complete spatial randomness (CRS).</p></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="img/image4-46.jpg"></p>
-</div>
-</div>
-</section>
-<section id="references" class="slide level2">
-<h2>References</h2>
-<ul>
-<li><p><a href="https://mgimond.github.io/Spatial/point-pattern-analysis.html">Chapter 11 Point Pattern Analysis</a> of <strong>Intro to GIS and Spatial Analysis</strong>. Section 11.2, 11.3, 11.3.1 and 11.4</p></li>
-<li><p>GIS&amp;T Body of Knowledge <a href="https://gistbok.ucgis.org/bok-basic-page/welcome-gist-body-knowledge">AM-07-Point Pattern Analysis</a></p></li>
-<li><p>GIS&amp;T Body of Knowledge <a href="https://gistbok.ucgis.org/bok-topics/kernels-and-density-estimation">AM-08-Kernels and Density Estimation</a></p></li>
-<li><p><a href="https://www.directionsmag.com/article/3289">Analyzing Patterns in Business Point Data</a>, Directions Magazine March 17, 2005.</p></li>
-<li><p>O’Sullivan, D., and Unwin, D. (2010) <strong>Geographic Information Analysis</strong>, Second Edition. John Wiley &amp; Sons Inc., New Jersey, Canada. Chapter 5-6.</p></li>
-<li><p>Baddeley A., Rubak E. and Turner R. (2015) <strong>Spatial Point Patterns: Methodology and Applications with R</strong>, Chapman and Hall/CRC.</p></li>
-</ul>
-<div class="cell">
-
 </div>
 
 <div class="footer footer-default">
