@@ -105,4 +105,86 @@ Please submit your questions or queries related to this take-home exercise on Pi
 
 ## Peer Learning
 
+-   [Take-home Exercise 1: Geographic Analysis of the Supply and Demand of Childcare Services in Singapore](https://rpubs.com/xiaorongw/IS415_Take-home_Ex01) by Xiao Rong Wong.
 
+-   [Take-Home Exercise 2: Spatial Point Patterns Analysis of Airbnb Listings in Singapore](https://is415-msty.netlify.app/posts/2021-09-19-take-home-exercise-2/) by MEGAN SIM TZE YEN.
+
+-   [Interactive Plotting of Second-order Spatial Point Patterns Analysis: Childcare Centres in Singapore](https://rpubs.com/deniseadele/secondorder_pointpattern) by Denise Adele Chua.
+
+## Q & A
+
+Please submit your questions or queries related to this take-home exercise on Piazza.
+
+## Peer Learning
+
+-   [AILYS TEE XYNYN](https://is415-ailystee.netlify.app/take-home_ex/take-home_ex02/take-home_ex02)![](image/thumbup1.jpg) Overall very well prepared submission. The data preparation was very well done. The flow of analysis processes were appropriate.
+
+-   [ALANIS ZOE CHIA HUI LIN](https://is415-zoechia.netlify.app/take-home_ex/take-home_ex02/take-home_ex02)
+
+-   [ANNA TSENG RUI-WEN](https://annatrw-is415.netlify.app/take-home_ex/take-home_ex02/take-home_ex02)
+
+-   [CELINE NG SI LIN](https://is415-gaa.netlify.app/take-home_ex/take-home_ex02/take-home_ex02)
+
+-   [CHEN HAO XIAN](https://is415-gaa-hxchen.netlify.app/lessons/take-home/take-home_ex2/take-home_ex2)
+
+-   [DANIEL CHNG CHONG YEE](https://celebrated-truffle-4b528c.netlify.app/take-home_ex/take-home_ex02/take-home_ex02)
+
+-   [DEREK POH YONG JIE](https://derekpoh-is415.netlify.app/take-home_ex/take-home_ex02/take-home_ex02)
+
+-   [ESWARA LAKSHMANAN ABISHEK](https://is415-elabishek.netlify.app/takehome_exercise/takehome2/takehome_ex2)
+
+-   [HARITH OH YEE CHOON](https://is415-harith.netlify.app/take-home_ex2/take_home_exe2)
+
+-   [HO YONG QUAN](https://is415-gaa-yongquan.netlify.app/take-home_ex/take-home_ex02/take-home_ex02#setting-the-scene)
+
+-   [HOW XIN YEE](https://is415-xinyeehow.netlify.app/take-home_ex/take-home_ex02/take-home_ex02)
+
+-   [JENNIFER POERNOMO](https://jenpoer-is415-gaa-exercises.netlify.app/take-home-exercises/exe-02/the2)
+
+-   [KUMARAPANDIAN YASHICARAMYA](https://is415-gaa-xtc0.netlify.app/take-home_ex/take_home_ex02/take-home_ex02)
+
+-   [KWANG KAI XUAN BELLE](https://melodious-kelpie-bd4c0d.netlify.app/take_home_ex/the2/the2)
+
+-   [KWEK MING RONG](https://is415-gaa-kwekmingrong.netlify.app/take_home_ex/take_home_ex2)
+
+-   [LEE CHIA MIN MICHELLE FAITH](https://is415-gaa-michellefaith.netlify.app/take-home_ex/take-home_ex02/take-home_ex02#overview)
+
+-   [LEON TAN LI YANG](https://capable-arithmetic-46d74a.netlify.app/take-home_ex/take-home_ex02/take-home_ex02)
+
+-   [LU QUANFANG](https://is415quanfang.netlify.app/takehome_exercise/takehome_exercise2/takehome_ex02)
+
+-   [MICHELLE LEONG HWEE-LING](https://is415-shelle-mim.netlify.app/take-home_exercise/th2/th_ex2)
+
+-   [NGUYEN MAI PHUONG](https://is415-gaa-tiffanik.netlify.app/take-home_ex/take-home_ex02/take-home_ex02)
+
+-   [PENG YOU YUN](https://youyunpeng-is415.netlify.app/take-home_ex/take-home_ex02/take-home_ex02)
+
+-   [PIERRE JEAN MICHEL HAAS](https://is415-pierrehaas.netlify.app/take-home_ex/take-home_ex02/take-home_ex02)
+
+-   [RHONDA HO KAH YEE](https://rhondaho-is415.netlify.app/take-home_assgn/take-home_assgn2/take-home_assgn2)
+
+-   [S GUGANESH](https://is415-gaa-guganesh.netlify.app/take-home_ex/take-home_ex02/take-home_ex02.html)
+
+-   [SALUNKE MAYURI MILIND](https://is415-mayurims.netlify.app/take-home_ex/take-home_ex02/take-home_ex02)
+
+-   [SHAMBHAVI GOENKA](https://shambhavig.netlify.app/take_home_ex/take_home_ex02/take_home_ex02.html)
+
+-   [SHAYTHURAM SO ELANGKOVAN]()
+
+-   [SHERRY NG SHEA LI](https://cosmic-muffin-95669c.netlify.app/take-home_ex/take-home_ex02/take-home_ex02)
+
+-   [TAN WEI SHING]()
+
+-   [TAN WEN YANG](https://is415-gaa-wy.netlify.app/take-home-ex/take-home-ex02/take-home-ex02.html)
+
+-   [TAN YAN LIN VALENCIA](https://is415-gaa-valtyl.netlify.app/take-home_ex/take-home_ex02/take-home_ex02)
+
+-   [TEH JIA HUI GAIL](https://is415-gaa-gailteh.netlify.app/take-home_ex/take-home_ex02/take-home_ex02)
+
+-   [TEO JUN HAO](https://is415-gaa-junhao.netlify.app/take-home_ex/take-home_ex02/take-home_ex02)
+
+-   [TEO REN JIE](https://renjieteo-is415.netlify.app/exercises/thex02.html)
+
+-   [TONG XUE YU KATHY](https://is415-gaa-kathy.netlify.app/take-home_ex/take-home_ex02/take-home_ex02)
+
+-   [WONG KELLY](https://is415kellysite.netlify.app/take_home_ex/take_home_ex02_endmonths/take_home_ex02)

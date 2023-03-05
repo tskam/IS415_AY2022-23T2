@@ -1355,7 +1355,7 @@
     "href": "th_ex1.html#peer-learning",
     "title": "Take-home Exercise 1: Application of Spatial Point Patterns Analysis to discover the geographical distribution of functional and non-function water points in Osun State, Nigeria",
     "section": "Peer Learning",
-    "text": "Peer Learning\n\nAILYS TEE XYNYN\nALANIS ZOE CHIA HUI LIN\nANNA TSENG RUI-WEN\nCELINE NG SI LIN\nCHEN HAO XIAN\nDANIEL CHNG CHONG YEE\nDEREK POH YONG JIE\nESWARA LAKSHMANAN ABISHEK\nHARITH OH YEE CHOON\nHO YONG QUAN\nHOW XIN YEE\nJENNIFER POERNOMO\nKUMARAPANDIAN YASHICARAMYA\nKWANG KAI XUAN BELLE\nKWEK MING RONG\nLEE CHIA MIN MICHELLE FAITH\nLEON TAN LI YANG\nLU QUANFANG\nMICHELLE LEONG HWEE-LING\nNGUYEN MAI PHUONG\nPENG YOU YUN\nPIERRE JEAN MICHEL HAAS\nRHONDA HO KAH YEE\nS GUGANESH\nSALUNKE MAYURI MILIND\nSHAMBHAVI GOENKA\nSHAYTHURAM SO ELANGKOVAN\nSHERRY NG SHEA LI\nTAN WEI SHING\nTAN WEN YANG\nTAN YAN LIN VALENCIA\nTEH JIA HUI GAIL\nTEO JUN HAO\nTEO REN JIE\nTONG XUE YU KATHY\nWONG KELLY"
+    "text": "Peer Learning\n\nAILYS TEE XYNYN Overall very well prepared submission. The data preparation was very well done. The flow of analysis processes were appropriate.\nALANIS ZOE CHIA HUI LIN\nANNA TSENG RUI-WEN\nCELINE NG SI LIN\nCHEN HAO XIAN\nDANIEL CHNG CHONG YEE\nDEREK POH YONG JIE\nESWARA LAKSHMANAN ABISHEK\nHARITH OH YEE CHOON\nHO YONG QUAN\nHOW XIN YEE\nJENNIFER POERNOMO\nKUMARAPANDIAN YASHICARAMYA\nKWANG KAI XUAN BELLE\nKWEK MING RONG\nLEE CHIA MIN MICHELLE FAITH\nLEON TAN LI YANG\nLU QUANFANG\nMICHELLE LEONG HWEE-LING\nNGUYEN MAI PHUONG\nPENG YOU YUN\nPIERRE JEAN MICHEL HAAS\nRHONDA HO KAH YEE\nS GUGANESH\nSALUNKE MAYURI MILIND\nSHAMBHAVI GOENKA\nSHAYTHURAM SO ELANGKOVAN\nSHERRY NG SHEA LI\nTAN WEI SHING\nTAN WEN YANG\nTAN YAN LIN VALENCIA\nTEH JIA HUI GAIL\nTEO JUN HAO\nTEO REN JIE\nTONG XUE YU KATHY\nWONG KELLY"
   },
   {
     "objectID": "th_ex2.html",
@@ -1432,7 +1432,7 @@
     "href": "th_ex2.html#peer-learning",
     "title": "Take-home Exercise 2: Spatio-temporal Analysis of COVID-19 Vaccination Trends at the Sub-district Level, DKI Jakarta",
     "section": "Peer Learning",
-    "text": "Peer Learning"
+    "text": "Peer Learning\n\nTake-home Exercise 1: Geographic Analysis of the Supply and Demand of Childcare Services in Singapore by Xiao Rong Wong.\nTake-Home Exercise 2: Spatial Point Patterns Analysis of Airbnb Listings in Singapore by MEGAN SIM TZE YEN.\nInteractive Plotting of Second-order Spatial Point Patterns Analysis: Childcare Centres in Singapore by Denise Adele Chua."
   },
   {
     "objectID": "lesson/Lesson08/Lesson08-gwr.html#content",
@@ -1951,5 +1951,19 @@
     "title": "Lesson 11: Modelling Geographic of Accessibility",
     "section": "Spatial Accessibility Measure (SAM)",
     "text": "Spatial Accessibility Measure (SAM)\nThe formula:\n\nwhere\n\nAai is the accessibility in ED i,\nnj is the capacity of the target facility j.\npi is the demand of this ED, and\ndij is the network distance between the EDi and each facility j.\n\n\nReference: Stamatis Kalogirou & Ronan Foley (2006) “Health, place and Hanly: Modelling accessibility to hospitals in Ireland”, Irish Geography, Volume 39(1), 2006, 52-68."
+  },
+  {
+    "objectID": "th_ex2.html#q-a-1",
+    "href": "th_ex2.html#q-a-1",
+    "title": "Take-home Exercise 2: Spatio-temporal Analysis of COVID-19 Vaccination Trends at the Sub-district Level, DKI Jakarta",
+    "section": "Q & A",
+    "text": "Q & A\nPlease submit your questions or queries related to this take-home exercise on Piazza."
+  },
+  {
+    "objectID": "th_ex2.html#peer-learning-1",
+    "href": "th_ex2.html#peer-learning-1",
+    "title": "Take-home Exercise 2: Spatio-temporal Analysis of COVID-19 Vaccination Trends at the Sub-district Level, DKI Jakarta",
+    "section": "Peer Learning",
+    "text": "Peer Learning\n\nAILYS TEE XYNYN Overall very well prepared submission. The data preparation was very well done. The flow of analysis processes were appropriate.\nALANIS ZOE CHIA HUI LIN\nANNA TSENG RUI-WEN\nCELINE NG SI LIN\nCHEN HAO XIAN\nDANIEL CHNG CHONG YEE\nDEREK POH YONG JIE\nESWARA LAKSHMANAN ABISHEK\nHARITH OH YEE CHOON\nHO YONG QUAN\nHOW XIN YEE\nJENNIFER POERNOMO\nKUMARAPANDIAN YASHICARAMYA\nKWANG KAI XUAN BELLE\nKWEK MING RONG\nLEE CHIA MIN MICHELLE FAITH\nLEON TAN LI YANG\nLU QUANFANG\nMICHELLE LEONG HWEE-LING\nNGUYEN MAI PHUONG\nPENG YOU YUN\nPIERRE JEAN MICHEL HAAS\nRHONDA HO KAH YEE\nS GUGANESH\nSALUNKE MAYURI MILIND\nSHAMBHAVI GOENKA\nSHAYTHURAM SO ELANGKOVAN\nSHERRY NG SHEA LI\nTAN WEI SHING\nTAN WEN YANG\nTAN YAN LIN VALENCIA\nTEH JIA HUI GAIL\nTEO JUN HAO\nTEO REN JIE\nTONG XUE YU KATHY\nWONG KELLY"
   }
 ]
