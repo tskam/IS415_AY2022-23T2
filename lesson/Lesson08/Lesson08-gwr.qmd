@@ -16,23 +16,24 @@ editor: visual
 
 ## Content
 
-- Introducing Regression Modelling
-    - Simple Linear Regression
-    - Multiple Linear Regression
+-   Introducing Regression Modelling
 
-- What is Spatial Non-stationary
+    -   Simple Linear Regression
+    -   Multiple Linear Regression
 
-- Introducing Geographically Weighted Regression
-    - Weighting functions (kernel)
-    - Weighting schemes
-    - Bandwidth
+-   What is Spatial Non-stationary
 
-- Interpreting and Visualising
+-   Introducing Geographically Weighted Regression
 
+    -   Weighting functions (kernel)
+    -   Weighting schemes
+    -   Bandwidth
+
+-   Interpreting and Visualising
 
 ## The WHY Questions
 
-- Why some condominium units were transacted at relatively higher prices than others?
+-   Why some condominium units were transacted at relatively higher prices than others?
 
 ![](img/image9-1.jpg)
 
@@ -44,15 +45,16 @@ Why condominium units located at the central part of Singapore were transacted a
 
 ## What is regression analysis?
 
-- A set of statistical processes for explaining the relationships among variables.
+-   A set of statistical processes for explaining the relationships among variables.
 
-- The focus is on the relationship between a dependent variable (y) and one or more independent variables (x)
-    - Does X affect Y? If so, how?
-    - What is the change in Y given a one unit change in X?
+-   The focus is on the relationship between a dependent variable (y) and one or more independent variables (x)
 
-- Estimate outcomes based on the relationships modelled.
+    -   Does X affect Y? If so, how?
+    -   What is the change in Y given a one unit change in X?
 
----
+-   Estimate outcomes based on the relationships modelled.
+
+------------------------------------------------------------------------
 
 ### A Simple Linear Regression Model
 
@@ -60,51 +62,51 @@ The formula:
 
 ![](img/image9-3.jpg)
 
----
+------------------------------------------------------------------------
 
 ### The Least Squares Method
 
-- The sum of the vertical deviations (y axis) of the points from the line is minimal.
+-   The sum of the vertical deviations (y axis) of the points from the line is minimal.
 
 ![](img/image9-4.jpg)
 
----
+------------------------------------------------------------------------
 
 ### Multiple Linear Regression
 
 ![](img/image9-5.jpg)
 
----
+------------------------------------------------------------------------
 
 ### Assessing the goodness of fit
 
 ![](img/image9-6.jpg)
 
----
+------------------------------------------------------------------------
 
 ### Significance testing in regression
 
 ![](img/image9-7.jpg)
 
----
+------------------------------------------------------------------------
 
 ### Goodness of fit test
 
 ![](img/image9-8.jpg)
 
----
+------------------------------------------------------------------------
 
 ### Individual parameter testing
 
 ![](img/image9-11.jpg)
 
----
+------------------------------------------------------------------------
 
 ### Assessing individual parameters
 
 ![](img/image9-9.jpg)
 
----
+------------------------------------------------------------------------
 
 ### Are there redundant explanatory variables?
 
@@ -112,38 +114,39 @@ The formula:
 
 ## Assumptions of linear regression models
 
-- **Linearity assumption**. The relationship between the dependent variable and independent variables is (approximately) linear.
+-   **Linearity assumption**. The relationship between the dependent variable and independent variables is (approximately) linear.
 
-- **Normality assumption**. The residual errors are assumed to be normally distributed.
+-   **Normality assumption**. The residual errors are assumed to be normally distributed.
 
-- **Homogeneity of residuals variance**. The residuals are assumed to have a constant variance (homoscedasticity). 
-- The residuals are uncorrelated with each other.
-    - serial correlation, as with time series
-- (Optional) The errors (residuals) are normally distributed and have a 0 population mean.] 
+-   **Homogeneity of residuals variance**. The residuals are assumed to have a constant variance (homoscedasticity).
 
----
+-   The residuals are uncorrelated with each other.
+
+    -   serial correlation, as with time series
+
+-   (Optional) The errors (residuals) are normally distributed and have a 0 population mean.\]
+
+------------------------------------------------------------------------
 
 ### The linearity assumption
 
 ![](img/image9-12.jpg)
 
----
+------------------------------------------------------------------------
 
 ### The linearity assumption
 
-Residuals vs Fitted plot
-- Used to check the linear relationship assumptions. A horizontal line, without distinct patterns is an indication for a linear relationship, what is good.
+Residuals vs Fitted plot - Used to check the linear relationship assumptions. A horizontal line, without distinct patterns is an indication for a linear relationship, what is good.
 
 ![](img/image9-13.jpg)
 
----
+------------------------------------------------------------------------
 
-### Demystifying the linearity assumption myth 
+### Demystifying the linearity assumption myth
 
 ::: columns
 ::: {.column width="50%"}
-The myth:
-- We should transform the values of the y variable when they are large.
+The myth: - We should transform the values of the y variable when they are large.
 
 ```{r}
 library(tidyverse)
@@ -167,7 +170,7 @@ ggplot(data=data1,
 :::
 :::
 
----
+------------------------------------------------------------------------
 
 ### The linearity assumption
 
@@ -183,7 +186,7 @@ ols_plot_obs_fit(data1.lm, print_plot = TRUE)
 :::
 :::
 
----
+------------------------------------------------------------------------
 
 ### Data transformation come to rescue
 
@@ -205,7 +208,7 @@ ggplot(data=data1,
 :::
 :::
 
----
+------------------------------------------------------------------------
 
 ### The linearity assumption
 
@@ -221,7 +224,7 @@ ols_plot_obs_fit(data.lm2, print_plot = TRUE)
 :::
 :::
 
----
+------------------------------------------------------------------------
 
 ### The normality assumption
 
@@ -235,7 +238,7 @@ This is the test on the **residual** and not on the dependent variable.
 :::
 :::
 
----
+------------------------------------------------------------------------
 
 ### Checking for serial correlation
 
@@ -245,34 +248,32 @@ The purpose of this test is to ensure the residuals of a multiple regression are
 
 ## Spatial Non-stationary
 
-- When applied to spatial data, as can be seen, it assumes a stationary spatial process.
-    - The same stimulus provokes the same response in all parts of the study region.
-    - Highly untenable for spatial process.
+-   When applied to spatial data, as can be seen, it assumes a stationary spatial process.
+    -   The same stimulus provokes the same response in all parts of the study region.
+    -   Highly untenable for spatial process.
 
----
+------------------------------------------------------------------------
 
 ### Why do relationships vary spatially?
 
-- Sampling variation
-    - Nuisance variation, not real spatial non-stationarity.
+-   Sampling variation
+    -   Nuisance variation, not real spatial non-stationarity.
+-   Relationships intrinsically different across space
+    -   Real spatial non-stationarity.
+-   Model misspecification
+    -   Can significant local variations be removed?
 
-- Relationships intrinsically different across space
-    - Real spatial non-stationarity.
-
-- Model misspecification
-    - Can significant local variations be removed?
-
----
+------------------------------------------------------------------------
 
 ### Some definitions
 
-- Spatial non-stationarity: the same stimulus provokes a different response in different parts of the study region.
+-   Spatial non-stationarity: the same stimulus provokes a different response in different parts of the study region.
 
-- Global models: statements about processes which are assumed to be stationary and as such are *location independent*. 
+-   Global models: statements about processes which are assumed to be stationary and as such are *location independent*.
 
-- Local models: spatial decompositions of global models, the results of local models are *location dependent* – a characteristic we usually anticipate from geographic (spatial) data.
+-   Local models: spatial decompositions of global models, the results of local models are *location dependent* -- a characteristic we usually anticipate from geographic (spatial) data.
 
----
+------------------------------------------------------------------------
 
 ### Spatial Autocorrelation assumption
 
@@ -280,112 +281,116 @@ The **residuals** are assumed to be distributed at random over geographical spac
 
 ![](img/image9-16.jpg)
 
----
+------------------------------------------------------------------------
 
-### Test of spatial autocorrelation 
+### Test of spatial autocorrelation
 
 To test if the relationships in the model are **non-stationary**. 
-- *lm.morantest()* of spdep package will be used.]
+
+- *lm.morantest()* of spdep package will be used.
 
 ![](img/image9-17.jpg)
 
 ## Geographically Weighted Regression (GWR)
 
-- Local statistical technique to analyze spatial variations in relationships.
+-   Local statistical technique to analyze spatial variations in relationships.
 
-- Spatial non-stationarity is assumed and will be tested.
+-   Spatial non-stationarity is assumed and will be tested.
 
-- Based on the “First Law of Geography”: everything is related with everything else, but closer things are more related.
+-   Based on the "First Law of Geography": everything is related with everything else, but closer things are more related.
 
----
+------------------------------------------------------------------------
 
 ### Geographically Weighted Regression (GWR): The method
 
 ::: columns
-::: {.column width="50%"}
+::: {.column width="70%"}
 ![](img/image9-18.jpg)
 :::
 :::
 
----
+------------------------------------------------------------------------
 
 ### Calibration of GWR
 
 ::: columns
 ::: {.column width="50%"}
-- Local weighted least squares
-    - Weights are attached with locations
-    - Based on the “First Law of Geography”: everything is related with everything else, but closer things are more related than remote ones
+-   Local weighted least squares
+    -   Weights are attached with locations
+    -   Based on the "First Law of Geography": everything is related with everything else, but closer things are more related than remote ones
 :::
 :::
 
----
+------------------------------------------------------------------------
 
 ### Calibration - Weighting functions
 
 ![](img/image9-19.jpg)
 
----
+------------------------------------------------------------------------
 
 ### Calibration - Weighting functions
 
 ![](img/image9-20.jpg)
 
----
+------------------------------------------------------------------------
 
 ### Calibration - Weighting schemes
 
-- Determines weights
-    - Most schemes tend to be Gaussian or Gaussian-like reflecting the type of dependency found in most spatial processes.
-    - It can be either **Fixed** or **Adaptive**.
- 
-::: columns    
+-   Determines weights
+    -   Most schemes tend to be Gaussian or Gaussian-like reflecting the type of dependency found in most spatial processes.
+    -   It can be either **Fixed** or **Adaptive**.
+
+::: columns
 ::: {.column width="50%"}
 ![](img/image9-21a.jpg)
-:::    
+:::
 
 ::: {.column width="50%"}
 ![](img/image9-21b.jpg)
 :::
 :::
 
----
+------------------------------------------------------------------------
 
 ### Calibration - Determining Bandwidth
 
+::: columns
+::: {.column width="75%"}
 ![](img/image9-22.jpg)
+:::
+:::
 
----
+
+------------------------------------------------------------------------
 
 ### GWR Report
 
-- Package Model
+-   Package Model
 
-- Results of Global Regression
+-   Results of Global Regression
 
-- Results of Geographically Weighted Regression
+-   Results of Geographically Weighted Regression
 
-- SDF: A SpatialPointDataFrame
+-   SDF: A SpatialPointDataFrame
 
-
----
+------------------------------------------------------------------------
 
 ### gwr: local R2
 
 ![](img/image9-23.jpg)
 
----
+------------------------------------------------------------------------
 
 ### gwr: intercept
 
 ![](img/image9-24.jpg)
 
-
 ## References
 
-Brunsdon, C., Fotheringham, A.S., and Charlton, M. (2002) [“Geographically weighted regression: A method for exploring spatial nonstationarity”](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.1996.tb00936.x). *Geographical Analysis*, 28: 281-289. 
+Brunsdon, C., Fotheringham, A.S., and Charlton, M. (2002) ["Geographically weighted regression: A method for exploring spatial nonstationarity"](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.1996.tb00936.x). *Geographical Analysis*, 28: 281-289.
 
-Brunsdon, C., Fotheringham, A.S. and  Charlton, M., (1999) [“Some Notes on Parametric Significance Tests for Geographically Weighted Regression”](https://onlinelibrary-wiley-com.libproxy.smu.edu.sg/doi/abs/10.1111/0022-4146.00146. *Journal of Regional Science*, 39(3), 497-524.
+Brunsdon, C., Fotheringham, A.S. and Charlton, M., (1999) ["Some Notes on Parametric Significance Tests for Geographically Weighted Regression"](https://onlinelibrary-wiley-com.libproxy.smu.edu.sg/doi/abs/10.1111/0022-4146.00146. *Journal of Regional Science*, 39(3), 497-524.
 
 Mennis, Jeremy (2006) ["Mapping the Results of Geographically Weighted Regression"](https://web-b-ebscohost-com.libproxy.smu.edu.sg/ehost/pdfviewer/pdfviewer?vid=1&sid=2bc1df3b-6c17-46af-8650-2781032f1d91%40pdc-v-sessmgr04), *The Cartographic Journal*, Vol.43 (2), p.171-179.
 

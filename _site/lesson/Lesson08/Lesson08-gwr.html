@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.2.269">
 
   <meta name="author" content="Dr.&nbsp;Kam Tin Seong Assoc. Professor of Information Systems(Practice)">
-  <meta name="dcterms.date" content="2023-02-26">
+  <meta name="dcterms.date" content="2023-03-06">
   <title>IS415 AY2022-23T2 - Lesson 8: Geographically Weighted Regression</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -338,7 +338,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
     </div>
 </div>
 
-  <p class="date">26 Feb 2023</p>
+  <p class="date">06 Mar 2023</p>
 </section>
 <section id="content" class="slide level2">
 <h2>Content</h2>
@@ -666,7 +666,10 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <section class="slide level2">
 
 <h3 id="test-of-spatial-autocorrelation">Test of spatial autocorrelation</h3>
-<p>To test if the relationships in the model are <strong>non-stationary</strong>. - <em>lm.morantest()</em> of spdep package will be used.]</p>
+<p>To test if the relationships in the model are <strong>non-stationary</strong>.</p>
+<ul>
+<li><em>lm.morantest()</em> of spdep package will be used.</li>
+</ul>
 
 <img data-src="img/image9-17.jpg" class="r-stretch"></section>
 <section id="geographically-weighted-regression-gwr" class="slide level2">
@@ -681,7 +684,7 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 
 <h3 id="geographically-weighted-regression-gwr-the-method">Geographically Weighted Regression (GWR): The method</h3>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:70%;">
 <p><img data-src="img/image9-18.jpg"></p>
 </div>
 </div>
@@ -732,8 +735,12 @@ Dr.&nbsp;Kam Tin Seong<br>Assoc. Professor of Information Systems(Practice)
 <section class="slide level2">
 
 <h3 id="calibration---determining-bandwidth">Calibration - Determining Bandwidth</h3>
-
-<img data-src="img/image9-22.jpg" class="r-stretch"></section>
+<div class="columns">
+<div class="column" style="width:75%;">
+<p><img data-src="img/image9-22.jpg"></p>
+</div>
+</div>
+</section>
 <section class="slide level2">
 
 <h3 id="gwr-report">GWR Report</h3>
