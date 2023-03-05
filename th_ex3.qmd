@@ -1,0 +1,85 @@
+---
+title: "Take-home Exercise 3: Predicting HDB Public Housing Resale Pricies using Geographically Weighted Methods"
+date: "10 February 2023"
+date-modified: "`r Sys.Date()`"
+format: html
+editor: visual
+---
+
+::: callout-note
+This handout provides the context, the task, the expectation and the grading criteria of Take-home Exercise 3. Students must review and understand them before getting started with the take-home exercise.
+:::
+
+## Setting the Scene
+
+Housing is an essential component of household wealth worldwide.  Buying a housing has always been a major investment for most people.  The price of housing is affected by many factors.  Some of them are global in nature such as the general economy of a country or inflation rate.  Others can be more specific to the properties themselves.  These factors can be further divided to structural and locational factors.  Structural factors are variables related to the property themselves such as the size, fitting, and tenure of the property.  Locational factors are variables related to the neighbourhood of the properties such as proximity to childcare centre, public transport service and shopping centre.  
+
+Conventional, housing resale prices predictive models were built by using [**Ordinary Least Square (OLS)**](https://en.wikipedia.org/wiki/Ordinary_least_squares) method.  However, this method failed to take into consideration that spatial autocorrelation and spatial heterogeneity exist in geographic data sets such as housing transactions. With the existence of spatial autocorrelation, the OLS estimation of predictive housing resale pricing models could lead to biased, inconsistent, or inefficient results (Anselin 1998).  In view of this limitation, **Geographical Weighted Models** were introduced for calibrating predictive model for housing resale prices.
+
+## The Task
+
+In this take-home exercise, you are tasked to predict HDB resale prices at the sub-market level (i.e. HDB 3-room, HDB 4-room and HDB 5-room) for the month of January and February 2023 in Singapore.  The predictive models must be built by using by using conventional OLS method and GWR methods.  You are also required to compare the performance of the conventional OLS method versus the geographical weighted methods.
+
+## The Data
+
+For the purpose of this take-home exercise, [`HDB Resale Flat Prices`](https://data.gov.sg/dataset/resale-flat-prices) provided by Data.gov.sg should be used as the core data set.  The study should focus on either three-room, four-room or five-room flat and transaction period should be from 1st January 2021 to 31st December 2022. The test data should be January and February 2023 resale prices.
+
+Below is a list of recommended predictors to consider.  However, students are free to include other appropriate independent variables. 
+
++ Structural factors
+  + Area of the unit
+  + Floor level
+  + Remaining lease
+  + Age of the unit
+  + Main Upgrading Program (MUP) completed (optional)
+
++ Locational factors
+  + Proxomity to CBD
+  + Proximity to eldercare 
+  + Proximity to foodcourt/hawker centres
+  + Proximity to MRT
+  + Proximity to park
+  + Proximity to good primary school
+  + Proximity to shopping mall
+  + Proximity to supermarket
+  + Numbers of kindergartens within 350m
+  + Numbers of childcare centres within 350m
+  + Numbers of bus stop within 350m
+  + Numbers of primary school within 1km
+
+## Grading Criteria
+
+This exercise will be graded by using the following criteria:
+
+-   **Geospatial Data Wrangling (20 marks):** This is an important aspect of geospatial analytics. You will be assessed on your ability to employ appropriate R functions from various R packages specifically designed for modern data science such as readxl, tidyverse (tidyr, dplyr, ggplot2), sf just to mention a few of them, to perform the entire geospatial data wrangling processes, including. This is not limited to data import, data extraction, data cleaning and data transformation. Besides assessing your ability to use the R functions, this criterion also includes your ability to clean and derive appropriate variables to meet the analysis need. (Warning: All data are like vast grassland full of land mines. Your job is to clear those mines and not to step on them).
+
+- **Geospatial Analysis and Modelling (30 marks):**  In this exercise, you are expected to use appropriate statistical analysis and GWR functions introduced in class to calibrate hedonic price models.  The focus of this criterion should go beyond discussing the modelling results, but include Exploratory Data Analysis, multivariate analysis analysis for detecting multicollinearity, and spatial autocorrelation test, just to name a few of them.  
+
+-   **Geovisualisation (20 marks):** In this section, you will be assessed on your ability to communicate the complex spatial statistics results in business friendly visual representations. This course is geospatial centric, hence, it is important for you to demonstrate your competency in using appropriate geovisualisation techniques to reveal and communicate the findings of your analysis.
+
+-   **Reproducibility (20 marks):** This is an important learning outcome of this exercise. You will be assessed on your ability to provide a comprehensive documentation of the analysis procedures in the form of code chunks of RMarkdown. It is important to note that it is not enough by merely providing the code chunk without any explanation on the purpose and R function(s) used.
+
+-   **Bonus (10 marks):** Demonstrate your ability to employ methods beyond what you had learned in class to gain insights from the data. The methods used must be geospatial in nature.
+
+## Submission Instructions
+
+-   The write-up of the take-home exercise must be in **Quarto html document** format. You are required to publish the write-up on [**Netlify**](https://www.netlify.com/).
+-   The R project of the take-home exercise must be pushed onto your [Github](https://github.com/) repository.
+-   You are required to provide the links to Netlify service of the take-home exercise write-up and github repository on eLearn.
+
+## Due Date
+
+19th March 2023 (Thursday), 11.59pm (midnight).
+
+## Learning from senior
+
+You are advised to review these sample submissions prepared by your seniors.
+
+-   [Take-Home Exercise 3: Hedonic Pricing Models for Resale Prices of Public Housing in Singapore](https://is415-msty.netlify.app/posts/2021-10-25-take-home-exercise-3/) by MEGAN SIM TZE YEN.
+
+-   [Take-home Exercise 3](https://aisyahajit2018-is415.netlify.app/posts/2021-11-07-take-home-exercise-3/) by NOR AISYAH BINTE AJIT.
+
+## Q & A
+
+Please submit your questions or queries related to this take-home exercise on Piazza.
+
