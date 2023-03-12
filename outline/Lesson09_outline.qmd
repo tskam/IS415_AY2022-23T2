@@ -1,5 +1,5 @@
 ---
-title: "Lesson 9: Geographic Segmentation with Spatially Constrained Cluster Analysis"
+title: "Lesson 9: Geographically Weighted Random Forest"
 date: "28 December 2022"
 date-modified:  "`r Sys.Date()`"
 format: html
@@ -8,34 +8,30 @@ editor: visual
 
 ## Content
 
--   Basic concepts of geographic segmentation
--   Conventional cluster analysis techniques
--   Approaches for clustering geographically referenced data
-    -   Hierarchical clustering with spatial constraints
-    -   Minimum spanning trees
+-   What is Predictive Modelling?
+-   What is Geospatial Predictive Modelling
+-   Introducing Recursive Partitioning
+-   Advanced Recursive Partitioning: Random Forest
+-   Introducing Geographically Weighted Random Forest  
 
 ## Lesson Slides and Hands-on Notes
 
--   Lesson slides in [html](../lesson/Lesson09/Lesson09-GeoKDD.html) and [pdf](../lesson/Lesson09/Lesson09-GeoKDD.pdf) formats
+-   Lesson slides in [html](../lesson/Lesson09/Lesson09-GWRF.html) and [pdf](../lesson/Lesson09/Lesson09-GWRF.pdf) formats
 
--   Handout of Hands-on Exercise 9 in [html](https://r4gdsa.netlify.app/chap12.html) format.
+-   Handout of In-class Exercise 9 in [html](https://r4gdsa.netlify.app/chap12.html) format.
 
 ### Self-reading Before Meet-up
 
 To read before class:
 
--   Assuncao, R. M., Neves, M.C., Camara, G. and Costa Freitas, C.D. 2006. "Efficient Regionalization Techniques for Socio-Economic Geographical Units Using Minimum Spanning Trees." International Journal of Geographical Information Science 20: 797--811.
+-   Stefanos Georganos et. al. (2019) ["Geographical Random Forests: A Spatial Extension of the Random Forest Algorithm to Address Spatial Heterogeneity in Remote Sensing and Population Modelling"](https://www.tandfonline.com/doi/full/10.1080/10106049.2019.1595177), *Geocarto International*, DOI: 10.1080/10106049.2019.1595177.
+
+- Georganos, S. and Kalogirou, S. (2022) ["A Forest of Forests: A Spatially Weighted and Computationally Efficient Formulation of Geographical Random Forests"](https://www.mdpi.com/2220-9964/11/9/471). **ISPRS, International Journal of Geo-Information**, 2022, 11, 471. <https://www.mdpi.com/2220-9964/11/9/471>
 
 ### References
 
--   Rovan, J. and Sambt, J. (2003) ["Socio-economic Differences Among Slovenian Municipalities: A Cluster Analysis Approach"](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.126.4636&rep=rep1&type=pdf), Developments in Applied Statistics, pp. 265-278.\
--   Demeter, T. and Bratucu, G. (2013) ["Statistical Analysis Of The EU Countries from A Touristic Point of View"](https://search-proquest-com.libproxy.smu.edu.sg/docview/1510289237?rfr_id=info%3Axri%2Fsid%3Aprimo), Bulletin of the Transilvania University of Braşov, 6(55): 121-130.
--   Brown, N.S. & Watson, P. (2012) ["What can a comprehensive plan really tell us about a region?: A cluster analysis of county comprehensive plans in Idaho"](https://ageconsearch.umn.edu/record/176591/files/WEFFall2012v11n2_Brown.pdf), Western Economics Forum. Pp.22-37.
+
 
 ### All About R
 
--   [Hierarchical Cluster Analysis](http://uc-r.github.io/hc_clustering).
--   [skater](https://www.rdocumentation.org/packages/spdep/versions/0.8-1/topics/skater): A function from spdep package that implements a SKATER procedure for spatial clustering analysis.
--   [ClustGeo: Hierarchical Clustering with Spatial Constraints](https://cran.r-project.org/web/packages/ClustGeo/index.html)
-    -   [Introduction to Clustgeo](https://cran.r-project.org/web/packages/ClustGeo/vignettes/intro_ClustGeo.html)
-    -   Chavent, M., Kuentz-Simonet, V., Labenne,A. and Saracco, J. 2018. "ClustGeo: an R package for hierarchical clustering with spatial constraints" *Computational Statistics*, 33: 1799-1822.
+-   [SpatialML](https://cran.r-project.org/web/packages/SpatialML/index.html)

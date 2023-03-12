@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2022-12-28">
 
-<title>IS415 AY2022-23T2 - Lesson 9: Geographic Segmentation with Spatially Constrained Cluster Analysis</title>
+<title>IS415 AY2022-23T2 - Lesson 9: Geographically Weighted Random Forest</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -174,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lesson 9: Geographic Segmentation with Spatially Constrained Cluster Analysis</h1>
+<h1 class="title">Lesson 9: Geographically Weighted Random Forest</h1>
 </div>
 
 
@@ -192,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">March 1, 2023</p>
+      <p class="date-modified">March 12, 2023</p>
     </div>
   </div>
     
@@ -204,47 +204,34 @@ ul.task-list li input[type="checkbox"] {
 <section id="content" class="level2">
 <h2 class="anchored" data-anchor-id="content">Content</h2>
 <ul>
-<li>Basic concepts of geographic segmentation</li>
-<li>Conventional cluster analysis techniques</li>
-<li>Approaches for clustering geographically referenced data
-<ul>
-<li>Hierarchical clustering with spatial constraints</li>
-<li>Minimum spanning trees</li>
-</ul></li>
+<li>What is Predictive Modelling?</li>
+<li>What is Geospatial Predictive Modelling</li>
+<li>Introducing Recursive Partitioning</li>
+<li>Advanced Recursive Partitioning: Random Forest</li>
+<li>Introducing Geographically Weighted Random Forest</li>
 </ul>
 </section>
 <section id="lesson-slides-and-hands-on-notes" class="level2">
 <h2 class="anchored" data-anchor-id="lesson-slides-and-hands-on-notes">Lesson Slides and Hands-on Notes</h2>
 <ul>
-<li><p>Lesson slides in <a href="../lesson/Lesson09/Lesson09-GeoKDD.html">html</a> and <a href="../lesson/Lesson09/Lesson09-GeoKDD.pdf">pdf</a> formats</p></li>
-<li><p>Handout of Hands-on Exercise 9 in <a href="https://r4gdsa.netlify.app/chap12.html">html</a> format.</p></li>
+<li><p>Lesson slides in <a href="../lesson/Lesson09/Lesson09-GWRF.html">html</a> and <a href="../lesson/Lesson09/Lesson09-GWRF.pdf">pdf</a> formats</p></li>
+<li><p>Handout of In-class Exercise 9 in <a href="https://r4gdsa.netlify.app/chap12.html">html</a> format.</p></li>
 </ul>
 <section id="self-reading-before-meet-up" class="level3">
 <h3 class="anchored" data-anchor-id="self-reading-before-meet-up">Self-reading Before Meet-up</h3>
 <p>To read before class:</p>
 <ul>
-<li>Assuncao, R. M., Neves, M.C., Camara, G. and Costa Freitas, C.D. 2006. “Efficient Regionalization Techniques for Socio-Economic Geographical Units Using Minimum Spanning Trees.” International Journal of Geographical Information Science 20: 797–811.</li>
+<li><p>Stefanos Georganos et. al.&nbsp;(2019) <a href="https://www.tandfonline.com/doi/full/10.1080/10106049.2019.1595177">“Geographical Random Forests: A Spatial Extension of the Random Forest Algorithm to Address Spatial Heterogeneity in Remote Sensing and Population Modelling”</a>, <em>Geocarto International</em>, DOI: 10.1080/10106049.2019.1595177.</p></li>
+<li><p>Georganos, S. and Kalogirou, S. (2022) <a href="https://www.mdpi.com/2220-9964/11/9/471">“A Forest of Forests: A Spatially Weighted and Computationally Efficient Formulation of Geographical Random Forests”</a>. <strong>ISPRS, International Journal of Geo-Information</strong>, 2022, 11, 471. <a href="https://www.mdpi.com/2220-9964/11/9/471" class="uri">https://www.mdpi.com/2220-9964/11/9/471</a></p></li>
 </ul>
 </section>
 <section id="references" class="level3">
 <h3 class="anchored" data-anchor-id="references">References</h3>
-<ul>
-<li>Rovan, J. and Sambt, J. (2003) <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.126.4636&amp;rep=rep1&amp;type=pdf">“Socio-economic Differences Among Slovenian Municipalities: A Cluster Analysis Approach”</a>, Developments in Applied Statistics, pp.&nbsp;265-278.<br>
-</li>
-<li>Demeter, T. and Bratucu, G. (2013) <a href="https://search-proquest-com.libproxy.smu.edu.sg/docview/1510289237?rfr_id=info%3Axri%2Fsid%3Aprimo">“Statistical Analysis Of The EU Countries from A Touristic Point of View”</a>, Bulletin of the Transilvania University of Braşov, 6(55): 121-130.</li>
-<li>Brown, N.S. &amp; Watson, P. (2012) <a href="https://ageconsearch.umn.edu/record/176591/files/WEFFall2012v11n2_Brown.pdf">“What can a comprehensive plan really tell us about a region?: A cluster analysis of county comprehensive plans in Idaho”</a>, Western Economics Forum. Pp.22-37.</li>
-</ul>
 </section>
 <section id="all-about-r" class="level3">
 <h3 class="anchored" data-anchor-id="all-about-r">All About R</h3>
 <ul>
-<li><a href="http://uc-r.github.io/hc_clustering">Hierarchical Cluster Analysis</a>.</li>
-<li><a href="https://www.rdocumentation.org/packages/spdep/versions/0.8-1/topics/skater">skater</a>: A function from spdep package that implements a SKATER procedure for spatial clustering analysis.</li>
-<li><a href="https://cran.r-project.org/web/packages/ClustGeo/index.html">ClustGeo: Hierarchical Clustering with Spatial Constraints</a>
-<ul>
-<li><a href="https://cran.r-project.org/web/packages/ClustGeo/vignettes/intro_ClustGeo.html">Introduction to Clustgeo</a></li>
-<li>Chavent, M., Kuentz-Simonet, V., Labenne,A. and Saracco, J. 2018. “ClustGeo: an R package for hierarchical clustering with spatial constraints” <em>Computational Statistics</em>, 33: 1799-1822.</li>
-</ul></li>
+<li><a href="https://cran.r-project.org/web/packages/SpatialML/index.html">SpatialML</a></li>
 </ul>
 
 

@@ -285,9 +285,9 @@ The **residuals** are assumed to be distributed at random over geographical spac
 
 ### Test of spatial autocorrelation
 
-To test if the relationships in the model are **non-stationary**. 
+To test if the relationships in the model are **non-stationary**.
 
-- *lm.morantest()* of spdep package will be used.
+-   *lm.morantest()* of spdep package will be used.
 
 ![](img/image9-17.jpg)
 
@@ -361,7 +361,6 @@ To test if the relationships in the model are **non-stationary**.
 :::
 :::
 
-
 ------------------------------------------------------------------------
 
 ### GWR Report
@@ -390,7 +389,7 @@ To test if the relationships in the model are **non-stationary**.
 
 Brunsdon, C., Fotheringham, A.S., and Charlton, M. (2002) ["Geographically weighted regression: A method for exploring spatial nonstationarity"](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1538-4632.1996.tb00936.x). *Geographical Analysis*, 28: 281-289.
 
-Brunsdon, C., Fotheringham, A.S. and Charlton, M., (1999) ["Some Notes on Parametric Significance Tests for Geographically Weighted Regression"](https://onlinelibrary-wiley-com.libproxy.smu.edu.sg/doi/abs/10.1111/0022-4146.00146. *Journal of Regional Science*, 39(3), 497-524.
+Brunsdon, C., Fotheringham, A.S. and Charlton, M., (1999) \["Some Notes on Parametric Significance Tests for Geographically Weighted Regression"\](https://onlinelibrary-wiley-com.libproxy.smu.edu.sg/doi/abs/10.1111/0022-4146.00146. *Journal of Regional Science*, 39(3), 497-524.
 
 Mennis, Jeremy (2006) ["Mapping the Results of Geographically Weighted Regression"](https://web-b-ebscohost-com.libproxy.smu.edu.sg/ehost/pdfviewer/pdfviewer?vid=1&sid=2bc1df3b-6c17-46af-8650-2781032f1d91%40pdc-v-sessmgr04), *The Cartographic Journal*, Vol.43 (2), p.171-179.
 

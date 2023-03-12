@@ -1080,16 +1080,16 @@
   {
     "objectID": "outline/Lesson09_outline.html",
     "href": "outline/Lesson09_outline.html",
-    "title": "Lesson 9: Geographic Segmentation with Spatially Constrained Cluster Analysis",
+    "title": "Lesson 9: Geographically Weighted Random Forest",
     "section": "",
-    "text": "Basic concepts of geographic segmentation\nConventional cluster analysis techniques\nApproaches for clustering geographically referenced data\n\nHierarchical clustering with spatial constraints\nMinimum spanning trees"
+    "text": "What is Predictive Modelling?\nWhat is Geospatial Predictive Modelling\nIntroducing Recursive Partitioning\nAdvanced Recursive Partitioning: Random Forest\nIntroducing Geographically Weighted Random Forest"
   },
   {
     "objectID": "outline/Lesson09_outline.html#lesson-slides-and-hands-on-notes",
     "href": "outline/Lesson09_outline.html#lesson-slides-and-hands-on-notes",
-    "title": "Lesson 9: Geographic Segmentation with Spatially Constrained Cluster Analysis",
+    "title": "Lesson 9: Geographically Weighted Random Forest",
     "section": "Lesson Slides and Hands-on Notes",
-    "text": "Lesson Slides and Hands-on Notes\n\nLesson slides in html and pdf formats\nHandout of Hands-on Exercise 9 in html format.\n\n\nSelf-reading Before Meet-up\nTo read before class:\n\nAssuncao, R. M., Neves, M.C., Camara, G. and Costa Freitas, C.D. 2006. “Efficient Regionalization Techniques for Socio-Economic Geographical Units Using Minimum Spanning Trees.” International Journal of Geographical Information Science 20: 797–811.\n\n\n\nReferences\n\nRovan, J. and Sambt, J. (2003) “Socio-economic Differences Among Slovenian Municipalities: A Cluster Analysis Approach”, Developments in Applied Statistics, pp. 265-278.\n\nDemeter, T. and Bratucu, G. (2013) “Statistical Analysis Of The EU Countries from A Touristic Point of View”, Bulletin of the Transilvania University of Braşov, 6(55): 121-130.\nBrown, N.S. & Watson, P. (2012) “What can a comprehensive plan really tell us about a region?: A cluster analysis of county comprehensive plans in Idaho”, Western Economics Forum. Pp.22-37.\n\n\n\nAll About R\n\nHierarchical Cluster Analysis.\nskater: A function from spdep package that implements a SKATER procedure for spatial clustering analysis.\nClustGeo: Hierarchical Clustering with Spatial Constraints\n\nIntroduction to Clustgeo\nChavent, M., Kuentz-Simonet, V., Labenne,A. and Saracco, J. 2018. “ClustGeo: an R package for hierarchical clustering with spatial constraints” Computational Statistics, 33: 1799-1822."
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson slides in html and pdf formats\nHandout of In-class Exercise 9 in html format.\n\n\nSelf-reading Before Meet-up\nTo read before class:\n\nStefanos Georganos et. al. (2019) “Geographical Random Forests: A Spatial Extension of the Random Forest Algorithm to Address Spatial Heterogeneity in Remote Sensing and Population Modelling”, Geocarto International, DOI: 10.1080/10106049.2019.1595177.\nGeorganos, S. and Kalogirou, S. (2022) “A Forest of Forests: A Spatially Weighted and Computationally Efficient Formulation of Geographical Random Forests”. ISPRS, International Journal of Geo-Information, 2022, 11, 471. https://www.mdpi.com/2220-9964/11/9/471\n\n\n\nReferences\n\n\nAll About R\n\nSpatialML"
   },
   {
     "objectID": "outline/Lesson10_outline.html",
@@ -1460,28 +1460,28 @@
     "href": "lesson/Lesson08/Lesson08-gwr.html#what-is-regression-analysis",
     "title": "Lesson 8: Geographically Weighted Regression",
     "section": "What is regression analysis?",
-    "text": "What is regression analysis?\n\nA set of statistical processes for explaining the relationships among variables.\nThe focus is on the relationship between a dependent variable (y) and one or more independent variables (x)\n\nDoes X affect Y? If so, how?\nWhat is the change in Y given a one unit change in X?\n\nEstimate outcomes based on the relationships modelled."
+    "text": "What is regression analysis?\n\nA set of statistical processes for explaining the relationships among variables.\nThe focus is on the relationship between a dependent variable (y) and one or more independent variables (x)\n\nDoes X affect Y? If so, how?\nWhat is the change in Y given a one unit change in X?\n\nEstimate outcomes based on the relationships modelled.\n\n\n\nA Simple Linear Regression Model\nThe formula:\n\n\n\n\nThe Least Squares Method\n\nThe sum of the vertical deviations (y axis) of the points from the line is minimal.\n\n\n\n\n\nMultiple Linear Regression\n\n\n\n\nAssessing the goodness of fit\n\n\n\n\nSignificance testing in regression\n\n\n\n\nGoodness of fit test\n\n\n\n\nIndividual parameter testing\n\n\n\n\nAssessing individual parameters\n\n\n\n\nAre there redundant explanatory variables?"
   },
   {
     "objectID": "lesson/Lesson08/Lesson08-gwr.html#assumptions-of-linear-regression-models",
     "href": "lesson/Lesson08/Lesson08-gwr.html#assumptions-of-linear-regression-models",
     "title": "Lesson 8: Geographically Weighted Regression",
     "section": "Assumptions of linear regression models",
-    "text": "Assumptions of linear regression models\n\nLinearity assumption. The relationship between the dependent variable and independent variables is (approximately) linear.\nNormality assumption. The residual errors are assumed to be normally distributed.\nHomogeneity of residuals variance. The residuals are assumed to have a constant variance (homoscedasticity).\nThe residuals are uncorrelated with each other.\n\nserial correlation, as with time series\n\n(Optional) The errors (residuals) are normally distributed and have a 0 population mean.]"
+    "text": "Assumptions of linear regression models\n\nLinearity assumption. The relationship between the dependent variable and independent variables is (approximately) linear.\nNormality assumption. The residual errors are assumed to be normally distributed.\nHomogeneity of residuals variance. The residuals are assumed to have a constant variance (homoscedasticity).\nThe residuals are uncorrelated with each other.\n\nserial correlation, as with time series\n\n(Optional) The errors (residuals) are normally distributed and have a 0 population mean.]\n\n\n\nThe linearity assumption\n\n\n\n\nThe linearity assumption\nResiduals vs Fitted plot - Used to check the linear relationship assumptions. A horizontal line, without distinct patterns is an indication for a linear relationship, what is good.\n\n\n\n\nDemystifying the linearity assumption myth\n\n\nThe myth: - We should transform the values of the y variable when they are large.\n\nlibrary(tidyverse)\n\n── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──\n✔ ggplot2 3.4.1     ✔ purrr   1.0.1\n✔ tibble  3.1.8     ✔ dplyr   1.1.0\n✔ tidyr   1.3.0     ✔ stringr 1.5.0\n✔ readr   2.1.4     ✔ forcats 1.0.0\n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\n\nlibrary(sjPlot)\nlibrary(sjmisc)\n\n\nAttaching package: 'sjmisc'\n\nThe following object is masked from 'package:purrr':\n\n    is_empty\n\nThe following object is masked from 'package:tidyr':\n\n    replace_na\n\nThe following object is masked from 'package:tibble':\n\n    add_case\n\nlibrary(sjlabelled)\n\n\nAttaching package: 'sjlabelled'\n\nThe following object is masked from 'package:forcats':\n\n    as_factor\n\nThe following object is masked from 'package:dplyr':\n\n    as_label\n\nThe following object is masked from 'package:ggplot2':\n\n    as_label\n\nlibrary(olsrr)\n\n\nAttaching package: 'olsrr'\n\nThe following object is masked from 'package:datasets':\n\n    rivers\n\ndata1 <- read_delim(\"data/ex1_data.txt\", delim=\";\")\n\nRows: 100 Columns: 3\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \";\"\nchr (1): group\ndbl (2): x, y\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\ndata1.lm <- lm(formula=y ~ x, data = data1)\ntab_model(data1.lm)\n\n\n\n\n \ny\n\n\nPredictors\nEstimates\nCI\np\n\n\n(Intercept)\n1.98\n1.66 – 2.30\n<0.001\n\n\nx\n2.35\n2.13 – 2.57\n<0.001\n\n\nObservations\n100\n\n\nR2 / R2 adjusted\n0.819 / 0.817\n\n\n\n\n\n\n\n\nggplot(data=data1,  \n       aes(x=`x`, y=`y`)) +\n  geom_point() +\n  geom_smooth(method = lm)\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\nThe linearity assumption\n\n\nDespite the values of the dependent variable is rather similar to the values of the independent variable, the diagnostic plot shows that the linearity assumption has been violated.\n\n\nols_plot_obs_fit(data1.lm, print_plot = TRUE)\n\n\n\n\n\n\n\n\n\nData transformation come to rescue\n\n\n\ndata.lm2 <- lm(formula=y ~ exp(x), data = data1)\ntab_model(data.lm2)\n\n\n\n\n \ny\n\n\nPredictors\nEstimates\nCI\np\n\n\n(Intercept)\n0.51\n0.36 – 0.65\n<0.001\n\n\nx [exp]\n1.01\n0.98 – 1.04\n<0.001\n\n\nObservations\n100\n\n\nR2 / R2 adjusted\n0.977 / 0.977\n\n\n\n\n\n\n\n\nggplot(data=data1,  \n       aes(x=exp(x), y=`y`)) +\n  geom_point() +\n  geom_smooth(method = lm)\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\nThe linearity assumption\n\n\nThe diagnostic plot on the right shows that the linearity assumption has been conformed.\n\n\nols_plot_obs_fit(data.lm2, print_plot = TRUE)\n\n\n\n\n\n\n\n\n\nThe normality assumption\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nThis is the test on the residual and not on the dependent variable.\n\n\n\n\n\n\n\nChecking for serial correlation\nThe purpose of this test is to ensure the residuals of a multiple regression are time independent."
   },
   {
     "objectID": "lesson/Lesson08/Lesson08-gwr.html#spatial-non-stationary",
     "href": "lesson/Lesson08/Lesson08-gwr.html#spatial-non-stationary",
     "title": "Lesson 8: Geographically Weighted Regression",
     "section": "Spatial Non-stationary",
-    "text": "Spatial Non-stationary\n\nWhen applied to spatial data, as can be seen, it assumes a stationary spatial process.\n\nThe same stimulus provokes the same response in all parts of the study region.\nHighly untenable for spatial process."
+    "text": "Spatial Non-stationary\n\nWhen applied to spatial data, as can be seen, it assumes a stationary spatial process.\n\nThe same stimulus provokes the same response in all parts of the study region.\nHighly untenable for spatial process.\n\n\n\n\nWhy do relationships vary spatially?\n\nSampling variation\n\nNuisance variation, not real spatial non-stationarity.\n\nRelationships intrinsically different across space\n\nReal spatial non-stationarity.\n\nModel misspecification\n\nCan significant local variations be removed?\n\n\n\n\n\nSome definitions\n\nSpatial non-stationarity: the same stimulus provokes a different response in different parts of the study region.\nGlobal models: statements about processes which are assumed to be stationary and as such are location independent.\nLocal models: spatial decompositions of global models, the results of local models are location dependent – a characteristic we usually anticipate from geographic (spatial) data.\n\n\n\n\nSpatial Autocorrelation assumption\nThe residuals are assumed to be distributed at random over geographical space.\n\n\n\n\nTest of spatial autocorrelation\nTo test if the relationships in the model are non-stationary.\n\nlm.morantest() of spdep package will be used."
   },
   {
     "objectID": "lesson/Lesson08/Lesson08-gwr.html#geographically-weighted-regression-gwr",
     "href": "lesson/Lesson08/Lesson08-gwr.html#geographically-weighted-regression-gwr",
     "title": "Lesson 8: Geographically Weighted Regression",
     "section": "Geographically Weighted Regression (GWR)",
-    "text": "Geographically Weighted Regression (GWR)\n\nLocal statistical technique to analyze spatial variations in relationships.\nSpatial non-stationarity is assumed and will be tested.\nBased on the “First Law of Geography”: everything is related with everything else, but closer things are more related."
+    "text": "Geographically Weighted Regression (GWR)\n\nLocal statistical technique to analyze spatial variations in relationships.\nSpatial non-stationarity is assumed and will be tested.\nBased on the “First Law of Geography”: everything is related with everything else, but closer things are more related.\n\n\n\nGeographically Weighted Regression (GWR): The method\n\n\n\n\n\n\n\n\nCalibration of GWR\n\n\n\nLocal weighted least squares\n\nWeights are attached with locations\nBased on the “First Law of Geography”: everything is related with everything else, but closer things are more related than remote ones\n\n\n\n\n\n\n\nCalibration - Weighting functions\n\n\n\n\nCalibration - Weighting functions\n\n\n\n\nCalibration - Weighting schemes\n\nDetermines weights\n\nMost schemes tend to be Gaussian or Gaussian-like reflecting the type of dependency found in most spatial processes.\nIt can be either Fixed or Adaptive.\n\n\n\n\n\n\n\n\n\n\n\n\nCalibration - Determining Bandwidth\n\n\n\n\n\n\n\n\nGWR Report\n\nPackage Model\nResults of Global Regression\nResults of Geographically Weighted Regression\nSDF: A SpatialPointDataFrame\n\n\n\n\ngwr: local R2\n\n\n\n\ngwr: intercept"
   },
   {
     "objectID": "lesson/Lesson08/Lesson08-gwr.html#references",
@@ -2049,5 +2049,61 @@
     "title": "Take-home Exercise 3: Predicting HDB Public Housing Resale Pricies using Geographically Weighted Methods",
     "section": "Peer Learning",
     "text": "Peer Learning\n\nAILYS TEE XYNYN Overall very well prepared submission. The data preparation was very well done. The flow of analysis processes were appropriate.\nALANIS ZOE CHIA HUI LIN\nANNA TSENG RUI-WEN\nCELINE NG SI LIN\nCHEN HAO XIAN\nDANIEL CHNG CHONG YEE\nDEREK POH YONG JIE\nESWARA LAKSHMANAN ABISHEK\nHARITH OH YEE CHOON\nHO YONG QUAN\nHOW XIN YEE\nJENNIFER POERNOMO\nKUMARAPANDIAN YASHICARAMYA\nKWANG KAI XUAN BELLE\nKWEK MING RONG\nLEE CHIA MIN MICHELLE FAITH\nLEON TAN LI YANG\nLU QUANFANG\nMICHELLE LEONG HWEE-LING\nNGUYEN MAI PHUONG\nPENG YOU YUN\nPIERRE JEAN MICHEL HAAS\nRHONDA HO KAH YEE\nS GUGANESH\nSALUNKE MAYURI MILIND\nSHAMBHAVI GOENKA\nSHAYTHURAM SO ELANGKOVAN\nSHERRY NG SHEA LI\nTAN WEI SHING\nTAN WEN YANG\nTAN YAN LIN VALENCIA\nTEH JIA HUI GAIL\nTEO JUN HAO\nTEO REN JIE\nTONG XUE YU KATHY\nWONG KELLY"
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GWRF.html#content",
+    "href": "lesson/Lesson09/Lesson09-GWRF.html#content",
+    "title": "Lesson 9: Geographically Weighted Random Forest",
+    "section": "Content",
+    "text": "Content\n\nWhat is Predictive Modelling?\nWhat is Geospatial Predictive Modelling\nIntroducing Recursive Partitioning\nAdvanced Recursive Partitioning: Random Forest\nIntroducing Geographically Weighted Random Forest"
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GWRF.html#what-is-predictive-modelling",
+    "href": "lesson/Lesson09/Lesson09-GWRF.html#what-is-predictive-modelling",
+    "title": "Lesson 9: Geographically Weighted Random Forest",
+    "section": "What is Predictive Modelling?",
+    "text": "What is Predictive Modelling?\n\n\n\nPredictive modelling uses statistical learning or machine learning techniques to predict outcomes.\n\nBy and large, the event one wants to predict is in the future. However, a set of known outcome and predictors (also known as variables) will be used to calibrate the predictive models."
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GWRF.html#what-is-geospatial-predictive-modelling",
+    "href": "lesson/Lesson09/Lesson09-GWRF.html#what-is-geospatial-predictive-modelling",
+    "title": "Lesson 9: Geographically Weighted Random Forest",
+    "section": "What is Geospatial Predictive Modelling",
+    "text": "What is Geospatial Predictive Modelling\n\nGeospatial predictive modelling is conceptually rooted in the principle that the occurrences of events being modeled are limited in distribution.\n\nWhen geographically referenced data are used, occurrences of events are neither uniform nor random in distribution over space. There are geospatial factors (infrastructure, sociocultural, topographic, etc.) that constrain and influence where the locations of events occur.\nGeospatial predictive modeling attempts to describe those constraints and influences by spatially correlating occurrences of historical geospatial locations with environmental factors that represent those constraints and influences."
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GWRF.html#predictive-modelling-process",
+    "href": "lesson/Lesson09/Lesson09-GWRF.html#predictive-modelling-process",
+    "title": "Lesson 9: Geographically Weighted Random Forest",
+    "section": "Predictive Modelling Process",
+    "text": "Predictive Modelling Process"
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GWRF.html#introducing-recursive-partitioning",
+    "href": "lesson/Lesson09/Lesson09-GWRF.html#introducing-recursive-partitioning",
+    "title": "Lesson 9: Geographically Weighted Random Forest",
+    "section": "Introducing recursive partitioning",
+    "text": "Introducing recursive partitioning\n\nA predictive methodology involving a dependent variable y and one and more predictors.\nThe dependent variable can be either a continuous or categorical scales.\nRules partition data into mutually exclusive groups.\nNo need to worry about transformations such as logs.\nNo prior distribution requirement."
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GWRF.html#advanced-recursive-partitioning-random-forest",
+    "href": "lesson/Lesson09/Lesson09-GWRF.html#advanced-recursive-partitioning-random-forest",
+    "title": "Lesson 9: Geographically Weighted Random Forest",
+    "section": "Advanced Recursive Partitioning: Random Forest",
+    "text": "Advanced Recursive Partitioning: Random Forest\nRandom forest, like its name implies, consists of a large number of individual decision trees that operate as an ensemble. - Each individual tree in the random forest spits out a class prediction and the class with the most votes becomes our model’s prediction as shown the figure."
+  },
+  {
+    "objectID": "lesson/Lesson09/Lesson09-GWRF.html#introducing-geographically-weighted-random-forest-gwrf",
+    "href": "lesson/Lesson09/Lesson09-GWRF.html#introducing-geographically-weighted-random-forest-gwrf",
+    "title": "Lesson 9: Geographically Weighted Random Forest",
+    "section": "Introducing Geographically Weighted Random Forest (gwRF)",
+    "text": "Introducing Geographically Weighted Random Forest (gwRF)\n\nGeographically Weighted Random Forest (GRF) is a spatial analysis method using a local version of the famous Machine Learning algorithm.\n\nThis technique adopts the idea of the Geographically Weighted Regression.\nThe main difference between a tradition (linear) GWR and GRF is that we can model non-stationarity coupled with a flexible non-linear model which is very hard to overfit due to its bootstrapping nature, thus relaxing the assumptions of traditional Gaussian statistics."
+  },
+  {
+    "objectID": "lesson/Lesson08/Lesson08-gwr.html",
+    "href": "lesson/Lesson08/Lesson08-gwr.html",
+    "title": "Lesson 8: Geographically Weighted Regression",
+    "section": "",
+    "text": "Introducing Regression Modelling\n\nSimple Linear Regression\nMultiple Linear Regression\n\nWhat is Spatial Non-stationary\nIntroducing Geographically Weighted Regression\n\nWeighting functions (kernel)\nWeighting schemes\nBandwidth\n\nInterpreting and Visualising"
   }
 ]
