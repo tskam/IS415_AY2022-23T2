@@ -12,7 +12,7 @@ editor: visual
 -   What is Geospatial Predictive Modelling
 -   Introducing Recursive Partitioning
 -   Advanced Recursive Partitioning: Random Forest
--   Introducing Geographically Weighted Random Forest  
+-   Introducing Geographically Weighted Random Forest
 
 ## Lesson Slides and Hands-on Notes
 
@@ -26,11 +26,15 @@ To read before class:
 
 -   Stefanos Georganos et. al. (2019) ["Geographical Random Forests: A Spatial Extension of the Random Forest Algorithm to Address Spatial Heterogeneity in Remote Sensing and Population Modelling"](https://www.tandfonline.com/doi/full/10.1080/10106049.2019.1595177), *Geocarto International*, DOI: 10.1080/10106049.2019.1595177.
 
-- Georganos, S. and Kalogirou, S. (2022) ["A Forest of Forests: A Spatially Weighted and Computationally Efficient Formulation of Geographical Random Forests"](https://www.mdpi.com/2220-9964/11/9/471). **ISPRS, International Journal of Geo-Information**, 2022, 11, 471. <https://www.mdpi.com/2220-9964/11/9/471>
+-   Georganos, S. and Kalogirou, S. (2022) ["A Forest of Forests: A Spatially Weighted and Computationally Efficient Formulation of Geographical Random Forests"](https://www.mdpi.com/2220-9964/11/9/471). **ISPRS, International Journal of Geo-Information**, 2022, 11, 471. <https://www.mdpi.com/2220-9964/11/9/471>
 
 ### References
 
+- George Grekousis et. al. (2022) ["Ranking the importance of demographic, socioeconomic, and underlying health factors on US COVID-19 deaths: A geographical random forest approach"](https://doi.org/10.1016/j.healthplace.2022.102744), *Health and Place*, vol. 74, pp. 1-12.
 
+- Yaowen Luo, Jianguo Yan & Stephen McClure. (2020) "[Distribution of the environmental and socioeconomic risk factors on COVID-19 death rate across continental USA: a spatial nonlinear analysis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7527667/pdf/11356_2020_Article_10962.pdf)", *Environmental Science and Pollution Research*, 28:6587–6599.
+
+- Eun-Hee Koh, Eunhee Lee, & Kang-Kun Lee (2020) "[Application of geographically weighted regression models to predict spatial characteristics of nitrate contamination: Implications for an effective groundwater management strategy](https://www.sciencedirect.com/science/article/pii/S0301479720305788)", *Journal of Environmental Management*. Vol. 268
 
 ### All About R
 
