@@ -282,6 +282,6 @@ Notice that A1 and B1 are computed by using computer.
 ```{r}
 #| eval: false
 #| echo: false
-renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson10/Lesson10-SIM.html",
-                   to = "../../_site/lesson/Lesson10/Lesson10-SIM.pdf")
+renderthis::to_pdf(from = "https://is415-ay2022-23t2.netlify.app/lesson/Lesson11/Lesson11-SIM.html",
+                   to = "../../_site/lesson/Lesson11/Lesson11-SIM.pdf")
 ```
