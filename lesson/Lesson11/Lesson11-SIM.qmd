@@ -1,5 +1,5 @@
 ---
-title: "Lesson 10: <br/>Spatial Interaction Models"
+title: "Lesson 11: <br/>Spatial Interaction Models"
 author: "Dr. Kam Tin Seong <br/>Assoc. Professor of Information Systems(Practice)"
 institute: "School of Computing and Information Systems,<br/>Singapore Management University"
 date: "`r Sys.Date()`"
@@ -278,8 +278,6 @@ Hence, T11 is calculated as shown below:
 Notice that A1 and B1 are computed by using computer.
 :::
 :::
-
-
 
 ```{r}
 #| eval: false

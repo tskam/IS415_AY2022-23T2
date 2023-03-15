@@ -2196,5 +2196,40 @@
     "title": "Lesson 10: Spatial Interaction Models",
     "section": "Gravity Models",
     "text": "Gravity Models\n\n\n\nThe general formula (also known as unconstrained):\n\n\nTij is the transition/trip or flow, 𝑇, between origin 𝑖 (always the rows in a matrix) and destination 𝑗 (always the columns in a matrix). If you are not overly familiar with matrix notation, the 𝑖 and 𝑗 are just generic indexes to allow us to refer to any cell in the matrix.\n𝑉 is a vector (a 1 dimensional matrix – or, if you like, a single line of numbers) of origin attributes which relate to the emissivity of all origins in the dataset, 𝑖 – this could be any of the origin-related variables.\n\n\n\n𝑊 is a vector of destination attributes relating to the attractiveness of all destinations in the dataset, 𝑗 – similarly, this could be any of the destination related variables.\n𝑑 is a matrix of costs (frequently distances – hence, d) relating to the flows between 𝑖 and 𝑗.\n𝑘, 𝜇, 𝛼 and 𝛽 are all model parameters to be estimated. 𝛽 is assumed to be negative, as with an increase in cost/distance we would expect interaction to decrease.\n\n\n\n\n\n\nUnconstrained (Totally constrained) case\n\n\nThe O-D Matrix\n\nand distance matrix:\n\n\n\nThe estimated O-D matrix:\n\nand the calculation T11\n\n\n\n\n\n\nThe Origin (Production) Constrained Model\n\n\nIn the Origin Constrained Model,\n\n𝑂𝑖 does not have a parameter as it is a known constraint.\n𝐴𝑖 is known as a balancing factor and is a vector of values which relate to each origin 𝑖 which do the equivalent job as 𝑘 in the unconstrained/total constrained model but ensure that flow estimates from each origin sum to the know totals 𝑂𝑖 rather than just the overall total.\n\n\n\n\n\n\n\n\nOringin (Production) constrained case\n\n\nThe O-D Matrix\n\nand distance matrix:\n\n\n\nThe estimated O-D matrix:\n\nA1 is calculated as shown below:\n\nHence, T11 is calculated as shown below:\n\n\n\n\n\n\nThe Destination (Attraction) Constrained Model\n\n\n\n\n\n\n\n\nDestination (Attraction) constrained case\n\n\nThe O-D Matrix\n\nand distance matrix:\n\n\n\nThe estimated O-D matrix:\n\nB1 is calculated as shown below:\n\nHence, T11 is calculated as shown below:\n\n\n\n\n\n\nThe Doubly Constrained Model\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nNote that the calculation of 𝐴𝑖 relies on knowing 𝐵𝑗 and the calculation of 𝐵𝑗 relies on knowing 𝐴𝑖 – something of a conundrum to which the solution is elegantly described by Senior (1979), who sketches out a very useful algorithm for iteratively arriving at values for 𝐴𝑖 and 𝐵𝑗 by setting each to equal 1 initially and then continuing to calculate each in turn until the difference between successive iterations of the 𝐴𝑖 and 𝐵𝑗 values is small enough not to matter.\n\n\n\n\n\n\n\nDoubly constrained case\n\n\nThe O-D Matrix\n\nand distance matrix:\n\n\n\nThe estimated O-D matrix:\n\nHence, T11 is calculated as shown below:\n\nNotice that A1 and B1 are computed by using computer."
+  },
+  {
+    "objectID": "lesson/Lesson11/Lesson11-SIM.html#content",
+    "href": "lesson/Lesson11/Lesson11-SIM.html#content",
+    "title": "Lesson 11: Spatial Interaction Models",
+    "section": "Content",
+    "text": "Content\n\nCharacteristics of Spatial Interaction Data\nSpatial Interaction Models\n\nUnconstrained\nOrigin constrined\nDestination constrained\nDoubly constrained"
+  },
+  {
+    "objectID": "lesson/Lesson11/Lesson11-SIM.html#what-spatial-interaction-models-are",
+    "href": "lesson/Lesson11/Lesson11-SIM.html#what-spatial-interaction-models-are",
+    "title": "Lesson 11: Spatial Interaction Models",
+    "section": "What Spatial Interaction Models are?",
+    "text": "What Spatial Interaction Models are?\n\n\nSpatial interaction or “gravity models” estimate the flow of people, material, or information between locations in geographical space.\n\n\n\n\n\n\n\n\nNote\n\n\nSpatial interaction models seek to explain existing spatial flows. As such it is possible to measure flows and predict the consequences of changes in the conditions generating them. When such attributes are known, it is possible to better allocate transport resources such as conveyances, infrastructure, and terminals."
+  },
+  {
+    "objectID": "lesson/Lesson11/Lesson11-SIM.html#constructing-an-od-matrix",
+    "href": "lesson/Lesson11/Lesson11-SIM.html#constructing-an-od-matrix",
+    "title": "Lesson 11: Spatial Interaction Models",
+    "section": "Constructing an O/D Matrix",
+    "text": "Constructing an O/D Matrix\n\nThe construction of an origin / destination matrix requires directional flow information between a series of locations.\nFigure below represents movements (O/D pairs) between five locations (A, B, C, D and E). From this graph, an O/D matrix can be built where each O/D pair becomes a cell. A value of 0 is assigned for each O/D pair that does not have an observed flow."
+  },
+  {
+    "objectID": "lesson/Lesson11/Lesson11-SIM.html#three-basic-types-of-interaction-models",
+    "href": "lesson/Lesson11/Lesson11-SIM.html#three-basic-types-of-interaction-models",
+    "title": "Lesson 11: Spatial Interaction Models",
+    "section": "Three Basic Types of Interaction Models",
+    "text": "Three Basic Types of Interaction Models\n\nThe general formulation of the spatial interaction model is stated as Tij, which is the interaction between location i (origin) and location j (destination). Vi are the attributes of the location of origin i, Wj are the attributes of the location of destination j, and Sij are the attributes of separation between the location of origin i and the location of destination j.\nFrom this general formulation, three basic types of interaction models can be derived:"
+  },
+  {
+    "objectID": "lesson/Lesson11/Lesson11-SIM.html#gravity-models",
+    "href": "lesson/Lesson11/Lesson11-SIM.html#gravity-models",
+    "title": "Lesson 11: Spatial Interaction Models",
+    "section": "Gravity Models",
+    "text": "Gravity Models\n\n\n\nThe general formula (also known as unconstrained):\n\n\nTij is the transition/trip or flow, 𝑇, between origin 𝑖 (always the rows in a matrix) and destination 𝑗 (always the columns in a matrix). If you are not overly familiar with matrix notation, the 𝑖 and 𝑗 are just generic indexes to allow us to refer to any cell in the matrix.\n𝑉 is a vector (a 1 dimensional matrix – or, if you like, a single line of numbers) of origin attributes which relate to the emissivity of all origins in the dataset, 𝑖 – this could be any of the origin-related variables.\n\n\n\n𝑊 is a vector of destination attributes relating to the attractiveness of all destinations in the dataset, 𝑗 – similarly, this could be any of the destination related variables.\n𝑑 is a matrix of costs (frequently distances – hence, d) relating to the flows between 𝑖 and 𝑗.\n𝑘, 𝜇, 𝛼 and 𝛽 are all model parameters to be estimated. 𝛽 is assumed to be negative, as with an increase in cost/distance we would expect interaction to decrease."
   }
 ]
