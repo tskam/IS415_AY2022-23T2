@@ -795,7 +795,7 @@
     "href": "lesson.html",
     "title": "Weekly Lesson Plan",
     "section": "",
-    "text": "Week\n1\nDate\n9/1/2023\nTopic\nLesson 1: Introduction to Geospatial Analytics\nRemarks\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16/1/2023\nLesson 2: Geospatial Data Handling and Wrangling\n\n\n\n\n\n3\n25/1/2023\nLesson 3: Thematic and Analytical Mapping.\nVenue: SR3-4, SCIS1. Time: 7:00-10:30PM\nReplacement lesson\n\n\n\n\n4\n30/1/2023\nLesson 4: Spatial Point Patterns Analysis\n\n\n\n\n\n5\n6/2/2023\nLesson 5: Advanced Spatial Point Patterns Analysis\n\n\n\n\n\n6\n13/2/2023\nLesson 6: Spatial Weights and Applications\n\n\n\n\n\n7\n20/2/2023\nLesson 7: Measures of Global and Local Spatial Association\n\n\n\n\n\n8\n27/2/2023\nMid-term break\nWorkshop on Building Web-enabled Geospatial Analytics Applications with Shiny. Venue: SR2-2 SCIS1, Time: 9:00am-12:00pm, 1:30pm-4:30pm.\n\n\n\n\n\n9\n6/3/2023\nLesson 8: Geographically Weighted Regression\n\n\n\n\n\n10\n13/3/2023\nLesson 9: Geographically Weighted Random Forest | |\n\n\n\n\n\n11\n20/3/2023\nLesson 10: Spatial Interaction Models\n\n\n\n\n\n12\n27/3/2023\nLesson 11: Modelling Geographic of Accessibility\n\n\n\n\n\n13\n3/4/2023\nLesson 12: The Epilogue\n\n\n\n\n\n14\n10/4/2023\nTownhall Presentation"
+    "text": "Week\n1\nDate\n9/1/2023\nTopic\nLesson 1: Introduction to Geospatial Analytics\nRemarks\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n16/1/2023\nLesson 2: Geospatial Data Handling and Wrangling\n\n\n\n\n\n\n\n3\n25/1/2023\nLesson 3: Thematic and Analytical Mapping.\nVenue: SR3-4, SCIS1. Time: 7:00-10:30PM\nReplacement lesson\n\n\n\n\n\n\n4\n30/1/2023\nLesson 4: Spatial Point Patterns Analysis\n\n\n\n\n\n\n\n5\n6/2/2023\nLesson 5: Advanced Spatial Point Patterns Analysis\n\n\n\n\n\n\n\n6\n13/2/2023\nLesson 6: Spatial Weights and Applications\n\n\n\n\n\n\n\n7\n20/2/2023\nLesson 7: Measures of Global and Local Spatial Association\n\n\n\n\n\n\n\n8\n27/2/2023\nMid-term break\nWorkshop on Building Web-enabled Geospatial Analytics Applications with Shiny. Venue: SR2-2 SCIS1, Time: 9:00am-12:00pm, 1:30pm-4:30pm.\n\n\n\n\n\n\n\n9\n6/3/2023\nLesson 8: Geographically Weighted Regression\n\n\n\n\n\n\n\n10\n13/3/2023\nLesson 9: Geographically Weighted Random Forest | |\n\n\n\n\n\n\n\n11\n20/3/2023\nLesson 10: Modelling Geographic of Accessibility | | |\n\n\n\n\n\n\n\n12\n27/3/2023\nLesson 11: Spatial Interaction Models | | | |\n\n\n\n\n\n\n\n13\n3/4/2023\nLesson 12: The Epilogue | | | | |\n\n\n\n\n\n\n\n14\n10/4/2023\nTownhall Presentation"
   },
   {
     "objectID": "outline/Lesson01_outline.html",
@@ -1094,72 +1094,72 @@
   {
     "objectID": "outline/Lesson10_outline.html",
     "href": "outline/Lesson10_outline.html",
-    "title": "Lesson 10: Spatial Interaction Models",
-    "section": "",
-    "text": "Basic Concepts of Spatial Interaction Models\nA Family of Gravity Models\n\nUnconstrained\nOrigin constrained\nDestination constrained\nDoubly constrained\n\nStatistical Approach\nInterpreting and Visualising Modelling Results"
-  },
-  {
-    "objectID": "outline/Lesson10_outline.html#lesson-slides-and-hands-on-notes",
-    "href": "outline/Lesson10_outline.html#lesson-slides-and-hands-on-notes",
-    "title": "Lesson 10: Spatial Interaction Models",
-    "section": "Lesson Slides and Hands-on Notes",
-    "text": "Lesson Slides and Hands-on Notes\n\nLesson slides in html and pdf formats\nHandout of Hands-on Exercise 10 in html and pdf formats."
-  },
-  {
-    "objectID": "outline/Lesson10_outline.html#self-reading-before-meet-up",
-    "href": "outline/Lesson10_outline.html#self-reading-before-meet-up",
-    "title": "Lesson 10: Spatial Interaction Models",
-    "section": "Self-reading Before Meet-up",
-    "text": "Self-reading Before Meet-up\nRead before lesson:\n\nKingsley E. Haynes and A. Stewart Fotheringham (2020) Gravity and Spatial Interaction Models, Web Book of Regional Science. Chapter 1 and Sub-section 2.2.\nFarmer, C. and Oshan, T. (2017). “Spatial interaction”. The Geographic Information Science & Technology Body of Knowledge (4th Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2017.4.5 (link is external)\nFlowerdew R, Aitkin M (1982) “A method of fitting the gravity model based on the Poisson distribution”. Journal of Regional Science, 22: 191–202."
-  },
-  {
-    "objectID": "outline/Lesson10_outline.html#reference",
-    "href": "outline/Lesson10_outline.html#reference",
-    "title": "Lesson 10: Spatial Interaction Models",
-    "section": "Reference",
-    "text": "Reference\n\nPavel KLAPKA, et. al. (2013) “The Footfall of Shopping Centre in Olomouc (CZECH REPUBLIC): An Application of The Gravity Model”, Moravian Geographical Reports, Vol 21, pp. 12-26.\n\nYang Yue et. al. (2012) “Exploratory calibration of a spatial interaction model using taxi GPS trajectories”, Computers, Environment and Urban Systems, 36 (2012) 140–153."
-  },
-  {
-    "objectID": "outline/Lesson10_outline.html#all-about-r",
-    "href": "outline/Lesson10_outline.html#all-about-r",
-    "title": "Lesson 10: Spatial Interaction Models",
-    "section": "All About R:",
-    "text": "All About R:\n\nPaul Roback and Julie Legler (2020) Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R, CRC Press. On line version (January 26, 2021). Chapter 4\nNegative Binomial Regression and Poisson Regression from UCLA Institute for Digital Research & Education."
-  },
-  {
-    "objectID": "outline/Lesson11_outline.html",
-    "href": "outline/Lesson11_outline.html",
-    "title": "Lesson 11: Modelling Geographic of Accessibility",
+    "title": "Lesson 10: Modelling Geographic of Accessibility",
     "section": "",
     "text": "Basic Concepts of Geographic Accessibility\nGravitational Law and Distance Decay Function\nIntroducing Potential Models\n\nThe classic model\n\nHansen Potential Accessibility Model\nTwo-step Floating Catchment Area (2SFCA) Method\nKernel Density Two-Step Floating Catchment Area (KD2SFCA) Method\nInterpreting and Visualising Modelling Results"
   },
   {
-    "objectID": "outline/Lesson11_outline.html#lesson-slides-and-hands-on-notes",
-    "href": "outline/Lesson11_outline.html#lesson-slides-and-hands-on-notes",
-    "title": "Lesson 11: Modelling Geographic of Accessibility",
+    "objectID": "outline/Lesson10_outline.html#lesson-slides-and-hands-on-notes",
+    "href": "outline/Lesson10_outline.html#lesson-slides-and-hands-on-notes",
+    "title": "Lesson 10: Modelling Geographic of Accessibility",
     "section": "Lesson Slides and Hands-on Notes",
     "text": "Lesson Slides and Hands-on Notes\n\nLesson slides in html and pdf formats\nHandout of Hands-on Exercise 11 in html format."
   },
   {
-    "objectID": "outline/Lesson11_outline.html#self-reading-before-meet-up",
-    "href": "outline/Lesson11_outline.html#self-reading-before-meet-up",
-    "title": "Lesson 11: Modelling Geographic of Accessibility",
+    "objectID": "outline/Lesson10_outline.html#self-reading-before-meet-up",
+    "href": "outline/Lesson10_outline.html#self-reading-before-meet-up",
+    "title": "Lesson 10: Modelling Geographic of Accessibility",
     "section": "Self-reading Before Meet-up",
     "text": "Self-reading Before Meet-up\nRead before lesson:\n\nLong, J. (2017). Modelling Accessibility. The Geographic Information Science & Technology Body of Knowledge (3rd Quarter 2017 Edition), John P. Wilson (ed.).\nHansen, W. G. (1959): “How Accessibility Shapes Land Use”. Journal of the American Institute of Planners, 25, 2, p. 73-76.\nLuo, W.; Wang, F. (2003) “Measures of spatial accessibility to health care in a GIS environment: synthesis and a case study in the Chicago region”. Environment and Planning B: Planning and Design. 30 (6): 865–884. doi:10.1068/b29120.\nLuo, W.; Qi, Y. (2009). “An enhanced two-step floating catchment area (E2SFCA) method for measuring spatial accessibility to primary care physicians”. Health & Place. 15 (4): 1100–1107."
   },
   {
-    "objectID": "outline/Lesson11_outline.html#reference",
-    "href": "outline/Lesson11_outline.html#reference",
-    "title": "Lesson 11: Modelling Geographic of Accessibility",
+    "objectID": "outline/Lesson10_outline.html#reference",
+    "href": "outline/Lesson10_outline.html#reference",
+    "title": "Lesson 10: Modelling Geographic of Accessibility",
     "section": "Reference",
     "text": "Reference\n\nSection on “Transportation and Accessibility” in The Geography of Transport Systems.\nRich, D.C. (1980) Potential Models in Human Geography.\nOrpana, T./Lampinen, J. (2003) “Building spatial choice models from aggregate data”. Journal of Regional Science,43, 2, p. 319-347.\nTwo-step floating catchment area method.\nCheng, Gang et. al. (2016) “Spatial difference analysis for accessibility to high level hospitals based on travel time in Shenzhen, China” Habitat International, Vol.53, p.485-494.\nPolzin, Pierre ; Borges, José ; Coelho, António (2014) “An Extended Kernel Density Two-Step Floating Catchment Area Method to Analyze Access to Health Care” Environment and planning. B, Planning & design, Vol.41 (4), p.717-735."
   },
   {
-    "objectID": "outline/Lesson11_outline.html#all-about-r",
-    "href": "outline/Lesson11_outline.html#all-about-r",
-    "title": "Lesson 11: Modelling Geographic of Accessibility",
+    "objectID": "outline/Lesson10_outline.html#all-about-r",
+    "href": "outline/Lesson10_outline.html#all-about-r",
+    "title": "Lesson 10: Modelling Geographic of Accessibility",
     "section": "All About R:",
     "text": "All About R:\n\naccessibility\nSpatialAcc package.\nPotential package."
+  },
+  {
+    "objectID": "outline/Lesson11_outline.html",
+    "href": "outline/Lesson11_outline.html",
+    "title": "Lesson 11: Spatial Interaction Models",
+    "section": "",
+    "text": "Basic Concepts of Spatial Interaction Models\nA Family of Gravity Models\n\nUnconstrained\nOrigin constrained\nDestination constrained\nDoubly constrained\n\nStatistical Approach\nInterpreting and Visualising Modelling Results"
+  },
+  {
+    "objectID": "outline/Lesson11_outline.html#lesson-slides-and-hands-on-notes",
+    "href": "outline/Lesson11_outline.html#lesson-slides-and-hands-on-notes",
+    "title": "Lesson 11: Spatial Interaction Models",
+    "section": "Lesson Slides and Hands-on Notes",
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson slides in html and pdf formats\nHandout of Hands-on Exercise 10 in html and pdf formats."
+  },
+  {
+    "objectID": "outline/Lesson11_outline.html#self-reading-before-meet-up",
+    "href": "outline/Lesson11_outline.html#self-reading-before-meet-up",
+    "title": "Lesson 11: Spatial Interaction Models",
+    "section": "Self-reading Before Meet-up",
+    "text": "Self-reading Before Meet-up\nRead before lesson:\n\nKingsley E. Haynes and A. Stewart Fotheringham (2020) Gravity and Spatial Interaction Models, Web Book of Regional Science. Chapter 1 and Sub-section 2.2.\nFarmer, C. and Oshan, T. (2017). “Spatial interaction”. The Geographic Information Science & Technology Body of Knowledge (4th Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2017.4.5 (link is external)\nFlowerdew R, Aitkin M (1982) “A method of fitting the gravity model based on the Poisson distribution”. Journal of Regional Science, 22: 191–202."
+  },
+  {
+    "objectID": "outline/Lesson11_outline.html#reference",
+    "href": "outline/Lesson11_outline.html#reference",
+    "title": "Lesson 11: Spatial Interaction Models",
+    "section": "Reference",
+    "text": "Reference\n\nPavel KLAPKA, et. al. (2013) “The Footfall of Shopping Centre in Olomouc (CZECH REPUBLIC): An Application of The Gravity Model”, Moravian Geographical Reports, Vol 21, pp. 12-26.\n\nYang Yue et. al. (2012) “Exploratory calibration of a spatial interaction model using taxi GPS trajectories”, Computers, Environment and Urban Systems, 36 (2012) 140–153."
+  },
+  {
+    "objectID": "outline/Lesson11_outline.html#all-about-r",
+    "href": "outline/Lesson11_outline.html#all-about-r",
+    "title": "Lesson 11: Spatial Interaction Models",
+    "section": "All About R:",
+    "text": "All About R:\n\nPaul Roback and Julie Legler (2020) Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R, CRC Press. On line version (January 26, 2021). Chapter 4\nNegative Binomial Regression and Poisson Regression from UCLA Institute for Digital Research & Education."
   },
   {
     "objectID": "outline/workshop.html",

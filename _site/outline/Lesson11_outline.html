@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2022-12-28">
-<meta name="description" content="A new article created using the Distill format.">
+<meta name="dcterms.date" content="2023-01-29">
+<meta name="description" content="In this lesson, you will learn the basic concepts and methods of Spatial Interaction Models.">
 
-<title>IS415 AY2022-23T2 - Lesson 11: Modelling Geographic of Accessibility</title>
+<title>IS415 AY2022-23T2 - Lesson 11: Spatial Interaction Models</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -173,12 +173,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lesson 11: Modelling Geographic of Accessibility</h1>
+<h1 class="title">Lesson 11: Spatial Interaction Models</h1>
 </div>
 
 <div>
   <div class="description">
-    <p>A new article created using the Distill format.</p>
+    <p>In this lesson, you will learn the basic concepts and methods of Spatial Interaction Models.</p>
   </div>
 </div>
 
@@ -189,14 +189,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 28, 2022</p>
+      <p class="date">January 29, 2023</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">March 2, 2023</p>
+      <p class="date-modified">March 15, 2023</p>
     </div>
   </div>
     
@@ -208,52 +208,47 @@ ul.task-list li input[type="checkbox"] {
 <section id="content" class="level2">
 <h2 class="anchored" data-anchor-id="content">Content</h2>
 <ul>
-<li>Basic Concepts of Geographic Accessibility</li>
-<li>Gravitational Law and Distance Decay Function</li>
-<li>Introducing Potential Models
+<li>Basic Concepts of Spatial Interaction Models</li>
+<li>A Family of Gravity Models
 <ul>
-<li>The classic model</li>
+<li>Unconstrained</li>
+<li>Origin constrained</li>
+<li>Destination constrained</li>
+<li>Doubly constrained</li>
 </ul></li>
-<li>Hansen Potential Accessibility Model</li>
-<li>Two-step Floating Catchment Area (2SFCA) Method</li>
-<li>Kernel Density Two-Step Floating Catchment Area (KD2SFCA) Method</li>
+<li>Statistical Approach</li>
 <li>Interpreting and Visualising Modelling Results</li>
 </ul>
 </section>
 <section id="lesson-slides-and-hands-on-notes" class="level2">
 <h2 class="anchored" data-anchor-id="lesson-slides-and-hands-on-notes">Lesson Slides and Hands-on Notes</h2>
 <ul>
-<li><p>Lesson slides in <a href="../lesson/lesson11/lesson11-GeoAcc.html">html</a> and <a href="../lesson/lesson11/lesson11-GeoAcc.pdf">pdf</a> formats</p></li>
-<li><p>Handout of Hands-on Exercise 11 in <a href="https://r4gdsa.netlify.app/chap16.html">html</a> format.</p></li>
+<li><p>Lesson slides in <a href="../lesson/Lesson10/Lesson10-SIM.html">html</a> and <a href="../lesson/Lesson10/Lesson10-SIM.pdf">pdf</a> formats</p></li>
+<li><p>Handout of Hands-on Exercise 10 in <a href="../Hands-on_Ex/Hands-on_Ex10/Hands-on_Ex10-SIMs.html">html</a> and <a href="../Hands-on_Ex/Hands-on_Ex10/Hands-on_Ex10-SIMs.pdf">pdf</a> formats.</p></li>
 </ul>
 </section>
 <section id="self-reading-before-meet-up" class="level2">
 <h2 class="anchored" data-anchor-id="self-reading-before-meet-up">Self-reading Before Meet-up</h2>
 <p>Read before lesson:</p>
 <ul>
-<li><p>Long, J. (2017). <a href="https://gistbok.ucgis.org/bok-topics/modelling-accessibility">Modelling Accessibility. The Geographic Information Science &amp; Technology Body of Knowledge</a> (3rd Quarter 2017 Edition), John P. Wilson (ed.).</p></li>
-<li><p>Hansen, W. G. (1959): <a href="https://dspace.mit.edu/bitstream/handle/1721.1/74869/32597665-MIT.pdf?...2">“How Accessibility Shapes Land Use”</a>. <em>Journal of the American Institute of Planners</em>, 25, 2, p.&nbsp;73-76.</p></li>
-<li><p>Luo, W.; Wang, F. (2003) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8238135/">“Measures of spatial accessibility to health care in a GIS environment: synthesis and a case study in the Chicago region”</a>. <em>Environment and Planning B: Planning and Design.</em> 30 (6): 865–884. doi:10.1068/b29120.</p></li>
-<li><p>Luo, W.; Qi, Y. (2009). <a href="https://www.researchgate.net/publication/26646789_An_Enhanced_Two-Step_Floating_Catchment_Area_E2SFCA_Method_for_Measuring_Spatial_Accessibility_to_Primary_Care_Physicians">“An enhanced two-step floating catchment area (E2SFCA) method for measuring spatial accessibility to primary care physicians”</a>. <em>Health &amp; Place</em>. 15 (4): 1100–1107.</p></li>
+<li><p>Kingsley E. Haynes and A. Stewart Fotheringham (2020) <a href="https://researchrepository.wvu.edu/rri-web-book/16/"><strong>Gravity and Spatial Interaction Models</strong></a>, Web Book of Regional Science. Chapter 1 and Sub-section 2.2.</p></li>
+<li><p>Farmer, C. and Oshan, T. (2017). <a href="https://gistbok.ucgis.org/bok-topics/spatial-interaction">“Spatial interaction”</a>. <strong>The Geographic Information Science &amp; Technology Body of Knowledge</strong> (4th Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2017.4.5 (link is external)</p></li>
+<li><p>Flowerdew R, Aitkin M (1982) <a href="https://www.academia.edu/38321611/A_Method_of_Fitting_the_Gravity_Model_Based_on_the_Poisson_Distribution_">“A method of fitting the gravity model based on the Poisson distribution”</a>. <em>Journal of Regional Science</em>, 22: 191–202.</p></li>
 </ul>
 </section>
 <section id="reference" class="level2">
 <h2 class="anchored" data-anchor-id="reference">Reference</h2>
 <ul>
-<li>Section on “Transportation and Accessibility” in The Geography of Transport Systems.</li>
-<li>Rich, D.C. (1980) Potential Models in Human Geography.</li>
-<li>Orpana, T./Lampinen, J. (2003) “Building spatial choice models from aggregate data”. Journal of Regional Science,43, 2, p.&nbsp;319-347.</li>
-<li><a href="https://en.wikipedia.org/wiki/Two-step_floating_catchment_area_method">Two-step floating catchment area method</a>.</li>
-<li>Cheng, Gang et. al.&nbsp;(2016) “Spatial difference analysis for accessibility to high level hospitals based on travel time in Shenzhen, China” Habitat International, Vol.53, p.485-494.</li>
-<li>Polzin, Pierre ; Borges, José ; Coelho, António (2014) “An Extended Kernel Density Two-Step Floating Catchment Area Method to Analyze Access to Health Care” Environment and planning. B, Planning &amp; design, Vol.41 (4), p.717-735.</li>
+<li>Pavel KLAPKA, et. al.&nbsp;(2013) <a href="https://sciendo.com/de/article/10.2478/mgr-2013-0013">“The Footfall of Shopping Centre in Olomouc (CZECH REPUBLIC): An Application of The Gravity Model”</a>, <em>Moravian Geographical Reports</em>, Vol 21, pp.&nbsp;12-26.<br>
+</li>
+<li>Yang Yue et. al.&nbsp;(2012) “Exploratory calibration of a spatial interaction model using taxi GPS trajectories”, <em>Computers, Environment and Urban Systems</em>, 36 (2012) 140–153.</li>
 </ul>
 </section>
 <section id="all-about-r" class="level2">
 <h2 class="anchored" data-anchor-id="all-about-r">All About R:</h2>
 <ul>
-<li><p><a href="https://ipeagit.github.io/accessibility/">accessibility</a></p></li>
-<li><p><a href="https://cran.r-project.org/web/packages/SpatialAcc/">SpatialAcc</a> package.</p></li>
-<li><p><a href="https://riatelab.github.io/potential/index.html">Potential</a> package.</p></li>
+<li><p>Paul Roback and Julie Legler (2020) <strong>Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R</strong>, CRC Press. On line version (January 26, 2021). <a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-poissonreg.html">Chapter 4</a></p></li>
+<li><p><a href="https://stats.idre.ucla.edu/r/dae/negative-binomial-regression/">Negative Binomial Regression</a> and <a href="https://stats.idre.ucla.edu/r/dae/poisson-regression/">Poisson Regression</a> from UCLA Institute for Digital Research &amp; Education.</p></li>
 </ul>
 
 

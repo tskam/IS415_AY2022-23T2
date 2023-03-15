@@ -1,55 +1,47 @@
 ---
-title: "Lesson 11: Modelling Geographic of Accessibility"
+title: "Lesson 11: Spatial Interaction Models"
 description: |
-  A new article created using the Distill format.
-date: "28 December 2022"
-date-modified:  "`r Sys.Date()`"
+  In this lesson, you will learn the basic concepts and methods of Spatial Interaction Models.
+date: "29 January 2023"  
+date-modified: "`r Sys.Date()`"
 format: html
 editor: visual
 ---
 
 ## Content
 
--   Basic Concepts of Geographic Accessibility
--   Gravitational Law and Distance Decay Function
--   Introducing Potential Models
-    -   The classic model
--   Hansen Potential Accessibility Model
--   Two-step Floating Catchment Area (2SFCA) Method
--   Kernel Density Two-Step Floating Catchment Area (KD2SFCA) Method
+-   Basic Concepts of Spatial Interaction Models
+-   A Family of Gravity Models
+    -   Unconstrained
+    -   Origin constrained
+    -   Destination constrained
+    -   Doubly constrained
+-   Statistical Approach
 -   Interpreting and Visualising Modelling Results
 
 ## Lesson Slides and Hands-on Notes
 
--   Lesson slides in [html](../lesson/lesson11/lesson11-GeoAcc.html) and [pdf](../lesson/lesson11/lesson11-GeoAcc.pdf) formats
+-   Lesson slides in [html](../lesson/Lesson10/Lesson10-SIM.html) and [pdf](../lesson/Lesson10/Lesson10-SIM.pdf) formats
 
--   Handout of Hands-on Exercise 11 in [html](https://r4gdsa.netlify.app/chap16.html) format.
+-   Handout of Hands-on Exercise 10 in [html](../Hands-on_Ex/Hands-on_Ex10/Hands-on_Ex10-SIMs.html) and [pdf](../Hands-on_Ex/Hands-on_Ex10/Hands-on_Ex10-SIMs.pdf) formats.
 
 ## Self-reading Before Meet-up
 
 Read before lesson:
 
--   Long, J. (2017). [Modelling Accessibility. The Geographic Information Science & Technology Body of Knowledge](https://gistbok.ucgis.org/bok-topics/modelling-accessibility) (3rd Quarter 2017 Edition), John P. Wilson (ed.).
+-   Kingsley E. Haynes and A. Stewart Fotheringham (2020) [**Gravity and Spatial Interaction Models**](https://researchrepository.wvu.edu/rri-web-book/16/), Web Book of Regional Science. Chapter 1 and Sub-section 2.2.
 
--   Hansen, W. G. (1959): ["How Accessibility Shapes Land Use"](https://dspace.mit.edu/bitstream/handle/1721.1/74869/32597665-MIT.pdf?...2). *Journal of the American Institute of Planners*, 25, 2, p. 73-76.
+-   Farmer, C. and Oshan, T. (2017). ["Spatial interaction"](https://gistbok.ucgis.org/bok-topics/spatial-interaction). **The Geographic Information Science & Technology Body of Knowledge** (4th Quarter 2017 Edition), John P. Wilson (ed.). DOI: 10.22224/gistbok/2017.4.5 (link is external)
 
--   Luo, W.; Wang, F. (2003) ["Measures of spatial accessibility to health care in a GIS environment: synthesis and a case study in the Chicago region"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8238135/). *Environment and Planning B: Planning and Design.* 30 (6): 865--884. doi:10.1068/b29120.
-
--   Luo, W.; Qi, Y. (2009). ["An enhanced two-step floating catchment area (E2SFCA) method for measuring spatial accessibility to primary care physicians"](https://www.researchgate.net/publication/26646789_An_Enhanced_Two-Step_Floating_Catchment_Area_E2SFCA_Method_for_Measuring_Spatial_Accessibility_to_Primary_Care_Physicians). *Health & Place*. 15 (4): 1100--1107.
+-   Flowerdew R, Aitkin M (1982) ["A method of fitting the gravity model based on the Poisson distribution"](https://www.academia.edu/38321611/A_Method_of_Fitting_the_Gravity_Model_Based_on_the_Poisson_Distribution_). *Journal of Regional Science*, 22: 191--202.
 
 ## Reference
 
--   Section on "Transportation and Accessibility" in The Geography of Transport Systems.
--   Rich, D.C. (1980) Potential Models in Human Geography.
--   Orpana, T./Lampinen, J. (2003) "Building spatial choice models from aggregate data". Journal of Regional Science,43, 2, p. 319-347.
--   [Two-step floating catchment area method](https://en.wikipedia.org/wiki/Two-step_floating_catchment_area_method).
--   Cheng, Gang et. al. (2016) "Spatial difference analysis for accessibility to high level hospitals based on travel time in Shenzhen, China" Habitat International, Vol.53, p.485-494.
--   Polzin, Pierre ; Borges, José ; Coelho, António (2014) "An Extended Kernel Density Two-Step Floating Catchment Area Method to Analyze Access to Health Care" Environment and planning. B, Planning & design, Vol.41 (4), p.717-735.
+-   Pavel KLAPKA, et. al. (2013) ["The Footfall of Shopping Centre in Olomouc (CZECH REPUBLIC): An Application of The Gravity Model"](https://sciendo.com/de/article/10.2478/mgr-2013-0013), *Moravian Geographical Reports*, Vol 21, pp. 12-26.\
+-   Yang Yue et. al. (2012) "Exploratory calibration of a spatial interaction model using taxi GPS trajectories", *Computers, Environment and Urban Systems*, 36 (2012) 140--153.
 
 ## All About R:
 
--   [accessibility](https://ipeagit.github.io/accessibility/)
+-   Paul Roback and Julie Legler (2020) **Beyond Multiple Linear Regression: Applied Generalized Linear Models and Multilevel Models in R**, CRC Press. On line version (January 26, 2021). [Chapter 4](https://bookdown.org/roback/bookdown-BeyondMLR/ch-poissonreg.html)
 
--   [SpatialAcc](https://cran.r-project.org/web/packages/SpatialAcc/) package.
-
--   [Potential](https://riatelab.github.io/potential/index.html) package.
+-   [Negative Binomial Regression](https://stats.idre.ucla.edu/r/dae/negative-binomial-regression/) and [Poisson Regression](https://stats.idre.ucla.edu/r/dae/poisson-regression/) from UCLA Institute for Digital Research & Education.
