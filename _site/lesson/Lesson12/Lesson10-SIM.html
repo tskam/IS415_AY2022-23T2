@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dr.&nbsp;Kam Tin Seong  Assoc. Professor of Information Systems(Practice)">
+<meta name="dcterms.date" content="2023-03-15">
+
+<title>IS415 AY2022-23T2 - Lesson 10: Spatial Interaction Models</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">IS415 AY2022-23T2</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../syllabus.html">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../lesson.html">
+ <span class="menu-text">Lesson Plan</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-take-home-exercise" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Take-home Exercise</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-take-home-exercise">    
+        <li>
+    <a class="dropdown-item" href="../../th_ex1.html">
+ <span class="dropdown-text">Take-home Exercise 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../th_ex2.html">
+ <span class="dropdown-text">Take-home Exercise 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../th_ex3.html">
+ <span class="dropdown-text">Take-home Exercise 3</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../GAproject.html">
+ <span class="menu-text">Geospatial Analytics Project</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-shiny-workshop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Shiny Workshop</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-shiny-workshop">    
+        <li>
+    <a class="dropdown-item" href="../../ShinyWorkshop/Shiny1/Shiny1.html">
+ <span class="dropdown-text">R Shiny basic</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../ShinyWorkshop/Shiny2/Shiny2.html">
+ <span class="dropdown-text">Beyond the basic</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../ShinyWorkshop/Shiny3/Shiny3.html">
+ <span class="dropdown-text">Customising Shiny</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../ShinyResources.html">
+ <span class="dropdown-text">Shiny Resources</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../quarto.html">
+ <span class="menu-text">All About Quarto</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#content" id="toc-content" class="nav-link active" data-scroll-target="#content">Content</a></li>
+  <li><a href="#what-spatial-interaction-models-are" id="toc-what-spatial-interaction-models-are" class="nav-link" data-scroll-target="#what-spatial-interaction-models-are">What Spatial Interaction Models are?</a>
+  <ul class="collapse">
+  <li><a href="#conditions-for-spatial-flows" id="toc-conditions-for-spatial-flows" class="nav-link" data-scroll-target="#conditions-for-spatial-flows">Conditions for Spatial Flows</a></li>
+  <li><a href="#representation-of-a-movement-as-a-spatial-interaction" id="toc-representation-of-a-movement-as-a-spatial-interaction" class="nav-link" data-scroll-target="#representation-of-a-movement-as-a-spatial-interaction">Representation of a Movement as a Spatial Interaction</a></li>
+  </ul></li>
+  <li><a href="#constructing-an-od-matrix" id="toc-constructing-an-od-matrix" class="nav-link" data-scroll-target="#constructing-an-od-matrix">Constructing an O/D Matrix</a></li>
+  <li><a href="#three-basic-types-of-interaction-models" id="toc-three-basic-types-of-interaction-models" class="nav-link" data-scroll-target="#three-basic-types-of-interaction-models">Three Basic Types of Interaction Models</a></li>
+  <li><a href="#gravity-models" id="toc-gravity-models" class="nav-link" data-scroll-target="#gravity-models">Gravity Models</a>
+  <ul class="collapse">
+  <li><a href="#unconstrained-totally-constrained-case" id="toc-unconstrained-totally-constrained-case" class="nav-link" data-scroll-target="#unconstrained-totally-constrained-case">Unconstrained (Totally constrained) case</a></li>
+  <li><a href="#the-origin-production-constrained-model" id="toc-the-origin-production-constrained-model" class="nav-link" data-scroll-target="#the-origin-production-constrained-model">The Origin (Production) Constrained Model</a></li>
+  <li><a href="#oringin-production-constrained-case" id="toc-oringin-production-constrained-case" class="nav-link" data-scroll-target="#oringin-production-constrained-case">Oringin (Production) constrained case</a></li>
+  <li><a href="#the-destination-attraction-constrained-model" id="toc-the-destination-attraction-constrained-model" class="nav-link" data-scroll-target="#the-destination-attraction-constrained-model">The Destination (Attraction) Constrained Model</a></li>
+  <li><a href="#destination-attraction-constrained-case" id="toc-destination-attraction-constrained-case" class="nav-link" data-scroll-target="#destination-attraction-constrained-case">Destination (Attraction) constrained case</a></li>
+  <li><a href="#the-doubly-constrained-model" id="toc-the-doubly-constrained-model" class="nav-link" data-scroll-target="#the-doubly-constrained-model">The Doubly Constrained Model</a></li>
+  <li><a href="#doubly-constrained-case" id="toc-doubly-constrained-case" class="nav-link" data-scroll-target="#doubly-constrained-case">Doubly constrained case</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lesson 10: <br>Spatial Interaction Models</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    Dr.&nbsp;Kam Tin Seong <br>Assoc. Professor of Information Systems(Practice) 
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            School of Computing and Information Systems,<br>Singapore Management University
+          </p>
+      </div>
+    </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">15 Mar 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="content" class="level2">
+<h2 class="anchored" data-anchor-id="content">Content</h2>
+<ul>
+<li>Characteristics of Spatial Interaction Data</li>
+<li>Spatial Interaction Models
+<ul>
+<li>Unconstrained</li>
+<li>Origin constrined</li>
+<li>Destination constrained</li>
+<li>Doubly constrained</li>
+</ul></li>
+</ul>
+</section>
+<section id="what-spatial-interaction-models-are" class="level2">
+<h2 class="anchored" data-anchor-id="what-spatial-interaction-models-are">What Spatial Interaction Models are?</h2>
+<div class="columns">
+<div class="column" style="width:65%;">
+<p>Spatial interaction or “gravity models” estimate the flow of people, material, or information between locations in geographical space.</p>
+<p><img src="img/image10-1.jpg" class="img-fluid"></p>
+</div><div class="column" style="width:35%;">
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Spatial interaction models seek to explain existing spatial flows. As such it is possible to measure flows and predict the consequences of changes in the conditions generating them. When such attributes are known, it is possible to better allocate transport resources such as conveyances, infrastructure, and terminals.</p>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<section id="conditions-for-spatial-flows" class="level3">
+<h3 class="anchored" data-anchor-id="conditions-for-spatial-flows">Conditions for Spatial Flows</h3>
+<ul>
+<li>Three interdependent conditions are necessary for a spatial interaction to occur:</li>
+</ul>
+<p><img src="img/image10-2.jpg" class="img-fluid"></p>
+<div class="notes">
+<ul>
+<li><strong>Complementarity</strong>. There must be a supply and a demand between the interacting locations. A residential zone is complementary to an employment zone because the first is supplying workers while the second is supplying jobs. The same can be said concerning the complementarity between a store and its customers and between an industry and its suppliers (movements of freight). An economic system is based on a large array of complementary activities.</li>
+<li><strong>Intervening opportunity (lack of)</strong>. Refers to a location that may offer a better alternative as a point of origin or as a point of destination. For instance, in order to have an interaction of a customer to a store, there must not be a closer store that offers a similar array of goods. Otherwise, the customer will likely patronize the closer store and the initial interaction will not take place.</li>
+<li><strong>Transferability</strong>. Mobility must be supported by transport infrastructures, implying that the origin and the destination must be linked. Costs to overcome distance must not be higher than the benefits of the related interaction, even if there are complementarity and no alternative opportunity.</li>
+</ul>
+</div>
+<hr>
+</section>
+<section id="representation-of-a-movement-as-a-spatial-interaction" class="level3">
+<h3 class="anchored" data-anchor-id="representation-of-a-movement-as-a-spatial-interaction">Representation of a Movement as a Spatial Interaction</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Representing mobility as a spatial interaction involves several considerations:</p>
+<ul>
+<li>Locations: A movement is occurring between a location of origin and a location of destination. i generally denotes an origin while j is a destination.</li>
+<li>Centroid: An abstraction of the attributes of a zone at a point.</li>
+<li>Flows: Flows are generally expressed by a valued vector Tij representing an interaction between locations i and j.</li>
+<li>Vectors: A vector Tij links two centroids and has a value assigned to it (50) which can represents movements.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img src="img/image10-3.jpg" class="img-fluid"></p>
+</div>
+</div>
+<div class="notes">
+<ul>
+<li>Locations. A movement is occurring between a location of origin and a location of destination. i generally denotes an origin while j is a destination. The representation of origins and destinations commonly involves centroids.</li>
+<li>Centroid. An abstraction of the attributes of a zone at a point. This is of particular relevance when the attributes generating mobility are zonal (e.g.&nbsp;ZIP codes, cities, states, etc.) while the graphic representation requires specific origins and destinations. For instance, showing flows between ZIP codes would implicitly require the generation of one centroid for each ZIP code.</li>
+<li>Flows. Flows are generally expressed by a valued vector Tij representing an interaction between locations i and j.</li>
+<li>Vectors. On the above figure, two areas, zone i and zone j, are represented as two centroids, i and j. A vector Tij links two centroids and has a value assigned to it (50) which can represents movements such as tons of freight, numbers of passengers per day, or number of phone calls.</li>
+</ul>
+</div>
+</section>
+</section>
+<section id="constructing-an-od-matrix" class="level2">
+<h2 class="anchored" data-anchor-id="constructing-an-od-matrix">Constructing an O/D Matrix</h2>
+<ul>
+<li>The construction of an origin / destination matrix requires directional flow information between a series of locations.</li>
+<li>Figure below represents movements (O/D pairs) between five locations (A, B, C, D and E). From this graph, an O/D matrix can be built where each O/D pair becomes a cell. A value of 0 is assigned for each O/D pair that does not have an observed flow.</li>
+</ul>
+<p><img src="img/image10-4.jpg" class="img-fluid"></p>
+</section>
+<section id="three-basic-types-of-interaction-models" class="level2">
+<h2 class="anchored" data-anchor-id="three-basic-types-of-interaction-models">Three Basic Types of Interaction Models</h2>
+<ul>
+<li>The general formulation of the spatial interaction model is stated as <strong>Tij</strong>, which is the interaction between location i (origin) and location j (destination). <strong>Vi</strong> are the attributes of the location of origin i, <strong>Wj</strong> are the attributes of the location of destination j, and <strong>Sij</strong> are the attributes of separation between the location of origin i and the location of destination j.</li>
+<li>From this general formulation, three basic types of interaction models can be derived:</li>
+</ul>
+<p><img src="img/image10-5.jpg" class="img-fluid"></p>
+</section>
+<section id="gravity-models" class="level2">
+<h2 class="anchored" data-anchor-id="gravity-models">Gravity Models</h2>
+<div style="font-size: 0.85em">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>The general formula (also known as unconstrained):</p>
+<p><img src="img/image10-6a.jpg" class="img-fluid"></p>
+<ul>
+<li>Tij is the transition/trip or flow, 𝑇, between origin 𝑖 (always the rows in a matrix) and destination 𝑗 (always the columns in a matrix). If you are not overly familiar with matrix notation, the 𝑖 and 𝑗 are just generic indexes to allow us to refer to any cell in the matrix.</li>
+<li>𝑉 is a vector (a 1 dimensional matrix – or, if you like, a single line of numbers) of origin attributes which relate to the emissivity of all origins in the dataset, 𝑖 – this could be any of the origin-related variables.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>𝑊 is a vector of destination attributes relating to the attractiveness of all destinations in the dataset, 𝑗 – similarly, this could be any of the destination related variables.</li>
+<li>𝑑 is a matrix of costs (frequently distances – hence, d) relating to the flows between 𝑖 and 𝑗.</li>
+<li>𝑘, 𝜇, 𝛼 and 𝛽 are all model parameters to be estimated. 𝛽 is assumed to be negative, as with an increase in cost/distance we would expect interaction to decrease.</li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<section id="unconstrained-totally-constrained-case" class="level3">
+<h3 class="anchored" data-anchor-id="unconstrained-totally-constrained-case">Unconstrained (Totally constrained) case</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>The O-D Matrix</p>
+<p><img src="img/image10-6c.jpg" class="img-fluid"></p>
+<p>and distance matrix:</p>
+<p><img src="img/image10-6d.jpg" class="img-fluid" width="500"></p>
+<p><img src="img/image10-6e.jpg" class="img-fluid"></p>
+</div><div class="column" style="width:50%;">
+<p>The estimated O-D matrix:</p>
+<p><img src="img/image10-6f.jpg" class="img-fluid"></p>
+<p>and the calculation T11</p>
+<p><img src="img/image10-6g.jpg" class="img-fluid" width="400"></p>
+</div>
+</div>
+<hr>
+</section>
+<section id="the-origin-production-constrained-model" class="level3">
+<h3 class="anchored" data-anchor-id="the-origin-production-constrained-model">The Origin (Production) Constrained Model</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>In the Origin Constrained Model,</p>
+<ul>
+<li>𝑂𝑖 does not have a parameter as it is a known <strong>constraint</strong>.</li>
+<li>𝐴𝑖 is known as a <strong>balancing factor</strong> and is a vector of values which relate to each origin 𝑖 which do the equivalent job as 𝑘 in the unconstrained/total constrained model but ensure that flow estimates from each origin sum to the know totals 𝑂𝑖 rather than just the overall total.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img src="img/image10-6b.jpg" class="img-fluid"></p>
+</div>
+</div>
+<hr>
+</section>
+<section id="oringin-production-constrained-case" class="level3">
+<h3 class="anchored" data-anchor-id="oringin-production-constrained-case">Oringin (Production) constrained case</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>The O-D Matrix</p>
+<p><img src="img/image10-6c.jpg" class="img-fluid"></p>
+<p>and distance matrix:</p>
+<p><img src="img/image10-6d.jpg" class="img-fluid" width="500"></p>
+<p><img src="img/image10-6e.jpg" class="img-fluid"></p>
+</div><div class="column" style="width:50%;">
+<p>The estimated O-D matrix:</p>
+<p><img src="img/image10-7a.jpg" class="img-fluid"></p>
+<p>A1 is calculated as shown below:</p>
+<p><img src="img/image10-7b.jpg" class="img-fluid"></p>
+<p>Hence, T11 is calculated as shown below:</p>
+<p><img src="img/image10-7c.jpg" class="img-fluid" width="450"></p>
+</div>
+</div>
+<hr>
+</section>
+<section id="the-destination-attraction-constrained-model" class="level3">
+<h3 class="anchored" data-anchor-id="the-destination-attraction-constrained-model">The Destination (Attraction) Constrained Model</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img src="img/image10-8a.jpg" class="img-fluid"></p>
+</div>
+</div>
+<hr>
+</section>
+<section id="destination-attraction-constrained-case" class="level3">
+<h3 class="anchored" data-anchor-id="destination-attraction-constrained-case">Destination (Attraction) constrained case</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>The O-D Matrix</p>
+<p><img src="img/image10-6c.jpg" class="img-fluid"></p>
+<p>and distance matrix:</p>
+<p><img src="img/image10-6d.jpg" class="img-fluid" width="500"></p>
+<p><img src="img/image10-6e.jpg" class="img-fluid"></p>
+</div><div class="column" style="width:50%;">
+<p>The estimated O-D matrix:</p>
+<p><img src="img/image10-8b.jpg" class="img-fluid"></p>
+<p>B1 is calculated as shown below:</p>
+<p><img src="img/image10-8c.jpg" class="img-fluid"></p>
+<p>Hence, T11 is calculated as shown below:</p>
+<p><img src="img/image10-8d.jpg" class="img-fluid" width="500"></p>
+</div>
+</div>
+<hr>
+</section>
+<section id="the-doubly-constrained-model" class="level3">
+<h3 class="anchored" data-anchor-id="the-doubly-constrained-model">The Doubly Constrained Model</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img src="img/image10-9a.jpg" class="img-fluid"></p>
+</div><div class="column" style="width:50%;">
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note that the calculation of 𝐴𝑖 relies on knowing 𝐵𝑗 and the calculation of 𝐵𝑗 relies on knowing 𝐴𝑖 – something of a conundrum to which the solution is elegantly described by Senior (1979), who sketches out a very useful algorithm for iteratively arriving at values for 𝐴𝑖 and 𝐵𝑗 by setting each to equal 1 initially and then continuing to calculate each in turn until the difference between successive iterations of the 𝐴𝑖 and 𝐵𝑗 values is small enough not to matter.</p>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="doubly-constrained-case" class="level3">
+<h3 class="anchored" data-anchor-id="doubly-constrained-case">Doubly constrained case</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>The O-D Matrix</p>
+<p><img src="img/image10-6c.jpg" class="img-fluid"></p>
+<p>and distance matrix:</p>
+<p><img src="img/image10-6d.jpg" class="img-fluid" width="500"></p>
+<p><img src="img/image10-6e.jpg" class="img-fluid"></p>
+</div><div class="column" style="width:50%;">
+<p>The estimated O-D matrix:</p>
+<p><img src="img/image10-9b.jpg" class="img-fluid"></p>
+<p>Hence, T11 is calculated as shown below:</p>
+<p><img src="img/image10-9c.jpg" class="img-fluid" width="500"></p>
+<p>Notice that A1 and B1 are computed by using computer.</p>
+</div>
+</div>
+<div class="cell">
+
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

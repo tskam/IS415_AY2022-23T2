@@ -1103,7 +1103,7 @@
     "href": "outline/Lesson10_outline.html#lesson-slides-and-hands-on-notes",
     "title": "Lesson 10: Modelling Geographic of Accessibility",
     "section": "Lesson Slides and Hands-on Notes",
-    "text": "Lesson Slides and Hands-on Notes\n\nLesson slides in html and pdf formats\nHandout of Hands-on Exercise 11 in html format."
+    "text": "Lesson Slides and Hands-on Notes\n\nLesson slides in html and pdf formats\nHandout of Hands-on Exercise 10 in html format."
   },
   {
     "objectID": "outline/Lesson10_outline.html#self-reading-before-meet-up",
@@ -2112,5 +2112,89 @@
     "title": "Lesson 9: Geographically Weighted Random Forest",
     "section": "",
     "text": "What is Predictive Modelling?\nWhat is Geospatial Predictive Modelling\nIntroducing Recursive Partitioning\nAdvanced Recursive Partitioning: Random Forest\nIntroducing Geographically Weighted Random Forest"
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-GeoAcc.html#content",
+    "href": "lesson/Lesson10/Lesson10-GeoAcc.html#content",
+    "title": "Lesson 10: Modelling Geographic of Accessibility",
+    "section": "Content",
+    "text": "Content\n\nBasic Concepts of Geography of Accessibility\nAccessibility Models\n\nStewart Potential model\nReilly model\nHuff model"
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-GeoAcc.html#what-is-geography-of-accessibility",
+    "href": "lesson/Lesson10/Lesson10-GeoAcc.html#what-is-geography-of-accessibility",
+    "title": "Lesson 10: Modelling Geographic of Accessibility",
+    "section": "What is Geography of Accessibility?",
+    "text": "What is Geography of Accessibility?\n\n\n\nAccessibility is the measure of the capacity of a location to be reached from, or to be reached by, different locations. Therefore, the capacity and the arrangement of transport infrastructure are key elements in the determination of accessibility."
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-GeoAcc.html#measuring-distances",
+    "href": "lesson/Lesson10/Lesson10-GeoAcc.html#measuring-distances",
+    "title": "Lesson 10: Modelling Geographic of Accessibility",
+    "section": "Measuring Distances",
+    "text": "Measuring Distances\n\nDifferent spatial and distance conceptualizations that are commonly employed when measuring and modelling accessibility."
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-GeoAcc.html#the-geographical-unit",
+    "href": "lesson/Lesson10/Lesson10-GeoAcc.html#the-geographical-unit",
+    "title": "Lesson 10: Modelling Geographic of Accessibility",
+    "section": "The Geographical Unit",
+    "text": "The Geographical Unit\n\nThis issue of irregularly shaped polygons created arbitrarily (such as county boundaries or block groups that have been created from a political process)."
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-GeoAcc.html#the-potential-model",
+    "href": "lesson/Lesson10/Lesson10-GeoAcc.html#the-potential-model",
+    "title": "Lesson 10: Modelling Geographic of Accessibility",
+    "section": "The Potential Model",
+    "text": "The Potential Model\nThe classic model"
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-GeoAcc.html#two-step-floating-catchment-area-method-2sfca",
+    "href": "lesson/Lesson10/Lesson10-GeoAcc.html#two-step-floating-catchment-area-method-2sfca",
+    "title": "Lesson 10: Modelling Geographic of Accessibility",
+    "section": "Two-step floating catchment area method (2SFCA)",
+    "text": "Two-step floating catchment area method (2SFCA)\n\n\n\nA special case of a potential model for measuring spatial accessibility to primary social services and public facilities.\nIt was inspired by the spatial decomposition idea first proposed by Radke and Mu (2000).\n\n\nReference: Luo, W.; Wang, F. (2003b). “Measures of spatial accessibility to health care in a GIS environment: synthesis and a case study in the Chicago region”. Environment and Planning B: Planning and Design. 30 (6): 865–884.\n\n\nAn earlier version of 2SFCA"
+  },
+  {
+    "objectID": "lesson/Lesson10/Lesson10-GeoAcc.html#spatial-accessibility-measure-sam",
+    "href": "lesson/Lesson10/Lesson10-GeoAcc.html#spatial-accessibility-measure-sam",
+    "title": "Lesson 10: Modelling Geographic of Accessibility",
+    "section": "Spatial Accessibility Measure (SAM)",
+    "text": "Spatial Accessibility Measure (SAM)\nThe formula:\n\nwhere\n\nAai is the accessibility in ED i,\nnj is the capacity of the target facility j.\npi is the demand of this ED, and\ndij is the network distance between the EDi and each facility j.\n\n\nReference: Stamatis Kalogirou & Ronan Foley (2006) “Health, place and Hanly: Modelling accessibility to hospitals in Ireland”, Irish Geography, Volume 39(1), 2006, 52-68."
+  },
+  {
+    "objectID": "lesson/Lesson12/Lesson10-SIM.html",
+    "href": "lesson/Lesson12/Lesson10-SIM.html",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "",
+    "text": "Characteristics of Spatial Interaction Data\nSpatial Interaction Models\n\nUnconstrained\nOrigin constrined\nDestination constrained\nDoubly constrained"
+  },
+  {
+    "objectID": "lesson/Lesson12/Lesson10-SIM.html#what-spatial-interaction-models-are",
+    "href": "lesson/Lesson12/Lesson10-SIM.html#what-spatial-interaction-models-are",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "What Spatial Interaction Models are?",
+    "text": "What Spatial Interaction Models are?\n\n\nSpatial interaction or “gravity models” estimate the flow of people, material, or information between locations in geographical space.\n\n\n\n\n\n\n\n\nNote\n\n\n\nSpatial interaction models seek to explain existing spatial flows. As such it is possible to measure flows and predict the consequences of changes in the conditions generating them. When such attributes are known, it is possible to better allocate transport resources such as conveyances, infrastructure, and terminals.\n\n\n\n\n\n\nConditions for Spatial Flows\n\nThree interdependent conditions are necessary for a spatial interaction to occur:\n\n\n\n\nComplementarity. There must be a supply and a demand between the interacting locations. A residential zone is complementary to an employment zone because the first is supplying workers while the second is supplying jobs. The same can be said concerning the complementarity between a store and its customers and between an industry and its suppliers (movements of freight). An economic system is based on a large array of complementary activities.\nIntervening opportunity (lack of). Refers to a location that may offer a better alternative as a point of origin or as a point of destination. For instance, in order to have an interaction of a customer to a store, there must not be a closer store that offers a similar array of goods. Otherwise, the customer will likely patronize the closer store and the initial interaction will not take place.\nTransferability. Mobility must be supported by transport infrastructures, implying that the origin and the destination must be linked. Costs to overcome distance must not be higher than the benefits of the related interaction, even if there are complementarity and no alternative opportunity.\n\n\n\n\n\nRepresentation of a Movement as a Spatial Interaction\n\n\nRepresenting mobility as a spatial interaction involves several considerations:\n\nLocations: A movement is occurring between a location of origin and a location of destination. i generally denotes an origin while j is a destination.\nCentroid: An abstraction of the attributes of a zone at a point.\nFlows: Flows are generally expressed by a valued vector Tij representing an interaction between locations i and j.\nVectors: A vector Tij links two centroids and has a value assigned to it (50) which can represents movements.\n\n\n\n\n\n\n\nLocations. A movement is occurring between a location of origin and a location of destination. i generally denotes an origin while j is a destination. The representation of origins and destinations commonly involves centroids.\nCentroid. An abstraction of the attributes of a zone at a point. This is of particular relevance when the attributes generating mobility are zonal (e.g. ZIP codes, cities, states, etc.) while the graphic representation requires specific origins and destinations. For instance, showing flows between ZIP codes would implicitly require the generation of one centroid for each ZIP code.\nFlows. Flows are generally expressed by a valued vector Tij representing an interaction between locations i and j.\nVectors. On the above figure, two areas, zone i and zone j, are represented as two centroids, i and j. A vector Tij links two centroids and has a value assigned to it (50) which can represents movements such as tons of freight, numbers of passengers per day, or number of phone calls."
+  },
+  {
+    "objectID": "lesson/Lesson12/Lesson10-SIM.html#constructing-an-od-matrix",
+    "href": "lesson/Lesson12/Lesson10-SIM.html#constructing-an-od-matrix",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "Constructing an O/D Matrix",
+    "text": "Constructing an O/D Matrix\n\nThe construction of an origin / destination matrix requires directional flow information between a series of locations.\nFigure below represents movements (O/D pairs) between five locations (A, B, C, D and E). From this graph, an O/D matrix can be built where each O/D pair becomes a cell. A value of 0 is assigned for each O/D pair that does not have an observed flow."
+  },
+  {
+    "objectID": "lesson/Lesson12/Lesson10-SIM.html#three-basic-types-of-interaction-models",
+    "href": "lesson/Lesson12/Lesson10-SIM.html#three-basic-types-of-interaction-models",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "Three Basic Types of Interaction Models",
+    "text": "Three Basic Types of Interaction Models\n\nThe general formulation of the spatial interaction model is stated as Tij, which is the interaction between location i (origin) and location j (destination). Vi are the attributes of the location of origin i, Wj are the attributes of the location of destination j, and Sij are the attributes of separation between the location of origin i and the location of destination j.\nFrom this general formulation, three basic types of interaction models can be derived:"
+  },
+  {
+    "objectID": "lesson/Lesson12/Lesson10-SIM.html#gravity-models",
+    "href": "lesson/Lesson12/Lesson10-SIM.html#gravity-models",
+    "title": "Lesson 10: Spatial Interaction Models",
+    "section": "Gravity Models",
+    "text": "Gravity Models\n\n\n\nThe general formula (also known as unconstrained):\n\n\nTij is the transition/trip or flow, 𝑇, between origin 𝑖 (always the rows in a matrix) and destination 𝑗 (always the columns in a matrix). If you are not overly familiar with matrix notation, the 𝑖 and 𝑗 are just generic indexes to allow us to refer to any cell in the matrix.\n𝑉 is a vector (a 1 dimensional matrix – or, if you like, a single line of numbers) of origin attributes which relate to the emissivity of all origins in the dataset, 𝑖 – this could be any of the origin-related variables.\n\n\n\n𝑊 is a vector of destination attributes relating to the attractiveness of all destinations in the dataset, 𝑗 – similarly, this could be any of the destination related variables.\n𝑑 is a matrix of costs (frequently distances – hence, d) relating to the flows between 𝑖 and 𝑗.\n𝑘, 𝜇, 𝛼 and 𝛽 are all model parameters to be estimated. 𝛽 is assumed to be negative, as with an increase in cost/distance we would expect interaction to decrease.\n\n\n\n\n\n\nUnconstrained (Totally constrained) case\n\n\nThe O-D Matrix\n\nand distance matrix:\n\n\n\nThe estimated O-D matrix:\n\nand the calculation T11\n\n\n\n\n\n\nThe Origin (Production) Constrained Model\n\n\nIn the Origin Constrained Model,\n\n𝑂𝑖 does not have a parameter as it is a known constraint.\n𝐴𝑖 is known as a balancing factor and is a vector of values which relate to each origin 𝑖 which do the equivalent job as 𝑘 in the unconstrained/total constrained model but ensure that flow estimates from each origin sum to the know totals 𝑂𝑖 rather than just the overall total.\n\n\n\n\n\n\n\n\nOringin (Production) constrained case\n\n\nThe O-D Matrix\n\nand distance matrix:\n\n\n\nThe estimated O-D matrix:\n\nA1 is calculated as shown below:\n\nHence, T11 is calculated as shown below:\n\n\n\n\n\n\nThe Destination (Attraction) Constrained Model\n\n\n\n\n\n\n\n\nDestination (Attraction) constrained case\n\n\nThe O-D Matrix\n\nand distance matrix:\n\n\n\nThe estimated O-D matrix:\n\nB1 is calculated as shown below:\n\nHence, T11 is calculated as shown below:\n\n\n\n\n\n\nThe Doubly Constrained Model\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nNote that the calculation of 𝐴𝑖 relies on knowing 𝐵𝑗 and the calculation of 𝐵𝑗 relies on knowing 𝐴𝑖 – something of a conundrum to which the solution is elegantly described by Senior (1979), who sketches out a very useful algorithm for iteratively arriving at values for 𝐴𝑖 and 𝐵𝑗 by setting each to equal 1 initially and then continuing to calculate each in turn until the difference between successive iterations of the 𝐴𝑖 and 𝐵𝑗 values is small enough not to matter.\n\n\n\n\n\n\n\nDoubly constrained case\n\n\nThe O-D Matrix\n\nand distance matrix:\n\n\n\nThe estimated O-D matrix:\n\nHence, T11 is calculated as shown below:\n\nNotice that A1 and B1 are computed by using computer."
   }
 ]
