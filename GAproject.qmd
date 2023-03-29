@@ -31,6 +31,8 @@ Please feel free to approach me for more details.
 
 -   Brainstorming project ideas and consulting with course instructor between **Week 2 to Week 7**.
 -   Editing and publishing project proposal by the end of **Week 8**.
+-   Submission of project poster: **5th April 2023 by 11:59pm (mid-night)**
+-   Townhall presentation: **11th April 2023 (Tuesday)**, at 12:00-2:00pm. Venue: LKSLIB Basement concourse. Students are required to be at the venue latest by 11:30am to setup your project poster.
 -   Submission of final application, user guide, project poster, practice research paper and artifacts: **16th April 2023 by 11:59pm (mid-night)**
 
 ## Project Deliverables
@@ -65,7 +67,19 @@ The project poster should provide an overview of your project. It should include
 
 -   Future Work - An explanation of how the work could be extended.
 
-**Note:** The poster will be considered a final deliverable, so don't forget to apply good visual design and data visualisation principles and best practice to your poster.
+The dimensions for the poster must conform to the International Standards Organization (ISO) poster size format (A1).
+
+- Size = ISO A1 (594 × 841mm or 23.39 × 33.11inci)
+- Resolution = 300dpi or above
+- File format = jpeg
+
+
+Please ensure that the poster is in high resolution.
+
+The poster will be considered as a final deliverable. So don’t forget to apply good visual design principles to both your poster and project report.
+
+Note: The course instructor will be responsible for printing your poster. You are required to upload your poster onto the project Dropbox of eLearn according to the submission deadline provided on the project milesotne sub-section.
+
 
 ### Geospatial Analytics Application Practice Research Paper
 
@@ -135,7 +149,3 @@ The poster will be graded based on the following criteria:
     -   Group 8: [Spatial Pointers](https://spatial-pointers.netlify.app/project-proposal), a web-enabled Spatial Point Patterns Analysis toolkit for visualising and analysing both spatial and network constrained point patterns.
 
 ## Project Links
-
-
-
-
