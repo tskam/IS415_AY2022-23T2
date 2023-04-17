@@ -81,3 +81,77 @@ You are advised to review these sample submissions prepared by your seniors.
 ## Q & A
 
 Please submit your questions or queries related to this take-home exercise on Piazza.
+
+## Peer Learning
+
+-   [AILYS TEE XYNYN](https://is415-ailystee.netlify.app/take-home_ex/take-home_ex03/take-home_ex03)
+
+-   [ALANIS ZOE CHIA HUI LIN](https://is415-zoechia.netlify.app/take-home_ex/take-home_ex03/take-home_ex03)
+
+-   [ANNA TSENG RUI-WEN](https://annatrw-is415.netlify.app/take-home_ex/take-home_ex03/take-home_ex03)
+
+-   [CELINE NG SI LIN](https://is415-gaa.netlify.app/take-home_ex/take-home_ex01/take-home_ex01)
+
+-   [CHEN HAO XIAN](https://master--is415-gaa-hxchen.netlify.app/lessons/take-home/take-home_ex3/take-home_ex3)
+
+-   [DANIEL CHNG CHONG YEE](https://celebrated-truffle-4b528c.netlify.app/take-home_ex/take-home_ex03/take-home_ex03)
+
+-   [DEREK POH YONG JIE](https://derekpoh-is415.netlify.app/take-home_ex/take-home_ex03/take-home_ex03)
+
+-   [ESWARA LAKSHMANAN ABISHEK](https://is415-elabishek.netlify.app/takehome_exercise/takehome3/takehome3)
+
+-   [HARITH OH YEE CHOON](https://is415-harith.netlify.app/take-home_ex3/take_home_ex3)
+
+-   [HO YONG QUAN](https://is415-gaa-yongquan.netlify.app/take-home_ex/take-home_ex03/take-home_ex03)
+
+-   [HOW XIN YEE](https://is415-xinyeehow.netlify.app/take-home_ex/take-home_ex03/take-home_ex03)
+
+-   [JENNIFER POERNOMO](https://jenpoer-is415-gaa-exercises.netlify.app/take-home-exercises/exe-03/the3)
+
+-   [KUMARAPANDIAN YASHICARAMYA](https://is415-gaa-xtc0.netlify.app/take-home_ex/take_home_ex03/take-home_ex03)
+
+-   [KWANG KAI XUAN BELLE](https://melodious-kelpie-bd4c0d.netlify.app/take_home_ex/the3/the3)
+
+-   [KWEK MING RONG](https://is415-gaa-kwekmingrong.netlify.app/take_home_ex/take_home_ex3)
+
+-   [LEE CHIA MIN MICHELLE FAITH](https://is415-gaa-michellefaith.netlify.app/take-home_ex/take-home_ex03/take-home_ex03)
+
+-   [LEON TAN LI YANG](https://capable-arithmetic-46d74a.netlify.app/take-home_ex/take-home_ex03/take-home_ex03)
+
+-   [LU QUANFANG](https://is415quanfang.netlify.app/takehome_exercise/takehome_exercise3/takehome_ex03)
+
+-   [MICHELLE LEONG HWEE-LING](https://is415-shelle-mim.netlify.app/take-home_exercise/th3/th_ex3)
+
+-   [NGUYEN MAI PHUONG](https://is415-gaa-tiffanik.netlify.app/take-home_ex/take-home_ex03/take-home_ex03)
+
+-   [PENG YOU YUN](https://youyunpeng-is415.netlify.app/take-home_ex/take-home_ex03/take-home_ex03)
+
+-   [PIERRE JEAN MICHEL HAAS](https://is415-pierrehaas.netlify.app/take-home_ex/take-home_ex03/take-home_ex03)
+
+-   [RHONDA HO KAH YEE](https://rhondaho-is415.netlify.app/take-home_assgn/take-home_assgn3/take-home_assgn3)
+
+-   [S GUGANESH](https://is415-gaa-guganesh.netlify.app/take-home_ex/take-home_ex03/take-home_ex03.html)
+
+-   [SALUNKE MAYURI MILIND](https://is415-mayurims.netlify.app/take-home_ex/take-home_ex03/take-home_ex03)
+
+-   [SHAMBHAVI GOENKA](https://shambhavig.netlify.app/take_home_ex/take_home_ex03/take_home_ex03.html)
+
+-   [SHAYTHURAM SO ELANGKOVAN]()
+
+-   [SHERRY NG SHEA LI](https://cosmic-muffin-95669c.netlify.app/take-home_ex/take-home_ex03/takehome_ex03)
+
+-   [TAN WEI SHING]()
+
+-   [TAN WEN YANG](https://is415-gaa-wy.netlify.app/take-home-ex/take-home-ex03/take-home-ex03.html)
+
+-   [TAN YAN LIN VALENCIA](https://is415-gaa-valtyl.netlify.app/take-home_ex/take-home_ex03/take-home_ex03)
+
+-   [TEH JIA HUI GAIL](https://is415-gaa-gailteh.netlify.app/take-home_ex/take-home_ex03/take-home_ex03)
+
+-   [TEO JUN HAO](https://is415-gaa-junhao.netlify.app/take-home_ex/take-home_ex03/take-home_ex03)
+
+-   [TEO REN JIE](https://renjieteo-is415.netlify.app/exercises/thex03.html)
+
+-   [TONG XUE YU KATHY](https://is415-gaa-kathy.netlify.app/take-home_ex/take-home_ex03/take-home_ex03)
+
+-   [WONG KELLY](https://is415kellysite.netlify.app/take_home_ex/take_home_ex03/take_home_ex03_updated)
