@@ -69,17 +69,15 @@ The project poster should provide an overview of your project. It should include
 
 The dimensions for the poster must conform to the International Standards Organization (ISO) poster size format (A1).
 
-- Size = ISO A1 (594 × 841mm or 23.39 × 33.11inci)
-- Resolution = 300dpi or above
-- File format = jpeg
-
+-   Size = ISO A1 (594 × 841mm or 23.39 × 33.11inci)
+-   Resolution = 300dpi or above
+-   File format = jpeg
 
 Please ensure that the poster is in high resolution.
 
-The poster will be considered as a final deliverable. So don’t forget to apply good visual design principles to both your poster and project report.
+The poster will be considered as a final deliverable. So don't forget to apply good visual design principles to both your poster and project report.
 
 Note: The course instructor will be responsible for printing your poster. You are required to upload your poster onto the project Dropbox of eLearn according to the submission deadline provided on the project milesotne sub-section.
-
 
 ### Geospatial Analytics Application Practice Research Paper
 
@@ -149,3 +147,20 @@ The poster will be graded based on the following criteria:
     -   Group 8: [Spatial Pointers](https://spatial-pointers.netlify.app/project-proposal), a web-enabled Spatial Point Patterns Analysis toolkit for visualising and analysing both spatial and network constrained point patterns.
 
 ## Project Links
+
+- Group 1: [This is FINE: Fire INcidents Explorer](https://is415-fire-incidents-explorer.netlify.app/)
+- Group 2: [Spatial Bros](https://spatialbros.netlify.app/)
+- Group 3: [Analysis of Resale HDB Prices](https://is415-geospatial-project-g1t3.netlify.app/)
+- Group 4: [GeoNinjas](https://is415-gaa-valencia-derek-yashica.netlify.app/)
+- Group 5: [Transit-Ability](https://is415-group-5.netlify.app/)
+- Group 6: [CrimeIndia](https://is415gg-gally.netlify.app/)
+- Group 7: [The Right Space](https://is415-g1t7-project.netlify.app/)
+- Group 8: [CarSpot: Geospatial Parking Analysis!!](https://is415-group8.netlify.app/)
+- Group 9: [Dr Go Where](https://is415-group9.netlify.app/)
+- Group 10: [Spatial Point Pattern Analysis on Seoul’s healthcare accessibility](https://is415-project-g10.netlify.app/project_outline)
+- Group 11: [Regress Rangers](https://is415-team15-proj.netlify.app/)
+- Group 12: [Spatial Point Pattern Analysis of Airbnb listings in Beijing](https://is415-grp12.netlify.app/)
+
+
+
+
